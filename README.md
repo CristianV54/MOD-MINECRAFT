@@ -5,12 +5,12 @@ Modpack brasileiro de RPG com combate estilo souls, chefes, dungeons e uma hist�
 - **Versão:** Minecraft 1.20.1 com Forge 47.4.29
 - **Mods:** 110 no total (91 rodam no servidor e 19 só no jogador)
 - **Objetivo:** ser mais leve que o DawnCraft (305 mods) e rodar bem com 6 GB de RAM
-- **Estado:** base de mods pronta, **Ato 1 e Ato 2 completos** (49 missões em português, com dragões). Atos 3 a 5 ainda vão ser escritos.
+- **Estado:** base de mods pronta, **Atos 1, 2 e 3 completos** (67 missões em português, com dragões). Atos 4 e 5 ainda vão ser escritos.
 
 ## O que já foi testado
 
 - Um servidor dedicado ligou com todos os mods de servidor em cerca de 35 segundos, gerou o mundo e desligou sem travar.
-- As 49 missões carregam sem erro, e o servidor mantém os IDs delas (o progresso dos jogadores não se perde entre atualizações).
+- As 67 missões carregam sem erro, e o servidor mantém os IDs delas (o progresso dos jogadores não se perde entre atualizações).
 - Todos os itens, chefes e estruturas citados nas missões existem nos mods.
 - Os 4 mapas do tesouro saem preenchidos, com o X no local certo. Na semente de teste: Câmara Forjada a 450 blocos, Frostmaw a 1.950, navio do Labirinto de Gelo a 1.910 e bosque do Umvuthi a 3.200.
 - **Ainda não foi testado:** abrir o jogo no PC (lado do jogador) e jogar as missões de verdade.
@@ -76,6 +76,27 @@ Também tem missões de apoio (mochila de ferro, mesa de encantamento, Waystone 
 
 **Ovo de dragão:** depois do relatório, o Mestre oferece um ovo e o jogador escolhe **um** entre Fogo, Gelo, Água e Floresta (mod Dragon Mounts: Legacy). Cada ovo vem com blocos do habitat dele, porque o ambiente em volta pode mudar o tipo do dragão, e com sela e carne. A missão final "Primeiro Voo" fecha a linha.
 
+## Ato 3: Abismo e Fogo (pronto)
+
+Começa depois do relatório do Ato 2, no Nether. São 18 missões. No Nether os mapas ficam ilegíveis por causa do teto, então as missões rodam um `/locate` e **mandam as coordenadas no chat** do jogador.
+
+| Frente | Local | Chefe | Habilidade ganha |
+|---|---|---|---|
+| Forja das Almas | Coordenadas no chat | Monstruosidade de Netherita (Cataclysm) | Resistência |
+| Arena Ardente | Coordenadas no chat, depois Cinzas Flamejantes no Altar de Fogo | Ignis (Cataclysm) | Berserker |
+| Mão de Ferro | Coordenadas no chat | Manopla do Nether (BOMD) | Fuga de Emergência |
+| Chefe final | 3 crânios de esqueleto wither + 4 areias das almas | Wither | Colheita da Morte |
+
+Também tem a fortaleza (com coordenadas), varas de blaze e uma missão extra de netherita. O relatório final anuncia o Ato 4, nas dimensões do Blue Skies.
+
+**Ajustes no mundo para o Ato 3** (no datapack): a Forja das Almas e a Arena Ardente ficam mais perto umas das outras, e a Arena pode nascer em mais biomas do Nether. Na semente de teste, as distâncias ficaram assim:
+- **Forja:** caiu de 1.273 para 527 blocos.
+- **Arena:** caiu de 1.318 para 782 blocos.
+- **Manopla:** 463 blocos (não mudou).
+- **Fortaleza:** 1.011 blocos (não mudou).
+
+**Atenção:** o YUNG's Better Fortresses substitui a fortaleza normal. Por isso, missões que procuram fortaleza precisam usar `betterfortresses:fortress`, e não `minecraft:fortress`.
+
 ## Rascunho da história
 
 > Há séculos, sete guardiões selaram um mal antigo dentro de um cristal: o **Selo**. O Selo se partiu, os fragmentos se espalharam pelo mundo e cada um corrompeu uma criatura poderosa. A **Ordem dos Caçadores** recruta você para recuperar os fragmentos antes que o mal desperte.
@@ -97,7 +118,7 @@ A ordem dos chefes e os nomes dos atos ainda são rascunho e podem mudar.
 ## Próximos passos
 
 1. Testar no PC e ajustar o que pesar ou bugar.
-2. Escrever o Ato 3 (Abismo e Fogo, no Nether) e colocar o Mestre Vellan no mundo como NPC (Easy NPC).
+2. Escrever o Ato 4 (Além do Céu, no Blue Skies) e colocar o Mestre Vellan no mundo como NPC (Easy NPC).
 3. Montar a árvore de habilidades de cada classe (Pufferfish's Skills).
 4. Fazer a tradução PT-BR dos mods que não têm português.
 5. Configurar dificuldade, drops e o bloqueio de progressão.
@@ -126,6 +147,6 @@ python3 tools/gerar_missoes.py
 
 Não edite as missões pelo modo de edição dentro do jogo: o script sobrescreve essas mudanças na próxima vez que rodar.
 
-**Ajustes de mundo:** ficam no datapack `pack/config/openloader/data/terras_partidas/`, carregado pelo mod Open Loader. Ele libera as estruturas do Mowzie's Mobs (chefes) nos biomas do Terralith e define os mapas do tesouro (`loot_tables/mapas/`) que as missões entregam.
+**Ajustes de mundo:** ficam no datapack `pack/config/openloader/data/terras_partidas/`, carregado pelo mod Open Loader. Ele libera as estruturas do Mowzie's Mobs (chefes) nos biomas do Terralith, define os mapas do tesouro (`loot_tables/mapas/`) que as missões entregam e aproxima as estruturas de chefe do Cataclysm no Nether.
 
 **Observação:** 5 mods vêm do Modrinth (Illage and Spillage, Dungeons and Taverns, The Undead Revamped, Entity Culling e Pufferfish's Skills). O `.zip` exportado leva esses mods dentro. Isso não é problema para jogar com amigos, mas antes de publicar no CurseForge é preciso trocar esses mods pela versão do CurseForge ou conferir se eles estão liberados lá.

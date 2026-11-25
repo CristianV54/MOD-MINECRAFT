@@ -176,6 +176,19 @@ class Capitulo:
         return self.r_comando(f"/loot give {{p}} loot terras_partidas:mapas/{nome}",
                               titulo=titulo, icone="minecraft:filled_map")
 
+    def r_localizar(self, estrutura, titulo, dimensao="minecraft:the_nether"):
+        """Roda /locate e mostra as coordenadas no chat do jogador."""
+        return {"id": self._id("r"), "type": "command",
+                "command": f"/execute in {dimensao} run locate structure {estrutura}",
+                "elevate_perms": True, "silent": False,
+                "title": titulo, "icon": "minecraft:compass"}
+
+    def t_dimensao(self, dimensao, titulo=None):
+        t = {"id": self._id("t"), "type": "dimension", "dimension": dimensao}
+        if titulo:
+            t["title"] = titulo
+        return t
+
     def r_skill(self, skill):
         return self.r_item(livro_skill(skill))
 
@@ -678,6 +691,179 @@ def ato2():
     }
 
 
+
+# ---------------------------------------------------------------- ATO 3
+
+def ato3():
+    c = Capitulo("ato3")
+    M = "&6Mestre Vellan&r"
+    COORD = "&7Pegue a recompensa &festando no Nether&7: as coordenadas aparecem no chat. Aperte &eF3&7 para ver onde você está.&r"
+
+    c.quest("portal", "Abismo e Fogo", 0, 0, forma="gear", tamanho=1.75,
+            icone="minecraft:obsidian", deps=["@ato2/relatorio"],
+            subtitulo="Os fragmentos caíram no Nether",
+            descricao=[
+                f"{M}: \"Os últimos fragmentos atravessaram uma fenda e caíram no &cNether&r.\"",
+                "",
+                "&o\"Lá embaixo, três criaturas forjadas no fogo guardam cada uma um pedaço do Selo. E o calor dos fragmentos está acordando algo que deveria continuar dormindo...\"",
+                "",
+                "Construa um portal (obsidiana 4x5) e entre no Nether.",
+                "",
+                "&7Dica: use alguma peça de ouro na armadura. Os piglins não atacam quem usa ouro.&r",
+                "",
+                "&7Pegue a recompensa já dentro do Nether: ela mostra no chat as coordenadas da fortaleza mais próxima.&r",
+            ],
+            tarefas=[c.t_dimensao("minecraft:the_nether", "Entrar no Nether")],
+            recompensas=[c.r_item(pocao("minecraft:long_fire_resistance"), 3), c.r_item("minecraft:golden_helmet"),
+                         c.r_xp(5), c.r_localizar("betterfortresses:fortress", "Coordenadas de uma fortaleza")])
+
+    # ---- Apoio (em cima)
+    c.quest("fortaleza", "A Fortaleza Negra", -3, -3, icone="minecraft:nether_bricks", deps=["portal"],
+            descricao=["As fortalezas do Nether são cheias de blazes e esqueletos wither.",
+                       "Encontre uma. Você vai precisar voltar lá para o chefe final deste ato."],
+            tarefas=[c.t_estrutura("betterfortresses:fortress", "Encontrar uma fortaleza do Nether")],
+            recompensas=[c.r_xp(4), c.r_item(pocao("minecraft:healing"), 3)])
+
+    c.quest("blaze", "Varas de Blaze", -6, -3, icone="minecraft:blaze_rod", deps=["fortaleza"],
+            descricao=["Derrote blazes e junte &f8 varas de blaze&r.",
+                       "&7Guarde algumas: elas vão ser importantes no fim da jornada.&r"],
+            tarefas=[c.t_item("minecraft:blaze_rod", 8)],
+            recompensas=[c.r_xp(5), c.r_item("minecraft:ender_pearl", 4)])
+
+    c.quest("netherita", "Metal das Profundezas", 3, -3, icone="minecraft:netherite_ingot", deps=["portal"],
+            optional=True,
+            descricao=["&7Missão extra.&r Os &fdetritos antigos&r ficam escondidos no fundo do Nether. Faça um &flingote de netherita&r."],
+            tarefas=[c.t_item("minecraft:netherite_ingot")],
+            recompensas=[c.r_xp(8), c.r_item("minecraft:netherite_upgrade_smithing_template")])
+
+    # ---- Frente A: Forja das Almas (Monstruosidade de Netherita)
+    c.quest("forja", "A Forja das Almas", -4, 3, icone="minecraft:soul_lantern", deps=["portal"],
+            subtitulo="Primeira frente",
+            descricao=[f"{M}: \"Existe uma forja antiga, movida a almas, onde um colosso de netherita dorme dentro da lava. O fragmento caiu na fornalha dele.\"",
+                       "", COORD],
+            tarefas=[c.t_check("Pedir a localização da Forja")],
+            recompensas=[c.r_localizar("cataclysm:soul_black_smith", "Coordenadas da Forja das Almas")])
+
+    c.quest("forja_achar", "Chegando na Forja", -7, 3, icone="minecraft:soul_campfire", deps=["forja"],
+            descricao=["Vá até as coordenadas e encontre a &fForja das Almas&r."],
+            tarefas=[c.t_estrutura("cataclysm:soul_black_smith", "Encontrar a Forja das Almas")],
+            recompensas=[c.r_xp(4), c.r_item(pocao("minecraft:strength"), 2)])
+
+    c.quest("monstruosidade", "Chefe: Monstruosidade de Netherita", -10, 3, icone="minecraft:netherite_block",
+            deps=["forja_achar"], forma="octagon", tamanho=1.5,
+            descricao=["A &cMonstruosidade de Netherita&r acorda quando você chega perto.",
+                       "", "&7Dica: ela é lenta, mas cada golpe é devastador. Fique fora do alcance dos socos e cuidado com as bombas de lava.&r"],
+            tarefas=[c.t_matar("cataclysm:netherite_monstrosity", 1, "Derrotar a Monstruosidade de Netherita")],
+            recompensas=[c.r_item(fragmento(3, 1, 4)), c.r_skill("epicfight:endurance"), c.r_xp(12),
+                         c.r_item("minecraft:diamond", 4)])
+
+    # ---- Frente B: Arena Ardente (Ignis)
+    c.quest("arena", "A Arena Ardente", 4, 3, icone="minecraft:magma_block", deps=["portal"],
+            subtitulo="Segunda frente",
+            descricao=[f"{M}: \"Um campeão de fogo chamado &6Ignis&r guarda uma arena nos desertos do Nether. Ele só aparece para quem acende o &fAltar de Fogo&r.\"",
+                       "", COORD],
+            tarefas=[c.t_check("Pedir a localização da Arena")],
+            recompensas=[c.r_localizar("cataclysm:burning_arena", "Coordenadas da Arena Ardente")])
+
+    c.quest("arena_achar", "Chegando na Arena", 7, 3, icone="minecraft:blackstone", deps=["arena"],
+            descricao=["Vá até as coordenadas e encontre a &fArena Ardente&r."],
+            tarefas=[c.t_estrutura("cataclysm:burning_arena", "Encontrar a Arena Ardente")],
+            recompensas=[c.r_xp(4)])
+
+    c.quest("cinzas", "Cinzas Flamejantes", 10, 3, icone="cataclysm:burning_ashes", deps=["arena_achar"],
+            descricao=[f"{M} &7(por carta)&r: \"Mandei as &fCinzas Flamejantes&r. Use-as no &fAltar de Fogo&r, no centro da arena, para chamar Ignis.\"",
+                       "", "&7Equipamento recomendado: diamante encantado ou netherita. Leve muitas poções de resistência ao fogo.&r"],
+            tarefas=[c.t_check("Receber as Cinzas Flamejantes")],
+            recompensas=[c.r_item("cataclysm:burning_ashes"), c.r_item(pocao("minecraft:long_fire_resistance"), 2),
+                         c.r_item(pocao("minecraft:strong_healing"), 3)])
+
+    c.quest("ignis", "Chefe: Ignis", 13, 3, icone="cataclysm:burning_ashes",
+            deps=["cinzas"], forma="octagon", tamanho=1.5,
+            descricao=["Use as Cinzas Flamejantes no Altar de Fogo e derrote &cIgnis, o Campeão do Nether&r.",
+                       "", "&7Dica: ele tem três fases e fica mais rápido em cada uma. Na última, o escudo dele quebra: é a hora de atacar.&r"],
+            tarefas=[c.t_matar("cataclysm:ignis", 1, "Derrotar Ignis")],
+            recompensas=[c.r_item(fragmento(3, 2, 4)), c.r_skill("epicfight:berserker"), c.r_xp(12),
+                         c.r_item("minecraft:diamond", 4)])
+
+    c.quest("cinzas_extra", "Mais Cinzas", 13, 5, icone="cataclysm:burning_ashes",
+            deps=["cinzas"], forma="circle", tamanho=0.75, optional=True, can_repeat=True,
+            descricao=["Perdeu a luta? Troque &f8 cremes de magma&r por outras Cinzas Flamejantes."],
+            tarefas=[c.t_item("minecraft:magma_cream", 8, consumir=True)],
+            recompensas=[c.r_item("cataclysm:burning_ashes")])
+
+    # ---- Frente C: Manopla do Nether
+    c.quest("manopla", "A Mão de Ferro", 0, 5, icone="minecraft:iron_bars", deps=["portal"],
+            subtitulo="Terceira frente",
+            descricao=[f"{M}: \"Os piglins falam de uma &fmão gigante de metal&r que flutua numa arena e esmaga quem entra. Ela agarrou um fragmento quando ele caiu.\"",
+                       "", COORD],
+            tarefas=[c.t_check("Pedir a localização da Arena da Manopla")],
+            recompensas=[c.r_localizar("bosses_of_mass_destruction:gauntlet_arena", "Coordenadas da Arena da Manopla")])
+
+    c.quest("manopla_achar", "A Arena da Manopla", 0, 7.5, icone="minecraft:chiseled_polished_blackstone", deps=["manopla"],
+            descricao=["Vá até as coordenadas e encontre a &fArena da Manopla&r."],
+            tarefas=[c.t_estrutura("bosses_of_mass_destruction:gauntlet_arena", "Encontrar a Arena da Manopla")],
+            recompensas=[c.r_xp(4)])
+
+    c.quest("gauntlet", "Chefe: Manopla do Nether", 0, 10, icone="minecraft:iron_block",
+            deps=["manopla_achar"], forma="octagon", tamanho=1.5,
+            descricao=["Derrote a &cManopla do Nether&r.",
+                       "", "&7Dica: quando o olho vermelho dela brilhar, ela vai disparar um laser. Saia da linha de visão atrás de um pilar.&r"],
+            tarefas=[c.t_matar("bosses_of_mass_destruction:gauntlet", 1, "Derrotar a Manopla do Nether")],
+            recompensas=[c.r_item(fragmento(3, 3, 4)), c.r_skill("epicfight:emergency_escape"), c.r_xp(12),
+                         c.r_item("minecraft:diamond", 4)])
+
+    # ---- Chefe final: Wither
+    c.quest("despertar", "O Que Despertou", 0, 13, icone="minecraft:wither_skeleton_skull",
+            deps=["monstruosidade", "ignis", "gauntlet", "fortaleza"],
+            subtitulo="O mal antigo",
+            descricao=[f"{M}: \"Eu estava errado. O fragmento mais forte não caiu em uma criatura... caiu nos ossos dos &8esqueletos wither&r.\"",
+                       "",
+                       "&o\"Se juntarmos três crânios e o fragmento, o &8Wither&o desperta. É perigoso, mas é a única forma de arrancar o último pedaço do Selo do Nether.\"",
+                       "",
+                       "Junte &f3 crânios de esqueleto wither&r (das fortalezas) e &f4 areias das almas&r."],
+            tarefas=[c.t_item("minecraft:wither_skeleton_skull", 3, titulo="3 crânios de esqueleto wither"),
+                     c.t_item("minecraft:soul_sand", 4, titulo="4 areias das almas")],
+            recompensas=[c.r_item(pocao("minecraft:strong_healing"), 4), c.r_item(pocao("minecraft:strong_strength"), 2),
+                         c.r_item("minecraft:golden_apple", 4)])
+
+    c.quest("wither", "Chefe: O Wither", 0, 16, icone="minecraft:nether_star",
+            deps=["despertar"], forma="octagon", tamanho=2.0,
+            descricao=["Monte o &8Wither&r (4 areias das almas em T e os 3 crânios em cima) e derrote-o.",
+                       "",
+                       "&cImportante:&r invoque longe da sua base! Ele destrói tudo em volta.",
+                       "&7Dica: invoque no subsolo, num túnel apertado, para ele não fugir voando. Quando a vida dele cair pela metade, ele fica imune a flechas.&r"],
+            tarefas=[c.t_matar("minecraft:wither", 1, "Derrotar o Wither")],
+            recompensas=[c.r_item(fragmento(3, 4, 4)), c.r_skill("epicfight:death_harvest"), c.r_xp(20),
+                         c.r_item("minecraft:diamond", 6)])
+
+    c.quest("relatorio", "Relatório: Abismo e Fogo", 0, 19.5, icone="minecraft:amethyst_shard",
+            deps=["wither"], forma="gear", tamanho=2.0,
+            subtitulo="Fim do Ato 3",
+            descricao=[f"{M}: \"Onze fragmentos. O Selo está quase completo... e mesmo assim ele continua pulsando.\"",
+                       "",
+                       "&o\"Quando o Wither caiu, os fragmentos brilharam e apontaram para cima. Para o céu. Existem dois mundos acima das nuvens, o &bEverbright&o e o &6Everdawn&o, onde os guardiões originais criaram o Selo.\"",
+                       "",
+                       "&o\"Lá estão as respostas. E, eu temo, os guardiões que nunca morreram.\"",
+                       "",
+                       "&dFim do Ato 3. O Ato 4 &7(Além do Céu)&d chega em breve.&r"],
+            tarefas=[c.t_check("Entregar o relatório")],
+            recompensas=[c.r_item("minecraft:netherite_ingot"), c.r_item("minecraft:diamond", 8),
+                         c.r_item("minecraft:enchanted_golden_apple"), c.r_xp(25)])
+
+    return {
+        "id": qid("capitulo/ato3"),
+        "group": "",
+        "order_index": 2,
+        "filename": "ato_3_abismo_e_fogo",
+        "title": "Ato 3: Abismo e Fogo",
+        "subtitle": ["Os fragmentos do Nether"],
+        "icon": "minecraft:blaze_powder",
+        "default_quest_shape": "",
+        "default_hide_dependency_lines": False,
+        "quests": c.quests,
+    }
+
+
 # ---------------------------------------------------------------- arquivos
 
 def escrever(caminho, dados):
@@ -710,7 +896,7 @@ def main():
         "icon": "minecraft:amethyst_shard",
     })
     escrever("chapter_groups.snbt", {"chapter_groups": []})
-    for capitulo in (ato1(), ato2()):
+    for capitulo in (ato1(), ato2(), ato3()):
         escrever(f"chapters/{capitulo['filename']}.snbt", capitulo)
 
 

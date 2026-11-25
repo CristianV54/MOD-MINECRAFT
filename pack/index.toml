@@ -13,8 +13,24 @@ file = "config/ftbquests/quests/chapters/ato_2_terras_selvagens.snbt"
 hash = "5d4811d56d18f6c6e5a308b7026092602314193b565df9c5a567dbc3adc32c42"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/ato_3_abismo_e_fogo.snbt"
+hash = "47d0fa0eae02b7e63cb346a254197d90ba2ab60de9948d77a3aa068ecb87d041"
+
+[[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "db76d779c699910388681cd1426745b1874d59bca7a2e47e18298bea936dadfc"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/cataclysm/tags/worldgen/biome/has_structure/burning_arena_biomes.json"
+hash = "6eebfb61ce626634d52f9165d92d9a9e5563b9536daa303a0816cd8395c7841e"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/cataclysm/worldgen/structure_set/burning_arena.json"
+hash = "e4a12d086e1d4057e6c58caf665bcad5b8bd52f815769cdeeaa0164cd00fdbf4"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/cataclysm/worldgen/structure_set/soul_black_smith.json"
+hash = "05063959ab9cbcd676512a196121d0d50e2217791651a088d8cb15a979f5df74"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/mowziesmobs/tags/worldgen/biome/has_structure/has_mowzie_structure.json"
