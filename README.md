@@ -5,12 +5,12 @@ Modpack brasileiro de RPG com combate estilo souls, chefes, dungeons e uma hist�
 - **Versão:** Minecraft 1.20.1 com Forge 47.4.29
 - **Mods:** 110 no total (91 rodam no servidor e 19 só no jogador)
 - **Objetivo:** ser mais leve que o DawnCraft (305 mods) e rodar bem com 6 GB de RAM
-- **Estado:** base de mods pronta, **Atos 1 a 4 completos** (88 missões em português, com dragões). Só falta o Ato 5.
+- **Estado:** **história completa**, com 5 atos, 108 missões em português, 19 chefes de história, 2 desafios lendários e dragões. Ainda não foi jogada de ponta a ponta.
 
 ## O que já foi testado
 
 - Um servidor dedicado ligou com todos os mods de servidor em cerca de 35 segundos, gerou o mundo e desligou sem travar.
-- As 88 missões carregam sem erro, e o servidor mantém os IDs delas (o progresso dos jogadores não se perde entre atualizações).
+- As 108 missões carregam sem erro, e o servidor mantém os IDs delas (o progresso dos jogadores não se perde entre atualizações).
 - Todos os itens, chefes e estruturas citados nas missões existem nos mods.
 - Os 4 mapas do tesouro saem preenchidos, com o X no local certo. Na semente de teste: Câmara Forjada a 450 blocos, Frostmaw a 1.950, navio do Labirinto de Gelo a 1.910 e bosque do Umvuthi a 3.200.
 - **Ainda não foi testado:** abrir o jogo no PC (lado do jogador) e jogar as missões de verdade.
@@ -122,28 +122,50 @@ O relatório final dá 12 olhos do Ender e anuncia o Ato 5, no End. Na semente d
 
 Com o dragão do Ato 2 essas viagens ficam bem mais rápidas.
 
-## Rascunho da história
+## Ato 5: O Fim do Selo (pronto)
 
-> Há séculos, sete guardiões selaram um mal antigo dentro de um cristal: o **Selo**. O Selo se partiu, os fragmentos se espalharam pelo mundo e cada um corrompeu uma criatura poderosa. A **Ordem dos Caçadores** recruta você para recuperar os fragmentos antes que o mal desperte.
+Começa depois do relatório do Ato 4. São 20 missões: a jornada até o End, dois guardiões do vazio e o chefe final. Depois do final ficam dois desafios lendários opcionais.
 
-O **Mestre da Ordem**, um NPC criado com o Easy NPC, dá as missões principais. Cada ato termina com um chefe que guarda um fragmento do Selo. Recursos como bigorna, mesa de encantamento, Nether e End vão sendo liberados conforme a história avança, como o DawnCraft faz com o "Conhecimento".
+| Etapa | Local | Chefe | Habilidade ganha |
+|---|---|---|---|
+| O Vazio | Fortaleza do End (coordenadas no chat) | Dragão do Ender | Guarda de Impacto |
+| Primeiro guardião | Cidadela Arruinada no End (aparece perto do Altar do Vazio) | Guardião do Ender (Cataclysm) | Viciado em Adrenalina |
+| Segundo guardião | Arena de Obsidiana no End (Olhos do Ender nos altares) | Obsidilith (BOMD) | Quebra-Ossos |
+| Chefe final | Fábrica Antiga no subsolo (acorda com a Estrela do Nether do Wither) | O Arauto / The Harbinger (Cataclysm) | Catarse |
+| Desafio lendário | Cavernas verdes | Void Blossom (BOMD) | - |
+| Desafio lendário | Cidade Afundada no oceano (Sacrifício Abissal no Altar do Abismo) | O Leviatã (Cataclysm) | - |
 
-| Ato | Tema | Chefes (mod de origem) |
-|---|---|---|
-| 1. O Chamado | Começo, cavernas e vilas | Ferrous Wroughtnaut (Mowzie's), Bellringer (Meet Your Fight), Lord Pumpkinhead (Born in Chaos) |
-| 2. Terras Selvagens | Gelo, savana e mar | Frostmaw e Umvuthi (Mowzie's), Dame Fortuna (Meet Your Fight), Capitã Cornelia (Aquamirae) |
-| 3. Abismo e Fogo | Nether e profundezas | Netherite Monstrosity e Ignis (Cataclysm), Nether Gauntlet e Night Lich (BOMD) |
-| 4. Além do Céu | Dimensões do Blue Skies | Summoner, Alchemist, Starlit Crusher, Arachnarch (Blue Skies) |
-| 5. O Fim do Selo | End e chefe final | Ender Guardian (Cataclysm), Obsidilith e Void Blossom (BOMD), Dragão do End, The Leviathan ou Harbinger (Cataclysm) |
+Na semente de teste, as distâncias ficaram assim:
+- **Fortaleza do End:** 1.488 blocos.
+- **Cidadela:** 1.488 blocos, no End.
+- **Arena de Obsidiana:** 2.154 blocos, no End.
+- **Fábrica Antiga:** 1.329 blocos.
+- **Flor do Vazio:** 910 blocos.
+- **Cidade Afundada:** 5.543 blocos. É longe, mas é opcional e fica pra depois do final.
 
-**Classes (escolhidas na primeira missão):** Guerreiro, Tanque, Assassino, Mago e Caçador. Cada uma ganha um kit inicial e um ramo próprio na árvore de habilidades.
+**Atenção:** o YUNG's Better Strongholds substitui a fortaleza do End. O ID certo é `betterstrongholds:stronghold`.
 
-A ordem dos chefes e os nomes dos atos ainda são rascunho e podem mudar.
+## A história
+
+> Há trezentos anos, sete guardiões criaram o **Selo**, um cristal que prendia um mal antigo. O Selo se partiu, os fragmentos caíram pelo mundo e corromperam criaturas poderosas. O **Mestre Vellan**, da Ordem dos Caçadores, recruta o jogador para recuperar os 19 fragmentos.
+
+A história vai se revelando ato por ato:
+- **Atos 1 a 3:** o jogador recupera fragmentos no mundo normal e no Nether, até despertar o Wither.
+- **Ato 4:** descobre que os guardiões originais nunca morreram, mas enlouqueceram nos mundos acima das nuvens.
+- **Ato 5:** descobre que o mal antigo era uma máquina de guerra, o Arauto, cujo núcleo virou o último fragmento. Derrotar o Arauto completa o Selo.
+
+| Ato | Missões | Fragmentos | Chefes |
+|---|---|---|---|
+| 1. O Chamado | 23 | 3 | Swampjaw, Bellringer, Cavaleiro Forjado |
+| 2. Terras Selvagens | 26 | 4 | Frostmaw, Umvuthi, Capitã Cornelia, Dame Fortuna |
+| 3. Abismo e Fogo | 18 | 4 | Monstruosidade de Netherita, Ignis, Manopla do Nether, Wither |
+| 4. Além do Céu | 21 | 4 | Summoner, Starlit Crusher, Alchemist, Arachnarch |
+| 5. O Fim do Selo | 20 | 4 | Dragão do Ender, Guardião do Ender, Obsidilith, O Arauto |
 
 ## Próximos passos
 
-1. Testar no PC e ajustar o que pesar ou bugar.
-2. Escrever o Ato 5 (O Fim do Selo, no End) e colocar o Mestre Vellan no mundo como NPC (Easy NPC).
+1. Jogar no PC de ponta a ponta e ajustar o que pesar, bugar ou ficar desequilibrado.
+2. Colocar o Mestre Vellan no mundo como NPC (Easy NPC).
 3. Montar a árvore de habilidades de cada classe (Pufferfish's Skills).
 4. Fazer a tradução PT-BR dos mods que não têm português.
 5. Configurar dificuldade, drops e o bloqueio de progressão.

@@ -1,0 +1,839 @@
+{
+	id: "483B368262F78DCE"
+	group: ""
+	order_index: 4
+	filename: "ato_5_o_fim_do_selo"
+	title: "Ato 5: O Fim do Selo"
+	subtitle: ["A última batalha"]
+	icon: "minecraft:ender_eye"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "3F15D31F3EA65D8E"
+			title: "O Fim do Selo"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "A última jornada"
+			icon: "minecraft:ender_eye"
+			shape: "gear"
+			size: 1.75d
+			description: ["&6Mestre Vellan&r: \"Quinze fragmentos. Falta pouco.\"", "", "&o\"O Selo foi quebrado no &5End&o, e é lá que ele precisa ser refeito. Mas o Dragão guarda o portal do outro lado, e outros dois guardiões do vazio esperam por você.\"", "", "&o\"Encontre a fortaleza escondida no subsolo. Jogue um Olho do Ender para o alto e siga para onde ele voar.\"", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
+			dependencies: ["75ACF07311A3832B"]
+			tasks: [
+				{
+					id: "0DE0C8C16F1F7CA4"
+					type: "checkmark"
+					title: "Começar a última jornada"
+				}
+			]
+			rewards: [
+				{
+					id: "67ED024CD7035B7A"
+					type: "command"
+					command: "/execute in minecraft:overworld run locate structure betterstrongholds:stronghold"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas da fortaleza do End"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "26364894FF255419"
+					type: "item"
+					item: "minecraft:ender_eye"
+					count: 4
+				}
+				{
+					id: "2884643A278EFB05"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "645013493FDF4013"
+			title: "A Fortaleza Escondida"
+			x: 3.0d
+			y: 0.0d
+			icon: "minecraft:end_portal_frame"
+			description: ["Encontre a &ffortaleza&r e a sala do portal do End.", "Coloque Olhos do Ender em todas as molduras para ativar o portal."]
+			dependencies: ["3F15D31F3EA65D8E"]
+			tasks: [
+				{
+					id: "4223FCB556DB48B5"
+					type: "structure"
+					structure: "betterstrongholds:stronghold"
+					title: "Encontrar a fortaleza"
+				}
+			]
+			rewards: [
+				{
+					id: "28DC950D9BA91643"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "0506F8DDB5C65D28"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_slow_falling"
+						}
+					}
+					count: 3
+				}
+			]
+		}
+		{
+			id: "4E4024EA03E0B327"
+			title: "O Vazio"
+			x: 6.0d
+			y: 0.0d
+			icon: "minecraft:end_stone"
+			description: ["Atravesse o portal e entre no &5End&r.", "", "&7Dica: leve blocos para construir, uma abóbora na cabeça (os endermen não te atacam se você olhar para eles) e muitas flechas para destruir os cristais.&r"]
+			dependencies: ["645013493FDF4013"]
+			tasks: [
+				{
+					id: "63A9088EEC6D68D8"
+					type: "dimension"
+					dimension: "minecraft:the_end"
+					title: "Entrar no End"
+				}
+			]
+			rewards: [
+				{
+					id: "7953BC967AE8B381"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "1C038D4D7104CFFF"
+					type: "item"
+					item: "minecraft:carved_pumpkin"
+				}
+			]
+		}
+		{
+			id: "5171C3E6F46EE884"
+			title: "Chefe: Dragão do Ender"
+			x: 9.0d
+			y: 0.0d
+			icon: "minecraft:dragon_head"
+			shape: "octagon"
+			size: 1.75d
+			description: ["Destrua os cristais no topo das torres de obsidiana e derrote o &5Dragão do Ender&r.", "", "&7Dica: quando ele pousar no centro, é a hora de atacar de perto. Cuidado com o sopro roxo no chão.&r"]
+			dependencies: ["4E4024EA03E0B327"]
+			tasks: [
+				{
+					id: "51BE562937B217C6"
+					type: "kill"
+					entity: "minecraft:ender_dragon"
+					value: 1L
+					title: "Derrotar o Dragão do Ender"
+				}
+			]
+			rewards: [
+				{
+					id: "0BFBF0BE7B2617A2"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "{\"text\": \"Fragmento do Selo\", \"color\": \"light_purple\", \"italic\": false}"
+								Lore: ["{\"text\": \"Ato 5: fragmento 1 de 4.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Um pedaço do cristal que prendia o mal antigo.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Ainda está quente ao toque.\", \"color\": \"gray\", \"italic\": true}"]
+							}
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 1s
+								}
+							]
+							HideFlags: 1
+						}
+					}
+				}
+				{
+					id: "6DB3355733ED9FDC"
+					type: "item"
+					item: {
+						id: "epicfight:skillbook"
+						Count: 1b
+						tag: {
+							skill: "epicfight:impact_guard"
+						}
+					}
+				}
+				{
+					id: "4ED6EE5D4ACBD617"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "1EC52405EA29B920"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 6
+				}
+			]
+		}
+		{
+			id: "6B1C043EF1A10868"
+			title: "Asas do Fim"
+			x: 12.0d
+			y: -3.0d
+			icon: "minecraft:elytra"
+			description: ["&7Missão extra.&r Nas ilhas de fora existem cidades do End, e algumas têm navios com &fasas&r (élitros). Consiga um par."]
+			dependencies: ["5171C3E6F46EE884"]
+			optional: true
+			tasks: [
+				{
+					id: "54EF72447540273B"
+					type: "item"
+					item: "minecraft:elytra"
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "1F100DDADD2F1A0D"
+					type: "item"
+					item: "minecraft:firework_rocket"
+					count: 32
+				}
+				{
+					id: "1AB3D1661E12942B"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+		{
+			id: "5A1148C35F3CCAEF"
+			title: "A Cidadela Arruinada"
+			x: 12.0d
+			y: 0.0d
+			subtitle: "Primeiro guardião do vazio"
+			icon: "minecraft:purpur_block"
+			description: ["&6Mestre Vellan&r: \"Nas ilhas distantes do End existe uma cidadela em ruínas. O &fGuardião do Ender&r vigia um altar no coração dela.\"", "", "&7Para chegar às ilhas de fora, use o portal pequeno que aparece depois que o Dragão morre (jogue uma pérola do Ender nele).&r", "", "&7Pegue a recompensa &festando no End&7: as coordenadas aparecem no chat.&r"]
+			dependencies: ["5171C3E6F46EE884"]
+			tasks: [
+				{
+					id: "6B0689018CAA91AF"
+					type: "checkmark"
+					title: "Pedir a localização da Cidadela"
+				}
+			]
+			rewards: [
+				{
+					id: "4D1DA3D983F7E666"
+					type: "command"
+					command: "/execute in minecraft:the_end run locate structure cataclysm:ruined_citadel"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas da Cidadela Arruinada"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "73560024108CC5D1"
+					type: "item"
+					item: "minecraft:ender_pearl"
+					count: 8
+				}
+			]
+		}
+		{
+			id: "4539DAADCFF61EFC"
+			title: "Dentro da Cidadela"
+			x: 15.0d
+			y: 0.0d
+			icon: "minecraft:end_stone_bricks"
+			description: ["Vá até as coordenadas e entre na &fCidadela Arruinada&r.", "&7Cuidado com os Golens do Ender pelo caminho.&r"]
+			dependencies: ["5A1148C35F3CCAEF"]
+			tasks: [
+				{
+					id: "7AB554DEDD2D4E9A"
+					type: "structure"
+					structure: "cataclysm:ruined_citadel"
+					title: "Encontrar a Cidadela Arruinada"
+				}
+			]
+			rewards: [
+				{
+					id: "62FFD3F4D763466E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "3CC4BBE12867254E"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strong_healing"
+						}
+					}
+					count: 3
+				}
+			]
+		}
+		{
+			id: "271B4CCE60F7E22F"
+			title: "Chefe: Guardião do Ender"
+			x: 18.0d
+			y: 0.0d
+			icon: "minecraft:end_crystal"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Chegue perto do &fAltar do Vazio&r no centro da cidadela. O &cGuardião do Ender&r vai aparecer.", "", "&7Dica: ele invoca runas do vazio no chão. Não fique parado em cima delas.&r"]
+			dependencies: ["4539DAADCFF61EFC"]
+			tasks: [
+				{
+					id: "60E29BF1A7B359AE"
+					type: "kill"
+					entity: "cataclysm:ender_guardian"
+					value: 1L
+					title: "Derrotar o Guardião do Ender"
+				}
+			]
+			rewards: [
+				{
+					id: "5A7E19C7CFF6F5FF"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "{\"text\": \"Fragmento do Selo\", \"color\": \"light_purple\", \"italic\": false}"
+								Lore: ["{\"text\": \"Ato 5: fragmento 2 de 4.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Um pedaço do cristal que prendia o mal antigo.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Ainda está quente ao toque.\", \"color\": \"gray\", \"italic\": true}"]
+							}
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 1s
+								}
+							]
+							HideFlags: 1
+						}
+					}
+				}
+				{
+					id: "7A1FF3E597AE405E"
+					type: "item"
+					item: {
+						id: "epicfight:skillbook"
+						Count: 1b
+						tag: {
+							skill: "epicfight:adrenaline_fiend"
+						}
+					}
+				}
+				{
+					id: "704452BD27D1C0C3"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "369A0F7A3E35CB22"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 6
+				}
+			]
+		}
+		{
+			id: "53188B756916E94C"
+			title: "O Monolito Negro"
+			x: 12.0d
+			y: 3.0d
+			subtitle: "Segundo guardião do vazio"
+			icon: "minecraft:obsidian"
+			description: ["&6Mestre Vellan&r: \"Existe um monolito vivo de obsidiana, o &fObsidilith&r. Ele dorme numa arena cercada de altares. Para acordá-lo, coloque &fOlhos do Ender&r nos altares.\"", "", "&7Pegue a recompensa &festando no End&7: as coordenadas aparecem no chat.&r"]
+			dependencies: ["5171C3E6F46EE884"]
+			tasks: [
+				{
+					id: "7437DA70D05CB996"
+					type: "checkmark"
+					title: "Pedir a localização da Arena de Obsidiana"
+				}
+			]
+			rewards: [
+				{
+					id: "2EEDE5229449F1BB"
+					type: "command"
+					command: "/execute in minecraft:the_end run locate structure bosses_of_mass_destruction:obsidilith_arena"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas da Arena de Obsidiana"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "4A2AD6B63FFCFEF7"
+					type: "item"
+					item: "minecraft:ender_eye"
+					count: 4
+				}
+			]
+		}
+		{
+			id: "42B49E61F973B954"
+			title: "A Arena de Obsidiana"
+			x: 15.0d
+			y: 3.0d
+			icon: "minecraft:crying_obsidian"
+			description: ["Vá até as coordenadas e encontre a &fArena de Obsidiana&r."]
+			dependencies: ["53188B756916E94C"]
+			tasks: [
+				{
+					id: "4DBBF125E6128633"
+					type: "structure"
+					structure: "bosses_of_mass_destruction:obsidilith_arena"
+					title: "Encontrar a Arena de Obsidiana"
+				}
+			]
+			rewards: [
+				{
+					id: "078C18CB77FB245D"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "52AC667E6ADB8873"
+			title: "Chefe: Obsidilith"
+			x: 18.0d
+			y: 3.0d
+			icon: "minecraft:obsidian"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Coloque os Olhos do Ender nos &faltares de obsidiana&r e derrote o &cObsidilith&r.", "", "&7Dica: ele não se mexe, mas atira pilares e ondas de choque. Quando ele brilhar, se afaste.&r"]
+			dependencies: ["42B49E61F973B954"]
+			tasks: [
+				{
+					id: "72367F5B89E86397"
+					type: "kill"
+					entity: "bosses_of_mass_destruction:obsidilith"
+					value: 1L
+					title: "Derrotar o Obsidilith"
+				}
+			]
+			rewards: [
+				{
+					id: "4A69BB4299AA402F"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "{\"text\": \"Fragmento do Selo\", \"color\": \"light_purple\", \"italic\": false}"
+								Lore: ["{\"text\": \"Ato 5: fragmento 3 de 4.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Um pedaço do cristal que prendia o mal antigo.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Ainda está quente ao toque.\", \"color\": \"gray\", \"italic\": true}"]
+							}
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 1s
+								}
+							]
+							HideFlags: 1
+						}
+					}
+				}
+				{
+					id: "6852589991256BD8"
+					type: "item"
+					item: {
+						id: "epicfight:skillbook"
+						Count: 1b
+						tag: {
+							skill: "epicfight:bonebreaker"
+						}
+					}
+				}
+				{
+					id: "6D803AE1220D97F9"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "68979DC1F715DD28"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 6
+				}
+			]
+		}
+		{
+			id: "4A43B5CEC5CA9494"
+			title: "A Verdade sobre o Selo"
+			x: 21.0d
+			y: 1.5d
+			subtitle: "O último fragmento"
+			icon: "minecraft:nether_star"
+			shape: "hexagon"
+			size: 1.5d
+			description: ["&6Mestre Vellan&r: \"Dezoito fragmentos... e o Selo ainda não fecha. Falta o coração dele.\"", "", "&o\"Agora eu entendo. O mal antigo nunca foi um monstro. Era uma máquina de guerra, o &cArauto&o, construída para destruir o mundo. Os guardiões não conseguiram destruí-la, então a desligaram e usaram o próprio núcleo dela como último fragmento do Selo.\"", "", "&o\"Ela está numa fábrica antiga, enterrada fundo nas cavernas. Para despertá-la e arrancar o fragmento, é preciso o poder de uma &fEstrela do Nether&o. A mesma que você tirou do Wither.\"", "", "Tenha uma &fEstrela do Nether&r no inventário.", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
+			dependencies: ["271B4CCE60F7E22F", "52AC667E6ADB8873"]
+			tasks: [
+				{
+					id: "22D853FD188DF999"
+					type: "item"
+					item: "minecraft:nether_star"
+					count: 1L
+					title: "Ter uma Estrela do Nether"
+				}
+			]
+			rewards: [
+				{
+					id: "43F21FE98B40E89D"
+					type: "command"
+					command: "/execute in minecraft:overworld run locate structure cataclysm:ancient_factory"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas da Fábrica Antiga"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "5042F9A401CB6F61"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strong_healing"
+						}
+					}
+					count: 4
+				}
+				{
+					id: "21367CC472C1EEB9"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strong_strength"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "0D38E1B21EED5A0D"
+					type: "item"
+					item: "minecraft:enchanted_golden_apple"
+					count: 2
+				}
+			]
+		}
+		{
+			id: "7CEEF225CBD59975"
+			title: "A Fábrica Antiga"
+			x: 24.0d
+			y: 1.5d
+			icon: "minecraft:redstone_block"
+			description: ["Vá até as coordenadas. A &fFábrica Antiga&r fica no subsolo, em cavernas profundas.", "&7Leve tochas e uma picareta boa.&r"]
+			dependencies: ["4A43B5CEC5CA9494"]
+			tasks: [
+				{
+					id: "4D1688020B183EC7"
+					type: "structure"
+					structure: "cataclysm:ancient_factory"
+					title: "Encontrar a Fábrica Antiga"
+				}
+			]
+			rewards: [
+				{
+					id: "5421FF9569D38723"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "07409C87B9FB6E33"
+			title: "Chefe Final: O Arauto"
+			x: 27.0d
+			y: 1.5d
+			icon: "minecraft:wither_skeleton_skull"
+			shape: "octagon"
+			size: 2.25d
+			description: ["No centro da fábrica está o &cArauto&r, desligado.", "Clique nele com a &fEstrela do Nether&r na mão para despertá-lo e derrote-o.", "", "&7Dica: ele dispara mísseis teleguiados e lasers. Use pilares como cobertura, e na segunda fase fique perto dele: os lasers são piores de longe.&r"]
+			dependencies: ["7CEEF225CBD59975"]
+			tasks: [
+				{
+					id: "1E463B71A328A812"
+					type: "kill"
+					entity: "cataclysm:the_harbinger"
+					value: 1L
+					title: "Derrotar o Arauto"
+				}
+			]
+			rewards: [
+				{
+					id: "777F3242F1AD99B1"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "{\"text\": \"Fragmento do Selo\", \"color\": \"light_purple\", \"italic\": false}"
+								Lore: ["{\"text\": \"Ato 5: fragmento 4 de 4.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Um pedaço do cristal que prendia o mal antigo.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Ainda está quente ao toque.\", \"color\": \"gray\", \"italic\": true}"]
+							}
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 1s
+								}
+							]
+							HideFlags: 1
+						}
+					}
+				}
+				{
+					id: "26FB7E886157AC70"
+					type: "item"
+					item: {
+						id: "epicfight:skillbook"
+						Count: 1b
+						tag: {
+							skill: "epicfight:catharsis"
+						}
+					}
+				}
+				{
+					id: "404E3D326C2EFBD7"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+				{
+					id: "64C12B5754D683AC"
+					type: "item"
+					item: "minecraft:netherite_ingot"
+					count: 2
+				}
+			]
+		}
+		{
+			id: "5D30ADB7458E563B"
+			title: "O Selo Restaurado"
+			x: 30.0d
+			y: 1.5d
+			subtitle: "Fim da história"
+			icon: "minecraft:beacon"
+			shape: "gear"
+			size: 2.5d
+			description: ["&6Mestre Vellan&r: \"Dezenove fragmentos. O Selo está inteiro de novo.\"", "", "&o\"Quando você colocou o último pedaço no lugar, o cristal brilhou mais forte do que qualquer coisa que eu já vi. O Arauto virou pó. Os guardiões caídos podem finalmente descansar.\"", "", "&o\"Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez. As Terras Partidas estão inteiras de novo, graças a você.\"", "", "&6&lObrigado por jogar Terras Partidas!&r", "", "&7Ainda tem os &fDesafios Lendários&7 ao lado, para quem quer mais.&r"]
+			dependencies: ["07409C87B9FB6E33"]
+			tasks: [
+				{
+					id: "60BE85FC479F85D0"
+					type: "checkmark"
+					title: "Restaurar o Selo"
+				}
+			]
+			rewards: [
+				{
+					id: "3D8585932BA390BD"
+					type: "item"
+					item: "minecraft:beacon"
+				}
+				{
+					id: "55EB88BCC46102A4"
+					type: "item"
+					item: "minecraft:netherite_ingot"
+					count: 4
+				}
+				{
+					id: "39D1FB05FAFFD943"
+					type: "item"
+					item: "minecraft:enchanted_golden_apple"
+					count: 4
+				}
+				{
+					id: "289B4D94E5D7A19E"
+					type: "item"
+					item: "minecraft:diamond_block"
+					count: 8
+				}
+				{
+					id: "59789EA2B846B57A"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+			]
+		}
+		{
+			id: "649B209061CE456E"
+			title: "Desafios Lendários"
+			x: 30.0d
+			y: 6.0d
+			icon: "minecraft:dragon_egg"
+			shape: "hexagon"
+			description: ["&7Para quem ainda quer mais.&r Dois monstros antigos ainda vagam pelo mundo. Nenhum guarda fragmentos, só glória."]
+			dependencies: ["5D30ADB7458E563B"]
+			optional: true
+			tasks: [
+				{
+					id: "745975FCFE12F59C"
+					type: "checkmark"
+					title: "Aceitar os desafios"
+				}
+			]
+			rewards: [
+				{
+					id: "256A12507216A872"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "4B879F1DD11BBDE4"
+			title: "A Flor do Vazio"
+			x: 27.0d
+			y: 8.5d
+			icon: "minecraft:spore_blossom"
+			description: ["Nas cavernas verdes e úmidas cresce uma flor gigante e carnívora, a &cVoid Blossom&r.", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
+			dependencies: ["649B209061CE456E"]
+			optional: true
+			tasks: [
+				{
+					id: "1E2DFC22237F6FF8"
+					type: "checkmark"
+					title: "Pedir a localização"
+				}
+			]
+			rewards: [
+				{
+					id: "1160CAED15C3AC19"
+					type: "command"
+					command: "/execute in minecraft:overworld run locate structure bosses_of_mass_destruction:void_blossom"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas da Flor do Vazio"
+					icon: "minecraft:compass"
+				}
+			]
+		}
+		{
+			id: "2CA80BCF97964759"
+			title: "Lendário: Void Blossom"
+			x: 27.0d
+			y: 11.0d
+			icon: "minecraft:spore_blossom"
+			shape: "octagon"
+			size: 1.25d
+			description: ["Derrote a &cVoid Blossom&r.", "&7Dica: ela solta espinhos do chão. Fique se movendo.&r"]
+			dependencies: ["4B879F1DD11BBDE4"]
+			optional: true
+			tasks: [
+				{
+					id: "7115C02EF6A1DCD7"
+					type: "kill"
+					entity: "bosses_of_mass_destruction:void_blossom"
+					value: 1L
+					title: "Derrotar a Void Blossom"
+				}
+			]
+			rewards: [
+				{
+					id: "5A645DB8CB766764"
+					type: "item"
+					item: "minecraft:diamond_block"
+					count: 4
+				}
+				{
+					id: "57D0A749FAB24E90"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+		}
+		{
+			id: "30174A75CA9ADA58"
+			title: "A Cidade Afundada"
+			x: 33.0d
+			y: 8.5d
+			icon: "minecraft:prismarine_bricks"
+			description: ["No fundo do oceano existe uma cidade afundada. No altar dela, um &cLeviatã&r espera ser chamado.", "", "Use o &fSacrifício Abissal&r no &fAltar do Abismo&r da cidade para chamá-lo.", "&7Ele é invencível fora da água. Leve poções de respiração aquática.&r", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
+			dependencies: ["649B209061CE456E"]
+			optional: true
+			tasks: [
+				{
+					id: "2C9ED2C47399E130"
+					type: "checkmark"
+					title: "Pedir a localização"
+				}
+			]
+			rewards: [
+				{
+					id: "11BA30BD690DCC66"
+					type: "command"
+					command: "/execute in minecraft:overworld run locate structure cataclysm:sunken_city"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas da Cidade Afundada"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "0CD76E3D692AEBBA"
+					type: "item"
+					item: "cataclysm:abyssal_sacrifice"
+				}
+				{
+					id: "3172874B5E521927"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_water_breathing"
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "025CC0FAC279BC9F"
+			title: "Lendário: O Leviatã"
+			x: 33.0d
+			y: 11.0d
+			icon: "minecraft:heart_of_the_sea"
+			shape: "octagon"
+			size: 1.25d
+			description: ["Derrote &cO Leviatã&r."]
+			dependencies: ["30174A75CA9ADA58"]
+			optional: true
+			tasks: [
+				{
+					id: "52E76A37E96DF489"
+					type: "kill"
+					entity: "cataclysm:the_leviathan"
+					value: 1L
+					title: "Derrotar o Leviatã"
+				}
+			]
+			rewards: [
+				{
+					id: "6EEEADB759D50370"
+					type: "item"
+					item: "minecraft:diamond_block"
+					count: 4
+				}
+				{
+					id: "1176EC2F01BBDD07"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+		}
+	]
+}

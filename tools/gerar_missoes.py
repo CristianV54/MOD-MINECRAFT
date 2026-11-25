@@ -996,6 +996,204 @@ def ato4():
     }
 
 
+
+# ---------------------------------------------------------------- ATO 5
+
+def ato5():
+    c = Capitulo("ato5")
+    M = "&6Mestre Vellan&r"
+    END, OW = "minecraft:the_end", "minecraft:overworld"
+
+    def coord(onde):
+        return f"&7Pegue a recompensa &f{onde}&7: as coordenadas aparecem no chat.&r"
+
+    c.quest("fim", "O Fim do Selo", 0, 0, forma="gear", tamanho=1.75,
+            icone="minecraft:ender_eye", deps=["@ato4/relatorio"],
+            subtitulo="A última jornada",
+            descricao=[
+                f"{M}: \"Quinze fragmentos. Falta pouco.\"",
+                "",
+                "&o\"O Selo foi quebrado no &5End&o, e é lá que ele precisa ser refeito. Mas o Dragão guarda o portal do outro lado, e outros dois guardiões do vazio esperam por você.\"",
+                "",
+                "&o\"Encontre a fortaleza escondida no subsolo. Jogue um Olho do Ender para o alto e siga para onde ele voar.\"",
+                "",
+                coord("no mundo normal"),
+            ],
+            tarefas=[c.t_check("Começar a última jornada")],
+            recompensas=[c.r_localizar("betterstrongholds:stronghold", "Coordenadas da fortaleza do End", dimensao=OW),
+                         c.r_item("minecraft:ender_eye", 4), c.r_xp(5)])
+
+    c.quest("fortaleza", "A Fortaleza Escondida", 3, 0, icone="minecraft:end_portal_frame", deps=["fim"],
+            descricao=["Encontre a &ffortaleza&r e a sala do portal do End.",
+                       "Coloque Olhos do Ender em todas as molduras para ativar o portal."],
+            tarefas=[c.t_estrutura("betterstrongholds:stronghold", "Encontrar a fortaleza")],
+            recompensas=[c.r_xp(5), c.r_item(pocao("minecraft:long_slow_falling"), 3)])
+
+    c.quest("end", "O Vazio", 6, 0, icone="minecraft:end_stone", deps=["fortaleza"],
+            descricao=["Atravesse o portal e entre no &5End&r.",
+                       "", "&7Dica: leve blocos para construir, uma abóbora na cabeça (os endermen não te atacam se você olhar para eles) e muitas flechas para destruir os cristais.&r"],
+            tarefas=[c.t_dimensao(END, "Entrar no End")],
+            recompensas=[c.r_xp(5), c.r_item("minecraft:carved_pumpkin")])
+
+    c.quest("dragao", "Chefe: Dragão do Ender", 9, 0, icone="minecraft:dragon_head",
+            deps=["end"], forma="octagon", tamanho=1.75,
+            descricao=["Destrua os cristais no topo das torres de obsidiana e derrote o &5Dragão do Ender&r.",
+                       "", "&7Dica: quando ele pousar no centro, é a hora de atacar de perto. Cuidado com o sopro roxo no chão.&r"],
+            tarefas=[c.t_matar("minecraft:ender_dragon", 1, "Derrotar o Dragão do Ender")],
+            recompensas=[c.r_item(fragmento(5, 1, 4)), c.r_skill("epicfight:impact_guard"), c.r_xp(20),
+                         c.r_item("minecraft:diamond", 6)])
+
+    c.quest("elytra", "Asas do Fim", 12, -3, icone="minecraft:elytra", deps=["dragao"], optional=True,
+            descricao=["&7Missão extra.&r Nas ilhas de fora existem cidades do End, e algumas têm navios com &fasas&r (élitros). Consiga um par."],
+            tarefas=[c.t_item("minecraft:elytra")],
+            recompensas=[c.r_item("minecraft:firework_rocket", 32), c.r_xp(10)])
+
+    # ---- Cidadela Arruinada (Ender Guardian)
+    c.quest("cidadela", "A Cidadela Arruinada", 12, 0, icone="minecraft:purpur_block", deps=["dragao"],
+            subtitulo="Primeiro guardião do vazio",
+            descricao=[f"{M}: \"Nas ilhas distantes do End existe uma cidadela em ruínas. O &fGuardião do Ender&r vigia um altar no coração dela.\"",
+                       "", "&7Para chegar às ilhas de fora, use o portal pequeno que aparece depois que o Dragão morre (jogue uma pérola do Ender nele).&r",
+                       "", coord("estando no End")],
+            tarefas=[c.t_check("Pedir a localização da Cidadela")],
+            recompensas=[c.r_localizar("cataclysm:ruined_citadel", "Coordenadas da Cidadela Arruinada", dimensao=END),
+                         c.r_item("minecraft:ender_pearl", 8)])
+
+    c.quest("cidadela_achar", "Dentro da Cidadela", 15, 0, icone="minecraft:end_stone_bricks", deps=["cidadela"],
+            descricao=["Vá até as coordenadas e entre na &fCidadela Arruinada&r.",
+                       "&7Cuidado com os Golens do Ender pelo caminho.&r"],
+            tarefas=[c.t_estrutura("cataclysm:ruined_citadel", "Encontrar a Cidadela Arruinada")],
+            recompensas=[c.r_xp(5), c.r_item(pocao("minecraft:strong_healing"), 3)])
+
+    c.quest("ender_guardian", "Chefe: Guardião do Ender", 18, 0, icone="minecraft:end_crystal",
+            deps=["cidadela_achar"], forma="octagon", tamanho=1.5,
+            descricao=["Chegue perto do &fAltar do Vazio&r no centro da cidadela. O &cGuardião do Ender&r vai aparecer.",
+                       "", "&7Dica: ele invoca runas do vazio no chão. Não fique parado em cima delas.&r"],
+            tarefas=[c.t_matar("cataclysm:ender_guardian", 1, "Derrotar o Guardião do Ender")],
+            recompensas=[c.r_item(fragmento(5, 2, 4)), c.r_skill("epicfight:adrenaline_fiend"), c.r_xp(20),
+                         c.r_item("minecraft:diamond", 6)])
+
+    # ---- Arena de Obsidiana (Obsidilith)
+    c.quest("arena", "O Monolito Negro", 12, 3, icone="minecraft:obsidian", deps=["dragao"],
+            subtitulo="Segundo guardião do vazio",
+            descricao=[f"{M}: \"Existe um monolito vivo de obsidiana, o &fObsidilith&r. Ele dorme numa arena cercada de altares. Para acordá-lo, coloque &fOlhos do Ender&r nos altares.\"",
+                       "", coord("estando no End")],
+            tarefas=[c.t_check("Pedir a localização da Arena de Obsidiana")],
+            recompensas=[c.r_localizar("bosses_of_mass_destruction:obsidilith_arena", "Coordenadas da Arena de Obsidiana", dimensao=END),
+                         c.r_item("minecraft:ender_eye", 4)])
+
+    c.quest("arena_achar", "A Arena de Obsidiana", 15, 3, icone="minecraft:crying_obsidian", deps=["arena"],
+            descricao=["Vá até as coordenadas e encontre a &fArena de Obsidiana&r."],
+            tarefas=[c.t_estrutura("bosses_of_mass_destruction:obsidilith_arena", "Encontrar a Arena de Obsidiana")],
+            recompensas=[c.r_xp(5)])
+
+    c.quest("obsidilith", "Chefe: Obsidilith", 18, 3, icone="minecraft:obsidian",
+            deps=["arena_achar"], forma="octagon", tamanho=1.5,
+            descricao=["Coloque os Olhos do Ender nos &faltares de obsidiana&r e derrote o &cObsidilith&r.",
+                       "", "&7Dica: ele não se mexe, mas atira pilares e ondas de choque. Quando ele brilhar, se afaste.&r"],
+            tarefas=[c.t_matar("bosses_of_mass_destruction:obsidilith", 1, "Derrotar o Obsidilith")],
+            recompensas=[c.r_item(fragmento(5, 3, 4)), c.r_skill("epicfight:bonebreaker"), c.r_xp(20),
+                         c.r_item("minecraft:diamond", 6)])
+
+    # ---- Chefe final: The Harbinger
+    c.quest("revelacao", "A Verdade sobre o Selo", 21, 1.5, icone="minecraft:nether_star",
+            deps=["ender_guardian", "obsidilith"], forma="hexagon", tamanho=1.5,
+            subtitulo="O último fragmento",
+            descricao=[f"{M}: \"Dezoito fragmentos... e o Selo ainda não fecha. Falta o coração dele.\"",
+                       "",
+                       "&o\"Agora eu entendo. O mal antigo nunca foi um monstro. Era uma máquina de guerra, o &cArauto&o, construída para destruir o mundo. Os guardiões não conseguiram destruí-la, então a desligaram e usaram o próprio núcleo dela como último fragmento do Selo.\"",
+                       "",
+                       "&o\"Ela está numa fábrica antiga, enterrada fundo nas cavernas. Para despertá-la e arrancar o fragmento, é preciso o poder de uma &fEstrela do Nether&o. A mesma que você tirou do Wither.\"",
+                       "",
+                       "Tenha uma &fEstrela do Nether&r no inventário.",
+                       "", coord("no mundo normal")],
+            tarefas=[c.t_item("minecraft:nether_star", titulo="Ter uma Estrela do Nether")],
+            recompensas=[c.r_localizar("cataclysm:ancient_factory", "Coordenadas da Fábrica Antiga", dimensao=OW),
+                         c.r_item(pocao("minecraft:strong_healing"), 4), c.r_item(pocao("minecraft:strong_strength"), 2),
+                         c.r_item("minecraft:enchanted_golden_apple", 2)])
+
+    c.quest("fabrica", "A Fábrica Antiga", 24, 1.5, icone="minecraft:redstone_block", deps=["revelacao"],
+            descricao=["Vá até as coordenadas. A &fFábrica Antiga&r fica no subsolo, em cavernas profundas.",
+                       "&7Leve tochas e uma picareta boa.&r"],
+            tarefas=[c.t_estrutura("cataclysm:ancient_factory", "Encontrar a Fábrica Antiga")],
+            recompensas=[c.r_xp(5)])
+
+    c.quest("harbinger", "Chefe Final: O Arauto", 27, 1.5, icone="minecraft:wither_skeleton_skull",
+            deps=["fabrica"], forma="octagon", tamanho=2.25,
+            descricao=["No centro da fábrica está o &cArauto&r, desligado.",
+                       "Clique nele com a &fEstrela do Nether&r na mão para despertá-lo e derrote-o.",
+                       "",
+                       "&7Dica: ele dispara mísseis teleguiados e lasers. Use pilares como cobertura, e na segunda fase fique perto dele: os lasers são piores de longe.&r"],
+            tarefas=[c.t_matar("cataclysm:the_harbinger", 1, "Derrotar o Arauto")],
+            recompensas=[c.r_item(fragmento(5, 4, 4)), c.r_skill("epicfight:catharsis"), c.r_xp(30),
+                         c.r_item("minecraft:netherite_ingot", 2)])
+
+    c.quest("selo", "O Selo Restaurado", 30, 1.5, icone="minecraft:beacon",
+            deps=["harbinger"], forma="gear", tamanho=2.5,
+            subtitulo="Fim da história",
+            descricao=[f"{M}: \"Dezenove fragmentos. O Selo está inteiro de novo.\"",
+                       "",
+                       "&o\"Quando você colocou o último pedaço no lugar, o cristal brilhou mais forte do que qualquer coisa que eu já vi. O Arauto virou pó. Os guardiões caídos podem finalmente descansar.\"",
+                       "",
+                       "&o\"Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez. As Terras Partidas estão inteiras de novo, graças a você.\"",
+                       "",
+                       "&6&lObrigado por jogar Terras Partidas!&r",
+                       "",
+                       "&7Ainda tem os &fDesafios Lendários&7 ao lado, para quem quer mais.&r"],
+            tarefas=[c.t_check("Restaurar o Selo")],
+            recompensas=[c.r_item("minecraft:beacon"), c.r_item("minecraft:netherite_ingot", 4),
+                         c.r_item("minecraft:enchanted_golden_apple", 4), c.r_item("minecraft:diamond_block", 8),
+                         c.r_xp(50)])
+
+    # ---- Desafios Lendários (pós-história, opcionais)
+    c.quest("lendarios", "Desafios Lendários", 30, 6, icone="minecraft:dragon_egg", deps=["selo"],
+            forma="hexagon", optional=True,
+            descricao=["&7Para quem ainda quer mais.&r Dois monstros antigos ainda vagam pelo mundo. Nenhum guarda fragmentos, só glória."],
+            tarefas=[c.t_check("Aceitar os desafios")],
+            recompensas=[c.r_xp(5)])
+
+    c.quest("void_blossom_mapa", "A Flor do Vazio", 27, 8.5, icone="minecraft:spore_blossom", deps=["lendarios"],
+            optional=True,
+            descricao=["Nas cavernas verdes e úmidas cresce uma flor gigante e carnívora, a &cVoid Blossom&r.",
+                       "", coord("no mundo normal")],
+            tarefas=[c.t_check("Pedir a localização")],
+            recompensas=[c.r_localizar("bosses_of_mass_destruction:void_blossom", "Coordenadas da Flor do Vazio", dimensao=OW)])
+
+    c.quest("void_blossom", "Lendário: Void Blossom", 27, 11, icone="minecraft:spore_blossom", deps=["void_blossom_mapa"],
+            forma="octagon", tamanho=1.25, optional=True,
+            descricao=["Derrote a &cVoid Blossom&r.", "&7Dica: ela solta espinhos do chão. Fique se movendo.&r"],
+            tarefas=[c.t_matar("bosses_of_mass_destruction:void_blossom", 1, "Derrotar a Void Blossom")],
+            recompensas=[c.r_item("minecraft:diamond_block", 4), c.r_xp(25)])
+
+    c.quest("leviathan_mapa", "A Cidade Afundada", 33, 8.5, icone="minecraft:prismarine_bricks", deps=["lendarios"],
+            optional=True,
+            descricao=["No fundo do oceano existe uma cidade afundada. No altar dela, um &cLeviatã&r espera ser chamado.",
+                       "", "Use o &fSacrifício Abissal&r no &fAltar do Abismo&r da cidade para chamá-lo.",
+                       "&7Ele é invencível fora da água. Leve poções de respiração aquática.&r",
+                       "", coord("no mundo normal")],
+            tarefas=[c.t_check("Pedir a localização")],
+            recompensas=[c.r_localizar("cataclysm:sunken_city", "Coordenadas da Cidade Afundada", dimensao=OW),
+                         c.r_item("cataclysm:abyssal_sacrifice"), c.r_item(pocao("minecraft:long_water_breathing"), 4)])
+
+    c.quest("leviathan", "Lendário: O Leviatã", 33, 11, icone="minecraft:heart_of_the_sea", deps=["leviathan_mapa"],
+            forma="octagon", tamanho=1.25, optional=True,
+            descricao=["Derrote &cO Leviatã&r."],
+            tarefas=[c.t_matar("cataclysm:the_leviathan", 1, "Derrotar o Leviatã")],
+            recompensas=[c.r_item("minecraft:diamond_block", 4), c.r_xp(25)])
+
+    return {
+        "id": qid("capitulo/ato5"),
+        "group": "",
+        "order_index": 4,
+        "filename": "ato_5_o_fim_do_selo",
+        "title": "Ato 5: O Fim do Selo",
+        "subtitle": ["A última batalha"],
+        "icon": "minecraft:ender_eye",
+        "default_quest_shape": "",
+        "default_hide_dependency_lines": False,
+        "quests": c.quests,
+    }
+
+
 # ---------------------------------------------------------------- arquivos
 
 def escrever(caminho, dados):
@@ -1028,7 +1226,7 @@ def main():
         "icon": "minecraft:amethyst_shard",
     })
     escrever("chapter_groups.snbt", {"chapter_groups": []})
-    for capitulo in (ato1(), ato2(), ato3(), ato4()):
+    for capitulo in (ato1(), ato2(), ato3(), ato4(), ato5()):
         escrever(f"chapters/{capitulo['filename']}.snbt", capitulo)
 
 

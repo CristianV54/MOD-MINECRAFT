@@ -21,6 +21,10 @@ file = "config/ftbquests/quests/chapters/ato_4_alem_do_ceu.snbt"
 hash = "a60e5f8e2b1ae1cbdcfa4e25680b597f1855dd77283c7bcf00934f379bcab6fa"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/ato_5_o_fim_do_selo.snbt"
+hash = "acc94aedc4c2b27acee987bc2d384867d7ad5d1b679aa5088bc12e85d315a43e"
+
+[[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "db76d779c699910388681cd1426745b1874d59bca7a2e47e18298bea936dadfc"
 
