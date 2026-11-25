@@ -1,6 +1,26 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/ftbquests/quests/chapter_groups.snbt"
+hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ato_1_o_chamado.snbt"
+hash = "ede0156533a2fff687a494e085a422425699fc7069c18bf29d63e51787ad0ab5"
+
+[[files]]
+file = "config/ftbquests/quests/data.snbt"
+hash = "db76d779c699910388681cd1426745b1874d59bca7a2e47e18298bea936dadfc"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/mowziesmobs/tags/worldgen/biome/has_structure/has_mowzie_structure.json"
+hash = "0ee75ac9e4f5bbcd3fa6ce4f54e081f57590cc6c8831cefcd1870afa88d32ba2"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/pack.mcmeta"
+hash = "30bc03d8e6e1b6dd913e17792aeba52f320f5386124b06a407efc6ca0e1130cb"
+
+[[files]]
 file = "mods/ai-improvements.pw.toml"
 hash = "855a8aed204e15e2c3f26d8cd4c567547620fb1cbe60a3a0b2803fae11a6611d"
 metafile = true
@@ -343,6 +363,11 @@ metafile = true
 [[files]]
 file = "mods/oculus.pw.toml"
 hash = "200f79b635a087841698c85ac7028f0a1fac2cc4ffae1d59ff3f07a94abfe70e"
+metafile = true
+
+[[files]]
+file = "mods/open-loader.pw.toml"
+hash = "a773f5a00bfad575c0f830ed0f67edbd6b99fa5c29a51d27d7cfcfef02b3dccb"
 metafile = true
 
 [[files]]

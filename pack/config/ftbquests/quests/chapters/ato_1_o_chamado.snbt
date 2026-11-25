@@ -1,0 +1,944 @@
+{
+	id: "4D535B18BE306A45"
+	group: ""
+	order_index: 0
+	filename: "ato_1_o_chamado"
+	title: "Ato 1: O Chamado"
+	subtitle: ["Três fragmentos do Selo"]
+	icon: "minecraft:amethyst_shard"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "3BB64CCD28B4E329"
+			title: "O Chamado"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Uma carta com o selo da Ordem"
+			icon: "minecraft:writable_book"
+			shape: "gear"
+			size: 1.5d
+			description: ["&o\"Caçador,", "", "&oHá trezentos anos, sete guardiões prenderam um mal antigo dentro de um cristal: o &dSelo&r&o.", "&oNa última lua cheia, o Selo se partiu. Os fragmentos caíram pelo mundo e cada um corrompeu uma criatura poderosa.", "", "&oSe juntarmos os fragmentos antes que o mal desperte, ainda há esperança.", "&oA Ordem dos Caçadores precisa de você.\"", "", "— &6Mestre Vellan&r, Mestre da Ordem", "{@pagebreak}", "&eComo usar este livro:&r", "• Cada missão mostra o objetivo e a recompensa.", "• Clique em uma missão para ver os detalhes e pegar a recompensa.", "• Missões novas aparecem conforme você avança.", "", "&eCombate:&r este mundo usa o &cEpic Fight&r. Aperte &eR&r para alternar entre o modo normal e o modo de combate.", "As outras teclas ficam em &eOpções > Controles&r, na seção do Epic Fight."]
+			tasks: [
+				{
+					id: "44238E63DB2D972B"
+					type: "checkmark"
+					title: "Li a carta do Mestre"
+				}
+			]
+			rewards: [
+				{
+					id: "0C652D5BB32AE678"
+					type: "item"
+					item: "minecraft:bread"
+					count: 8
+				}
+				{
+					id: "6AE1E8E14DC48C11"
+					type: "item"
+					item: "minecraft:torch"
+					count: 16
+				}
+				{
+					id: "1D46CB1B343F0932"
+					type: "item"
+					item: {
+						id: "epicfight:skillbook"
+						Count: 1b
+						tag: {
+							skill: "epicfight:roll"
+						}
+					}
+				}
+			]
+		}
+		{
+			id: "7705A346645D703A"
+			title: "Escolha seu Caminho"
+			x: 2.5d
+			y: 0.0d
+			subtitle: "Só dá para escolher uma vez"
+			icon: "minecraft:compass"
+			shape: "hexagon"
+			size: 1.25d
+			description: ["&6Mestre Vellan&r: \"Todo caçador tem um estilo. Qual é o seu?\"", "", "Escolha &cuma&r das cinco classes ao lado. Cada uma dá um kit inicial diferente.", "&cAtenção:&r depois de completar uma classe, as outras ficam bloqueadas.", "", "&cGuerreiro&r: espada longa e armadura. Equilibrado.", "&9Tanque&r: escudo, armadura pesada e técnica de aparar.", "&8Assassino&r: duas adagas, velocidade e esquiva rápida.", "&5Mago&r: livro de feitiços e pergaminhos de magia.", "&aCaçador&r: arco, flechas e mobilidade."]
+			dependencies: ["3BB64CCD28B4E329"]
+			max_completable_dependents: 1
+			tasks: [
+				{
+					id: "31D9EB6EF78659AC"
+					type: "checkmark"
+					title: "Estou pronto para escolher"
+				}
+			]
+		}
+		{
+			id: "062E0BFC8535363C"
+			title: "&cGuerreiro"
+			x: 5.0d
+			y: -2.5d
+			icon: "epicfight:iron_longsword"
+			shape: "diamond"
+			description: ["&6Mestre Vellan&r: \"Então você é um &cGuerreiro&r.\"", "", "Você luta de frente, com espada longa e armadura. Bom para quem está começando."]
+			dependencies: ["7705A346645D703A"]
+			tasks: [
+				{
+					id: "07EBF1091042E622"
+					type: "checkmark"
+					title: "Eu escolho ser &cGuerreiro"
+				}
+			]
+			rewards: [
+				{
+					id: "20EFB490DF8864A7"
+					type: "item"
+					item: "epicfight:iron_longsword"
+				}
+				{
+					id: "23CF02CE5818419C"
+					type: "item"
+					item: "minecraft:chainmail_chestplate"
+				}
+				{
+					id: "515CB01612D62148"
+					type: "item"
+					item: "minecraft:chainmail_helmet"
+				}
+				{
+					id: "1F249140C24A465E"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 12
+				}
+			]
+		}
+		{
+			id: "3F450D4A9B68A9C4"
+			title: "&9Tanque"
+			x: 5.0d
+			y: -1.25d
+			icon: "minecraft:shield"
+			shape: "diamond"
+			description: ["&6Mestre Vellan&r: \"Então você é um &9Tanque&r.\"", "", "Você aguenta pancada. Escudo, armadura de ferro e a técnica de &eAparar&r do Epic Fight."]
+			dependencies: ["7705A346645D703A"]
+			tasks: [
+				{
+					id: "0B9D9BAA02326141"
+					type: "checkmark"
+					title: "Eu escolho ser &9Tanque"
+				}
+			]
+			rewards: [
+				{
+					id: "40333846AF55ACC5"
+					type: "item"
+					item: "minecraft:shield"
+				}
+				{
+					id: "4ACE400DBFA89929"
+					type: "item"
+					item: "minecraft:iron_chestplate"
+				}
+				{
+					id: "64A6C0FD81BE9EDA"
+					type: "item"
+					item: "epicfight:iron_spear"
+				}
+				{
+					id: "6D496AB8F0E93E0D"
+					type: "item"
+					item: {
+						id: "epicfight:skillbook"
+						Count: 1b
+						tag: {
+							skill: "epicfight:parrying"
+						}
+					}
+				}
+				{
+					id: "15BC512D33096C4E"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 12
+				}
+			]
+		}
+		{
+			id: "09A7904C3E38C2EE"
+			title: "&8Assassino"
+			x: 5.0d
+			y: 0.0d
+			icon: "epicfight:iron_dagger"
+			shape: "diamond"
+			description: ["&6Mestre Vellan&r: \"Então você é um &8Assassino&r.\"", "", "Você é rápido. Duas adagas (uma em cada mão), poções de velocidade e o &ePasso&r, uma esquiva mais curta e ágil."]
+			dependencies: ["7705A346645D703A"]
+			tasks: [
+				{
+					id: "733351D1CD3A39B7"
+					type: "checkmark"
+					title: "Eu escolho ser &8Assassino"
+				}
+			]
+			rewards: [
+				{
+					id: "1ACF336D4D537BD8"
+					type: "item"
+					item: "epicfight:iron_dagger"
+				}
+				{
+					id: "5A19027BDF6952F6"
+					type: "item"
+					item: "epicfight:iron_dagger"
+				}
+				{
+					id: "19D0C60E88E851B7"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:swiftness"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "358FEF05889FD8FC"
+					type: "item"
+					item: {
+						id: "epicfight:skillbook"
+						Count: 1b
+						tag: {
+							skill: "epicfight:step"
+						}
+					}
+				}
+				{
+					id: "066D8C21962B35DE"
+					type: "item"
+					item: "minecraft:ender_pearl"
+					count: 2
+				}
+				{
+					id: "64DCEBA09F61F03B"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 12
+				}
+			]
+		}
+		{
+			id: "3E1B2E122F610121"
+			title: "&5Mago"
+			x: 5.0d
+			y: 1.25d
+			icon: "irons_spellbooks:copper_spell_book"
+			shape: "diamond"
+			description: ["&6Mestre Vellan&r: \"Então você é um &5Mago&r.\"", "", "Você usa magia. Pergaminhos podem ser lidos direto (clique direito) ou gravados no livro na &eMesa de Inscrição&r."]
+			dependencies: ["7705A346645D703A"]
+			tasks: [
+				{
+					id: "327739470877A587"
+					type: "checkmark"
+					title: "Eu escolho ser &5Mago"
+				}
+			]
+			rewards: [
+				{
+					id: "28D89D68F9215C57"
+					type: "item"
+					item: "irons_spellbooks:copper_spell_book"
+				}
+				{
+					id: "123018BC77C261EF"
+					type: "item"
+					item: "irons_spellbooks:inscription_table"
+				}
+				{
+					id: "22A35B3A092722A7"
+					type: "item"
+					item: {
+						id: "irons_spellbooks:scroll"
+						Count: 1b
+						tag: {
+							ISB_Spells: {
+								data: [
+									{
+										id: "irons_spellbooks:firebolt"
+										index: 0
+										level: 1
+										locked: 1b
+									}
+								]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+					}
+				}
+				{
+					id: "67D80E2A3B1C9D43"
+					type: "item"
+					item: {
+						id: "irons_spellbooks:scroll"
+						Count: 1b
+						tag: {
+							ISB_Spells: {
+								data: [
+									{
+										id: "irons_spellbooks:magic_missile"
+										index: 0
+										level: 1
+										locked: 1b
+									}
+								]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+					}
+				}
+				{
+					id: "4B760212921379B7"
+					type: "item"
+					item: {
+						id: "irons_spellbooks:scroll"
+						Count: 1b
+						tag: {
+							ISB_Spells: {
+								data: [
+									{
+										id: "irons_spellbooks:heal"
+										index: 0
+										level: 1
+										locked: 1b
+									}
+								]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+					}
+				}
+				{
+					id: "26B6DDE602C4F371"
+					type: "item"
+					item: "irons_spellbooks:wandering_magician_chestplate"
+				}
+				{
+					id: "5871E84EC079363E"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 12
+				}
+			]
+		}
+		{
+			id: "40FA859627277492"
+			title: "&aCaçador"
+			x: 5.0d
+			y: 2.5d
+			icon: "minecraft:bow"
+			shape: "diamond"
+			description: ["&6Mestre Vellan&r: \"Então você é um &aCaçador&r.\"", "", "Você ataca de longe. Arco, muitas flechas e uma adaga para quando o inimigo chegar perto."]
+			dependencies: ["7705A346645D703A"]
+			tasks: [
+				{
+					id: "3B61566E702AABDA"
+					type: "checkmark"
+					title: "Eu escolho ser &aCaçador"
+				}
+			]
+			rewards: [
+				{
+					id: "0643ED85B466B37E"
+					type: "item"
+					item: "minecraft:bow"
+				}
+				{
+					id: "42168C4D2044DE6D"
+					type: "item"
+					item: "minecraft:arrow"
+					count: 64
+				}
+				{
+					id: "71BD0A3143739FA9"
+					type: "item"
+					item: "epicfight:iron_dagger"
+				}
+				{
+					id: "15FB0B58FD25A55E"
+					type: "item"
+					item: "minecraft:leather_chestplate"
+				}
+				{
+					id: "55A207C30A04F33A"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 12
+				}
+			]
+		}
+		{
+			id: "5A8FBE105E9C4E06"
+			title: "Ferramentas de Ferro"
+			x: 7.5d
+			y: -2.5d
+			icon: "minecraft:iron_pickaxe"
+			description: ["&6Mestre Vellan&r: \"Ninguém caça de mãos vazias. Arrume ferramentas decentes.\"", "", "Faça uma &fpicareta de ferro&r."]
+			dependencies: ["062E0BFC8535363C", "3F450D4A9B68A9C4", "09A7904C3E38C2EE", "3E1B2E122F610121", "40FA859627277492"]
+			dependency_requirement: "one_completed"
+			tasks: [
+				{
+					id: "77925874B82A2C96"
+					type: "item"
+					item: "minecraft:iron_pickaxe"
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "149BB3E4BA6F7E06"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "5B54102F57C5B435"
+					type: "item"
+					item: "minecraft:iron_ingot"
+					count: 4
+				}
+			]
+		}
+		{
+			id: "4F00E29859D87333"
+			title: "Uma Mochila de Verdade"
+			x: 10.0d
+			y: -3.5d
+			icon: "sophisticatedbackpacks:backpack"
+			description: ["O inventário vai encher rápido. Faça uma &fmochila&r.", "Dá para melhorar ela depois (cobre, ferro, ouro...)."]
+			dependencies: ["5A8FBE105E9C4E06"]
+			tasks: [
+				{
+					id: "4DD59AB6338354FD"
+					type: "item"
+					item: "sophisticatedbackpacks:backpack"
+					count: 1L
+				}
+			]
+			rewards: [
+				{
+					id: "15D12677C393932A"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+				{
+					id: "71B241C412B3D784"
+					type: "item"
+					item: "minecraft:leather"
+					count: 4
+				}
+			]
+		}
+		{
+			id: "1D8DEB71D2179B63"
+			title: "Abrigo Seguro"
+			x: 10.0d
+			y: -1.5d
+			icon: "minecraft:red_bed"
+			description: ["As noites aqui são bem mais perigosas do que você está acostumado.", "Faça uma cama e &fdurma&r para pular a noite e marcar seu ponto de renascer."]
+			dependencies: ["5A8FBE105E9C4E06"]
+			tasks: [
+				{
+					id: "411072615B2FED5B"
+					type: "advancement"
+					advancement: "minecraft:adventure/sleep_in_bed"
+					criterion: ""
+					title: "Dormir em uma cama"
+				}
+			]
+			rewards: [
+				{
+					id: "30027DB450481FE5"
+					type: "item"
+					item: "minecraft:lantern"
+					count: 4
+				}
+				{
+					id: "7F00EB6D406E5EC8"
+					type: "item"
+					item: "minecraft:cooked_porkchop"
+					count: 8
+				}
+			]
+		}
+		{
+			id: "454A15647F6BC9D0"
+			title: "Uma Vila Amiga"
+			x: 12.5d
+			y: -2.5d
+			icon: "minecraft:emerald"
+			description: ["&6Mestre Vellan&r: \"As vilas são o último refúgio deste mundo. Os &fguardas&r protegem os aldeões, mas precisam de ajuda.\"", "", "Encontre uma &fvila&r. Muitas delas têm uma &bWaystone&r, uma pedra que te teleporta entre lugares já visitados."]
+			dependencies: ["4F00E29859D87333", "1D8DEB71D2179B63"]
+			tasks: [
+				{
+					id: "7C89519F07301F61"
+					type: "structure"
+					structure: "#minecraft:village"
+					title: "Encontrar uma vila"
+				}
+			]
+			rewards: [
+				{
+					id: "7CF56C85CF00126D"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "0657A6A13F0B7701"
+					type: "item"
+					item: "minecraft:emerald"
+					count: 8
+				}
+			]
+		}
+		{
+			id: "5557D1E7A6BCD19E"
+			title: "Treino de Combate"
+			x: 7.5d
+			y: 2.5d
+			icon: "minecraft:iron_sword"
+			description: ["&6Mestre Vellan&r: \"Antes de enfrentar algo de verdade, aprenda a lutar.\"", "", "No Epic Fight, &eesquivar&r e &edefender&r gasta a barra de fôlego. Não ataque sem parar: espere a abertura do inimigo.", "", "Derrote &c10 zumbis&r."]
+			dependencies: ["062E0BFC8535363C", "3F450D4A9B68A9C4", "09A7904C3E38C2EE", "3E1B2E122F610121", "40FA859627277492"]
+			dependency_requirement: "one_completed"
+			tasks: [
+				{
+					id: "465969204142A076"
+					type: "kill"
+					entity: "minecraft:zombie"
+					value: 10L
+					title: "Derrotar 10 zumbis"
+				}
+			]
+			rewards: [
+				{
+					id: "694C05AD1AB28254"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "0122BC312BBB4985"
+					type: "item"
+					item: "minecraft:golden_apple"
+				}
+			]
+		}
+		{
+			id: "17C4CCD7D735263C"
+			title: "Ossos Inquietos"
+			x: 10.0d
+			y: 2.5d
+			icon: "minecraft:bone"
+			description: ["Esqueletos de longe são piores que zumbis. Use cobertura e aproxime-se esquivando.", "", "Derrote &c10 esqueletos&r."]
+			dependencies: ["5557D1E7A6BCD19E"]
+			tasks: [
+				{
+					id: "33B7562BA1745A7C"
+					type: "kill"
+					entity: "minecraft:skeleton"
+					value: 10L
+					title: "Derrotar 10 esqueletos"
+				}
+			]
+			rewards: [
+				{
+					id: "4275BA7ABA5411E5"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "38E70E8D08D8AB41"
+					type: "item"
+					item: "minecraft:arrow"
+					count: 32
+				}
+			]
+		}
+		{
+			id: "328C587F2C229F2B"
+			title: "Algo no Pântano"
+			x: 12.5d
+			y: 2.5d
+			subtitle: "Primeiro fragmento"
+			icon: "meetyourfight:fossil_bait"
+			description: ["&6Mestre Vellan&r: \"Pescadores sumiram perto dos pântanos. Algo enorme come qualquer coisa que se move por lá... e eu sinto um fragmento do Selo dentro dele.\"", "", "Pegue esta &fIsca Fóssil&r. Quando estiver pronto, use-a (clique direito) para chamar a criatura.", "", "&7Equipamento recomendado: pedra ou ferro.&r"]
+			dependencies: ["17C4CCD7D735263C"]
+			tasks: [
+				{
+					id: "6D25DC5D5A0A301D"
+					type: "checkmark"
+					title: "Estou pronto"
+				}
+			]
+			rewards: [
+				{
+					id: "43A915BE626261AF"
+					type: "item"
+					item: "meetyourfight:fossil_bait"
+				}
+				{
+					id: "7395B14DB68A12EE"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:healing"
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "7FCBF496418E37A1"
+			title: "Chefe: Swampjaw"
+			x: 15.0d
+			y: 2.5d
+			icon: "meetyourfight:fossil_bait"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Use a Isca Fóssil e derrote &cSwampjaw&r.", "", "&7Se morrer, a isca é gasta. Volte aqui: a missão &e\"Mais uma Isca\"&7 dá outra."]
+			dependencies: ["328C587F2C229F2B"]
+			tasks: [
+				{
+					id: "563C6330109C0C5F"
+					type: "kill"
+					entity: "meetyourfight:swampjaw"
+					value: 1L
+					title: "Derrotar Swampjaw"
+				}
+			]
+			rewards: [
+				{
+					id: "05BCE73B3904F496"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "{\"text\": \"Fragmento do Selo (1/3)\", \"color\": \"light_purple\", \"italic\": false}"
+								Lore: ["{\"text\": \"Um pedaço do cristal que prendia o mal antigo.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Ainda está quente ao toque.\", \"color\": \"gray\", \"italic\": true}"]
+							}
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 1s
+								}
+							]
+							HideFlags: 1
+						}
+					}
+				}
+				{
+					id: "368FE2999F542FFF"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "3E51668B806F7093"
+					type: "item"
+					item: "minecraft:diamond"
+				}
+			]
+		}
+		{
+			id: "2DDB6DFF55F4CC55"
+			title: "Mais uma Isca"
+			x: 15.0d
+			y: 4.5d
+			icon: "meetyourfight:fossil_bait"
+			shape: "circle"
+			size: 0.75d
+			description: ["Perdeu a luta? Troque &f8 ossos&r por outra Isca Fóssil.", "Pode repetir quantas vezes precisar."]
+			dependencies: ["328C587F2C229F2B"]
+			optional: true
+			can_repeat: true
+			tasks: [
+				{
+					id: "7C6C595CC4FB9682"
+					type: "item"
+					item: "minecraft:bone"
+					count: 8L
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "12012A2D348A4C10"
+					type: "item"
+					item: "meetyourfight:fossil_bait"
+				}
+			]
+		}
+		{
+			id: "45A12E1B413F8922"
+			title: "O Sino Assombrado"
+			x: 17.5d
+			y: 0.0d
+			subtitle: "Segundo fragmento"
+			icon: "meetyourfight:haunted_bell"
+			description: ["&6Mestre Vellan&r: \"Muito bem. O segundo fragmento está preso a um espírito que toca um sino nas ruínas. Cada badalada atrai a morte.\"", "", "Pegue o &fSino Assombrado&r. Tocá-lo invoca o &cBellringer&r.", "", "&7Equipamento recomendado: ferro ou diamante. Ele é rápido: guarde a esquiva para quando ele avançar.&r"]
+			dependencies: ["7FCBF496418E37A1", "5A8FBE105E9C4E06"]
+			tasks: [
+				{
+					id: "2C8D755C8786BD2E"
+					type: "item"
+					item: "minecraft:iron_chestplate"
+					count: 1L
+					title: "Ter um peitoral de ferro"
+				}
+			]
+			rewards: [
+				{
+					id: "005F33506D32D65E"
+					type: "item"
+					item: "meetyourfight:haunted_bell"
+				}
+				{
+					id: "360C44ECC562ED44"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:healing"
+						}
+					}
+					count: 3
+				}
+			]
+		}
+		{
+			id: "687FD9580D24CDE1"
+			title: "Chefe: Bellringer"
+			x: 20.0d
+			y: 0.0d
+			icon: "meetyourfight:haunted_bell"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Toque o Sino Assombrado e derrote o &cBellringer&r."]
+			dependencies: ["45A12E1B413F8922"]
+			tasks: [
+				{
+					id: "1B04B849A53F05F9"
+					type: "kill"
+					entity: "meetyourfight:bellringer"
+					value: 1L
+					title: "Derrotar o Bellringer"
+				}
+			]
+			rewards: [
+				{
+					id: "377650A0AE1FF3A8"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "{\"text\": \"Fragmento do Selo (2/3)\", \"color\": \"light_purple\", \"italic\": false}"
+								Lore: ["{\"text\": \"Um pedaço do cristal que prendia o mal antigo.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Ainda está quente ao toque.\", \"color\": \"gray\", \"italic\": true}"]
+							}
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 1s
+								}
+							]
+							HideFlags: 1
+						}
+					}
+				}
+				{
+					id: "35BD1BE612AF422B"
+					type: "xp_levels"
+					xp_levels: 7
+				}
+				{
+					id: "2A0A2CC832D1710E"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 2
+				}
+			]
+		}
+		{
+			id: "208DE0E0CA9FC9FD"
+			title: "Outro Sino"
+			x: 20.0d
+			y: 2.0d
+			icon: "meetyourfight:haunted_bell"
+			shape: "circle"
+			size: 0.75d
+			description: ["Perdeu a luta? Troque &f4 lingotes de ouro&r por outro Sino Assombrado."]
+			dependencies: ["45A12E1B413F8922"]
+			optional: true
+			can_repeat: true
+			tasks: [
+				{
+					id: "0530334B7E61D80B"
+					type: "item"
+					item: "minecraft:gold_ingot"
+					count: 4L
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "48AA3B1105610CEA"
+					type: "item"
+					item: "meetyourfight:haunted_bell"
+				}
+			]
+		}
+		{
+			id: "11F210357E4C4450"
+			title: "A Câmara Forjada"
+			x: 17.5d
+			y: -3.5d
+			subtitle: "Terceiro fragmento"
+			icon: "mowziesmobs:wrought_helmet"
+			description: ["&6Mestre Vellan&r: \"Os aldeões falam de um &fcavaleiro de metal&r que guarda uma câmara escondida. Nunca saiu de lá, nunca dormiu... e agora carrega um fragmento do Selo.\"", "", "Encontre a &fCâmara Forjada&r. Ela fica escondida em cavernas e encostas de montanha: procure uma porta de pedra com tochas.", "", "&7Dica: os mapas do Xaero ajudam a marcar o caminho (tecla &eY&7 para criar um ponto).&r"]
+			dependencies: ["454A15647F6BC9D0", "7FCBF496418E37A1"]
+			tasks: [
+				{
+					id: "02981A5C88C87E97"
+					type: "structure"
+					structure: "mowziesmobs:wrought_chamber"
+					title: "Encontrar a Câmara Forjada"
+				}
+			]
+			rewards: [
+				{
+					id: "15A901808D002899"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "0832580BA346C98C"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strength"
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "31549F6EF053CF36"
+			title: "Chefe: Cavaleiro Forjado"
+			x: 20.0d
+			y: -3.5d
+			icon: "mowziesmobs:wrought_axe"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Derrote o &cCavaleiro de Ferro Forjado&r (Ferrous Wroughtnaut).", "", "&7Dica: a armadura dele é quase indestrutível pela frente. Espere ele errar um golpe, fique atrás dele e ataque as costas.&r"]
+			dependencies: ["11F210357E4C4450"]
+			tasks: [
+				{
+					id: "5ACCDA5DFCDA9177"
+					type: "kill"
+					entity: "mowziesmobs:ferrous_wroughtnaut"
+					value: 1L
+					title: "Derrotar o Cavaleiro Forjado"
+				}
+			]
+			rewards: [
+				{
+					id: "04F4A3C2D614543E"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "{\"text\": \"Fragmento do Selo (3/3)\", \"color\": \"light_purple\", \"italic\": false}"
+								Lore: ["{\"text\": \"Um pedaço do cristal que prendia o mal antigo.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Ainda está quente ao toque.\", \"color\": \"gray\", \"italic\": true}"]
+							}
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 1s
+								}
+							]
+							HideFlags: 1
+						}
+					}
+				}
+				{
+					id: "198E387EC8D7153F"
+					type: "xp_levels"
+					xp_levels: 7
+				}
+				{
+					id: "10DF4374BD4F4C1A"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 2
+				}
+			]
+		}
+		{
+			id: "5733992D42C9FA1E"
+			title: "Relatório ao Mestre"
+			x: 23.0d
+			y: -1.75d
+			subtitle: "Fim do Ato 1"
+			icon: "minecraft:amethyst_shard"
+			shape: "gear"
+			size: 2.0d
+			description: ["&6Mestre Vellan&r: \"Três fragmentos... Você fez o que nenhum caçador conseguiu em anos.\"", "", "&o\"Mas sinto o Selo pulsando mais forte. Os outros fragmentos foram para lugares piores: o gelo eterno, as savanas queimadas, o fundo do mar.", "&oVocê vai precisar ir longe. Leve isto: um planador, para atravessar o mundo pelos céus.\"", "", "&dFim do Ato 1. O Ato 2 &7(Terras Selvagens)&d chega em breve.&r"]
+			dependencies: ["7FCBF496418E37A1", "687FD9580D24CDE1", "31549F6EF053CF36"]
+			tasks: [
+				{
+					id: "63C9A388D5F4C9E6"
+					type: "checkmark"
+					title: "Entregar o relatório"
+				}
+			]
+			rewards: [
+				{
+					id: "553125BD1FD2C12E"
+					type: "item"
+					item: "paraglider:paraglider"
+				}
+				{
+					id: "331540CA02BB6F8E"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 3
+				}
+				{
+					id: "76836D306D82BB2E"
+					type: "item"
+					item: "minecraft:golden_apple"
+					count: 2
+				}
+				{
+					id: "6B6B654076E27851"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
+	]
+}

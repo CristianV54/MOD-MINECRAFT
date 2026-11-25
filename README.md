@@ -3,14 +3,17 @@
 Modpack brasileiro de RPG com combate estilo souls, chefes, dungeons e uma história contada em português.
 
 - **Versão:** Minecraft 1.20.1 com Forge 47.4.29
-- **Mods:** 108 no total (89 rodam no servidor e 19 só no jogador)
+- **Mods:** 109 no total (90 rodam no servidor e 19 só no jogador)
 - **Objetivo:** ser mais leve que o DawnCraft (305 mods) e rodar bem com 6 GB de RAM
-- **Estado:** base de mods pronta e testada. As missões e a história ainda vão ser escritas.
+- **Estado:** base de mods pronta e **Ato 1 completo** (22 missões em português). Atos 2 a 5 ainda vão ser escritos.
 
 ## O que já foi testado
 
 - Um servidor dedicado ligou com todos os mods de servidor em cerca de 35 segundos, gerou o mundo e desligou sem travar.
-- **Ainda não foi testado:** abrir o jogo no PC (lado do jogador). Esse teste precisa ser feito em um computador com Minecraft.
+- As 22 missões do Ato 1 carregam sem erro, e o servidor mantém os IDs delas (o progresso dos jogadores não se perde entre atualizações).
+- Todos os itens, chefes e estruturas citados nas missões existem nos mods.
+- O `/locate` acha a Câmara Forjada (chefe 3) e vilas perto do spawn.
+- **Ainda não foi testado:** abrir o jogo no PC (lado do jogador) e jogar as missões de verdade.
 
 ## Mods por categoria
 
@@ -31,6 +34,27 @@ JEI, Jade, Xaero's Minimap e World Map, Waystones, Sophisticated Backpacks, Corp
 
 **Desempenho e visual**
 Embeddium, Oculus (shaders), FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Canary, Saturn, Krypton, Clumps, AI Improvements, AmbientSounds, Sound Physics Remastered
+
+## Ato 1: O Chamado (pronto)
+
+O livro de missões abre pelo botão do FTB Quests no inventário. O Ato 1 tem 22 missões:
+
+1. **O Chamado**: carta do Mestre Vellan explicando a história e o combate do Epic Fight. Dá o livro da esquiva "Rolar".
+2. **Escolha seu Caminho**: o jogador escolhe **uma** classe entre 5, e as outras ficam bloqueadas. Cada classe dá um kit:
+   - **Guerreiro**: espada longa e armadura de malha
+   - **Tanque**: escudo, peitoral de ferro, lança e a técnica Aparar
+   - **Assassino**: duas adagas, poções de velocidade, pérolas do End e a esquiva Passo
+   - **Mago**: livro de feitiços, Mesa de Inscrição e pergaminhos de Bola de Fogo, Míssil Mágico e Cura
+   - **Caçador**: arco, 64 flechas e adaga
+3. **Trilha de sobrevivência**: ferramentas de ferro, mochila, dormir numa cama e achar uma vila.
+4. **Trilha de combate**: derrotar 10 zumbis e 10 esqueletos.
+5. **Os três chefes**, cada um guardando um Fragmento do Selo:
+   - **Swampjaw** (Meet Your Fight): o Mestre entrega a Isca Fóssil, que invoca o chefe.
+   - **Bellringer** (Meet Your Fight): exige um peitoral de ferro e dá o Sino Assombrado.
+   - **Cavaleiro Forjado** (Mowzie's Mobs): o jogador precisa achar a Câmara Forjada no subsolo.
+6. **Relatório ao Mestre**: fecha o ato e dá o planador (Paraglider) pra explorar o Ato 2.
+
+Se o jogador perder a luta, as missões opcionais "Mais uma Isca" e "Outro Sino" trocam ossos ou ouro por outro item de invocação.
 
 ## Rascunho da história
 
@@ -53,8 +77,8 @@ A ordem dos chefes e os nomes dos atos ainda são rascunho e podem mudar.
 ## Próximos passos
 
 1. Testar no PC e ajustar o que pesar ou bugar.
-2. Escrever as missões do Ato 1 em português (FTB Quests) e criar o Mestre da Ordem (Easy NPC).
-3. Montar as classes e a árvore de habilidades.
+2. Escrever o Ato 2 (Terras Selvagens) e colocar o Mestre Vellan no mundo como NPC (Easy NPC).
+3. Montar a árvore de habilidades de cada classe (Pufferfish's Skills).
 4. Fazer a tradução PT-BR dos mods que não têm português.
 5. Configurar dificuldade, drops e o bloqueio de progressão.
 
@@ -73,5 +97,15 @@ Gerar o arquivo `.zip` para importar no app do CurseForge:
 ```bash
 cd pack && packwiz curseforge export
 ```
+
+**Missões:** são geradas pelo script `tools/gerar_missoes.py`, onde ficam todos os textos. Para mudar uma missão, edite o script e rode:
+
+```bash
+python3 tools/gerar_missoes.py
+```
+
+Não edite as missões pelo modo de edição dentro do jogo: o script sobrescreve essas mudanças na próxima vez que rodar.
+
+**Ajustes de mundo:** ficam no datapack `pack/config/openloader/data/terras_partidas/`, carregado pelo mod Open Loader. Hoje ele só libera as estruturas do Mowzie's Mobs (chefes) nos biomas do Terralith.
 
 **Observação:** 5 mods vêm do Modrinth (Illage and Spillage, Dungeons and Taverns, The Undead Revamped, Entity Culling e Pufferfish's Skills). O `.zip` exportado leva esses mods dentro. Isso não é problema para jogar com amigos, mas antes de publicar no CurseForge é preciso trocar esses mods pela versão do CurseForge ou conferir se eles estão liberados lá.
