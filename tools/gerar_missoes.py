@@ -52,6 +52,30 @@ def snbt(valor, nivel=0):
     return json.dumps(valor, ensure_ascii=False)
 
 
+def snbt_mc(valor, nivel=0):
+    """SNBT no formato padrão do Minecraft (com vírgulas), usado pelo Easy NPC."""
+    tab = "  " * nivel
+    if isinstance(valor, dict):
+        if not valor:
+            return "{}"
+        itens = [f"{tab}  {k}:{snbt_mc(v, nivel + 1)}" for k, v in valor.items()]
+        return "{\n" + ",\n".join(itens) + f"\n{tab}}}"
+    if isinstance(valor, list):
+        if not valor:
+            return "[]"
+        itens = [f"{tab}  {snbt_mc(v, nivel + 1)}" for v in valor]
+        return "[\n" + ",\n".join(itens) + f"\n{tab}]"
+    if isinstance(valor, bool):
+        return "1b" if valor else "0b"
+    if isinstance(valor, Raw):
+        return valor.s
+    if isinstance(valor, float):
+        return f"{valor}d"
+    if isinstance(valor, int):
+        return str(valor)
+    return json.dumps(valor, ensure_ascii=False)
+
+
 class Raw:
     """Valor SNBT escrito literalmente (ex.: 1b, 16L)."""
     def __init__(self, s):
@@ -251,10 +275,24 @@ def ato1():
                 "",
                 "&eCombate:&r este mundo usa o &cEpic Fight&r. Aperte &eR&r para alternar entre o modo normal e o modo de combate.",
                 "As outras teclas ficam em &eOpções > Controles&r, na seção do Epic Fight.",
+                "{@pagebreak}",
+                "&eO Mestre Vellan:&r quando você pegar a recompensa desta missão, o Mestre aparece &fao seu lado&r.",
+                "Clique nele com o botão direito para conversar. Ele comenta cada etapa da história, dá dicas e abre o livro de missões.",
+                "&7Se você mudar de base, a missão \"Chamar o Mestre\" traz ele até você.&r",
             ],
             tarefas=[c.t_check("Li a carta do Mestre")],
             recompensas=[c.r_item("minecraft:bread", 8), c.r_item("minecraft:torch", 16),
-                         c.r_item(livro_skill("epicfight:roll"))])
+                         c.r_item(livro_skill("epicfight:roll")),
+                         c.r_comando("/function terras_partidas:chamar_vellan", titulo="O Mestre Vellan chega",
+                                     icone="minecraft:writable_book")])
+
+    c.quest("chamar_mestre", "Chamar o Mestre", 0, 2.5, icone="minecraft:bell", deps=["chamado"],
+            forma="circle", tamanho=0.75, optional=True, can_repeat=True,
+            descricao=["Mudou de base ou perdeu o Mestre Vellan de vista?",
+                       "Pegue a recompensa e ele aparece ao seu lado. Se ele estiver por perto, ele só muda de lugar."],
+            tarefas=[c.t_check("Chamar o Mestre Vellan")],
+            recompensas=[c.r_comando("/function terras_partidas:rechamar_vellan", titulo="Chamar o Mestre Vellan",
+                                     icone="minecraft:bell")])
 
     # ---- Escolha de classe
     c.quest("caminho", "Escolha seu Caminho", 2.5, 0, forma="hexagon", tamanho=1.25,
@@ -1194,6 +1232,115 @@ def ato5():
     }
 
 
+
+# ---------------------------------------------------------------- MESTRE VELLAN (Easy NPC)
+
+VELLAN_PRESET = "terras_partidas:easy_npc/preset/humanoid/mestre_vellan.npc.snbt"
+CMD_CHAMAR_VELLAN = f"/easy_npc preset import_new data {VELLAN_PRESET} ~2 ~ ~"
+CMD_REMOVER_VELLAN = '/kill @e[type=easy_npc:humanoid,name="Mestre Vellan",distance=..64]'
+
+
+def tag_ato(n):
+    return f"terras_partidas_ato{n}"
+
+
+def mestre_vellan():
+    """Preset do Easy NPC: o Mestre muda o que fala conforme o ato do jogador (tags)."""
+    B = Raw("1b")
+
+    def botao(nome, label, acoes):
+        return {"Actions": acoes, "Label": label, "Name": nome}
+
+    def abrir(label):
+        return {"Cmd": label, "Type": "OPEN_NAMED_DIALOG"}
+
+    botoes = [
+        botao("Abrir o livro de missões", "livro",
+              [{"Type": "CLOSE_DIALOG"},
+               {"Cmd": "/ftbquests open_book", "ExecAsUser": B, "PermLevel": 0, "Type": "COMMAND"}]),
+        botao("Conte a história do Selo", "historia_btn", [abrir("historia")]),
+        botao("Dicas de combate", "dicas_btn", [abrir("dicas")]),
+        botao("Até mais, Mestre", "tchau", [{"Type": "CLOSE_DIALOG"},
+                                             {"Msg": {"T": Raw("4b"), "Texts": ["Boa caçada, @initiator."]}, "Type": "MESSAGE"}]),
+    ]
+    voltar = [botao("Voltar", "voltar", [{"Type": "OPEN_DEFAULT_DIALOG"}])]
+
+    def fala(label, nome, prioridade, texto, tag=None, com_botoes=True):
+        d = {"Buttons": botoes if com_botoes else voltar, "Label": label, "Name": nome,
+             "Priority": prioridade, "Texts": [{"Text": texto}]}
+        if tag:
+            d["Conditions"] = [{"Name": tag, "Type": "PLAYER_TAG"}]
+        return d
+
+    falas = [
+        fala("inicio", "Bem-vindo", 1,
+             "Bem-vindo à Ordem dos Caçadores, @initiator.\\n\\n"
+             "O Selo se partiu e os fragmentos corromperam criaturas poderosas. Os três primeiros estão perto daqui: "
+             "algo enorme nos pântanos, um espírito que toca um sino, e um cavaleiro de metal numa câmara no subsolo.\\n\\n"
+             "Comece escolhendo o seu caminho no livro de missões."),
+        fala("ato2", "Terras Selvagens", 2,
+             "Três fragmentos, @initiator. Melhor do que qualquer caçador em anos.\\n\\n"
+             "Os próximos estão longe: no gelo eterno, nas savanas queimadas, no mar congelado e com a jogadora de almas, Dame Fortuna. "
+             "Use os mapas que eu te der e o planador para atravessar o mundo.",
+             tag=tag_ato(1)),
+        fala("ato3", "Abismo e Fogo", 3,
+             "Sete fragmentos... e os que faltam caíram no Nether, @initiator.\\n\\n"
+             "Use ouro na armadura para os piglins te deixarem em paz e leve muitas poções de resistência ao fogo. "
+             "Eu mando as coordenadas de cada lugar pelo livro.",
+             tag=tag_ato(2)),
+        fala("ato4", "Além do Céu", 4,
+             "Onze fragmentos. E agora a verdade: os guardiões do Selo nunca morreram, @initiator.\\n\\n"
+             "Eles vivem no Everbright e no Everdawn, acima das nuvens, mas enlouqueceram. "
+             "Tijolo turquesa abre o caminho para o Everbright. Tijolo lunar, para o Everdawn.",
+             tag=tag_ato(3)),
+        fala("ato5", "O Fim do Selo", 5,
+             "Quinze fragmentos, @initiator. O Selo só pode ser refeito onde foi quebrado: no End.\\n\\n"
+             "Encontre a fortaleza escondida, derrote o Dragão e os guardiões do vazio. "
+             "E guarde a Estrela do Nether do Wither. Você vai precisar dela no final.",
+             tag=tag_ato(4)),
+        fala("final", "O Selo Restaurado", 6,
+             "@initiator... você conseguiu.\\n\\n"
+             "Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez. "
+             "A Ordem nunca vai esquecer o seu nome.\\n\\n"
+             "Se ainda quiser lutar, dizem que uma flor do vazio e um leviatã ainda vagam pelo mundo...",
+             tag="terras_partidas_fim"),
+        fala("historia", "A história do Selo", -1,
+             "Há trezentos anos, um mal antigo ameaçou o mundo. Sete guardiões o prenderam dentro de um cristal: o Selo.\\n\\n"
+             "Na última lua cheia, o Selo se partiu. Os fragmentos caíram pelo mundo, e cada um corrompeu a criatura mais forte que encontrou.\\n\\n"
+             "Junte todos os fragmentos e o Selo pode ser refeito. Falhe, e o mal desperta.",
+             com_botoes=False),
+        fala("dicas", "Dicas de combate", -1,
+             "Aperte R para entrar no modo de combate.\\n\\n"
+             "Esquivar e defender gasta a barra de fôlego. Não ataque sem parar: espere o inimigo errar e contra-ataque.\\n\\n"
+             "Cada chefe derrotado te dá um livro de habilidade. Use o livro (clique direito) para aprender um movimento novo.",
+             com_botoes=False),
+    ]
+
+    return {
+        "PresetMetadata": {
+            "author": "Terras Partidas",
+            "category": "Quest",
+            "description": "Mestre Vellan, da Ordem dos Caçadores. A fala muda conforme o ato do jogador.",
+            "entityTypeId": "easy_npc:humanoid",
+            "name": "Mestre Vellan",
+            "variantType": "PROFESSOR_01",
+            "version": "1.0.0",
+        },
+        "data": {
+            "ActionData": {"ActionEventSet": {"ON_INTERACTION": [{"Type": "OPEN_DEFAULT_DIALOG"}]}},
+            "CustomName": json.dumps({"color": "gold", "text": "Mestre Vellan"}, ensure_ascii=False),
+            "DialogData": {"DialogDataSet": falas, "Type": "STANDARD"},
+            "EasyNPCVersion": 3,
+            "HandItems": [{"Count": B, "id": "minecraft:writable_book"}, {}],
+            "Invulnerable": B,
+            "ObjectiveData": {"ObjectiveDataSet": [{"Type": "LOOK_AT_PLAYER"}, {"Type": "LOOK_AT_RESET"}]},
+            "PersistenceRequired": B,
+            "VariantType": "PROFESSOR_01",
+            "id": "easy_npc:humanoid",
+        },
+    }
+
+
 # ---------------------------------------------------------------- arquivos
 
 def escrever(caminho, dados):
@@ -1226,8 +1373,25 @@ def main():
         "icon": "minecraft:amethyst_shard",
     })
     escrever("chapter_groups.snbt", {"chapter_groups": []})
-    for capitulo in (ato1(), ato2(), ato3(), ato4(), ato5()):
+    capitulos = {"ato1": ato1(), "ato2": ato2(), "ato3": ato3(), "ato4": ato4(), "ato5": ato5()}
+    # Marca o jogador ao fim de cada ato: o diálogo do Mestre Vellan usa essas tags.
+    marcos = [("ato1", "relatorio", tag_ato(1)), ("ato2", "relatorio", tag_ato(2)),
+              ("ato3", "relatorio", tag_ato(3)), ("ato4", "relatorio", tag_ato(4)),
+              ("ato5", "selo", "terras_partidas_fim")]
+    for cap, chave, tag in marcos:
+        alvo = qid(f"{cap}/quest/{chave}")
+        quest = next(q for q in capitulos[cap]["quests"] if q["id"] == alvo)
+        quest["rewards"].append({"id": qid(f"{cap}/quest/{chave}/recompensa/tag_progresso"), "type": "command",
+                                 "command": f"/tag {{p}} add {tag}", "elevate_perms": True, "silent": True,
+                                 "title": "O Mestre Vellan registra seu progresso", "icon": "minecraft:writable_book"})
+    for capitulo in capitulos.values():
         escrever(f"chapters/{capitulo['filename']}.snbt", capitulo)
+    preset = os.path.join(RAIZ, "..", "..", "openloader", "data", "terras_partidas", "data",
+                          "terras_partidas", "easy_npc", "preset", "humanoid", "mestre_vellan.npc.snbt")
+    os.makedirs(os.path.dirname(preset), exist_ok=True)
+    with open(preset, "w", encoding="utf-8") as f:
+        f.write(snbt_mc(mestre_vellan()) + "\n")
+    print("escrito:", os.path.relpath(preset))
 
 
 if __name__ == "__main__":

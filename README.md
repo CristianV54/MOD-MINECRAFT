@@ -145,6 +145,18 @@ Na semente de teste, as distâncias ficaram assim:
 
 **Atenção:** o YUNG's Better Strongholds substitui a fortaleza do End. O ID certo é `betterstrongholds:stronghold`.
 
+## Mestre Vellan no mundo
+
+O Mestre Vellan é um NPC do Easy NPC que aparece **ao lado do jogador** quando ele pega a recompensa da primeira missão ("O Chamado").
+- **Conversa:** clique direito nele. A fala muda conforme o ato do jogador, porque cada relatório de ato marca o jogador com a tag `terras_partidas_atoN` (e `terras_partidas_fim` no final).
+- **Botões:** abrir o livro de missões, a história do Selo, dicas de combate e despedida.
+- **Chamar de novo:** a missão repetível "Chamar o Mestre", no Ato 1, traz ele até o jogador. Se ele estiver perto, só muda de lugar.
+- **Arquivos:**
+  - **Preset:** `pack/config/openloader/data/terras_partidas/data/terras_partidas/easy_npc/preset/humanoid/mestre_vellan.npc.snbt`, gerado pelo script de missões.
+  - **Funções:** `terras_partidas:chamar_vellan` e `terras_partidas:rechamar_vellan`, no mesmo datapack.
+- **Por que a invocação passa por uma entidade auxiliar:** se o jogador invocar o preset direto, o Easy NPC trata como importação de um jogador comum e corta o diálogo com comandos e o "olhar pro jogador".
+- **Configuração:** `pack/config/easy_npc/security.cfg` libera só o comando `ftbquests` para o botão do livro.
+
 ## A história
 
 > Há trezentos anos, sete guardiões criaram o **Selo**, um cristal que prendia um mal antigo. O Selo se partiu, os fragmentos caíram pelo mundo e corromperam criaturas poderosas. O **Mestre Vellan**, da Ordem dos Caçadores, recruta o jogador para recuperar os 19 fragmentos.

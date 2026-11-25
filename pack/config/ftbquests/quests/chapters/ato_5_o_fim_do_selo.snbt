@@ -667,6 +667,15 @@
 					type: "xp_levels"
 					xp_levels: 50
 				}
+				{
+					id: "03D853D04BBD92AB"
+					type: "command"
+					command: "/tag {p} add terras_partidas_fim"
+					elevate_perms: true
+					silent: true
+					title: "O Mestre Vellan registra seu progresso"
+					icon: "minecraft:writable_book"
+				}
 			]
 		}
 		{
