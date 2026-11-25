@@ -5,12 +5,12 @@ Modpack brasileiro de RPG com combate estilo souls, chefes, dungeons e uma hist�
 - **Versão:** Minecraft 1.20.1 com Forge 47.4.29
 - **Mods:** 110 no total (91 rodam no servidor e 19 só no jogador)
 - **Objetivo:** ser mais leve que o DawnCraft (305 mods) e rodar bem com 6 GB de RAM
-- **Estado:** base de mods pronta, **Atos 1, 2 e 3 completos** (67 missões em português, com dragões). Atos 4 e 5 ainda vão ser escritos.
+- **Estado:** base de mods pronta, **Atos 1 a 4 completos** (88 missões em português, com dragões). Só falta o Ato 5.
 
 ## O que já foi testado
 
 - Um servidor dedicado ligou com todos os mods de servidor em cerca de 35 segundos, gerou o mundo e desligou sem travar.
-- As 67 missões carregam sem erro, e o servidor mantém os IDs delas (o progresso dos jogadores não se perde entre atualizações).
+- As 88 missões carregam sem erro, e o servidor mantém os IDs delas (o progresso dos jogadores não se perde entre atualizações).
 - Todos os itens, chefes e estruturas citados nas missões existem nos mods.
 - Os 4 mapas do tesouro saem preenchidos, com o X no local certo. Na semente de teste: Câmara Forjada a 450 blocos, Frostmaw a 1.950, navio do Labirinto de Gelo a 1.910 e bosque do Umvuthi a 3.200.
 - **Ainda não foi testado:** abrir o jogo no PC (lado do jogador) e jogar as missões de verdade.
@@ -97,6 +97,31 @@ Também tem a fortaleza (com coordenadas), varas de blaze e uma missão extra de
 
 **Atenção:** o YUNG's Better Fortresses substitui a fortaleza normal. Por isso, missões que procuram fortaleza precisam usar `betterfortresses:fortress`, e não `minecraft:fortress`.
 
+## Ato 4: Além do Céu (pronto)
+
+Começa depois do relatório do Ato 3. São 21 missões nas duas dimensões do Blue Skies. Os quatro chefes são os guardiões originais do Selo, enlouquecidos pelos fragmentos.
+
+**Como entrar:**
+- O Mestre entrega um **mapa até a Casa do Guardião do Portal**, o **Isqueiro Zeal** e 16 tijolos de cada tipo.
+- O portal tem a mesma moldura do portal do Nether. Pelo código do mod:
+  - **Tijolo de Pedra Turquesa** leva ao **Everbright**.
+  - **Tijolo de Pedra Lunar** leva ao **Everdawn**.
+
+**Como funciona cada masmorra:** coordenadas no chat, entrar na masmorra, achar a chave num baú, usar a chave na pedra-chave e derrotar o chefe.
+
+| Mundo | Masmorra | Chefe | Habilidade ganha |
+|---|---|---|---|
+| Everbright | Masmorra Ofuscante | Summoner | Revelação |
+| Everbright | Masmorra da Natureza | Starlit Crusher | Força Proibida |
+| Everdawn | Masmorra Ofuscante | Alchemist | Pele Adaptativa |
+| Everdawn | Masmorra do Veneno | Arachnarch | Vingança |
+
+O relatório final dá 12 olhos do Ender e anuncia o Ato 5, no End. Na semente de teste:
+- **Casa do Guardião:** cerca de 1.060 blocos do spawn.
+- **Masmorras:** 1.470, 742, 637 e 2.050 blocos dentro das dimensões.
+
+Com o dragão do Ato 2 essas viagens ficam bem mais rápidas.
+
 ## Rascunho da história
 
 > Há séculos, sete guardiões selaram um mal antigo dentro de um cristal: o **Selo**. O Selo se partiu, os fragmentos se espalharam pelo mundo e cada um corrompeu uma criatura poderosa. A **Ordem dos Caçadores** recruta você para recuperar os fragmentos antes que o mal desperte.
@@ -118,7 +143,7 @@ A ordem dos chefes e os nomes dos atos ainda são rascunho e podem mudar.
 ## Próximos passos
 
 1. Testar no PC e ajustar o que pesar ou bugar.
-2. Escrever o Ato 4 (Além do Céu, no Blue Skies) e colocar o Mestre Vellan no mundo como NPC (Easy NPC).
+2. Escrever o Ato 5 (O Fim do Selo, no End) e colocar o Mestre Vellan no mundo como NPC (Easy NPC).
 3. Montar a árvore de habilidades de cada classe (Pufferfish's Skills).
 4. Fazer a tradução PT-BR dos mods que não têm português.
 5. Configurar dificuldade, drops e o bloqueio de progressão.

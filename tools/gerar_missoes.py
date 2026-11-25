@@ -864,6 +864,138 @@ def ato3():
     }
 
 
+
+# ---------------------------------------------------------------- ATO 4
+
+def ato4():
+    c = Capitulo("ato4")
+    M = "&6Mestre Vellan&r"
+    EB, ED = "blue_skies:everbright", "blue_skies:everdawn"
+
+    def coord(mundo):
+        return f"&7Pegue a recompensa &festando no {mundo}&7: as coordenadas aparecem no chat.&r"
+
+    def masmorra(chave, x, y, deps, titulo, mundo, dim, estrutura, chave_item, nome_chave,
+                 boss_chave, boss_nome, boss_id, historia, dica, frag, skill, icone_boss):
+        c.quest(chave, titulo, x, y, icone="minecraft:compass", deps=deps,
+                descricao=[historia, "", coord(mundo)],
+                tarefas=[c.t_check("Pedir a localização da masmorra")],
+                recompensas=[c.r_localizar(estrutura, f"Coordenadas: {titulo}", dimensao=dim),
+                             c.r_item(pocao("minecraft:healing"), 3)])
+        c.quest(chave + "_achar", "Entrar na masmorra", x + 3, y, icone="minecraft:mossy_stone_bricks",
+                deps=[chave],
+                descricao=["Vá até as coordenadas e entre na masmorra.",
+                           "&7Masmorras têm armadilhas e monstros. Leve tochas e comida.&r"],
+                tarefas=[c.t_estrutura(estrutura, "Entrar na masmorra")],
+                recompensas=[c.r_xp(5)])
+        c.quest(chave + "_chave", nome_chave, x + 6, y, icone=chave_item, deps=[chave + "_achar"],
+                descricao=["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.",
+                           "Depois, use a chave na &fpedra-chave&r da porta do chefe."],
+                tarefas=[c.t_item(chave_item, titulo=f"Encontrar a {nome_chave}")],
+                recompensas=[c.r_xp(5)])
+        c.quest(boss_chave, f"Chefe: {boss_nome}", x + 9, y, icone=icone_boss, deps=[chave + "_chave"],
+                forma="octagon", tamanho=1.5,
+                descricao=[f"Derrote &c{boss_nome}&r.", "", dica],
+                tarefas=[c.t_matar(boss_id, 1, f"Derrotar {boss_nome}")],
+                recompensas=[c.r_item(fragmento(4, frag, 4)), c.r_skill(skill), c.r_xp(15),
+                             c.r_item("minecraft:diamond", 5)])
+
+    c.quest("ceu", "Além do Céu", 0, 0, forma="gear", tamanho=1.75,
+            icone="blue_skies:zeal_lighter", deps=["@ato3/relatorio"],
+            subtitulo="Os mundos acima das nuvens",
+            descricao=[
+                f"{M}: \"Encontrei nos arquivos mais antigos da Ordem: os guardiões do Selo não morreram. Eles se refugiaram em dois mundos acima das nuvens.\"",
+                "",
+                "&o\"O &bEverbright&o, de luz e gelo eterno, e o &6Everdawn&o, onde o sol nunca termina de nascer. Mas algo aconteceu com eles: os fragmentos que caíram por lá os enlouqueceram.\"",
+                "",
+                "&o\"Existe um &fGuardião do Portal&o que vive em uma casa no nosso mundo e sabe abrir o caminho. Leve este &fIsqueiro Zeal&o e os tijolos que separei.\"",
+            ],
+            tarefas=[c.t_check("Partir para além do céu")],
+            recompensas=[c.r_mapa("casa_do_guardiao", "Mapa: Casa do Guardião do Portal"),
+                         c.r_item("blue_skies:zeal_lighter"), c.r_item("blue_skies:turquoise_stonebrick", 16),
+                         c.r_item("blue_skies:lunar_stonebrick", 16), c.r_xp(5)])
+
+    c.quest("casa", "A Casa do Guardião", 3, 0, icone="minecraft:oak_door", deps=["ceu"],
+            descricao=["Siga o mapa até a &fcasa do Guardião do Portal&r. Ela fica perto de vilas das planícies, em savanas, montanhas ou terras nevadas.",
+                       "",
+                       "&eComo abrir os portais:&r monte uma moldura do mesmo formato do portal do Nether (4 de largura por 5 de altura) e acenda com o &fIsqueiro Zeal&r (clique direito dentro da moldura).",
+                       "• Moldura de &bTijolo de Pedra Turquesa&r: leva ao &bEverbright&r.",
+                       "• Moldura de &fTijolo de Pedra Lunar&r: leva ao &6Everdawn&r.",
+                       "",
+                       "O Mestre mandou 16 tijolos de cada tipo, o suficiente para os dois portais."],
+            tarefas=[c.t_estrutura("#terras_partidas:casa_do_guardiao", "Encontrar a casa do Guardião")],
+            recompensas=[c.r_xp(5), c.r_item("minecraft:cooked_beef", 16)])
+
+    c.quest("everbright", "Everbright", 6, -3, icone="minecraft:packed_ice", deps=["casa"],
+            subtitulo="O mundo da luz e do gelo",
+            descricao=["Atravesse o portal do &bEverbright&r.",
+                       "", "&7Os minérios e madeiras daqui são diferentes. As ferramentas feitas com eles funcionam melhor neste mundo.&r"],
+            tarefas=[c.t_dimensao(EB, "Entrar no Everbright")],
+            recompensas=[c.r_xp(5), c.r_item(pocao("minecraft:long_night_vision"), 2)])
+
+    c.quest("everdawn", "Everdawn", 6, 3, icone="minecraft:orange_terracotta", deps=["casa"],
+            subtitulo="O mundo do amanhecer eterno",
+            descricao=["Atravesse o portal do &6Everdawn&r.",
+                       "", "&7Os minérios e madeiras daqui são diferentes. As ferramentas feitas com eles funcionam melhor neste mundo.&r"],
+            tarefas=[c.t_dimensao(ED, "Entrar no Everdawn")],
+            recompensas=[c.r_xp(5), c.r_item(pocao("minecraft:long_fire_resistance"), 2)])
+
+    # ---- Everbright
+    masmorra("eb_ofuscante", 9, -3, ["everbright"], "Masmorra Ofuscante do Everbright", "Everbright", EB,
+             "blue_skies:everbright_blinding_dungeon", "blue_skies:blinding_key", "Chave Ofuscante",
+             "summoner", "Summoner", "blue_skies:summoner",
+             f"{M}: \"O primeiro guardião, o &fInvocador&r, se trancou numa masmorra de luz cegante. Ele chama criaturas para lutar por ele.\"",
+             "&7Dica: ele invoca ajudantes sem parar. Derrube os ajudantes rápido e ataque o Summoner entre uma invocação e outra.&r",
+             1, "epicfight:revelation", "minecraft:totem_of_undying")
+    masmorra("eb_natureza", 9, -6, ["summoner"], "Masmorra da Natureza", "Everbright", EB,
+             "blue_skies:nature_dungeon", "blue_skies:nature_key", "Chave da Natureza",
+             "starlit_crusher", "Starlit Crusher", "blue_skies:starlit_crusher",
+             f"{M}: \"O segundo guardião do Everbright virou uma árvore viva gigante, o &fEsmagador Estelar&r. Ele vive numa masmorra coberta de mato, nos pinheiros nevados.\"",
+             "&7Dica: ele é lento mas bate muito forte. Fique sempre se movendo e ataque pelas costas.&r",
+             2, "epicfight:forbidden_strength", "minecraft:oak_sapling")
+
+    # ---- Everdawn
+    masmorra("ed_ofuscante", 9, 3, ["everdawn"], "Masmorra Ofuscante do Everdawn", "Everdawn", ED,
+             "blue_skies:everdawn_blinding_dungeon", "blue_skies:blinding_key", "Chave Ofuscante",
+             "alchemist", "Alchemist", "blue_skies:alchemist",
+             f"{M}: \"No Everdawn, o guardião &fAlquimista&r passou séculos fazendo poções com o poder do fragmento. Ele não é mais humano.\"",
+             "&7Dica: ele joga poções que mudam o chão da arena. Leve leite para tirar efeitos ruins.&r",
+             3, "epicfight:adaptive_skin", "minecraft:brewing_stand")
+    masmorra("ed_veneno", 9, 6, ["alchemist"], "Masmorra do Veneno", "Everdawn", ED,
+             "blue_skies:poison_dungeon", "blue_skies:poison_key", "Chave do Veneno",
+             "arachnarch", "Arachnarch", "blue_skies:arachnarch",
+             f"{M}: \"O último guardião do Everdawn virou uma aranha gigante, a &fArachnarch&r. Ela fez um ninho numa masmorra venenosa na floresta de bordos.\"",
+             "&7Dica: leve muito leite e poções de cura. O veneno dela é o perigo maior, não as mordidas.&r",
+             4, "epicfight:vengeance", "minecraft:spider_eye")
+
+    c.quest("relatorio", "Relatório: Além do Céu", 21, 0, icone="minecraft:amethyst_shard",
+            deps=["starlit_crusher", "arachnarch"], forma="gear", tamanho=2.0,
+            subtitulo="Fim do Ato 4",
+            descricao=[f"{M}: \"Quinze fragmentos. Os guardiões caídos agora descansam.\"",
+                       "",
+                       "&o\"Antes de morrer, o Alquimista sussurrou algo: o Selo só pode ser refeito onde foi quebrado. No &5Fim&o do mundo, onde o Dragão guarda o vazio.\"",
+                       "",
+                       "&o\"Use os olhos do Ender para achar a fortaleza escondida. A última batalha nos espera.\"",
+                       "",
+                       "&dFim do Ato 4. O Ato 5 &7(O Fim do Selo)&d chega em breve.&r"],
+            tarefas=[c.t_check("Entregar o relatório")],
+            recompensas=[c.r_item("minecraft:ender_eye", 12), c.r_item("minecraft:diamond", 10),
+                         c.r_item("minecraft:enchanted_golden_apple", 2), c.r_xp(30)])
+
+    return {
+        "id": qid("capitulo/ato4"),
+        "group": "",
+        "order_index": 3,
+        "filename": "ato_4_alem_do_ceu",
+        "title": "Ato 4: Além do Céu",
+        "subtitle": ["Os guardiões caídos"],
+        "icon": "blue_skies:zeal_lighter",
+        "default_quest_shape": "",
+        "default_hide_dependency_lines": False,
+        "quests": c.quests,
+    }
+
+
 # ---------------------------------------------------------------- arquivos
 
 def escrever(caminho, dados):
@@ -896,7 +1028,7 @@ def main():
         "icon": "minecraft:amethyst_shard",
     })
     escrever("chapter_groups.snbt", {"chapter_groups": []})
-    for capitulo in (ato1(), ato2(), ato3()):
+    for capitulo in (ato1(), ato2(), ato3(), ato4()):
         escrever(f"chapters/{capitulo['filename']}.snbt", capitulo)
 
 

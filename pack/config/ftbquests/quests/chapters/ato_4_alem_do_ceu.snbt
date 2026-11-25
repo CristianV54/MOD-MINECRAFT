@@ -1,0 +1,825 @@
+{
+	id: "428032C56230F1A0"
+	group: ""
+	order_index: 3
+	filename: "ato_4_alem_do_ceu"
+	title: "Ato 4: Além do Céu"
+	subtitle: ["Os guardiões caídos"]
+	icon: "blue_skies:zeal_lighter"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "2D42558563013C01"
+			title: "Além do Céu"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Os mundos acima das nuvens"
+			icon: "blue_skies:zeal_lighter"
+			shape: "gear"
+			size: 1.75d
+			description: ["&6Mestre Vellan&r: \"Encontrei nos arquivos mais antigos da Ordem: os guardiões do Selo não morreram. Eles se refugiaram em dois mundos acima das nuvens.\"", "", "&o\"O &bEverbright&o, de luz e gelo eterno, e o &6Everdawn&o, onde o sol nunca termina de nascer. Mas algo aconteceu com eles: os fragmentos que caíram por lá os enlouqueceram.\"", "", "&o\"Existe um &fGuardião do Portal&o que vive em uma casa no nosso mundo e sabe abrir o caminho. Leve este &fIsqueiro Zeal&o e os tijolos que separei.\""]
+			dependencies: ["6191703B0919D2E4"]
+			tasks: [
+				{
+					id: "67686056509D0F54"
+					type: "checkmark"
+					title: "Partir para além do céu"
+				}
+			]
+			rewards: [
+				{
+					id: "50BD1D40611C1B9C"
+					type: "command"
+					command: "/loot give {p} loot terras_partidas:mapas/casa_do_guardiao"
+					elevate_perms: true
+					silent: true
+					title: "Mapa: Casa do Guardião do Portal"
+					icon: "minecraft:filled_map"
+				}
+				{
+					id: "23C3A72FFE8C9DE2"
+					type: "item"
+					item: "blue_skies:zeal_lighter"
+				}
+				{
+					id: "571E940C3B8EC6F5"
+					type: "item"
+					item: "blue_skies:turquoise_stonebrick"
+					count: 16
+				}
+				{
+					id: "3AC86CED43EEF87E"
+					type: "item"
+					item: "blue_skies:lunar_stonebrick"
+					count: 16
+				}
+				{
+					id: "39CCC0D8380A23CA"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "174519542747B0EE"
+			title: "A Casa do Guardião"
+			x: 3.0d
+			y: 0.0d
+			icon: "minecraft:oak_door"
+			description: ["Siga o mapa até a &fcasa do Guardião do Portal&r. Ela fica perto de vilas das planícies, em savanas, montanhas ou terras nevadas.", "", "&eComo abrir os portais:&r monte uma moldura do mesmo formato do portal do Nether (4 de largura por 5 de altura) e acenda com o &fIsqueiro Zeal&r (clique direito dentro da moldura).", "• Moldura de &bTijolo de Pedra Turquesa&r: leva ao &bEverbright&r.", "• Moldura de &fTijolo de Pedra Lunar&r: leva ao &6Everdawn&r.", "", "O Mestre mandou 16 tijolos de cada tipo, o suficiente para os dois portais."]
+			dependencies: ["2D42558563013C01"]
+			tasks: [
+				{
+					id: "68A9F45A2F6C0B1D"
+					type: "structure"
+					structure: "#terras_partidas:casa_do_guardiao"
+					title: "Encontrar a casa do Guardião"
+				}
+			]
+			rewards: [
+				{
+					id: "6CDF1DCE6DEC916F"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "341CFA5E93B7DAA9"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 16
+				}
+			]
+		}
+		{
+			id: "1F3C25F6B028FEF2"
+			title: "Everbright"
+			x: 6.0d
+			y: -3.0d
+			subtitle: "O mundo da luz e do gelo"
+			icon: "minecraft:packed_ice"
+			description: ["Atravesse o portal do &bEverbright&r.", "", "&7Os minérios e madeiras daqui são diferentes. As ferramentas feitas com eles funcionam melhor neste mundo.&r"]
+			dependencies: ["174519542747B0EE"]
+			tasks: [
+				{
+					id: "5426EA99224697EE"
+					type: "dimension"
+					dimension: "blue_skies:everbright"
+					title: "Entrar no Everbright"
+				}
+			]
+			rewards: [
+				{
+					id: "469F435ADF8E0627"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "3B97B2B2A9DB9AC5"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_night_vision"
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "14A6D2F7F41AF96F"
+			title: "Everdawn"
+			x: 6.0d
+			y: 3.0d
+			subtitle: "O mundo do amanhecer eterno"
+			icon: "minecraft:orange_terracotta"
+			description: ["Atravesse o portal do &6Everdawn&r.", "", "&7Os minérios e madeiras daqui são diferentes. As ferramentas feitas com eles funcionam melhor neste mundo.&r"]
+			dependencies: ["174519542747B0EE"]
+			tasks: [
+				{
+					id: "6EE07D91FB2ED0FA"
+					type: "dimension"
+					dimension: "blue_skies:everdawn"
+					title: "Entrar no Everdawn"
+				}
+			]
+			rewards: [
+				{
+					id: "4E062BE4B0E1C9CD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "686F43CD0193D7AD"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "223D59C90058688C"
+			title: "Masmorra Ofuscante do Everbright"
+			x: 9.0d
+			y: -3.0d
+			icon: "minecraft:compass"
+			description: ["&6Mestre Vellan&r: \"O primeiro guardião, o &fInvocador&r, se trancou numa masmorra de luz cegante. Ele chama criaturas para lutar por ele.\"", "", "&7Pegue a recompensa &festando no Everbright&7: as coordenadas aparecem no chat.&r"]
+			dependencies: ["1F3C25F6B028FEF2"]
+			tasks: [
+				{
+					id: "3A32E10D4C617062"
+					type: "checkmark"
+					title: "Pedir a localização da masmorra"
+				}
+			]
+			rewards: [
+				{
+					id: "56ECAEA14544DE51"
+					type: "command"
+					command: "/execute in blue_skies:everbright run locate structure blue_skies:everbright_blinding_dungeon"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas: Masmorra Ofuscante do Everbright"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "2B021A7002B7E29E"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:healing"
+						}
+					}
+					count: 3
+				}
+			]
+		}
+		{
+			id: "74F7367AF94E6221"
+			title: "Entrar na masmorra"
+			x: 12.0d
+			y: -3.0d
+			icon: "minecraft:mossy_stone_bricks"
+			description: ["Vá até as coordenadas e entre na masmorra.", "&7Masmorras têm armadilhas e monstros. Leve tochas e comida.&r"]
+			dependencies: ["223D59C90058688C"]
+			tasks: [
+				{
+					id: "0C0FB775672C3F06"
+					type: "structure"
+					structure: "blue_skies:everbright_blinding_dungeon"
+					title: "Entrar na masmorra"
+				}
+			]
+			rewards: [
+				{
+					id: "1F8DCAFD3FBDF4CE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "30DCF1DF167AB938"
+			title: "Chave Ofuscante"
+			x: 15.0d
+			y: -3.0d
+			icon: "blue_skies:blinding_key"
+			description: ["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.", "Depois, use a chave na &fpedra-chave&r da porta do chefe."]
+			dependencies: ["74F7367AF94E6221"]
+			tasks: [
+				{
+					id: "24EE18917365FDBA"
+					type: "item"
+					item: "blue_skies:blinding_key"
+					count: 1L
+					title: "Encontrar a Chave Ofuscante"
+				}
+			]
+			rewards: [
+				{
+					id: "0220F0EAD9B06C35"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "3C47FC03294F8851"
+			title: "Chefe: Summoner"
+			x: 18.0d
+			y: -3.0d
+			icon: "minecraft:totem_of_undying"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Derrote &cSummoner&r.", "", "&7Dica: ele invoca ajudantes sem parar. Derrube os ajudantes rápido e ataque o Summoner entre uma invocação e outra.&r"]
+			dependencies: ["30DCF1DF167AB938"]
+			tasks: [
+				{
+					id: "7C08C4A9CDDE612F"
+					type: "kill"
+					entity: "blue_skies:summoner"
+					value: 1L
+					title: "Derrotar Summoner"
+				}
+			]
+			rewards: [
+				{
+					id: "211F796A35F1E1BF"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "{\"text\": \"Fragmento do Selo\", \"color\": \"light_purple\", \"italic\": false}"
+								Lore: ["{\"text\": \"Ato 4: fragmento 1 de 4.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Um pedaço do cristal que prendia o mal antigo.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Ainda está quente ao toque.\", \"color\": \"gray\", \"italic\": true}"]
+							}
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 1s
+								}
+							]
+							HideFlags: 1
+						}
+					}
+				}
+				{
+					id: "1E442EB21B884ED7"
+					type: "item"
+					item: {
+						id: "epicfight:skillbook"
+						Count: 1b
+						tag: {
+							skill: "epicfight:revelation"
+						}
+					}
+				}
+				{
+					id: "082A99CE12EE09A5"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					id: "291DDCDC09429C70"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 5
+				}
+			]
+		}
+		{
+			id: "347A6B4A462BA93F"
+			title: "Masmorra da Natureza"
+			x: 9.0d
+			y: -6.0d
+			icon: "minecraft:compass"
+			description: ["&6Mestre Vellan&r: \"O segundo guardião do Everbright virou uma árvore viva gigante, o &fEsmagador Estelar&r. Ele vive numa masmorra coberta de mato, nos pinheiros nevados.\"", "", "&7Pegue a recompensa &festando no Everbright&7: as coordenadas aparecem no chat.&r"]
+			dependencies: ["3C47FC03294F8851"]
+			tasks: [
+				{
+					id: "79D50A7534BA54CD"
+					type: "checkmark"
+					title: "Pedir a localização da masmorra"
+				}
+			]
+			rewards: [
+				{
+					id: "3A6707FCBD685523"
+					type: "command"
+					command: "/execute in blue_skies:everbright run locate structure blue_skies:nature_dungeon"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas: Masmorra da Natureza"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "6FF025124C6FD51B"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:healing"
+						}
+					}
+					count: 3
+				}
+			]
+		}
+		{
+			id: "47842F0821E57C0C"
+			title: "Entrar na masmorra"
+			x: 12.0d
+			y: -6.0d
+			icon: "minecraft:mossy_stone_bricks"
+			description: ["Vá até as coordenadas e entre na masmorra.", "&7Masmorras têm armadilhas e monstros. Leve tochas e comida.&r"]
+			dependencies: ["347A6B4A462BA93F"]
+			tasks: [
+				{
+					id: "5E39E2658505F843"
+					type: "structure"
+					structure: "blue_skies:nature_dungeon"
+					title: "Entrar na masmorra"
+				}
+			]
+			rewards: [
+				{
+					id: "5FFEEF2C854795B8"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "27D647C9A396E9C1"
+			title: "Chave da Natureza"
+			x: 15.0d
+			y: -6.0d
+			icon: "blue_skies:nature_key"
+			description: ["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.", "Depois, use a chave na &fpedra-chave&r da porta do chefe."]
+			dependencies: ["47842F0821E57C0C"]
+			tasks: [
+				{
+					id: "67CC524C5F391162"
+					type: "item"
+					item: "blue_skies:nature_key"
+					count: 1L
+					title: "Encontrar a Chave da Natureza"
+				}
+			]
+			rewards: [
+				{
+					id: "1D473A06FFF2BCDD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "431EC95A5D5497E9"
+			title: "Chefe: Starlit Crusher"
+			x: 18.0d
+			y: -6.0d
+			icon: "minecraft:oak_sapling"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Derrote &cStarlit Crusher&r.", "", "&7Dica: ele é lento mas bate muito forte. Fique sempre se movendo e ataque pelas costas.&r"]
+			dependencies: ["27D647C9A396E9C1"]
+			tasks: [
+				{
+					id: "30F2DAE3DB223CB2"
+					type: "kill"
+					entity: "blue_skies:starlit_crusher"
+					value: 1L
+					title: "Derrotar Starlit Crusher"
+				}
+			]
+			rewards: [
+				{
+					id: "2325FEDAC03F7584"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "{\"text\": \"Fragmento do Selo\", \"color\": \"light_purple\", \"italic\": false}"
+								Lore: ["{\"text\": \"Ato 4: fragmento 2 de 4.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Um pedaço do cristal que prendia o mal antigo.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Ainda está quente ao toque.\", \"color\": \"gray\", \"italic\": true}"]
+							}
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 1s
+								}
+							]
+							HideFlags: 1
+						}
+					}
+				}
+				{
+					id: "5B3CD60013137828"
+					type: "item"
+					item: {
+						id: "epicfight:skillbook"
+						Count: 1b
+						tag: {
+							skill: "epicfight:forbidden_strength"
+						}
+					}
+				}
+				{
+					id: "7AA622D551AC0F6A"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					id: "6F74C22C885CA62C"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 5
+				}
+			]
+		}
+		{
+			id: "6042F4D1634B5E91"
+			title: "Masmorra Ofuscante do Everdawn"
+			x: 9.0d
+			y: 3.0d
+			icon: "minecraft:compass"
+			description: ["&6Mestre Vellan&r: \"No Everdawn, o guardião &fAlquimista&r passou séculos fazendo poções com o poder do fragmento. Ele não é mais humano.\"", "", "&7Pegue a recompensa &festando no Everdawn&7: as coordenadas aparecem no chat.&r"]
+			dependencies: ["14A6D2F7F41AF96F"]
+			tasks: [
+				{
+					id: "4E2ADDBAA3B68A79"
+					type: "checkmark"
+					title: "Pedir a localização da masmorra"
+				}
+			]
+			rewards: [
+				{
+					id: "0349354B02240D9A"
+					type: "command"
+					command: "/execute in blue_skies:everdawn run locate structure blue_skies:everdawn_blinding_dungeon"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas: Masmorra Ofuscante do Everdawn"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "2B79A2C5E3E16CF2"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:healing"
+						}
+					}
+					count: 3
+				}
+			]
+		}
+		{
+			id: "522689D1C95A7F64"
+			title: "Entrar na masmorra"
+			x: 12.0d
+			y: 3.0d
+			icon: "minecraft:mossy_stone_bricks"
+			description: ["Vá até as coordenadas e entre na masmorra.", "&7Masmorras têm armadilhas e monstros. Leve tochas e comida.&r"]
+			dependencies: ["6042F4D1634B5E91"]
+			tasks: [
+				{
+					id: "66B72B79E35A4AE9"
+					type: "structure"
+					structure: "blue_skies:everdawn_blinding_dungeon"
+					title: "Entrar na masmorra"
+				}
+			]
+			rewards: [
+				{
+					id: "64DAA517A8041649"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "11EFDB6C21CC5220"
+			title: "Chave Ofuscante"
+			x: 15.0d
+			y: 3.0d
+			icon: "blue_skies:blinding_key"
+			description: ["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.", "Depois, use a chave na &fpedra-chave&r da porta do chefe."]
+			dependencies: ["522689D1C95A7F64"]
+			tasks: [
+				{
+					id: "00E1DE21428168F9"
+					type: "item"
+					item: "blue_skies:blinding_key"
+					count: 1L
+					title: "Encontrar a Chave Ofuscante"
+				}
+			]
+			rewards: [
+				{
+					id: "5E70002B9CDB02AB"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "31689D5BC8FB62E8"
+			title: "Chefe: Alchemist"
+			x: 18.0d
+			y: 3.0d
+			icon: "minecraft:brewing_stand"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Derrote &cAlchemist&r.", "", "&7Dica: ele joga poções que mudam o chão da arena. Leve leite para tirar efeitos ruins.&r"]
+			dependencies: ["11EFDB6C21CC5220"]
+			tasks: [
+				{
+					id: "62D215FAEAAB7020"
+					type: "kill"
+					entity: "blue_skies:alchemist"
+					value: 1L
+					title: "Derrotar Alchemist"
+				}
+			]
+			rewards: [
+				{
+					id: "7F332B8CA2CC4340"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "{\"text\": \"Fragmento do Selo\", \"color\": \"light_purple\", \"italic\": false}"
+								Lore: ["{\"text\": \"Ato 4: fragmento 3 de 4.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Um pedaço do cristal que prendia o mal antigo.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Ainda está quente ao toque.\", \"color\": \"gray\", \"italic\": true}"]
+							}
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 1s
+								}
+							]
+							HideFlags: 1
+						}
+					}
+				}
+				{
+					id: "7F42CA417C168CC0"
+					type: "item"
+					item: {
+						id: "epicfight:skillbook"
+						Count: 1b
+						tag: {
+							skill: "epicfight:adaptive_skin"
+						}
+					}
+				}
+				{
+					id: "141CFCBAAD058AF9"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					id: "61FCA8B2030BF057"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 5
+				}
+			]
+		}
+		{
+			id: "67A213583F227725"
+			title: "Masmorra do Veneno"
+			x: 9.0d
+			y: 6.0d
+			icon: "minecraft:compass"
+			description: ["&6Mestre Vellan&r: \"O último guardião do Everdawn virou uma aranha gigante, a &fArachnarch&r. Ela fez um ninho numa masmorra venenosa na floresta de bordos.\"", "", "&7Pegue a recompensa &festando no Everdawn&7: as coordenadas aparecem no chat.&r"]
+			dependencies: ["31689D5BC8FB62E8"]
+			tasks: [
+				{
+					id: "170B0EC1A3E6E68E"
+					type: "checkmark"
+					title: "Pedir a localização da masmorra"
+				}
+			]
+			rewards: [
+				{
+					id: "497AC8D976220A78"
+					type: "command"
+					command: "/execute in blue_skies:everdawn run locate structure blue_skies:poison_dungeon"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas: Masmorra do Veneno"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "2F0D70970C5496B6"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:healing"
+						}
+					}
+					count: 3
+				}
+			]
+		}
+		{
+			id: "5EF70906A23B62C3"
+			title: "Entrar na masmorra"
+			x: 12.0d
+			y: 6.0d
+			icon: "minecraft:mossy_stone_bricks"
+			description: ["Vá até as coordenadas e entre na masmorra.", "&7Masmorras têm armadilhas e monstros. Leve tochas e comida.&r"]
+			dependencies: ["67A213583F227725"]
+			tasks: [
+				{
+					id: "11B9BCD1A2B6D6B5"
+					type: "structure"
+					structure: "blue_skies:poison_dungeon"
+					title: "Entrar na masmorra"
+				}
+			]
+			rewards: [
+				{
+					id: "155759105B6B83A1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "5257BB31CA0624A2"
+			title: "Chave do Veneno"
+			x: 15.0d
+			y: 6.0d
+			icon: "blue_skies:poison_key"
+			description: ["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.", "Depois, use a chave na &fpedra-chave&r da porta do chefe."]
+			dependencies: ["5EF70906A23B62C3"]
+			tasks: [
+				{
+					id: "14E11E9FA1399681"
+					type: "item"
+					item: "blue_skies:poison_key"
+					count: 1L
+					title: "Encontrar a Chave do Veneno"
+				}
+			]
+			rewards: [
+				{
+					id: "1BAB2CFCE8D0B797"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+		}
+		{
+			id: "024B19F727BEC243"
+			title: "Chefe: Arachnarch"
+			x: 18.0d
+			y: 6.0d
+			icon: "minecraft:spider_eye"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Derrote &cArachnarch&r.", "", "&7Dica: leve muito leite e poções de cura. O veneno dela é o perigo maior, não as mordidas.&r"]
+			dependencies: ["5257BB31CA0624A2"]
+			tasks: [
+				{
+					id: "14E13E0C1901B143"
+					type: "kill"
+					entity: "blue_skies:arachnarch"
+					value: 1L
+					title: "Derrotar Arachnarch"
+				}
+			]
+			rewards: [
+				{
+					id: "5A0C5A128861A1EE"
+					type: "item"
+					item: {
+						id: "minecraft:amethyst_shard"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "{\"text\": \"Fragmento do Selo\", \"color\": \"light_purple\", \"italic\": false}"
+								Lore: ["{\"text\": \"Ato 4: fragmento 4 de 4.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Um pedaço do cristal que prendia o mal antigo.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Ainda está quente ao toque.\", \"color\": \"gray\", \"italic\": true}"]
+							}
+							Enchantments: [
+								{
+									id: "minecraft:unbreaking"
+									lvl: 1s
+								}
+							]
+							HideFlags: 1
+						}
+					}
+				}
+				{
+					id: "68F219CC066BB5A5"
+					type: "item"
+					item: {
+						id: "epicfight:skillbook"
+						Count: 1b
+						tag: {
+							skill: "epicfight:vengeance"
+						}
+					}
+				}
+				{
+					id: "23BD986BE56345D2"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					id: "4FD48E60316D5CB0"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 5
+				}
+			]
+		}
+		{
+			id: "75ACF07311A3832B"
+			title: "Relatório: Além do Céu"
+			x: 21.0d
+			y: 0.0d
+			subtitle: "Fim do Ato 4"
+			icon: "minecraft:amethyst_shard"
+			shape: "gear"
+			size: 2.0d
+			description: ["&6Mestre Vellan&r: \"Quinze fragmentos. Os guardiões caídos agora descansam.\"", "", "&o\"Antes de morrer, o Alquimista sussurrou algo: o Selo só pode ser refeito onde foi quebrado. No &5Fim&o do mundo, onde o Dragão guarda o vazio.\"", "", "&o\"Use os olhos do Ender para achar a fortaleza escondida. A última batalha nos espera.\"", "", "&dFim do Ato 4. O Ato 5 &7(O Fim do Selo)&d chega em breve.&r"]
+			dependencies: ["431EC95A5D5497E9", "024B19F727BEC243"]
+			tasks: [
+				{
+					id: "64E244EE090C3AB1"
+					type: "checkmark"
+					title: "Entregar o relatório"
+				}
+			]
+			rewards: [
+				{
+					id: "2B726DED3E0D9A00"
+					type: "item"
+					item: "minecraft:ender_eye"
+					count: 12
+				}
+				{
+					id: "6DD7B63504D5B486"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 10
+				}
+				{
+					id: "61B2C9F0823BB906"
+					type: "item"
+					item: "minecraft:enchanted_golden_apple"
+					count: 2
+				}
+				{
+					id: "0F86C76253F494E8"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+		}
+	]
+}

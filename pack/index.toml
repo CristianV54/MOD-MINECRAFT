@@ -17,6 +17,10 @@ file = "config/ftbquests/quests/chapters/ato_3_abismo_e_fogo.snbt"
 hash = "47d0fa0eae02b7e63cb346a254197d90ba2ab60de9948d77a3aa068ecb87d041"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/ato_4_alem_do_ceu.snbt"
+hash = "a60e5f8e2b1ae1cbdcfa4e25680b597f1855dd77283c7bcf00934f379bcab6fa"
+
+[[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "db76d779c699910388681cd1426745b1874d59bca7a2e47e18298bea936dadfc"
 
@@ -45,6 +49,10 @@ file = "config/openloader/data/terras_partidas/data/terras_partidas/loot_tables/
 hash = "90a09af2585cdf1987733e91a65bcb81a727e39b271e060dff5eb2dfc301fde6"
 
 [[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/loot_tables/mapas/casa_do_guardiao.json"
+hash = "39c5126187c79111b0527ca3ba8cd9fdc9da14a2d12a877a1fd322935d0361b3"
+
+[[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/loot_tables/mapas/covil_frostmaw.json"
 hash = "01a439602f0aa93dd4fd7408398552bfde8d4c219c2490f113622fe7ed514a60"
 
@@ -59,6 +67,10 @@ hash = "646712bb3c8e2c4a7be670e98c6e047c83d44a65bb886d52f62061f5c7f65dcd"
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/tags/worldgen/structure/camara_forjada.json"
 hash = "6c1ff2efc4e32612f6b283d8aca4d0002a66fc9d0c53886be8eb22800437304b"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/tags/worldgen/structure/casa_do_guardiao.json"
+hash = "86c0c93d907b8f8ab80c1b84cf44afdfe8b2f4933248dca5c32742b96d88c874"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/tags/worldgen/structure/covil_frostmaw.json"
