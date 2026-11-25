@@ -1,0 +1,13 @@
+name = "THE UNDEAD REVAMPED"
+filename = "THEUNDEADREVAMPED_2.1e_1.20.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/hhfNpvRV/versions/2AKAEU8N/THEUNDEADREVAMPED_2.1e_1.20.1.jar"
+hash-format = "sha512"
+hash = "f337081e85d80798e6ec0c0e6dfc735a4f4487527a0d05bbc26afd72a1ff0a97649993c6906e874047033f5c37cbf2d4499b94045f47589006a8e0632d977c1f"
+
+[update]
+[update.modrinth]
+mod-id = "hhfNpvRV"
+version = "2AKAEU8N"
