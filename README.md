@@ -5,14 +5,14 @@ Modpack brasileiro de RPG com combate estilo souls, chefes, dungeons e uma hist�
 - **Versão:** Minecraft 1.20.1 com Forge 47.4.29
 - **Mods:** 109 no total (90 rodam no servidor e 19 só no jogador)
 - **Objetivo:** ser mais leve que o DawnCraft (305 mods) e rodar bem com 6 GB de RAM
-- **Estado:** base de mods pronta e **Ato 1 completo** (22 missões em português). Atos 2 a 5 ainda vão ser escritos.
+- **Estado:** base de mods pronta, **Ato 1 e Ato 2 completos** (43 missões em português). Atos 3 a 5 ainda vão ser escritos.
 
 ## O que já foi testado
 
 - Um servidor dedicado ligou com todos os mods de servidor em cerca de 35 segundos, gerou o mundo e desligou sem travar.
-- As 22 missões do Ato 1 carregam sem erro, e o servidor mantém os IDs delas (o progresso dos jogadores não se perde entre atualizações).
+- As 43 missões carregam sem erro, e o servidor mantém os IDs delas (o progresso dos jogadores não se perde entre atualizações).
 - Todos os itens, chefes e estruturas citados nas missões existem nos mods.
-- O `/locate` acha a Câmara Forjada (chefe 3) e vilas perto do spawn.
+- Os 4 mapas do tesouro saem preenchidos, com o X no local certo. Na semente de teste: Câmara Forjada a 450 blocos, Frostmaw a 1.950, navio do Labirinto de Gelo a 1.910 e bosque do Umvuthi a 3.200.
 - **Ainda não foi testado:** abrir o jogo no PC (lado do jogador) e jogar as missões de verdade.
 
 ## Mods por categoria
@@ -37,7 +37,7 @@ Embeddium, Oculus (shaders), FerriteCore, ModernFix, ImmediatelyFast, Entity Cul
 
 ## Ato 1: O Chamado (pronto)
 
-O livro de missões abre pelo botão do FTB Quests no inventário. O Ato 1 tem 22 missões:
+O livro de missões abre pelo botão do FTB Quests no inventário. O Ato 1 tem 23 missões:
 
 1. **O Chamado**: carta do Mestre Vellan explicando a história e o combate do Epic Fight. Dá o livro da esquiva "Rolar".
 2. **Escolha seu Caminho**: o jogador escolhe **uma** classe entre 5, e as outras ficam bloqueadas. Cada classe dá um kit:
@@ -51,10 +51,25 @@ O livro de missões abre pelo botão do FTB Quests no inventário. O Ato 1 tem 2
 5. **Os três chefes**, cada um guardando um Fragmento do Selo:
    - **Swampjaw** (Meet Your Fight): o Mestre entrega a Isca Fóssil, que invoca o chefe.
    - **Bellringer** (Meet Your Fight): exige um peitoral de ferro e dá o Sino Assombrado.
-   - **Cavaleiro Forjado** (Mowzie's Mobs): o jogador precisa achar a Câmara Forjada no subsolo.
+   - **Cavaleiro Forjado** (Mowzie's Mobs): o Mestre entrega um **mapa do tesouro** até a Câmara Forjada, no subsolo.
+
+   Cada chefe também dá um livro de habilidade do Epic Fight: **Pulo Fantasma** (pulo duplo), **Técnico** e **Mestre da Espada**.
 6. **Relatório ao Mestre**: fecha o ato e dá o planador (Paraglider) pra explorar o Ato 2.
 
 Se o jogador perder a luta, as missões opcionais "Mais uma Isca" e "Outro Sino" trocam ossos ou ouro por outro item de invocação.
+
+## Ato 2: Terras Selvagens (pronto)
+
+Começa depois do relatório do Ato 1. São 20 missões divididas em quatro frentes, que podem ser feitas em qualquer ordem. Em três delas o Mestre entrega um **mapa do tesouro** com o X no local do chefe, como no DawnCraft.
+
+| Frente | Como chegar | Chefe | Habilidade ganha |
+|---|---|---|---|
+| Gelo Eterno | Mapa até o covil, num bioma de neve | Frostmaw (Mowzie's) | Hipervitalidade |
+| Savanas Queimadas | Mapa até o bosque dos Umvuthana | Umvuthi (Mowzie's) | Salto Devastador |
+| Mar Congelado | Mapa até o Labirinto de Gelo, depois a Concha-Corneta | Capitã Cornelia (Aquamirae) | Ataque Meteoro |
+| Mesa da Fortuna | Peitoral de diamante dá a Aposta do Diabo | Dame Fortuna (Meet Your Fight) | Ladrão de Fôlego |
+
+Também tem missões de apoio (mochila de ferro, mesa de encantamento, Waystone própria), uma missão extra contra a Mãe do Labirinto e missões repetíveis pra trocar recursos por outro item de invocação. O relatório final dá obsidiana e isqueiro, preparando o Nether do Ato 3.
 
 ## Rascunho da história
 
@@ -77,7 +92,7 @@ A ordem dos chefes e os nomes dos atos ainda são rascunho e podem mudar.
 ## Próximos passos
 
 1. Testar no PC e ajustar o que pesar ou bugar.
-2. Escrever o Ato 2 (Terras Selvagens) e colocar o Mestre Vellan no mundo como NPC (Easy NPC).
+2. Escrever o Ato 3 (Abismo e Fogo, no Nether) e colocar o Mestre Vellan no mundo como NPC (Easy NPC).
 3. Montar a árvore de habilidades de cada classe (Pufferfish's Skills).
 4. Fazer a tradução PT-BR dos mods que não têm português.
 5. Configurar dificuldade, drops e o bloqueio de progressão.
@@ -106,6 +121,6 @@ python3 tools/gerar_missoes.py
 
 Não edite as missões pelo modo de edição dentro do jogo: o script sobrescreve essas mudanças na próxima vez que rodar.
 
-**Ajustes de mundo:** ficam no datapack `pack/config/openloader/data/terras_partidas/`, carregado pelo mod Open Loader. Hoje ele só libera as estruturas do Mowzie's Mobs (chefes) nos biomas do Terralith.
+**Ajustes de mundo:** ficam no datapack `pack/config/openloader/data/terras_partidas/`, carregado pelo mod Open Loader. Ele libera as estruturas do Mowzie's Mobs (chefes) nos biomas do Terralith e define os mapas do tesouro (`loot_tables/mapas/`) que as missões entregam.
 
 **Observação:** 5 mods vêm do Modrinth (Illage and Spillage, Dungeons and Taverns, The Undead Revamped, Entity Culling e Pufferfish's Skills). O `.zip` exportado leva esses mods dentro. Isso não é problema para jogar com amigos, mas antes de publicar no CurseForge é preciso trocar esses mods pela versão do CurseForge ou conferir se eles estão liberados lá.

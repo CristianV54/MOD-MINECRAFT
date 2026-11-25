@@ -21,26 +21,26 @@
 			description: ["&o\"Caçador,", "", "&oHá trezentos anos, sete guardiões prenderam um mal antigo dentro de um cristal: o &dSelo&r&o.", "&oNa última lua cheia, o Selo se partiu. Os fragmentos caíram pelo mundo e cada um corrompeu uma criatura poderosa.", "", "&oSe juntarmos os fragmentos antes que o mal desperte, ainda há esperança.", "&oA Ordem dos Caçadores precisa de você.\"", "", "— &6Mestre Vellan&r, Mestre da Ordem", "{@pagebreak}", "&eComo usar este livro:&r", "• Cada missão mostra o objetivo e a recompensa.", "• Clique em uma missão para ver os detalhes e pegar a recompensa.", "• Missões novas aparecem conforme você avança.", "", "&eCombate:&r este mundo usa o &cEpic Fight&r. Aperte &eR&r para alternar entre o modo normal e o modo de combate.", "As outras teclas ficam em &eOpções > Controles&r, na seção do Epic Fight."]
 			tasks: [
 				{
-					id: "44238E63DB2D972B"
+					id: "4A7E5C2F98DD01D9"
 					type: "checkmark"
 					title: "Li a carta do Mestre"
 				}
 			]
 			rewards: [
 				{
-					id: "0C652D5BB32AE678"
+					id: "659439369D7E2E5B"
 					type: "item"
 					item: "minecraft:bread"
 					count: 8
 				}
 				{
-					id: "6AE1E8E14DC48C11"
+					id: "0A517671127BF25C"
 					type: "item"
 					item: "minecraft:torch"
 					count: 16
 				}
 				{
-					id: "1D46CB1B343F0932"
+					id: "1DB605317F960FCC"
 					type: "item"
 					item: {
 						id: "epicfight:skillbook"
@@ -66,7 +66,7 @@
 			max_completable_dependents: 1
 			tasks: [
 				{
-					id: "31D9EB6EF78659AC"
+					id: "5C3E27DF3F615975"
 					type: "checkmark"
 					title: "Estou pronto para escolher"
 				}
@@ -83,29 +83,29 @@
 			dependencies: ["7705A346645D703A"]
 			tasks: [
 				{
-					id: "07EBF1091042E622"
+					id: "7CCA56F2EC1ED52B"
 					type: "checkmark"
 					title: "Eu escolho ser &cGuerreiro"
 				}
 			]
 			rewards: [
 				{
-					id: "20EFB490DF8864A7"
+					id: "6387F9F8B7D899AA"
 					type: "item"
 					item: "epicfight:iron_longsword"
 				}
 				{
-					id: "23CF02CE5818419C"
+					id: "42538C34B5C39B79"
 					type: "item"
 					item: "minecraft:chainmail_chestplate"
 				}
 				{
-					id: "515CB01612D62148"
+					id: "23B66E5EFA1E6672"
 					type: "item"
 					item: "minecraft:chainmail_helmet"
 				}
 				{
-					id: "1F249140C24A465E"
+					id: "383CCE6350BB267D"
 					type: "item"
 					item: "minecraft:cooked_beef"
 					count: 12
@@ -123,29 +123,29 @@
 			dependencies: ["7705A346645D703A"]
 			tasks: [
 				{
-					id: "0B9D9BAA02326141"
+					id: "7CDBE944A485C055"
 					type: "checkmark"
 					title: "Eu escolho ser &9Tanque"
 				}
 			]
 			rewards: [
 				{
-					id: "40333846AF55ACC5"
+					id: "6323F3CEA83EDCF3"
 					type: "item"
 					item: "minecraft:shield"
 				}
 				{
-					id: "4ACE400DBFA89929"
+					id: "35A4C0546F8AA28B"
 					type: "item"
 					item: "minecraft:iron_chestplate"
 				}
 				{
-					id: "64A6C0FD81BE9EDA"
+					id: "139AF163BEDC3D79"
 					type: "item"
 					item: "epicfight:iron_spear"
 				}
 				{
-					id: "6D496AB8F0E93E0D"
+					id: "3D6B1CAFAB2E6CAF"
 					type: "item"
 					item: {
 						id: "epicfight:skillbook"
@@ -156,7 +156,7 @@
 					}
 				}
 				{
-					id: "15BC512D33096C4E"
+					id: "6BB43F7D0A3FE153"
 					type: "item"
 					item: "minecraft:cooked_beef"
 					count: 12
@@ -174,24 +174,24 @@
 			dependencies: ["7705A346645D703A"]
 			tasks: [
 				{
-					id: "733351D1CD3A39B7"
+					id: "14C11AAC8FA86A33"
 					type: "checkmark"
 					title: "Eu escolho ser &8Assassino"
 				}
 			]
 			rewards: [
 				{
-					id: "1ACF336D4D537BD8"
+					id: "4CEE3815DDC9387D"
 					type: "item"
 					item: "epicfight:iron_dagger"
 				}
 				{
-					id: "5A19027BDF6952F6"
+					id: "57A54354A0CF9E64"
 					type: "item"
 					item: "epicfight:iron_dagger"
 				}
 				{
-					id: "19D0C60E88E851B7"
+					id: "7F8B1122A4D0AD11"
 					type: "item"
 					item: {
 						id: "minecraft:potion"
@@ -203,7 +203,7 @@
 					count: 2
 				}
 				{
-					id: "358FEF05889FD8FC"
+					id: "1508F25B5B39F891"
 					type: "item"
 					item: {
 						id: "epicfight:skillbook"
@@ -214,13 +214,13 @@
 					}
 				}
 				{
-					id: "066D8C21962B35DE"
+					id: "472E94934468B72D"
 					type: "item"
 					item: "minecraft:ender_pearl"
 					count: 2
 				}
 				{
-					id: "64DCEBA09F61F03B"
+					id: "47C12ADC9E4F755A"
 					type: "item"
 					item: "minecraft:cooked_beef"
 					count: 12
@@ -238,24 +238,24 @@
 			dependencies: ["7705A346645D703A"]
 			tasks: [
 				{
-					id: "327739470877A587"
+					id: "45679C2A030ED605"
 					type: "checkmark"
 					title: "Eu escolho ser &5Mago"
 				}
 			]
 			rewards: [
 				{
-					id: "28D89D68F9215C57"
+					id: "6B3BF95586B070C9"
 					type: "item"
 					item: "irons_spellbooks:copper_spell_book"
 				}
 				{
-					id: "123018BC77C261EF"
+					id: "0CAB45F8CA8F85B4"
 					type: "item"
 					item: "irons_spellbooks:inscription_table"
 				}
 				{
-					id: "22A35B3A092722A7"
+					id: "22D4FBDE3290B4ED"
 					type: "item"
 					item: {
 						id: "irons_spellbooks:scroll"
@@ -278,7 +278,7 @@
 					}
 				}
 				{
-					id: "67D80E2A3B1C9D43"
+					id: "340C24C06EB6F349"
 					type: "item"
 					item: {
 						id: "irons_spellbooks:scroll"
@@ -301,7 +301,7 @@
 					}
 				}
 				{
-					id: "4B760212921379B7"
+					id: "1AA8BF0E39B66A19"
 					type: "item"
 					item: {
 						id: "irons_spellbooks:scroll"
@@ -324,12 +324,12 @@
 					}
 				}
 				{
-					id: "26B6DDE602C4F371"
+					id: "427B598FF948C6E2"
 					type: "item"
 					item: "irons_spellbooks:wandering_magician_chestplate"
 				}
 				{
-					id: "5871E84EC079363E"
+					id: "49B600ADEEAD20A4"
 					type: "item"
 					item: "minecraft:cooked_beef"
 					count: 12
@@ -347,35 +347,35 @@
 			dependencies: ["7705A346645D703A"]
 			tasks: [
 				{
-					id: "3B61566E702AABDA"
+					id: "65D0131A2870B5FF"
 					type: "checkmark"
 					title: "Eu escolho ser &aCaçador"
 				}
 			]
 			rewards: [
 				{
-					id: "0643ED85B466B37E"
+					id: "3E40D21813BEEA4E"
 					type: "item"
 					item: "minecraft:bow"
 				}
 				{
-					id: "42168C4D2044DE6D"
+					id: "479675F7A04521A2"
 					type: "item"
 					item: "minecraft:arrow"
 					count: 64
 				}
 				{
-					id: "71BD0A3143739FA9"
+					id: "1DDFF0D970F23DCC"
 					type: "item"
 					item: "epicfight:iron_dagger"
 				}
 				{
-					id: "15FB0B58FD25A55E"
+					id: "6BDE7C2FFADECA99"
 					type: "item"
 					item: "minecraft:leather_chestplate"
 				}
 				{
-					id: "55A207C30A04F33A"
+					id: "5422174160C6EA6F"
 					type: "item"
 					item: "minecraft:cooked_beef"
 					count: 12
@@ -393,7 +393,7 @@
 			dependency_requirement: "one_completed"
 			tasks: [
 				{
-					id: "77925874B82A2C96"
+					id: "3F86D08EA17C13A2"
 					type: "item"
 					item: "minecraft:iron_pickaxe"
 					count: 1L
@@ -401,12 +401,12 @@
 			]
 			rewards: [
 				{
-					id: "149BB3E4BA6F7E06"
+					id: "64C2F1BD62E85AEB"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 				{
-					id: "5B54102F57C5B435"
+					id: "55ED0CEA814B2241"
 					type: "item"
 					item: "minecraft:iron_ingot"
 					count: 4
@@ -423,7 +423,7 @@
 			dependencies: ["5A8FBE105E9C4E06"]
 			tasks: [
 				{
-					id: "4DD59AB6338354FD"
+					id: "440104BAB8AFF1C7"
 					type: "item"
 					item: "sophisticatedbackpacks:backpack"
 					count: 1L
@@ -431,12 +431,12 @@
 			]
 			rewards: [
 				{
-					id: "15D12677C393932A"
+					id: "2C1611C8C8BB7F6A"
 					type: "xp_levels"
 					xp_levels: 2
 				}
 				{
-					id: "71B241C412B3D784"
+					id: "40A194885073DE4A"
 					type: "item"
 					item: "minecraft:leather"
 					count: 4
@@ -453,7 +453,7 @@
 			dependencies: ["5A8FBE105E9C4E06"]
 			tasks: [
 				{
-					id: "411072615B2FED5B"
+					id: "3BEAB32BBC5766DC"
 					type: "advancement"
 					advancement: "minecraft:adventure/sleep_in_bed"
 					criterion: ""
@@ -462,13 +462,13 @@
 			]
 			rewards: [
 				{
-					id: "30027DB450481FE5"
+					id: "49CCA3A1FC140492"
 					type: "item"
 					item: "minecraft:lantern"
 					count: 4
 				}
 				{
-					id: "7F00EB6D406E5EC8"
+					id: "045276E7021940FE"
 					type: "item"
 					item: "minecraft:cooked_porkchop"
 					count: 8
@@ -485,7 +485,7 @@
 			dependencies: ["4F00E29859D87333", "1D8DEB71D2179B63"]
 			tasks: [
 				{
-					id: "7C89519F07301F61"
+					id: "2561049A1F4DC54C"
 					type: "structure"
 					structure: "#minecraft:village"
 					title: "Encontrar uma vila"
@@ -493,12 +493,12 @@
 			]
 			rewards: [
 				{
-					id: "7CF56C85CF00126D"
+					id: "7C09B399E4A5C520"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 				{
-					id: "0657A6A13F0B7701"
+					id: "1FE4A87B634EC3EB"
 					type: "item"
 					item: "minecraft:emerald"
 					count: 8
@@ -516,7 +516,7 @@
 			dependency_requirement: "one_completed"
 			tasks: [
 				{
-					id: "465969204142A076"
+					id: "0D76BFCEA3ECD5CC"
 					type: "kill"
 					entity: "minecraft:zombie"
 					value: 10L
@@ -525,12 +525,12 @@
 			]
 			rewards: [
 				{
-					id: "694C05AD1AB28254"
+					id: "0A706D2F79D0DCE3"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 				{
-					id: "0122BC312BBB4985"
+					id: "10BC1BE7EA2B7BAD"
 					type: "item"
 					item: "minecraft:golden_apple"
 				}
@@ -546,7 +546,7 @@
 			dependencies: ["5557D1E7A6BCD19E"]
 			tasks: [
 				{
-					id: "33B7562BA1745A7C"
+					id: "17E0A7EE24AF2D83"
 					type: "kill"
 					entity: "minecraft:skeleton"
 					value: 10L
@@ -555,12 +555,12 @@
 			]
 			rewards: [
 				{
-					id: "4275BA7ABA5411E5"
+					id: "005F9327C68FE136"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 				{
-					id: "38E70E8D08D8AB41"
+					id: "3393985D868D1194"
 					type: "item"
 					item: "minecraft:arrow"
 					count: 32
@@ -578,19 +578,19 @@
 			dependencies: ["17C4CCD7D735263C"]
 			tasks: [
 				{
-					id: "6D25DC5D5A0A301D"
+					id: "100526B49AE6B163"
 					type: "checkmark"
 					title: "Estou pronto"
 				}
 			]
 			rewards: [
 				{
-					id: "43A915BE626261AF"
+					id: "468534AB8B4373D7"
 					type: "item"
 					item: "meetyourfight:fossil_bait"
 				}
 				{
-					id: "7395B14DB68A12EE"
+					id: "351433AF5596ACEF"
 					type: "item"
 					item: {
 						id: "minecraft:potion"
@@ -611,11 +611,11 @@
 			icon: "meetyourfight:fossil_bait"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Use a Isca Fóssil e derrote &cSwampjaw&r.", "", "&7Se morrer, a isca é gasta. Volte aqui: a missão &e\"Mais uma Isca\"&7 dá outra."]
+			description: ["Use a Isca Fóssil e derrote &cSwampjaw&r.", "", "&dRecompensa especial:&r o livro de &ePulo Fantasma&r (pulo duplo no ar).", "", "&7Se morrer, a isca é gasta. Volte aqui: a missão &e\"Mais uma Isca\"&7 dá outra."]
 			dependencies: ["328C587F2C229F2B"]
 			tasks: [
 				{
-					id: "563C6330109C0C5F"
+					id: "2D58C72D6C68C1DF"
 					type: "kill"
 					entity: "meetyourfight:swampjaw"
 					value: 1L
@@ -624,15 +624,15 @@
 			]
 			rewards: [
 				{
-					id: "05BCE73B3904F496"
+					id: "42717C9678F9885A"
 					type: "item"
 					item: {
 						id: "minecraft:amethyst_shard"
 						Count: 1b
 						tag: {
 							display: {
-								Name: "{\"text\": \"Fragmento do Selo (1/3)\", \"color\": \"light_purple\", \"italic\": false}"
-								Lore: ["{\"text\": \"Um pedaço do cristal que prendia o mal antigo.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Ainda está quente ao toque.\", \"color\": \"gray\", \"italic\": true}"]
+								Name: "{\"text\": \"Fragmento do Selo\", \"color\": \"light_purple\", \"italic\": false}"
+								Lore: ["{\"text\": \"Ato 1: fragmento 1 de 3.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Um pedaço do cristal que prendia o mal antigo.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Ainda está quente ao toque.\", \"color\": \"gray\", \"italic\": true}"]
 							}
 							Enchantments: [
 								{
@@ -645,12 +645,23 @@
 					}
 				}
 				{
-					id: "368FE2999F542FFF"
+					id: "732C80DED579439D"
+					type: "item"
+					item: {
+						id: "epicfight:skillbook"
+						Count: 1b
+						tag: {
+							skill: "epicfight:phantom_ascent"
+						}
+					}
+				}
+				{
+					id: "6FF47CD92C0F411A"
 					type: "xp_levels"
 					xp_levels: 5
 				}
 				{
-					id: "3E51668B806F7093"
+					id: "552D3C26357D9A6D"
 					type: "item"
 					item: "minecraft:diamond"
 				}
@@ -670,7 +681,7 @@
 			can_repeat: true
 			tasks: [
 				{
-					id: "7C6C595CC4FB9682"
+					id: "5851FBB9D641C863"
 					type: "item"
 					item: "minecraft:bone"
 					count: 8L
@@ -679,7 +690,7 @@
 			]
 			rewards: [
 				{
-					id: "12012A2D348A4C10"
+					id: "2D331F4B3B0842F8"
 					type: "item"
 					item: "meetyourfight:fossil_bait"
 				}
@@ -696,7 +707,7 @@
 			dependencies: ["7FCBF496418E37A1", "5A8FBE105E9C4E06"]
 			tasks: [
 				{
-					id: "2C8D755C8786BD2E"
+					id: "69FAD635F124CC56"
 					type: "item"
 					item: "minecraft:iron_chestplate"
 					count: 1L
@@ -705,12 +716,12 @@
 			]
 			rewards: [
 				{
-					id: "005F33506D32D65E"
+					id: "0B325CDEF4E870D1"
 					type: "item"
 					item: "meetyourfight:haunted_bell"
 				}
 				{
-					id: "360C44ECC562ED44"
+					id: "0200987B3D3A392C"
 					type: "item"
 					item: {
 						id: "minecraft:potion"
@@ -735,7 +746,7 @@
 			dependencies: ["45A12E1B413F8922"]
 			tasks: [
 				{
-					id: "1B04B849A53F05F9"
+					id: "7E93BF25B05B3837"
 					type: "kill"
 					entity: "meetyourfight:bellringer"
 					value: 1L
@@ -744,15 +755,15 @@
 			]
 			rewards: [
 				{
-					id: "377650A0AE1FF3A8"
+					id: "00998A7D6FACBDF6"
 					type: "item"
 					item: {
 						id: "minecraft:amethyst_shard"
 						Count: 1b
 						tag: {
 							display: {
-								Name: "{\"text\": \"Fragmento do Selo (2/3)\", \"color\": \"light_purple\", \"italic\": false}"
-								Lore: ["{\"text\": \"Um pedaço do cristal que prendia o mal antigo.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Ainda está quente ao toque.\", \"color\": \"gray\", \"italic\": true}"]
+								Name: "{\"text\": \"Fragmento do Selo\", \"color\": \"light_purple\", \"italic\": false}"
+								Lore: ["{\"text\": \"Ato 1: fragmento 2 de 3.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Um pedaço do cristal que prendia o mal antigo.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Ainda está quente ao toque.\", \"color\": \"gray\", \"italic\": true}"]
 							}
 							Enchantments: [
 								{
@@ -765,12 +776,23 @@
 					}
 				}
 				{
-					id: "35BD1BE612AF422B"
+					id: "35B46A7D17342544"
+					type: "item"
+					item: {
+						id: "epicfight:skillbook"
+						Count: 1b
+						tag: {
+							skill: "epicfight:technician"
+						}
+					}
+				}
+				{
+					id: "1BC42583E971D630"
 					type: "xp_levels"
 					xp_levels: 7
 				}
 				{
-					id: "2A0A2CC832D1710E"
+					id: "29FC884ED663D33B"
 					type: "item"
 					item: "minecraft:diamond"
 					count: 2
@@ -791,7 +813,7 @@
 			can_repeat: true
 			tasks: [
 				{
-					id: "0530334B7E61D80B"
+					id: "2BC8428898F659B7"
 					type: "item"
 					item: "minecraft:gold_ingot"
 					count: 4L
@@ -800,9 +822,49 @@
 			]
 			rewards: [
 				{
-					id: "48AA3B1105610CEA"
+					id: "6542817C28DA6A11"
 					type: "item"
 					item: "meetyourfight:haunted_bell"
+				}
+			]
+		}
+		{
+			id: "25F06794A8E1D9BF"
+			title: "Rumores na Vila"
+			x: 15.0d
+			y: -4.5d
+			subtitle: "Terceiro fragmento"
+			icon: "minecraft:filled_map"
+			description: ["&6Mestre Vellan&r: \"Os aldeões falam de um &fcavaleiro de metal&r que guarda uma câmara no subsolo. Nunca saiu de lá, nunca dormiu... e agora carrega um fragmento do Selo.\"", "", "&o\"Um minerador desenhou este mapa antes de fugir. O X marca a entrada.\"", "", "&7Segure o mapa na mão para ver o caminho. O mapa pode demorar alguns segundos para aparecer.&r"]
+			dependencies: ["454A15647F6BC9D0", "7FCBF496418E37A1"]
+			tasks: [
+				{
+					id: "04225196190925C8"
+					type: "checkmark"
+					title: "Pegar o mapa"
+				}
+			]
+			rewards: [
+				{
+					id: "280798CCF4230CA8"
+					type: "command"
+					command: "/loot give {p} loot terras_partidas:mapas/camara_forjada"
+					elevate_perms: true
+					silent: true
+					title: "Mapa: Câmara Forjada"
+					icon: "minecraft:filled_map"
+				}
+				{
+					id: "599BED6FAACD2E43"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:night_vision"
+						}
+					}
+					count: 2
 				}
 			]
 		}
@@ -810,14 +872,13 @@
 			id: "11F210357E4C4450"
 			title: "A Câmara Forjada"
 			x: 17.5d
-			y: -3.5d
-			subtitle: "Terceiro fragmento"
+			y: -4.5d
 			icon: "mowziesmobs:wrought_helmet"
-			description: ["&6Mestre Vellan&r: \"Os aldeões falam de um &fcavaleiro de metal&r que guarda uma câmara escondida. Nunca saiu de lá, nunca dormiu... e agora carrega um fragmento do Selo.\"", "", "Encontre a &fCâmara Forjada&r. Ela fica escondida em cavernas e encostas de montanha: procure uma porta de pedra com tochas.", "", "&7Dica: os mapas do Xaero ajudam a marcar o caminho (tecla &eY&7 para criar um ponto).&r"]
-			dependencies: ["454A15647F6BC9D0", "7FCBF496418E37A1"]
+			description: ["Siga o mapa até o &fX vermelho&r. A Câmara fica &fno subsolo&r (entre as camadas Y 20 e 50): cave para baixo quando chegar no ponto.", "", "&7Dica: os mapas do Xaero ajudam a marcar o caminho (tecla &eB&7 para criar um ponto de referência).&r"]
+			dependencies: ["25F06794A8E1D9BF"]
 			tasks: [
 				{
-					id: "02981A5C88C87E97"
+					id: "7FCFEEE480AD6DE0"
 					type: "structure"
 					structure: "mowziesmobs:wrought_chamber"
 					title: "Encontrar a Câmara Forjada"
@@ -825,12 +886,12 @@
 			]
 			rewards: [
 				{
-					id: "15A901808D002899"
+					id: "626B884DD933BBD5"
 					type: "xp_levels"
 					xp_levels: 3
 				}
 				{
-					id: "0832580BA346C98C"
+					id: "1CAC74FD89677497"
 					type: "item"
 					item: {
 						id: "minecraft:potion"
@@ -847,7 +908,7 @@
 			id: "31549F6EF053CF36"
 			title: "Chefe: Cavaleiro Forjado"
 			x: 20.0d
-			y: -3.5d
+			y: -4.5d
 			icon: "mowziesmobs:wrought_axe"
 			shape: "octagon"
 			size: 1.5d
@@ -855,7 +916,7 @@
 			dependencies: ["11F210357E4C4450"]
 			tasks: [
 				{
-					id: "5ACCDA5DFCDA9177"
+					id: "706694CA15CD3ADE"
 					type: "kill"
 					entity: "mowziesmobs:ferrous_wroughtnaut"
 					value: 1L
@@ -864,15 +925,15 @@
 			]
 			rewards: [
 				{
-					id: "04F4A3C2D614543E"
+					id: "430849D6F1203311"
 					type: "item"
 					item: {
 						id: "minecraft:amethyst_shard"
 						Count: 1b
 						tag: {
 							display: {
-								Name: "{\"text\": \"Fragmento do Selo (3/3)\", \"color\": \"light_purple\", \"italic\": false}"
-								Lore: ["{\"text\": \"Um pedaço do cristal que prendia o mal antigo.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Ainda está quente ao toque.\", \"color\": \"gray\", \"italic\": true}"]
+								Name: "{\"text\": \"Fragmento do Selo\", \"color\": \"light_purple\", \"italic\": false}"
+								Lore: ["{\"text\": \"Ato 1: fragmento 3 de 3.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Um pedaço do cristal que prendia o mal antigo.\", \"color\": \"gray\", \"italic\": true}", "{\"text\": \"Ainda está quente ao toque.\", \"color\": \"gray\", \"italic\": true}"]
 							}
 							Enchantments: [
 								{
@@ -885,12 +946,23 @@
 					}
 				}
 				{
-					id: "198E387EC8D7153F"
+					id: "4098F455CFECB5ED"
+					type: "item"
+					item: {
+						id: "epicfight:skillbook"
+						Count: 1b
+						tag: {
+							skill: "epicfight:swordmaster"
+						}
+					}
+				}
+				{
+					id: "70CF10A5DBCBA44D"
 					type: "xp_levels"
 					xp_levels: 7
 				}
 				{
-					id: "10DF4374BD4F4C1A"
+					id: "0A9DCE9F1525D143"
 					type: "item"
 					item: "minecraft:diamond"
 					count: 2
@@ -910,31 +982,31 @@
 			dependencies: ["7FCBF496418E37A1", "687FD9580D24CDE1", "31549F6EF053CF36"]
 			tasks: [
 				{
-					id: "63C9A388D5F4C9E6"
+					id: "5131D9FE1AC89F9D"
 					type: "checkmark"
 					title: "Entregar o relatório"
 				}
 			]
 			rewards: [
 				{
-					id: "553125BD1FD2C12E"
+					id: "15515E476D4AD4E0"
 					type: "item"
 					item: "paraglider:paraglider"
 				}
 				{
-					id: "331540CA02BB6F8E"
+					id: "3E59770A653E6935"
 					type: "item"
 					item: "minecraft:diamond"
 					count: 3
 				}
 				{
-					id: "76836D306D82BB2E"
+					id: "6D7191E44A8EB155"
 					type: "item"
 					item: "minecraft:golden_apple"
 					count: 2
 				}
 				{
-					id: "6B6B654076E27851"
+					id: "62D22A7A1232F922"
 					type: "xp_levels"
 					xp_levels: 10
 				}

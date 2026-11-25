@@ -92,10 +92,11 @@ def pocao(tipo):
     return item("minecraft:potion", tag={"Potion": tipo})
 
 
-def fragmento(numero):
+def fragmento(ato, numero, total):
     return item("minecraft:amethyst_shard", tag={
-        **nome_lore(f"Fragmento do Selo ({numero}/3)", "light_purple",
-                    ["Um pedaço do cristal que prendia o mal antigo.",
+        **nome_lore("Fragmento do Selo", "light_purple",
+                    [f"Ato {ato}: fragmento {numero} de {total}.",
+                     "Um pedaço do cristal que prendia o mal antigo.",
                      "Ainda está quente ao toque."]),
         "Enchantments": [{"id": "minecraft:unbreaking", "lvl": Raw("1s")}],
         "HideFlags": 1,
@@ -157,6 +158,23 @@ class Capitulo:
     def r_xp(self, niveis):
         return {"id": self._id("r"), "type": "xp_levels", "xp_levels": niveis}
 
+    def r_comando(self, comando, titulo=None, icone=None):
+        r = {"id": self._id("r"), "type": "command", "command": comando,
+             "elevate_perms": True, "silent": True}
+        if titulo:
+            r["title"] = titulo
+        if icone:
+            r["icon"] = icone
+        return r
+
+    def r_mapa(self, nome, titulo):
+        """Mapa do tesouro apontando para a estrutura (loot table do datapack)."""
+        return self.r_comando(f"/loot give {{p}} loot terras_partidas:mapas/{nome}",
+                              titulo=titulo, icone="minecraft:filled_map")
+
+    def r_skill(self, skill):
+        return self.r_item(livro_skill(skill))
+
     # missão
     def quest(self, chave, titulo, x, y, descricao, tarefas, recompensas=(), deps=(),
               subtitulo=None, icone=None, forma=None, tamanho=None, **extra):
@@ -171,8 +189,16 @@ class Capitulo:
             q["size"] = float(tamanho)
         q["description"] = descricao
         if deps:
-            q["dependencies"] = [qid(f"{self.chave}/quest/{d}") for d in deps]
+            # "@ato1/relatorio" aponta para uma missão de outro capítulo
+            q["dependencies"] = [qid(f"{d[1:].split('/')[0]}/quest/{d[1:].split('/')[1]}") if d.startswith("@")
+                                 else qid(f"{self.chave}/quest/{d}") for d in deps]
         q.update(extra)
+        # IDs de tarefas/recompensas dependem só desta missão e da posição dentro dela,
+        # assim inserir missões novas em outro lugar não muda nada aqui.
+        for i, t in enumerate(tarefas):
+            t["id"] = qid(f"{self.chave}/quest/{chave}/tarefa/{i}")
+        for i, r in enumerate(recompensas):
+            r["id"] = qid(f"{self.chave}/quest/{chave}/recompensa/{i}")
         q["tasks"] = list(tarefas)
         if recompensas:
             q["rewards"] = list(recompensas)
@@ -322,9 +348,11 @@ def ato1():
     c.quest("swampjaw", "Chefe: Swampjaw", 15, 2.5, icone="meetyourfight:fossil_bait",
             deps=["isca"], forma="octagon", tamanho=1.5,
             descricao=["Use a Isca Fóssil e derrote &cSwampjaw&r.",
+                       "", "&dRecompensa especial:&r o livro de &ePulo Fantasma&r (pulo duplo no ar).",
                        "", "&7Se morrer, a isca é gasta. Volte aqui: a missão &e\"Mais uma Isca\"&7 dá outra."],
             tarefas=[c.t_matar("meetyourfight:swampjaw", 1, "Derrotar Swampjaw")],
-            recompensas=[c.r_item(fragmento(1)), c.r_xp(5), c.r_item("minecraft:diamond", 1)])
+            recompensas=[c.r_item(fragmento(1, 1, 3)), c.r_skill("epicfight:phantom_ascent"), c.r_xp(5),
+                         c.r_item("minecraft:diamond", 1)])
 
     c.quest("isca_extra", "Mais uma Isca", 15, 4.5, icone="meetyourfight:fossil_bait",
             deps=["isca"], forma="circle", tamanho=0.75, optional=True,
@@ -347,7 +375,8 @@ def ato1():
             deps=["sino"], forma="octagon", tamanho=1.5,
             descricao=["Toque o Sino Assombrado e derrote o &cBellringer&r."],
             tarefas=[c.t_matar("meetyourfight:bellringer", 1, "Derrotar o Bellringer")],
-            recompensas=[c.r_item(fragmento(2)), c.r_xp(7), c.r_item("minecraft:diamond", 2)])
+            recompensas=[c.r_item(fragmento(1, 2, 3)), c.r_skill("epicfight:technician"), c.r_xp(7),
+                         c.r_item("minecraft:diamond", 2)])
 
     c.quest("sino_extra", "Outro Sino", 20, 2, icone="meetyourfight:haunted_bell",
             deps=["sino"], forma="circle", tamanho=0.75, optional=True, can_repeat=True,
@@ -356,21 +385,30 @@ def ato1():
             recompensas=[c.r_item("meetyourfight:haunted_bell")])
 
     # ---- Chefe 3: Ferrous Wroughtnaut
-    c.quest("camara", "A Câmara Forjada", 17.5, -3.5, icone="mowziesmobs:wrought_helmet",
+    c.quest("rumores", "Rumores na Vila", 15, -4.5, icone="minecraft:filled_map",
             deps=["vila", "swampjaw"],
             subtitulo="Terceiro fragmento",
-            descricao=[f"{M}: \"Os aldeões falam de um &fcavaleiro de metal&r que guarda uma câmara escondida. Nunca saiu de lá, nunca dormiu... e agora carrega um fragmento do Selo.\"",
-                       "", "Encontre a &fCâmara Forjada&r. Ela fica escondida em cavernas e encostas de montanha: procure uma porta de pedra com tochas.",
-                       "", "&7Dica: os mapas do Xaero ajudam a marcar o caminho (tecla &eY&7 para criar um ponto).&r"],
+            descricao=[f"{M}: \"Os aldeões falam de um &fcavaleiro de metal&r que guarda uma câmara no subsolo. Nunca saiu de lá, nunca dormiu... e agora carrega um fragmento do Selo.\"",
+                       "", "&o\"Um minerador desenhou este mapa antes de fugir. O X marca a entrada.\"",
+                       "", "&7Segure o mapa na mão para ver o caminho. O mapa pode demorar alguns segundos para aparecer.&r"],
+            tarefas=[c.t_check("Pegar o mapa")],
+            recompensas=[c.r_mapa("camara_forjada", "Mapa: Câmara Forjada"),
+                         c.r_item(pocao("minecraft:night_vision"), 2)])
+
+    c.quest("camara", "A Câmara Forjada", 17.5, -4.5, icone="mowziesmobs:wrought_helmet",
+            deps=["rumores"],
+            descricao=["Siga o mapa até o &fX vermelho&r. A Câmara fica &fno subsolo&r (entre as camadas Y 20 e 50): cave para baixo quando chegar no ponto.",
+                       "", "&7Dica: os mapas do Xaero ajudam a marcar o caminho (tecla &eB&7 para criar um ponto de referência).&r"],
             tarefas=[c.t_estrutura("mowziesmobs:wrought_chamber", "Encontrar a Câmara Forjada")],
             recompensas=[c.r_xp(3), c.r_item(pocao("minecraft:strength"), 2)])
 
-    c.quest("wroughtnaut", "Chefe: Cavaleiro Forjado", 20, -3.5, icone="mowziesmobs:wrought_axe",
+    c.quest("wroughtnaut", "Chefe: Cavaleiro Forjado", 20, -4.5, icone="mowziesmobs:wrought_axe",
             deps=["camara"], forma="octagon", tamanho=1.5,
             descricao=["Derrote o &cCavaleiro de Ferro Forjado&r (Ferrous Wroughtnaut).",
                        "", "&7Dica: a armadura dele é quase indestrutível pela frente. Espere ele errar um golpe, fique atrás dele e ataque as costas.&r"],
             tarefas=[c.t_matar("mowziesmobs:ferrous_wroughtnaut", 1, "Derrotar o Cavaleiro Forjado")],
-            recompensas=[c.r_item(fragmento(3)), c.r_xp(7), c.r_item("minecraft:diamond", 2)])
+            recompensas=[c.r_item(fragmento(1, 3, 3)), c.r_skill("epicfight:swordmaster"), c.r_xp(7),
+                         c.r_item("minecraft:diamond", 2)])
 
     # ---- Final do Ato 1
     c.quest("relatorio", "Relatório ao Mestre", 23, -1.75, icone="minecraft:amethyst_shard",
@@ -394,6 +432,190 @@ def ato1():
         "title": "Ato 1: O Chamado",
         "subtitle": ["Três fragmentos do Selo"],
         "icon": "minecraft:amethyst_shard",
+        "default_quest_shape": "",
+        "default_hide_dependency_lines": False,
+        "quests": c.quests,
+    }
+
+
+
+# ---------------------------------------------------------------- ATO 2
+
+def ato2():
+    c = Capitulo("ato2")
+    M = "&6Mestre Vellan&r"
+
+    c.quest("asas", "Terras Selvagens", 0, 0, forma="gear", tamanho=1.75,
+            icone="paraglider:paraglider", deps=["@ato1/relatorio"],
+            subtitulo="Quatro fragmentos espalhados pelo mundo",
+            descricao=[
+                f"{M}: \"Os batedores da Ordem voltaram. Quatro fragmentos foram vistos em lugares onde poucos sobrevivem:\"",
+                "",
+                "• &bO Gelo Eterno&r, onde algo enorme dorme sob a neve.",
+                "• &6As Savanas Queimadas&r, onde uma tribo mascarada serve a um pássaro de fogo.",
+                "• &3O Labirinto de Gelo&r, um mar congelado cheio de navios fantasmas.",
+                "• &5A Mesa da Fortuna&r, onde uma jogadora aposta almas.",
+                "",
+                "&o\"Use o planador para atravessar montanhas e vales. Ele gasta fôlego, então pouse antes que acabe.\"",
+                "",
+                "&7Você pode fazer as quatro frentes na ordem que quiser.&r",
+            ],
+            tarefas=[c.t_check("Partir para as Terras Selvagens")],
+            recompensas=[c.r_item("minecraft:cooked_beef", 16), c.r_item("minecraft:golden_carrot", 8), c.r_xp(3)])
+
+    # ---- Preparação (missões de apoio, em cima)
+    c.quest("mochila_ferro", "Mochila Maior", -2.5, -3, icone="sophisticatedbackpacks:iron_backpack",
+            deps=["asas"], optional=True,
+            descricao=["Viagens longas pedem espaço. Melhore sua mochila para a de &fferro&r."],
+            tarefas=[c.t_item("sophisticatedbackpacks:iron_backpack")],
+            recompensas=[c.r_xp(3), c.r_item("minecraft:iron_ingot", 8)])
+
+    c.quest("encantar", "Conhecimento Arcano", 0, -3, icone="minecraft:enchanting_table",
+            deps=["asas"], optional=True,
+            descricao=["Monstros das Terras Selvagens batem forte. Faça uma &fmesa de encantamento&r."],
+            tarefas=[c.t_item("minecraft:enchanting_table")],
+            recompensas=[c.r_item("minecraft:lapis_lazuli", 16), c.r_item("minecraft:bookshelf", 4), c.r_xp(5)])
+
+    c.quest("waystone", "Sua Própria Waystone", 2.5, -3, icone="waystones:waystone",
+            deps=["asas"], optional=True,
+            descricao=["Faça uma &bWaystone&r e coloque perto da sua base. Assim você volta de qualquer frente em segundos."],
+            tarefas=[c.t_item("waystones:waystone")],
+            recompensas=[c.r_item("waystones:warp_dust", 8), c.r_xp(3)])
+
+    # ---- Frente 1: Gelo Eterno (Frostmaw)
+    c.quest("gelo", "O Gelo Eterno", 4, 2.5, icone="minecraft:snowball", deps=["asas"],
+            subtitulo="Frente do Gelo",
+            descricao=[f"{M}: \"Nas terras nevadas, um caçador viu uma criatura gigante dormindo ao lado de um cristal de gelo. Ele não voltou para contar o resto.\"",
+                       "", "&o\"Este mapa marca onde ele foi visto pela última vez.\"",
+                       "", "&7Leve roupas quentes... e comida. É longe.&r"],
+            tarefas=[c.t_check("Pegar o mapa do gelo")],
+            recompensas=[c.r_mapa("covil_frostmaw", "Mapa: Covil do Frostmaw"), c.r_item("minecraft:cooked_salmon", 12)])
+
+    c.quest("covil", "O Covil Congelado", 7, 2.5, icone="minecraft:packed_ice", deps=["gelo"],
+            descricao=["Siga o mapa até o &fX vermelho&r, em um bioma de neve."],
+            tarefas=[c.t_estrutura("mowziesmobs:frostmaw_spawn", "Encontrar o covil do Frostmaw")],
+            recompensas=[c.r_xp(3)])
+
+    c.quest("frostmaw", "Chefe: Frostmaw", 10, 2.5, icone="mowziesmobs:ice_crystal",
+            deps=["covil"], forma="octagon", tamanho=1.5,
+            descricao=["O &cFrostmaw&r está dormindo. Acorde-o com um golpe e prepare-se.",
+                       "", "&7Dica: ele sopra gelo em linha reta e dá saltos que esmagam. Corra para os lados e ataque depois do salto.",
+                       "&7Ele pode soltar o &fCristal de Gelo&7, uma arma muito poderosa.&r"],
+            tarefas=[c.t_matar("mowziesmobs:frostmaw", 1, "Derrotar o Frostmaw")],
+            recompensas=[c.r_item(fragmento(2, 1, 4)), c.r_skill("epicfight:hypervitality"), c.r_xp(10),
+                         c.r_item("minecraft:diamond", 3)])
+
+    # ---- Frente 2: Savanas Queimadas (Umvuthi)
+    c.quest("savana", "As Savanas Queimadas", 4, 5.5, icone="minecraft:acacia_sapling", deps=["asas"],
+            subtitulo="Frente da Savana",
+            descricao=[f"{M}: \"Nas savanas vive a tribo dos &6Umvuthana&r, guerreiros mascarados. Eles servem a &6Umvuthi, o Pássaro do Sol&r, e agora o fragmento brilha no peito dele.\"",
+                       "", "&o\"Cuidado: eles atacam em bando e usam lanças e magia de cura.\""],
+            tarefas=[c.t_check("Pegar o mapa da savana")],
+            recompensas=[c.r_mapa("bosque_umvuthana", "Mapa: Bosque dos Umvuthana"), c.r_item(pocao("minecraft:fire_resistance"), 2)])
+
+    c.quest("bosque", "O Bosque dos Umvuthana", 7, 5.5, icone="minecraft:acacia_log", deps=["savana"],
+            descricao=["Siga o mapa até o bosque, em uma savana."],
+            tarefas=[c.t_estrutura("mowziesmobs:umvuthana_grove", "Encontrar o bosque")],
+            recompensas=[c.r_xp(3), c.r_item(pocao("minecraft:healing"), 2)])
+
+    c.quest("umvuthi", "Chefe: Umvuthi", 10, 5.5, icone="minecraft:blaze_powder",
+            deps=["bosque"], forma="octagon", tamanho=1.5,
+            descricao=["Atravesse os guerreiros mascarados e suba até o &ftrono&r no centro do bosque. &cUmvuthi&r vai aparecer.",
+                       "", "&7Dica: ele invoca raios de sol e guerreiros que o curam. Derrube os curandeiros primeiro.&r"],
+            tarefas=[c.t_matar("mowziesmobs:umvuthi", 1, "Derrotar Umvuthi")],
+            recompensas=[c.r_item(fragmento(2, 2, 4)), c.r_skill("epicfight:demolition_leap"), c.r_xp(10),
+                         c.r_item("minecraft:diamond", 3)])
+
+    # ---- Frente 3: Labirinto de Gelo (Capitã Cornelia)
+    c.quest("mar", "O Mar Congelado", -4, 2.5, icone="minecraft:blue_ice", deps=["asas"],
+            subtitulo="Frente do Mar",
+            descricao=[f"{M}: \"Existe um mar onde o gelo forma corredores sem fim: o &3Labirinto de Gelo&r. Navios piratas congelados estão presos lá há séculos.\"",
+                       "", "&o\"A capitã de um desses navios voltou como fantasma. O fragmento a mantém presa a este mundo.\"",
+                       "", "&7Leve um barco. A água é gelada e cheia de criaturas das profundezas.&r"],
+            tarefas=[c.t_check("Pegar o mapa do mar")],
+            recompensas=[c.r_mapa("labirinto_de_gelo", "Mapa: Labirinto de Gelo"), c.r_item("minecraft:oak_boat"),
+                         c.r_item(pocao("minecraft:water_breathing"), 2)])
+
+    c.quest("labirinto", "O Labirinto de Gelo", -7, 2.5, icone="minecraft:packed_ice", deps=["mar"],
+            descricao=["Siga o mapa e entre no &3Labirinto de Gelo&r: o oceano congelado profundo, cheio de icebergs e navios presos no gelo."],
+            tarefas=[{"id": "", "type": "biome", "biome": "#aquamirae:ice_maze", "title": "Entrar no Labirinto de Gelo"}],
+            recompensas=[c.r_xp(3)])
+
+    c.quest("corneta", "A Concha-Corneta", -10, 2.5, icone="aquamirae:shell_horn", deps=["labirinto"],
+            descricao=[f"{M} &7(por carta)&r: \"Encontrei nos arquivos da Ordem: a capitã atende ao som de uma &fConcha-Corneta&r. Mandei uma para você.\"",
+                       "", "Use a Concha-Corneta &fperto da água, dentro do Labirinto de Gelo&r, para invocar a capitã.",
+                       "", "&7Ela também aparece às vezes em baús dos navios congelados.&r"],
+            tarefas=[c.t_check("Receber a Concha-Corneta")],
+            recompensas=[c.r_item("aquamirae:shell_horn"), c.r_item(pocao("minecraft:healing"), 3)])
+
+    c.quest("cornelia", "Chefe: Capitã Cornelia", -13, 2.5, icone="aquamirae:shell_horn",
+            deps=["corneta"], forma="octagon", tamanho=1.5,
+            descricao=["Toque a Concha-Corneta e derrote o &cFantasma da Capitã Cornelia&r.",
+                       "", "&7Dica: lute em terra firme ou em cima do gelo, nunca dentro da água.&r"],
+            tarefas=[c.t_matar("aquamirae:captain_cornelia", 1, "Derrotar a Capitã Cornelia")],
+            recompensas=[c.r_item(fragmento(2, 3, 4)), c.r_skill("epicfight:meteor_slam"), c.r_xp(10),
+                         c.r_item("minecraft:diamond", 3)])
+
+    c.quest("corneta_extra", "Outra Corneta", -13, 4.5, icone="aquamirae:shell_horn",
+            deps=["corneta"], forma="circle", tamanho=0.75, optional=True, can_repeat=True,
+            descricao=["Perdeu a luta? Troque &f8 cristais de prismarinho&r por outra Concha-Corneta."],
+            tarefas=[c.t_item("minecraft:prismarine_crystals", 8, consumir=True)],
+            recompensas=[c.r_item("aquamirae:shell_horn")])
+
+    c.quest("mae_labirinto", "A Mãe do Labirinto", -10, 0.5, icone="minecraft:spider_eye",
+            deps=["labirinto"], forma="circle", optional=True,
+            descricao=["&7Missão extra.&r Dizem que uma criatura chamada &cMãe do Labirinto&r caça nos corredores de gelo.",
+                       "Derrote-a se tiver coragem."],
+            tarefas=[c.t_matar("aquamirae:maze_mother", 1, "Derrotar a Mãe do Labirinto")],
+            recompensas=[c.r_item("minecraft:diamond", 2), c.r_xp(5)])
+
+    # ---- Frente 4: Mesa da Fortuna (Dame Fortuna)
+    c.quest("fortuna", "A Aposta do Diabo", -4, 5.5, icone="meetyourfight:devils_ante", deps=["asas"],
+            subtitulo="Frente da Fortuna",
+            descricao=[f"{M}: \"Esta é a mais traiçoeira. &5Dame Fortuna&r é um espírito que aposta com a sorte. Ela ganhou um fragmento num jogo de cartas.\"",
+                       "", "&o\"Só aceito te dar a ficha de aposta quando você estiver protegido. Volte com armadura de diamante.\"",
+                       "", "&7Equipamento recomendado: diamante.&r"],
+            tarefas=[c.t_item("minecraft:diamond_chestplate", titulo="Ter um peitoral de diamante")],
+            recompensas=[c.r_item("meetyourfight:devils_ante"), c.r_item(pocao("minecraft:regeneration"), 2)])
+
+    c.quest("dame_fortuna", "Chefe: Dame Fortuna", -7, 5.5, icone="meetyourfight:devils_ante",
+            deps=["fortuna"], forma="octagon", tamanho=1.5,
+            descricao=["Use a Aposta do Diabo e derrote &cDame Fortuna&r.",
+                       "", "&7Dica: ela troca de padrão de ataque como quem embaralha cartas. Observe antes de atacar.&r"],
+            tarefas=[c.t_matar("meetyourfight:dame_fortuna", 1, "Derrotar Dame Fortuna")],
+            recompensas=[c.r_item(fragmento(2, 4, 4)), c.r_skill("epicfight:stamina_pillager"), c.r_xp(10),
+                         c.r_item("minecraft:diamond", 3)])
+
+    c.quest("ante_extra", "Nova Aposta", -7, 7.5, icone="meetyourfight:devils_ante",
+            deps=["fortuna"], forma="circle", tamanho=0.75, optional=True, can_repeat=True,
+            descricao=["Perdeu a aposta? Troque &f2 diamantes&r por outra ficha."],
+            tarefas=[c.t_item("minecraft:diamond", 2, consumir=True)],
+            recompensas=[c.r_item("meetyourfight:devils_ante")])
+
+    # ---- Final do Ato 2
+    c.quest("relatorio", "Relatório: Terras Selvagens", 0, 9, icone="minecraft:amethyst_shard",
+            deps=["frostmaw", "umvuthi", "cornelia", "dame_fortuna"], forma="gear", tamanho=2.0,
+            subtitulo="Fim do Ato 2",
+            descricao=[f"{M}: \"Sete fragmentos. Mais da metade do Selo...\"",
+                       "",
+                       "&o\"Mas os batedores trouxeram notícias ruins. Os fragmentos que faltam não estão mais neste mundo. Eles caíram por uma fenda até o &cNether&o, e o calor lá está despertando algo antigo.\"",
+                       "",
+                       "&o\"Construa um portal. Quando estiver pronto, eu te conto o que sabemos.\"",
+                       "",
+                       "&dFim do Ato 2. O Ato 3 &7(Abismo e Fogo)&d chega em breve.&r"],
+            tarefas=[c.t_check("Entregar o relatório")],
+            recompensas=[c.r_item("minecraft:obsidian", 10), c.r_item("minecraft:flint_and_steel"),
+                         c.r_item(pocao("minecraft:fire_resistance"), 4), c.r_item("minecraft:diamond", 5),
+                         c.r_xp(15)])
+
+    return {
+        "id": qid("capitulo/ato2"),
+        "group": "",
+        "order_index": 1,
+        "filename": "ato_2_terras_selvagens",
+        "title": "Ato 2: Terras Selvagens",
+        "subtitle": ["Quatro frentes, quatro fragmentos"],
+        "icon": "paraglider:paraglider",
         "default_quest_shape": "",
         "default_hide_dependency_lines": False,
         "quests": c.quests,
@@ -432,8 +654,8 @@ def main():
         "icon": "minecraft:amethyst_shard",
     })
     escrever("chapter_groups.snbt", {"chapter_groups": []})
-    capitulo = ato1()
-    escrever(f"chapters/{capitulo['filename']}.snbt", capitulo)
+    for capitulo in (ato1(), ato2()):
+        escrever(f"chapters/{capitulo['filename']}.snbt", capitulo)
 
 
 if __name__ == "__main__":

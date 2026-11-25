@@ -6,7 +6,11 @@ hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_1_o_chamado.snbt"
-hash = "ede0156533a2fff687a494e085a422425699fc7069c18bf29d63e51787ad0ab5"
+hash = "9385819c4f5e4d04a1ce5eed4821bad39865344cf30d8a784a9d2f318a862ac1"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/ato_2_terras_selvagens.snbt"
+hash = "6757e55224242f93c4f1c298db527075b6239dc7da4fa19c13a758d276e14a3e"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -15,6 +19,38 @@ hash = "db76d779c699910388681cd1426745b1874d59bca7a2e47e18298bea936dadfc"
 [[files]]
 file = "config/openloader/data/terras_partidas/data/mowziesmobs/tags/worldgen/biome/has_structure/has_mowzie_structure.json"
 hash = "0ee75ac9e4f5bbcd3fa6ce4f54e081f57590cc6c8831cefcd1870afa88d32ba2"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/loot_tables/mapas/bosque_umvuthana.json"
+hash = "0e0a55c9506faf9911012e4b5641f0e97bb40378711972e8d0490b6ae6d47f7b"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/loot_tables/mapas/camara_forjada.json"
+hash = "90a09af2585cdf1987733e91a65bcb81a727e39b271e060dff5eb2dfc301fde6"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/loot_tables/mapas/covil_frostmaw.json"
+hash = "01a439602f0aa93dd4fd7408398552bfde8d4c219c2490f113622fe7ed514a60"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/loot_tables/mapas/labirinto_de_gelo.json"
+hash = "fbb781c9e82b302ed4b762a4253d6203cd5bd7c858b14c6f7171d74d136cac67"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/tags/worldgen/structure/bosque_umvuthana.json"
+hash = "646712bb3c8e2c4a7be670e98c6e047c83d44a65bb886d52f62061f5c7f65dcd"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/tags/worldgen/structure/camara_forjada.json"
+hash = "6c1ff2efc4e32612f6b283d8aca4d0002a66fc9d0c53886be8eb22800437304b"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/tags/worldgen/structure/covil_frostmaw.json"
+hash = "a4b4fe2e0b8a00576e576c0b09b0c0f8aff6f54242992cba359ca232ffea9638"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/tags/worldgen/structure/labirinto_de_gelo.json"
+hash = "5012df034b663dd756a33f6f7e5fe6e69f97babcfec9173c960fc612e81051c4"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/pack.mcmeta"
