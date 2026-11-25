@@ -3,14 +3,14 @@
 Modpack brasileiro de RPG com combate estilo souls, chefes, dungeons e uma história contada em português.
 
 - **Versão:** Minecraft 1.20.1 com Forge 47.4.29
-- **Mods:** 109 no total (90 rodam no servidor e 19 só no jogador)
+- **Mods:** 110 no total (91 rodam no servidor e 19 só no jogador)
 - **Objetivo:** ser mais leve que o DawnCraft (305 mods) e rodar bem com 6 GB de RAM
-- **Estado:** base de mods pronta, **Ato 1 e Ato 2 completos** (43 missões em português). Atos 3 a 5 ainda vão ser escritos.
+- **Estado:** base de mods pronta, **Ato 1 e Ato 2 completos** (49 missões em português, com dragões). Atos 3 a 5 ainda vão ser escritos.
 
 ## O que já foi testado
 
 - Um servidor dedicado ligou com todos os mods de servidor em cerca de 35 segundos, gerou o mundo e desligou sem travar.
-- As 43 missões carregam sem erro, e o servidor mantém os IDs delas (o progresso dos jogadores não se perde entre atualizações).
+- As 49 missões carregam sem erro, e o servidor mantém os IDs delas (o progresso dos jogadores não se perde entre atualizações).
 - Todos os itens, chefes e estruturas citados nas missões existem nos mods.
 - Os 4 mapas do tesouro saem preenchidos, com o X no local certo. Na semente de teste: Câmara Forjada a 450 blocos, Frostmaw a 1.950, navio do Labirinto de Gelo a 1.910 e bosque do Umvuthi a 3.200.
 - **Ainda não foi testado:** abrir o jogo no PC (lado do jogador) e jogar as missões de verdade.
@@ -28,6 +28,9 @@ Terralith, Blue Skies (2 dimensões novas), When Dungeons Arise, Dungeons and Ta
 
 **História e missões**
 FTB Quests (livro de missões), Easy NPC (personagens com diálogo para contar a história)
+
+**Montarias**
+Dragon Mounts: Legacy (8 tipos de dragão), Shellback do Aquamirae, Straddler do Alex's Mobs e os cavalos normais
 
 **Facilidades**
 JEI, Jade, Xaero's Minimap e World Map, Waystones, Sophisticated Backpacks, Corpse, AppleSkin, Guard Villagers, Farmer's Delight
@@ -60,7 +63,7 @@ Se o jogador perder a luta, as missões opcionais "Mais uma Isca" e "Outro Sino"
 
 ## Ato 2: Terras Selvagens (pronto)
 
-Começa depois do relatório do Ato 1. São 20 missões divididas em quatro frentes, que podem ser feitas em qualquer ordem. Em três delas o Mestre entrega um **mapa do tesouro** com o X no local do chefe, como no DawnCraft.
+Começa depois do relatório do Ato 1. São 26 missões (contando a linha do dragão) divididas em quatro frentes, que podem ser feitas em qualquer ordem. Em três delas o Mestre entrega um **mapa do tesouro** com o X no local do chefe, como no DawnCraft.
 
 | Frente | Como chegar | Chefe | Habilidade ganha |
 |---|---|---|---|
@@ -70,6 +73,8 @@ Começa depois do relatório do Ato 1. São 20 missões divididas em quatro fren
 | Mesa da Fortuna | Peitoral de diamante dá a Aposta do Diabo | Dame Fortuna (Meet Your Fight) | Ladrão de Fôlego |
 
 Também tem missões de apoio (mochila de ferro, mesa de encantamento, Waystone própria), uma missão extra contra a Mãe do Labirinto e missões repetíveis pra trocar recursos por outro item de invocação. O relatório final dá obsidiana e isqueiro, preparando o Nether do Ato 3.
+
+**Ovo de dragão:** depois do relatório, o Mestre oferece um ovo e o jogador escolhe **um** entre Fogo, Gelo, Água e Floresta (mod Dragon Mounts: Legacy). Cada ovo vem com blocos do habitat dele, porque o ambiente em volta pode mudar o tipo do dragão, e com sela e carne. A missão final "Primeiro Voo" fecha a linha.
 
 ## Rascunho da história
 

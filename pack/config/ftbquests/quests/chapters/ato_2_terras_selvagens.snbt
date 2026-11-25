@@ -828,5 +828,291 @@
 				}
 			]
 		}
+		{
+			id: "37E5C75BE7F753FD"
+			title: "O Presente do Mestre"
+			x: 0.0d
+			y: 12.5d
+			subtitle: "Escolha só um ovo"
+			icon: "dragonmounts:dragon_egg"
+			shape: "hexagon"
+			size: 1.5d
+			description: ["&6Mestre Vellan&r: \"Antes de você partir para o Nether, tenho algo guardado há muito tempo.\"", "", "&o\"Os antigos guardiões do Selo voavam em dragões. Quando o Selo foi criado, eles esconderam os últimos ovos com a Ordem. Você mereceu um.\"", "", "Escolha &cum&r dos quatro ovos ao lado. Depois de escolher, os outros ficam bloqueados.", "", "&6Fogo&r: resiste a fogo e lava. Bom para o Nether.", "&bGelo&r: aguenta o frio e as terras nevadas.", "&3Água&r: nada e respira embaixo d'água.", "&aFloresta&r: o mais calmo, ótimo para viajar."]
+			dependencies: ["5A0236B98D30AC09"]
+			max_completable_dependents: 1
+			tasks: [
+				{
+					id: "308CD81AD7F2295E"
+					type: "checkmark"
+					title: "Quero um ovo de dragão"
+				}
+			]
+		}
+		{
+			id: "6722E765449B3A7A"
+			title: "&6Ovo de Dragão de Fogo"
+			x: -4.5d
+			y: 15.0d
+			icon: {
+				id: "dragonmounts:dragon_egg"
+				Count: 1b
+				tag: {
+					BlockEntityTag: {
+						Breed: "dragonmounts:fire"
+					}
+				}
+			}
+			shape: "diamond"
+			description: ["Você escolheu o &6Ovo de Dragão de Fogo&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo cai como areia: coloque em cima de um bloco firme.&r", "", "&cCuidado:&r o ambiente muda o tipo do dragão! Deixe o ovo perto de &flava, fogo, fogueira ou blocos de magma&r para ele continuar sendo deste tipo. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
+			dependencies: ["37E5C75BE7F753FD"]
+			tasks: [
+				{
+					id: "096F8A1AB8428DDA"
+					type: "checkmark"
+					title: "Escolher o &6Ovo de Dragão de Fogo"
+				}
+			]
+			rewards: [
+				{
+					id: "484DA69B959C591F"
+					type: "item"
+					item: {
+						id: "dragonmounts:dragon_egg"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Breed: "dragonmounts:fire"
+							}
+						}
+					}
+				}
+				{
+					id: "279BB84763456C37"
+					type: "item"
+					item: "minecraft:magma_block"
+					count: 8
+				}
+				{
+					id: "0794E3864029E974"
+					type: "item"
+					item: "minecraft:saddle"
+				}
+				{
+					id: "4BDBF3A51A9940EE"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 32
+				}
+			]
+		}
+		{
+			id: "442B24C6617282A8"
+			title: "&bOvo de Dragão de Gelo"
+			x: -1.5d
+			y: 15.0d
+			icon: {
+				id: "dragonmounts:dragon_egg"
+				Count: 1b
+				tag: {
+					BlockEntityTag: {
+						Breed: "dragonmounts:ice"
+					}
+				}
+			}
+			shape: "diamond"
+			description: ["Você escolheu o &bOvo de Dragão de Gelo&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo cai como areia: coloque em cima de um bloco firme.&r", "", "&cCuidado:&r o ambiente muda o tipo do dragão! Deixe o ovo perto de &fgelo ou neve&r para ele continuar sendo deste tipo. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
+			dependencies: ["37E5C75BE7F753FD"]
+			tasks: [
+				{
+					id: "1B83F30805E9A733"
+					type: "checkmark"
+					title: "Escolher o &bOvo de Dragão de Gelo"
+				}
+			]
+			rewards: [
+				{
+					id: "1EF9D87856034FA9"
+					type: "item"
+					item: {
+						id: "dragonmounts:dragon_egg"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Breed: "dragonmounts:ice"
+							}
+						}
+					}
+				}
+				{
+					id: "0B82B6E5F95A4A91"
+					type: "item"
+					item: "minecraft:packed_ice"
+					count: 8
+				}
+				{
+					id: "16B75BE64CADD499"
+					type: "item"
+					item: "minecraft:saddle"
+				}
+				{
+					id: "5D0F0CEE1604F85A"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 32
+				}
+			]
+		}
+		{
+			id: "73682D458DEC7CE6"
+			title: "&3Ovo de Dragão de Água"
+			x: 1.5d
+			y: 15.0d
+			icon: {
+				id: "dragonmounts:dragon_egg"
+				Count: 1b
+				tag: {
+					BlockEntityTag: {
+						Breed: "dragonmounts:water"
+					}
+				}
+			}
+			shape: "diamond"
+			description: ["Você escolheu o &3Ovo de Dragão de Água&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo cai como areia: coloque em cima de um bloco firme.&r", "", "&cCuidado:&r o ambiente muda o tipo do dragão! Deixe o ovo perto de &fprismarinho, lanterna do mar, algas ou corais&r para ele continuar sendo deste tipo. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
+			dependencies: ["37E5C75BE7F753FD"]
+			tasks: [
+				{
+					id: "47D752F3803EEBE1"
+					type: "checkmark"
+					title: "Escolher o &3Ovo de Dragão de Água"
+				}
+			]
+			rewards: [
+				{
+					id: "34B47460FFA9DA4E"
+					type: "item"
+					item: {
+						id: "dragonmounts:dragon_egg"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Breed: "dragonmounts:water"
+							}
+						}
+					}
+				}
+				{
+					id: "74279D60E163E98A"
+					type: "item"
+					item: "minecraft:prismarine"
+					count: 8
+				}
+				{
+					id: "7DAA10E23C46549C"
+					type: "item"
+					item: "minecraft:saddle"
+				}
+				{
+					id: "5185105226D1CF3F"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 32
+				}
+			]
+		}
+		{
+			id: "499EF19D7636C3EE"
+			title: "&aOvo de Dragão de Floresta"
+			x: 4.5d
+			y: 15.0d
+			icon: {
+				id: "dragonmounts:dragon_egg"
+				Count: 1b
+				tag: {
+					BlockEntityTag: {
+						Breed: "dragonmounts:forest"
+					}
+				}
+			}
+			shape: "diamond"
+			description: ["Você escolheu o &aOvo de Dragão de Floresta&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo cai como areia: coloque em cima de um bloco firme.&r", "", "&cCuidado:&r o ambiente muda o tipo do dragão! Deixe o ovo perto de &ffolhas, flores, mudas ou musgo&r para ele continuar sendo deste tipo. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
+			dependencies: ["37E5C75BE7F753FD"]
+			tasks: [
+				{
+					id: "428435FB1CDA7DD4"
+					type: "checkmark"
+					title: "Escolher o &aOvo de Dragão de Floresta"
+				}
+			]
+			rewards: [
+				{
+					id: "076F402DDE4DF942"
+					type: "item"
+					item: {
+						id: "dragonmounts:dragon_egg"
+						Count: 1b
+						tag: {
+							BlockEntityTag: {
+								Breed: "dragonmounts:forest"
+							}
+						}
+					}
+				}
+				{
+					id: "78986C45358A984A"
+					type: "item"
+					item: "minecraft:moss_block"
+					count: 8
+				}
+				{
+					id: "622485E698F3BB1A"
+					type: "item"
+					item: "minecraft:saddle"
+				}
+				{
+					id: "727331CE51AD34D9"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 32
+				}
+			]
+		}
+		{
+			id: "6B52EB5089E6C5F3"
+			title: "Primeiro Voo"
+			x: 0.0d
+			y: 17.5d
+			icon: "minecraft:saddle"
+			shape: "gear"
+			size: 1.5d
+			description: ["&6Mestre Vellan&r: \"Quando ele crescer, suba e voe. Não existe sensação igual.\"", "", "&eControles do dragão:&r use as teclas de pular e agachar para subir e descer. Os controles de voo ficam em &eOpções > Controles&r, na seção do Dragon Mounts.", "", "Marque esta missão quando fizer o primeiro voo."]
+			dependencies: ["6722E765449B3A7A", "442B24C6617282A8", "73682D458DEC7CE6", "499EF19D7636C3EE"]
+			dependency_requirement: "one_completed"
+			tasks: [
+				{
+					id: "6BC2A3A0457DC566"
+					type: "checkmark"
+					title: "Voei no meu dragão!"
+				}
+			]
+			rewards: [
+				{
+					id: "76F25FD5DCA90BE7"
+					type: "item"
+					item: "minecraft:golden_apple"
+					count: 3
+				}
+				{
+					id: "090F20FC0F3A35A7"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 32
+				}
+				{
+					id: "57C5DBBAC6E4E1D0"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+		}
 	]
 }

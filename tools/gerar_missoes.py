@@ -92,6 +92,10 @@ def pocao(tipo):
     return item("minecraft:potion", tag={"Potion": tipo})
 
 
+def ovo_dragao(raca):
+    return item("dragonmounts:dragon_egg", tag={"BlockEntityTag": {"Breed": raca}})
+
+
 def fragmento(ato, numero, total):
     return item("minecraft:amethyst_shard", tag={
         **nome_lore("Fragmento do Selo", "light_purple",
@@ -607,6 +611,58 @@ def ato2():
             recompensas=[c.r_item("minecraft:obsidian", 10), c.r_item("minecraft:flint_and_steel"),
                          c.r_item(pocao("minecraft:fire_resistance"), 4), c.r_item("minecraft:diamond", 5),
                          c.r_xp(15)])
+
+    # ---- Ovo de dragão (recompensa do fim do Ato 2)
+    c.quest("ovo", "O Presente do Mestre", 0, 12.5, icone="dragonmounts:dragon_egg",
+            deps=["relatorio"], forma="hexagon", tamanho=1.5,
+            max_completable_dependents=1,
+            subtitulo="Escolha só um ovo",
+            descricao=[f"{M}: \"Antes de você partir para o Nether, tenho algo guardado há muito tempo.\"",
+                       "",
+                       "&o\"Os antigos guardiões do Selo voavam em dragões. Quando o Selo foi criado, eles esconderam os últimos ovos com a Ordem. Você mereceu um.\"",
+                       "",
+                       "Escolha &cum&r dos quatro ovos ao lado. Depois de escolher, os outros ficam bloqueados.",
+                       "",
+                       "&6Fogo&r: resiste a fogo e lava. Bom para o Nether.",
+                       "&bGelo&r: aguenta o frio e as terras nevadas.",
+                       "&3Água&r: nada e respira embaixo d'água.",
+                       "&aFloresta&r: o mais calmo, ótimo para viajar."],
+            tarefas=[c.t_check("Quero um ovo de dragão")])
+
+    ovos = [
+        ("ovo_fogo", "&6Ovo de Dragão de Fogo", -4.5, "dragonmounts:fire", "minecraft:magma_block",
+         "lava, fogo, fogueira ou blocos de magma"),
+        ("ovo_gelo", "&bOvo de Dragão de Gelo", -1.5, "dragonmounts:ice", "minecraft:packed_ice",
+         "gelo ou neve"),
+        ("ovo_agua", "&3Ovo de Dragão de Água", 1.5, "dragonmounts:water", "minecraft:prismarine",
+         "prismarinho, lanterna do mar, algas ou corais"),
+        ("ovo_floresta", "&aOvo de Dragão de Floresta", 4.5, "dragonmounts:forest", "minecraft:moss_block",
+         "folhas, flores, mudas ou musgo"),
+    ]
+    for chave, nome, x, raca, bloco, habitat in ovos:
+        c.quest(chave, nome, x, 15, icone=ovo_dragao(raca), deps=["ovo"], forma="diamond",
+                descricao=[f"Você escolheu o {nome}&r.",
+                           "",
+                           "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.",
+                           "&7O ovo cai como areia: coloque em cima de um bloco firme.&r",
+                           "",
+                           f"&cCuidado:&r o ambiente muda o tipo do dragão! Deixe o ovo perto de &f{habitat}&r para ele continuar sendo deste tipo. Os blocos que vieram junto servem para isso.",
+                           "",
+                           "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."],
+                tarefas=[c.t_check(f"Escolher o {nome}")],
+                recompensas=[c.r_item(ovo_dragao(raca)), c.r_item(bloco, 8), c.r_item("minecraft:saddle"),
+                             c.r_item("minecraft:cooked_beef", 32)])
+
+    c.quest("primeiro_voo", "Primeiro Voo", 0, 17.5, icone="minecraft:saddle",
+            deps=[k for k, *_ in ovos], dependency_requirement="one_completed",
+            forma="gear", tamanho=1.5,
+            descricao=[f"{M}: \"Quando ele crescer, suba e voe. Não existe sensação igual.\"",
+                       "",
+                       "&eControles do dragão:&r use as teclas de pular e agachar para subir e descer. Os controles de voo ficam em &eOpções > Controles&r, na seção do Dragon Mounts.",
+                       "",
+                       "Marque esta missão quando fizer o primeiro voo."],
+            tarefas=[c.t_check("Voei no meu dragão!")],
+            recompensas=[c.r_item("minecraft:golden_apple", 3), c.r_item("minecraft:cooked_beef", 32), c.r_xp(10)])
 
     return {
         "id": qid("capitulo/ato2"),
