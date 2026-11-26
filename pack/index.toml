@@ -14,7 +14,7 @@ hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_1_o_chamado.snbt"
-hash = "d2c80fd5410af85fd6f3b1c5262a507e6ce4289e3568953b4a1c7dcf60a63205"
+hash = "640c527953f8b0be044f7060f2f988e0a483720970a4bf2452ee8defef78291a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_2_terras_selvagens.snbt"
@@ -73,12 +73,44 @@ file = "config/openloader/data/terras_partidas/data/dungeons_arise/worldgen/stru
 hash = "88695070fc756517fce928115502a1a5642443ea657131c869b996ad26290ccc"
 
 [[files]]
+file = "config/openloader/data/terras_partidas/data/minecraft/tags/functions/load.json"
+hash = "efb6811306ee5b5517dc5dbbfa8dda119e845ab40c3d20fcec7620d4d338676e"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/minecraft/tags/functions/tick.json"
+hash = "e024e4b347e7c82cd8eeea5205c29fcaa017ec5c98afa101310bd0c8a8838d35"
+
+[[files]]
 file = "config/openloader/data/terras_partidas/data/mowziesmobs/tags/worldgen/biome/has_structure/has_mowzie_structure.json"
 hash = "0ee75ac9e4f5bbcd3fa6ce4f54e081f57590cc6c8831cefcd1870afa88d32ba2"
 
 [[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/advancements/primeira_entrada.json"
+hash = "81a35f560b06ac241124f5995e01a968e2a3c39d5ba5f36e83e83379ff28f16e"
+
+[[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/easy_npc/preset/humanoid/mestre_vellan.npc.snbt"
-hash = "e0a24fa90561aab02a5fb6381679887e49b15720cdfd68d74863db4fdafd47d6"
+hash = "e4e6cc9c3134df6ef3fb66c1eb5a9e84037151370c18e61f5814f345ac9b1b43"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/boas_vindas/carregar.mcfunction"
+hash = "de14d73f0c4e03f3a2d72f0cd9b719506aecfd99753c7e76d215de69b7b0ee67"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/boas_vindas/esperar.mcfunction"
+hash = "7f9b2479c46899d3dd6f793b1a5ade485b2b01e68a7b62a77938b2ba65d68841"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/boas_vindas/marcar.mcfunction"
+hash = "c47cedf29efadbf38477c887693144cc772dd8c452f263f650b32a30976b7ebc"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/boas_vindas/receber.mcfunction"
+hash = "5f9e74215a32598094b0226d37274bdb9294eb0cbe84fe382110e2dee11f43fc"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/boas_vindas/tick.mcfunction"
+hash = "43a1bd896bdfda1389b6420cdebf9f637572b765fafdbc3bb421adaeb16bfb50"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/chamar_vellan.mcfunction"
@@ -239,6 +271,18 @@ hash = "5012df034b663dd756a33f6f7e5fe6e69f97babcfec9173c960fc612e81051c4"
 [[files]]
 file = "config/openloader/data/terras_partidas/pack.mcmeta"
 hash = "0184a676e6dd9366745a0572cac668ff07d887e51f4d10e35c97ff24e4474b70"
+
+[[files]]
+file = "config/openloader/resources/sealcraft_visual/assets/aquamirae/textures/gui/title/logo.png"
+hash = "d1be347e546254e3c272974a80a61e9d84941d31081ea3b16a99fefa9f5aa1cd"
+
+[[files]]
+file = "config/openloader/resources/sealcraft_visual/assets/minecraft/texts/splashes.txt"
+hash = "c45fe6536b245060f10f6169ddd93f40bda27fa082476364c117230fcfabf64e"
+
+[[files]]
+file = "config/openloader/resources/sealcraft_visual/pack.mcmeta"
+hash = "d0e14784ee796e08059945e7938ce64fbe7ee2fadeaa0eedbb2d35d2675932f9"
 
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/alexsmobs/lang/pt_br.json"

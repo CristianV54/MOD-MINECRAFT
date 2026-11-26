@@ -18,7 +18,7 @@
 			icon: "minecraft:writable_book"
 			shape: "gear"
 			size: 1.5d
-			description: ["&o\"Caçador,", "", "&oHá trezentos anos, sete guardiões prenderam um mal antigo dentro de um cristal: o &dSelo&r&o.", "&oNa última lua cheia, o Selo se partiu. Os fragmentos caíram pelo mundo e cada um corrompeu uma criatura poderosa.", "", "&oSe juntarmos os fragmentos antes que o mal desperte, ainda há esperança.", "&oA Ordem dos Caçadores precisa de você.\"", "", "— &6Mestre Vellan&r, Mestre da Ordem", "{@pagebreak}", "&eComo usar este livro:&r", "• Cada missão mostra o objetivo e a recompensa.", "• Clique em uma missão para ver os detalhes e pegar a recompensa.", "• Missões novas aparecem conforme você avança.", "", "&eCombate:&r este mundo usa o &cEpic Fight&r. Aperte &eR&r para alternar entre o modo normal e o modo de combate.", "As outras teclas ficam em &eOpções > Controles&r, na seção do Epic Fight.", "{@pagebreak}", "&eO Mestre Vellan:&r quando você pegar a recompensa desta missão, o Mestre aparece &fao seu lado&r.", "Clique nele com o botão direito para conversar. Ele comenta cada etapa da história, dá dicas e abre o livro de missões.", "&7Se você mudar de base, a missão \"Chamar o Mestre\" traz ele até você.&r"]
+			description: ["&o\"Caçador,", "", "&oHá trezentos anos, sete guardiões prenderam um mal antigo dentro de um cristal: o &dSelo&r&o.", "&oNa última lua cheia, o Selo se partiu. Os fragmentos caíram pelo mundo e cada um corrompeu uma criatura poderosa.", "", "&oSe juntarmos os fragmentos antes que o mal desperte, ainda há esperança.", "&oA Ordem dos Caçadores precisa de você.\"", "", "— &6Mestre Vellan&r, Mestre da Ordem", "{@pagebreak}", "&eComo usar este livro:&r", "• Cada missão mostra o objetivo e a recompensa.", "• Clique em uma missão para ver os detalhes e pegar a recompensa.", "• Missões novas aparecem conforme você avança.", "", "&eCombate:&r este mundo usa o &cEpic Fight&r. Aperte &eR&r para alternar entre o modo normal e o modo de combate.", "As outras teclas ficam em &eOpções > Controles&r, na seção do Epic Fight.", "{@pagebreak}", "&eO Mestre Vellan:&r ele aparece &fna sua frente&r assim que você entra no mundo pela primeira vez.", "Clique nele com o botão direito para conversar e escolher sua classe. Ele também comenta cada etapa da história e dá dicas.", "&7Se você mudar de base, a missão \"Chamar o Mestre\" traz ele até você.&r"]
 			tasks: [
 				{
 					id: "4A7E5C2F98DD01D9"
@@ -49,15 +49,6 @@
 							skill: "epicfight:roll"
 						}
 					}
-				}
-				{
-					id: "2CA445C31E09238B"
-					type: "command"
-					command: "/function terras_partidas:chamar_vellan"
-					elevate_perms: true
-					silent: true
-					title: "O Mestre Vellan chega"
-					icon: "minecraft:writable_book"
 				}
 			]
 		}
@@ -159,6 +150,15 @@
 					title: "Libera a árvore de habilidades da classe"
 					icon: "minecraft:enchanted_book"
 				}
+				{
+					id: "480D4009B1D112DF"
+					type: "command"
+					command: "/tag {p} add terras_partidas_classe"
+					elevate_perms: true
+					silent: true
+					title: "Classe escolhida"
+					icon: "minecraft:name_tag"
+				}
 			]
 		}
 		{
@@ -218,6 +218,15 @@
 					silent: true
 					title: "Libera a árvore de habilidades da classe"
 					icon: "minecraft:enchanted_book"
+				}
+				{
+					id: "2B5CDE994328F450"
+					type: "command"
+					command: "/tag {p} add terras_partidas_classe"
+					elevate_perms: true
+					silent: true
+					title: "Classe escolhida"
+					icon: "minecraft:name_tag"
 				}
 			]
 		}
@@ -291,6 +300,15 @@
 					silent: true
 					title: "Libera a árvore de habilidades da classe"
 					icon: "minecraft:enchanted_book"
+				}
+				{
+					id: "56416D228B2EFC7A"
+					type: "command"
+					command: "/tag {p} add terras_partidas_classe"
+					elevate_perms: true
+					silent: true
+					title: "Classe escolhida"
+					icon: "minecraft:name_tag"
 				}
 			]
 		}
@@ -410,6 +428,15 @@
 					title: "Libera a árvore de habilidades da classe"
 					icon: "minecraft:enchanted_book"
 				}
+				{
+					id: "4FCE833DD4EC5118"
+					type: "command"
+					command: "/tag {p} add terras_partidas_classe"
+					elevate_perms: true
+					silent: true
+					title: "Classe escolhida"
+					icon: "minecraft:name_tag"
+				}
 			]
 		}
 		{
@@ -464,6 +491,15 @@
 					silent: true
 					title: "Libera a árvore de habilidades da classe"
 					icon: "minecraft:enchanted_book"
+				}
+				{
+					id: "54B7CD96976DD6B2"
+					type: "command"
+					command: "/tag {p} add terras_partidas_classe"
+					elevate_perms: true
+					silent: true
+					title: "Classe escolhida"
+					icon: "minecraft:name_tag"
 				}
 			]
 		}

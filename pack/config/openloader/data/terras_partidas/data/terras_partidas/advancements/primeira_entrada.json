@@ -1,0 +1,6 @@
+{
+  "criteria": {
+    "entrou_no_mundo": { "trigger": "minecraft:tick" }
+  },
+  "rewards": { "function": "terras_partidas:boas_vindas/marcar" }
+}

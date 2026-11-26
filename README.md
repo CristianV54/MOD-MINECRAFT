@@ -181,7 +181,12 @@ O pacote de recursos `pack/config/openloader/resources/terras_partidas_ptbr/` tr
 
 ## Mestre Vellan no mundo
 
-O Mestre Vellan é um NPC do Easy NPC que aparece **ao lado do jogador** quando ele pega a recompensa da primeira missão ("O Chamado").
+O Mestre Vellan é um NPC do Easy NPC que **aparece 3 blocos na frente do jogador** uns 5 segundos depois de ele entrar no mundo pela primeira vez, com o título "SealCraft" na tela. Uma conquista invisível (`terras_partidas:primeira_entrada`) dispara as funções em `functions/boas_vindas/`.
+- **Escolha de classe:** a primeira conversa é a tela de escolha de classe. Cada classe tem uma página de prós e contras e um botão "Escolher" que:
+  - marca como completas as missões "O Chamado", "Escolha seu Caminho" e a da classe;
+  - libera a árvore de habilidades;
+  - manda o jogador pegar o kit no livro de missões.
+- **Pelo livro também funciona:** escolher a classe pelo livro de missões marca a mesma tag (`terras_partidas_classe`), então o Mestre pula a escolha.
 - **Conversa:** clique direito nele. A fala muda conforme o ato do jogador, porque cada relatório de ato marca o jogador com a tag `terras_partidas_atoN` (e `terras_partidas_fim` no final).
 - **Botões:** abrir o livro de missões, a história do Selo, dicas de combate e despedida.
 - **Chamar de novo:** a missão repetível "Chamar o Mestre", no Ato 1, traz ele até o jogador. Se ele estiver perto, só muda de lugar.
@@ -190,6 +195,15 @@ O Mestre Vellan é um NPC do Easy NPC que aparece **ao lado do jogador** quando 
   - **Funções:** `terras_partidas:chamar_vellan` e `terras_partidas:rechamar_vellan`, no mesmo datapack.
 - **Por que a invocação passa por uma entidade auxiliar:** se o jogador invocar o preset direto, o Easy NPC trata como importação de um jogador comum e corta o diálogo com comandos e o "olhar pro jogador".
 - **Configuração:** `pack/config/easy_npc/security.cfg` libera só o comando `ftbquests` para o botão do livro.
+
+## Tela inicial e teclas
+
+- **Tela inicial:** o pacote de recursos `pack/config/openloader/resources/sealcraft_visual/` troca o logo do Aquamirae (embaixo do "MINECRAFT") pelo logo **SEALCRAFT** e as frases amarelas por 36 frases em português. O logo e o ícone quadrado (`arte/`) são gerados por `tools/gerar_arte.py`.
+- **Teclas padrão:** o mod Default Options aplica `pack/config/defaultoptions/keybindings.txt` só na primeira vez que o jogo abre, sem mexer no que o jogador mudar depois.
+  - **Shaders sem tecla:** o recarregar e o liga/desliga do Oculus ficam sem tecla. Antes, o R recarregava os shaders junto com o modo de combate.
+  - **R:** modo de combate (Epic Fight).
+  - **K:** árvore de habilidades.
+  - **J:** tela de habilidades do Epic Fight.
 
 ## A história
 

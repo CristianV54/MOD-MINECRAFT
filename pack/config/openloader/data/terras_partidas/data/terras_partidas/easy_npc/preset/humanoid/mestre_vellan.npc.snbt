@@ -79,10 +79,16 @@
           ],
           Label:"inicio",
           Name:"Bem-vindo",
-          Priority:1,
+          Priority:2,
           Texts:[
             {
-              Text:"Bem-vindo à Ordem dos Caçadores, @initiator.\\n\\nO Selo se partiu e os fragmentos corromperam criaturas poderosas. Os três primeiros estão perto daqui: algo enorme nos pântanos, um espírito que toca um sino, e um cavaleiro de metal numa câmara no subsolo.\\n\\nComece escolhendo o seu caminho no livro de missões."
+              Text:"Bem-vindo à Ordem dos Caçadores, @initiator.\\n\\nO Selo se partiu e os fragmentos corromperam criaturas poderosas. Os três primeiros estão perto daqui: algo enorme nos pântanos, um espírito que toca um sino, e um cavaleiro de metal numa câmara no subsolo.\\n\\nSeu kit e suas primeiras missões estão no livro de missões. Quando quiser conversar, é só voltar aqui."
+            }
+          ],
+          Conditions:[
+            {
+              Name:"terras_partidas_classe",
+              Type:"PLAYER_TAG"
             }
           ]
         },
@@ -144,7 +150,7 @@
           ],
           Label:"ato2",
           Name:"Terras Selvagens",
-          Priority:2,
+          Priority:3,
           Texts:[
             {
               Text:"Três fragmentos, @initiator. Melhor do que qualquer caçador em anos.\\n\\nOs próximos estão longe: no gelo eterno, nas savanas queimadas, no mar congelado e com a jogadora de almas, Dame Fortuna. Use os mapas que eu te der e o planador para atravessar o mundo."
@@ -215,7 +221,7 @@
           ],
           Label:"ato3",
           Name:"Abismo e Fogo",
-          Priority:3,
+          Priority:4,
           Texts:[
             {
               Text:"Sete fragmentos... e os que faltam caíram no Nether, @initiator.\\n\\nUse ouro na armadura para os piglins te deixarem em paz e leve muitas poções de resistência ao fogo. Eu mando as coordenadas de cada lugar pelo livro."
@@ -286,7 +292,7 @@
           ],
           Label:"ato4",
           Name:"Além do Céu",
-          Priority:4,
+          Priority:5,
           Texts:[
             {
               Text:"Onze fragmentos. E agora a verdade: os guardiões do Selo nunca morreram, @initiator.\\n\\nEles vivem no Everbright e no Everdawn, acima das nuvens, mas enlouqueceram. Tijolo turquesa abre o caminho para o Everbright. Tijolo lunar, para o Everdawn."
@@ -357,7 +363,7 @@
           ],
           Label:"ato5",
           Name:"O Fim do Selo",
-          Priority:5,
+          Priority:6,
           Texts:[
             {
               Text:"Quinze fragmentos, @initiator. O Selo só pode ser refeito onde foi quebrado: no End.\\n\\nEncontre a fortaleza escondida, derrote o Dragão e os guardiões do vazio. E guarde a Estrela do Nether do Wither. Você vai precisar dela no final."
@@ -428,7 +434,7 @@
           ],
           Label:"final",
           Name:"O Selo Restaurado",
-          Priority:6,
+          Priority:7,
           Texts:[
             {
               Text:"@initiator... você conseguiu.\\n\\nTrezentos anos atrás, sete guardiões criaram o Selo. Seis você enfrentou. O sétimo sou eu, e esperei três séculos por alguém como você. A Ordem nunca vai esquecer o seu nome.\\n\\nSe ainda quiser lutar, dizem que uma flor do vazio e um leviatã ainda vagam pelo mundo..."
@@ -459,6 +465,415 @@
           Texts:[
             {
               Text:"Há trezentos anos, um mal antigo ameaçou o mundo. Sete guardiões o prenderam dentro de um cristal: o Selo.\\n\\nNa última lua cheia, o Selo se partiu. Os fragmentos caíram pelo mundo, e cada um corrompeu a criatura mais forte que encontrou.\\n\\nJunte todos os fragmentos e o Selo pode ser refeito. Falhe, e o mal desperta."
+            }
+          ]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"classe_guerreiro",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"ver_guerreiro",
+              Name:"Guerreiro"
+            },
+            {
+              Actions:[
+                {
+                  Cmd:"classe_tanque",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"ver_tanque",
+              Name:"Tanque"
+            },
+            {
+              Actions:[
+                {
+                  Cmd:"classe_assassino",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"ver_assassino",
+              Name:"Assassino"
+            },
+            {
+              Actions:[
+                {
+                  Cmd:"classe_mago",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"ver_mago",
+              Name:"Mago"
+            },
+            {
+              Actions:[
+                {
+                  Cmd:"classe_cacador",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"ver_cacador",
+              Name:"Caçador"
+            },
+            {
+              Actions:[
+                {
+                  Cmd:"historia",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"historia_inicio",
+              Name:"Conte a história do Selo"
+            }
+          ],
+          Label:"escolha",
+          Name:"Escolha seu caminho",
+          Priority:1,
+          Texts:[
+            {
+              Text:"Então você é o novo caçador, @initiator. Sou o Mestre Vellan, da Ordem dos Caçadores.\\n\\nO Selo que prendia um mal antigo se partiu, e preciso de você para juntar os fragmentos.\\n\\nMas antes: que tipo de caçador você é? Escolha uma classe para ver os prós e os contras."
+            }
+          ]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"/ftbquests change_progress @initiator complete 3BB64CCD28B4E329",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/ftbquests change_progress @initiator complete 7705A346645D703A",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/ftbquests change_progress @initiator complete 062E0BFC8535363C",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/puffish_skills category unlock @initiator terras_partidas:guerreiro",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/tag @initiator add terras_partidas_classe",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/playsound minecraft:ui.toast.challenge_complete master @initiator ~ ~ ~ 1 1",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"escolhida",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"escolher_guerreiro",
+              Name:"Escolher Guerreiro"
+            },
+            {
+              Actions:[
+                {
+                  Cmd:"escolha",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"voltar_guerreiro",
+              Name:"Ver outra classe"
+            }
+          ],
+          Label:"classe_guerreiro",
+          Name:"Guerreiro",
+          Priority:-1,
+          Texts:[
+            {
+              Text:"GUERREIRO\\n\\nPrós: Equilibrado: bom dano, boa vida e armadura. A classe mais fácil para começar.\\n\\nContras: Não se destaca em nada. Luta sempre de perto.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K)."
+            }
+          ]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"/ftbquests change_progress @initiator complete 3BB64CCD28B4E329",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/ftbquests change_progress @initiator complete 7705A346645D703A",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/ftbquests change_progress @initiator complete 3F450D4A9B68A9C4",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/puffish_skills category unlock @initiator terras_partidas:tanque",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/tag @initiator add terras_partidas_classe",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/playsound minecraft:ui.toast.challenge_complete master @initiator ~ ~ ~ 1 1",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"escolhida",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"escolher_tanque",
+              Name:"Escolher Tanque"
+            },
+            {
+              Actions:[
+                {
+                  Cmd:"escolha",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"voltar_tanque",
+              Name:"Ver outra classe"
+            }
+          ],
+          Label:"classe_tanque",
+          Name:"Tanque",
+          Priority:-1,
+          Texts:[
+            {
+              Text:"TANQUE\\n\\nPrós: Muita vida e armadura, difícil de derrubar. Começa sabendo aparar golpes com o escudo.\\n\\nContras: Dano menor: as lutas contra chefes demoram mais.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K)."
+            }
+          ]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"/ftbquests change_progress @initiator complete 3BB64CCD28B4E329",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/ftbquests change_progress @initiator complete 7705A346645D703A",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/ftbquests change_progress @initiator complete 09A7904C3E38C2EE",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/puffish_skills category unlock @initiator terras_partidas:assassino",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/tag @initiator add terras_partidas_classe",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/playsound minecraft:ui.toast.challenge_complete master @initiator ~ ~ ~ 1 1",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"escolhida",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"escolher_assassino",
+              Name:"Escolher Assassino"
+            },
+            {
+              Actions:[
+                {
+                  Cmd:"escolha",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"voltar_assassino",
+              Name:"Ver outra classe"
+            }
+          ],
+          Label:"classe_assassino",
+          Name:"Assassino",
+          Priority:-1,
+          Texts:[
+            {
+              Text:"ASSASSINO\\n\\nPrós: Rápido, com muitos acertos críticos e esquivas. Duas adagas e o passo rápido.\\n\\nContras: Pouca vida: cada erro custa caro.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K)."
+            }
+          ]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"/ftbquests change_progress @initiator complete 3BB64CCD28B4E329",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/ftbquests change_progress @initiator complete 7705A346645D703A",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/ftbquests change_progress @initiator complete 3E1B2E122F610121",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/puffish_skills category unlock @initiator terras_partidas:mago",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/tag @initiator add terras_partidas_classe",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/playsound minecraft:ui.toast.challenge_complete master @initiator ~ ~ ~ 1 1",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"escolhida",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"escolher_mago",
+              Name:"Escolher Mago"
+            },
+            {
+              Actions:[
+                {
+                  Cmd:"escolha",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"voltar_mago",
+              Name:"Ver outra classe"
+            }
+          ],
+          Label:"classe_mago",
+          Name:"Mago",
+          Priority:-1,
+          Texts:[
+            {
+              Text:"MAGO\\n\\nPrós: Dano de longe com feitiços, inclusive cura. Livro de feitiços e Mesa de Inscrição desde o começo.\\n\\nContras: Frágil no começo e depende de mana e de pergaminhos.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K)."
+            }
+          ]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"/ftbquests change_progress @initiator complete 3BB64CCD28B4E329",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/ftbquests change_progress @initiator complete 7705A346645D703A",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/ftbquests change_progress @initiator complete 40FA859627277492",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/puffish_skills category unlock @initiator terras_partidas:cacador",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/tag @initiator add terras_partidas_classe",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/playsound minecraft:ui.toast.challenge_complete master @initiator ~ ~ ~ 1 1",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"escolhida",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"escolher_cacador",
+              Name:"Escolher Caçador"
+            },
+            {
+              Actions:[
+                {
+                  Cmd:"escolha",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"voltar_cacador",
+              Name:"Ver outra classe"
+            }
+          ],
+          Label:"classe_cacador",
+          Name:"Caçador",
+          Priority:-1,
+          Texts:[
+            {
+              Text:"CAÇADOR\\n\\nPrós: Ataca de longe com arco, é seguro contra chefes grandes e se move rápido.\\n\\nContras: Precisa de flechas e sofre quando é cercado.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K)."
+            }
+          ]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Type:"CLOSE_DIALOG"
+                },
+                {
+                  Cmd:"/ftbquests open_book",
+                  ExecAsUser:1b,
+                  PermLevel:0,
+                  Type:"COMMAND"
+                }
+              ],
+              Label:"livro_escolhida",
+              Name:"Abrir o livro de missões"
+            }
+          ],
+          Label:"escolhida",
+          Name:"Caminho escolhido",
+          Priority:-1,
+          Texts:[
+            {
+              Text:"Ótima escolha, @initiator.\\n\\nAbra o livro de missões e pegue as recompensas das primeiras missões: lá está o seu kit de classe. Depois, siga as missões. Eu vou estar por aqui sempre que você quiser conversar."
             }
           ]
         },

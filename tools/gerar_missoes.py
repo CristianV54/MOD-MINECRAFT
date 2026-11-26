@@ -276,15 +276,13 @@ def ato1():
                 "&eCombate:&r este mundo usa o &cEpic Fight&r. Aperte &eR&r para alternar entre o modo normal e o modo de combate.",
                 "As outras teclas ficam em &eOpções > Controles&r, na seção do Epic Fight.",
                 "{@pagebreak}",
-                "&eO Mestre Vellan:&r quando você pegar a recompensa desta missão, o Mestre aparece &fao seu lado&r.",
-                "Clique nele com o botão direito para conversar. Ele comenta cada etapa da história, dá dicas e abre o livro de missões.",
+                "&eO Mestre Vellan:&r ele aparece &fna sua frente&r assim que você entra no mundo pela primeira vez.",
+                "Clique nele com o botão direito para conversar e escolher sua classe. Ele também comenta cada etapa da história e dá dicas.",
                 "&7Se você mudar de base, a missão \"Chamar o Mestre\" traz ele até você.&r",
             ],
             tarefas=[c.t_check("Li a carta do Mestre")],
             recompensas=[c.r_item("minecraft:bread", 8), c.r_item("minecraft:torch", 16),
-                         c.r_item(livro_skill("epicfight:roll")),
-                         c.r_comando("/function terras_partidas:chamar_vellan", titulo="O Mestre Vellan chega",
-                                     icone="minecraft:writable_book")])
+                         c.r_item(livro_skill("epicfight:roll"))])
 
     c.quest("chamar_mestre", "Chamar o Mestre", 0, 2.5, icone="minecraft:bell", deps=["chamado"],
             forma="circle", tamanho=0.75, optional=True, can_repeat=True,
@@ -341,7 +339,8 @@ def ato1():
     ]
     for chave, nome, dy, icone, texto, recs in classes:
         recs = recs + [c.r_comando(f"/puffish_skills category unlock {{p}} terras_partidas:{chave}",
-                                   titulo="Libera a árvore de habilidades da classe", icone="minecraft:enchanted_book")]
+                                   titulo="Libera a árvore de habilidades da classe", icone="minecraft:enchanted_book"),
+                       c.r_comando(f"/tag {{p}} add {TAG_CLASSE}", titulo="Classe escolhida", icone="minecraft:name_tag")]
         c.quest(chave, nome, 5, dy * 1.25, icone=icone, deps=["caminho"], forma="diamond",
                 descricao=[f"{M}: \"Então você é um {nome}&r.\"", "", texto, "",
                            "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.",
@@ -1252,6 +1251,66 @@ def tag_ato(n):
     return f"terras_partidas_ato{n}"
 
 
+TAG_CLASSE = "terras_partidas_classe"
+
+# Classes oferecidas pelo Mestre Vellan na primeira conversa: (chave da missão, nome, prós, contras)
+CLASSES_VELLAN = [
+    ("guerreiro", "Guerreiro",
+     "Equilibrado: bom dano, boa vida e armadura. A classe mais fácil para começar.",
+     "Não se destaca em nada. Luta sempre de perto."),
+    ("tanque", "Tanque",
+     "Muita vida e armadura, difícil de derrubar. Começa sabendo aparar golpes com o escudo.",
+     "Dano menor: as lutas contra chefes demoram mais."),
+    ("assassino", "Assassino",
+     "Rápido, com muitos acertos críticos e esquivas. Duas adagas e o passo rápido.",
+     "Pouca vida: cada erro custa caro."),
+    ("mago", "Mago",
+     "Dano de longe com feitiços, inclusive cura. Livro de feitiços e Mesa de Inscrição desde o começo.",
+     "Frágil no começo e depende de mana e de pergaminhos."),
+    ("cacador", "Caçador",
+     "Ataca de longe com arco, é seguro contra chefes grandes e se move rápido.",
+     "Precisa de flechas e sofre quando é cercado."),
+]
+
+
+def escolha_de_classe(botao, abrir):
+    """Diálogos da primeira conversa: o jogador escolhe a classe numa tela, com prós e contras."""
+    falas = [{
+        "Buttons": [botao(nome, f"ver_{chave}", [abrir(f"classe_{chave}")]) for chave, nome, _, _ in CLASSES_VELLAN]
+                   + [botao("Conte a história do Selo", "historia_inicio", [abrir("historia")])],
+        "Label": "escolha", "Name": "Escolha seu caminho", "Priority": 1,
+        "Texts": [{"Text": "Então você é o novo caçador, @initiator. Sou o Mestre Vellan, da Ordem dos Caçadores.\\n\\n"
+                           "O Selo que prendia um mal antigo se partiu, e preciso de você para juntar os fragmentos.\\n\\n"
+                           "Mas antes: que tipo de caçador você é? Escolha uma classe para ver os prós e os contras."}],
+    }]
+    ids = {"chamado": qid("ato1/quest/chamado"), "caminho": qid("ato1/quest/caminho")}
+    for chave, nome, pros, contras in CLASSES_VELLAN:
+        acoes = [{"Cmd": f"/ftbquests change_progress @initiator complete {ids['chamado']}", "PermLevel": 2, "Type": "COMMAND"},
+                 {"Cmd": f"/ftbquests change_progress @initiator complete {ids['caminho']}", "PermLevel": 2, "Type": "COMMAND"},
+                 {"Cmd": f"/ftbquests change_progress @initiator complete {qid(f'ato1/quest/{chave}')}", "PermLevel": 2, "Type": "COMMAND"},
+                 {"Cmd": f"/puffish_skills category unlock @initiator terras_partidas:{chave}", "PermLevel": 2, "Type": "COMMAND"},
+                 {"Cmd": f"/tag @initiator add {TAG_CLASSE}", "PermLevel": 2, "Type": "COMMAND"},
+                 {"Cmd": "/playsound minecraft:ui.toast.challenge_complete master @initiator ~ ~ ~ 1 1", "PermLevel": 2, "Type": "COMMAND"},
+                 abrir("escolhida")]
+        falas.append({
+            "Buttons": [botao(f"Escolher {nome}", f"escolher_{chave}", acoes),
+                        botao("Ver outra classe", f"voltar_{chave}", [abrir("escolha")])],
+            "Label": f"classe_{chave}", "Name": nome, "Priority": -1,
+            "Texts": [{"Text": f"{nome.upper()}\\n\\nPrós: {pros}\\n\\nContras: {contras}\\n\\n"
+                               "A escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K)."}],
+        })
+    falas.append({
+        "Buttons": [botao("Abrir o livro de missões", "livro_escolhida",
+                          [{"Type": "CLOSE_DIALOG"},
+                           {"Cmd": "/ftbquests open_book", "ExecAsUser": Raw("1b"), "PermLevel": 0, "Type": "COMMAND"}])],
+        "Label": "escolhida", "Name": "Caminho escolhido", "Priority": -1,
+        "Texts": [{"Text": "Ótima escolha, @initiator.\\n\\n"
+                           "Abra o livro de missões e pegue as recompensas das primeiras missões: lá está o seu kit de classe. "
+                           "Depois, siga as missões. Eu vou estar por aqui sempre que você quiser conversar."}],
+    })
+    return falas
+
+
 def mestre_vellan():
     """Preset do Easy NPC: o Mestre muda o que fala conforme o ato do jogador (tags)."""
     B = Raw("1b")
@@ -1281,32 +1340,33 @@ def mestre_vellan():
         return d
 
     falas = [
-        fala("inicio", "Bem-vindo", 1,
+        fala("inicio", "Bem-vindo", 2,
              "Bem-vindo à Ordem dos Caçadores, @initiator.\\n\\n"
              "O Selo se partiu e os fragmentos corromperam criaturas poderosas. Os três primeiros estão perto daqui: "
              "algo enorme nos pântanos, um espírito que toca um sino, e um cavaleiro de metal numa câmara no subsolo.\\n\\n"
-             "Comece escolhendo o seu caminho no livro de missões."),
-        fala("ato2", "Terras Selvagens", 2,
+             "Seu kit e suas primeiras missões estão no livro de missões. Quando quiser conversar, é só voltar aqui.",
+             tag=TAG_CLASSE),
+        fala("ato2", "Terras Selvagens", 3,
              "Três fragmentos, @initiator. Melhor do que qualquer caçador em anos.\\n\\n"
              "Os próximos estão longe: no gelo eterno, nas savanas queimadas, no mar congelado e com a jogadora de almas, Dame Fortuna. "
              "Use os mapas que eu te der e o planador para atravessar o mundo.",
              tag=tag_ato(1)),
-        fala("ato3", "Abismo e Fogo", 3,
+        fala("ato3", "Abismo e Fogo", 4,
              "Sete fragmentos... e os que faltam caíram no Nether, @initiator.\\n\\n"
              "Use ouro na armadura para os piglins te deixarem em paz e leve muitas poções de resistência ao fogo. "
              "Eu mando as coordenadas de cada lugar pelo livro.",
              tag=tag_ato(2)),
-        fala("ato4", "Além do Céu", 4,
+        fala("ato4", "Além do Céu", 5,
              "Onze fragmentos. E agora a verdade: os guardiões do Selo nunca morreram, @initiator.\\n\\n"
              "Eles vivem no Everbright e no Everdawn, acima das nuvens, mas enlouqueceram. "
              "Tijolo turquesa abre o caminho para o Everbright. Tijolo lunar, para o Everdawn.",
              tag=tag_ato(3)),
-        fala("ato5", "O Fim do Selo", 5,
+        fala("ato5", "O Fim do Selo", 6,
              "Quinze fragmentos, @initiator. O Selo só pode ser refeito onde foi quebrado: no End.\\n\\n"
              "Encontre a fortaleza escondida, derrote o Dragão e os guardiões do vazio. "
              "E guarde a Estrela do Nether do Wither. Você vai precisar dela no final.",
              tag=tag_ato(4)),
-        fala("final", "O Selo Restaurado", 6,
+        fala("final", "O Selo Restaurado", 7,
              "@initiator... você conseguiu.\\n\\n"
              "Trezentos anos atrás, sete guardiões criaram o Selo. Seis você enfrentou. O sétimo sou eu, e esperei três séculos por alguém como você. "
              "A Ordem nunca vai esquecer o seu nome.\\n\\n"
@@ -1317,6 +1377,7 @@ def mestre_vellan():
              "Na última lua cheia, o Selo se partiu. Os fragmentos caíram pelo mundo, e cada um corrompeu a criatura mais forte que encontrou.\\n\\n"
              "Junte todos os fragmentos e o Selo pode ser refeito. Falhe, e o mal desperta.",
              com_botoes=False),
+        *escolha_de_classe(botao, abrir),
         fala("dicas", "Dicas de combate", -1,
              "Aperte R para entrar no modo de combate.\\n\\n"
              "Esquivar e defender gasta a barra de fôlego. Não ataque sem parar: espere o inimigo errar e contra-ataque.\\n\\n"
