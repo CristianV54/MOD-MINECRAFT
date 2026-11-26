@@ -1,0 +1,47 @@
+{
+  "experience_per_level": {
+    "type": "expression",
+    "data": {
+      "expression": "30 + level * 20"
+    }
+  },
+  "level_limit": 20,
+  "sources": [
+    {
+      "type": "puffish_skills:take_damage",
+      "data": {
+        "variables": {
+          "dano": {
+            "operations": [
+              {
+                "type": "get_taken_damage"
+              }
+            ]
+          }
+        },
+        "experience": "min(dano, 20) * 1.5"
+      }
+    },
+    {
+      "type": "puffish_skills:eat_food",
+      "data": {
+        "variables": {
+          "comida": {
+            "operations": [
+              {
+                "type": "get_eaten_item_stack"
+              },
+              {
+                "type": "get_item"
+              },
+              {
+                "type": "get_nutrition"
+              }
+            ]
+          }
+        },
+        "experience": "comida * 1.5"
+      }
+    }
+  ]
+}

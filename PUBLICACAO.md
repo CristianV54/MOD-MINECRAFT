@@ -64,7 +64,11 @@ Um personagem de verdade no mundo, não só um texto no livro. Ele aparece ao se
 | **Mago** | Feitiços, mana e poder mágico |
 | **Caçador** | Arco, precisão e mobilidade |
 
-Cada classe tem sua própria **árvore de habilidades** (tecla **K**). Você ganha pontos matando monstros e derrotando chefes.
+Cada classe tem sua própria **árvore de habilidades** (tecla **K**). Além delas, todo mundo tem três árvores gerais: **Combate** (sobe matando monstros), **Mineração** (sobe minerando) e **Vida** (sobe comendo e sobrevivendo).
+
+### ✨ Bonito e leve
+
+Já vem com os shaders **Complementary Reimagined** (água, céu, sombras e luzes) e o **Fresh Animations** (animações novas para os mobs). PC fraco? Aperte **F7** e os shaders desligam na hora.
 
 ### 👹 19 chefes de história e muitos outros
 
@@ -85,7 +89,7 @@ No fim do Ato 2 o Mestre te dá um **ovo de dragão**: Fogo, Gelo, Água ou Flor
 
 ### 💻 Leve
 
-São 112 mods, contra mais de 300 em packs parecidos, com vários mods de desempenho (Embeddium, ModernFix, FerriteCore). Recomendado: **6 GB de RAM**.
+São 113 mods, contra mais de 300 em packs parecidos, com vários mods de desempenho (Embeddium, ModernFix, FerriteCore). Recomendado: **6 GB de RAM**.
 
 ---
 
@@ -97,7 +101,7 @@ São 112 mods, contra mais de 300 em packs parecidos, com vários mods de desemp
 4. Abra o jogo, deixe o idioma em **Português (Brasil)** e crie um **mundo novo**.
 5. Pegue a primeira missão no livro de missões (botão no inventário). O Mestre Vellan vai aparecer.
 
-**Teclas importantes:** `R` alterna o modo de combate, `K` abre a árvore de habilidades e `B` cria um ponto no mapa.
+**Teclas importantes:** `R` alterna o modo de combate, `K` abre as árvores de habilidades, `V` lança feitiço, `Z` abre a roda de feitiços, `F7` liga e desliga os shaders e `B` cria um ponto no mapa.
 
 ### ❓ Perguntas frequentes
 
@@ -105,7 +109,7 @@ São 112 mods, contra mais de 300 em packs parecidos, com vários mods de desemp
 
 **Preciso saber inglês?** Não. Tudo está em português.
 
-**Meu PC é fraco, roda?** O pack foi montado para ser leve. Com 6 GB de RAM e uma placa de vídeo simples dá para jogar. Shaders (Oculus) são opcionais.
+**Meu PC é fraco, roda?** O pack foi montado para ser leve. Com 6 GB de RAM e uma placa de vídeo simples dá para jogar. Os shaders vêm ligados, mas desligam com **F7**.
 
 **Perdi a luta contra um chefe, e agora?** As missões de chefe têm uma missão extra que troca recursos por outro item de invocação.
 
@@ -121,7 +125,7 @@ A lista completa de mods aparece na aba de dependências da página.
 
 ### 🌎 English
 
-**SealCraft** is a Brazilian souls-like RPG modpack for Forge 1.20.1, **fully translated to Portuguese**. It has a 5-act story with 19 bosses and 109 quests, 5 classes with skill trees, magic, rideable dragons and a guide NPC whose dialogue follows your progress. Lightweight: 112 mods, 6 GB of RAM recommended.
+**SealCraft** is a Brazilian souls-like RPG modpack for Forge 1.20.1, **fully translated to Portuguese**. It has a 5-act story with 19 bosses and 109 quests, 5 classes with skill trees, magic, rideable dragons and a guide NPC whose dialogue follows your progress. Lightweight: 113 mods, 6 GB of RAM recommended.
 
 ---
 

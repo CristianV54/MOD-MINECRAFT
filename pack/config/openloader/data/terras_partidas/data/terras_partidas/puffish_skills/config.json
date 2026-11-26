@@ -1,6 +1,9 @@
 {
   "version": 3,
   "categories": [
+    "combate",
+    "mineracao",
+    "vida",
     "guerreiro",
     "tanque",
     "assassino",

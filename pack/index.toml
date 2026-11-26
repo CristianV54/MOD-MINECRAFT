@@ -1,8 +1,24 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/Undead_mobs.toml"
+hash = "c178520fad14311a7d670063b64929a14d4fbbea34a880dcfb5e6ea58d748781"
+
+[[files]]
+file = "config/apotheosis/adventure.cfg"
+hash = "bc84c33d16ad160473585802d85c56fb0ad693e1c96c0979aff33ff41345f3df"
+
+[[files]]
+file = "config/defaultoptions/extra/config/oculus.properties"
+hash = "ba2ad90a9532ccea407ecdaf58044e6d9fbef73075f695e4ecccf64887e05d2d"
+
+[[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "891172f4445ddd9bb083ac26cbc36a13c6e6c739210aafdfc11f25e2b39b7dd6"
+hash = "c4fb5a1f0f379511c45560691e7c402574ea072734c5dc26860fa3b5bd4b62dd"
+
+[[files]]
+file = "config/defaultoptions/options.txt"
+hash = "d8fbe7e97828ed40710e25ca214ab6cc7383b4533d95ef9a45064d2bef80bb4b"
 
 [[files]]
 file = "config/easy_npc/security.cfg"
@@ -14,27 +30,207 @@ hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_1_o_chamado.snbt"
-hash = "640c527953f8b0be044f7060f2f988e0a483720970a4bf2452ee8defef78291a"
+hash = "b97f4c7d343c170d9416d93cde6ef769d3200ca739e4c8cc8e54e805eb7ce8e5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_2_terras_selvagens.snbt"
-hash = "323cabec295f723e28bb90c6a59eacec5aa4765df04ff6c5030ded0f79e8c291"
+hash = "bbd612cbfdca350e1856fd66926eb55b4ca15d0efff14062cb7d18fedf5bcef9"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_3_abismo_e_fogo.snbt"
-hash = "2d050d510ef93c435c4a8e81e383d54fb3ad876bc0b31aba4deea402abec980d"
+hash = "1883be02cc3177563afa3f4f5bf6b536d47800596521f342ecc7ffb4b6df2eea"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_4_alem_do_ceu.snbt"
-hash = "ceb4cdb7f3fc4612ec06d279f4374ac505a93b252ed1996653f30b9091d0f9d1"
+hash = "35be85b7a2347186124ee6ba6a8d8703c2f6a1818e61ba8a986d35fb798df182"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_5_o_fim_do_selo.snbt"
-hash = "e4ab96276cb37b0cf37594a88971f08d26a418ad5162a528e03625bb2312c273"
+hash = "0850b18276c345f78c60f9eba6dd2872c09f18298853f5008e3fa103ed23b32a"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "e3bbe22d1d6f8ad89587989c4e53b421d43f7563060b3674fc69752b4977578b"
+
+[[files]]
+file = "config/mutantmonsters-common.toml"
+hash = "f97c88847b4e705e61cc19899da2c31e971fb235e33e967658dcfbec2b27a9c4"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/baby_skeleton_biome_modifier.json"
+hash = "3fec999180b87ceeadc7d96535e972a5e016d43aa31e75b48ebefe01ea32c8a8"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/baby_spider_biome_modifier.json"
+hash = "c7d4db32e1abcddc3ca2f3ce71c71d2e904df951d5f5743d651f11fc170c0ae4"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/barrel_zombie_biome_modifier.json"
+hash = "e9e0146809be825c1d8226fa68b7d17ac2a64547c6cbedd4528ecd3db69ba6bc"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/bloody_gadfly_biome_modifier.json"
+hash = "d0e06748ca4bf39e663d03594ddedfe98f23042dedfa1ab6483d9ef56bcb69f2"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/bone_imp_biome_modifier.json"
+hash = "2d1ff721b0b4df61dc3e175203730f442bd49cf14ab447ec8bd1e9c635efa496"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/bonescaller_biome_modifier.json"
+hash = "e5e08b5bb6dc7a3dd65e10df1e2eca7807839a2381c249219f10b5ab96cb47e3"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/corpse_fish_biome_modifier.json"
+hash = "e3518553e6d327174f3c0f2317a079f09c7fa1cb721477984fe10b09d0f54439"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/corpse_fly_biome_modifier.json"
+hash = "9faafac54c31b17ca4ef8ff694a39264f22c0adce38d8bad78b11042c32b4924"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/dark_vortex_biome_modifier.json"
+hash = "a913943aeb78c321d0a6785596606281bca1c8bcceaca10ace8a495e84ff0537"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/decaying_zombie_biome_modifier.json"
+hash = "aa723a92694e090c0631f334a6b96f6a2b7b01f3ed258acb9f207f7e1338dd87"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/decrepit_skeleton_biome_modifier.json"
+hash = "16b57af7120fb8eb4db964f0138124aaebe1d6e224d9243def147c875f530c60"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/dire_hound_leader_biome_modifier.json"
+hash = "756f39e93faf01348bd9eb6a281f59af9ead33618dda9b7a0ccb72fe1505a662"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/door_knight_biome_modifier.json"
+hash = "0f42173e5915095576de6d39a244bb45e06c04bd60c9ea5d81f7cef4014f3091"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/dread_hound_biome_modifier.json"
+hash = "536a8ae87b30746dc8adacf9080d979b963a0795c3d9c809f724ff7050b8c7d6"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/fallen_chaos_knight_biome_modifier.json"
+hash = "df7e324871c52637825f9696580c6ae46c119f9108001887227e1da5ba2581fe"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/firelight_biome_modifier.json"
+hash = "36aca197f9d51b6c2e0f951085d48d54220346b15d88ca5516847af3411b7626"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/glutton_fish_biome_modifier.json"
+hash = "93c36fe443fc1f749ae447925287c49cc03431a58e9e758a20bb0c4cc8297f77"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/krampus_biome_modifier.json"
+hash = "7803259cf8ca89aabb5dc7f4ed8189b4e64f5f9ad28166a048fc8e7f28889100"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/krampus_henchman_biome_modifier.json"
+hash = "e20c6c23d745610699420382fb4385e7d7f79648688af7f37548cb11ab48d5c2"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/lifestealer_biome_modifier.json"
+hash = "2102288f6382f8c2a67fdb9a27c95f86febec6930cf47c94b211c4ce7e2079ab"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/missioner_biome_modifier.json"
+hash = "04e5a66912036a80ed48865fad1b20bff811910dccee599877c93a76fb64179a"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/mother_spider_biome_modifier.json"
+hash = "98fb6e5f6f6b67d943a7ddb84b31520fd3318eade97f1f7f895cdf9377a159d8"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/mr_pumpkin_biome_modifier.json"
+hash = "ce9edbbb5455bc483cd62fe1e7fd74a240ad912ef0c22dacc140740e5e244e7b"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/mrs_pumpkin_biome_modifier.json"
+hash = "6cd3afd8d8b4f23a53074a32aead4e0553412e5fbd2f722bb2f6742f7ed5a4c0"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/nightmare_stalker_biome_modifier.json"
+hash = "90df44e7e58ffd213b74ec8312b4fc94ae854953fdcd915b3479542e4ad6c84e"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/phantom_creeper_biome_modifier.json"
+hash = "07ae38c2aab63fba86316e5a5b6aeeb8560437b7168d4e6f534459ffa0af6d88"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/pumpkin_bruiser_biome_modifier.json"
+hash = "27f26b72683238d42c6e645d6fc46ea7f36738358a0df7da6e7167809db861fd"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/restless_spirit_biome_modifier.json"
+hash = "690ff044a1ca42e6edba34dce11d1df9cb97babcc069f004cd2fa85519a3d68b"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/seared_spirit_biome_modifier.json"
+hash = "a59f3725b86a5184eaaf7794a03efa53cae15783a802f82118425b83a10c03d7"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/senor_pumpkin_biome_modifier.json"
+hash = "7223ff3bbf43898cf94c8e44a0b78d7750a968b8800858c754cafdec9c7192dd"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/siamese_skeletons_biome_modifier.json"
+hash = "9d4e72e9bd3245de2a221d0c130440f03bbffdfbd6b2c3a1f7c8d86215b31838"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/sir_pumpkinhead_biome_modifier.json"
+hash = "fb5dffdc32abd6c288215ea0d43520d51e5f72b0ce169a9d07e9b7ebf808d241"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/skeleton_demoman_biome_modifier.json"
+hash = "0b83833ba1f4714219e2dce46aea362776f35e5aa5ab3b86167f420aa0052f08"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/skeleton_thrasher_biome_modifier.json"
+hash = "c5fe3751ba35ed9d1e24f89bc59ba468703e07dc4a508013db114e21988b47ca"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/spirit_guide_assistant_biome_modifier.json"
+hash = "aa6b4dc596c66da2ead154e66a59d3794b7be78f334fbc9e3c92eb2a051c6577"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/spirit_guide_biome_modifier.json"
+hash = "2f54aaeda302f4a26fe19e661a80d0155aed2aa1479149b1797d1c329095c7b7"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/spiritof_chaos_biome_modifier.json"
+hash = "fb6dca1e0cbd3d1b428ebf2e78a31480617388a300e24aa98ebb6c01c124df55"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/supreme_bonescaller_biome_modifier.json"
+hash = "a278a24a0b99faf1822225cae22e38204633887ab6d2f79c4ae32d9f64c1046a"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/swarmer_biome_modifier.json"
+hash = "65da9acaa2a37eb0a264552d05b0ddb30ef886e2da98ab7a9afbf2103a149044"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/thornshell_crab_biome_modifier.json"
+hash = "e9e48f0d2f10c8530427a1c9fb0d324e4ecb3fb8596427cc8724436206e09a5d"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/zombie_bruiser_biome_modifier.json"
+hash = "858b8a06c46263cf0a6d87b113d6e9f387bc3a19d1be5bfe191ddb7ed07bb37c"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/zombie_clown_biome_modifier.json"
+hash = "8580357ecd0d30a2957d5ddcec5c222f48e9804a73581fce748a1912255f1243"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/zombie_fisherman_biome_modifier.json"
+hash = "56cf9262278594488b76813df6fe38148868dffc8a8d2acdca7fb91e8cd48b40"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome_modifier/zombie_lumberjack_biome_modifier.json"
+hash = "53d5ee84880161d9acb4466b496beb3858e8e1d6a757cb58051dcf305b0035d7"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/cataclysm/tags/worldgen/biome/has_structure/burning_arena_biomes.json"
@@ -90,7 +286,7 @@ hash = "81a35f560b06ac241124f5995e01a968e2a3c39d5ba5f36e83e83379ff28f16e"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/easy_npc/preset/humanoid/mestre_vellan.npc.snbt"
-hash = "e4e6cc9c3134df6ef3fb66c1eb5a9e84037151370c18e61f5814f345ac9b1b43"
+hash = "0776990d6ed76e0f3006e0311a5a7f4c73bea4e7b1555dcfc3132df14780d852"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/boas_vindas/carregar.mcfunction"
@@ -185,6 +381,26 @@ file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skil
 hash = "95c74a2dde24a67638cbb8b7a4ad4f668dac8437009297dcee4d1da5bc13d29d"
 
 [[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/combate/category.json"
+hash = "0cf105577ef5412c0cdea343c84173cd46c4b6827afcab4a8ac22c6181a797ff"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/combate/connections.json"
+hash = "d755872e77dedc4e646272285b969deac4dc2c524e0eec4edfc98823bb4b4171"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/combate/definitions.json"
+hash = "e096a8cff7f48ef6d99a7eabd7b76be9c1eb373009c0c18063474cdd4dca9fdc"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/combate/experience.json"
+hash = "fb45b3e6f36f263c075ef4313c85e6f2e16c5a286f1ce33fdfcd3e71633f5efd"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/combate/skills.json"
+hash = "19c490c264070e99a20c80161574cf5cd0d48065a01354113b015e2dc04123aa"
+
+[[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/guerreiro/category.json"
 hash = "339028e5bba1b0fa052f9a651e80496d9d2ac3ed9853af0a4c4c8771a26b2363"
 
@@ -225,6 +441,26 @@ file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skil
 hash = "937a83b1db3dc15be23814ef011f4d6c25ff2df92b4a521aedfce1ab1767680d"
 
 [[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mineracao/category.json"
+hash = "d2ec0732306ff1a21a7ab91fd29a703a4764a88118f0b126b40e9529898adfe9"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mineracao/connections.json"
+hash = "036a0cb27edb89caeca040a6cf8284ab3e18cb216ebd45a7b2c38ea72a113aee"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mineracao/definitions.json"
+hash = "87a6a77f8cf58771c6b565a90301d5321085915afeaa6e9889b5848076ed3aa3"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mineracao/experience.json"
+hash = "1e57b19da8593f8432bfd5767cecf6ac65439ae80b6ec12f817f0d1222b7390d"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mineracao/skills.json"
+hash = "b0531fe77927b8471fa7dbe0797a279903850badad5ce282494784e80f21fe66"
+
+[[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/tanque/category.json"
 hash = "d3e9ba76118a13c938abd738eb9d257001dc9239155f2d9720e21730f00057ef"
 
@@ -245,8 +481,28 @@ file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skil
 hash = "5c01476f64179a29e1f9a45082e7c4e20adcccc258049af5aecff219868e2347"
 
 [[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/vida/category.json"
+hash = "d478a858cdc017417a0f965e86f168cbe4f03e51b9533749d04ddd6c719f03bb"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/vida/connections.json"
+hash = "6c68ef3f599af249fb9b89aa28b195bd70e95d23672016dd2e1d8cb8ce4e5f01"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/vida/definitions.json"
+hash = "06b95479898aa94eb459abd181ec37baf34e0a62579dcbe140a6cb2f3089e929"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/vida/experience.json"
+hash = "74ab3025472f2cb95180c0fc045cc9c865455c7dd3edfd989d1503da2477ba57"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/vida/skills.json"
+hash = "38aa44f51d41441233e30ee7e4ce1c3644ba6871c7b5ae7ff956412b7ec444bc"
+
+[[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/config.json"
-hash = "b02acf39bc5137f27cf268387877fcd59dc94809aaba02ff90095128be7e93b5"
+hash = "d7baba97ca2304c9fa82e7f8f12aab2c6e0cfe369441159c3721bc786823317b"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/tags/worldgen/structure/bosque_umvuthana.json"
@@ -267,6 +523,110 @@ hash = "a4b4fe2e0b8a00576e576c0b09b0c0f8aff6f54242992cba359ca232ffea9638"
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/tags/worldgen/structure/labirinto_de_gelo.json"
 hash = "5012df034b663dd756a33f6f7e5fe6e69f97babcfec9173c960fc612e81051c4"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/bigsucker_biome_modifier.json"
+hash = "bd521f926922730ef1638fdb8e477df57f27e7047f9559fe10df3b2bbf5ebda4"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/bomber_biome_modifier.json"
+hash = "f5d34a36af6879ec40646193fa44edce8472ae0f46ed4ffd9f197ddf2ee37784"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/invisiblebidy_biome_modifier.json"
+hash = "328f71e200acf6fe79a8611841dbfdd071aa9a7495d293d00ff361f4515b5a7e"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/invisiimmortal_biome_modifier.json"
+hash = "f04d32df24048143bd959a9e5ad7acc324db64de8177d9c1c25197196cd33211"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/neocrorines_biome_modifier.json"
+hash = "cfef3d9637ae87481ae34fcbab218571234189cc374ecd39d8ff4a0d56b8704b"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/slaveman_biome_modifier.json"
+hash = "cecf22b3bb7595d6249ba84e133f3e89ece2dd7891f823afdc65eb0b2cb895c1"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/sucker_biome_modifier.json"
+hash = "0ed3bd26f4452d7a831bbafdc174b4a215a4fd2677e41d2f86d43006e8295b38"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/the_moonflower_biome_modifier.json"
+hash = "943ed894ca2946a6e33ce15e1ca14a5a687f36626a89edde0803bce7f2c2545a"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/thebeartamer_biome_modifier.json"
+hash = "69f3ef6ffe6b7c87a741e0f2e766273332a8a2cde275277cb8ecff6d90aa60cb"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/thebidy_biome_modifier.json"
+hash = "e5b6f0d0f7ec2c571b3d0a336ebe577c0be038576998ef79dc7461cf71d802f3"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/thegliter_biome_modifier.json"
+hash = "fddc2e58a4ae74a5d3867055c1c9861deb76a78463ed3a3d049675006ed7754c"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/theheavy_biome_modifier.json"
+hash = "df3213823800aef5697b292d6e28dbc336171584420a45cf9f64461202f612d8"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/thehorrors_biome_modifier.json"
+hash = "f413302f4cfd5f74b40e4a5a44dc137ad5f679f6ca61e6568cdfe8c9d74ffed0"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/thehorrorsdecoys_biome_modifier.json"
+hash = "afaf9a128e745e9bb7472ecb381844deb35ff134b5225430694e68e97b2441e8"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/thehunter_biome_modifier.json"
+hash = "e0d950e31647067654c356d3cee1e4b98aadb2371f4e36fe0b04caa421e175ba"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/theordure_biome_modifier.json"
+hash = "fd0e3644d4155ad78fa3317d9833d068647e79d22ab31cb92edb68659fa99bf0"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/thepregnant_biome_modifier.json"
+hash = "2419d03cbf0ae75809bc76fd538401394aefa7f735289d82a492f83fd411d497"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/therabidus_biome_modifier.json"
+hash = "6d68f9b72cf9f2a780d74fe767754f4579549556abf61c879692718d29b69785"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/therod_biome_modifier.json"
+hash = "389dd46cb0328edf4b714d4321037ab83dd6e81937ae9073ef2617b4bd2943b9"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/theskeeper_biome_modifier.json"
+hash = "12c6843d45c098e510f224c5cd0463a7961d87bfe20821ab793d82d0615bb44f"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/thesmoker_biome_modifier.json"
+hash = "9f4872e2e1077251b738424e99083e2f5ae6f86b4f0d44aa3e7c797dd6364802"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/thesomnolence_biome_modifier.json"
+hash = "3349d7c9260797dcd9de1d4ea0f249ae425af9ffd3e21901b703ae0532399a08"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/thespectre_biome_modifier.json"
+hash = "24730facb4255eb68f73e033542b6b4356962cbdfc8bf13ef71c720e10b29247"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/thespitter_biome_modifier.json"
+hash = "7dfb574d7c8358bea779500891807ae2637f76e25bc23702d2fb66d3c1290e53"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/theswarmer_biome_modifier.json"
+hash = "5e61dd0ce2a1207f868658040065bcb266015e088880298dfc39971f2f00c5f6"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/undead_revamp2/forge/biome_modifier/thewolf_biome_modifier.json"
+hash = "f9be62219cb8547d3be155624e667f12a6ad78df437ad8bc311d8655dbae38c0"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/pack.mcmeta"
@@ -1151,4 +1511,14 @@ metafile = true
 [[files]]
 file = "mods/yungs-extras.pw.toml"
 hash = "aedb648ee15bdb7bb3af23cfa4ad565c0fe531f62e89406566bec90659be9a42"
+metafile = true
+
+[[files]]
+file = "resourcepacks/fresh-animations.pw.toml"
+hash = "742f4b07528ec106652d911587cc261a8f1a9d9c1fb1fa378058185a5f2f9ca9"
+metafile = true
+
+[[files]]
+file = "shaderpacks/complementary-reimagined.pw.toml"
+hash = "5c17de8161b06a10dbd8e59645e7d7edfc583054009b5a787086d5f4fb1a77f1"
 metafile = true

@@ -112,6 +112,17 @@ def pergaminho(spell, nivel=1):
         "maxSpells": 1, "mustEquip": Raw("0b"), "spellWheel": Raw("0b")}})
 
 
+def livro_de_feiticos(feiticos, livro="irons_spellbooks:copper_spell_book", espacos=5):
+    """Livro do Iron's Spells com feitiços já gravados (não se gastam: usam mana)."""
+    return item(livro, tag={"ISB_Spells": {
+        "data": [{"id": f, "index": i, "level": n, "locked": Raw("0b")} for i, (f, n) in enumerate(feiticos)],
+        "maxSpells": espacos, "mustEquip": Raw("1b"), "spellWheel": Raw("1b")}})
+
+
+def encantado(id_, encantamentos):
+    return item(id_, tag={"Enchantments": [{"id": e, "lvl": Raw(f"{n}s")} for e, n in encantamentos]})
+
+
 def pocao(tipo):
     return item("minecraft:potion", tag={"Potion": tipo})
 
@@ -275,6 +286,8 @@ def ato1():
                 "",
                 "&eCombate:&r este mundo usa o &cEpic Fight&r. Aperte &eR&r para alternar entre o modo normal e o modo de combate.",
                 "As outras teclas ficam em &eOpções > Controles&r, na seção do Epic Fight.",
+                "",
+                "&eOutras teclas:&r &eK&r árvores de habilidades, &eJ&r movimentos do Epic Fight, &eV&r lança o feitiço escolhido, &eZ&r roda de feitiços (ou &eCtrl&r + rolar o mouse), &eF7&r liga e desliga os shaders.",
                 "{@pagebreak}",
                 "&eO Mestre Vellan:&r ele aparece &fna sua frente&r assim que você entra no mundo pela primeira vez.",
                 "Clique nele com o botão direito para conversar e escolher sua classe. Ele também comenta cada etapa da história e dá dicas.",
@@ -291,6 +304,41 @@ def ato1():
             tarefas=[c.t_check("Chamar o Mestre Vellan")],
             recompensas=[c.r_comando("/function terras_partidas:rechamar_vellan", titulo="Chamar o Mestre Vellan",
                                      icone="minecraft:bell")])
+
+    c.quest("mais_forte", "Como Ficar Mais Forte", 0, -2.5, icone="minecraft:shield", deps=["chamado"],
+            forma="circle", subtitulo="Leia se os monstros estão difíceis",
+            descricao=[f"{M}: \"Os monstros daqui não são os de antigamente. Força bruta não basta: você precisa lutar do jeito certo.\"",
+                       "",
+                       "&e1. Modo de combate (tecla R)&r",
+                       "Sem ele você bate como no Minecraft normal e não consegue esquivar. &cLute sempre no modo de combate.&r",
+                       "• &eAlt esquerdo&r: esquiva (rolamento). Passe por dentro do golpe do inimigo.",
+                       "• &eBotão direito&r: defende com a arma ou o escudo.",
+                       "• Esquivar e defender gastam a &ebarra de fôlego&r. Não fique batendo sem parar: espere o inimigo errar e contra-ataque.",
+                       "{@pagebreak}",
+                       "&e2. Árvores de habilidades (tecla K)&r",
+                       "Todo mundo tem três árvores, que sobem sozinhas enquanto você joga:",
+                       "• &cCombate&r: sobe matando monstros (dano, crítico, roubo de vida).",
+                       "• &7Mineração&r: sobe minerando (velocidade, alcance, sorte).",
+                       "• &aVida&r: sobe comendo e levando dano (corações, armadura, velocidade).",
+                       "Cada nível dá &e1 ponto&r. Abra o K de vez em quando e gaste os pontos!",
+                       "A árvore da sua &eclasse&r ganha pontos matando monstros e derrotando chefes.",
+                       "{@pagebreak}",
+                       "&e3. Equipamento&r",
+                       "• Escolha a classe e pegue o &ekit&r no livro: ele já traz armadura e arma boas para o começo.",
+                       "• Faça armadura de ferro assim que puder. Ela faz mais diferença que a arma.",
+                       "",
+                       "&e4. Cuidado com&r",
+                       "• Monstros que &6brilham&r ou têm &6nome colorido&r: são versões de elite. Fuja deles no começo.",
+                       "• A noite: os monstros mais fortes aparecem no escuro. Durma numa cama.",
+                       "• Vida só se recupera com a &efome cheia&r: ande sempre com comida.",
+                       "",
+                       "&7Pegue a recompensa: 1 ponto extra nas árvores de Combate e Vida, e um escudo.&r"],
+            tarefas=[c.t_check("Entendi")],
+            recompensas=[c.r_item("minecraft:shield"), c.r_item("minecraft:cooked_beef", 12),
+                         c.r_comando("/puffish_skills points add {p} terras_partidas:combate 1",
+                                     titulo="+1 ponto na árvore de Combate", icone="minecraft:iron_sword"),
+                         c.r_comando("/puffish_skills points add {p} terras_partidas:vida 1",
+                                     titulo="+1 ponto na árvore de Vida", icone="minecraft:golden_apple")])
 
     # ---- Escolha de classe
     c.quest("caminho", "Escolha seu Caminho", 2.5, 0, forma="hexagon", tamanho=1.25,
@@ -314,28 +362,41 @@ def ato1():
     classes = [
         ("guerreiro", "&cGuerreiro", -2, "epicfight:iron_longsword",
          "Você luta de frente, com espada longa e armadura. Bom para quem está começando.",
-         [c.r_item("epicfight:iron_longsword"), c.r_item("minecraft:chainmail_chestplate"),
-          c.r_item("minecraft:chainmail_helmet"), c.r_item("minecraft:cooked_beef", 12)]),
+         [c.r_item("epicfight:iron_longsword"), c.r_item("minecraft:chainmail_helmet"),
+          c.r_item("minecraft:chainmail_chestplate"), c.r_item("minecraft:chainmail_leggings"),
+          c.r_item("minecraft:chainmail_boots"), c.r_item(pocao("minecraft:strength"), 2),
+          c.r_item("minecraft:cooked_beef", 12)]),
         ("tanque", "&9Tanque", -1, "minecraft:shield",
          "Você aguenta pancada. Escudo, armadura de ferro e a técnica de &eAparar&r do Epic Fight.",
-         [c.r_item("minecraft:shield"), c.r_item("minecraft:iron_chestplate"),
-          c.r_item("epicfight:iron_spear"), c.r_item(livro_skill("epicfight:parrying")),
-          c.r_item("minecraft:cooked_beef", 12)]),
+         [c.r_item("minecraft:shield"), c.r_item("minecraft:iron_helmet"), c.r_item("minecraft:iron_chestplate"),
+          c.r_item("minecraft:iron_leggings"), c.r_item("epicfight:iron_spear"),
+          c.r_item(livro_skill("epicfight:parrying")), c.r_item("minecraft:cooked_beef", 12)]),
         ("assassino", "&8Assassino", 0, "epicfight:iron_dagger",
          "Você é rápido. Duas adagas (uma em cada mão), poções de velocidade e o &ePasso&r, uma esquiva mais curta e ágil.",
-         [c.r_item("epicfight:iron_dagger"), c.r_item("epicfight:iron_dagger"),
-          c.r_item(pocao("minecraft:swiftness"), 2), c.r_item(livro_skill("epicfight:step")),
-          c.r_item("minecraft:ender_pearl", 2), c.r_item("minecraft:cooked_beef", 12)]),
+         [c.r_item(encantado("epicfight:iron_dagger", [("minecraft:sharpness", 1)])),
+          c.r_item(encantado("epicfight:iron_dagger", [("minecraft:sharpness", 1)])),
+          c.r_item("minecraft:leather_helmet"), c.r_item("minecraft:chainmail_chestplate"), c.r_item("minecraft:leather_boots"),
+          c.r_item(pocao("minecraft:swiftness"), 3), c.r_item(livro_skill("epicfight:step")),
+          c.r_item("minecraft:ender_pearl", 4), c.r_item("minecraft:cooked_beef", 12)]),
         ("mago", "&5Mago", 1, "irons_spellbooks:copper_spell_book",
-         "Você usa magia. Pergaminhos podem ser lidos direto (clique direito) ou gravados no livro na &eMesa de Inscrição&r.",
-         [c.r_item("irons_spellbooks:copper_spell_book"), c.r_item("irons_spellbooks:inscription_table"),
-          c.r_item(pergaminho("irons_spellbooks:firebolt")), c.r_item(pergaminho("irons_spellbooks:magic_missile")),
-          c.r_item(pergaminho("irons_spellbooks:heal")), c.r_item("irons_spellbooks:wandering_magician_chestplate"),
+         "Você usa magia. Seu &flivro de feitiços&r já vem com 4 feitiços gravados, que &fnão acabam&r (usam mana). "
+         "Coloque o livro no &eespaço do livro&r do inventário e aperte &eV&r para lançar o feitiço escolhido; &eZ&r abre a roda de feitiços. "
+         "Pergaminhos avulsos somem quando usados: grave-os no livro na &eMesa de Inscrição&r para usar sempre.",
+         [c.r_item(livro_de_feiticos([("irons_spellbooks:firebolt", 2), ("irons_spellbooks:magic_missile", 2),
+                                      ("irons_spellbooks:icicle", 1), ("irons_spellbooks:heal", 1)])),
+          c.r_item("irons_spellbooks:artificer_cane"),
+          c.r_item("irons_spellbooks:wandering_magician_helmet"), c.r_item("irons_spellbooks:wandering_magician_chestplate"),
+          c.r_item("irons_spellbooks:wandering_magician_leggings"), c.r_item("irons_spellbooks:wandering_magician_boots"),
+          c.r_item("irons_spellbooks:inscription_table"),
+          c.r_item(pergaminho("irons_spellbooks:shield")), c.r_item(pergaminho("irons_spellbooks:wisp")),
           c.r_item("minecraft:cooked_beef", 12)]),
         ("cacador", "&aCaçador", 2, "minecraft:bow",
          "Você ataca de longe. Arco, muitas flechas e uma adaga para quando o inimigo chegar perto.",
-         [c.r_item("minecraft:bow"), c.r_item("minecraft:arrow", 64), c.r_item("epicfight:iron_dagger"),
-          c.r_item("minecraft:leather_chestplate"), c.r_item("minecraft:cooked_beef", 12)]),
+         [c.r_item(encantado("minecraft:bow", [("minecraft:power", 2)])), c.r_item("minecraft:arrow", 64),
+          c.r_item("minecraft:arrow", 64), c.r_item("epicfight:iron_dagger"),
+          c.r_item("minecraft:leather_helmet"), c.r_item("minecraft:leather_chestplate"),
+          c.r_item("minecraft:leather_leggings"), c.r_item("minecraft:leather_boots"),
+          c.r_item("minecraft:cooked_beef", 12)]),
     ]
     for chave, nome, dy, icone, texto, recs in classes:
         recs = recs + [c.r_comando(f"/puffish_skills category unlock {{p}} terras_partidas:{chave}",
@@ -350,7 +411,7 @@ def ato1():
 
     # ---- Trilha de sobrevivência (em cima)
     c.quest("ferro", "Ferramentas de Ferro", 7.5, -2.5, icone="minecraft:iron_pickaxe",
-            deps=nomes_classes, dependency_requirement="one_completed",
+            deps=nomes_classes, dependency_requirement="one_completed", hide_dependency_lines=True,
             descricao=[f"{M}: \"Ninguém caça de mãos vazias. Arrume ferramentas decentes.\"",
                        "", "Faça uma &fpicareta de ferro&r."],
             tarefas=[c.t_item("minecraft:iron_pickaxe")],
@@ -379,7 +440,7 @@ def ato1():
 
     # ---- Trilha de combate (embaixo)
     c.quest("treino", "Treino de Combate", 7.5, 2.5, icone="minecraft:iron_sword",
-            deps=nomes_classes, dependency_requirement="one_completed",
+            deps=nomes_classes, dependency_requirement="one_completed", hide_dependency_lines=True,
             descricao=[f"{M}: \"Antes de enfrentar algo de verdade, aprenda a lutar.\"",
                        "", "No Epic Fight, &eesquivar&r e &edefender&r gasta a barra de fôlego. Não ataque sem parar: espere a abertura do inimigo.",
                        "", "Derrote &c10 zumbis&r."],
@@ -1297,7 +1358,7 @@ def escolha_de_classe(botao, abrir):
                         botao("Ver outra classe", f"voltar_{chave}", [abrir("escolha")])],
             "Label": f"classe_{chave}", "Name": nome, "Priority": -1,
             "Texts": [{"Text": f"{nome.upper()}\\n\\nPrós: {pros}\\n\\nContras: {contras}\\n\\n"
-                               "A escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K)."}],
+                               "A escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K), além das árvores de Combate, Mineração e Vida, que são de todo mundo."}],
         })
     falas.append({
         "Buttons": [botao("Abrir o livro de missões", "livro_escolhida",
@@ -1379,7 +1440,8 @@ def mestre_vellan():
              com_botoes=False),
         *escolha_de_classe(botao, abrir),
         fala("dicas", "Dicas de combate", -1,
-             "Aperte R para entrar no modo de combate.\\n\\n"
+             "Aperte R para entrar no modo de combate. Sem ele você não esquiva e bate fraco.\\n\\n"
+             "Alt esquerdo esquiva, botão direito defende. Aperte K e gaste seus pontos nas árvores de Combate, Mineração e Vida.\\n\\n"
              "Esquivar e defender gasta a barra de fôlego. Não ataque sem parar: espere o inimigo errar e contra-ataque.\\n\\n"
              "Cada chefe derrotado te dá um livro de habilidade. Use o livro (clique direito) para aprender um movimento novo.",
              com_botoes=False),
@@ -1418,6 +1480,55 @@ def escrever(caminho, dados):
     with open(caminho, "w", encoding="utf-8") as f:
         f.write(snbt(dados) + "\n")
     print("escrito:", os.path.relpath(caminho))
+
+
+def organizar(capitulo, dx=2.0, dy=1.5):
+    """Reposiciona as missões da esquerda para a direita, em colunas por etapa.
+
+    O começo do capítulo fica na ponta esquerda e cada coluna é uma etapa a mais.
+    As missões de uma coluna seguem a ordem dos pais (média das posições deles),
+    o que evita linhas cruzadas e deixa cada frente numa faixa própria.
+    """
+    qs = capitulo["quests"]
+    ids = {q["id"] for q in qs}
+    pais = {q["id"]: [d for d in q.get("dependencies", []) if d in ids] for q in qs}
+    nivel = {}
+
+    def calc(i):
+        if i not in nivel:
+            nivel[i] = 1 + max((calc(p) for p in pais[i]), default=-1)
+        return nivel[i]
+
+    for q in qs:
+        calc(q["id"])
+    ordem_gerada = {q["id"]: n for n, q in enumerate(qs)}
+    colunas = {}
+    for q in qs:
+        colunas.setdefault(nivel[q["id"]], []).append(q["id"])
+    pos = {}
+    for n in sorted(colunas):
+        col = colunas[n]
+        if n > 0:
+            col.sort(key=lambda i: (sum(pos[p] for p in pais[i]) / len(pais[i]) if pais[i] else 0, ordem_gerada[i]))
+        for k, i in enumerate(col):
+            pos[i] = k - (len(col) - 1) / 2
+        # puxa cada missão para perto da média dos pais, sem deixar duas na mesma linha
+        if n > 0:
+            alvo = [sum(pos[p] for p in pais[i]) / len(pais[i]) if pais[i] else pos[i] for i in col]
+            atual = []
+            for k, i in enumerate(col):
+                y = alvo[k] if not atual else max(alvo[k], atual[-1] + 1)
+                atual.append(y)
+            desvio = (sum(atual) - sum(alvo)) / len(atual)
+            for k, i in enumerate(col):
+                pos[i] = atual[k] - desvio
+    for q in qs:
+        q["x"] = float(nivel[q["id"]] * dx)
+        q["y"] = round(pos[q["id"]] * dy * 2) / 2
+    for q in qs:
+        if not pais[q["id"]]:
+            q["size"] = 2.0
+            q.setdefault("subtitle", "Comece aqui")
 
 
 def main():
@@ -1461,6 +1572,7 @@ def main():
                                      "elevate_perms": True, "silent": True,
                                      "title": "+1 ponto de habilidade", "icon": "minecraft:enchanted_book"})
     for capitulo in capitulos.values():
+        organizar(capitulo)
         escrever(f"chapters/{capitulo['filename']}.snbt", capitulo)
     preset = os.path.join(RAIZ, "..", "..", "openloader", "data", "terras_partidas", "data",
                           "terras_partidas", "easy_npc", "preset", "humanoid", "mestre_vellan.npc.snbt")

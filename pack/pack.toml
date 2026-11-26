@@ -1,12 +1,12 @@
 name = "SealCraft"
 author = "cristianv54"
-version = "0.14.0"
+version = "0.15.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "1cad02355353ad720b50d702f62c52cfee73dd2df375a73a8442e82d9a189a2d"
+hash = "eb52281499f7d84a512c8e55ee229b7cc6b94918a675efea6181ca325c0a2de7"
 
 [versions]
 forge = "47.4.29"

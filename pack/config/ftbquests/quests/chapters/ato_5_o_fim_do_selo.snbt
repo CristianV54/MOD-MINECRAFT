@@ -17,7 +17,7 @@
 			subtitle: "A última jornada"
 			icon: "minecraft:ender_eye"
 			shape: "gear"
-			size: 1.75d
+			size: 2.0d
 			description: ["&6Mestre Vellan&r: \"Quinze fragmentos. Falta pouco.\"", "", "&o\"O Selo foi quebrado no &5End&o, e é lá que ele precisa ser refeito. Mas o Dragão guarda o portal do outro lado, e outros dois guardiões do vazio esperam por você.\"", "", "&o\"Encontre a fortaleza escondida no subsolo. Jogue um Olho do Ender para o alto e siga para onde ele voar.\"", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["75ACF07311A3832B"]
 			tasks: [
@@ -53,7 +53,7 @@
 		{
 			id: "645013493FDF4013"
 			title: "A Fortaleza Escondida"
-			x: 3.0d
+			x: 2.0d
 			y: 0.0d
 			icon: "minecraft:end_portal_frame"
 			description: ["Encontre a &ffortaleza&r e a sala do portal do End.", "Coloque Olhos do Ender em todas as molduras para ativar o portal."]
@@ -89,7 +89,7 @@
 		{
 			id: "4E4024EA03E0B327"
 			title: "O Vazio"
-			x: 6.0d
+			x: 4.0d
 			y: 0.0d
 			icon: "minecraft:end_stone"
 			description: ["Atravesse o portal e entre no &5End&r.", "", "&7Dica: leve blocos para construir, uma abóbora na cabeça (os endermen não te atacam se você olhar para eles) e muitas flechas para destruir os cristais.&r"]
@@ -118,7 +118,7 @@
 		{
 			id: "5171C3E6F46EE884"
 			title: "Chefe: Dragão do Ender"
-			x: 9.0d
+			x: 6.0d
 			y: 0.0d
 			icon: "minecraft:dragon_head"
 			shape: "octagon"
@@ -192,8 +192,8 @@
 		{
 			id: "6B1C043EF1A10868"
 			title: "Asas do Fim"
-			x: 12.0d
-			y: -3.0d
+			x: 8.0d
+			y: -1.5d
 			icon: "minecraft:elytra"
 			description: ["&7Missão extra.&r Nas ilhas de fora existem cidades do End, e algumas têm navios com &fasas&r (élitros). Consiga um par."]
 			dependencies: ["5171C3E6F46EE884"]
@@ -223,7 +223,7 @@
 		{
 			id: "5A1148C35F3CCAEF"
 			title: "A Cidadela Arruinada"
-			x: 12.0d
+			x: 8.0d
 			y: 0.0d
 			subtitle: "Primeiro guardião do vazio"
 			icon: "minecraft:purpur_block"
@@ -257,7 +257,7 @@
 		{
 			id: "4539DAADCFF61EFC"
 			title: "Dentro da Cidadela"
-			x: 15.0d
+			x: 10.0d
 			y: 0.0d
 			icon: "minecraft:end_stone_bricks"
 			description: ["Vá até as coordenadas e entre na &fCidadela Arruinada&r.", "&7Cuidado com os Golens do Ender pelo caminho.&r"]
@@ -293,7 +293,7 @@
 		{
 			id: "271B4CCE60F7E22F"
 			title: "Chefe: Guardião Ender"
-			x: 18.0d
+			x: 12.0d
 			y: 0.0d
 			icon: "minecraft:end_crystal"
 			shape: "octagon"
@@ -367,8 +367,8 @@
 		{
 			id: "53188B756916E94C"
 			title: "O Monolito Negro"
-			x: 12.0d
-			y: 3.0d
+			x: 8.0d
+			y: 1.5d
 			subtitle: "Segundo guardião do vazio"
 			icon: "minecraft:obsidian"
 			description: ["&6Mestre Vellan&r: \"Existe um monolito vivo de obsidiana, o &fObsidilith&r. Ele dorme numa arena de obsidiana. Para acordá-lo, coloque um &fOlho do Ender&r no altar da arena.\"", "", "&7Pegue a recompensa &festando no End&7: as coordenadas aparecem no chat.&r"]
@@ -401,8 +401,8 @@
 		{
 			id: "42B49E61F973B954"
 			title: "A Arena de Obsidiana"
-			x: 15.0d
-			y: 3.0d
+			x: 10.0d
+			y: 1.5d
 			icon: "minecraft:crying_obsidian"
 			description: ["Vá até as coordenadas e encontre a &fArena de Obsidiana&r."]
 			dependencies: ["53188B756916E94C"]
@@ -425,8 +425,8 @@
 		{
 			id: "52AC667E6ADB8873"
 			title: "Chefe: Obsidilith"
-			x: 18.0d
-			y: 3.0d
+			x: 12.0d
+			y: 1.5d
 			icon: "minecraft:obsidian"
 			shape: "octagon"
 			size: 1.5d
@@ -499,8 +499,8 @@
 		{
 			id: "4A43B5CEC5CA9494"
 			title: "A Verdade sobre o Selo"
-			x: 21.0d
-			y: 1.5d
+			x: 14.0d
+			y: 1.0d
 			subtitle: "O último fragmento"
 			icon: "minecraft:nether_star"
 			shape: "hexagon"
@@ -561,8 +561,8 @@
 		{
 			id: "7CEEF225CBD59975"
 			title: "A Fábrica Antiga"
-			x: 24.0d
-			y: 1.5d
+			x: 16.0d
+			y: 1.0d
 			icon: "minecraft:redstone_block"
 			description: ["Vá até as coordenadas. A &fFábrica Antiga&r fica no subsolo, em cavernas profundas.", "&7Leve tochas e uma picareta boa.&r"]
 			dependencies: ["4A43B5CEC5CA9494"]
@@ -585,8 +585,8 @@
 		{
 			id: "07409C87B9FB6E33"
 			title: "Chefe Final: O Arauto"
-			x: 27.0d
-			y: 1.5d
+			x: 18.0d
+			y: 1.0d
 			icon: "minecraft:wither_skeleton_skull"
 			shape: "octagon"
 			size: 2.25d
@@ -659,8 +659,8 @@
 		{
 			id: "5D30ADB7458E563B"
 			title: "O Selo Restaurado"
-			x: 30.0d
-			y: 1.5d
+			x: 20.0d
+			y: 1.0d
 			subtitle: "Fim da história"
 			icon: "minecraft:beacon"
 			shape: "gear"
@@ -717,8 +717,8 @@
 		{
 			id: "649B209061CE456E"
 			title: "Desafios Lendários"
-			x: 30.0d
-			y: 6.0d
+			x: 22.0d
+			y: 1.0d
 			icon: "minecraft:dragon_egg"
 			shape: "hexagon"
 			description: ["&7Para quem ainda quer mais.&r Dois monstros antigos ainda vagam pelo mundo. Nenhum guarda fragmentos, só glória."]
@@ -742,8 +742,8 @@
 		{
 			id: "4B879F1DD11BBDE4"
 			title: "A Flor do Vazio"
-			x: 27.0d
-			y: 8.5d
+			x: 24.0d
+			y: 0.0d
 			icon: "minecraft:spore_blossom"
 			description: ["Nas cavernas verdes e úmidas cresce uma flor gigante e carnívora, a &cFlor do Vazio&r.", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["649B209061CE456E"]
@@ -770,8 +770,8 @@
 		{
 			id: "2CA80BCF97964759"
 			title: "Lendário: Flor do Vazio"
-			x: 27.0d
-			y: 11.0d
+			x: 26.0d
+			y: 0.0d
 			icon: "minecraft:spore_blossom"
 			shape: "octagon"
 			size: 1.25d
@@ -813,8 +813,8 @@
 		{
 			id: "30174A75CA9ADA58"
 			title: "A Cidade Afundada"
-			x: 33.0d
-			y: 8.5d
+			x: 24.0d
+			y: 1.5d
 			icon: "minecraft:prismarine_bricks"
 			description: ["No fundo do oceano existe uma cidade afundada. No altar dela, um &cLeviatã&r espera ser chamado.", "", "Use o &fSacrifício Abissal&r no &fAltar do Abismo&r da cidade para chamá-lo.", "&7Ele é invencível fora da água. Leve poções de respiração aquática.&r", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["649B209061CE456E"]
@@ -858,8 +858,8 @@
 		{
 			id: "025CC0FAC279BC9F"
 			title: "Lendário: O Leviatã"
-			x: 33.0d
-			y: 11.0d
+			x: 26.0d
+			y: 1.5d
 			icon: "minecraft:heart_of_the_sea"
 			shape: "octagon"
 			size: 1.25d

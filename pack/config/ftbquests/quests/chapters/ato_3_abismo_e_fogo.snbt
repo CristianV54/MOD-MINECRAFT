@@ -17,7 +17,7 @@
 			subtitle: "Os fragmentos caíram no Nether"
 			icon: "minecraft:obsidian"
 			shape: "gear"
-			size: 1.75d
+			size: 2.0d
 			description: ["&6Mestre Vellan&r: \"Os últimos fragmentos atravessaram uma fenda e caíram no &cNether&r.\"", "", "&o\"Lá embaixo, três criaturas forjadas no fogo guardam cada uma um pedaço do Selo. E o calor dos fragmentos está acordando algo que deveria continuar dormindo...\"", "", "Construa um portal (obsidiana 4x5) e entre no Nether.", "", "&7Dica: use alguma peça de ouro na armadura. Os piglins não atacam quem usa ouro.&r", "", "&7Pegue a recompensa já dentro do Nether: ela mostra no chat as coordenadas da fortaleza mais próxima.&r"]
 			dependencies: ["5A0236B98D30AC09"]
 			tasks: [
@@ -65,7 +65,7 @@
 		{
 			id: "5E07FB527C1F6DE7"
 			title: "A Fortaleza Negra"
-			x: -3.0d
+			x: 2.0d
 			y: -3.0d
 			icon: "minecraft:nether_bricks"
 			description: ["As fortalezas do Nether são cheias de blazes e esqueletos wither.", "Encontre uma. Você vai precisar voltar lá para o chefe final deste ato."]
@@ -101,7 +101,7 @@
 		{
 			id: "2EE540297CB7A66A"
 			title: "Varas de Blaze"
-			x: -6.0d
+			x: 4.0d
 			y: -3.0d
 			icon: "minecraft:blaze_rod"
 			description: ["Derrote blazes e junte &f8 varas de blaze&r.", "&7Guarde algumas: elas vão ser importantes no fim da jornada.&r"]
@@ -132,8 +132,8 @@
 		{
 			id: "1F152172EAA2A88B"
 			title: "Metal das Profundezas"
-			x: 3.0d
-			y: -3.0d
+			x: 2.0d
+			y: -1.5d
 			icon: "minecraft:netherite_ingot"
 			description: ["&7Missão extra.&r Os &fdetritos antigos&r ficam escondidos no fundo do Nether. Faça um &flingote de netherita&r."]
 			dependencies: ["51E0EEFACEDA7A78"]
@@ -162,8 +162,8 @@
 		{
 			id: "29CD4FA2786E9CCF"
 			title: "A Forja das Almas"
-			x: -4.0d
-			y: 3.0d
+			x: 2.0d
+			y: 0.0d
 			subtitle: "Primeira frente"
 			icon: "minecraft:soul_lantern"
 			description: ["&6Mestre Vellan&r: \"Existe uma forja antiga, movida a almas, onde um colosso de netherita dorme dentro da lava. O fragmento caiu na fornalha dele.\"", "", "&7Pegue a recompensa &festando no Nether&7: as coordenadas aparecem no chat. Aperte &eF3&7 para ver onde você está.&r"]
@@ -190,8 +190,8 @@
 		{
 			id: "7A39B292E1727F65"
 			title: "Chegando na Forja"
-			x: -7.0d
-			y: 3.0d
+			x: 4.0d
+			y: 0.0d
 			icon: "minecraft:soul_campfire"
 			description: ["Vá até as coordenadas e encontre a &fForja das Almas&r."]
 			dependencies: ["29CD4FA2786E9CCF"]
@@ -226,8 +226,8 @@
 		{
 			id: "00C38D9253CE0A46"
 			title: "Chefe: Monstruosidade de Netherita"
-			x: -10.0d
-			y: 3.0d
+			x: 6.0d
+			y: 0.0d
 			icon: "minecraft:netherite_block"
 			shape: "octagon"
 			size: 1.5d
@@ -300,8 +300,8 @@
 		{
 			id: "7FC4C9FEAE9A0441"
 			title: "A Arena Ardente"
-			x: 4.0d
-			y: 3.0d
+			x: 2.0d
+			y: 1.5d
 			subtitle: "Segunda frente"
 			icon: "minecraft:magma_block"
 			description: ["&6Mestre Vellan&r: \"Um campeão de fogo chamado &6Ignis&r guarda uma arena nos desertos do Nether. Ele só aparece para quem acende o &fAltar de Fogo&r.\"", "", "&7Pegue a recompensa &festando no Nether&7: as coordenadas aparecem no chat. Aperte &eF3&7 para ver onde você está.&r"]
@@ -328,8 +328,8 @@
 		{
 			id: "4268B1AC7DD2DA4F"
 			title: "Chegando na Arena"
-			x: 7.0d
-			y: 3.0d
+			x: 4.0d
+			y: 1.5d
 			icon: "minecraft:blackstone"
 			description: ["Vá até as coordenadas e encontre a &fArena Ardente&r."]
 			dependencies: ["7FC4C9FEAE9A0441"]
@@ -352,8 +352,8 @@
 		{
 			id: "5E124444FE2C7082"
 			title: "Cinzas Flamejantes"
-			x: 10.0d
-			y: 3.0d
+			x: 6.0d
+			y: 1.5d
 			icon: "cataclysm:burning_ashes"
 			description: ["&6Mestre Vellan&r &7(por carta)&r: \"Mandei as &fCinzas Flamejantes&r. Use-as no &fAltar de Fogo&r, no centro da arena, para chamar Ignis.\"", "", "&7Equipamento recomendado: diamante encantado ou netherita. Leve muitas poções de resistência ao fogo.&r"]
 			dependencies: ["4268B1AC7DD2DA4F"]
@@ -399,8 +399,8 @@
 		{
 			id: "49A04A987520E157"
 			title: "Chefe: Ignis"
-			x: 13.0d
-			y: 3.0d
+			x: 8.0d
+			y: 1.0d
 			icon: "cataclysm:burning_ashes"
 			shape: "octagon"
 			size: 1.5d
@@ -473,8 +473,8 @@
 		{
 			id: "242B7527F524B800"
 			title: "Mais Cinzas"
-			x: 13.0d
-			y: 5.0d
+			x: 8.0d
+			y: 2.0d
 			icon: "cataclysm:burning_ashes"
 			shape: "circle"
 			size: 0.75d
@@ -502,8 +502,8 @@
 		{
 			id: "172CA18925732A8F"
 			title: "A Mão de Ferro"
-			x: 0.0d
-			y: 5.0d
+			x: 2.0d
+			y: 3.0d
 			subtitle: "Terceira frente"
 			icon: "minecraft:iron_bars"
 			description: ["&6Mestre Vellan&r: \"Os piglins falam de uma &fmão gigante de metal&r que flutua numa arena e esmaga quem entra. Ela agarrou um fragmento quando ele caiu.\"", "", "&7Pegue a recompensa &festando no Nether&7: as coordenadas aparecem no chat. Aperte &eF3&7 para ver onde você está.&r"]
@@ -530,8 +530,8 @@
 		{
 			id: "3E990353495E559E"
 			title: "A Arena da Manopla"
-			x: 0.0d
-			y: 7.5d
+			x: 4.0d
+			y: 3.0d
 			icon: "minecraft:chiseled_polished_blackstone"
 			description: ["Vá até as coordenadas e encontre a &fArena da Manopla&r."]
 			dependencies: ["172CA18925732A8F"]
@@ -554,8 +554,8 @@
 		{
 			id: "2B2B4D1C77CAD04F"
 			title: "Chefe: Manopla do Nether"
-			x: 0.0d
-			y: 10.0d
+			x: 6.0d
+			y: 3.0d
 			icon: "minecraft:iron_block"
 			shape: "octagon"
 			size: 1.5d
@@ -628,8 +628,8 @@
 		{
 			id: "36D98A85083C3342"
 			title: "O Que Despertou"
-			x: 0.0d
-			y: 13.0d
+			x: 10.0d
+			y: 0.0d
 			subtitle: "O mal antigo"
 			icon: "minecraft:wither_skeleton_skull"
 			description: ["&6Mestre Vellan&r: \"Eu estava errado. O fragmento mais forte não caiu em uma criatura... caiu nos ossos dos &8esqueletos wither&r.\"", "", "&o\"Se juntarmos três crânios e o fragmento, o &8Wither&o desperta. É perigoso, mas é a única forma de arrancar o último pedaço do Selo do Nether.\"", "", "Junte &f3 crânios de esqueleto wither&r (das fortalezas) e &f4 areias das almas&r."]
@@ -686,8 +686,8 @@
 		{
 			id: "493B1BC37A2277E5"
 			title: "Chefe: O Wither"
-			x: 0.0d
-			y: 16.0d
+			x: 12.0d
+			y: 0.0d
 			icon: "minecraft:nether_star"
 			shape: "octagon"
 			size: 2.0d
@@ -760,8 +760,8 @@
 		{
 			id: "6191703B0919D2E4"
 			title: "Relatório: Abismo e Fogo"
-			x: 0.0d
-			y: 19.5d
+			x: 14.0d
+			y: 0.0d
 			subtitle: "Fim do Ato 3"
 			icon: "minecraft:amethyst_shard"
 			shape: "gear"

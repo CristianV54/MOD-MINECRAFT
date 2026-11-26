@@ -1,0 +1,458 @@
+{
+  "resistente": {
+    "title": "Resistente",
+    "description": "+2 de vida (1 coração)",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:golden_apple"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "cor_1": {
+    "title": "Coração Forte I",
+    "description": "+2 de vida\nRamo: Coração",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:red_dye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "cor_2": {
+    "title": "Coração Forte II",
+    "description": "+2 de vida\nRamo: Coração",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:red_dye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "cor_3": {
+    "title": "Coração Forte III",
+    "description": "+2 de vida\nRamo: Coração",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:red_dye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "cor_4": {
+    "title": "Cura Rápida",
+    "description": "+15% de cura recebida\nRamo: Coração",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:red_dye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:healing_received",
+          "value": 0.15,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "imortal": {
+    "title": "Coração de Dragão",
+    "description": "+6 de vida (3 corações) e +15% de cura recebida\nRamo: Coração",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:red_dye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 6.0,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:healing_received",
+          "value": 0.15,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 2
+  },
+  "couro_1": {
+    "title": "Pele Grossa I",
+    "description": "+1 de armadura\nRamo: Couro",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "couro_2": {
+    "title": "Pele Grossa II",
+    "description": "+1 de armadura\nRamo: Couro",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "couro_3": {
+    "title": "Raiz no Chão",
+    "description": "+10% de resistência a empurrão\nRamo: Couro",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "couro_4": {
+    "title": "Pele Grossa III",
+    "description": "+2 de resistência da armadura\nRamo: Couro",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "muralha_viva": {
+    "title": "Muralha Viva",
+    "description": "+2 de armadura e +2 de resistência da armadura\nRamo: Couro",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 2
+  },
+  "via_1": {
+    "title": "Pés Leves I",
+    "description": "+3% de velocidade de movimento\nRamo: Viajante",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.003,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "via_2": {
+    "title": "Nadador",
+    "description": "+25% de velocidade de nado\nRamo: Viajante",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "forge:swim_speed",
+          "value": 0.25,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "via_3": {
+    "title": "Pés Leves II",
+    "description": "+3% de velocidade de movimento\nRamo: Viajante",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.003,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "via_4": {
+    "title": "Escalador",
+    "description": "Sobe meio bloco sem pular\nRamo: Viajante",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "forge:step_height_addition",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "andarilho": {
+    "title": "Andarilho",
+    "description": "+5% de velocidade e +25% de velocidade de nado\nRamo: Viajante",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.005,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "forge:swim_speed",
+          "value": 0.25,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 2
+  }
+}

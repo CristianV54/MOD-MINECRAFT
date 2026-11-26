@@ -1,0 +1,18 @@
+{
+  "title": "Combate",
+  "description": "Para todos. Sobe derrotando monstros.",
+  "icon": {
+    "type": "item",
+    "data": {
+      "item": "minecraft:iron_sword"
+    }
+  },
+  "background": {
+    "texture": "minecraft:textures/block/polished_blackstone_bricks.png",
+    "width": 16,
+    "height": 16,
+    "position": "tile"
+  },
+  "unlocked_by_default": true,
+  "starting_points": 1
+}

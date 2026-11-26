@@ -3,7 +3,7 @@
 **SealCraft: RPG em Português.** Modpack brasileiro de RPG com combate estilo souls, chefes, dungeons e uma história contada em português.
 
 - **Versão:** Minecraft 1.20.1 com Forge 47.4.29
-- **Mods:** 112 no total (93 rodam no servidor e 19 só no jogador)
+- **Mods:** 113 no total (94 rodam no servidor e 19 só no jogador), mais 1 pacote de shaders e 1 pacote de animações
 - **Objetivo:** ser mais leve que o DawnCraft (305 mods) e rodar bem com 6 GB de RAM
 - **Publicação:** textos da página do CurseForge e do Modrinth em `PUBLICACAO.md`
 - **Estado:** **história completa**, com 5 atos, 108 missões em português, 19 chefes de história, 2 desafios lendários e dragões. Ainda não foi jogada de ponta a ponta.
@@ -47,11 +47,11 @@ O livro de missões abre pelo botão do FTB Quests no inventário. O Ato 1 tem 2
 
 1. **O Chamado**: carta do Mestre Vellan explicando a história e o combate do Epic Fight. Dá o livro da esquiva "Rolar".
 2. **Escolha seu Caminho**: o jogador escolhe **uma** classe entre 5, e as outras ficam bloqueadas. Cada classe dá um kit:
-   - **Guerreiro**: espada longa e armadura de malha
-   - **Tanque**: escudo, peitoral de ferro, lança e a técnica Aparar
-   - **Assassino**: duas adagas, poções de velocidade, pérolas do End e a esquiva Passo
-   - **Mago**: livro de feitiços, Mesa de Inscrição e pergaminhos de Bola de Fogo, Míssil Mágico e Cura
-   - **Caçador**: arco, 64 flechas e adaga
+   - **Guerreiro**: espada longa, armadura de malha completa e poções de força
+   - **Tanque**: escudo, capacete, peitoral e calça de ferro, lança e a técnica Aparar
+   - **Assassino**: duas adagas com Afiação I, armadura leve, 3 poções de velocidade, 4 pérolas do End e a esquiva Passo
+   - **Mago**: livro de feitiços **já inscrito** com Bola de Fogo II, Míssil Mágico II, Estilhaço de Gelo e Cura, bengala do artífice, roupa completa de mago andarilho, Mesa de Inscrição e pergaminhos extras. Os feitiços do livro não acabam, só gastam mana. Os pergaminhos soltos são de uso único, a não ser que sejam gravados no livro na Mesa de Inscrição.
+   - **Caçador**: arco com Força II, 128 flechas, armadura de couro completa e adaga
 3. **Trilha de sobrevivência**: ferramentas de ferro, mochila, dormir numa cama e achar uma vila.
 4. **Trilha de combate**: derrotar 10 zumbis e 10 esqueletos.
 5. **Os três chefes**, cada um guardando um Fragmento do Selo:
@@ -148,9 +148,26 @@ Na semente de teste, as distâncias ficaram assim:
 
 **Atenção:** o YUNG's Better Strongholds substitui a fortaleza do End. O ID certo é `betterstrongholds:stronghold`.
 
-## Árvores de habilidades das classes
+## Árvores de habilidades
 
-Cada classe tem uma árvore própria no **Pufferfish's Skills**, que abre com a tecla **K**. A árvore fica trancada até o jogador escolher a classe no Ato 1.
+A tecla **K** abre o **Pufferfish's Skills**, com uma aba para cada árvore.
+
+### Árvores gerais (para todo mundo)
+
+Liberadas desde o começo, para qualquer classe. Cada uma tem um nível próprio e sobe com uma atividade diferente. Cada nível dá 1 ponto, até o nível 20.
+
+| Árvore | Como sobe | Ramos |
+|---|---|---|
+| **Combate** | Matando monstros | Golpes (dano, perfurar armadura, crítico), Agilidade (velocidade de ataque, alcance, fôlego), Sangue (repulsão, roubo de vida, impacto) |
+| **Mineração** | Quebrando blocos. Minérios valem muito mais que pedra. | Picareta (velocidade de mineração), Alcance (alcance de blocos, subir degraus), Sorte (sorte e experiência extra) |
+| **Vida** | Comendo e sobrevivendo a dano | Coração (vida, cura recebida), Couro (armadura e resistência), Viajante (velocidade, nado, subir degraus) |
+
+- **Formato:** uma habilidade inicial e 3 ramos de 5 habilidades. A última de cada ramo custa 2 pontos.
+- **Tamanho:** 16 habilidades e 19 pontos para completar cada árvore.
+
+### Árvores das classes
+
+Cada classe tem uma árvore própria, que fica trancada até o jogador escolher a classe no Ato 1.
 - **Formato:** uma habilidade inicial e 3 ramos de 4 habilidades. A última de cada ramo custa 2 pontos e é mais forte.
 - **Tamanho:** 13 habilidades e 16 pontos pra completar cada árvore.
 - **Pontos:**
@@ -200,10 +217,32 @@ O Mestre Vellan é um NPC do Easy NPC que **aparece 3 blocos na frente do jogado
 
 - **Tela inicial:** o pacote de recursos `pack/config/openloader/resources/sealcraft_visual/` troca o logo do Aquamirae (embaixo do "MINECRAFT") pelo logo **SEALCRAFT** e as frases amarelas por 36 frases em português. O logo e o ícone quadrado (`arte/`) são gerados por `tools/gerar_arte.py`.
 - **Teclas padrão:** o mod Default Options aplica `pack/config/defaultoptions/keybindings.txt` só na primeira vez que o jogo abre, sem mexer no que o jogador mudar depois.
-  - **Shaders sem tecla:** o recarregar e o liga/desliga do Oculus ficam sem tecla. Antes, o R recarregava os shaders junto com o modo de combate.
+  - **Shaders:** recarregar fica sem tecla. Antes, o R recarregava os shaders junto com o modo de combate. **F7** liga e desliga.
   - **R:** modo de combate (Epic Fight).
-  - **K:** árvore de habilidades.
+  - **K:** árvores de habilidades.
   - **J:** tela de habilidades do Epic Fight.
+  - **Magia:** **V** lança o feitiço escolhido, **Z** abre a roda de feitiços e **Ctrl + rolar o mouse** troca de feitiço. Antes, a roda ficava no R e o modificador no Alt, junto com o modo de combate e a esquiva.
+
+## Equilíbrio dos monstros
+
+O script `tools/gerar_equilibrio.py` deixa o começo do jogo mais justo:
+- **Monstros dos mods:** o Born in Chaos e o The Undead Revamped colocavam ~850 de peso de nascimento em **todos** os biomas, inclusive Nether e End, contra ~515 dos monstros normais. Só ~37% dos monstros eram os normais. O script sobrescreve os arquivos de nascimento dos dois mods no datapack: peso x 0,35 (de 851 para 298) e só no mundo normal.
+- **Bomber (Undead Revamped):** a explosão dava 1000 de dano (morte na hora). Agora dá 24.
+- **Mutantes:** de 5% para 1,5% do nascimento do monstro normal.
+- **Apotheosis:** monstros com equipamento de elite de 7,5% para 4%, e chefes aleatórios mais raros (chance de 1,8% para 0,8% e no mínimo 10 minutos entre um e outro).
+- **Missão "Como Ficar Mais Forte" (Ato 1):** explica o modo de combate, a esquiva, a defesa, as árvores de habilidades e o que evitar. Dá 1 ponto nas árvores de Combate e Vida e um escudo.
+
+## Layout do livro de missões
+
+As posições das missões são calculadas pelo gerador (`organizar()` em `tools/gerar_missoes.py`): o começo de cada ato fica na **ponta esquerda**, maior e com o subtítulo "Comece aqui", e cada coluna para a direita é uma etapa a mais. As missões de cada frente ficam na mesma faixa, sem linhas cruzando. Os números `x, y` escritos em cada missão não são mais usados.
+
+## Visual: shaders e animações
+
+- **Shaders:** o **Complementary Reimagined** já vem instalado e ligado num perfil novo. Ele deixa a água, o céu, as nuvens, as sombras e as luzes bem mais bonitos.
+  - **Desligar:** aperte **F7**, ou vá em **Opções > Configurações de vídeo > Pacotes de shaders** e escolha "Desligado". Lá dá pra baixar a qualidade se o PC sofrer.
+  - **Primeira vez:** os padrões ficam em `pack/config/defaultoptions/extra/config/oculus.properties` e só valem se o arquivo ainda não existir. Quem já jogou antes liga pela tela de shaders.
+- **Fresh Animations:** pacote de recursos que anima os monstros e animais normais (piscar, respirar, andar de verdade). Fica ativo por padrão (`pack/config/defaultoptions/options.txt`) e pode ser tirado em **Opções > Pacotes de recursos**.
+- **Os dois são só do lado do jogador.** O servidor não baixa nenhum deles.
 
 ## A história
 

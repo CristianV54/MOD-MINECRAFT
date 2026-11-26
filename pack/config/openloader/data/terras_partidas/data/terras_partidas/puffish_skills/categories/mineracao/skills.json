@@ -1,0 +1,83 @@
+{
+  "minerador": {
+    "definition": "minerador",
+    "x": 0,
+    "y": 0,
+    "root": true
+  },
+  "pic_1": {
+    "definition": "pic_1",
+    "x": -34,
+    "y": -34
+  },
+  "pic_2": {
+    "definition": "pic_2",
+    "x": -68,
+    "y": -68
+  },
+  "pic_3": {
+    "definition": "pic_3",
+    "x": -102,
+    "y": -102
+  },
+  "pic_4": {
+    "definition": "pic_4",
+    "x": -136,
+    "y": -136
+  },
+  "escavadora": {
+    "definition": "escavadora",
+    "x": -170,
+    "y": -170
+  },
+  "alc_1": {
+    "definition": "alc_1",
+    "x": 0,
+    "y": -34
+  },
+  "alc_2": {
+    "definition": "alc_2",
+    "x": 0,
+    "y": -68
+  },
+  "alc_3": {
+    "definition": "alc_3",
+    "x": 0,
+    "y": -102
+  },
+  "alc_4": {
+    "definition": "alc_4",
+    "x": 0,
+    "y": -136
+  },
+  "arquiteto": {
+    "definition": "arquiteto",
+    "x": 0,
+    "y": -170
+  },
+  "sorte_1": {
+    "definition": "sorte_1",
+    "x": 34,
+    "y": -34
+  },
+  "sorte_2": {
+    "definition": "sorte_2",
+    "x": 68,
+    "y": -68
+  },
+  "sorte_3": {
+    "definition": "sorte_3",
+    "x": 102,
+    "y": -102
+  },
+  "sorte_4": {
+    "definition": "sorte_4",
+    "x": 136,
+    "y": -136
+  },
+  "garimpeiro": {
+    "definition": "garimpeiro",
+    "x": 170,
+    "y": -170
+  }
+}

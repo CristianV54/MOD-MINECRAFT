@@ -1,0 +1,83 @@
+{
+  "guerreiro_nato": {
+    "definition": "guerreiro_nato",
+    "x": 0,
+    "y": 0,
+    "root": true
+  },
+  "golpes_1": {
+    "definition": "golpes_1",
+    "x": -34,
+    "y": -34
+  },
+  "golpes_2": {
+    "definition": "golpes_2",
+    "x": -68,
+    "y": -68
+  },
+  "golpes_3": {
+    "definition": "golpes_3",
+    "x": -102,
+    "y": -102
+  },
+  "golpes_4": {
+    "definition": "golpes_4",
+    "x": -136,
+    "y": -136
+  },
+  "carrasco": {
+    "definition": "carrasco",
+    "x": -170,
+    "y": -170
+  },
+  "agil_1": {
+    "definition": "agil_1",
+    "x": 0,
+    "y": -34
+  },
+  "agil_2": {
+    "definition": "agil_2",
+    "x": 0,
+    "y": -68
+  },
+  "agil_3": {
+    "definition": "agil_3",
+    "x": 0,
+    "y": -102
+  },
+  "agil_4": {
+    "definition": "agil_4",
+    "x": 0,
+    "y": -136
+  },
+  "dancarino": {
+    "definition": "dancarino",
+    "x": 0,
+    "y": -170
+  },
+  "sangue_1": {
+    "definition": "sangue_1",
+    "x": 34,
+    "y": -34
+  },
+  "sangue_2": {
+    "definition": "sangue_2",
+    "x": 68,
+    "y": -68
+  },
+  "sangue_3": {
+    "definition": "sangue_3",
+    "x": 102,
+    "y": -102
+  },
+  "sangue_4": {
+    "definition": "sangue_4",
+    "x": 136,
+    "y": -136
+  },
+  "predador": {
+    "definition": "predador",
+    "x": 170,
+    "y": -170
+  }
+}

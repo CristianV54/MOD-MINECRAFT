@@ -176,6 +176,134 @@ CLASSES = {
 }
 
 
+# Árvores gerais: liberadas para todo mundo desde o começo, cada uma sobe de um jeito.
+EXP_MINERACAO = {
+    "experience_per_level": {"type": "expression", "data": {"expression": "30 + level * 20"}},
+    "level_limit": 20,
+    "sources": [{
+        "type": "puffish_skills:mine_block",
+        "data": {
+            "variables": {
+                "dureza": {"operations": [{"type": "get_mined_block_state"}, {"type": "get_block"}, {"type": "get_hardness"}]},
+                "minerio": {"operations": [{"type": "get_mined_block_state"},
+                                           {"type": "puffish_skills:test", "data": {"block": "#forge:ores"}},
+                                           {"type": "puffish_skills:switch", "data": {"true": 1, "false": 0}}]},
+            },
+            "experience": "min(dureza, 5) * 0.4 + minerio * 7",
+        },
+    }],
+}
+EXP_VIDA = {
+    "experience_per_level": {"type": "expression", "data": {"expression": "30 + level * 20"}},
+    "level_limit": 20,
+    "sources": [
+        {"type": "puffish_skills:take_damage",
+         "data": {"variables": {"dano": {"operations": [{"type": "get_taken_damage"}]}},
+                  "experience": "min(dano, 20) * 1.5"}},
+        {"type": "puffish_skills:eat_food",
+         "data": {"variables": {"comida": {"operations": [{"type": "get_eaten_item_stack"}, {"type": "get_item"}, {"type": "get_nutrition"}]}},
+                  "experience": "comida * 1.5"}},
+    ],
+}
+
+GERAIS = {
+    "combate": {
+        "titulo": "Combate", "icone": "minecraft:iron_sword", "fundo": "minecraft:textures/block/polished_blackstone_bricks.png",
+        "descricao": "Para todos. Sobe derrotando monstros.", "experiencia": EXPERIENCIA,
+        "raiz": ("guerreiro_nato", "Instinto de Luta", "+1 de dano corpo a corpo", "minecraft:iron_sword",
+                 attr("minecraft:generic.attack_damage", 1.0)),
+        "ramos": [
+            ("Golpes", "minecraft:iron_sword", [
+                ("golpes_1", "Golpes Firmes I", "+1 de dano", attr("minecraft:generic.attack_damage", 1.0)),
+                ("golpes_2", "Golpes Firmes II", "+1 de dano", attr("minecraft:generic.attack_damage", 1.0)),
+                ("golpes_3", "Golpes Firmes III", "+1 de dano", attr("minecraft:generic.attack_damage", 1.0)),
+                ("golpes_4", "Perfurar Armadura", "Ignora 2 pontos de armadura do inimigo", attr("attributeslib:armor_pierce", 2.0)),
+                ("carrasco", "Carrasco", "+15% de chance e +25% de dano crítico",
+                 [attr("attributeslib:crit_chance", 0.15), attr("attributeslib:crit_damage", 0.25)]),
+            ]),
+            ("Agilidade", "minecraft:feather", [
+                ("agil_1", "Mãos Rápidas I", "+5% de velocidade de ataque", attr("minecraft:generic.attack_speed", 0.2)),
+                ("agil_2", "Mãos Rápidas II", "+5% de velocidade de ataque", attr("minecraft:generic.attack_speed", 0.2)),
+                ("agil_3", "Alcance", "+0,5 de alcance de ataque", attr("forge:entity_reach", 0.5)),
+                ("agil_4", "Fôlego de Batalha", "+3 de fôlego máximo", attr("epicfight:staminar", 3.0)),
+                ("dancarino", "Dança da Lâmina", "+10% de velocidade de ataque e +20% de recuperação de fôlego",
+                 [attr("minecraft:generic.attack_speed", 0.4), attr("epicfight:stamina_regen", 0.2)]),
+            ]),
+            ("Sangue", "minecraft:redstone", [
+                ("sangue_1", "Empurrão", "+0,5 de repulsão nos ataques", attr("minecraft:generic.attack_knockback", 0.5)),
+                ("sangue_2", "Sede I", "Recupera 2% do dano causado como vida", attr("attributeslib:life_steal", 0.02)),
+                ("sangue_3", "Sede II", "Recupera mais 2% do dano causado como vida", attr("attributeslib:life_steal", 0.02)),
+                ("sangue_4", "Impacto", "+2 de impacto (atordoa mais os inimigos)", attr("epicfight:impact", 2.0)),
+                ("predador", "Predador", "+5% de roubo de vida e +2 de dano",
+                 [attr("attributeslib:life_steal", 0.05), attr("minecraft:generic.attack_damage", 2.0)]),
+            ]),
+        ],
+    },
+    "mineracao": {
+        "titulo": "Mineração", "icone": "minecraft:iron_pickaxe", "fundo": "minecraft:textures/block/deepslate.png",
+        "descricao": "Para todos. Sobe minerando (minérios valem muito mais).", "experiencia": EXP_MINERACAO,
+        "raiz": ("minerador", "Minerador", "+10% de velocidade de mineração", "minecraft:iron_pickaxe",
+                 attr("attributeslib:mining_speed", 0.1)),
+        "ramos": [
+            ("Picareta", "minecraft:diamond_pickaxe", [
+                ("pic_1", "Braço Forte I", "+10% de velocidade de mineração", attr("attributeslib:mining_speed", 0.1)),
+                ("pic_2", "Braço Forte II", "+10% de velocidade de mineração", attr("attributeslib:mining_speed", 0.1)),
+                ("pic_3", "Braço Forte III", "+15% de velocidade de mineração", attr("attributeslib:mining_speed", 0.15)),
+                ("pic_4", "Braço de Ferro", "+15% de velocidade de mineração", attr("attributeslib:mining_speed", 0.15)),
+                ("escavadora", "Escavadora", "+30% de velocidade de mineração", attr("attributeslib:mining_speed", 0.3)),
+            ]),
+            ("Alcance", "minecraft:spyglass", [
+                ("alc_1", "Braço Longo I", "+0,5 de alcance para quebrar e colocar blocos", attr("forge:block_reach", 0.5)),
+                ("alc_2", "Braço Longo II", "+0,5 de alcance para quebrar e colocar blocos", attr("forge:block_reach", 0.5)),
+                ("alc_3", "Passo Firme", "Sobe meio bloco sem pular", attr("forge:step_height_addition", 0.5)),
+                ("alc_4", "Braço Longo III", "+1 de alcance para quebrar e colocar blocos", attr("forge:block_reach", 1.0)),
+                ("arquiteto", "Arquiteto", "+1,5 de alcance para quebrar e colocar blocos", attr("forge:block_reach", 1.5)),
+            ]),
+            ("Sorte", "minecraft:emerald", [
+                ("sorte_1", "Olho Treinado I", "+1 de sorte (baús e pescaria melhores)", attr("minecraft:generic.luck", 1.0)),
+                ("sorte_2", "Sabedoria I", "+10% de experiência ganha", attr("attributeslib:experience_gained", 0.1)),
+                ("sorte_3", "Olho Treinado II", "+1 de sorte", attr("minecraft:generic.luck", 1.0)),
+                ("sorte_4", "Sabedoria II", "+15% de experiência ganha", attr("attributeslib:experience_gained", 0.15)),
+                ("garimpeiro", "Garimpeiro", "+2 de sorte e +25% de experiência ganha",
+                 [attr("minecraft:generic.luck", 2.0), attr("attributeslib:experience_gained", 0.25)]),
+            ]),
+        ],
+    },
+    "vida": {
+        "titulo": "Vida", "icone": "minecraft:golden_apple", "fundo": "minecraft:textures/block/moss_block.png",
+        "descricao": "Para todos. Sobe comendo e sobrevivendo a dano.", "experiencia": EXP_VIDA,
+        "raiz": ("resistente", "Resistente", "+2 de vida (1 coração)", "minecraft:golden_apple",
+                 attr("minecraft:generic.max_health", 2.0)),
+        "ramos": [
+            ("Coração", "minecraft:red_dye", [
+                ("cor_1", "Coração Forte I", "+2 de vida", attr("minecraft:generic.max_health", 2.0)),
+                ("cor_2", "Coração Forte II", "+2 de vida", attr("minecraft:generic.max_health", 2.0)),
+                ("cor_3", "Coração Forte III", "+2 de vida", attr("minecraft:generic.max_health", 2.0)),
+                ("cor_4", "Cura Rápida", "+15% de cura recebida", attr("attributeslib:healing_received", 0.15)),
+                ("imortal", "Coração de Dragão", "+6 de vida (3 corações) e +15% de cura recebida",
+                 [attr("minecraft:generic.max_health", 6.0), attr("attributeslib:healing_received", 0.15)]),
+            ]),
+            ("Couro", "minecraft:leather", [
+                ("couro_1", "Pele Grossa I", "+1 de armadura", attr("minecraft:generic.armor", 1.0)),
+                ("couro_2", "Pele Grossa II", "+1 de armadura", attr("minecraft:generic.armor", 1.0)),
+                ("couro_3", "Raiz no Chão", "+10% de resistência a empurrão", attr("minecraft:generic.knockback_resistance", 0.1)),
+                ("couro_4", "Pele Grossa III", "+2 de resistência da armadura", attr("minecraft:generic.armor_toughness", 2.0)),
+                ("muralha_viva", "Muralha Viva", "+2 de armadura e +2 de resistência da armadura",
+                 [attr("minecraft:generic.armor", 2.0), attr("minecraft:generic.armor_toughness", 2.0)]),
+            ]),
+            ("Viajante", "minecraft:leather_boots", [
+                ("via_1", "Pés Leves I", "+3% de velocidade de movimento", attr("minecraft:generic.movement_speed", 0.003)),
+                ("via_2", "Nadador", "+25% de velocidade de nado", attr("forge:swim_speed", 0.25)),
+                ("via_3", "Pés Leves II", "+3% de velocidade de movimento", attr("minecraft:generic.movement_speed", 0.003)),
+                ("via_4", "Escalador", "Sobe meio bloco sem pular", attr("forge:step_height_addition", 0.5)),
+                ("andarilho", "Andarilho", "+5% de velocidade e +25% de velocidade de nado",
+                 [attr("minecraft:generic.movement_speed", 0.005), attr("forge:swim_speed", 0.25)]),
+            ]),
+        ],
+    },
+}
+
+
 def icone(item):
     return {"type": "item", "data": {"item": item}}
 
@@ -209,7 +337,7 @@ def gerar_classe(chave, cls):
         "description": cls["descricao"],
         "icon": icone(cls["icone"]),
         "background": {"texture": cls["fundo"], "width": 16, "height": 16, "position": "tile"},
-        "unlocked_by_default": False,
+        "unlocked_by_default": bool(cls.get("experiencia")),
         "starting_points": 1,
     }
     return categoria, definicoes, skills, {"normal": {"bidirectional": conexoes}}
@@ -226,14 +354,14 @@ def main():
         with open(caminho, "w", encoding="utf-8") as f:
             json.dump(dados, f, ensure_ascii=False, indent=2)
 
-    salvar("config.json", {"version": 3, "categories": list(CLASSES)})
-    for chave, cls in CLASSES.items():
+    salvar("config.json", {"version": 3, "categories": list(GERAIS) + list(CLASSES)})
+    for chave, cls in list(GERAIS.items()) + list(CLASSES.items()):
         categoria, definicoes, skills, conexoes = gerar_classe(chave, cls)
         salvar(f"categories/{chave}/category.json", categoria)
         salvar(f"categories/{chave}/definitions.json", definicoes)
         salvar(f"categories/{chave}/skills.json", skills)
         salvar(f"categories/{chave}/connections.json", conexoes)
-        salvar(f"categories/{chave}/experience.json", EXPERIENCIA)
+        salvar(f"categories/{chave}/experience.json", cls.get("experiencia", EXPERIENCIA))
         print(f"árvore {chave}: {len(skills)} habilidades, {sum(d['cost'] for d in definicoes.values())} pontos para completar")
 
 

@@ -1,0 +1,18 @@
+{
+  "title": "Vida",
+  "description": "Para todos. Sobe comendo e sobrevivendo a dano.",
+  "icon": {
+    "type": "item",
+    "data": {
+      "item": "minecraft:golden_apple"
+    }
+  },
+  "background": {
+    "texture": "minecraft:textures/block/moss_block.png",
+    "width": 16,
+    "height": 16,
+    "position": "tile"
+  },
+  "unlocked_by_default": true,
+  "starting_points": 1
+}

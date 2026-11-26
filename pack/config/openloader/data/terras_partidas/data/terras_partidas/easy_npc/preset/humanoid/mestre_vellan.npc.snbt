@@ -598,7 +598,7 @@
           Priority:-1,
           Texts:[
             {
-              Text:"GUERREIRO\\n\\nPrós: Equilibrado: bom dano, boa vida e armadura. A classe mais fácil para começar.\\n\\nContras: Não se destaca em nada. Luta sempre de perto.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K)."
+              Text:"GUERREIRO\\n\\nPrós: Equilibrado: bom dano, boa vida e armadura. A classe mais fácil para começar.\\n\\nContras: Não se destaca em nada. Luta sempre de perto.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K), além das árvores de Combate, Mineração e Vida, que são de todo mundo."
             }
           ]
         },
@@ -660,7 +660,7 @@
           Priority:-1,
           Texts:[
             {
-              Text:"TANQUE\\n\\nPrós: Muita vida e armadura, difícil de derrubar. Começa sabendo aparar golpes com o escudo.\\n\\nContras: Dano menor: as lutas contra chefes demoram mais.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K)."
+              Text:"TANQUE\\n\\nPrós: Muita vida e armadura, difícil de derrubar. Começa sabendo aparar golpes com o escudo.\\n\\nContras: Dano menor: as lutas contra chefes demoram mais.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K), além das árvores de Combate, Mineração e Vida, que são de todo mundo."
             }
           ]
         },
@@ -722,7 +722,7 @@
           Priority:-1,
           Texts:[
             {
-              Text:"ASSASSINO\\n\\nPrós: Rápido, com muitos acertos críticos e esquivas. Duas adagas e o passo rápido.\\n\\nContras: Pouca vida: cada erro custa caro.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K)."
+              Text:"ASSASSINO\\n\\nPrós: Rápido, com muitos acertos críticos e esquivas. Duas adagas e o passo rápido.\\n\\nContras: Pouca vida: cada erro custa caro.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K), além das árvores de Combate, Mineração e Vida, que são de todo mundo."
             }
           ]
         },
@@ -784,7 +784,7 @@
           Priority:-1,
           Texts:[
             {
-              Text:"MAGO\\n\\nPrós: Dano de longe com feitiços, inclusive cura. Livro de feitiços e Mesa de Inscrição desde o começo.\\n\\nContras: Frágil no começo e depende de mana e de pergaminhos.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K)."
+              Text:"MAGO\\n\\nPrós: Dano de longe com feitiços, inclusive cura. Livro de feitiços e Mesa de Inscrição desde o começo.\\n\\nContras: Frágil no começo e depende de mana e de pergaminhos.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K), além das árvores de Combate, Mineração e Vida, que são de todo mundo."
             }
           ]
         },
@@ -846,7 +846,7 @@
           Priority:-1,
           Texts:[
             {
-              Text:"CAÇADOR\\n\\nPrós: Ataca de longe com arco, é seguro contra chefes grandes e se move rápido.\\n\\nContras: Precisa de flechas e sofre quando é cercado.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K)."
+              Text:"CAÇADOR\\n\\nPrós: Ataca de longe com arco, é seguro contra chefes grandes e se move rápido.\\n\\nContras: Precisa de flechas e sofre quando é cercado.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K), além das árvores de Combate, Mineração e Vida, que são de todo mundo."
             }
           ]
         },
@@ -894,7 +894,7 @@
           Priority:-1,
           Texts:[
             {
-              Text:"Aperte R para entrar no modo de combate.\\n\\nEsquivar e defender gasta a barra de fôlego. Não ataque sem parar: espere o inimigo errar e contra-ataque.\\n\\nCada chefe derrotado te dá um livro de habilidade. Use o livro (clique direito) para aprender um movimento novo."
+              Text:"Aperte R para entrar no modo de combate. Sem ele você não esquiva e bate fraco.\\n\\nAlt esquerdo esquiva, botão direito defende. Aperte K e gaste seus pontos nas árvores de Combate, Mineração e Vida.\\n\\nEsquivar e defender gasta a barra de fôlego. Não ataque sem parar: espere o inimigo errar e contra-ataque.\\n\\nCada chefe derrotado te dá um livro de habilidade. Use o livro (clique direito) para aprender um movimento novo."
             }
           ]
         }

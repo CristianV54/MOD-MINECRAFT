@@ -1,5 +1,8 @@
 key_iris.keybind.reload:key.keyboard.unknown
-key_iris.keybind.toggle:key.keyboard.unknown
+key_iris.keybind.toggle:key.keyboard.f7
 key_key.epicfight.skill_gui:key.keyboard.j
 key_key.epicfight.switch_mode:key.keyboard.r
 key_key.puffish_skills.open:key.keyboard.k
+key_key.irons_spellbooks.spell_wheel:key.keyboard.z
+key_key.irons_spellbooks.spell_bar_modifier:key.keyboard.left.control
+key_key.irons_spellbooks.spellbook_cast:key.keyboard.v

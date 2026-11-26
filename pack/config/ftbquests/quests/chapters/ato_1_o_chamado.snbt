@@ -17,8 +17,8 @@
 			subtitle: "Uma carta com o selo da Ordem"
 			icon: "minecraft:writable_book"
 			shape: "gear"
-			size: 1.5d
-			description: ["&o\"Caçador,", "", "&oHá trezentos anos, sete guardiões prenderam um mal antigo dentro de um cristal: o &dSelo&r&o.", "&oNa última lua cheia, o Selo se partiu. Os fragmentos caíram pelo mundo e cada um corrompeu uma criatura poderosa.", "", "&oSe juntarmos os fragmentos antes que o mal desperte, ainda há esperança.", "&oA Ordem dos Caçadores precisa de você.\"", "", "— &6Mestre Vellan&r, Mestre da Ordem", "{@pagebreak}", "&eComo usar este livro:&r", "• Cada missão mostra o objetivo e a recompensa.", "• Clique em uma missão para ver os detalhes e pegar a recompensa.", "• Missões novas aparecem conforme você avança.", "", "&eCombate:&r este mundo usa o &cEpic Fight&r. Aperte &eR&r para alternar entre o modo normal e o modo de combate.", "As outras teclas ficam em &eOpções > Controles&r, na seção do Epic Fight.", "{@pagebreak}", "&eO Mestre Vellan:&r ele aparece &fna sua frente&r assim que você entra no mundo pela primeira vez.", "Clique nele com o botão direito para conversar e escolher sua classe. Ele também comenta cada etapa da história e dá dicas.", "&7Se você mudar de base, a missão \"Chamar o Mestre\" traz ele até você.&r"]
+			size: 2.0d
+			description: ["&o\"Caçador,", "", "&oHá trezentos anos, sete guardiões prenderam um mal antigo dentro de um cristal: o &dSelo&r&o.", "&oNa última lua cheia, o Selo se partiu. Os fragmentos caíram pelo mundo e cada um corrompeu uma criatura poderosa.", "", "&oSe juntarmos os fragmentos antes que o mal desperte, ainda há esperança.", "&oA Ordem dos Caçadores precisa de você.\"", "", "— &6Mestre Vellan&r, Mestre da Ordem", "{@pagebreak}", "&eComo usar este livro:&r", "• Cada missão mostra o objetivo e a recompensa.", "• Clique em uma missão para ver os detalhes e pegar a recompensa.", "• Missões novas aparecem conforme você avança.", "", "&eCombate:&r este mundo usa o &cEpic Fight&r. Aperte &eR&r para alternar entre o modo normal e o modo de combate.", "As outras teclas ficam em &eOpções > Controles&r, na seção do Epic Fight.", "", "&eOutras teclas:&r &eK&r árvores de habilidades, &eJ&r movimentos do Epic Fight, &eV&r lança o feitiço escolhido, &eZ&r roda de feitiços (ou &eCtrl&r + rolar o mouse), &eF7&r liga e desliga os shaders.", "{@pagebreak}", "&eO Mestre Vellan:&r ele aparece &fna sua frente&r assim que você entra no mundo pela primeira vez.", "Clique nele com o botão direito para conversar e escolher sua classe. Ele também comenta cada etapa da história e dá dicas.", "&7Se você mudar de base, a missão \"Chamar o Mestre\" traz ele até você.&r"]
 			tasks: [
 				{
 					id: "4A7E5C2F98DD01D9"
@@ -55,8 +55,8 @@
 		{
 			id: "61D6E519B4E5DB1C"
 			title: "Chamar o Mestre"
-			x: 0.0d
-			y: 2.5d
+			x: 2.0d
+			y: -1.5d
 			icon: "minecraft:bell"
 			shape: "circle"
 			size: 0.75d
@@ -84,10 +84,59 @@
 			]
 		}
 		{
+			id: "683AFFAD0FF30115"
+			title: "Como Ficar Mais Forte"
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Leia se os monstros estão difíceis"
+			icon: "minecraft:shield"
+			shape: "circle"
+			description: ["&6Mestre Vellan&r: \"Os monstros daqui não são os de antigamente. Força bruta não basta: você precisa lutar do jeito certo.\"", "", "&e1. Modo de combate (tecla R)&r", "Sem ele você bate como no Minecraft normal e não consegue esquivar. &cLute sempre no modo de combate.&r", "• &eAlt esquerdo&r: esquiva (rolamento). Passe por dentro do golpe do inimigo.", "• &eBotão direito&r: defende com a arma ou o escudo.", "• Esquivar e defender gastam a &ebarra de fôlego&r. Não fique batendo sem parar: espere o inimigo errar e contra-ataque.", "{@pagebreak}", "&e2. Árvores de habilidades (tecla K)&r", "Todo mundo tem três árvores, que sobem sozinhas enquanto você joga:", "• &cCombate&r: sobe matando monstros (dano, crítico, roubo de vida).", "• &7Mineração&r: sobe minerando (velocidade, alcance, sorte).", "• &aVida&r: sobe comendo e levando dano (corações, armadura, velocidade).", "Cada nível dá &e1 ponto&r. Abra o K de vez em quando e gaste os pontos!", "A árvore da sua &eclasse&r ganha pontos matando monstros e derrotando chefes.", "{@pagebreak}", "&e3. Equipamento&r", "• Escolha a classe e pegue o &ekit&r no livro: ele já traz armadura e arma boas para o começo.", "• Faça armadura de ferro assim que puder. Ela faz mais diferença que a arma.", "", "&e4. Cuidado com&r", "• Monstros que &6brilham&r ou têm &6nome colorido&r: são versões de elite. Fuja deles no começo.", "• A noite: os monstros mais fortes aparecem no escuro. Durma numa cama.", "• Vida só se recupera com a &efome cheia&r: ande sempre com comida.", "", "&7Pegue a recompensa: 1 ponto extra nas árvores de Combate e Vida, e um escudo.&r"]
+			dependencies: ["3BB64CCD28B4E329"]
+			tasks: [
+				{
+					id: "7B4D18C33071EDA1"
+					type: "checkmark"
+					title: "Entendi"
+				}
+			]
+			rewards: [
+				{
+					id: "151662160BE05E27"
+					type: "item"
+					item: "minecraft:shield"
+				}
+				{
+					id: "429C981897957DFB"
+					type: "item"
+					item: "minecraft:cooked_beef"
+					count: 12
+				}
+				{
+					id: "40AF2ABE74F55D05"
+					type: "command"
+					command: "/puffish_skills points add {p} terras_partidas:combate 1"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto na árvore de Combate"
+					icon: "minecraft:iron_sword"
+				}
+				{
+					id: "51D70506760902FD"
+					type: "command"
+					command: "/puffish_skills points add {p} terras_partidas:vida 1"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto na árvore de Vida"
+					icon: "minecraft:golden_apple"
+				}
+			]
+		}
+		{
 			id: "7705A346645D703A"
 			title: "Escolha seu Caminho"
-			x: 2.5d
-			y: 0.0d
+			x: 2.0d
+			y: 1.5d
 			subtitle: "Só dá para escolher uma vez"
 			icon: "minecraft:compass"
 			shape: "hexagon"
@@ -106,8 +155,8 @@
 		{
 			id: "062E0BFC8535363C"
 			title: "&cGuerreiro"
-			x: 5.0d
-			y: -2.5d
+			x: 4.0d
+			y: -1.5d
 			icon: "epicfight:iron_longsword"
 			shape: "diamond"
 			description: ["&6Mestre Vellan&r: \"Então você é um &cGuerreiro&r.\"", "", "Você luta de frente, com espada longa e armadura. Bom para quem está começando.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
@@ -128,21 +177,43 @@
 				{
 					id: "42538C34B5C39B79"
 					type: "item"
-					item: "minecraft:chainmail_chestplate"
+					item: "minecraft:chainmail_helmet"
 				}
 				{
 					id: "23B66E5EFA1E6672"
 					type: "item"
-					item: "minecraft:chainmail_helmet"
+					item: "minecraft:chainmail_chestplate"
 				}
 				{
 					id: "383CCE6350BB267D"
+					type: "item"
+					item: "minecraft:chainmail_leggings"
+				}
+				{
+					id: "5C6588EEA786E284"
+					type: "item"
+					item: "minecraft:chainmail_boots"
+				}
+				{
+					id: "480D4009B1D112DF"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strength"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "13F5CE490FED68AF"
 					type: "item"
 					item: "minecraft:cooked_beef"
 					count: 12
 				}
 				{
-					id: "5C6588EEA786E284"
+					id: "5507D197D75B4A73"
 					type: "command"
 					command: "/puffish_skills category unlock {p} terras_partidas:guerreiro"
 					elevate_perms: true
@@ -151,7 +222,7 @@
 					icon: "minecraft:enchanted_book"
 				}
 				{
-					id: "480D4009B1D112DF"
+					id: "34A7EFA16E114BAF"
 					type: "command"
 					command: "/tag {p} add terras_partidas_classe"
 					elevate_perms: true
@@ -164,8 +235,8 @@
 		{
 			id: "3F450D4A9B68A9C4"
 			title: "&9Tanque"
-			x: 5.0d
-			y: -1.25d
+			x: 4.0d
+			y: 0.0d
 			icon: "minecraft:shield"
 			shape: "diamond"
 			description: ["&6Mestre Vellan&r: \"Então você é um &9Tanque&r.\"", "", "Você aguenta pancada. Escudo, armadura de ferro e a técnica de &eAparar&r do Epic Fight.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
@@ -186,15 +257,25 @@
 				{
 					id: "35A4C0546F8AA28B"
 					type: "item"
-					item: "minecraft:iron_chestplate"
+					item: "minecraft:iron_helmet"
 				}
 				{
 					id: "139AF163BEDC3D79"
 					type: "item"
-					item: "epicfight:iron_spear"
+					item: "minecraft:iron_chestplate"
 				}
 				{
 					id: "3D6B1CAFAB2E6CAF"
+					type: "item"
+					item: "minecraft:iron_leggings"
+				}
+				{
+					id: "6BB43F7D0A3FE153"
+					type: "item"
+					item: "epicfight:iron_spear"
+				}
+				{
+					id: "3290BC7A4861A070"
 					type: "item"
 					item: {
 						id: "epicfight:skillbook"
@@ -205,13 +286,13 @@
 					}
 				}
 				{
-					id: "6BB43F7D0A3FE153"
+					id: "2B5CDE994328F450"
 					type: "item"
 					item: "minecraft:cooked_beef"
 					count: 12
 				}
 				{
-					id: "3290BC7A4861A070"
+					id: "476A6285F3953915"
 					type: "command"
 					command: "/puffish_skills category unlock {p} terras_partidas:tanque"
 					elevate_perms: true
@@ -220,7 +301,7 @@
 					icon: "minecraft:enchanted_book"
 				}
 				{
-					id: "2B5CDE994328F450"
+					id: "4F05C096B9EFDEC7"
 					type: "command"
 					command: "/tag {p} add terras_partidas_classe"
 					elevate_perms: true
@@ -233,8 +314,8 @@
 		{
 			id: "09A7904C3E38C2EE"
 			title: "&8Assassino"
-			x: 5.0d
-			y: 0.0d
+			x: 4.0d
+			y: 1.5d
 			icon: "epicfight:iron_dagger"
 			shape: "diamond"
 			description: ["&6Mestre Vellan&r: \"Então você é um &8Assassino&r.\"", "", "Você é rápido. Duas adagas (uma em cada mão), poções de velocidade e o &ePasso&r, uma esquiva mais curta e ágil.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
@@ -250,15 +331,52 @@
 				{
 					id: "4CEE3815DDC9387D"
 					type: "item"
-					item: "epicfight:iron_dagger"
+					item: {
+						id: "epicfight:iron_dagger"
+						Count: 1b
+						tag: {
+							Enchantments: [
+								{
+									id: "minecraft:sharpness"
+									lvl: 1s
+								}
+							]
+						}
+					}
 				}
 				{
 					id: "57A54354A0CF9E64"
 					type: "item"
-					item: "epicfight:iron_dagger"
+					item: {
+						id: "epicfight:iron_dagger"
+						Count: 1b
+						tag: {
+							Enchantments: [
+								{
+									id: "minecraft:sharpness"
+									lvl: 1s
+								}
+							]
+						}
+					}
 				}
 				{
 					id: "7F8B1122A4D0AD11"
+					type: "item"
+					item: "minecraft:leather_helmet"
+				}
+				{
+					id: "1508F25B5B39F891"
+					type: "item"
+					item: "minecraft:chainmail_chestplate"
+				}
+				{
+					id: "472E94934468B72D"
+					type: "item"
+					item: "minecraft:leather_boots"
+				}
+				{
+					id: "47C12ADC9E4F755A"
 					type: "item"
 					item: {
 						id: "minecraft:potion"
@@ -267,10 +385,10 @@
 							Potion: "minecraft:swiftness"
 						}
 					}
-					count: 2
+					count: 3
 				}
 				{
-					id: "1508F25B5B39F891"
+					id: "1E3B5317E1AE9B77"
 					type: "item"
 					item: {
 						id: "epicfight:skillbook"
@@ -281,19 +399,19 @@
 					}
 				}
 				{
-					id: "472E94934468B72D"
+					id: "56416D228B2EFC7A"
 					type: "item"
 					item: "minecraft:ender_pearl"
-					count: 2
+					count: 4
 				}
 				{
-					id: "47C12ADC9E4F755A"
+					id: "40C2F329BDCFFFD2"
 					type: "item"
 					item: "minecraft:cooked_beef"
 					count: 12
 				}
 				{
-					id: "1E3B5317E1AE9B77"
+					id: "73C0A06F846A6591"
 					type: "command"
 					command: "/puffish_skills category unlock {p} terras_partidas:assassino"
 					elevate_perms: true
@@ -302,7 +420,7 @@
 					icon: "minecraft:enchanted_book"
 				}
 				{
-					id: "56416D228B2EFC7A"
+					id: "7DB70B7102CC6349"
 					type: "command"
 					command: "/tag {p} add terras_partidas_classe"
 					elevate_perms: true
@@ -315,11 +433,11 @@
 		{
 			id: "3E1B2E122F610121"
 			title: "&5Mago"
-			x: 5.0d
-			y: 1.25d
+			x: 4.0d
+			y: 3.0d
 			icon: "irons_spellbooks:copper_spell_book"
 			shape: "diamond"
-			description: ["&6Mestre Vellan&r: \"Então você é um &5Mago&r.\"", "", "Você usa magia. Pergaminhos podem ser lidos direto (clique direito) ou gravados no livro na &eMesa de Inscrição&r.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
+			description: ["&6Mestre Vellan&r: \"Então você é um &5Mago&r.\"", "", "Você usa magia. Seu &flivro de feitiços&r já vem com 4 feitiços gravados, que &fnão acabam&r (usam mana). Coloque o livro no &eespaço do livro&r do inventário e aperte &eV&r para lançar o feitiço escolhido; &eZ&r abre a roda de feitiços. Pergaminhos avulsos somem quando usados: grave-os no livro na &eMesa de Inscrição&r para usar sempre.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
 			dependencies: ["7705A346645D703A"]
 			tasks: [
 				{
@@ -332,18 +450,8 @@
 				{
 					id: "6B3BF95586B070C9"
 					type: "item"
-					item: "irons_spellbooks:copper_spell_book"
-				}
-				{
-					id: "0CAB45F8CA8F85B4"
-					type: "item"
-					item: "irons_spellbooks:inscription_table"
-				}
-				{
-					id: "22D4FBDE3290B4ED"
-					type: "item"
 					item: {
-						id: "irons_spellbooks:scroll"
+						id: "irons_spellbooks:copper_spell_book"
 						Count: 1b
 						tag: {
 							ISB_Spells: {
@@ -351,43 +459,68 @@
 									{
 										id: "irons_spellbooks:firebolt"
 										index: 0
+										level: 2
+										locked: 0b
+									}
+									{
+										id: "irons_spellbooks:magic_missile"
+										index: 1
+										level: 2
+										locked: 0b
+									}
+									{
+										id: "irons_spellbooks:icicle"
+										index: 2
 										level: 1
-										locked: 1b
+										locked: 0b
+									}
+									{
+										id: "irons_spellbooks:heal"
+										index: 3
+										level: 1
+										locked: 0b
 									}
 								]
-								maxSpells: 1
-								mustEquip: 0b
-								spellWheel: 0b
+								maxSpells: 5
+								mustEquip: 1b
+								spellWheel: 1b
 							}
 						}
 					}
+				}
+				{
+					id: "0CAB45F8CA8F85B4"
+					type: "item"
+					item: "irons_spellbooks:artificer_cane"
+				}
+				{
+					id: "22D4FBDE3290B4ED"
+					type: "item"
+					item: "irons_spellbooks:wandering_magician_helmet"
 				}
 				{
 					id: "340C24C06EB6F349"
 					type: "item"
-					item: {
-						id: "irons_spellbooks:scroll"
-						Count: 1b
-						tag: {
-							ISB_Spells: {
-								data: [
-									{
-										id: "irons_spellbooks:magic_missile"
-										index: 0
-										level: 1
-										locked: 1b
-									}
-								]
-								maxSpells: 1
-								mustEquip: 0b
-								spellWheel: 0b
-							}
-						}
-					}
+					item: "irons_spellbooks:wandering_magician_chestplate"
 				}
 				{
 					id: "1AA8BF0E39B66A19"
 					type: "item"
+					item: "irons_spellbooks:wandering_magician_leggings"
+				}
+				{
+					id: "427B598FF948C6E2"
+					type: "item"
+					item: "irons_spellbooks:wandering_magician_boots"
+				}
+				{
+					id: "49B600ADEEAD20A4"
+					type: "item"
+					item: "irons_spellbooks:inscription_table"
+				}
+				{
+					id: "301A9D56EF341131"
+					type: "item"
 					item: {
 						id: "irons_spellbooks:scroll"
 						Count: 1b
@@ -395,7 +528,7 @@
 							ISB_Spells: {
 								data: [
 									{
-										id: "irons_spellbooks:heal"
+										id: "irons_spellbooks:shield"
 										index: 0
 										level: 1
 										locked: 1b
@@ -409,18 +542,36 @@
 					}
 				}
 				{
-					id: "427B598FF948C6E2"
+					id: "4FCE833DD4EC5118"
 					type: "item"
-					item: "irons_spellbooks:wandering_magician_chestplate"
+					item: {
+						id: "irons_spellbooks:scroll"
+						Count: 1b
+						tag: {
+							ISB_Spells: {
+								data: [
+									{
+										id: "irons_spellbooks:wisp"
+										index: 0
+										level: 1
+										locked: 1b
+									}
+								]
+								maxSpells: 1
+								mustEquip: 0b
+								spellWheel: 0b
+							}
+						}
+					}
 				}
 				{
-					id: "49B600ADEEAD20A4"
+					id: "7FB211D225D73BA9"
 					type: "item"
 					item: "minecraft:cooked_beef"
 					count: 12
 				}
 				{
-					id: "301A9D56EF341131"
+					id: "60CB7CC90B10A4B7"
 					type: "command"
 					command: "/puffish_skills category unlock {p} terras_partidas:mago"
 					elevate_perms: true
@@ -429,7 +580,7 @@
 					icon: "minecraft:enchanted_book"
 				}
 				{
-					id: "4FCE833DD4EC5118"
+					id: "0F4D5C3BA5E6EFFD"
 					type: "command"
 					command: "/tag {p} add terras_partidas_classe"
 					elevate_perms: true
@@ -442,8 +593,8 @@
 		{
 			id: "40FA859627277492"
 			title: "&aCaçador"
-			x: 5.0d
-			y: 2.5d
+			x: 4.0d
+			y: 4.5d
 			icon: "minecraft:bow"
 			shape: "diamond"
 			description: ["&6Mestre Vellan&r: \"Então você é um &aCaçador&r.\"", "", "Você ataca de longe. Arco, muitas flechas e uma adaga para quando o inimigo chegar perto.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
@@ -459,7 +610,18 @@
 				{
 					id: "3E40D21813BEEA4E"
 					type: "item"
-					item: "minecraft:bow"
+					item: {
+						id: "minecraft:bow"
+						Count: 1b
+						tag: {
+							Enchantments: [
+								{
+									id: "minecraft:power"
+									lvl: 2s
+								}
+							]
+						}
+					}
 				}
 				{
 					id: "479675F7A04521A2"
@@ -470,21 +632,42 @@
 				{
 					id: "1DDFF0D970F23DCC"
 					type: "item"
-					item: "epicfight:iron_dagger"
+					item: "minecraft:arrow"
+					count: 64
 				}
 				{
 					id: "6BDE7C2FFADECA99"
 					type: "item"
-					item: "minecraft:leather_chestplate"
+					item: "epicfight:iron_dagger"
 				}
 				{
 					id: "5422174160C6EA6F"
+					type: "item"
+					item: "minecraft:leather_helmet"
+				}
+				{
+					id: "221CBF37AA517D23"
+					type: "item"
+					item: "minecraft:leather_chestplate"
+				}
+				{
+					id: "54B7CD96976DD6B2"
+					type: "item"
+					item: "minecraft:leather_leggings"
+				}
+				{
+					id: "052D78328314E3AD"
+					type: "item"
+					item: "minecraft:leather_boots"
+				}
+				{
+					id: "639CE4D43391A2EB"
 					type: "item"
 					item: "minecraft:cooked_beef"
 					count: 12
 				}
 				{
-					id: "221CBF37AA517D23"
+					id: "3C5850E9265E563D"
 					type: "command"
 					command: "/puffish_skills category unlock {p} terras_partidas:cacador"
 					elevate_perms: true
@@ -493,7 +676,7 @@
 					icon: "minecraft:enchanted_book"
 				}
 				{
-					id: "54B7CD96976DD6B2"
+					id: "7D4E7248A181DB29"
 					type: "command"
 					command: "/tag {p} add terras_partidas_classe"
 					elevate_perms: true
@@ -506,12 +689,13 @@
 		{
 			id: "5A8FBE105E9C4E06"
 			title: "Ferramentas de Ferro"
-			x: 7.5d
-			y: -2.5d
+			x: 6.0d
+			y: 1.0d
 			icon: "minecraft:iron_pickaxe"
 			description: ["&6Mestre Vellan&r: \"Ninguém caça de mãos vazias. Arrume ferramentas decentes.\"", "", "Faça uma &fpicareta de ferro&r."]
 			dependencies: ["062E0BFC8535363C", "3F450D4A9B68A9C4", "09A7904C3E38C2EE", "3E1B2E122F610121", "40FA859627277492"]
 			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			tasks: [
 				{
 					id: "3F86D08EA17C13A2"
@@ -537,8 +721,8 @@
 		{
 			id: "4F00E29859D87333"
 			title: "Uma Mochila de Verdade"
-			x: 10.0d
-			y: -3.5d
+			x: 8.0d
+			y: 0.0d
 			icon: "sophisticatedbackpacks:backpack"
 			description: ["O inventário vai encher rápido. Faça uma &fmochila&r.", "Dá para melhorar ela depois (cobre, ferro, ouro...)."]
 			dependencies: ["5A8FBE105E9C4E06"]
@@ -567,8 +751,8 @@
 		{
 			id: "1D8DEB71D2179B63"
 			title: "Abrigo Seguro"
-			x: 10.0d
-			y: -1.5d
+			x: 8.0d
+			y: 1.0d
 			icon: "minecraft:red_bed"
 			description: ["As noites aqui são bem mais perigosas do que você está acostumado.", "Faça uma cama e &fdurma&r para pular a noite e marcar seu ponto de renascer."]
 			dependencies: ["5A8FBE105E9C4E06"]
@@ -599,8 +783,8 @@
 		{
 			id: "454A15647F6BC9D0"
 			title: "Uma Vila Amiga"
-			x: 12.5d
-			y: -2.5d
+			x: 10.0d
+			y: 0.5d
 			icon: "minecraft:emerald"
 			description: ["&6Mestre Vellan&r: \"As vilas são o último refúgio deste mundo. Os &fguardas&r protegem os aldeões, mas precisam de ajuda.\"", "", "Encontre uma &fvila&r. Muitas delas têm um &bObelisco&r (Waystone), uma pedra que te teleporta entre lugares já visitados."]
 			dependencies: ["4F00E29859D87333", "1D8DEB71D2179B63"]
@@ -629,12 +813,13 @@
 		{
 			id: "5557D1E7A6BCD19E"
 			title: "Treino de Combate"
-			x: 7.5d
-			y: 2.5d
+			x: 6.0d
+			y: 2.0d
 			icon: "minecraft:iron_sword"
 			description: ["&6Mestre Vellan&r: \"Antes de enfrentar algo de verdade, aprenda a lutar.\"", "", "No Epic Fight, &eesquivar&r e &edefender&r gasta a barra de fôlego. Não ataque sem parar: espere a abertura do inimigo.", "", "Derrote &c10 zumbis&r."]
 			dependencies: ["062E0BFC8535363C", "3F450D4A9B68A9C4", "09A7904C3E38C2EE", "3E1B2E122F610121", "40FA859627277492"]
 			dependency_requirement: "one_completed"
+			hide_dependency_lines: true
 			tasks: [
 				{
 					id: "0D76BFCEA3ECD5CC"
@@ -660,8 +845,8 @@
 		{
 			id: "17C4CCD7D735263C"
 			title: "Ossos Inquietos"
-			x: 10.0d
-			y: 2.5d
+			x: 8.0d
+			y: 3.0d
 			icon: "minecraft:bone"
 			description: ["Esqueletos de longe são piores que zumbis. Use cobertura e aproxime-se esquivando.", "", "Derrote &c10 esqueletos&r."]
 			dependencies: ["5557D1E7A6BCD19E"]
@@ -691,8 +876,8 @@
 		{
 			id: "328C587F2C229F2B"
 			title: "Algo no Pântano"
-			x: 12.5d
-			y: 2.5d
+			x: 10.0d
+			y: 3.0d
 			subtitle: "Primeiro fragmento"
 			icon: "meetyourfight:fossil_bait"
 			description: ["&6Mestre Vellan&r: \"Pescadores sumiram perto dos pântanos. Algo enorme come qualquer coisa que se move por lá... e eu sinto um fragmento do Selo dentro dele.\"", "", "Pegue esta &fIsca Fóssil&r. Quando estiver pronto, use-a (clique direito) para chamar a criatura.", "", "&7Equipamento recomendado: pedra ou ferro.&r"]
@@ -727,8 +912,8 @@
 		{
 			id: "7FCBF496418E37A1"
 			title: "Chefe: Swampjaw"
-			x: 15.0d
-			y: 2.5d
+			x: 12.0d
+			y: 2.0d
 			icon: "meetyourfight:fossil_bait"
 			shape: "octagon"
 			size: 1.5d
@@ -800,8 +985,8 @@
 		{
 			id: "2DDB6DFF55F4CC55"
 			title: "Mais uma Isca"
-			x: 15.0d
-			y: 4.5d
+			x: 12.0d
+			y: 3.5d
 			icon: "meetyourfight:fossil_bait"
 			shape: "circle"
 			size: 0.75d
@@ -829,8 +1014,8 @@
 		{
 			id: "45A12E1B413F8922"
 			title: "O Sino Assombrado"
-			x: 17.5d
-			y: 0.0d
+			x: 14.0d
+			y: 2.0d
 			subtitle: "Segundo fragmento"
 			icon: "meetyourfight:haunted_bell"
 			description: ["&6Mestre Vellan&r: \"Muito bem. O segundo fragmento está preso a um espírito que toca um sino nas ruínas. Cada badalada atrai a morte.\"", "", "Pegue o &fSino Assombrado&r. Tocá-lo invoca o &cBellringer&r.", "", "&7Equipamento recomendado: ferro ou diamante. Ele é rápido: guarde a esquiva para quando ele avançar.&r"]
@@ -867,8 +1052,8 @@
 		{
 			id: "687FD9580D24CDE1"
 			title: "Chefe: Bellringer"
-			x: 20.0d
-			y: 0.0d
+			x: 16.0d
+			y: 1.5d
 			icon: "meetyourfight:haunted_bell"
 			shape: "octagon"
 			size: 1.5d
@@ -941,8 +1126,8 @@
 		{
 			id: "208DE0E0CA9FC9FD"
 			title: "Outro Sino"
-			x: 20.0d
-			y: 2.0d
+			x: 16.0d
+			y: 3.0d
 			icon: "meetyourfight:haunted_bell"
 			shape: "circle"
 			size: 0.75d
@@ -970,8 +1155,8 @@
 		{
 			id: "25F06794A8E1D9BF"
 			title: "Rumores na Vila"
-			x: 15.0d
-			y: -4.5d
+			x: 14.0d
+			y: 0.5d
 			subtitle: "Terceiro fragmento"
 			icon: "minecraft:filled_map"
 			description: ["&6Mestre Vellan&r: \"Os aldeões falam de um &fcavaleiro de metal&r que guarda uma câmara no subsolo. Nunca saiu de lá, nunca dormiu... e agora carrega um fragmento do Selo.\"", "", "&o\"Um minerador desenhou este mapa antes de fugir. O X marca a entrada.\"", "", "&7Segure o mapa na mão para ver o caminho. O mapa pode demorar alguns segundos para aparecer.&r"]
@@ -1010,8 +1195,8 @@
 		{
 			id: "11F210357E4C4450"
 			title: "A Câmara Forjada"
-			x: 17.5d
-			y: -4.5d
+			x: 16.0d
+			y: 0.0d
 			icon: "mowziesmobs:wrought_helmet"
 			description: ["Siga o mapa até o &fX vermelho&r. A Câmara fica &fno subsolo&r (entre as camadas Y 20 e 50): cave para baixo quando chegar no ponto.", "", "&7Dica: os mapas do Xaero ajudam a marcar o caminho (tecla &eB&7 para criar um ponto de referência).&r"]
 			dependencies: ["25F06794A8E1D9BF"]
@@ -1046,8 +1231,8 @@
 		{
 			id: "31549F6EF053CF36"
 			title: "Chefe: Cavaleiro Forjado"
-			x: 20.0d
-			y: -4.5d
+			x: 18.0d
+			y: 0.0d
 			icon: "mowziesmobs:wrought_axe"
 			shape: "octagon"
 			size: 1.5d
@@ -1120,8 +1305,8 @@
 		{
 			id: "5733992D42C9FA1E"
 			title: "Relatório ao Mestre"
-			x: 23.0d
-			y: -1.75d
+			x: 20.0d
+			y: 1.0d
 			subtitle: "Fim do Ato 1"
 			icon: "minecraft:amethyst_shard"
 			shape: "gear"

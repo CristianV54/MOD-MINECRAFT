@@ -1,0 +1,83 @@
+{
+  "resistente": {
+    "definition": "resistente",
+    "x": 0,
+    "y": 0,
+    "root": true
+  },
+  "cor_1": {
+    "definition": "cor_1",
+    "x": -34,
+    "y": -34
+  },
+  "cor_2": {
+    "definition": "cor_2",
+    "x": -68,
+    "y": -68
+  },
+  "cor_3": {
+    "definition": "cor_3",
+    "x": -102,
+    "y": -102
+  },
+  "cor_4": {
+    "definition": "cor_4",
+    "x": -136,
+    "y": -136
+  },
+  "imortal": {
+    "definition": "imortal",
+    "x": -170,
+    "y": -170
+  },
+  "couro_1": {
+    "definition": "couro_1",
+    "x": 0,
+    "y": -34
+  },
+  "couro_2": {
+    "definition": "couro_2",
+    "x": 0,
+    "y": -68
+  },
+  "couro_3": {
+    "definition": "couro_3",
+    "x": 0,
+    "y": -102
+  },
+  "couro_4": {
+    "definition": "couro_4",
+    "x": 0,
+    "y": -136
+  },
+  "muralha_viva": {
+    "definition": "muralha_viva",
+    "x": 0,
+    "y": -170
+  },
+  "via_1": {
+    "definition": "via_1",
+    "x": 34,
+    "y": -34
+  },
+  "via_2": {
+    "definition": "via_2",
+    "x": 68,
+    "y": -68
+  },
+  "via_3": {
+    "definition": "via_3",
+    "x": 102,
+    "y": -102
+  },
+  "via_4": {
+    "definition": "via_4",
+    "x": 136,
+    "y": -136
+  },
+  "andarilho": {
+    "definition": "andarilho",
+    "x": 170,
+    "y": -170
+  }
+}

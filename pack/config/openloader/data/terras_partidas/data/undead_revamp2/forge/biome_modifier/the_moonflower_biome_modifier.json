@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#minecraft:is_overworld",
+  "spawners": {
+    "type": "undead_revamp2:the_moonflower",
+    "weight": 1,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}
