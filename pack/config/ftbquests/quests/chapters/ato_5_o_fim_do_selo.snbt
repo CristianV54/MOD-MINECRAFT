@@ -665,7 +665,7 @@
 			icon: "minecraft:beacon"
 			shape: "gear"
 			size: 2.5d
-			description: ["&6Mestre Vellan&r: \"Dezenove fragmentos. O Selo está inteiro de novo.\"", "", "&o\"Quando você colocou o último pedaço no lugar, o cristal brilhou mais forte do que qualquer coisa que eu já vi. O Arauto virou pó. Os guardiões caídos podem finalmente descansar.\"", "", "&o\"Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez. O mundo está inteiro de novo, graças a você.\"", "", "&6&lObrigado por jogar SealCraft!&r", "", "&7Ainda tem os &fDesafios Lendários&7 ao lado, para quem quer mais.&r"]
+			description: ["&6Mestre Vellan&r: \"Dezenove fragmentos. O Selo está inteiro de novo.\"", "", "&o\"Quando você colocou o último pedaço no lugar, o cristal brilhou mais forte do que qualquer coisa que eu já vi. O Arauto virou pó. Os guardiões caídos podem finalmente descansar.\"", "", "&o\"Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez. O mundo está inteiro de novo, graças a você.\"", "", "&o\"Preciso te contar uma coisa. Você enfrentou seis guardiões... mas éramos sete. Eu sou o sétimo. Fiquei neste mundo, escondido na Ordem, esperando alguém forte o bastante para terminar o que começamos.\"", "", "&6&lObrigado por jogar SealCraft!&r", "", "&7Ainda tem os &fDesafios Lendários&7 ao lado, para quem quer mais.&r"]
 			dependencies: ["07409C87B9FB6E33"]
 			tasks: [
 				{

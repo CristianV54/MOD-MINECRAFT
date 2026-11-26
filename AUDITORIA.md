@@ -84,3 +84,50 @@ Algumas estruturas variaram entre um teste e outro, por isso aparecem como faixa
 4. Use a Isca Fóssil e lute com o Swampjaw.
 5. Pegue o mapa da Câmara Forjada e veja se o X aparece.
 6. Anote o FPS e o uso de memória (F3).
+
+---
+
+# Auditoria 2: diversão fora das missões e curva de dificuldade (versão 0.12.0)
+
+## Exploração livre a partir do spawn (mundo novo, semente 12345)
+
+| O que | Distância do spawn |
+|---|---|
+| Mina abandonada melhorada (YUNG's) | 35 blocos |
+| Caverna verde (lush caves) | 64 blocos |
+| Escuridão profunda (deep dark) | 226 blocos |
+| Masmorra grande qualquer do When Dungeons Arise | 480 blocos (era bem mais longe, ver abaixo) |
+| Masmorras com gerador de zumbi, aranha e esqueleto (YUNG's) | 496 / 613 / 809 blocos |
+| Cripta (Dungeons and Taverns) | 508 blocos |
+| Cemitério (Structory) | 592 blocos |
+| Cavernas de estalactites (dripstone) | 911 blocos |
+| Prisão de Gelo do chefe extra Maledictus (Cataclysm) | ~1.800 blocos (era 11.379) |
+| Cidade Afundada do Leviatã | ~4.000 blocos (era 5.500) |
+
+**Criaturas novas:** cerca de 400, de 16 mods. Os que mais trazem são Born in Chaos (83), Alex's Mobs (~90), Undead Revamped (45), Cataclysm (41) e Blue Skies (36).
+
+**Chefes extras fora da história:** Ancient Remnant, Maledictus, Scylla e Clawdian (Cataclysm), além das masmorras do When Dungeons Arise, que trazem chefes próprios.
+
+## Correções desta auditoria
+
+- **Masmorras grandes do When Dungeons Arise:** o mod sorteia uma estrutura grande a cada 60 chunks, entre 31 tipos, e cada tipo ficava a milhares de blocos. Reduzi para 36 chunks (as estruturas pequenas, de 35 para 24).
+- **Estruturas extras do Cataclysm:** pirâmide, prisão de gelo e acrópole estavam espaçadas de 80 chunks, com a "semente" gigante que já tinha travado a Arena Ardente. Ficaram com 48 chunks e semente normal. A Cidade Afundada foi de 100 para 60.
+- **História:** a lore fala em sete guardiões, mas o jogador só enfrenta seis (4 no Ato 4 e 2 no Ato 5). O final agora revela que o sétimo é o próprio Mestre Vellan, tanto na missão "O Selo Restaurado" quanto na fala final dele.
+
+## Curva de dificuldade (vida base medida no servidor)
+
+| Ato | Chefes (vida base) |
+|---|---|
+| 1 | Swampjaw 100, Bellringer 200, Cavaleiro Forjado 40* |
+| 2 | Frostmaw 250, Umvuthi 150, Capitã Cornelia 20*, Dame Fortuna 300 |
+| 3 | Monstruosidade 600, Ignis 450, Manopla 250, Wither 300 |
+| 4 | Summoner 350, Starlit Crusher 500, Alchemist 500, Arachnarch 500 |
+| 5 | Dragão 200, Guardião Ender 333, Obsidilith 300, Arauto 390 |
+
+\* Alguns mods ajustam a vida quando o chefe aparece de verdade (configuração ou fases), então o valor real pode ser maior.
+
+**Leitura:** a vida sobe do Ato 1 ao Ato 4. Os chefes do Ato 5 têm menos vida, mas são os mais perigosos pelas mecânicas: fases de imunidade, lasers, mísseis e invocações. Pensei em reforçar os chefes do Blue Skies, mas os números mostraram que eles já estão no nível dos do Nether, então o reforço foi descartado.
+
+## Ainda falta para a base
+
+Hoje o pacote tem mochilas (Sophisticated Backpacks), culinária (Farmer's Delight) e Obeliscos de teletransporte. **Não tem** mods de baús melhores nem de decoração e móveis.

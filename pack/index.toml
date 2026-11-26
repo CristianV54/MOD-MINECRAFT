@@ -26,7 +26,7 @@ hash = "ceb4cdb7f3fc4612ec06d279f4374ac505a93b252ed1996653f30b9091d0f9d1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_5_o_fim_do_selo.snbt"
-hash = "a8d39641934b600e203085d6b870180a84ac5650d0b49a6c1d5bd99206838ee7"
+hash = "e4ab96276cb37b0cf37594a88971f08d26a418ad5162a528e03625bb2312c273"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -37,12 +37,36 @@ file = "config/openloader/data/terras_partidas/data/cataclysm/tags/worldgen/biom
 hash = "6eebfb61ce626634d52f9165d92d9a9e5563b9536daa303a0816cd8395c7841e"
 
 [[files]]
+file = "config/openloader/data/terras_partidas/data/cataclysm/worldgen/structure_set/acropolis.json"
+hash = "2f40c48f1e41cf90ff276cc1ff114cddadcbba00ccda06e53133e279fd7dca21"
+
+[[files]]
 file = "config/openloader/data/terras_partidas/data/cataclysm/worldgen/structure_set/burning_arena.json"
 hash = "e4a12d086e1d4057e6c58caf665bcad5b8bd52f815769cdeeaa0164cd00fdbf4"
 
 [[files]]
+file = "config/openloader/data/terras_partidas/data/cataclysm/worldgen/structure_set/cursed_pyramid.json"
+hash = "6a113eb4306d1a5769797998e6376107916c0541294c9fc3d833b2201ebbe5d1"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/cataclysm/worldgen/structure_set/frosted_prison.json"
+hash = "dd2e057bc14259f8e8463e49fc23f59d5524f59ebac20d568df5ccbf064f3db6"
+
+[[files]]
 file = "config/openloader/data/terras_partidas/data/cataclysm/worldgen/structure_set/soul_black_smith.json"
 hash = "05063959ab9cbcd676512a196121d0d50e2217791651a088d8cb15a979f5df74"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/cataclysm/worldgen/structure_set/sunken_city.json"
+hash = "9283002f8d856f18f484bf9ac47c29094fd0dc953b6f7f53c13c3fa24fb7cd7c"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/dungeons_arise/worldgen/structure_set/major_structures.json"
+hash = "e19e88d49fab9e1a7ffd69e215a7fabb0f684b6e4e9ff59797624a529b12fa7f"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/dungeons_arise/worldgen/structure_set/minor_structures.json"
+hash = "88695070fc756517fce928115502a1a5642443ea657131c869b996ad26290ccc"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/mowziesmobs/tags/worldgen/biome/has_structure/has_mowzie_structure.json"
@@ -50,7 +74,7 @@ hash = "0ee75ac9e4f5bbcd3fa6ce4f54e081f57590cc6c8831cefcd1870afa88d32ba2"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/easy_npc/preset/humanoid/mestre_vellan.npc.snbt"
-hash = "7be6abd911e55c8028e302878508ff1ad05c48d9f532c9ef500fa0413c0940f3"
+hash = "e0a24fa90561aab02a5fb6381679887e49b15720cdfd68d74863db4fdafd47d6"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/chamar_vellan.mcfunction"

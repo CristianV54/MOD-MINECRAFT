@@ -1180,6 +1180,8 @@ def ato5():
                        "",
                        "&o\"Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez. O mundo está inteiro de novo, graças a você.\"",
                        "",
+                       "&o\"Preciso te contar uma coisa. Você enfrentou seis guardiões... mas éramos sete. Eu sou o sétimo. Fiquei neste mundo, escondido na Ordem, esperando alguém forte o bastante para terminar o que começamos.\"",
+                       "",
                        "&6&lObrigado por jogar SealCraft!&r",
                        "",
                        "&7Ainda tem os &fDesafios Lendários&7 ao lado, para quem quer mais.&r"],
@@ -1306,7 +1308,7 @@ def mestre_vellan():
              tag=tag_ato(4)),
         fala("final", "O Selo Restaurado", 6,
              "@initiator... você conseguiu.\\n\\n"
-             "Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez. "
+             "Trezentos anos atrás, sete guardiões criaram o Selo. Seis você enfrentou. O sétimo sou eu, e esperei três séculos por alguém como você. "
              "A Ordem nunca vai esquecer o seu nome.\\n\\n"
              "Se ainda quiser lutar, dizem que uma flor do vazio e um leviatã ainda vagam pelo mundo...",
              tag="terras_partidas_fim"),
