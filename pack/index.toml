@@ -26,11 +26,11 @@ hash = "ceb4cdb7f3fc4612ec06d279f4374ac505a93b252ed1996653f30b9091d0f9d1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_5_o_fim_do_selo.snbt"
-hash = "380ee73f5c5c455d94ada2773885e19571999d8ba4d2e09ba4bac6308077ede6"
+hash = "a8d39641934b600e203085d6b870180a84ac5650d0b49a6c1d5bd99206838ee7"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
-hash = "db76d779c699910388681cd1426745b1874d59bca7a2e47e18298bea936dadfc"
+hash = "e3bbe22d1d6f8ad89587989c4e53b421d43f7563060b3674fc69752b4977578b"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/cataclysm/tags/worldgen/biome/has_structure/burning_arena_biomes.json"
@@ -50,7 +50,7 @@ hash = "0ee75ac9e4f5bbcd3fa6ce4f54e081f57590cc6c8831cefcd1870afa88d32ba2"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/easy_npc/preset/humanoid/mestre_vellan.npc.snbt"
-hash = "311b81132b744c55150de93b51478b0df5acba370dfd66920b408673ebb399fb"
+hash = "7be6abd911e55c8028e302878508ff1ad05c48d9f532c9ef500fa0413c0940f3"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/chamar_vellan.mcfunction"
@@ -210,7 +210,7 @@ hash = "5012df034b663dd756a33f6f7e5fe6e69f97babcfec9173c960fc612e81051c4"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/pack.mcmeta"
-hash = "30bc03d8e6e1b6dd913e17792aeba52f320f5386124b06a407efc6ca0e1130cb"
+hash = "0184a676e6dd9366745a0572cac668ff07d887e51f4d10e35c97ff24e4474b70"
 
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/alexsmobs/lang/pt_br.json"
@@ -450,7 +450,7 @@ hash = "94388c7c3f7c889d939ec40296466d29c1faab9ce249302d980e0d403d4b08f8"
 
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/pack.mcmeta"
-hash = "08e099b3536377ed45423847fd64909d05bed914b58db438b56ae9e6be60e0be"
+hash = "4251e18a47957aec0a7f12b2cc192ca11a09ff522484732bd282f0ecff9a84b3"
 
 [[files]]
 file = "mods/ai-improvements.pw.toml"

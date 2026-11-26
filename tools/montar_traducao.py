@@ -40,7 +40,7 @@ def main(pasta):
     os.makedirs(DESTINO, exist_ok=True)
     with open(os.path.join(DESTINO, "pack.mcmeta"), "w", encoding="utf-8") as f:
         json.dump({"pack": {"pack_format": 15,
-                            "description": "Terras Partidas: tradução PT-BR dos mods"}}, f, ensure_ascii=False, indent=2)
+                            "description": "SealCraft: tradução PT-BR dos mods"}}, f, ensure_ascii=False, indent=2)
     total = 0
     for ns, textos in sorted(por_mod.items()):
         caminho = os.path.join(DESTINO, "assets", ns, "lang", "pt_br.json")

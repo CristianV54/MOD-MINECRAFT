@@ -1,6 +1,6 @@
 {
   PresetMetadata:{
-    author:"Terras Partidas",
+    author:"SealCraft",
     category:"Quest",
     description:"Mestre Vellan, da Ordem dos Caçadores. A fala muda conforme o ato do jogador.",
     entityTypeId:"easy_npc:humanoid",

@@ -1178,9 +1178,9 @@ def ato5():
                        "",
                        "&o\"Quando você colocou o último pedaço no lugar, o cristal brilhou mais forte do que qualquer coisa que eu já vi. O Arauto virou pó. Os guardiões caídos podem finalmente descansar.\"",
                        "",
-                       "&o\"Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez. As Terras Partidas estão inteiras de novo, graças a você.\"",
+                       "&o\"Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez. O mundo está inteiro de novo, graças a você.\"",
                        "",
-                       "&6&lObrigado por jogar Terras Partidas!&r",
+                       "&6&lObrigado por jogar SealCraft!&r",
                        "",
                        "&7Ainda tem os &fDesafios Lendários&7 ao lado, para quem quer mais.&r"],
             tarefas=[c.t_check("Restaurar o Selo")],
@@ -1324,7 +1324,7 @@ def mestre_vellan():
 
     return {
         "PresetMetadata": {
-            "author": "Terras Partidas",
+            "author": "SealCraft",
             "category": "Quest",
             "description": "Mestre Vellan, da Ordem dos Caçadores. A fala muda conforme o ato do jogador.",
             "entityTypeId": "easy_npc:humanoid",
@@ -1375,7 +1375,7 @@ def main():
         "progression_mode": "linear",
         "detection_delay": 20,
         "drop_book_on_death": False,
-        "title": "Terras Partidas",
+        "title": "SealCraft",
         "icon": "minecraft:amethyst_shard",
     })
     escrever("chapter_groups.snbt", {"chapter_groups": []})

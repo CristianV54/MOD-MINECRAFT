@@ -1,4 +1,4 @@
-# Auditoria do Terras Partidas (versão 0.8.1)
+# Auditoria do SealCraft (versão 0.8.1)
 
 Auditoria do caminho completo do jogador, do nascimento no mapa até o final do Ato 5. Foi feita num servidor dedicado com o pacote, num mundo novo com a semente `12345`.
 

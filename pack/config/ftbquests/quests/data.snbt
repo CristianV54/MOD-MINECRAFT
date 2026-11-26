@@ -19,6 +19,6 @@
 	progression_mode: "linear"
 	detection_delay: 20
 	drop_book_on_death: false
-	title: "Terras Partidas"
+	title: "SealCraft"
 	icon: "minecraft:amethyst_shard"
 }

@@ -1,11 +1,13 @@
-# Terras Partidas (nome provisório)
+# SealCraft
 
-Modpack brasileiro de RPG com combate estilo souls, chefes, dungeons e uma história contada em português.
+**SealCraft: RPG em Português.** Modpack brasileiro de RPG com combate estilo souls, chefes, dungeons e uma história contada em português.
 
 - **Versão:** Minecraft 1.20.1 com Forge 47.4.29
 - **Mods:** 110 no total (91 rodam no servidor e 19 só no jogador)
 - **Objetivo:** ser mais leve que o DawnCraft (305 mods) e rodar bem com 6 GB de RAM
 - **Estado:** **história completa**, com 5 atos, 108 missões em português, 19 chefes de história, 2 desafios lendários e dragões. Ainda não foi jogada de ponta a ponta.
+
+**Sobre o nome:** o nome do pacote é SealCraft. O identificador interno continua `terras_partidas` (datapack, funções, tags, árvores de habilidades) para não quebrar mundos e o progresso de quem já está jogando. O jogador não vê esse identificador.
 
 ## O que já foi testado
 
