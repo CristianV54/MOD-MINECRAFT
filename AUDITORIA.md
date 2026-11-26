@@ -131,3 +131,36 @@ Algumas estruturas variaram entre um teste e outro, por isso aparecem como faixa
 ## Ainda falta para a base
 
 Hoje o pacote tem mochilas (Sophisticated Backpacks), culinária (Farmer's Delight) e Obeliscos de teletransporte. **Não tem** mods de baús melhores nem de decoração e móveis.
+
+---
+
+# Auditoria 3: classes, escada do dirigível e revisão geral (versão 0.15.1)
+
+Feita no servidor de teste com o pacote, num mundo novo.
+
+| Verificação | Resultado |
+|---|---|
+| Missões carregam | 110 de 110 |
+| Itens de recompensa que existem no jogo (inclui os 5 kits e o livro do mago já inscrito) | 129 de 129 |
+| Comandos de recompensa que funcionam | 34 de 34 |
+| Árvores de habilidades carregam (3 gerais + 5 de classe) | 8 de 8 |
+| Teclas padrão com nome válido nos mods | 8 de 8 |
+| Ajustes de nascimento de monstros carregam sem erro | 70 de 70 arquivos |
+
+## Classes
+
+| Classe | Kit | Observação |
+|---|---|---|
+| Guerreiro | espada longa, malha completa, 2 poções de força | ok |
+| Tanque | lança, escudo, ferro completo, técnica Aparar | **botas de ferro adicionadas** (faltavam). A lança do Epic Fight tem estilo de uma mão, então funciona junto com o escudo. |
+| Assassino | 2 adagas Afiação I, armadura leve, velocidade, pérolas, esquiva Passo | ok |
+| Mago | livro com 4 feitiços que não acabam, bengala, roupa de mago, Mesa de Inscrição | texto da escolha de classe falava em "depender de pergaminhos", **corrigido** |
+| Caçador | arco Força II, 128 flechas, couro completo, adaga | ok |
+
+## Escada do dirigível (Small Blimp, When Dungeons Arise)
+
+**Causa:** a escada tem 48 blocos pendurados no ar, sem nada atrás. No Minecraft, uma escada sem parede só sobe segurando o pulo, e andar pra frente nela não faz subir.
+
+**Correção:** `tools/corrigir_escada_dirigivel.py` gera uma versão da peça com um tronco de carvalho escuro ao lado de cada degrau, com a escada virada pra ele. O tamanho da peça não muda, então o dirigível gera igual.
+
+**Teste:** o dirigível gerado no mundo de teste tinha 82 troncos novos atrás das escadas. A estrutura original não tem nenhum.

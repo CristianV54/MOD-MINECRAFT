@@ -784,7 +784,7 @@
           Priority:-1,
           Texts:[
             {
-              Text:"MAGO\\n\\nPrós: Dano de longe com feitiços, inclusive cura. Livro de feitiços e Mesa de Inscrição desde o começo.\\n\\nContras: Frágil no começo e depende de mana e de pergaminhos.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K), além das árvores de Combate, Mineração e Vida, que são de todo mundo."
+              Text:"MAGO\\n\\nPrós: Dano de longe com feitiços, inclusive cura. Começa com um livro com 4 feitiços que não acabam, roupa de mago e Mesa de Inscrição.\\n\\nContras: Frágil de perto: a roupa de mago protege pouco e cada feitiço gasta mana.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K), além das árvores de Combate, Mineração e Vida, que são de todo mundo."
             }
           ]
         },

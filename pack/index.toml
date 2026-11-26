@@ -30,7 +30,7 @@ hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_1_o_chamado.snbt"
-hash = "b97f4c7d343c170d9416d93cde6ef769d3200ca739e4c8cc8e54e805eb7ce8e5"
+hash = "5d9d103c65ad785c07a07ab6443c850b03ce99f32de91d92df6533483d10f9b7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_2_terras_selvagens.snbt"
@@ -261,6 +261,10 @@ file = "config/openloader/data/terras_partidas/data/cataclysm/worldgen/structure
 hash = "9283002f8d856f18f484bf9ac47c29094fd0dc953b6f7f53c13c3fa24fb7cd7c"
 
 [[files]]
+file = "config/openloader/data/terras_partidas/data/dungeons_arise/structures/small_blimp/small_blimp_ladders_0.nbt"
+hash = "6748ea77bd47d3afeafa6f33fa9c3363a2cf8e69550fd00ef6c7e029f35f9dd5"
+
+[[files]]
 file = "config/openloader/data/terras_partidas/data/dungeons_arise/worldgen/structure_set/major_structures.json"
 hash = "e19e88d49fab9e1a7ffd69e215a7fabb0f684b6e4e9ff59797624a529b12fa7f"
 
@@ -286,7 +290,7 @@ hash = "81a35f560b06ac241124f5995e01a968e2a3c39d5ba5f36e83e83379ff28f16e"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/easy_npc/preset/humanoid/mestre_vellan.npc.snbt"
-hash = "0776990d6ed76e0f3006e0311a5a7f4c73bea4e7b1555dcfc3132df14780d852"
+hash = "80375fd64258c3821b18be9c6bfad44ac281f7305da09119fee9d16787d86358"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/boas_vindas/carregar.mcfunction"

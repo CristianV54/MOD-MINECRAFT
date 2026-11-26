@@ -239,7 +239,7 @@
 			y: 0.0d
 			icon: "minecraft:shield"
 			shape: "diamond"
-			description: ["&6Mestre Vellan&r: \"Então você é um &9Tanque&r.\"", "", "Você aguenta pancada. Escudo, armadura de ferro e a técnica de &eAparar&r do Epic Fight.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
+			description: ["&6Mestre Vellan&r: \"Então você é um &9Tanque&r.\"", "", "Você aguenta pancada. Lança e escudo (dá para usar os dois juntos), armadura de ferro completa e a técnica de &eAparar&r do Epic Fight.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
 			dependencies: ["7705A346645D703A"]
 			tasks: [
 				{
@@ -272,10 +272,15 @@
 				{
 					id: "6BB43F7D0A3FE153"
 					type: "item"
-					item: "epicfight:iron_spear"
+					item: "minecraft:iron_boots"
 				}
 				{
 					id: "3290BC7A4861A070"
+					type: "item"
+					item: "epicfight:iron_spear"
+				}
+				{
+					id: "2B5CDE994328F450"
 					type: "item"
 					item: {
 						id: "epicfight:skillbook"
@@ -286,13 +291,13 @@
 					}
 				}
 				{
-					id: "2B5CDE994328F450"
+					id: "476A6285F3953915"
 					type: "item"
 					item: "minecraft:cooked_beef"
 					count: 12
 				}
 				{
-					id: "476A6285F3953915"
+					id: "4F05C096B9EFDEC7"
 					type: "command"
 					command: "/puffish_skills category unlock {p} terras_partidas:tanque"
 					elevate_perms: true
@@ -301,7 +306,7 @@
 					icon: "minecraft:enchanted_book"
 				}
 				{
-					id: "4F05C096B9EFDEC7"
+					id: "6C53A26F6554DF9A"
 					type: "command"
 					command: "/tag {p} add terras_partidas_classe"
 					elevate_perms: true
