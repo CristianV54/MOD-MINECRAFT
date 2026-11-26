@@ -613,8 +613,8 @@ def ato2():
 
     c.quest("corneta_extra", "Outra Corneta", -13, 4.5, icone="aquamirae:shell_horn",
             deps=["corneta"], forma="circle", tamanho=0.75, optional=True, can_repeat=True,
-            descricao=["Perdeu a luta? Troque &f8 cristais de prismarinho&r por outra Concha-Corneta."],
-            tarefas=[c.t_item("minecraft:prismarine_crystals", 8, consumir=True)],
+            descricao=["Perdeu a luta? Troque &f6 lingotes de ouro&r por outra Concha-Corneta."],
+            tarefas=[c.t_item("minecraft:gold_ingot", 6, consumir=True)],
             recompensas=[c.r_item("aquamirae:shell_horn")])
 
     c.quest("mae_labirinto", "A Mãe do Labirinto", -10, 0.5, icone="minecraft:spider_eye",
@@ -762,7 +762,7 @@ def ato3():
             tarefas=[c.t_estrutura("betterfortresses:fortress", "Encontrar uma fortaleza do Nether")],
             recompensas=[c.r_xp(4), c.r_item(pocao("minecraft:healing"), 3)])
 
-    c.quest("blaze", "Varas de Blaze", -6, -3, icone="minecraft:blaze_rod", deps=["fortaleza"],
+    c.quest("blaze", "Varas de Blaze", -6, -3, icone="minecraft:blaze_rod", deps=["fortaleza"], optional=True,
             descricao=["Derrote blazes e junte &f8 varas de blaze&r.",
                        "&7Guarde algumas: elas vão ser importantes no fim da jornada.&r"],
             tarefas=[c.t_item("minecraft:blaze_rod", 8)],
@@ -1113,7 +1113,7 @@ def ato5():
     # ---- Arena de Obsidiana (Obsidilith)
     c.quest("arena", "O Monolito Negro", 12, 3, icone="minecraft:obsidian", deps=["dragao"],
             subtitulo="Segundo guardião do vazio",
-            descricao=[f"{M}: \"Existe um monolito vivo de obsidiana, o &fObsidilith&r. Ele dorme numa arena cercada de altares. Para acordá-lo, coloque &fOlhos do Ender&r nos altares.\"",
+            descricao=[f"{M}: \"Existe um monolito vivo de obsidiana, o &fObsidilith&r. Ele dorme numa arena de obsidiana. Para acordá-lo, coloque um &fOlho do Ender&r no altar da arena.\"",
                        "", coord("estando no End")],
             tarefas=[c.t_check("Pedir a localização da Arena de Obsidiana")],
             recompensas=[c.r_localizar("bosses_of_mass_destruction:obsidilith_arena", "Coordenadas da Arena de Obsidiana", dimensao=END),
@@ -1126,7 +1126,7 @@ def ato5():
 
     c.quest("obsidilith", "Chefe: Obsidilith", 18, 3, icone="minecraft:obsidian",
             deps=["arena_achar"], forma="octagon", tamanho=1.5,
-            descricao=["Coloque os Olhos do Ender nos &faltares de obsidiana&r e derrote o &cObsidilith&r.",
+            descricao=["Coloque um Olho do Ender no &faltar de obsidiana&r e derrote o &cObsidilith&r.",
                        "", "&7Dica: ele não se mexe, mas atira pilares e ondas de choque. Quando ele brilhar, se afaste.&r"],
             tarefas=[c.t_matar("bosses_of_mass_destruction:obsidilith", 1, "Derrotar o Obsidilith")],
             recompensas=[c.r_item(fragmento(5, 3, 4)), c.r_skill("epicfight:bonebreaker"), c.r_xp(20),
@@ -1143,6 +1143,7 @@ def ato5():
                        "&o\"Ela está numa fábrica antiga, enterrada fundo nas cavernas. Para despertá-la e arrancar o fragmento, é preciso o poder de uma &fEstrela do Nether&o. A mesma que você tirou do Wither.\"",
                        "",
                        "Tenha uma &fEstrela do Nether&r no inventário.",
+                       "&7Se você já usou a estrela (num sinalizador, por exemplo), invoque outro Wither para conseguir uma nova. Os crânios vêm das fortalezas do Nether.&r",
                        "", coord("no mundo normal")],
             tarefas=[c.t_item("minecraft:nether_star", titulo="Ter uma Estrela do Nether")],
             recompensas=[c.r_localizar("cataclysm:ancient_factory", "Coordenadas da Fábrica Antiga", dimensao=OW),
@@ -1159,6 +1160,7 @@ def ato5():
             deps=["fabrica"], forma="octagon", tamanho=2.25,
             descricao=["No centro da fábrica está o &cArauto&r, desligado.",
                        "Clique nele com a &fEstrela do Nether&r na mão para despertá-lo e derrote-o.",
+                       "&7Se perder a luta, você vai precisar de outra estrela (de outro Wither) para despertá-lo de novo.&r",
                        "",
                        "&7Dica: ele dispara mísseis teleguiados e lasers. Use pilares como cobertura, e na segunda fase fique perto dele: os lasers são piores de longe.&r"],
             tarefas=[c.t_matar("cataclysm:the_harbinger", 1, "Derrotar o Arauto")],

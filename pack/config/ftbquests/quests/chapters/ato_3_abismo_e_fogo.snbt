@@ -106,6 +106,7 @@
 			icon: "minecraft:blaze_rod"
 			description: ["Derrote blazes e junte &f8 varas de blaze&r.", "&7Guarde algumas: elas vão ser importantes no fim da jornada.&r"]
 			dependencies: ["5E07FB527C1F6DE7"]
+			optional: true
 			tasks: [
 				{
 					id: "78CFC0AADBD3C3BB"

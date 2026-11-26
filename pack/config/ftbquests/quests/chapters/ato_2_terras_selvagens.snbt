@@ -587,7 +587,7 @@
 			icon: "aquamirae:shell_horn"
 			shape: "circle"
 			size: 0.75d
-			description: ["Perdeu a luta? Troque &f8 cristais de prismarinho&r por outra Concha-Corneta."]
+			description: ["Perdeu a luta? Troque &f6 lingotes de ouro&r por outra Concha-Corneta."]
 			dependencies: ["1F91F50E88C08E4C"]
 			optional: true
 			can_repeat: true
@@ -595,8 +595,8 @@
 				{
 					id: "76CC12742976FCE3"
 					type: "item"
-					item: "minecraft:prismarine_crystals"
-					count: 8L
+					item: "minecraft:gold_ingot"
+					count: 6L
 					consume_items: true
 				}
 			]

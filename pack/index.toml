@@ -14,11 +14,11 @@ hash = "dd8e7a2645f084acb847903665c5cb0f7619545b0b9afeff6d4157090a86834b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_2_terras_selvagens.snbt"
-hash = "6b8deb8147dcdc5a446f2ee0a4b1299f5c2ae032e6027d58b69a1f3a2e285539"
+hash = "f78dac1b5ad9b5b896b6044b8072d600aa484554890af4dca874f5785643c74b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_3_abismo_e_fogo.snbt"
-hash = "6e2310afcc434e6bbb3aed1fdb36ebbe6576318c2afbd63bd86ce8d3c5ee2b97"
+hash = "59e6fb119f5abeab4a35736ffc5f68b27c066ffb4b2ca40c0a950413f4dadd5e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_4_alem_do_ceu.snbt"
@@ -26,7 +26,7 @@ hash = "c0963c06bc71975d0cadbb6ac876e20f1587cc1034105ccf5b585d3e7bd87163"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_5_o_fim_do_selo.snbt"
-hash = "a6fc74564323000b9f08f7933439d8fc3cf952cb414b4c42cedb1c2add86c9e8"
+hash = "802a41b9ca8b324e2cd272981751cfcb754e14c847dc03b2187982b5ec9f97f8"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"

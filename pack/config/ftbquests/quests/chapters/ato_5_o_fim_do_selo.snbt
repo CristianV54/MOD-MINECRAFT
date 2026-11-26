@@ -353,7 +353,7 @@
 			y: 3.0d
 			subtitle: "Segundo guardião do vazio"
 			icon: "minecraft:obsidian"
-			description: ["&6Mestre Vellan&r: \"Existe um monolito vivo de obsidiana, o &fObsidilith&r. Ele dorme numa arena cercada de altares. Para acordá-lo, coloque &fOlhos do Ender&r nos altares.\"", "", "&7Pegue a recompensa &festando no End&7: as coordenadas aparecem no chat.&r"]
+			description: ["&6Mestre Vellan&r: \"Existe um monolito vivo de obsidiana, o &fObsidilith&r. Ele dorme numa arena de obsidiana. Para acordá-lo, coloque um &fOlho do Ender&r no altar da arena.\"", "", "&7Pegue a recompensa &festando no End&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["5171C3E6F46EE884"]
 			tasks: [
 				{
@@ -412,7 +412,7 @@
 			icon: "minecraft:obsidian"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Coloque os Olhos do Ender nos &faltares de obsidiana&r e derrote o &cObsidilith&r.", "", "&7Dica: ele não se mexe, mas atira pilares e ondas de choque. Quando ele brilhar, se afaste.&r"]
+			description: ["Coloque um Olho do Ender no &faltar de obsidiana&r e derrote o &cObsidilith&r.", "", "&7Dica: ele não se mexe, mas atira pilares e ondas de choque. Quando ele brilhar, se afaste.&r"]
 			dependencies: ["42B49E61F973B954"]
 			tasks: [
 				{
@@ -478,7 +478,7 @@
 			icon: "minecraft:nether_star"
 			shape: "hexagon"
 			size: 1.5d
-			description: ["&6Mestre Vellan&r: \"Dezoito fragmentos... e o Selo ainda não fecha. Falta o coração dele.\"", "", "&o\"Agora eu entendo. O mal antigo nunca foi um monstro. Era uma máquina de guerra, o &cArauto&o, construída para destruir o mundo. Os guardiões não conseguiram destruí-la, então a desligaram e usaram o próprio núcleo dela como último fragmento do Selo.\"", "", "&o\"Ela está numa fábrica antiga, enterrada fundo nas cavernas. Para despertá-la e arrancar o fragmento, é preciso o poder de uma &fEstrela do Nether&o. A mesma que você tirou do Wither.\"", "", "Tenha uma &fEstrela do Nether&r no inventário.", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
+			description: ["&6Mestre Vellan&r: \"Dezoito fragmentos... e o Selo ainda não fecha. Falta o coração dele.\"", "", "&o\"Agora eu entendo. O mal antigo nunca foi um monstro. Era uma máquina de guerra, o &cArauto&o, construída para destruir o mundo. Os guardiões não conseguiram destruí-la, então a desligaram e usaram o próprio núcleo dela como último fragmento do Selo.\"", "", "&o\"Ela está numa fábrica antiga, enterrada fundo nas cavernas. Para despertá-la e arrancar o fragmento, é preciso o poder de uma &fEstrela do Nether&o. A mesma que você tirou do Wither.\"", "", "Tenha uma &fEstrela do Nether&r no inventário.", "&7Se você já usou a estrela (num sinalizador, por exemplo), invoque outro Wither para conseguir uma nova. Os crânios vêm das fortalezas do Nether.&r", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["271B4CCE60F7E22F", "52AC667E6ADB8873"]
 			tasks: [
 				{
@@ -563,7 +563,7 @@
 			icon: "minecraft:wither_skeleton_skull"
 			shape: "octagon"
 			size: 2.25d
-			description: ["No centro da fábrica está o &cArauto&r, desligado.", "Clique nele com a &fEstrela do Nether&r na mão para despertá-lo e derrote-o.", "", "&7Dica: ele dispara mísseis teleguiados e lasers. Use pilares como cobertura, e na segunda fase fique perto dele: os lasers são piores de longe.&r"]
+			description: ["No centro da fábrica está o &cArauto&r, desligado.", "Clique nele com a &fEstrela do Nether&r na mão para despertá-lo e derrote-o.", "&7Se perder a luta, você vai precisar de outra estrela (de outro Wither) para despertá-lo de novo.&r", "", "&7Dica: ele dispara mísseis teleguiados e lasers. Use pilares como cobertura, e na segunda fase fique perto dele: os lasers são piores de longe.&r"]
 			dependencies: ["7CEEF225CBD59975"]
 			tasks: [
 				{
