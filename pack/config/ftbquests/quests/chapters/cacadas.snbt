@@ -14,11 +14,11 @@
 			title: "Caçadas"
 			x: 0.0d
 			y: 0.0d
-			subtitle: "Feras antigas, sem fragmentos"
+			subtitle: "Nove feras antigas, sem fragmentos"
 			icon: "minecraft:spyglass"
 			shape: "gear"
 			size: 2.0d
-			description: ["&6Mestre Vellan&r: \"Nem todo monstro gigante deste mundo guarda um fragmento. Algumas feras são só antigas... e perigosas.\"", "", "&o\"Caçadores da Ordem já tentaram e não voltaram. Mas o que elas guardam vale o risco: armas que você não acha em nenhum outro lugar.\"", "", "&7Todas as caçadas são opcionais. Cada fera mora na própria masmorra, e cada uma deixa a sua arma quando morre.&r"]
+			description: ["&6Mestre Vellan&r: \"Nem todo monstro gigante deste mundo guarda um fragmento. Algumas feras são só antigas... e perigosas.\"", "", "&o\"Caçadores da Ordem já tentaram e não voltaram. Mas o que elas guardam vale o risco: armas que você não acha em nenhum outro lugar.\"", "", "&7Todas as caçadas são opcionais e estão em ordem de dificuldade. Cada fera deixa um tesouro próprio, e quem derrotar todas vira &6Mestre Caçador&7.&r"]
 			dependencies: ["5A0236B98D30AC09"]
 			tasks: [
 				{
@@ -39,7 +39,7 @@
 			id: "24736EAB9CE73BE8"
 			title: "Caçada: Sirok"
 			x: 2.0d
-			y: -2.0d
+			y: -6.0d
 			subtitle: "Mais fácil: a partir do Ato 2"
 			icon: "minecraft:sand"
 			description: ["&eSirok, a Minhoca de Areia&r", "", "Uma minhoca gigante que nada debaixo da areia e cospe veneno. Fique longe das colunas de areia.", "", "Mora no &fDeserto&r.", "&6Mais fácil: a partir do Ato 2&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
@@ -73,11 +73,11 @@
 			id: "740D6A6D8017F12C"
 			title: "Sirok, a Minhoca de Areia"
 			x: 4.0d
-			y: -2.0d
+			y: -6.0d
 			icon: "minecraft:sand"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote &cSirok, a Minhoca de Areia&r.", "", "Ele deixa a &fManopla de Sirok&r, que atira veneno."]
+			description: ["Derrote &cSirok, a Minhoca de Areia&r.", "", "Deixa a &fManopla de Sirok&r, que atira veneno."]
 			dependencies: ["24736EAB9CE73BE8"]
 			optional: true
 			tasks: [
@@ -102,7 +102,190 @@
 					count: 4
 				}
 				{
+					id: "60A02293E4AA803F"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+				}
+				{
 					id: "6332D80E12609A0B"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
+			]
+		}
+		{
+			id: "2E725A048A4FBC4B"
+			title: "Caçada: Tongbi"
+			x: 2.0d
+			y: -4.5d
+			subtitle: "Fácil: a partir do Ato 2"
+			icon: "minecraft:chiseled_stone_bricks"
+			description: ["&eTongbi, o Escultor&r", "", "Um mestre que molda a pedra. Ele te desafia a subir uma coluna de pedra até ele enquanto arremessa rochas.", "", "Mora num &fmonastério no alto das montanhas&r.", "&6Fácil: a partir do Ato 2&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			dependencies: ["3CC89136178E34A5"]
+			optional: true
+			tasks: [
+				{
+					id: "3172197F09E92D9C"
+					type: "checkmark"
+					title: "Pedir a localização"
+				}
+			]
+			rewards: [
+				{
+					id: "144461E65AF906CF"
+					type: "command"
+					command: "/execute in minecraft:overworld run locate structure mowziesmobs:monastery"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas: Tongbi"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "7E965B39749A648E"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_slow_falling"
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "7044324654B86F10"
+			title: "Tongbi, o Escultor"
+			x: 4.0d
+			y: -4.5d
+			icon: "minecraft:chiseled_stone_bricks"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Derrote &cTongbi, o Escultor&r.", "", "Deixa o &fCajado do Escultor&r e as roupas do &fGeomante&r."]
+			dependencies: ["2E725A048A4FBC4B"]
+			optional: true
+			tasks: [
+				{
+					id: "7C42493330BDE73F"
+					type: "kill"
+					entity: "mowziesmobs:sculptor"
+					value: 1L
+					title: "Derrotar Tongbi"
+				}
+			]
+			rewards: [
+				{
+					id: "111BF9B2179D50F0"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "74A77C9882AFEADF"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+				{
+					id: "5469FBA0E6FA4F3E"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+				}
+				{
+					id: "2FFC89C5E0B5AE2C"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
+			]
+		}
+		{
+			id: "7D10FAEEF47DDC04"
+			title: "Caçada: O Lich da Noite"
+			x: 2.0d
+			y: -3.0d
+			subtitle: "Médio: a partir do Ato 3"
+			icon: "minecraft:soul_lantern"
+			description: ["&eO Lich da Noite&r", "", "Um feiticeiro morto-vivo que dispara bolas de fogo azuis e cometas, e se teletransporta pela sala. Não o perca de vista.", "", "Mora no alto da &fTorre do Lich&r.", "&6Médio: a partir do Ato 3&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			dependencies: ["3CC89136178E34A5"]
+			optional: true
+			tasks: [
+				{
+					id: "1026ED95693A9E0C"
+					type: "checkmark"
+					title: "Pedir a localização"
+				}
+			]
+			rewards: [
+				{
+					id: "4FFC797E07E7D27D"
+					type: "command"
+					command: "/execute in minecraft:overworld run locate structure bosses_of_mass_destruction:lich_tower"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas: O Lich da Noite"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "3FFF6EACFB4A8CCD"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "16A312D8B008A194"
+			title: "O Lich da Noite"
+			x: 4.0d
+			y: -3.0d
+			icon: "minecraft:soul_lantern"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Derrote &cO Lich da Noite&r.", "", "Deixa a &fÂnima Antiga&r e diamantes."]
+			dependencies: ["7D10FAEEF47DDC04"]
+			optional: true
+			tasks: [
+				{
+					id: "240C7C32005A5AD0"
+					type: "kill"
+					entity: "bosses_of_mass_destruction:lich"
+					value: 1L
+					title: "Derrotar O Lich da Noite"
+				}
+			]
+			rewards: [
+				{
+					id: "63AEA573AF867364"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "59BAF944263F73B2"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+				{
+					id: "26A800CE92567074"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+				}
+				{
+					id: "5725A8F4770B5156"
 					type: "command"
 					command: "/function terras_partidas:ponto_de_habilidade"
 					elevate_perms: true
@@ -116,7 +299,7 @@
 			id: "3A897757C1E4E57F"
 			title: "Caçada: Skor"
 			x: 2.0d
-			y: -1.0d
+			y: -1.5d
 			subtitle: "Médio: a partir do Ato 3"
 			icon: "minecraft:packed_ice"
 			description: ["&eSkor, o Yeti&r", "", "Um yeti enorme num esconderijo de gelo. Solta nevascas e prende você em cubos de gelo.", "", "Mora nas &fPlanícies Nevadas&r.", "&6Médio: a partir do Ato 3&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
@@ -157,11 +340,11 @@
 			id: "134CCBD2477C6525"
 			title: "Skor, o Yeti"
 			x: 4.0d
-			y: -1.0d
+			y: -1.5d
 			icon: "minecraft:packed_ice"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote &cSkor, o Yeti&r.", "", "Ele deixa a &fManopla de Skor&r, que congela o alvo e solta espinhos de gelo."]
+			description: ["Derrote &cSkor, o Yeti&r.", "", "Deixa a &fManopla de Skor&r, que congela o alvo e solta espinhos de gelo."]
 			dependencies: ["3A897757C1E4E57F"]
 			optional: true
 			tasks: [
@@ -186,7 +369,85 @@
 					count: 4
 				}
 				{
+					id: "1FC9888477736C0F"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+				}
+				{
 					id: "067CD73AD3A34DB6"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
+			]
+		}
+		{
+			id: "15F15CBC2B90DDDF"
+			title: "Caçada: Rosalyne"
+			x: 2.0d
+			y: 0.0d
+			subtitle: "Difícil: a partir do Ato 4"
+			icon: "meetyourfight:dusk_key"
+			description: ["&eRosalyne, Lâmina do Crepúsculo&r", "", "Uma cavaleira de flores e espinhos, rápida e elegante. Use a chave num lugar aberto e ela aparece.", "", "Aparece onde você usar a &fChave do Crepúsculo&r.", "&6Difícil: a partir do Ato 4&r", "", "&7Pegue a recompensa para receber a chave.&r"]
+			dependencies: ["3CC89136178E34A5"]
+			optional: true
+			tasks: [
+				{
+					id: "60732F5DD376DA57"
+					type: "checkmark"
+					title: "Quero a chave"
+				}
+			]
+			rewards: [
+				{
+					id: "672D9A3C69C60078"
+					type: "item"
+					item: "meetyourfight:dusk_key"
+				}
+			]
+		}
+		{
+			id: "4ADC48DA59801FB4"
+			title: "Rosalyne, Lâmina do Crepúsculo"
+			x: 4.0d
+			y: 0.0d
+			icon: "meetyourfight:dusk_key"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Derrote &cRosalyne, Lâmina do Crepúsculo&r.", "", "Deixa a &fFlor Violeta&r."]
+			dependencies: ["15F15CBC2B90DDDF"]
+			optional: true
+			tasks: [
+				{
+					id: "34A8FBDE2686F9B6"
+					type: "kill"
+					entity: "meetyourfight:rosalyne"
+					value: 1L
+					title: "Derrotar Rosalyne"
+				}
+			]
+			rewards: [
+				{
+					id: "37B9B4311C5A198E"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "72A3332DB480B92F"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+				{
+					id: "6D00FEF82150F8E0"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+				}
+				{
+					id: "0AD6CF2521E04BA5"
 					type: "command"
 					command: "/function terras_partidas:ponto_de_habilidade"
 					elevate_perms: true
@@ -200,7 +461,7 @@
 			id: "7F1ADF8C42D8F4D9"
 			title: "Caçada: Ashlord"
 			x: 2.0d
-			y: 1.0d
+			y: 1.5d
 			subtitle: "Difícil: a partir do Ato 4"
 			icon: "minecraft:magma_block"
 			description: ["&eAshlord, o Dragão Infernal&r", "", "Um dragão de fogo no alto de uma torre, protegido por guardas esqueletos em chamas. Tem uma segunda forma ainda maior.", "", "Mora em &fplanícies, selvas ou pântanos&r.", "&6Difícil: a partir do Ato 4&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
@@ -241,11 +502,11 @@
 			id: "31A22871F245BDA1"
 			title: "Ashlord, o Dragão Infernal"
 			x: 4.0d
-			y: 1.0d
+			y: 1.5d
 			icon: "minecraft:magma_block"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote &cAshlord, o Dragão Infernal&r.", "", "Ele deixa &fossos de dragão&r, para fazer uma armadura de ossos de dragão."]
+			description: ["Derrote &cAshlord, o Dragão Infernal&r.", "", "Deixa &fossos de dragão&r, para fazer uma armadura de ossos de dragão."]
 			dependencies: ["7F1ADF8C42D8F4D9"]
 			optional: true
 			tasks: [
@@ -270,7 +531,182 @@
 					count: 4
 				}
 				{
+					id: "15DB0EFDDA2F25FE"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+				}
+				{
 					id: "0363D545891C5943"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
+			]
+		}
+		{
+			id: "4B312756499A9781"
+			title: "Caçada: O Remanescente Antigo"
+			x: 2.0d
+			y: 3.0d
+			subtitle: "Muito difícil: a partir do Ato 5"
+			icon: "minecraft:suspicious_sand"
+			description: ["&eO Remanescente Antigo&r", "", "Uma fera-faraó gigante enterrada na areia. Use o &fpincel&r na &fareia suspeita&r dentro da pirâmide para achar o &fColar do Deserto&r e acordá-la. &cA pirâmide costuma ficar longe: vá de dragão.&r", "", "Mora numa &fpirâmide amaldiçoada no deserto&r.", "&6Muito difícil: a partir do Ato 5&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			dependencies: ["3CC89136178E34A5"]
+			optional: true
+			tasks: [
+				{
+					id: "0B7DEEC25937BC0F"
+					type: "checkmark"
+					title: "Pedir a localização"
+				}
+			]
+			rewards: [
+				{
+					id: "60E4AF1814681584"
+					type: "command"
+					command: "/execute in minecraft:overworld run locate structure cataclysm:cursed_pyramid"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas: O Remanescente Antigo"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "477B219FB0F47ED7"
+					type: "item"
+					item: "minecraft:brush"
+				}
+			]
+		}
+		{
+			id: "27C9439A76B88579"
+			title: "O Remanescente Antigo"
+			x: 4.0d
+			y: 3.0d
+			icon: "minecraft:suspicious_sand"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Derrote &cO Remanescente Antigo&r.", "", "Deixa a &fTempestade de Areia na Garrafa&r e metal antigo."]
+			dependencies: ["4B312756499A9781"]
+			optional: true
+			tasks: [
+				{
+					id: "12FF00B51F4079DC"
+					type: "kill"
+					entity: "cataclysm:ancient_remnant"
+					value: 1L
+					title: "Derrotar O Remanescente Antigo"
+				}
+			]
+			rewards: [
+				{
+					id: "2F2689370A75F139"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "27BC53818887ED59"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+				{
+					id: "560E28C03B1334D8"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+				}
+				{
+					id: "020A2281F067B5FC"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
+			]
+		}
+		{
+			id: "13FC3837529000E6"
+			title: "Caçada: Maledictus"
+			x: 2.0d
+			y: 4.5d
+			subtitle: "Muito difícil: depois da história"
+			icon: "minecraft:soul_lantern"
+			description: ["&eMaledictus&r", "", "Um cavaleiro amaldiçoado selado no gelo. Dê energia de redstone à &fLápide Amaldiçoada&r (uma alavanca ou tocha de redstone ao lado) e clique nela com o botão direito.", "", "Mora numa &fprisão congelada&r.", "&6Muito difícil: depois da história&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			dependencies: ["3CC89136178E34A5"]
+			optional: true
+			tasks: [
+				{
+					id: "69A95B6EBB6A519A"
+					type: "checkmark"
+					title: "Pedir a localização"
+				}
+			]
+			rewards: [
+				{
+					id: "4451A07A0B9970D5"
+					type: "command"
+					command: "/execute in minecraft:overworld run locate structure cataclysm:frosted_prison"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas: Maledictus"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "7B0BE6A9BFCB34BD"
+					type: "item"
+					item: "minecraft:lever"
+				}
+				{
+					id: "48E3CBC6E3C6A9CB"
+					type: "item"
+					item: "minecraft:redstone_torch"
+					count: 2
+				}
+			]
+		}
+		{
+			id: "58EB22549E99B8E1"
+			title: "Maledictus"
+			x: 4.0d
+			y: 4.5d
+			icon: "minecraft:soul_lantern"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Derrote &cMaledictus&r.", "", "Deixa o &flingote de Cursium&r."]
+			dependencies: ["13FC3837529000E6"]
+			optional: true
+			tasks: [
+				{
+					id: "2ACEB2EBBB252DB9"
+					type: "kill"
+					entity: "cataclysm:maledictus"
+					value: 1L
+					title: "Derrotar Maledictus"
+				}
+			]
+			rewards: [
+				{
+					id: "489B78EE2646CE0D"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "41421834BD304055"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+				{
+					id: "7DB20D4F696EA313"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+				}
+				{
+					id: "2AF7D4F258066944"
 					type: "command"
 					command: "/function terras_partidas:ponto_de_habilidade"
 					elevate_perms: true
@@ -284,7 +720,7 @@
 			id: "3978E3AF7FAE3C63"
 			title: "Caçada: Nerakyss"
 			x: 2.0d
-			y: 2.0d
+			y: 6.0d
 			subtitle: "Muito difícil: depois da história"
 			icon: "minecraft:nautilus_shell"
 			description: ["&eNerakyss, o Kraken&r", "", "Um kraken colossal preso a um navio pirata afundado. Piratas, canhões e tentáculos que saem do chão.", "", "Mora no &foceano profundo&r.", "&6Muito difícil: depois da história&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
@@ -325,11 +761,11 @@
 			id: "47E7DD6D0A46E7BD"
 			title: "Nerakyss, o Kraken"
 			x: 4.0d
-			y: 2.0d
+			y: 6.0d
 			icon: "minecraft:nautilus_shell"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote &cNerakyss, o Kraken&r.", "", "Ele deixa o &fdente do kraken&r, para fazer um tridente que puxa os inimigos."]
+			description: ["Derrote &cNerakyss, o Kraken&r.", "", "Deixa o &fdente do kraken&r, para fazer um tridente que puxa os inimigos."]
 			dependencies: ["3978E3AF7FAE3C63"]
 			optional: true
 			tasks: [
@@ -354,6 +790,11 @@
 					count: 4
 				}
 				{
+					id: "0A280F5080B1AB7B"
+					type: "item"
+					item: "minecraft:netherite_scrap"
+				}
+				{
 					id: "02293D32B0762327"
 					type: "command"
 					command: "/function terras_partidas:ponto_de_habilidade"
@@ -361,6 +802,105 @@
 					silent: true
 					title: "+1 ponto de habilidade"
 					icon: "minecraft:enchanted_book"
+				}
+			]
+		}
+		{
+			id: "25485A936908404F"
+			title: "Mestre Caçador"
+			x: 6.0d
+			y: 0.0d
+			subtitle: "Todas as feras derrotadas"
+			icon: "minecraft:netherite_sword"
+			shape: "gear"
+			size: 2.0d
+			description: ["&6Mestre Vellan&r: \"Nove feras antigas. Nenhum caçador da Ordem jamais fez isso.\"", "", "&o\"Esta lâmina esperou séculos por alguém como você.\"", "", "&6Recompensa:&r a Lâmina do Mestre Caçador, 3 pontos de habilidade em cada árvore geral e o título &6[Mestre Caçador]&r ao lado do seu nome."]
+			dependencies: ["740D6A6D8017F12C", "7044324654B86F10", "16A312D8B008A194", "134CCBD2477C6525", "4ADC48DA59801FB4", "31A22871F245BDA1", "27C9439A76B88579", "58EB22549E99B8E1", "47E7DD6D0A46E7BD"]
+			optional: true
+			tasks: [
+				{
+					id: "49D27AA527684C6B"
+					type: "checkmark"
+					title: "Receber o título"
+				}
+			]
+			rewards: [
+				{
+					id: "34FFEC14AB78614B"
+					type: "item"
+					item: {
+						id: "minecraft:netherite_sword"
+						Count: 1b
+						tag: {
+							display: {
+								Name: "{\"text\": \"Lâmina do Mestre Caçador\", \"color\": \"gold\", \"italic\": false}"
+								Lore: ["{\"text\": \"Só quem derrubou todas as feras antigas a empunha.\", \"color\": \"gray\"}"]
+							}
+							Enchantments: [
+								{
+									id: "minecraft:sharpness"
+									lvl: 5s
+								}
+								{
+									id: "minecraft:looting"
+									lvl: 3s
+								}
+								{
+									id: "minecraft:sweeping"
+									lvl: 3s
+								}
+								{
+									id: "minecraft:unbreaking"
+									lvl: 3s
+								}
+								{
+									id: "minecraft:mending"
+									lvl: 1s
+								}
+							]
+						}
+					}
+				}
+				{
+					id: "3E96861F0FB6137B"
+					type: "command"
+					command: "/puffish_skills points add {p} terras_partidas:combate 3"
+					elevate_perms: true
+					silent: true
+					title: "+3 pontos em Combate"
+					icon: "minecraft:iron_sword"
+				}
+				{
+					id: "6303CA49E229FB35"
+					type: "command"
+					command: "/puffish_skills points add {p} terras_partidas:mineracao 3"
+					elevate_perms: true
+					silent: true
+					title: "+3 pontos em Mineração"
+					icon: "minecraft:iron_pickaxe"
+				}
+				{
+					id: "14AE26FE74463E67"
+					type: "command"
+					command: "/puffish_skills points add {p} terras_partidas:vida 3"
+					elevate_perms: true
+					silent: true
+					title: "+3 pontos em Vida"
+					icon: "minecraft:golden_apple"
+				}
+				{
+					id: "14838E55388EB2EE"
+					type: "command"
+					command: "/function terras_partidas:mestre_cacador"
+					elevate_perms: true
+					silent: true
+					title: "Título [Mestre Caçador]"
+					icon: "minecraft:name_tag"
+				}
+				{
+					id: "4FA7651059237ADB"
+					type: "xp_levels"
+					xp_levels: 100
 				}
 			]
 		}

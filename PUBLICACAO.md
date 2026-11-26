@@ -76,7 +76,7 @@ Swampjaw, Frostmaw, Ignis, a Monstruosidade de Netherita, o Wither, Arachnarch, 
 
 ### 🗡️ Caçadas
 
-Quatro feras gigantes fora da história, cada uma na própria masmorra: um yeti, uma minhoca de areia, um dragão infernal e um kraken. Cada uma deixa uma arma única quando morre.
+Nove feras gigantes fora da história, em ordem de dificuldade: uma minhoca de areia, um mestre escultor, um lich, um yeti, uma cavaleira de flores, um dragão infernal, uma fera-faraó, um cavaleiro amaldiçoado e um kraken. Cada uma deixa um tesouro próprio, e quem derrota todas vira **Mestre Caçador**.
 
 ### 🐉 Dragões de montaria
 

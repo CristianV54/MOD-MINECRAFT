@@ -50,11 +50,15 @@ hash = "1c9ee2caa719e6c1ef13d3d5a2d5e14dff927de34dbf4db4001127f4172f4ce1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cacadas.snbt"
-hash = "cfc1364923c1c098dfd43265fd52d4a0a169b906e3e70f4dee502c95d243c6fc"
+hash = "714105f1879626ca64f22aa2cb17fa491bac058ee36a7ba6253dfe9ddc43519e"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
 hash = "e3bbe22d1d6f8ad89587989c4e53b421d43f7563060b3674fc69752b4977578b"
+
+[[files]]
+file = "config/mowziesmobs-common.toml"
+hash = "a5d8f5e291175bcdef5029e7d24e3dc7a8d4a5d16074f08e3fb1568a418becc6"
 
 [[files]]
 file = "config/mutantmonsters-common.toml"
@@ -241,8 +245,16 @@ file = "config/openloader/data/terras_partidas/data/born_in_chaos_v1/forge/biome
 hash = "53d5ee84880161d9acb4466b496beb3858e8e1d6a757cb58051dcf305b0035d7"
 
 [[files]]
+file = "config/openloader/data/terras_partidas/data/bosses_of_mass_destruction/worldgen/structure_set/lich_tower.json"
+hash = "70b46ffe50741e9c9e6029f06cbd71adfd2354d65c327bfffbfa4a3c318636ea"
+
+[[files]]
 file = "config/openloader/data/terras_partidas/data/cataclysm/tags/worldgen/biome/has_structure/burning_arena_biomes.json"
 hash = "6eebfb61ce626634d52f9165d92d9a9e5563b9536daa303a0816cd8395c7841e"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/cataclysm/tags/worldgen/biome/has_structure/cursed_pyramid_biomes.json"
+hash = "49d40fefac5e0fdf9b60cff1f0810b0226ae337f57235d475a0e373d971a352e"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/cataclysm/worldgen/structure_set/acropolis.json"
@@ -323,6 +335,10 @@ hash = "43a1bd896bdfda1389b6420cdebf9f637572b765fafdbc3bb421adaeb16bfb50"
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/chamar_vellan.mcfunction"
 hash = "943faafed368c8b5fd190627e55f3207bdba5ea39dbaaf146e15e574ff35435b"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/mestre_cacador.mcfunction"
+hash = "a95b81a58d5c5a297e52dd286f2342475e40230cc00d4f7b93003b97d7c5ac22"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/ponto_de_habilidade.mcfunction"

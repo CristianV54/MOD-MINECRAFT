@@ -240,15 +240,24 @@ O Arauto (do Cataclysm) era o **carcereiro**: o núcleo dele mantinha trancada a
 
 ## Caçadas (capítulo opcional)
 
-Os outros 4 chefes do Bosses'Rise viram caçadas opcionais, liberadas depois do Ato 2. Cada uma tem uma missão que mostra as coordenadas da toca e outra de derrotar o chefe, que vale +1 ponto de habilidade.
+São 9 chefes fora da história, liberados depois do Ato 2 e em ordem de dificuldade. Cada um tem uma missão que mostra as coordenadas no chat (ou dá o item que invoca o chefe) e outra de derrotar, que dá XP, 4 diamantes, 1 fragmento de netherita e +1 ponto de habilidade.
 
-| Chefe | Onde | Distância no teste | Deixa |
-|---|---|---|---|
-| Sirok, a Minhoca de Areia (200 de vida, a partir do Ato 2) | desertos (inclusive os do Terralith) | ~2.500 | Manopla de Sirok (veneno) |
-| Skor, o Yeti (250, a partir do Ato 3) | Planícies Nevadas | ~1.100 blocos | Manopla de Skor (congela) |
-| Ashlord, o Dragão Infernal (250 + segunda forma, a partir do Ato 4) | torre em planícies, selvas e pântanos | ~2.600 | ossos para a armadura de dragão |
-| Nerakyss, o Kraken (500, depois da história) | navio no oceano profundo | ~2.500 | dente para o Tridente do Kraken |
+| Chefe (vida) | Mod | Onde | Distância no teste | Recomendado | Deixa |
+|---|---|---|---|---|---|
+| Sirok, a Minhoca de Areia (200) | Bosses'Rise | desertos | ~2.500 | Ato 2 | Manopla de Sirok |
+| Tongbi, o Escultor (140) | Mowzie's | monastério nas montanhas | ~3.200 | Ato 2 | Cajado do Escultor e roupas do Geomante |
+| O Lich da Noite (300) | Bosses of Mass Destruction | Torre do Lich, biomas frios | ~1.800 | Ato 3 | Ânima Antiga |
+| Skor, o Yeti (250) | Bosses'Rise | Planícies Nevadas | ~1.100 | Ato 3 | Manopla de Skor |
+| Rosalyne, Lâmina do Crepúsculo (500) | Meet Your Fight | onde usar a Chave do Crepúsculo (a missão dá a chave) | - | Ato 4 | Flor Violeta |
+| Ashlord, o Dragão Infernal (250 + 2ª forma) | Bosses'Rise | torre em planícies, selvas e pântanos | ~2.600 | Ato 4 | ossos de dragão |
+| O Remanescente Antigo (450) | Cataclysm | Pirâmide Amaldiçoada (pincel na areia suspeita) | ~6.500 | Ato 5 | Tempestade de Areia na Garrafa |
+| Maledictus (420) | Cataclysm | Prisão Congelada (redstone na Lápide Amaldiçoada) | ~2.200 | depois da história | lingote de Cursium |
+| Nerakyss, o Kraken (500) | Bosses'Rise | navio no oceano profundo | ~2.500 | depois da história | dente do kraken |
 
+- **Mestre Caçador:** quem derrotar os 9 ganha a Lâmina do Mestre Caçador (netherita com Afiação V, Saque III, Inquebrável III e Remendo), +3 pontos em cada árvore geral, 100 níveis de XP e o título `[Mestre Caçador]` no nome (função `terras_partidas:mestre_cacador`).
+- **Torre do Lich:** o mod gera uma a cada 100 chunks (a mais próxima ficava a 3.800 blocos). O datapack muda para 48 chunks.
+- **Monastério do Escultor:** só nascia em picos entre as alturas 120 e 200, e as montanhas do Terralith passam disso (ficava a 9.900 blocos). `pack/config/mowziesmobs-common.toml` aceita qualquer montanha entre 90 e 320.
+- **Pirâmide Amaldiçoada:** continua longe (~6.500 blocos) mesmo com os desertos do Terralith na lista, porque a posição é decidida por uma regra interna do Cataclysm. A missão avisa para ir de dragão.
 - **Desertos do Terralith:** a minhoca só nascia no deserto comum, que o Terralith deixa raro (a mais próxima ficava a 13.000 blocos). O datapack acrescenta os desertos do Terralith em `block_factorys_bosses/tags/worldgen/biome/sandworm_nest.json`.
 - **Tecla de esquiva do mod:** vem no Z, a mesma da roda de feitiços. Fica sem tecla, porque o Epic Fight já tem esquiva.
 - **Tradução:** os 308 textos do mod estão em `tools/traducao_ajustes.json` e no pacote PT-BR.

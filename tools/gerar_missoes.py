@@ -1360,41 +1360,79 @@ def cacadas():
     M = "&6Mestre Vellan&r"
     OW = "minecraft:overworld"
     c.quest("inicio", "Caçadas", 0, 0, forma="gear", tamanho=1.75, icone="minecraft:spyglass",
-            deps=["@ato2/relatorio"], subtitulo="Feras antigas, sem fragmentos",
+            deps=["@ato2/relatorio"], subtitulo="Nove feras antigas, sem fragmentos",
             descricao=[f"{M}: \"Nem todo monstro gigante deste mundo guarda um fragmento. Algumas feras são só antigas... e perigosas.\"",
                        "",
                        "&o\"Caçadores da Ordem já tentaram e não voltaram. Mas o que elas guardam vale o risco: armas que você não acha em nenhum outro lugar.\"",
                        "",
-                       "&7Todas as caçadas são opcionais. Cada fera mora na própria masmorra, e cada uma deixa a sua arma quando morre.&r"],
+                       "&7Todas as caçadas são opcionais e estão em ordem de dificuldade. Cada fera deixa um tesouro próprio, e quem derrotar todas vira &6Mestre Caçador&7.&r"],
             tarefas=[c.t_check("Quero caçar")],
             recompensas=[c.r_item("minecraft:spyglass")])
+    # (chave, nome, ícone, estrutura ou None, entidade, onde, descrição, o que deixa, recompensas do mapa, recomendação)
     feras = [
         ("sandworm", "Sirok, a Minhoca de Areia", "minecraft:sand", "block_factorys_bosses:sandworm_nest", "block_factorys_bosses:sandworm",
          "no &fDeserto&r", "Uma minhoca gigante que nada debaixo da areia e cospe veneno. Fique longe das colunas de areia.",
-         "a &fManopla de Sirok&r, que atira veneno", [c.r_item("minecraft:milk_bucket")]),
+         "a &fManopla de Sirok&r, que atira veneno", [c.r_item("minecraft:milk_bucket")], "Mais fácil: a partir do Ato 2"),
+        ("escultor", "Tongbi, o Escultor", "minecraft:chiseled_stone_bricks", "mowziesmobs:monastery", "mowziesmobs:sculptor",
+         "num &fmonastério no alto das montanhas&r", "Um mestre que molda a pedra. Ele te desafia a subir uma coluna de pedra até ele enquanto arremessa rochas.",
+         "o &fCajado do Escultor&r e as roupas do &fGeomante&r", [c.r_item(pocao("minecraft:long_slow_falling"), 2)], "Fácil: a partir do Ato 2"),
+        ("lich", "O Lich da Noite", "minecraft:soul_lantern", "bosses_of_mass_destruction:lich_tower", "bosses_of_mass_destruction:lich",
+         "no alto da &fTorre do Lich&r", "Um feiticeiro morto-vivo que dispara bolas de fogo azuis e cometas, e se teletransporta pela sala. Não o perca de vista.",
+         "a &fÂnima Antiga&r e diamantes", [c.r_item(pocao("minecraft:long_fire_resistance"), 2)], "Médio: a partir do Ato 3"),
         ("yeti", "Skor, o Yeti", "minecraft:packed_ice", "block_factorys_bosses:yeti_hideout", "block_factorys_bosses:yeti",
          "nas &fPlanícies Nevadas&r", "Um yeti enorme num esconderijo de gelo. Solta nevascas e prende você em cubos de gelo.",
-         "a &fManopla de Skor&r, que congela o alvo e solta espinhos de gelo", [c.r_item(pocao("minecraft:long_fire_resistance"), 2)]),
+         "a &fManopla de Skor&r, que congela o alvo e solta espinhos de gelo", [c.r_item(pocao("minecraft:long_fire_resistance"), 2)], "Médio: a partir do Ato 3"),
+        ("rosalyne", "Rosalyne, Lâmina do Crepúsculo", "meetyourfight:dusk_key", None, "meetyourfight:rosalyne",
+         "onde você usar a &fChave do Crepúsculo&r", "Uma cavaleira de flores e espinhos, rápida e elegante. Use a chave num lugar aberto e ela aparece.",
+         "a &fFlor Violeta&r", [c.r_item("meetyourfight:dusk_key")], "Difícil: a partir do Ato 4"),
         ("dragao", "Ashlord, o Dragão Infernal", "minecraft:magma_block", "block_factorys_bosses:dragon_tower", "block_factorys_bosses:infernal_dragon",
          "em &fplanícies, selvas ou pântanos&r", "Um dragão de fogo no alto de uma torre, protegido por guardas esqueletos em chamas. Tem uma segunda forma ainda maior.",
-         "&fossos de dragão&r, para fazer uma armadura de ossos de dragão", [c.r_item(pocao("minecraft:long_fire_resistance"), 4)]),
+         "&fossos de dragão&r, para fazer uma armadura de ossos de dragão", [c.r_item(pocao("minecraft:long_fire_resistance"), 4)], "Difícil: a partir do Ato 4"),
+        ("remnant", "O Remanescente Antigo", "minecraft:suspicious_sand", "cataclysm:cursed_pyramid", "cataclysm:ancient_remnant",
+         "numa &fpirâmide amaldiçoada no deserto&r", "Uma fera-faraó gigante enterrada na areia. Use o &fpincel&r na &fareia suspeita&r dentro da pirâmide para achar o &fColar do Deserto&r e acordá-la. &cA pirâmide costuma ficar longe: vá de dragão.&r",
+         "a &fTempestade de Areia na Garrafa&r e metal antigo", [c.r_item("minecraft:brush")], "Muito difícil: a partir do Ato 5"),
+        ("maledictus", "Maledictus", "minecraft:soul_lantern", "cataclysm:frosted_prison", "cataclysm:maledictus",
+         "numa &fprisão congelada&r", "Um cavaleiro amaldiçoado selado no gelo. Dê energia de redstone à &fLápide Amaldiçoada&r (uma alavanca ou tocha de redstone ao lado) e clique nela com o botão direito.",
+         "o &flingote de Cursium&r", [c.r_item("minecraft:lever"), c.r_item("minecraft:redstone_torch", 2)], "Muito difícil: depois da história"),
         ("kraken", "Nerakyss, o Kraken", "minecraft:nautilus_shell", "block_factorys_bosses:kraken_ship", "block_factorys_bosses:kraken",
          "no &foceano profundo&r", "Um kraken colossal preso a um navio pirata afundado. Piratas, canhões e tentáculos que saem do chão.",
-         "o &fdente do kraken&r, para fazer um tridente que puxa os inimigos", [c.r_item(pocao("minecraft:long_water_breathing"), 4)]),
+         "o &fdente do kraken&r, para fazer um tridente que puxa os inimigos", [c.r_item(pocao("minecraft:long_water_breathing"), 4)], "Muito difícil: depois da história"),
     ]
-    RECOMENDADO = {"sandworm": "Mais fácil: a partir do Ato 2", "yeti": "Médio: a partir do Ato 3",
-                   "dragao": "Difícil: a partir do Ato 4", "kraken": "Muito difícil: depois da história"}
-    for chave, nome, icone, estrutura, entidade, onde, desc, premio, extra in feras:
-        c.quest(f"{chave}_mapa", f"Caçada: {nome.split(',')[0]}", 0, 0, icone=icone, deps=["inicio"], optional=True,
-                subtitulo=RECOMENDADO[chave],
-                descricao=[f"&e{nome}&r", "", desc, "", f"Mora {onde}.", f"&6{RECOMENDADO[chave]}&r", "",
-                           "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"],
-                tarefas=[c.t_check("Pedir a localização")],
-                recompensas=[c.r_localizar(estrutura, f"Coordenadas: {nome.split(',')[0]}", dimensao=OW)] + extra)
+    for chave, nome, icone, estrutura, entidade, onde, desc, premio, extra, rec in feras:
+        curto = nome.split(',')[0]
+        if estrutura:
+            rec_mapa = [c.r_localizar(estrutura, f"Coordenadas: {curto}", dimensao=OW)] + extra
+            dica = "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"
+        else:
+            rec_mapa = extra
+            dica = "&7Pegue a recompensa para receber a chave.&r"
+        c.quest(f"{chave}_mapa", f"Caçada: {curto}", 0, 0, icone=icone, deps=["inicio"], optional=True, subtitulo=rec,
+                descricao=[f"&e{nome}&r", "", desc, "", f"Mora {onde}." if estrutura else f"Aparece {onde}.", f"&6{rec}&r", "", dica],
+                tarefas=[c.t_check("Pedir a localização" if estrutura else "Quero a chave")],
+                recompensas=rec_mapa)
         c.quest(chave, nome, 0, 0, icone=icone, deps=[f"{chave}_mapa"], forma="octagon", tamanho=1.5, optional=True,
-                descricao=[f"Derrote &c{nome}&r.", "", f"Ele deixa {premio}."],
-                tarefas=[c.t_matar(entidade, 1, f"Derrotar {nome.split(',')[0]}")],
-                recompensas=[c.r_xp(20), c.r_item("minecraft:diamond", 4)])
+                descricao=[f"Derrote &c{nome}&r.", "", f"Deixa {premio}."],
+                tarefas=[c.t_matar(entidade, 1, f"Derrotar {curto}")],
+                recompensas=[c.r_xp(20), c.r_item("minecraft:diamond", 4), c.r_item("minecraft:netherite_scrap", 1)])
+
+    lamina = item("minecraft:netherite_sword", tag={
+        "display": {"Name": json.dumps({"text": "Lâmina do Mestre Caçador", "color": "gold", "italic": False}, ensure_ascii=False),
+                    "Lore": [json.dumps({"text": "Só quem derrubou todas as feras antigas a empunha.", "color": "gray"}, ensure_ascii=False)]},
+        "Enchantments": [{"id": e, "lvl": Raw(f"{n}s")} for e, n in
+                         [("minecraft:sharpness", 5), ("minecraft:looting", 3), ("minecraft:sweeping", 3),
+                          ("minecraft:unbreaking", 3), ("minecraft:mending", 1)]]})
+    c.quest("mestre", "Mestre Caçador", 0, 0, forma="gear", tamanho=2.0, icone="minecraft:netherite_sword",
+            deps=[k for k, *_ in feras], optional=True, subtitulo="Todas as feras derrotadas",
+            descricao=[f"{M}: \"Nove feras antigas. Nenhum caçador da Ordem jamais fez isso.\"",
+                       "", "&o\"Esta lâmina esperou séculos por alguém como você.\"",
+                       "", "&6Recompensa:&r a Lâmina do Mestre Caçador, 3 pontos de habilidade em cada árvore geral e o título &6[Mestre Caçador]&r ao lado do seu nome."],
+            tarefas=[c.t_check("Receber o título")],
+            recompensas=[c.r_item(lamina),
+                         c.r_comando("/puffish_skills points add {p} terras_partidas:combate 3", titulo="+3 pontos em Combate", icone="minecraft:iron_sword"),
+                         c.r_comando("/puffish_skills points add {p} terras_partidas:mineracao 3", titulo="+3 pontos em Mineração", icone="minecraft:iron_pickaxe"),
+                         c.r_comando("/puffish_skills points add {p} terras_partidas:vida 3", titulo="+3 pontos em Vida", icone="minecraft:golden_apple"),
+                         c.r_comando("/function terras_partidas:mestre_cacador", titulo="Título [Mestre Caçador]", icone="minecraft:name_tag"),
+                         c.r_xp(100)])
     return {
         "id": qid("capitulo/cacadas"),
         "group": "",
