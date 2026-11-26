@@ -1,0 +1,5 @@
+key_iris.keybind.reload:key.keyboard.unknown
+key_iris.keybind.toggle:key.keyboard.unknown
+key_key.epicfight.skill_gui:key.keyboard.j
+key_key.epicfight.switch_mode:key.keyboard.r
+key_key.puffish_skills.open:key.keyboard.k

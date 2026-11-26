@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/defaultoptions/keybindings.txt"
+hash = "891172f4445ddd9bb083ac26cbc36a13c6e6c739210aafdfc11f25e2b39b7dd6"
+
+[[files]]
 file = "config/easy_npc/security.cfg"
 hash = "c6998a3414e6201501fe1b49561f9355268d1ebc6f0015d1bd2b436ee736605b"
 
@@ -663,6 +667,11 @@ metafile = true
 [[files]]
 file = "mods/deeperdarker.pw.toml"
 hash = "e50740a50bdeef70e78fc991fbc8eee9dbb4bacd11f5e7cbf10f4c46cb5fd0aa"
+metafile = true
+
+[[files]]
+file = "mods/default-options.pw.toml"
+hash = "3e8187acf1eb48228597648ee3bee178123bef8ece1b3dac80144467747b647b"
 metafile = true
 
 [[files]]
