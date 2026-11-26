@@ -158,6 +158,6 @@ A lista completa de mods aparece na aba de dependências da página.
 ### Antes de enviar
 
 - [ ] **Testar no PC:** pelo menos o Ato 1, num perfil novo importado do zip.
-- [ ] **Capturas de tela** para a galeria, de 5 a 8 imagens: o Mestre Vellan, o livro de missões, uma luta de chefe, um dragão, a árvore de habilidades, uma paisagem com shader.
+- [x] **Capturas de tela:** 9 prints de verdade, tirados do jogo com o shader, estão em `arte/prints/`: tela inicial, paisagem, arena do Helvar, Helvar, Ashlord na torre, jogador com o Mestre Vellan, livro de missões e árvore de habilidades.
 - [ ] **Nome:** confira na criação se "SealCraft" está livre no CurseForge.
 - [ ] **Versão 1.0.0:** quando o teste completo passar, mude em `pack/pack.toml`.
