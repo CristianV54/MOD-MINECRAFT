@@ -590,7 +590,7 @@
 			icon: "minecraft:wither_skeleton_skull"
 			shape: "octagon"
 			size: 2.25d
-			description: ["No centro da fábrica está o &cArauto&r, desligado.", "Clique nele com a &fEstrela do Nether&r na mão para despertá-lo e derrote-o.", "&7Se perder a luta, você vai precisar de outra estrela (de outro Wither) para despertá-lo de novo.&r", "", "&7Dica: ele dispara mísseis teleguiados e lasers. Use pilares como cobertura, e na segunda fase fique perto dele: os lasers são piores de longe.&r"]
+			description: ["No centro da fábrica está o &cArauto&r, desligado.", "Clique nele com a &fEstrela do Nether&r na mão para despertá-lo e derrote-o.", "&7Se perder a luta, você vai precisar de outra estrela (de outro Wither) para despertá-lo de novo.&r", "", "&7Dica: ele dispara mísseis teleguiados e lasers. Use pilares como cobertura, e na segunda fase fique perto dele: os lasers são piores de longe.&r", "", "&5Prepare-se bem antes de derrotá-lo. O núcleo dele guarda mais do que um fragmento.&r"]
 			dependencies: ["7CEEF225CBD59975"]
 			tasks: [
 				{
@@ -646,6 +646,16 @@
 					count: 2
 				}
 				{
+					id: "74C58A0105E18169"
+					type: "command"
+					command: "/function terras_partidas:coracao/despertar"
+					elevate_perms: true
+					silent: true
+					auto: "enabled"
+					title: "???"
+					icon: "minecraft:amethyst_cluster"
+				}
+				{
 					id: "78D05CC4AD917660"
 					type: "command"
 					command: "/function terras_partidas:ponto_de_habilidade"
@@ -657,16 +667,81 @@
 			]
 		}
 		{
+			id: "63AA4EA0EEDB24C6"
+			title: "Chefe Final: O Coração do Selo"
+			x: 20.0d
+			y: 0.0d
+			subtitle: "O mal que o Selo prendia"
+			icon: "minecraft:amethyst_cluster"
+			shape: "octagon"
+			size: 2.5d
+			description: ["&dO Arauto nunca foi o mal antigo. Ele era a prisão.&r", "", "Quando a máquina caiu, o núcleo rachou, e de dentro saiu o que os sete guardiões prenderam há trezentos anos: o &5Coração do Selo&r.", "", "&eComo ele luta:&r", "• &dPasso do Vazio:&r some e aparece nas suas costas. Fique se mexendo.", "• &dSombras dos Guardiões&r (60% da vida): enquanto elas viverem, ele não toma dano. Mate as sombras primeiro.", "• &dOnda do Selo:&r quando o chão brilhar roxo em volta dele, se afaste.", "• &dDesespero&r (25% da vida): fica mais rápido e mais forte. Não pare agora!", "", "&7Se você morrer e perder ele de vista, use a missão \"Chamar o Coração de Novo\".&r"]
+			dependencies: ["07409C87B9FB6E33"]
+			tasks: [
+				{
+					id: "091806696B987E16"
+					type: "advancement"
+					advancement: "terras_partidas:selo_restaurado"
+					criterion: ""
+					title: "Derrotar o Coração do Selo"
+				}
+			]
+			rewards: [
+				{
+					id: "294FA91658B28D7B"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					id: "0CE97B7DA5374187"
+					type: "item"
+					item: "minecraft:nether_star"
+				}
+			]
+		}
+		{
+			id: "384A68F3FDBC1F3D"
+			title: "Chamar o Coração de Novo"
+			x: 20.0d
+			y: 1.5d
+			icon: "minecraft:echo_shard"
+			shape: "circle"
+			size: 0.75d
+			description: ["Morreu na luta e perdeu o Coração do Selo de vista?", "Pegue a recompensa e ele desperta de novo perto de você. Só funciona se ele não estiver por perto e se você ainda não o derrotou."]
+			dependencies: ["07409C87B9FB6E33"]
+			optional: true
+			can_repeat: true
+			hide_dependency_lines: true
+			tasks: [
+				{
+					id: "0E4A1DE50691B963"
+					type: "checkmark"
+					title: "Chamar o Coração do Selo"
+				}
+			]
+			rewards: [
+				{
+					id: "7CC7C7E87A82D184"
+					type: "command"
+					command: "/function terras_partidas:coracao/despertar"
+					elevate_perms: true
+					silent: true
+					title: "Despertar o Coração do Selo"
+					icon: "minecraft:echo_shard"
+				}
+			]
+		}
+		{
 			id: "5D30ADB7458E563B"
 			title: "O Selo Restaurado"
-			x: 20.0d
-			y: 1.0d
+			x: 22.0d
+			y: 0.0d
 			subtitle: "Fim da história"
 			icon: "minecraft:beacon"
 			shape: "gear"
 			size: 2.5d
-			description: ["&6Mestre Vellan&r: \"Dezenove fragmentos. O Selo está inteiro de novo.\"", "", "&o\"Quando você colocou o último pedaço no lugar, o cristal brilhou mais forte do que qualquer coisa que eu já vi. O Arauto virou pó. Os guardiões caídos podem finalmente descansar.\"", "", "&o\"Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez. O mundo está inteiro de novo, graças a você.\"", "", "&o\"Preciso te contar uma coisa. Você enfrentou seis guardiões... mas éramos sete. Eu sou o sétimo. Fiquei neste mundo, escondido na Ordem, esperando alguém forte o bastante para terminar o que começamos.\"", "", "&6&lObrigado por jogar SealCraft!&r", "", "&7Ainda tem os &fDesafios Lendários&7 ao lado, para quem quer mais.&r"]
-			dependencies: ["07409C87B9FB6E33"]
+			description: ["&6Mestre Vellan&r: \"Dezenove fragmentos. O Selo está inteiro de novo.\"", "", "&o\"Quando você colocou o último pedaço no lugar, o cristal brilhou mais forte do que qualquer coisa que eu já vi. O Coração virou pó. Os guardiões caídos podem finalmente descansar.\"", "", "&o\"Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez. O mundo está inteiro de novo, graças a você.\"", "", "&o\"Preciso te contar uma coisa. Você enfrentou seis guardiões... mas éramos sete. Eu sou o sétimo. Fiquei neste mundo, escondido na Ordem, esperando alguém forte o bastante para terminar o que começamos.\"", "", "&6&lObrigado por jogar SealCraft!&r", "", "&7Ainda tem os &fDesafios Lendários&7 ao lado, para quem quer mais.&r"]
+			dependencies: ["63AA4EA0EEDB24C6"]
 			tasks: [
 				{
 					id: "60BE85FC479F85D0"
@@ -717,8 +792,8 @@
 		{
 			id: "649B209061CE456E"
 			title: "Desafios Lendários"
-			x: 22.0d
-			y: 1.0d
+			x: 24.0d
+			y: 0.0d
 			icon: "minecraft:dragon_egg"
 			shape: "hexagon"
 			description: ["&7Para quem ainda quer mais.&r Dois monstros antigos ainda vagam pelo mundo. Nenhum guarda fragmentos, só glória."]
@@ -742,8 +817,8 @@
 		{
 			id: "4B879F1DD11BBDE4"
 			title: "A Flor do Vazio"
-			x: 24.0d
-			y: 0.0d
+			x: 26.0d
+			y: -1.0d
 			icon: "minecraft:spore_blossom"
 			description: ["Nas cavernas verdes e úmidas cresce uma flor gigante e carnívora, a &cFlor do Vazio&r.", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["649B209061CE456E"]
@@ -770,8 +845,8 @@
 		{
 			id: "2CA80BCF97964759"
 			title: "Lendário: Flor do Vazio"
-			x: 26.0d
-			y: 0.0d
+			x: 28.0d
+			y: -1.0d
 			icon: "minecraft:spore_blossom"
 			shape: "octagon"
 			size: 1.25d
@@ -813,8 +888,8 @@
 		{
 			id: "30174A75CA9ADA58"
 			title: "A Cidade Afundada"
-			x: 24.0d
-			y: 1.5d
+			x: 26.0d
+			y: 1.0d
 			icon: "minecraft:prismarine_bricks"
 			description: ["No fundo do oceano existe uma cidade afundada. No altar dela, um &cLeviatã&r espera ser chamado.", "", "Use o &fSacrifício Abissal&r no &fAltar do Abismo&r da cidade para chamá-lo.", "&7Ele é invencível fora da água. Leve poções de respiração aquática.&r", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["649B209061CE456E"]
@@ -858,8 +933,8 @@
 		{
 			id: "025CC0FAC279BC9F"
 			title: "Lendário: O Leviatã"
-			x: 26.0d
-			y: 1.5d
+			x: 28.0d
+			y: 1.0d
 			icon: "minecraft:heart_of_the_sea"
 			shape: "octagon"
 			size: 1.25d

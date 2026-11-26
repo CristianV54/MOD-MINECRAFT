@@ -223,6 +223,23 @@ O Mestre Vellan é um NPC do Easy NPC que **aparece 3 blocos na frente do jogado
   - **J:** tela de habilidades do Epic Fight.
   - **Magia:** **V** lança o feitiço escolhido, **Z** abre a roda de feitiços e **Ctrl + rolar o mouse** troca de feitiço. Antes, a roda ficava no R e o modificador no Alt, junto com o modo de combate e a esquiva.
 
+## Chefe final: O Coração do Selo
+
+O Arauto (do Cataclysm) era a prisão. Quando ele morre, o núcleo racha e sai o **Coração do Selo**, o mal que os sete guardiões prenderam. Tudo é datapack, gerado por `tools/gerar_chefe_final.py`. As imagens de como ele fica estão em `arte/chefe_final/`.
+
+- **Corpo:** esqueleto Wither com armadura de netherita e faixas de ametista (acabamento "ward"), e espada longa de netherita do Epic Fight. A armadura é só visual: a defesa vem dos atributos.
+- **Atributos:** 500 de vida, 10 de armadura e 11 de dano.
+- **Fases:**
+  1. **Passo do Vazio:** a cada ~10 s ele some e aparece 2 blocos atrás do jogador mais próximo.
+  2. **60% da vida:** chama 4 Sombras dos Guardiões, zumbis invisíveis de armadura roxa. Enquanto elas vivem, ele fica imune. Também começa a soltar a **Onda do Selo**: 1,5 s de aviso no chão e depois 9 de dano num raio de 5 blocos.
+  3. **25% da vida:** fica mais rápido e mais forte e ataca com o dobro de frequência.
+- **Vitória:** a conquista de desafio "O Selo Restaurado" completa a missão. Depois vem a sequência de ~30 s:
+  - título "O SELO FOI RESTAURADO", fogos e amanhecer;
+  - o Mestre Vellan aparece e faz o discurso;
+  - a Coroa do Selo, o título `[Guardião do Selo]` no nome (time `tp_guardiao`) e os créditos no chat.
+- **Como dispara:** a missão do Arauto tem uma recompensa automática que chama `terras_partidas:coracao/despertar`. A missão "Chamar o Coração de Novo" serve para quem morrer e perder o chefe de vista.
+- **Testar sem jogar até o fim** (precisa de cheats): `/function terras_partidas:coracao/testar`.
+
 ## Equilíbrio dos monstros
 
 O script `tools/gerar_equilibrio.py` deixa o começo do jogo mais justo:

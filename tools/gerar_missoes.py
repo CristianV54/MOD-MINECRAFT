@@ -197,9 +197,11 @@ class Capitulo:
     def r_xp(self, niveis):
         return {"id": self._id("r"), "type": "xp_levels", "xp_levels": niveis}
 
-    def r_comando(self, comando, titulo=None, icone=None):
+    def r_comando(self, comando, titulo=None, icone=None, auto=False):
         r = {"id": self._id("r"), "type": "command", "command": comando,
              "elevate_perms": True, "silent": True}
+        if auto:
+            r["auto"] = "enabled"   # dispara sozinha quando a missão completa
         if titulo:
             r["title"] = titulo
         if icone:
@@ -1226,17 +1228,46 @@ def ato5():
                        "Clique nele com a &fEstrela do Nether&r na mão para despertá-lo e derrote-o.",
                        "&7Se perder a luta, você vai precisar de outra estrela (de outro Wither) para despertá-lo de novo.&r",
                        "",
-                       "&7Dica: ele dispara mísseis teleguiados e lasers. Use pilares como cobertura, e na segunda fase fique perto dele: os lasers são piores de longe.&r"],
+                       "&7Dica: ele dispara mísseis teleguiados e lasers. Use pilares como cobertura, e na segunda fase fique perto dele: os lasers são piores de longe.&r",
+                       "",
+                       "&5Prepare-se bem antes de derrotá-lo. O núcleo dele guarda mais do que um fragmento.&r"],
             tarefas=[c.t_matar("cataclysm:the_harbinger", 1, "Derrotar o Arauto")],
             recompensas=[c.r_item(fragmento(5, 4, 4)), c.r_skill("epicfight:catharsis"), c.r_xp(30),
-                         c.r_item("minecraft:netherite_ingot", 2)])
+                         c.r_item("minecraft:netherite_ingot", 2),
+                         c.r_comando("/function terras_partidas:coracao/despertar", titulo="???",
+                                     icone="minecraft:amethyst_cluster", auto=True)])
+
+    c.quest("coracao", "Chefe Final: O Coração do Selo", 28.5, 1.5, icone="minecraft:amethyst_cluster",
+            deps=["harbinger"], forma="octagon", tamanho=2.5, subtitulo="O mal que o Selo prendia",
+            descricao=["&dO Arauto nunca foi o mal antigo. Ele era a prisão.&r",
+                       "",
+                       "Quando a máquina caiu, o núcleo rachou, e de dentro saiu o que os sete guardiões prenderam há trezentos anos: o &5Coração do Selo&r.",
+                       "",
+                       "&eComo ele luta:&r",
+                       "• &dPasso do Vazio:&r some e aparece nas suas costas. Fique se mexendo.",
+                       "• &dSombras dos Guardiões&r (60% da vida): enquanto elas viverem, ele não toma dano. Mate as sombras primeiro.",
+                       "• &dOnda do Selo:&r quando o chão brilhar roxo em volta dele, se afaste.",
+                       "• &dDesespero&r (25% da vida): fica mais rápido e mais forte. Não pare agora!",
+                       "",
+                       "&7Se você morrer e perder ele de vista, use a missão \"Chamar o Coração de Novo\".&r"],
+            tarefas=[c.t_conquista("terras_partidas:selo_restaurado", "Derrotar o Coração do Selo")],
+            recompensas=[c.r_xp(50), c.r_item("minecraft:nether_star")])
+
+    c.quest("coracao_de_novo", "Chamar o Coração de Novo", 28.5, 4, icone="minecraft:echo_shard",
+            deps=["harbinger"], forma="circle", tamanho=0.75, optional=True, can_repeat=True,
+            hide_dependency_lines=True,
+            descricao=["Morreu na luta e perdeu o Coração do Selo de vista?",
+                       "Pegue a recompensa e ele desperta de novo perto de você. Só funciona se ele não estiver por perto e se você ainda não o derrotou."],
+            tarefas=[c.t_check("Chamar o Coração do Selo")],
+            recompensas=[c.r_comando("/function terras_partidas:coracao/despertar", titulo="Despertar o Coração do Selo",
+                                     icone="minecraft:echo_shard")])
 
     c.quest("selo", "O Selo Restaurado", 30, 1.5, icone="minecraft:beacon",
-            deps=["harbinger"], forma="gear", tamanho=2.5,
+            deps=["coracao"], forma="gear", tamanho=2.5,
             subtitulo="Fim da história",
             descricao=[f"{M}: \"Dezenove fragmentos. O Selo está inteiro de novo.\"",
                        "",
-                       "&o\"Quando você colocou o último pedaço no lugar, o cristal brilhou mais forte do que qualquer coisa que eu já vi. O Arauto virou pó. Os guardiões caídos podem finalmente descansar.\"",
+                       "&o\"Quando você colocou o último pedaço no lugar, o cristal brilhou mais forte do que qualquer coisa que eu já vi. O Coração virou pó. Os guardiões caídos podem finalmente descansar.\"",
                        "",
                        "&o\"Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez. O mundo está inteiro de novo, graças a você.\"",
                        "",

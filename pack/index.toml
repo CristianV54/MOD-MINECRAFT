@@ -46,7 +46,7 @@ hash = "35be85b7a2347186124ee6ba6a8d8703c2f6a1818e61ba8a986d35fb798df182"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_5_o_fim_do_selo.snbt"
-hash = "0850b18276c345f78c60f9eba6dd2872c09f18298853f5008e3fa103ed23b32a"
+hash = "b102ce0095b908361c5b62812f18fbf626536614984a7810625144e0458c311a"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -274,19 +274,27 @@ hash = "88695070fc756517fce928115502a1a5642443ea657131c869b996ad26290ccc"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/minecraft/tags/functions/load.json"
-hash = "efb6811306ee5b5517dc5dbbfa8dda119e845ab40c3d20fcec7620d4d338676e"
+hash = "b90234a039e0221bc1f65a63a0571147683ba03275286f2529fd806120b60c30"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/minecraft/tags/functions/tick.json"
-hash = "e024e4b347e7c82cd8eeea5205c29fcaa017ec5c98afa101310bd0c8a8838d35"
+hash = "4e6a7fca031f98bca570e0fbc2fd8d80e17799847dcb87bbf11241c00e4a3e67"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/mowziesmobs/tags/worldgen/biome/has_structure/has_mowzie_structure.json"
 hash = "0ee75ac9e4f5bbcd3fa6ce4f54e081f57590cc6c8831cefcd1870afa88d32ba2"
 
 [[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/advancements/coracao_derrotado.json"
+hash = "cf7fe9205f4a069202f7ac548db4dc95ca7b327ff3bc385a7a3d8e0c66f332fd"
+
+[[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/advancements/primeira_entrada.json"
 hash = "81a35f560b06ac241124f5995e01a968e2a3c39d5ba5f36e83e83379ff28f16e"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/advancements/selo_restaurado.json"
+hash = "0cd97432c53a5c84f8631898e5c211e76bada833797b8542ced7da02c0da17c1"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/easy_npc/preset/humanoid/mestre_vellan.npc.snbt"
@@ -315,6 +323,90 @@ hash = "43a1bd896bdfda1389b6420cdebf9f637572b765fafdbc3bb421adaeb16bfb50"
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/chamar_vellan.mcfunction"
 hash = "943faafed368c8b5fd190627e55f3207bdba5ea39dbaaf146e15e574ff35435b"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/ataque.mcfunction"
+hash = "f61c55f8250aa989051fb148772f286b5fcec66cff648482eaa48d9630e81ad8"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/carregar.mcfunction"
+hash = "d28885bda49e482257a26cef33727151d0f6312788b748eafd2af9f0f7a74b08"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/chefe.mcfunction"
+hash = "6e3dfc82adbe353c952878cb2cd218d353f86a0173e5ec457c426725d6a07b2d"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/creditos.mcfunction"
+hash = "fb36a11e25a725ada396b9e9e96703b4d2acb49fac73962002da7af6308238bb"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/despertar.mcfunction"
+hash = "a4da1937400ab455d39adc0352da0654d2f1bfb29523f501850f172dcce2fa9a"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/despertar_iniciar.mcfunction"
+hash = "ad4d6f9f50bda149a8aaac0e6e8e6caad7fdd25695f31077f7da6fdaac86285a"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/despertar_passo.mcfunction"
+hash = "0b82ec6ea7d2a4cbf2416850e82a9d528d867138842f98aeabcc83c52b23aab2"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/escudo.mcfunction"
+hash = "66964838b64f4209155c02b59337f702e26959fa681f5a10943ae7c432e0047c"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/fase2.mcfunction"
+hash = "39e1b5bffd2eb66babcd4278809a30d484a7a8534c76e95a72c8556fa08f8ee9"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/fase3.mcfunction"
+hash = "1a0e6f3ecd51b334dd42ec29961beb63aca6a18b21ea82837ead81a459a491a5"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/invocar.mcfunction"
+hash = "f03daef89ca1451d1d994412f2d0f418c4b038b030a63b1042976f658f2c8736"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/invocar_aqui.mcfunction"
+hash = "125745dbe4eb2c9c36b9ad84dbd7eaa925bda17990fad3eafc86f54ca6f2cc78"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/onda.mcfunction"
+hash = "af51edcb30d49665f8f29f3ec0c2781312a3c876a8cdba9aabc3b88c6828ae87"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/onda_carregar.mcfunction"
+hash = "4e3558913a6058d0ec7bcfb705f40a5f1990cfd467d2c08114408e21ee6ef987"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/passo_do_vazio.mcfunction"
+hash = "f949bd8235b7ef1a8a1a8fdf07c49e4145abb8bef8a019cec94ac39af633a7d6"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/testar.mcfunction"
+hash = "c239a959fa49897f70222b74d4ef0bda3719687c9e65d88813d4a58f28e825c3"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/tick.mcfunction"
+hash = "7f65f2f681a2ea24fa75cb740e98df224953998bbeb4c74d262c6794ec6b3aec"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/vigia.mcfunction"
+hash = "17b2c9935f666d263c336577d8896bdc32e6bfabab866d4d44fa64cc30085232"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/vitoria.mcfunction"
+hash = "142eaf7f0c3f48395ece133d06f2f6e8ea44146b1e1f4ea48b922e95345a8292"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/vitoria_conquista.mcfunction"
+hash = "6daf6420e84b9e46bbc5e6f5d506ea199030000aeead4e4978ed2ddc238514e9"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/coracao/vitoria_passo.mcfunction"
+hash = "36d36ed6f21ab67f7d2395ef60bc1c8d00b87c2e4a13867a3d0bd613bc926b17"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/ponto_de_habilidade.mcfunction"
@@ -507,6 +599,10 @@ hash = "38aa44f51d41441233e30ee7e4ce1c3644ba6871c7b5ae7ff956412b7ec444bc"
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/config.json"
 hash = "d7baba97ca2304c9fa82e7f8f12aab2c6e0cfe369441159c3721bc786823317b"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/tags/blocks/passavel.json"
+hash = "61942058804b587abe0fd50219e114c5a8edf31d7ce9fa7a0eb821b9a22f0a5e"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/tags/worldgen/structure/bosque_umvuthana.json"
