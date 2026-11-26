@@ -3,7 +3,7 @@
 **SealCraft: RPG em Português.** Modpack brasileiro de RPG com combate estilo souls, chefes, dungeons e uma história contada em português.
 
 - **Versão:** Minecraft 1.20.1 com Forge 47.4.29
-- **Mods:** 113 no total (94 rodam no servidor e 19 só no jogador), mais 1 pacote de shaders e 1 pacote de animações
+- **Mods:** 115 no total (96 rodam no servidor e 19 só no jogador), mais 1 pacote de shaders e 1 pacote de animações
 - **Objetivo:** ser mais leve que o DawnCraft (305 mods) e rodar bem com 6 GB de RAM
 - **Publicação:** textos da página do CurseForge e do Modrinth em `PUBLICACAO.md`
 - **Estado:** **história completa**, com 5 atos, 108 missões em português, 19 chefes de história, 2 desafios lendários e dragões. Ainda não foi jogada de ponta a ponta.
@@ -293,4 +293,4 @@ Não edite as missões pelo modo de edição dentro do jogo: o script sobrescrev
 
 **Ajustes de mundo:** ficam no datapack `pack/config/openloader/data/terras_partidas/`, carregado pelo mod Open Loader. Ele libera as estruturas do Mowzie's Mobs (chefes) nos biomas do Terralith, define os mapas do tesouro (`loot_tables/mapas/`) que as missões entregam e aproxima as estruturas de chefe do Cataclysm no Nether.
 
-**Observação:** 5 mods vêm do Modrinth (Illage and Spillage, Dungeons and Taverns, The Undead Revamped, Entity Culling e Pufferfish's Skills). O `.zip` exportado leva esses mods dentro. Isso não é problema para jogar com amigos, mas antes de publicar no CurseForge é preciso trocar esses mods pela versão do CurseForge ou conferir se eles estão liberados lá.
+**Todos os mods vêm do CurseForge** (desde a 0.16.0): o zip exportado só tem referências, sem nenhum `.jar` dentro, que é o que o CurseForge exige para aprovar um modpack. Alguns mods não são achados pelo nome no `packwiz curseforge add`. Nesse caso, use o link da página, por exemplo `https://www.curseforge.com/minecraft/mc-mods/illage-and-spillage-finally-ported`.

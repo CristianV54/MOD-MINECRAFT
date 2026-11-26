@@ -89,7 +89,7 @@ No fim do Ato 2 o Mestre te dá um **ovo de dragão**: Fogo, Gelo, Água ou Flor
 
 ### 💻 Leve
 
-São 113 mods, contra mais de 300 em packs parecidos, com vários mods de desempenho (Embeddium, ModernFix, FerriteCore). Recomendado: **6 GB de RAM**.
+São 115 mods, contra mais de 300 em packs parecidos, com vários mods de desempenho (Embeddium, ModernFix, FerriteCore). Recomendado: **6 GB de RAM**.
 
 ---
 
@@ -125,24 +125,35 @@ A lista completa de mods aparece na aba de dependências da página.
 
 ### 🌎 English
 
-**SealCraft** is a Brazilian souls-like RPG modpack for Forge 1.20.1, **fully translated to Portuguese**. It has a 5-act story with 19 bosses and 109 quests, 5 classes with skill trees, magic, rideable dragons and a guide NPC whose dialogue follows your progress. Lightweight: 113 mods, 6 GB of RAM recommended.
+**SealCraft** is a Brazilian souls-like RPG modpack for Forge 1.20.1, **fully translated to Portuguese**. It has a 5-act story with 19 bosses and 109 quests, 5 classes with skill trees, magic, rideable dragons and a guide NPC whose dialogue follows your progress. Lightweight: 115 mods, 6 GB of RAM recommended.
 
 ---
 
-## 3. O que falta antes de publicar
+## 3. Passo a passo para publicar no CurseForge
 
-- [ ] **Testar no PC do começo ao fim**, ou pelo menos o Ato 1, e corrigir o que aparecer.
-- [ ] **Mudar a versão para 1.0.0** em `pack/pack.toml`.
-- [ ] **Logo:** imagem quadrada, pelo menos 400x400. A ideia é um cristal roxo partido com uma espada, combinando com o Fragmento do Selo.
-- [ ] **Capturas de tela** de 5 a 8 imagens, tiradas no jogo:
-  - o Mestre Vellan falando;
-  - o livro de missões;
-  - uma luta de chefe (Ignis ou Frostmaw);
-  - um dragão voando;
-  - a árvore de habilidades;
-  - uma masmorra;
-  - uma paisagem do Terralith.
-- [ ] **CurseForge:** 5 mods do pacote vêm do Modrinth: Illage and Spillage, Dungeons and Taverns, The Undead Revamped, Entity Culling e Pufferfish's Skills. O CurseForge só aceita mods de fora se estiverem na lista de aprovados. Antes de enviar, troque cada um pela versão do CurseForge, se existir, ou confira se ele está liberado.
-- [ ] **Modrinth:** exporte com `packwiz modrinth export`. Os mods que só existem no CurseForge precisam ter a redistribuição permitida.
-- [ ] **Nome no CurseForge:** "SealCraft" está livre no Modrinth. Confira no CurseForge na hora de criar o projeto.
-- [ ] **Changelog da 1.0.0:** um resumo do que o pack tem. Dá para usar a seção "O que já foi testado" do README.
+**Situação atual:** o pacote está pronto para o CurseForge. Desde a versão 0.16.0, os 115 mods, o shader e o pacote de animações vêm do próprio CurseForge, e o zip não leva nenhum arquivo de fora. Arquivo de fora no zip era o que fazia o CurseForge recusar o pack.
+
+1. **Entre no site** [curseforge.com](https://www.curseforge.com) com a sua conta e abra o [painel de autor](https://authors.curseforge.com). Se pedir, aceite os termos de autor.
+2. **Crie o projeto:** "Create Project", jogo **Minecraft**, tipo **Modpacks**.
+3. **Preencha o cadastro** com os campos da seção 1 desta página:
+   - nome **SealCraft**;
+   - resumo curto;
+   - categorias;
+   - logo: o arquivo `arte/icone_sealcraft.png` (400x400);
+   - descrição: copie a seção 2.
+4. **Licença:** escolha uma, por exemplo "All Rights Reserved" ou "MIT". Ela vale só para o que é nosso (missões, textos, configuração).
+5. **Envie o arquivo:** na aba **Files**, clique em "Upload File" e mande o `download/SealCraft-<versão>.zip`.
+   - **Tipo:** Release (ou Beta, enquanto não tiver testado tudo).
+   - **Versão do jogo:** 1.20.1.
+   - **Changelog:** um resumo do que mudou.
+6. **Aguarde a revisão:** o projeto novo e cada arquivo passam pela moderação do CurseForge. Costuma levar de algumas horas a poucos dias. Se recusarem, a mensagem diz o motivo.
+7. **Depois de aprovado:** o pack aparece na busca do app do CurseForge e qualquer pessoa instala com um clique.
+
+**Para atualizar depois:** suba a versão em `pack/pack.toml`, rode `packwiz curseforge export` dentro de `pack/` e envie o zip novo na aba Files do mesmo projeto.
+
+### Antes de enviar
+
+- [ ] **Testar no PC:** pelo menos o Ato 1, num perfil novo importado do zip.
+- [ ] **Capturas de tela** para a galeria, de 5 a 8 imagens: o Mestre Vellan, o livro de missões, uma luta de chefe, um dragão, a árvore de habilidades, uma paisagem com shader.
+- [ ] **Nome:** confira na criação se "SealCraft" está livre no CurseForge.
+- [ ] **Versão 1.0.0:** quando o teste completo passar, mude em `pack/pack.toml`.
