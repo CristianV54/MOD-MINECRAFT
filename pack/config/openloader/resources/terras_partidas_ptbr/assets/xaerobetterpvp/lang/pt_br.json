@@ -1,0 +1,16 @@
+{
+  "gui.xaero_armour_main_hand": "Item da mão principal",
+  "gui.xaero_armour_off_hand": "Item da mão secundária",
+  "gui.xaero_better_pvp_server_profiles": "Configurações do Better PVP no servidor",
+  "gui.xaero_entity_tooltip_settings": "Configurações da dica de item",
+  "gui.xaero_held_centered_position": "Itens segurados ao centralizar",
+  "gui.xaero_held_centered_position_hotbar": "Barra de acesso rápido",
+  "gui.xaero_held_centered_position_screen_edges": "Bordas",
+  "gui.xaero_item_tooltip": "Dica de item",
+  "gui.xaero_item_tooltip_min_lines": "Mínimo de linhas",
+  "gui.xaero_item_tooltip_time": "Exibir por",
+  "gui.xaero_no_durability": "Nenhum",
+  "gui.xaero_potion_effects_blink": "Piscar ao acabar",
+  "gui.xaero_quick_eat": "Comer rápido",
+  "gui.xaero_sprint": "Corrida aprimorada"
+}

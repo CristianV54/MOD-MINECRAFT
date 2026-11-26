@@ -1,0 +1,20 @@
+{
+  "mezz_config.config.defaultValue": "Valor padrão: %s",
+  "mezz_config.config.description": "Descrição: %s",
+  "mezz_config.config.fileWatcher": "Monitoramento de arquivos",
+  "mezz_config.config.fileWatcher.changeSettlingDelayMilliseconds": "Espera após alterações",
+  "mezz_config.config.fileWatcher.changeSettlingDelayMilliseconds.description": "Milissegundos de espera após o último evento do sistema de arquivos antes de recarregar os arquivos de configuração alterados.",
+  "mezz_config.config.fileWatcher.description": "Controla o monitoramento automático dos arquivos de configuração e o tempo de recarregamento.",
+  "mezz_config.config.fileWatcher.enabled": "Monitoramento automático de arquivos",
+  "mezz_config.config.fileWatcher.enabled.description": "Monitora os arquivos de configuração automaticamente e os recarrega quando são alterados fora do jogo.",
+  "mezz_config.config.fileWatcher.missingDirectoryRetryIntervalMilliseconds": "Intervalo para pastas ausentes",
+  "mezz_config.config.fileWatcher.missingDirectoryRetryIntervalMilliseconds.description": "Milissegundos entre as tentativas de começar a monitorar pastas de configuração que ainda não existem.",
+  "mezz_config.config.logging": "Logs",
+  "mezz_config.config.logging.description": "Controla os logs opcionais de diagnóstico do MezzConfig.",
+  "mezz_config.config.logging.logUntranslatedKeys": "Mostrar no log chaves sem tradução",
+  "mezz_config.config.logging.logUntranslatedKeys.description": "Mostra no log as chaves de tradução de categorias e valores que faltam no idioma ativo. Ativado por padrão em ambientes de desenvolvimento.",
+  "mezz_config.config.name": "Nome: %s",
+  "mezz_config.config.requiresGameRestart": "Requer reiniciar o jogo para ter efeito.",
+  "mezz_config.config.requiresWorldRestart": "Requer reiniciar o mundo para ter efeito.",
+  "mezz_config.config.valueValues": "Valores válidos: %s"
+}

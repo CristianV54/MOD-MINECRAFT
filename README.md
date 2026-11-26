@@ -169,13 +169,13 @@ As árvores são geradas pelo script `tools/gerar_habilidades.py`, onde ficam to
 
 ## Tradução dos mods (PT-BR)
 
-O pacote de recursos `pack/config/openloader/resources/terras_partidas_ptbr/` traz **8.954 textos traduzidos em 59 mods**. Ele inclui itens, mobs, chefes, conquistas, dicas e as telas do JEI, FTB Quests, mapas do Xaero, Waystones e mochilas.
+O pacote de recursos `pack/config/openloader/resources/terras_partidas_ptbr/` traz **10.750 textos traduzidos em 73 mods**. Com o português que os próprios mods já tinham, **100% dos 20.675 textos** do pacote estão em português. Ele inclui itens, mobs, chefes, conquistas, dicas e as telas do JEI, FTB Quests, mapas do Xaero, Waystones e mochilas.
 - **Ativação:** o Open Loader carrega o pacote sozinho, como obrigatório e no topo da lista. O jogador não precisa ativar nada, só jogar com o Minecraft em português.
 - **Só o que faltava:** cada arquivo traz só os textos que o mod não tinha em português. O que o mod já trazia continua valendo.
 - **Mowzie's Mobs:** o `pt_br.json` do próprio mod está com erro de sintaxe e o Minecraft descarta o arquivo inteiro. O nosso arquivo leva as 230 traduções boas que existiam nele mais as que faltavam.
 - **Ajustes por cima do mod:** `tools/traducao_ajustes.json` corrige nomes que vinham ruins no português do mod, como "Acendedor zeloso" virando "Isqueiro Zeal". Também deixa as chaves das masmorras iguais aos nomes usados nas missões.
 - **Termos:** os nomes de itens do Minecraft seguem o português oficial do jogo. Os chefes com nome próprio ficam no original (Ignis, Frostmaw, Swampjaw...).
-- **Fora da tradução:** telas de configuração técnica que o jogador não usa no dia a dia (editor de NPC, ModernFix, Entity Model/Texture Features, Fzzy Config).
+- **Telas técnicas:** também estão traduzidas, incluindo o editor de NPC, ModernFix, Entity Model/Texture Features, Fzzy Config e Structure Gel.
 - **Como editar:** mude direto o `assets/<mod>/lang/pt_br.json` do pacote.
 
 ## Mestre Vellan no mundo

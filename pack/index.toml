@@ -293,6 +293,10 @@ file = "config/openloader/resources/terras_partidas_ptbr/assets/creativecore/lan
 hash = "a23d87fdf007f160b16ed51e11d4a5fb33f22a6a03a9013766415c08e12d5d40"
 
 [[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/cristellib/lang/pt_br.json"
+hash = "45a4aade5fbb8f277ea5de1a979f29fab799b16114a9774675288ea1116338a3"
+
+[[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/curios/lang/pt_br.json"
 hash = "946587d6b5928206fccf94b4b8aa30e6a4c4dedbccdcd471c66ebdfe9dfcf1b7"
 
@@ -313,8 +317,24 @@ file = "config/openloader/resources/terras_partidas_ptbr/assets/easy_npc/lang/pt
 hash = "811fa63e2264fed0de84a5aa59717da3edcf263f424a12a53c793a1e5c3847af"
 
 [[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/easy_npc_config_ui/lang/pt_br.json"
+hash = "2ce6f350f8752c34f5558599ce2f0f0a1b02a402f32bb62b2b6ee4e1379f6305"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/easy_npc_example/lang/pt_br.json"
+hash = "a861bab31132af5f83008d396c174619be98d6f5951611b9660a1350f3c49e89"
+
+[[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/embeddium/lang/pt_br.json"
 hash = "024dccae5fe6f65b6846ef1c1f4565b110c339c5621bc4a93d646fae098f58d7"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/entity_model_features/lang/pt_br.json"
+hash = "5634d56d62750ba0a094bf5eb0c0cd02cb92dd41324e54f4cda6faf3a76f5322"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/entity_texture_features/lang/pt_br.json"
+hash = "3f3fa27163b64d48e84806499f4f4510442a5370898ff9688acc208353b9ffcb"
 
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/entityculling/lang/pt_br.json"
@@ -323,6 +343,10 @@ hash = "2beb72175be43291b7f104f3395ec483c17a670219ce6925d364df8183bfc877"
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/epicfight/lang/pt_br.json"
 hash = "a1ab650da31024a2c7c40983d7140607eade2cd62e7b8b8f13939d2418c4f2e8"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/fragmentum/lang/pt_br.json"
+hash = "65457f2d6e31f5bd123e8ab5fa7b34ecde618a8055e8f4295f5ea6be7b33a42d"
 
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/friendsandfoes/lang/pt_br.json"
@@ -339,6 +363,10 @@ hash = "0e7bd2ef476010b01f24e1c48460d77fa3ca05b06e1a8385c61689f960f2ea64"
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/ftbteams/lang/pt_br.json"
 hash = "fb325f0c6df1fe34643e3313e277ed8fdecf7451ad7616650d70337879180691"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/fzzy_config/lang/pt_br.json"
+hash = "fac5794d173f6a8580f41cc34d03ece6c57b109a43852fdc304d52f18f204291"
 
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/geckolib/lang/pt_br.json"
@@ -361,6 +389,10 @@ file = "config/openloader/resources/terras_partidas_ptbr/assets/irons_lib/lang/p
 hash = "1104ab49c793520fa1aed5fd0605e461541be00db0100fe8b42cbe0e48700c93"
 
 [[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/irons_patreon_lib/lang/pt_br.json"
+hash = "ac7016f4b00fcf66dccc94cafa57f31f91672c6bc8b23df5d80cf1ff9f29b44a"
+
+[[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/irons_spellbooks/lang/pt_br.json"
 hash = "1cd28be4b220291f68d2aad8573c2b6c32b2129d76d900ba09a7ba68e25a5c0a"
 
@@ -371,6 +403,10 @@ hash = "10fec0eed4e47086eaf367e3e02a8495a47c2cd04ad119d3dd454a56ecf04a12"
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/jei/lang/pt_br.json"
 hash = "c7791a91e82fadd14476d3a43e7ee93802518a2cf4266bf448f35b328db97e4f"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/lionfishapi/lang/pt_br.json"
+hash = "4d42c5fb472042d54a13e4b938522c808d86db0cbb46b5cc1d170c0eb5079bbb"
 
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/lootbeams/lang/pt_br.json"
@@ -385,12 +421,24 @@ file = "config/openloader/resources/terras_partidas_ptbr/assets/meetyourfight/la
 hash = "8f6afa25b7edc53588004a0396c8431feba9efca6d3075e3eddd8937f1c3a86b"
 
 [[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/mezz_config/lang/pt_br.json"
+hash = "6b7e53f7d7b983311330f052c8b446b81360e5874828da8837f0a1b8589f01a6"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/modernfix/lang/pt_br.json"
+hash = "6f7b53d43557cfd9b5e57889ea5bc5cdcdb1b3bfef603ef2ea898a3aa5fb7246"
+
+[[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/moonlight/lang/pt_br.json"
 hash = "4062119f4f70325525eb35b371733c1b6818321f54afd5fbfa0bd95e83464efa"
 
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/mowziesmobs/lang/pt_br.json"
 hash = "783896bdbc673a5cd3c45b4a6fc8c42b43ed1161949563439378b968ca6fd136"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/openloader/lang/pt_br.json"
+hash = "b0c52493239c07ed3cce21d7b8294c1bff0b2c5bf78d3b98d15a88810b22b86e"
 
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/paraglider/lang/pt_br.json"
@@ -429,6 +477,10 @@ file = "config/openloader/resources/terras_partidas_ptbr/assets/sound_physics_re
 hash = "f7ba60c10026e25f4db5ed61895acf89b5cebabcf356f1722bd888e4668b755d"
 
 [[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/structure_gel/lang/pt_br.json"
+hash = "6e67ff5420acee474b8d60011d257b08468c6967126420b284087ab23673f9d8"
+
+[[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/travelerstitles/lang/pt_br.json"
 hash = "8568b9c9a6b19e69a0c6402b59819a1da7861704ca07a4ffdf6d08b43461b4d1"
 
@@ -439,6 +491,10 @@ hash = "8480a51bea41b243d0726b3eb9d2360c6f4599eeb0a11efc47aa17b5f936265f"
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/waystones/lang/pt_br.json"
 hash = "5811cec82c42bdbf1a28881bf6e51dc5dd55301f895ecae0563d1d62aa074828"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/xaerobetterpvp/lang/pt_br.json"
+hash = "5b00aa67669731bbe97005d4ba00912640379caefff0fa55f1847220f36b2652"
 
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/xaerominimap/lang/pt_br.json"
