@@ -401,6 +401,10 @@ file = "config/openloader/resources/terras_partidas_ptbr/assets/guardvillagers/l
 hash = "fd05a7e71ff928db57ef570ed1f6e3fc0b0feffa04752c87c22c6f355cade7bc"
 
 [[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/handcrafted/lang/pt_br.json"
+hash = "7351386d4dbea0b2e4384b3b86a1be9c5a928d3c4163e68f33fc662e62878123"
+
+[[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/illageandspillage/lang/pt_br.json"
 hash = "f67e3d748219f8c9a069015ca1fa50a0c50683c315250371a7ab95d1223137dc"
 
@@ -495,6 +499,10 @@ hash = "52fcea25a6d8c8ed575e16026b08eae485b356cd4646656035d95cd5e1bb8140"
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/sophisticatedcore/lang/pt_br.json"
 hash = "aa4aaad3f50b6e7396cb6ef554e19f07cf36f1f28e89a0866c527c82d29895ab"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/sophisticatedstorage/lang/pt_br.json"
+hash = "9f58dd38226691151527e57ae9ab9702818de34933c5e97484655b417f2d944c"
 
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/sound_physics_remastered/lang/pt_br.json"

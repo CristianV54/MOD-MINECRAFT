@@ -170,7 +170,7 @@ As árvores são geradas pelo script `tools/gerar_habilidades.py`, onde ficam to
 
 ## Tradução dos mods (PT-BR)
 
-O pacote de recursos `pack/config/openloader/resources/terras_partidas_ptbr/` traz **10.750 textos traduzidos em 73 mods**. Com o português que os próprios mods já tinham, **100% dos 20.675 textos** do pacote estão em português. Ele inclui itens, mobs, chefes, conquistas, dicas e as telas do JEI, FTB Quests, mapas do Xaero, Waystones e mochilas.
+O pacote de recursos `pack/config/openloader/resources/terras_partidas_ptbr/` traz **11.180 textos traduzidos em 75 mods**. Com o português que os próprios mods já tinham, **100% dos textos** do pacote estão em português. Ele inclui itens, mobs, chefes, conquistas, dicas e as telas do JEI, FTB Quests, mapas do Xaero, Waystones e mochilas.
 - **Ativação:** o Open Loader carrega o pacote sozinho, como obrigatório e no topo da lista. O jogador não precisa ativar nada, só jogar com o Minecraft em português.
 - **Só o que faltava:** cada arquivo traz só os textos que o mod não tinha em português. O que o mod já trazia continua valendo.
 - **Mowzie's Mobs:** o `pt_br.json` do próprio mod está com erro de sintaxe e o Minecraft descarta o arquivo inteiro. O nosso arquivo leva as 230 traduções boas que existiam nele mais as que faltavam.
