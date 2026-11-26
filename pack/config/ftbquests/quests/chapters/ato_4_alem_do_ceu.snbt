@@ -67,7 +67,7 @@
 			x: 3.0d
 			y: 0.0d
 			icon: "minecraft:oak_door"
-			description: ["Siga o mapa até a &fcasa do Guardião do Portal&r. Ela fica perto de vilas das planícies, em savanas, montanhas ou terras nevadas.", "", "&eComo abrir os portais:&r monte uma moldura do mesmo formato do portal do Nether (4 de largura por 5 de altura) e acenda com o &fIsqueiro Zeal&r (clique direito dentro da moldura).", "• Moldura de &bTijolo de Pedra Turquesa&r: leva ao &bEverbright&r.", "• Moldura de &fTijolo de Pedra Lunar&r: leva ao &6Everdawn&r.", "", "O Mestre mandou 16 tijolos de cada tipo, o suficiente para os dois portais."]
+			description: ["Siga o mapa até a &fcasa do Guardião do Portal&r. Ela fica perto de vilas das planícies, em savanas, montanhas ou terras nevadas.", "", "&eComo abrir os portais:&r monte uma moldura do mesmo formato do portal do Nether (4 de largura por 5 de altura) e acenda com o &fIsqueiro Zeal&r (clique direito dentro da moldura).", "• Moldura de &bTijolos de Pedra Turquesa&r: leva ao &bEverbright&r.", "• Moldura de &fTijolos de Pedra Lunar&r: leva ao &6Everdawn&r.", "", "O Mestre mandou 16 tijolos de cada tipo, o suficiente para os dois portais."]
 			dependencies: ["2D42558563013C01"]
 			tasks: [
 				{
@@ -230,7 +230,7 @@
 		}
 		{
 			id: "30DCF1DF167AB938"
-			title: "Chave Ofuscante"
+			title: "Chave da Masmorra Ofuscante"
 			x: 15.0d
 			y: -3.0d
 			icon: "blue_skies:blinding_key"
@@ -242,7 +242,7 @@
 					type: "item"
 					item: "blue_skies:blinding_key"
 					count: 1L
-					title: "Encontrar a Chave Ofuscante"
+					title: "Encontrar a Chave da Masmorra Ofuscante"
 				}
 			]
 			rewards: [
@@ -392,7 +392,7 @@
 		}
 		{
 			id: "27D647C9A396E9C1"
-			title: "Chave da Natureza"
+			title: "Chave da Masmorra da Natureza"
 			x: 15.0d
 			y: -6.0d
 			icon: "blue_skies:nature_key"
@@ -404,7 +404,7 @@
 					type: "item"
 					item: "blue_skies:nature_key"
 					count: 1L
-					title: "Encontrar a Chave da Natureza"
+					title: "Encontrar a Chave da Masmorra da Natureza"
 				}
 			]
 			rewards: [
@@ -554,7 +554,7 @@
 		}
 		{
 			id: "11EFDB6C21CC5220"
-			title: "Chave Ofuscante"
+			title: "Chave da Masmorra Ofuscante"
 			x: 15.0d
 			y: 3.0d
 			icon: "blue_skies:blinding_key"
@@ -566,7 +566,7 @@
 					type: "item"
 					item: "blue_skies:blinding_key"
 					count: 1L
-					title: "Encontrar a Chave Ofuscante"
+					title: "Encontrar a Chave da Masmorra Ofuscante"
 				}
 			]
 			rewards: [
@@ -716,7 +716,7 @@
 		}
 		{
 			id: "5257BB31CA0624A2"
-			title: "Chave do Veneno"
+			title: "Chave da Masmorra do Veneno"
 			x: 15.0d
 			y: 6.0d
 			icon: "blue_skies:poison_key"
@@ -728,7 +728,7 @@
 					type: "item"
 					item: "blue_skies:poison_key"
 					count: 1L
-					title: "Encontrar a Chave do Veneno"
+					title: "Encontrar a Chave da Masmorra do Veneno"
 				}
 			]
 			rewards: [

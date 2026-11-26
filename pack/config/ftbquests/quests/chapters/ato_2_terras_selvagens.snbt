@@ -117,11 +117,11 @@
 		}
 		{
 			id: "00A0D79392A0B9AC"
-			title: "Sua Própria Waystone"
+			title: "Seu Próprio Obelisco"
 			x: 2.5d
 			y: -3.0d
 			icon: "waystones:waystone"
-			description: ["Faça uma &bWaystone&r e coloque perto da sua base. Assim você volta de qualquer frente em segundos."]
+			description: ["Faça um &bObelisco&r (Waystone) e coloque perto da sua base. Assim você volta de qualquer frente em segundos."]
 			dependencies: ["036CF1B560F9FBB7"]
 			optional: true
 			tasks: [
@@ -499,17 +499,17 @@
 		}
 		{
 			id: "1F91F50E88C08E4C"
-			title: "A Concha-Corneta"
+			title: "O Chifre de Concha"
 			x: -10.0d
 			y: 2.5d
 			icon: "aquamirae:shell_horn"
-			description: ["&6Mestre Vellan&r &7(por carta)&r: \"Encontrei nos arquivos da Ordem: a capitã atende ao som de uma &fConcha-Corneta&r. Mandei uma para você.\"", "", "Use a Concha-Corneta &fperto da água, dentro do Labirinto de Gelo&r, para invocar a capitã.", "", "&7Ela também aparece às vezes em baús dos navios congelados.&r"]
+			description: ["&6Mestre Vellan&r &7(por carta)&r: \"Encontrei nos arquivos da Ordem: a capitã atende ao som de um &fChifre de Concha&r. Mandei um para você.\"", "", "Use o Chifre de Concha &fperto da água, dentro do Labirinto de Gelo&r, para invocar a capitã.", "", "&7Ela também aparece às vezes em baús dos navios congelados.&r"]
 			dependencies: ["2A9B4C51EC1D1ABD"]
 			tasks: [
 				{
 					id: "5C7BD451DD515D25"
 					type: "checkmark"
-					title: "Receber a Concha-Corneta"
+					title: "Receber o Chifre de Concha"
 				}
 			]
 			rewards: [
@@ -540,7 +540,7 @@
 			icon: "aquamirae:shell_horn"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Toque a Concha-Corneta e derrote o &cFantasma da Capitã Cornelia&r.", "", "&7Dica: lute em terra firme ou em cima do gelo, nunca dentro da água.&r"]
+			description: ["Toque o Chifre de Concha e derrote o &cFantasma da Capitã Cornelia&r.", "", "&7Dica: lute em terra firme ou em cima do gelo, nunca dentro da água.&r"]
 			dependencies: ["1F91F50E88C08E4C"]
 			tasks: [
 				{
@@ -608,13 +608,13 @@
 		}
 		{
 			id: "0668117422983D4B"
-			title: "Outra Corneta"
+			title: "Outro Chifre"
 			x: -13.0d
 			y: 4.5d
 			icon: "aquamirae:shell_horn"
 			shape: "circle"
 			size: 0.75d
-			description: ["Perdeu a luta? Troque &f6 lingotes de ouro&r por outra Concha-Corneta."]
+			description: ["Perdeu a luta? Troque &f6 lingotes de ouro&r por outro Chifre de Concha."]
 			dependencies: ["1F91F50E88C08E4C"]
 			optional: true
 			can_repeat: true

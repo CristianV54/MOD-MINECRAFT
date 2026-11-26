@@ -1,0 +1,6 @@
+{
+  "text.entityculling.forceDisplayCulling": "Forçar ocultação de displays",
+  "text.entityculling.forceDisplayCulling.tooltip": "Quando ativado, entidades de exibição sem caixa de colisão recebem uma caixa padrão para fins de ocultação. Isso pode melhorar o desempenho em mapas/servidores que não configuram suas entidades de exibição corretamente, mas pode causar problemas visuais.",
+  "text.entityculling.solidLeaves": "Folhas sólidas",
+  "text.entityculling.solidLeaves.tooltip": "Quando ativado, as folhas são tratadas como sólidas para fins de ocultação. Isso pode melhorar o desempenho em florestas, mas também causar problemas visuais. Útil ao deixar 'Folhas Transparentes' desligado ou ao usar um pacote de recursos de folhas volumosas."
+}

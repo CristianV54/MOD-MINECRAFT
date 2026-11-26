@@ -1,0 +1,8 @@
+{
+  "config.jade.plugin_minecraft.harvest_tool.creative": "Mostrar no Modo Criativo",
+  "config.jade.plugin_minecraft.harvest_tool.creative_desc": "Mostra as informações de coleta também no modo criativo ou espectador",
+  "config.jade.plugin_minecraft.waxed": "Estado encerado",
+  "config.jade.plugin_minecraft.waxed_desc": "Mostra se o bloco está encerado, como uma placa encerada.",
+  "jade.collectingItems": "Coletando itens...",
+  "jade.fluid2": "%s %s / %s"
+}

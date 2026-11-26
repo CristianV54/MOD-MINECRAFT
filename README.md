@@ -165,6 +165,17 @@ Cada classe tem uma árvore própria no **Pufferfish's Skills**, que abre com a 
 
 As árvores são geradas pelo script `tools/gerar_habilidades.py`, onde ficam todos os nomes e valores. O resultado vai pro datapack em `puffish_skills/`.
 
+## Tradução dos mods (PT-BR)
+
+O pacote de recursos `pack/config/openloader/resources/terras_partidas_ptbr/` traz **8.954 textos traduzidos em 59 mods**. Ele inclui itens, mobs, chefes, conquistas, dicas e as telas do JEI, FTB Quests, mapas do Xaero, Waystones e mochilas.
+- **Ativação:** o Open Loader carrega o pacote sozinho, como obrigatório e no topo da lista. O jogador não precisa ativar nada, só jogar com o Minecraft em português.
+- **Só o que faltava:** cada arquivo traz só os textos que o mod não tinha em português. O que o mod já trazia continua valendo.
+- **Mowzie's Mobs:** o `pt_br.json` do próprio mod está com erro de sintaxe e o Minecraft descarta o arquivo inteiro. O nosso arquivo leva as 230 traduções boas que existiam nele mais as que faltavam.
+- **Ajustes por cima do mod:** `tools/traducao_ajustes.json` corrige nomes que vinham ruins no português do mod, como "Acendedor zeloso" virando "Isqueiro Zeal". Também deixa as chaves das masmorras iguais aos nomes usados nas missões.
+- **Termos:** os nomes de itens do Minecraft seguem o português oficial do jogo. Os chefes com nome próprio ficam no original (Ignis, Frostmaw, Swampjaw...).
+- **Fora da tradução:** telas de configuração técnica que o jogador não usa no dia a dia (editor de NPC, ModernFix, Entity Model/Texture Features, Fzzy Config).
+- **Como editar:** mude direto o `assets/<mod>/lang/pt_br.json` do pacote.
+
 ## Mestre Vellan no mundo
 
 O Mestre Vellan é um NPC do Easy NPC que aparece **ao lado do jogador** quando ele pega a recompensa da primeira missão ("O Chamado").
@@ -198,7 +209,6 @@ A história vai se revelando ato por ato:
 
 1. Jogar no PC de ponta a ponta e ajustar o que pesar, bugar ou ficar desequilibrado.
 2. Colocar o Mestre Vellan no mundo como NPC (Easy NPC).
-4. Fazer a tradução PT-BR dos mods que não têm português.
 5. Configurar dificuldade, drops e o bloqueio de progressão.
 
 ## Para quem mexe no pacote

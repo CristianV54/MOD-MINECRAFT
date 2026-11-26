@@ -1,0 +1,10 @@
+{
+  "cloth_config.sound_physics_remastered.evaluate_ambient_sounds": "Avaliar sons ambientes",
+  "cloth_config.sound_physics_remastered.evaluate_ambient_sounds.description": "Se sons ambientes como os de cavernas, do Nether ou debaixo d'água devem ter física sonora",
+  "cloth_config.sound_physics_remastered.reverb_attenuation_distance": "Distância de atenuação da reverberação",
+  "cloth_config.sound_physics_remastered.reverb_attenuation_distance.description": "A distância do raio na qual a reverberação começa.\n0.0 desativa a atenuação da reverberação.",
+  "cloth_config.sound_physics_remastered.reverb_distance": "Distância da reverberação",
+  "cloth_config.sound_physics_remastered.reverb_distance.description": "A distância da reverberação em relação à distância do som.",
+  "cloth_config.sound_physics_remastered.sound_update_interval": "Intervalo de atualização do som",
+  "cloth_config.sound_physics_remastered.sound_update_interval.description": "O intervalo em ticks em que os sons em movimento são reavaliados. Valores menores significam reavaliações mais frequentes, mas também mais lag. Esta opção só tem efeito se 'Atualizar sons em movimento' estiver ativado."
+}

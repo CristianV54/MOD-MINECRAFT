@@ -374,7 +374,7 @@ def ato1():
     c.quest("vila", "Uma Vila Amiga", 12.5, -2.5, icone="minecraft:emerald",
             deps=["mochila", "dormir"],
             descricao=[f"{M}: \"As vilas são o último refúgio deste mundo. Os &fguardas&r protegem os aldeões, mas precisam de ajuda.\"",
-                       "", "Encontre uma &fvila&r. Muitas delas têm uma &bWaystone&r, uma pedra que te teleporta entre lugares já visitados."],
+                       "", "Encontre uma &fvila&r. Muitas delas têm um &bObelisco&r (Waystone), uma pedra que te teleporta entre lugares já visitados."],
             tarefas=[c.t_estrutura("#minecraft:village", "Encontrar uma vila")],
             recompensas=[c.r_xp(3), c.r_item("minecraft:emerald", 8)])
 
@@ -535,9 +535,9 @@ def ato2():
             tarefas=[c.t_item("minecraft:enchanting_table")],
             recompensas=[c.r_item("minecraft:lapis_lazuli", 16), c.r_item("minecraft:bookshelf", 4), c.r_xp(5)])
 
-    c.quest("waystone", "Sua Própria Waystone", 2.5, -3, icone="waystones:waystone",
+    c.quest("waystone", "Seu Próprio Obelisco", 2.5, -3, icone="waystones:waystone",
             deps=["asas"], optional=True,
-            descricao=["Faça uma &bWaystone&r e coloque perto da sua base. Assim você volta de qualquer frente em segundos."],
+            descricao=["Faça um &bObelisco&r (Waystone) e coloque perto da sua base. Assim você volta de qualquer frente em segundos."],
             tarefas=[c.t_item("waystones:waystone")],
             recompensas=[c.r_item("waystones:warp_dust", 8), c.r_xp(3)])
 
@@ -600,24 +600,24 @@ def ato2():
             tarefas=[{"id": "", "type": "biome", "biome": "#aquamirae:ice_maze", "title": "Entrar no Labirinto de Gelo"}],
             recompensas=[c.r_xp(3)])
 
-    c.quest("corneta", "A Concha-Corneta", -10, 2.5, icone="aquamirae:shell_horn", deps=["labirinto"],
-            descricao=[f"{M} &7(por carta)&r: \"Encontrei nos arquivos da Ordem: a capitã atende ao som de uma &fConcha-Corneta&r. Mandei uma para você.\"",
-                       "", "Use a Concha-Corneta &fperto da água, dentro do Labirinto de Gelo&r, para invocar a capitã.",
+    c.quest("corneta", "O Chifre de Concha", -10, 2.5, icone="aquamirae:shell_horn", deps=["labirinto"],
+            descricao=[f"{M} &7(por carta)&r: \"Encontrei nos arquivos da Ordem: a capitã atende ao som de um &fChifre de Concha&r. Mandei um para você.\"",
+                       "", "Use o Chifre de Concha &fperto da água, dentro do Labirinto de Gelo&r, para invocar a capitã.",
                        "", "&7Ela também aparece às vezes em baús dos navios congelados.&r"],
-            tarefas=[c.t_check("Receber a Concha-Corneta")],
+            tarefas=[c.t_check("Receber o Chifre de Concha")],
             recompensas=[c.r_item("aquamirae:shell_horn"), c.r_item(pocao("minecraft:healing"), 3)])
 
     c.quest("cornelia", "Chefe: Capitã Cornelia", -13, 2.5, icone="aquamirae:shell_horn",
             deps=["corneta"], forma="octagon", tamanho=1.5,
-            descricao=["Toque a Concha-Corneta e derrote o &cFantasma da Capitã Cornelia&r.",
+            descricao=["Toque o Chifre de Concha e derrote o &cFantasma da Capitã Cornelia&r.",
                        "", "&7Dica: lute em terra firme ou em cima do gelo, nunca dentro da água.&r"],
             tarefas=[c.t_matar("aquamirae:captain_cornelia", 1, "Derrotar a Capitã Cornelia")],
             recompensas=[c.r_item(fragmento(2, 3, 4)), c.r_skill("epicfight:meteor_slam"), c.r_xp(10),
                          c.r_item("minecraft:diamond", 3)])
 
-    c.quest("corneta_extra", "Outra Corneta", -13, 4.5, icone="aquamirae:shell_horn",
+    c.quest("corneta_extra", "Outro Chifre", -13, 4.5, icone="aquamirae:shell_horn",
             deps=["corneta"], forma="circle", tamanho=0.75, optional=True, can_repeat=True,
-            descricao=["Perdeu a luta? Troque &f6 lingotes de ouro&r por outra Concha-Corneta."],
+            descricao=["Perdeu a luta? Troque &f6 lingotes de ouro&r por outro Chifre de Concha."],
             tarefas=[c.t_item("minecraft:gold_ingot", 6, consumir=True)],
             recompensas=[c.r_item("aquamirae:shell_horn")])
 
@@ -961,8 +961,8 @@ def ato4():
             descricao=["Siga o mapa até a &fcasa do Guardião do Portal&r. Ela fica perto de vilas das planícies, em savanas, montanhas ou terras nevadas.",
                        "",
                        "&eComo abrir os portais:&r monte uma moldura do mesmo formato do portal do Nether (4 de largura por 5 de altura) e acenda com o &fIsqueiro Zeal&r (clique direito dentro da moldura).",
-                       "• Moldura de &bTijolo de Pedra Turquesa&r: leva ao &bEverbright&r.",
-                       "• Moldura de &fTijolo de Pedra Lunar&r: leva ao &6Everdawn&r.",
+                       "• Moldura de &bTijolos de Pedra Turquesa&r: leva ao &bEverbright&r.",
+                       "• Moldura de &fTijolos de Pedra Lunar&r: leva ao &6Everdawn&r.",
                        "",
                        "O Mestre mandou 16 tijolos de cada tipo, o suficiente para os dois portais."],
             tarefas=[c.t_estrutura("#terras_partidas:casa_do_guardiao", "Encontrar a casa do Guardião")],
@@ -984,13 +984,13 @@ def ato4():
 
     # ---- Everbright
     masmorra("eb_ofuscante", 9, -3, ["everbright"], "Masmorra Ofuscante do Everbright", "Everbright", EB,
-             "blue_skies:everbright_blinding_dungeon", "blue_skies:blinding_key", "Chave Ofuscante",
+             "blue_skies:everbright_blinding_dungeon", "blue_skies:blinding_key", "Chave da Masmorra Ofuscante",
              "summoner", "Summoner", "blue_skies:summoner",
              f"{M}: \"O primeiro guardião, o &fInvocador&r, se trancou numa masmorra de luz cegante. Ele chama criaturas para lutar por ele.\"",
              "&7Dica: ele invoca ajudantes sem parar. Derrube os ajudantes rápido e ataque o Summoner entre uma invocação e outra.&r",
              1, "epicfight:revelation", "minecraft:totem_of_undying")
     masmorra("eb_natureza", 9, -6, ["summoner"], "Masmorra da Natureza", "Everbright", EB,
-             "blue_skies:nature_dungeon", "blue_skies:nature_key", "Chave da Natureza",
+             "blue_skies:nature_dungeon", "blue_skies:nature_key", "Chave da Masmorra da Natureza",
              "starlit_crusher", "Starlit Crusher", "blue_skies:starlit_crusher",
              f"{M}: \"O segundo guardião do Everbright virou uma árvore viva gigante, o &fEsmagador Estelar&r. Ele vive numa masmorra coberta de mato, nos pinheiros nevados.\"",
              "&7Dica: ele é lento mas bate muito forte. Fique sempre se movendo e ataque pelas costas.&r",
@@ -998,13 +998,13 @@ def ato4():
 
     # ---- Everdawn
     masmorra("ed_ofuscante", 9, 3, ["everdawn"], "Masmorra Ofuscante do Everdawn", "Everdawn", ED,
-             "blue_skies:everdawn_blinding_dungeon", "blue_skies:blinding_key", "Chave Ofuscante",
+             "blue_skies:everdawn_blinding_dungeon", "blue_skies:blinding_key", "Chave da Masmorra Ofuscante",
              "alchemist", "Alchemist", "blue_skies:alchemist",
              f"{M}: \"No Everdawn, o guardião &fAlquimista&r passou séculos fazendo poções com o poder do fragmento. Ele não é mais humano.\"",
              "&7Dica: ele joga poções que mudam o chão da arena. Leve leite para tirar efeitos ruins.&r",
              3, "epicfight:adaptive_skin", "minecraft:brewing_stand")
     masmorra("ed_veneno", 9, 6, ["alchemist"], "Masmorra do Veneno", "Everdawn", ED,
-             "blue_skies:poison_dungeon", "blue_skies:poison_key", "Chave do Veneno",
+             "blue_skies:poison_dungeon", "blue_skies:poison_key", "Chave da Masmorra do Veneno",
              "arachnarch", "Arachnarch", "blue_skies:arachnarch",
              f"{M}: \"O último guardião do Everdawn virou uma aranha gigante, a &fArachnarch&r. Ela fez um ninho numa masmorra venenosa na floresta de bordos.\"",
              "&7Dica: leve muito leite e poções de cura. O veneno dela é o perigo maior, não as mordidas.&r",
@@ -1093,7 +1093,7 @@ def ato5():
     # ---- Cidadela Arruinada (Ender Guardian)
     c.quest("cidadela", "A Cidadela Arruinada", 12, 0, icone="minecraft:purpur_block", deps=["dragao"],
             subtitulo="Primeiro guardião do vazio",
-            descricao=[f"{M}: \"Nas ilhas distantes do End existe uma cidadela em ruínas. O &fGuardião do Ender&r vigia um altar no coração dela.\"",
+            descricao=[f"{M}: \"Nas ilhas distantes do End existe uma cidadela em ruínas. O &fGuardião Ender&r vigia um altar no coração dela.\"",
                        "", "&7Para chegar às ilhas de fora, use o portal pequeno que aparece depois que o Dragão morre (jogue uma pérola do Ender nele).&r",
                        "", coord("estando no End")],
             tarefas=[c.t_check("Pedir a localização da Cidadela")],
@@ -1106,11 +1106,11 @@ def ato5():
             tarefas=[c.t_estrutura("cataclysm:ruined_citadel", "Encontrar a Cidadela Arruinada")],
             recompensas=[c.r_xp(5), c.r_item(pocao("minecraft:strong_healing"), 3)])
 
-    c.quest("ender_guardian", "Chefe: Guardião do Ender", 18, 0, icone="minecraft:end_crystal",
+    c.quest("ender_guardian", "Chefe: Guardião Ender", 18, 0, icone="minecraft:end_crystal",
             deps=["cidadela_achar"], forma="octagon", tamanho=1.5,
-            descricao=["Chegue perto do &fAltar do Vazio&r no centro da cidadela. O &cGuardião do Ender&r vai aparecer.",
+            descricao=["Chegue perto do &fAltar do Vazio&r no centro da cidadela. O &cGuardião Ender&r vai aparecer.",
                        "", "&7Dica: ele invoca runas do vazio no chão. Não fique parado em cima delas.&r"],
-            tarefas=[c.t_matar("cataclysm:ender_guardian", 1, "Derrotar o Guardião do Ender")],
+            tarefas=[c.t_matar("cataclysm:ender_guardian", 1, "Derrotar o Guardião Ender")],
             recompensas=[c.r_item(fragmento(5, 2, 4)), c.r_skill("epicfight:adrenaline_fiend"), c.r_xp(20),
                          c.r_item("minecraft:diamond", 6)])
 
@@ -1197,15 +1197,15 @@ def ato5():
 
     c.quest("void_blossom_mapa", "A Flor do Vazio", 27, 8.5, icone="minecraft:spore_blossom", deps=["lendarios"],
             optional=True,
-            descricao=["Nas cavernas verdes e úmidas cresce uma flor gigante e carnívora, a &cVoid Blossom&r.",
+            descricao=["Nas cavernas verdes e úmidas cresce uma flor gigante e carnívora, a &cFlor do Vazio&r.",
                        "", coord("no mundo normal")],
             tarefas=[c.t_check("Pedir a localização")],
             recompensas=[c.r_localizar("bosses_of_mass_destruction:void_blossom", "Coordenadas da Flor do Vazio", dimensao=OW)])
 
-    c.quest("void_blossom", "Lendário: Void Blossom", 27, 11, icone="minecraft:spore_blossom", deps=["void_blossom_mapa"],
+    c.quest("void_blossom", "Lendário: Flor do Vazio", 27, 11, icone="minecraft:spore_blossom", deps=["void_blossom_mapa"],
             forma="octagon", tamanho=1.25, optional=True,
-            descricao=["Derrote a &cVoid Blossom&r.", "&7Dica: ela solta espinhos do chão. Fique se movendo.&r"],
-            tarefas=[c.t_matar("bosses_of_mass_destruction:void_blossom", 1, "Derrotar a Void Blossom")],
+            descricao=["Derrote a &cFlor do Vazio&r.", "&7Dica: ela solta espinhos do chão. Fique se movendo.&r"],
+            tarefas=[c.t_matar("bosses_of_mass_destruction:void_blossom", 1, "Derrotar a Flor do Vazio")],
             recompensas=[c.r_item("minecraft:diamond_block", 4), c.r_xp(25)])
 
     c.quest("leviathan_mapa", "A Cidade Afundada", 33, 8.5, icone="minecraft:prismarine_bricks", deps=["lendarios"],

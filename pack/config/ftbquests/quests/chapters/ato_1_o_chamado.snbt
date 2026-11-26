@@ -566,7 +566,7 @@
 			x: 12.5d
 			y: -2.5d
 			icon: "minecraft:emerald"
-			description: ["&6Mestre Vellan&r: \"As vilas são o último refúgio deste mundo. Os &fguardas&r protegem os aldeões, mas precisam de ajuda.\"", "", "Encontre uma &fvila&r. Muitas delas têm uma &bWaystone&r, uma pedra que te teleporta entre lugares já visitados."]
+			description: ["&6Mestre Vellan&r: \"As vilas são o último refúgio deste mundo. Os &fguardas&r protegem os aldeões, mas precisam de ajuda.\"", "", "Encontre uma &fvila&r. Muitas delas têm um &bObelisco&r (Waystone), uma pedra que te teleporta entre lugares já visitados."]
 			dependencies: ["4F00E29859D87333", "1D8DEB71D2179B63"]
 			tasks: [
 				{

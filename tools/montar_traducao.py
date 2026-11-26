@@ -31,6 +31,12 @@ def main(pasta):
     for lote in lotes:
         for ns, textos in json.load(open(lote, encoding="utf-8")).items():
             por_mod.setdefault(ns, {}).update(textos)
+    # correções por cima do português do próprio mod (ex.: nomes que precisam bater com as missões)
+    ajustes = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "traducao_ajustes.json"),
+                             encoding="utf-8"))
+    for ns, textos in ajustes.items():
+        if not ns.startswith("_"):
+            por_mod.setdefault(ns, {}).update(textos)
     os.makedirs(DESTINO, exist_ok=True)
     with open(os.path.join(DESTINO, "pack.mcmeta"), "w", encoding="utf-8") as f:
         json.dump({"pack": {"pack_format": 15,

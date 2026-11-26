@@ -1,0 +1,7 @@
+{
+  "iris.keybind.wireframe": "Wireframe (só em um jogador)",
+  "iris.load.failure.generic": "O Oculus encontrou um problema ao tentar carregar o shader; por favor, relate isso aos desenvolvedores do Oculus. ",
+  "iris.load.failure.shader": "O pacote de shaders falhou ao carregar! Por favor, relate o erro ao desenvolvedor do shader. ",
+  "options.iris.colorSpace": "Espaço de cor",
+  "options.iris.colorSpace.sodium_tooltip": "O espaço de cor para o qual a tela será convertida. Funciona por cima dos pacotes de shaders. Use SRGB se estiver em dúvida."
+}

@@ -1,0 +1,10 @@
+{
+  "guardvillagers.advancements.adventure.recruit_guard.description": "Dê uma espada a um aldeão desempregado para ajudar a defender a vila",
+  "guardvillagers.advancements.adventure.recruit_guard.title": "Queremos Você como Novo Recruta!",
+  "stat.guardvillagers.guards_made": "Guardas recrutados",
+  "subtitles.entity.guard.ambient": "Guarda resmunga",
+  "subtitles.entity.guard.death": "Guarda morre",
+  "subtitles.entity.guard.hurt": "Guarda ferido",
+  "subtitles.entity.guard.no": "Guarda discorda",
+  "subtitles.entity.guard.yes": "Guarda concorda"
+}

@@ -1,0 +1,10 @@
+{
+  "item.patchouli.guide_book": "Livro-Guia",
+  "item.patchouli.guide_book.invalid": "Livro inválido: %s",
+  "item.patchouli.guide_book.undefined": "Livro inválido: nenhum ID definido",
+  "item.patchouli:pamphlet.landing": "Um panfleto de teste, que é um livro com apenas uma categoria.",
+  "item.patchouli:pamphlet.name": "Panfleto de Teste",
+  "patchouli.gui.lexicon.button.mark_all_read": "Marcar tudo como lido",
+  "patchouli.gui.lexicon.button.mark_category_read": "Marcar esta categoria como lida",
+  "patchouli.gui.lexicon.button.toggle_mock_header": "Alternar cabeçalho de teste"
+}

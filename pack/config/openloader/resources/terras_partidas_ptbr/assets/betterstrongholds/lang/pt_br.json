@@ -1,0 +1,20 @@
+{
+  "Use /locate structure betterstrongholds:stronghold instead!": "Use /locate structure betterstrongholds:stronghold no lugar!",
+  "betterstrongholds.commands.locate.stronghold": "Use /locate structure betterstrongholds:stronghold no lugar!",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds": "YUNG's Better Strongholds",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general": "Configurações Gerais",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.@Tooltip": "Configurações gerais.",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.cobwebReplacementChanceNormal": "Taxa de Teias de Aranha (NORMAL)",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.cobwebReplacementChanceNormal.@Tooltip[0]": "A taxa de geração de teias de aranha em várias partes da fortaleza.",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.cobwebReplacementChanceNormal.@Tooltip[1]": "Padrão: 0.1",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.cobwebReplacementChanceSpawner": "Taxa de Teias de Aranha (GERADOR)",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.cobwebReplacementChanceSpawner.@Tooltip[0]": "A taxa de geração de teias de aranha ao redor dos geradores de aranha nas bibliotecas.",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.cobwebReplacementChanceSpawner.@Tooltip[1]": "Padrão: 0.3",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.lanternSpawnRate": "Taxa de Geração de Lampiões",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.lanternSpawnRate.@Tooltip[0]": "A taxa de geração de lampiões por toda a fortaleza.",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.lanternSpawnRate.@Tooltip[1]": "Padrão: 0.2",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.torchSpawnRate": "Taxa de Geração de Tochas",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.torchSpawnRate.@Tooltip[0]": "A taxa de geração de tochas por toda a fortaleza.",
+  "text.autoconfig.betterstrongholds-fabric-1_20.option.betterStrongholds.general.torchSpawnRate.@Tooltip[1]": "Padrão: 0.1",
+  "text.autoconfig.betterstrongholds-fabric-1_20.title": "YUNG's Better Strongholds"
+}

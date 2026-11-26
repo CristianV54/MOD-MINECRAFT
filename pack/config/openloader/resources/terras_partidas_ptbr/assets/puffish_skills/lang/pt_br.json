@@ -1,0 +1,20 @@
+{
+  "command.puffish_skills.category.open.success.multiple": "Tela da categoria %s aberta para %s jogadores",
+  "command.puffish_skills.category.open.success.single": "Tela da categoria %s aberta para %s",
+  "command.puffish_skills.experience.get.success": "%3$s tem %1$s de experiência na categoria %2$s",
+  "command.puffish_skills.level.add.success.multiple": "%s níveis adicionados à categoria %s para %s jogadores",
+  "command.puffish_skills.level.add.success.single": "%s níveis adicionados à categoria %s para %s",
+  "command.puffish_skills.level.get.success": "%3$s tem nível %1$s na categoria %2$s",
+  "command.puffish_skills.level.set.success.multiple": "Nível %s definido na categoria %s para %s jogadores",
+  "command.puffish_skills.level.set.success.single": "Nível %s definido na categoria %s para %s",
+  "command.puffish_skills.no_experience": "A experiência não está ativada para a categoria com ID %s",
+  "command.puffish_skills.no_level": "O nível não está ativado para a categoria com ID %s",
+  "command.puffish_skills.open.success.multiple": "Tela de habilidades aberta para %s jogadores",
+  "command.puffish_skills.open.success.single": "Tela de habilidades aberta para %s",
+  "command.puffish_skills.points.get.success": "%3$s tem %1$s pontos na categoria %2$s",
+  "command.puffish_skills.skills.lock.success.multiple": "Habilidade %s bloqueada na categoria %s para %s jogadores",
+  "command.puffish_skills.skills.lock.success.single": "Habilidade %s bloqueada na categoria %s para %s",
+  "text.puffish_skills.buy_point": "Comprar ponto",
+  "toast.puffish_skills.missing_config.description": "Nenhuma árvore de habilidades fornecida, adicione uma.",
+  "tooltip.puffish_skills.cost": "Custo: %s"
+}

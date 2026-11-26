@@ -227,7 +227,7 @@
 			y: 0.0d
 			subtitle: "Primeiro guardião do vazio"
 			icon: "minecraft:purpur_block"
-			description: ["&6Mestre Vellan&r: \"Nas ilhas distantes do End existe uma cidadela em ruínas. O &fGuardião do Ender&r vigia um altar no coração dela.\"", "", "&7Para chegar às ilhas de fora, use o portal pequeno que aparece depois que o Dragão morre (jogue uma pérola do Ender nele).&r", "", "&7Pegue a recompensa &festando no End&7: as coordenadas aparecem no chat.&r"]
+			description: ["&6Mestre Vellan&r: \"Nas ilhas distantes do End existe uma cidadela em ruínas. O &fGuardião Ender&r vigia um altar no coração dela.\"", "", "&7Para chegar às ilhas de fora, use o portal pequeno que aparece depois que o Dragão morre (jogue uma pérola do Ender nele).&r", "", "&7Pegue a recompensa &festando no End&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["5171C3E6F46EE884"]
 			tasks: [
 				{
@@ -292,13 +292,13 @@
 		}
 		{
 			id: "271B4CCE60F7E22F"
-			title: "Chefe: Guardião do Ender"
+			title: "Chefe: Guardião Ender"
 			x: 18.0d
 			y: 0.0d
 			icon: "minecraft:end_crystal"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Chegue perto do &fAltar do Vazio&r no centro da cidadela. O &cGuardião do Ender&r vai aparecer.", "", "&7Dica: ele invoca runas do vazio no chão. Não fique parado em cima delas.&r"]
+			description: ["Chegue perto do &fAltar do Vazio&r no centro da cidadela. O &cGuardião Ender&r vai aparecer.", "", "&7Dica: ele invoca runas do vazio no chão. Não fique parado em cima delas.&r"]
 			dependencies: ["4539DAADCFF61EFC"]
 			tasks: [
 				{
@@ -306,7 +306,7 @@
 					type: "kill"
 					entity: "cataclysm:ender_guardian"
 					value: 1L
-					title: "Derrotar o Guardião do Ender"
+					title: "Derrotar o Guardião Ender"
 				}
 			]
 			rewards: [
@@ -745,7 +745,7 @@
 			x: 27.0d
 			y: 8.5d
 			icon: "minecraft:spore_blossom"
-			description: ["Nas cavernas verdes e úmidas cresce uma flor gigante e carnívora, a &cVoid Blossom&r.", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
+			description: ["Nas cavernas verdes e úmidas cresce uma flor gigante e carnívora, a &cFlor do Vazio&r.", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["649B209061CE456E"]
 			optional: true
 			tasks: [
@@ -769,13 +769,13 @@
 		}
 		{
 			id: "2CA80BCF97964759"
-			title: "Lendário: Void Blossom"
+			title: "Lendário: Flor do Vazio"
 			x: 27.0d
 			y: 11.0d
 			icon: "minecraft:spore_blossom"
 			shape: "octagon"
 			size: 1.25d
-			description: ["Derrote a &cVoid Blossom&r.", "&7Dica: ela solta espinhos do chão. Fique se movendo.&r"]
+			description: ["Derrote a &cFlor do Vazio&r.", "&7Dica: ela solta espinhos do chão. Fique se movendo.&r"]
 			dependencies: ["4B879F1DD11BBDE4"]
 			optional: true
 			tasks: [
@@ -784,7 +784,7 @@
 					type: "kill"
 					entity: "bosses_of_mass_destruction:void_blossom"
 					value: 1L
-					title: "Derrotar a Void Blossom"
+					title: "Derrotar a Flor do Vazio"
 				}
 			]
 			rewards: [

@@ -1,0 +1,9 @@
+{
+  "gui.sophisticatedbackpacks.mob_catcher.entity_preview_failed": "Falha ao renderizar a prévia da entidade",
+  "sophisticatedbackpacks.configuration.advancedMaxSlotCost": "Custo máx. de espaços (avançado)",
+  "sophisticatedbackpacks.configuration.basicMaxSlotCost": "Custo máx. de espaços (básico)",
+  "sophisticatedbackpacks.configuration.disallowInventoryEntities": "Bloquear criaturas com inventário",
+  "sophisticatedbackpacks.configuration.entityBlockList": "Tipos de entidade bloqueados",
+  "sophisticatedbackpacks.configuration.hostileOverrides": "Exceções de entidades hostis",
+  "sophisticatedbackpacks.configuration.passiveOverrides": "Exceções de entidades passivas"
+}

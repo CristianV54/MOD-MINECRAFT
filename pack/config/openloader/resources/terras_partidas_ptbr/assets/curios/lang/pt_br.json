@@ -1,0 +1,7 @@
+{
+  "commands.curios.drop.success": "Itens do espaço %s de %s foram largados",
+  "commands.curios.dropAll.success": "Itens de todos os espaços de %s foram largados",
+  "commands.curios.replace.success": "Espaço %s de %s substituído por %s",
+  "gui.curios.page": "Página %d / %d",
+  "gui.curios.toggle.cosmetics": "Alternar Cosméticos"
+}

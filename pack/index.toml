@@ -10,11 +10,11 @@ hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_1_o_chamado.snbt"
-hash = "62fb331515325f8d77e584f80a1392a3cad72eecc4b2dd71e8c527e1299780b8"
+hash = "d2c80fd5410af85fd6f3b1c5262a507e6ce4289e3568953b4a1c7dcf60a63205"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_2_terras_selvagens.snbt"
-hash = "c543ce1e740b6ce7e49af80c96cacbea35c7e5773bcabf3597d442e24e833117"
+hash = "323cabec295f723e28bb90c6a59eacec5aa4765df04ff6c5030ded0f79e8c291"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_3_abismo_e_fogo.snbt"
@@ -22,11 +22,11 @@ hash = "2d050d510ef93c435c4a8e81e383d54fb3ad876bc0b31aba4deea402abec980d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_4_alem_do_ceu.snbt"
-hash = "bc083cd6d93c24255087ec9e9f56077a691b4f9889505b037c43fb69898bb08f"
+hash = "ceb4cdb7f3fc4612ec06d279f4374ac505a93b252ed1996653f30b9091d0f9d1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_5_o_fim_do_selo.snbt"
-hash = "1706095ff8b48b58f1e818606308572bd0f696bdec53b5fd7165b55b10517487"
+hash = "380ee73f5c5c455d94ada2773885e19571999d8ba4d2e09ba4bac6308077ede6"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -211,6 +211,246 @@ hash = "5012df034b663dd756a33f6f7e5fe6e69f97babcfec9173c960fc612e81051c4"
 [[files]]
 file = "config/openloader/data/terras_partidas/pack.mcmeta"
 hash = "30bc03d8e6e1b6dd913e17792aeba52f320f5386124b06a407efc6ca0e1130cb"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/alexsmobs/lang/pt_br.json"
+hash = "91d0eea576c2a8db01cad30196f2c790d90c40b2d97f77583b83097b49bcc423"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/apotheosis/lang/pt_br.json"
+hash = "e9a431d3405396f4476655fdb143d44a2b62b8c7083e2512a357b2685218cef2"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/aquamirae/lang/pt_br.json"
+hash = "a974821f43c77d3e9627a20c2d8b2df71d1285c00c3ec65bcaa23b8c585de337"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/attributeslib/lang/pt_br.json"
+hash = "2f26f9d44658a73dd9d255f5d51ceea85f375330b4b3144650626bde0c8c69b6"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/balm/lang/pt_br.json"
+hash = "aae0599cb2478b8b2e81711732ff296fa8e2dd9ff997b660abe49ba9f652f37a"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/betterdeserttemples/lang/pt_br.json"
+hash = "9e7a9dbb53127aa072d98d8a992450446dc78fb5169ec77f69846d997de292bd"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/betterdungeons/lang/pt_br.json"
+hash = "99d0ed9658e439514ffd8746512ff743844872ef2e394bfe2045dab5fe55cfeb"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/betterfortresses/lang/pt_br.json"
+hash = "9102e3f5d9b6fe809a97315754c6f61f4281b5176d809c7d175357753a4682ea"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/betterjungletemples/lang/pt_br.json"
+hash = "7e74be9844cbae1f8c10c9e0a37d40711128931041f2d6b7f158148e238c40b6"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/bettermineshafts/lang/pt_br.json"
+hash = "7c50887f03eb5d9f8be66b8c863dd40b8079973f16d24c5e747fad2c1ea33aa6"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/betteroceanmonuments/lang/pt_br.json"
+hash = "98a4584e9662c87102f9d136ed0e456f1d11b6bf5cf5713a83f78ec1d6ca53db"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/betterstrongholds/lang/pt_br.json"
+hash = "2741b891d0b482897c4f4e64ebb80750c2d52f43943e37469f601cb8911528a5"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/betterwitchhuts/lang/pt_br.json"
+hash = "812173506c9be5c7f76d5b4e70fc587f6585432e6eb04c18fc137b504428696f"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/blue_skies/lang/pt_br.json"
+hash = "f8800e9aca3fbf0ef4003801339acabd122b4d1e4da6401a3ce7e744af2051f7"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/born_in_chaos_v1/lang/pt_br.json"
+hash = "f081932ce6c40135a9e9ad5638220a8c6f4dd70668c0d716a3c7773253a70dc1"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/bosses_of_mass_destruction/lang/pt_br.json"
+hash = "32c05276ff1d422462aca97e5e2fbc15abe29df878b42f1a862e812feea3af0e"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/cataclysm/lang/pt_br.json"
+hash = "15437f74ec693f6123e4734b215479ffb790fe7268e09237f79a128cf249edb2"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/citadel/lang/pt_br.json"
+hash = "c66bf7e4b8260c2a9c5ea58dba6c5bdf0711cc7a376c7a1dad9ce096a493429e"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/cloth-config2/lang/pt_br.json"
+hash = "1f18760cfd3f42d07abd6e81e9dbf4fb246d5271bab99774bd5f3afaa977feea"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/creativecore/lang/pt_br.json"
+hash = "a23d87fdf007f160b16ed51e11d4a5fb33f22a6a03a9013766415c08e12d5d40"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/curios/lang/pt_br.json"
+hash = "946587d6b5928206fccf94b4b8aa30e6a4c4dedbccdcd471c66ebdfe9dfcf1b7"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/deeperdarker/lang/pt_br.json"
+hash = "e2d380734bed201028c7cee9610260a3e2fee90ef659d19da83db97fa0f9f411"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/dragonmounts/lang/pt_br.json"
+hash = "81ca2c1cdd538beb59b43c99fa1abda7e21a29b257dc5c31ccd53fff5b9ff96c"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/dungeons_arise/lang/pt_br.json"
+hash = "2383c971599575d82966c8ea75f4c842c7098c8308bfbb2c1d3dacdfdee0dfa7"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/easy_npc/lang/pt_br.json"
+hash = "811fa63e2264fed0de84a5aa59717da3edcf263f424a12a53c793a1e5c3847af"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/embeddium/lang/pt_br.json"
+hash = "024dccae5fe6f65b6846ef1c1f4565b110c339c5621bc4a93d646fae098f58d7"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/entityculling/lang/pt_br.json"
+hash = "2beb72175be43291b7f104f3395ec483c17a670219ce6925d364df8183bfc877"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/epicfight/lang/pt_br.json"
+hash = "a1ab650da31024a2c7c40983d7140607eade2cd62e7b8b8f13939d2418c4f2e8"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/friendsandfoes/lang/pt_br.json"
+hash = "0e61c69401f4a6952399136e8f4ad55eaf1858788cebfc47569c46adc4117f8d"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/ftblibrary/lang/pt_br.json"
+hash = "7266c7a817f54680a7f9fa0b55fdf6b51bb4ac3808b9df81c75d31a39fb45f74"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/ftbquests/lang/pt_br.json"
+hash = "0e7bd2ef476010b01f24e1c48460d77fa3ca05b06e1a8385c61689f960f2ea64"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/ftbteams/lang/pt_br.json"
+hash = "fb325f0c6df1fe34643e3313e277ed8fdecf7451ad7616650d70337879180691"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/geckolib/lang/pt_br.json"
+hash = "f32c205a215abd14bd2f5fa1276f878ace855c42f21c67ed48f5d4ad1efe6fd8"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/guardvillagers/lang/pt_br.json"
+hash = "fd05a7e71ff928db57ef570ed1f6e3fc0b0feffa04752c87c22c6f355cade7bc"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/illageandspillage/lang/pt_br.json"
+hash = "f67e3d748219f8c9a069015ca1fa50a0c50683c315250371a7ab95d1223137dc"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/iris/lang/pt_br.json"
+hash = "b323b253707514c77465f60067c9feb9094f685c5d16c70f77aebfc96a4571b8"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/irons_lib/lang/pt_br.json"
+hash = "1104ab49c793520fa1aed5fd0605e461541be00db0100fe8b42cbe0e48700c93"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/irons_spellbooks/lang/pt_br.json"
+hash = "1cd28be4b220291f68d2aad8573c2b6c32b2129d76d900ba09a7ba68e25a5c0a"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/jade/lang/pt_br.json"
+hash = "10fec0eed4e47086eaf367e3e02a8495a47c2cd04ad119d3dd454a56ecf04a12"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/jei/lang/pt_br.json"
+hash = "c7791a91e82fadd14476d3a43e7ee93802518a2cf4266bf448f35b328db97e4f"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/lootbeams/lang/pt_br.json"
+hash = "e76983e64fd4fdb691d9a78a951f2d3946caf523a673d6413b5cc280226e144a"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/magistuarmory/lang/pt_br.json"
+hash = "b096ad51f2d8c944c795e9ab52bd9e924a86275863aef8d15b618a255c66ad15"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/meetyourfight/lang/pt_br.json"
+hash = "8f6afa25b7edc53588004a0396c8431feba9efca6d3075e3eddd8937f1c3a86b"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/moonlight/lang/pt_br.json"
+hash = "4062119f4f70325525eb35b371733c1b6818321f54afd5fbfa0bd95e83464efa"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/mowziesmobs/lang/pt_br.json"
+hash = "783896bdbc673a5cd3c45b4a6fc8c42b43ed1161949563439378b968ca6fd136"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/paraglider/lang/pt_br.json"
+hash = "4fc7beac2baef7ae47696075947cbd6df19217a0526b3795de436c7e61f2195a"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/patchouli/lang/pt_br.json"
+hash = "43bb48de989415f9e89955e12feb51da4200b88d5d6d46bdc0345377990ab74f"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/puffish_skills/lang/pt_br.json"
+hash = "fc04b365a0adeeba3deccc007f93d6973b4c2059d94b7154e42309bc7d4226c9"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/simplyswords/lang/pt_br.json"
+hash = "661ef71023bc130c91b131df54d5825cfedfcdc0f279bc40eada237e5798295e"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/simplytooltips/lang/pt_br.json"
+hash = "86f6413614ef4397d2de4499daec8fff669a6d44ab505da4fb489e7a928b6804"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/sodium/lang/pt_br.json"
+hash = "4d943960469380ea77b5fe24ed8865341f7b803f3fa88fae66830cb1fcdb64b1"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/sophisticatedbackpacks/lang/pt_br.json"
+hash = "52fcea25a6d8c8ed575e16026b08eae485b356cd4646656035d95cd5e1bb8140"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/sophisticatedcore/lang/pt_br.json"
+hash = "aa4aaad3f50b6e7396cb6ef554e19f07cf36f1f28e89a0866c527c82d29895ab"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/sound_physics_remastered/lang/pt_br.json"
+hash = "f7ba60c10026e25f4db5ed61895acf89b5cebabcf356f1722bd888e4668b755d"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/travelerstitles/lang/pt_br.json"
+hash = "8568b9c9a6b19e69a0c6402b59819a1da7861704ca07a4ffdf6d08b43461b4d1"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/undead_revamp2/lang/pt_br.json"
+hash = "8480a51bea41b243d0726b3eb9d2360c6f4599eeb0a11efc47aa17b5f936265f"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/waystones/lang/pt_br.json"
+hash = "5811cec82c42bdbf1a28881bf6e51dc5dd55301f895ecae0563d1d62aa074828"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/xaerominimap/lang/pt_br.json"
+hash = "f389cac692c41c2ad89903385561130b36a5f43e9d9420d5182364df0813d234"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/xaeroworldmap/lang/pt_br.json"
+hash = "94388c7c3f7c889d939ec40296466d29c1faab9ce249302d980e0d403d4b08f8"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/pack.mcmeta"
+hash = "08e099b3536377ed45423847fd64909d05bed914b58db438b56ae9e6be60e0be"
 
 [[files]]
 file = "mods/ai-improvements.pw.toml"

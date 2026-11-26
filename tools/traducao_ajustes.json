@@ -1,0 +1,9 @@
+{
+  "_comentario": "Correções aplicadas por cima do português que o próprio mod já traz. Usado por tools/montar_traducao.py.",
+  "blue_skies": {
+    "item.blue_skies.zeal_lighter": "Isqueiro Zeal",
+    "item.blue_skies.blinding_key": "Chave da Masmorra Ofuscante",
+    "item.blue_skies.nature_key": "Chave da Masmorra da Natureza",
+    "item.blue_skies.poison_key": "Chave da Masmorra do Veneno"
+  }
+}
