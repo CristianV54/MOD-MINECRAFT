@@ -768,6 +768,11 @@ hash = "cfd6e4b9eb13eb30b49a629c7ed92e87d16b700589e95af795e9a7bfe2854998"
 metafile = true
 
 [[files]]
+file = "mods/handcrafted.pw.toml"
+hash = "b9a7e71472f5f88229bf2f9e214b223b3900052bdc56075906d7a22acf74568c"
+metafile = true
+
+[[files]]
 file = "mods/iceberg.pw.toml"
 hash = "11ddfeec18e041ef8a810bc0aad8c984a5d2737430af9b8291f4c224b7baede8"
 metafile = true
@@ -970,6 +975,11 @@ metafile = true
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
 hash = "3e8a2a8250d2b3b56b0a7d2ff6c1d99eea178642fb7061bd67fd9f71e91c0bf9"
+metafile = true
+
+[[files]]
+file = "mods/sophisticated-storage.pw.toml"
+hash = "12ccc6e5d2cb10b93c2c7c603279879df2869040a2b7e6b499dfd77bee14c166"
 metafile = true
 
 [[files]]

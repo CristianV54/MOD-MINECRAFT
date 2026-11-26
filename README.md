@@ -3,8 +3,9 @@
 **SealCraft: RPG em Português.** Modpack brasileiro de RPG com combate estilo souls, chefes, dungeons e uma história contada em português.
 
 - **Versão:** Minecraft 1.20.1 com Forge 47.4.29
-- **Mods:** 110 no total (91 rodam no servidor e 19 só no jogador)
+- **Mods:** 112 no total (93 rodam no servidor e 19 só no jogador)
 - **Objetivo:** ser mais leve que o DawnCraft (305 mods) e rodar bem com 6 GB de RAM
+- **Publicação:** textos da página do CurseForge e do Modrinth em `PUBLICACAO.md`
 - **Estado:** **história completa**, com 5 atos, 108 missões em português, 19 chefes de história, 2 desafios lendários e dragões. Ainda não foi jogada de ponta a ponta.
 
 **Sobre o nome:** o nome do pacote é SealCraft. O identificador interno continua `terras_partidas` (datapack, funções, tags, árvores de habilidades) para não quebrar mundos e o progresso de quem já está jogando. O jogador não vê esse identificador.
@@ -35,7 +36,7 @@ FTB Quests (livro de missões), Easy NPC (personagens com diálogo para contar a
 Dragon Mounts: Legacy (8 tipos de dragão), Shellback do Aquamirae, Straddler do Alex's Mobs e os cavalos normais
 
 **Facilidades**
-JEI, Jade, Xaero's Minimap e World Map, Waystones, Sophisticated Backpacks, Corpse, AppleSkin, Guard Villagers, Farmer's Delight
+JEI, Jade, Xaero's Minimap e World Map, Waystones, Sophisticated Backpacks e Sophisticated Storage (mochilas e baús que podem ser melhorados), Handcrafted (móveis e decoração), Corpse, AppleSkin, Guard Villagers, Farmer's Delight
 
 **Desempenho e visual**
 Embeddium, Oculus (shaders), FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Canary, Saturn, Krypton, Clumps, AI Improvements, AmbientSounds, Sound Physics Remastered
