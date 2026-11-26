@@ -1,0 +1,18 @@
+{
+  "title": "Mago",
+  "description": "Domina a magia do Iron's Spells.",
+  "icon": {
+    "type": "item",
+    "data": {
+      "item": "irons_spellbooks:copper_spell_book"
+    }
+  },
+  "background": {
+    "texture": "minecraft:textures/block/purple_concrete.png",
+    "width": 16,
+    "height": 16,
+    "position": "tile"
+  },
+  "unlocked_by_default": false,
+  "starting_points": 1
+}

@@ -1,0 +1,68 @@
+{
+  "iniciado": {
+    "definition": "iniciado",
+    "x": 0,
+    "y": 0,
+    "root": true
+  },
+  "poder_1": {
+    "definition": "poder_1",
+    "x": -34,
+    "y": -34
+  },
+  "poder_2": {
+    "definition": "poder_2",
+    "x": -68,
+    "y": -68
+  },
+  "poder_3": {
+    "definition": "poder_3",
+    "x": -102,
+    "y": -102
+  },
+  "arquimago": {
+    "definition": "arquimago",
+    "x": -136,
+    "y": -136
+  },
+  "fluxo_1": {
+    "definition": "fluxo_1",
+    "x": 0,
+    "y": -34
+  },
+  "fluxo_2": {
+    "definition": "fluxo_2",
+    "x": 0,
+    "y": -68
+  },
+  "fluxo_3": {
+    "definition": "fluxo_3",
+    "x": 0,
+    "y": -102
+  },
+  "poco_de_mana": {
+    "definition": "poco_de_mana",
+    "x": 0,
+    "y": -136
+  },
+  "pressa_1": {
+    "definition": "pressa_1",
+    "x": 34,
+    "y": -34
+  },
+  "pressa_2": {
+    "definition": "pressa_2",
+    "x": 68,
+    "y": -68
+  },
+  "pressa_3": {
+    "definition": "pressa_3",
+    "x": 102,
+    "y": -102
+  },
+  "conjuracao_rapida": {
+    "definition": "conjuracao_rapida",
+    "x": 136,
+    "y": -136
+  }
+}

@@ -10,23 +10,23 @@ hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_1_o_chamado.snbt"
-hash = "dd8e7a2645f084acb847903665c5cb0f7619545b0b9afeff6d4157090a86834b"
+hash = "62fb331515325f8d77e584f80a1392a3cad72eecc4b2dd71e8c527e1299780b8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_2_terras_selvagens.snbt"
-hash = "f78dac1b5ad9b5b896b6044b8072d600aa484554890af4dca874f5785643c74b"
+hash = "c543ce1e740b6ce7e49af80c96cacbea35c7e5773bcabf3597d442e24e833117"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_3_abismo_e_fogo.snbt"
-hash = "59e6fb119f5abeab4a35736ffc5f68b27c066ffb4b2ca40c0a950413f4dadd5e"
+hash = "2d050d510ef93c435c4a8e81e383d54fb3ad876bc0b31aba4deea402abec980d"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_4_alem_do_ceu.snbt"
-hash = "c0963c06bc71975d0cadbb6ac876e20f1587cc1034105ccf5b585d3e7bd87163"
+hash = "bc083cd6d93c24255087ec9e9f56077a691b4f9889505b037c43fb69898bb08f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_5_o_fim_do_selo.snbt"
-hash = "802a41b9ca8b324e2cd272981751cfcb754e14c847dc03b2187982b5ec9f97f8"
+hash = "1706095ff8b48b58f1e818606308572bd0f696bdec53b5fd7165b55b10517487"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -57,6 +57,10 @@ file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/ch
 hash = "943faafed368c8b5fd190627e55f3207bdba5ea39dbaaf146e15e574ff35435b"
 
 [[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/ponto_de_habilidade.mcfunction"
+hash = "e8264153f1d0248f1edd730cff13923de9be007e52110b95f78156d86f24e93b"
+
+[[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/rechamar_vellan.mcfunction"
 hash = "7989979809f1eccdbee67a969d429afbb37e9cd40ca9be417dcc572086c1c94e"
 
@@ -79,6 +83,110 @@ hash = "01a439602f0aa93dd4fd7408398552bfde8d4c219c2490f113622fe7ed514a60"
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/loot_tables/mapas/labirinto_de_gelo.json"
 hash = "fbb781c9e82b302ed4b762a4253d6203cd5bd7c858b14c6f7171d74d136cac67"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/assassino/category.json"
+hash = "27bc20be7867adc1f73defd796ee083befbed0bf7117c6b76e48450f7ada910b"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/assassino/connections.json"
+hash = "107787b4f32b2155f5ff3d80e26c6fa69b2aaf385e48279aebfa63574bfc6994"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/assassino/definitions.json"
+hash = "61e94f0c5b66716597a11b396cbcc8288ba45fdf9429ebefeff75bbdca410c0e"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/assassino/experience.json"
+hash = "fb45b3e6f36f263c075ef4313c85e6f2e16c5a286f1ce33fdfcd3e71633f5efd"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/assassino/skills.json"
+hash = "5c57234f62ddd29b07e594a7ff2966704300788cdc4273f968e8ee806c47fef0"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/cacador/category.json"
+hash = "9d2b77b914e92f9537f00fb9369b16efb521e0c32ed9f84dc4a34d9ca558cc8b"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/cacador/connections.json"
+hash = "271d81ee540c766bb92b07cf5df1ec1b607c1c70ec354d910912d8e8ddc404d6"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/cacador/definitions.json"
+hash = "0d60764fef2f7789f8b14a4b1b948f6826b260b293a680b2db79ed35e7cc51f9"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/cacador/experience.json"
+hash = "fb45b3e6f36f263c075ef4313c85e6f2e16c5a286f1ce33fdfcd3e71633f5efd"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/cacador/skills.json"
+hash = "95c74a2dde24a67638cbb8b7a4ad4f668dac8437009297dcee4d1da5bc13d29d"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/guerreiro/category.json"
+hash = "339028e5bba1b0fa052f9a651e80496d9d2ac3ed9853af0a4c4c8771a26b2363"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/guerreiro/connections.json"
+hash = "3056a4cbe60d4353fadabbd5486c0015e373cc3a4655cb750847ccc083e8b56b"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/guerreiro/definitions.json"
+hash = "64c785e4ceaa530233703dc8c002f708ff4011a0073f759c8e6eae84a4ca9bd4"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/guerreiro/experience.json"
+hash = "fb45b3e6f36f263c075ef4313c85e6f2e16c5a286f1ce33fdfcd3e71633f5efd"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/guerreiro/skills.json"
+hash = "fdee30ede2b636c9a0b5cb467ee60aae75aebeab65125b8c008bbd984ad57e4b"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mago/category.json"
+hash = "afe656f0753ebdc62cb74a86c8119cca0047476eaa7e548dc177494049db3b6b"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mago/connections.json"
+hash = "e1e44f006b39e88f6f41df8dc9b0bd589e49732e4165ade8b53d98e40c193487"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mago/definitions.json"
+hash = "b3fb8c7aea580cbd4664c025d3fba167dd182716e4084013a11e81db98bd64f3"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mago/experience.json"
+hash = "fb45b3e6f36f263c075ef4313c85e6f2e16c5a286f1ce33fdfcd3e71633f5efd"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mago/skills.json"
+hash = "937a83b1db3dc15be23814ef011f4d6c25ff2df92b4a521aedfce1ab1767680d"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/tanque/category.json"
+hash = "d3e9ba76118a13c938abd738eb9d257001dc9239155f2d9720e21730f00057ef"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/tanque/connections.json"
+hash = "967c7e83a1e8ce84a1bc377324ad0404df32a42686ba9e2a3ab99c23464e0213"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/tanque/definitions.json"
+hash = "39c2226e0e16e6bbab9a9fdd7cd628b9415a7c43b6b1532c86616764fe2e91b5"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/tanque/experience.json"
+hash = "fb45b3e6f36f263c075ef4313c85e6f2e16c5a286f1ce33fdfcd3e71633f5efd"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/tanque/skills.json"
+hash = "5c01476f64179a29e1f9a45082e7c4e20adcccc258049af5aecff219868e2347"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/config.json"
+hash = "b02acf39bc5137f27cf268387877fcd59dc94809aaba02ff90095128be7e93b5"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/tags/worldgen/structure/bosque_umvuthana.json"

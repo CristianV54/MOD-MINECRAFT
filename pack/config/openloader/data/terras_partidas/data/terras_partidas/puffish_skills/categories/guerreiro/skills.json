@@ -1,0 +1,68 @@
+{
+  "treino": {
+    "definition": "treino",
+    "x": 0,
+    "y": 0,
+    "root": true
+  },
+  "forca_1": {
+    "definition": "forca_1",
+    "x": -34,
+    "y": -34
+  },
+  "forca_2": {
+    "definition": "forca_2",
+    "x": -68,
+    "y": -68
+  },
+  "forca_3": {
+    "definition": "forca_3",
+    "x": -102,
+    "y": -102
+  },
+  "golpe_brutal": {
+    "definition": "golpe_brutal",
+    "x": -136,
+    "y": -136
+  },
+  "vigor_1": {
+    "definition": "vigor_1",
+    "x": 0,
+    "y": -34
+  },
+  "vigor_2": {
+    "definition": "vigor_2",
+    "x": 0,
+    "y": -68
+  },
+  "vigor_3": {
+    "definition": "vigor_3",
+    "x": 0,
+    "y": -102
+  },
+  "sede_de_sangue": {
+    "definition": "sede_de_sangue",
+    "x": 0,
+    "y": -136
+  },
+  "ritmo_1": {
+    "definition": "ritmo_1",
+    "x": 34,
+    "y": -34
+  },
+  "ritmo_2": {
+    "definition": "ritmo_2",
+    "x": 68,
+    "y": -68
+  },
+  "folego_1": {
+    "definition": "folego_1",
+    "x": 102,
+    "y": -102
+  },
+  "mestre_de_armas": {
+    "definition": "mestre_de_armas",
+    "x": 136,
+    "y": -136
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "experience_per_level": {
+    "type": "expression",
+    "data": {
+      "expression": "40 + level * 25"
+    }
+  },
+  "level_limit": 20,
+  "sources": [
+    {
+      "type": "puffish_skills:kill_entity",
+      "data": {
+        "variables": {
+          "xp_solta": {
+            "operations": [
+              {
+                "type": "get_dropped_experience"
+              }
+            ]
+          },
+          "vida_max": {
+            "operations": [
+              {
+                "type": "get_killed_living_entity"
+              },
+              {
+                "type": "get_max_health"
+              }
+            ]
+          }
+        },
+        "experience": "xp_solta + vida_max / 10",
+        "anti_farming": {
+          "limit_per_chunk": 15,
+          "reset_after_seconds": 300
+        }
+      }
+    }
+  ]
+}

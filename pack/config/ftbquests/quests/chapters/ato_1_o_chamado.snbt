@@ -119,7 +119,7 @@
 			y: -2.5d
 			icon: "epicfight:iron_longsword"
 			shape: "diamond"
-			description: ["&6Mestre Vellan&r: \"Então você é um &cGuerreiro&r.\"", "", "Você luta de frente, com espada longa e armadura. Bom para quem está começando."]
+			description: ["&6Mestre Vellan&r: \"Então você é um &cGuerreiro&r.\"", "", "Você luta de frente, com espada longa e armadura. Bom para quem está começando.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
 			dependencies: ["7705A346645D703A"]
 			tasks: [
 				{
@@ -150,6 +150,15 @@
 					item: "minecraft:cooked_beef"
 					count: 12
 				}
+				{
+					id: "5C6588EEA786E284"
+					type: "command"
+					command: "/puffish_skills category unlock {p} terras_partidas:guerreiro"
+					elevate_perms: true
+					silent: true
+					title: "Libera a árvore de habilidades da classe"
+					icon: "minecraft:enchanted_book"
+				}
 			]
 		}
 		{
@@ -159,7 +168,7 @@
 			y: -1.25d
 			icon: "minecraft:shield"
 			shape: "diamond"
-			description: ["&6Mestre Vellan&r: \"Então você é um &9Tanque&r.\"", "", "Você aguenta pancada. Escudo, armadura de ferro e a técnica de &eAparar&r do Epic Fight."]
+			description: ["&6Mestre Vellan&r: \"Então você é um &9Tanque&r.\"", "", "Você aguenta pancada. Escudo, armadura de ferro e a técnica de &eAparar&r do Epic Fight.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
 			dependencies: ["7705A346645D703A"]
 			tasks: [
 				{
@@ -201,6 +210,15 @@
 					item: "minecraft:cooked_beef"
 					count: 12
 				}
+				{
+					id: "3290BC7A4861A070"
+					type: "command"
+					command: "/puffish_skills category unlock {p} terras_partidas:tanque"
+					elevate_perms: true
+					silent: true
+					title: "Libera a árvore de habilidades da classe"
+					icon: "minecraft:enchanted_book"
+				}
 			]
 		}
 		{
@@ -210,7 +228,7 @@
 			y: 0.0d
 			icon: "epicfight:iron_dagger"
 			shape: "diamond"
-			description: ["&6Mestre Vellan&r: \"Então você é um &8Assassino&r.\"", "", "Você é rápido. Duas adagas (uma em cada mão), poções de velocidade e o &ePasso&r, uma esquiva mais curta e ágil."]
+			description: ["&6Mestre Vellan&r: \"Então você é um &8Assassino&r.\"", "", "Você é rápido. Duas adagas (uma em cada mão), poções de velocidade e o &ePasso&r, uma esquiva mais curta e ágil.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
 			dependencies: ["7705A346645D703A"]
 			tasks: [
 				{
@@ -265,6 +283,15 @@
 					item: "minecraft:cooked_beef"
 					count: 12
 				}
+				{
+					id: "1E3B5317E1AE9B77"
+					type: "command"
+					command: "/puffish_skills category unlock {p} terras_partidas:assassino"
+					elevate_perms: true
+					silent: true
+					title: "Libera a árvore de habilidades da classe"
+					icon: "minecraft:enchanted_book"
+				}
 			]
 		}
 		{
@@ -274,7 +301,7 @@
 			y: 1.25d
 			icon: "irons_spellbooks:copper_spell_book"
 			shape: "diamond"
-			description: ["&6Mestre Vellan&r: \"Então você é um &5Mago&r.\"", "", "Você usa magia. Pergaminhos podem ser lidos direto (clique direito) ou gravados no livro na &eMesa de Inscrição&r."]
+			description: ["&6Mestre Vellan&r: \"Então você é um &5Mago&r.\"", "", "Você usa magia. Pergaminhos podem ser lidos direto (clique direito) ou gravados no livro na &eMesa de Inscrição&r.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
 			dependencies: ["7705A346645D703A"]
 			tasks: [
 				{
@@ -374,6 +401,15 @@
 					item: "minecraft:cooked_beef"
 					count: 12
 				}
+				{
+					id: "301A9D56EF341131"
+					type: "command"
+					command: "/puffish_skills category unlock {p} terras_partidas:mago"
+					elevate_perms: true
+					silent: true
+					title: "Libera a árvore de habilidades da classe"
+					icon: "minecraft:enchanted_book"
+				}
 			]
 		}
 		{
@@ -383,7 +419,7 @@
 			y: 2.5d
 			icon: "minecraft:bow"
 			shape: "diamond"
-			description: ["&6Mestre Vellan&r: \"Então você é um &aCaçador&r.\"", "", "Você ataca de longe. Arco, muitas flechas e uma adaga para quando o inimigo chegar perto."]
+			description: ["&6Mestre Vellan&r: \"Então você é um &aCaçador&r.\"", "", "Você ataca de longe. Arco, muitas flechas e uma adaga para quando o inimigo chegar perto.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
 			dependencies: ["7705A346645D703A"]
 			tasks: [
 				{
@@ -419,6 +455,15 @@
 					type: "item"
 					item: "minecraft:cooked_beef"
 					count: 12
+				}
+				{
+					id: "221CBF37AA517D23"
+					type: "command"
+					command: "/puffish_skills category unlock {p} terras_partidas:cacador"
+					elevate_perms: true
+					silent: true
+					title: "Libera a árvore de habilidades da classe"
+					icon: "minecraft:enchanted_book"
 				}
 			]
 		}
@@ -705,6 +750,15 @@
 					type: "item"
 					item: "minecraft:diamond"
 				}
+				{
+					id: "05098B09EA338FC7"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
 			]
 		}
 		{
@@ -836,6 +890,15 @@
 					type: "item"
 					item: "minecraft:diamond"
 					count: 2
+				}
+				{
+					id: "51E29F7DB9C355D1"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
 				}
 			]
 		}
@@ -1006,6 +1069,15 @@
 					type: "item"
 					item: "minecraft:diamond"
 					count: 2
+				}
+				{
+					id: "5EAFB2869A8474E1"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
 				}
 			]
 		}

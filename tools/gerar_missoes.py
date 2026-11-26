@@ -340,8 +340,12 @@ def ato1():
           c.r_item("minecraft:leather_chestplate"), c.r_item("minecraft:cooked_beef", 12)]),
     ]
     for chave, nome, dy, icone, texto, recs in classes:
+        recs = recs + [c.r_comando(f"/puffish_skills category unlock {{p}} terras_partidas:{chave}",
+                                   titulo="Libera a árvore de habilidades da classe", icone="minecraft:enchanted_book")]
         c.quest(chave, nome, 5, dy * 1.25, icone=icone, deps=["caminho"], forma="diamond",
-                descricao=[f"{M}: \"Então você é um {nome}&r.\"", "", texto],
+                descricao=[f"{M}: \"Então você é um {nome}&r.\"", "", texto, "",
+                           "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.",
+                           "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."],
                 tarefas=[c.t_check(f"Eu escolho ser {nome}")], recompensas=recs)
     nomes_classes = [k for k, *_ in classes]
 
@@ -1386,6 +1390,13 @@ def main():
         quest["rewards"].append({"id": qid(f"{cap}/quest/{chave}/recompensa/tag_progresso"), "type": "command",
                                  "command": f"/tag {{p}} add {tag}", "elevate_perms": True, "silent": True,
                                  "title": "O Mestre Vellan registra seu progresso", "icon": "minecraft:writable_book"})
+    for cap, capitulo in capitulos.items():
+        for q in capitulo["quests"]:
+            if q.get("shape") == "octagon" and any(t["type"] == "kill" for t in q["tasks"]):
+                q["rewards"].append({"id": qid(f"{q['id']}/recompensa/ponto_habilidade"), "type": "command",
+                                     "command": "/function terras_partidas:ponto_de_habilidade",
+                                     "elevate_perms": True, "silent": True,
+                                     "title": "+1 ponto de habilidade", "icon": "minecraft:enchanted_book"})
     for capitulo in capitulos.values():
         escrever(f"chapters/{capitulo['filename']}.snbt", capitulo)
     preset = os.path.join(RAIZ, "..", "..", "openloader", "data", "terras_partidas", "data",

@@ -1,0 +1,54 @@
+{
+  "normal": {
+    "bidirectional": [
+      [
+        "treino",
+        "forca_1"
+      ],
+      [
+        "forca_1",
+        "forca_2"
+      ],
+      [
+        "forca_2",
+        "forca_3"
+      ],
+      [
+        "forca_3",
+        "golpe_brutal"
+      ],
+      [
+        "treino",
+        "vigor_1"
+      ],
+      [
+        "vigor_1",
+        "vigor_2"
+      ],
+      [
+        "vigor_2",
+        "vigor_3"
+      ],
+      [
+        "vigor_3",
+        "sede_de_sangue"
+      ],
+      [
+        "treino",
+        "ritmo_1"
+      ],
+      [
+        "ritmo_1",
+        "ritmo_2"
+      ],
+      [
+        "ritmo_2",
+        "folego_1"
+      ],
+      [
+        "folego_1",
+        "mestre_de_armas"
+      ]
+    ]
+  }
+}

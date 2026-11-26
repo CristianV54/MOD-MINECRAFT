@@ -1,0 +1,353 @@
+{
+  "passos_leves": {
+    "title": "Passos Leves",
+    "description": "+5% de velocidade de movimento",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.005,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "lamina_1": {
+    "title": "Lâmina I",
+    "description": "+5% de chance de crítico\nRamo: Lâmina",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "epicfight:iron_dagger"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_chance",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "lamina_2": {
+    "title": "Lâmina II",
+    "description": "+5% de chance de crítico\nRamo: Lâmina",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "epicfight:iron_dagger"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_chance",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "lamina_3": {
+    "title": "Lâmina III",
+    "description": "+5% de chance de crítico\nRamo: Lâmina",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "epicfight:iron_dagger"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_chance",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "golpe_fatal": {
+    "title": "Golpe Fatal",
+    "description": "+40% de dano crítico\nRamo: Lâmina",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "epicfight:iron_dagger"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_damage",
+          "value": 0.4,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 2
+  },
+  "sombra_1": {
+    "title": "Sombra I",
+    "description": "+3% de chance de esquivar\nRamo: Sombra",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:ender_eye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:dodge_chance",
+          "value": 0.03,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "sombra_2": {
+    "title": "Sombra II",
+    "description": "+3% de chance de esquivar\nRamo: Sombra",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:ender_eye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:dodge_chance",
+          "value": 0.03,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "sombra_3": {
+    "title": "Sombra III",
+    "description": "+3% de chance de esquivar\nRamo: Sombra",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:ender_eye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:dodge_chance",
+          "value": 0.03,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "vulto": {
+    "title": "Vulto",
+    "description": "+10% de velocidade de movimento\nRamo: Sombra",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:ender_eye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.01,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 2
+  },
+  "folego_1": {
+    "title": "Fôlego I",
+    "description": "+2 de fôlego máximo\nRamo: Fôlego",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:sugar"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:staminar",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "folego_2": {
+    "title": "Fôlego II",
+    "description": "+2 de fôlego máximo\nRamo: Fôlego",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:sugar"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:staminar",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "folego_3": {
+    "title": "Fôlego III",
+    "description": "+2 de fôlego máximo\nRamo: Fôlego",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:sugar"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:staminar",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "segundo_ar": {
+    "title": "Segundo Ar",
+    "description": "+30% de recuperação de fôlego\nRamo: Fôlego",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:sugar"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:stamina_regen",
+          "value": 0.3,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 2
+  }
+}

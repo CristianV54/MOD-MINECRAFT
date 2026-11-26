@@ -1,0 +1,361 @@
+{
+  "olho_de_falcao": {
+    "title": "Olho de Falcão",
+    "description": "+10% de dano de flecha",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:spyglass"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:arrow_damage",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "pontaria_1": {
+    "title": "Pontaria I",
+    "description": "+10% de dano de flecha\nRamo: Pontaria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:arrow"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:arrow_damage",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "pontaria_2": {
+    "title": "Pontaria II",
+    "description": "+10% de dano de flecha\nRamo: Pontaria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:arrow"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:arrow_damage",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "pontaria_3": {
+    "title": "Pontaria III",
+    "description": "+10% de dano de flecha\nRamo: Pontaria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:arrow"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:arrow_damage",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "tiro_certeiro": {
+    "title": "Tiro Certeiro",
+    "description": "+10% de chance de crítico\nRamo: Pontaria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:arrow"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_chance",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 2
+  },
+  "corda_1": {
+    "title": "Corda I",
+    "description": "+10% de velocidade para puxar o arco\nRamo: Corda",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:string"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:draw_speed",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "corda_2": {
+    "title": "Corda II",
+    "description": "+10% de velocidade para puxar o arco\nRamo: Corda",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:string"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:draw_speed",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "corda_3": {
+    "title": "Corda III",
+    "description": "+10% de velocidade para puxar o arco\nRamo: Corda",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:string"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:draw_speed",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "flecha_veloz": {
+    "title": "Flecha Veloz",
+    "description": "+30% de velocidade da flecha\nRamo: Corda",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:string"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:arrow_velocity",
+          "value": 0.3,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 2
+  },
+  "rastreador_1": {
+    "title": "Rastreador I",
+    "description": "+3% de velocidade de movimento\nRamo: Rastreador",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.003,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "rastreador_2": {
+    "title": "Rastreador II",
+    "description": "+3% de velocidade de movimento\nRamo: Rastreador",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.003,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "rastreador_3": {
+    "title": "Rastreador III",
+    "description": "+2 de vida (1 coração)\nRamo: Rastreador",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "sobrevivente": {
+    "title": "Sobrevivente",
+    "description": "+4 de vida e +5% de esquiva\nRamo: Rastreador",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 4.0,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:dodge_chance",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 2
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "normal": {
+    "bidirectional": [
+      [
+        "iniciado",
+        "poder_1"
+      ],
+      [
+        "poder_1",
+        "poder_2"
+      ],
+      [
+        "poder_2",
+        "poder_3"
+      ],
+      [
+        "poder_3",
+        "arquimago"
+      ],
+      [
+        "iniciado",
+        "fluxo_1"
+      ],
+      [
+        "fluxo_1",
+        "fluxo_2"
+      ],
+      [
+        "fluxo_2",
+        "fluxo_3"
+      ],
+      [
+        "fluxo_3",
+        "poco_de_mana"
+      ],
+      [
+        "iniciado",
+        "pressa_1"
+      ],
+      [
+        "pressa_1",
+        "pressa_2"
+      ],
+      [
+        "pressa_2",
+        "pressa_3"
+      ],
+      [
+        "pressa_3",
+        "conjuracao_rapida"
+      ]
+    ]
+  }
+}

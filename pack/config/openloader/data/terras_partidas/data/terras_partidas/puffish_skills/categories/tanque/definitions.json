@@ -1,0 +1,353 @@
+{
+  "muralha": {
+    "title": "Muralha",
+    "description": "+4 de vida (2 corações)",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 4.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "couraca_1": {
+    "title": "Couraça I",
+    "description": "+2 de armadura\nRamo: Couraça",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "couraca_2": {
+    "title": "Couraça II",
+    "description": "+2 de armadura\nRamo: Couraça",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "couraca_3": {
+    "title": "Couraça III",
+    "description": "+2 de armadura\nRamo: Couraça",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "pele_de_aco": {
+    "title": "Pele de Aço",
+    "description": "+4 de resistência da armadura\nRamo: Couraça",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 4.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 2
+  },
+  "firmeza_1": {
+    "title": "Firmeza I",
+    "description": "+10% de resistência a empurrão\nRamo: Firmeza",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "firmeza_2": {
+    "title": "Firmeza II",
+    "description": "+10% de resistência a empurrão\nRamo: Firmeza",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "firmeza_3": {
+    "title": "Firmeza III",
+    "description": "+10% de resistência a empurrão\nRamo: Firmeza",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "inabalavel": {
+    "title": "Inabalável",
+    "description": "+4 de resistência a atordoamento\nRamo: Firmeza",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:stun_armor",
+          "value": 4.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 2
+  },
+  "vitalidade_1": {
+    "title": "Vitalidade I",
+    "description": "+2 de vida (1 coração)\nRamo: Vitalidade",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:glistering_melon_slice"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "vitalidade_2": {
+    "title": "Vitalidade II",
+    "description": "+2 de vida (1 coração)\nRamo: Vitalidade",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:glistering_melon_slice"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "vitalidade_3": {
+    "title": "Vitalidade III",
+    "description": "+2 de vida (1 coração)\nRamo: Vitalidade",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:glistering_melon_slice"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "regeneracao": {
+    "title": "Sangue Forte",
+    "description": "+20% de cura recebida\nRamo: Vitalidade",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:glistering_melon_slice"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:healing_received",
+          "value": 0.2,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 2
+  }
+}

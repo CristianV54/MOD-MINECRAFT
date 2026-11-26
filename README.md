@@ -145,6 +145,26 @@ Na semente de teste, as distâncias ficaram assim:
 
 **Atenção:** o YUNG's Better Strongholds substitui a fortaleza do End. O ID certo é `betterstrongholds:stronghold`.
 
+## Árvores de habilidades das classes
+
+Cada classe tem uma árvore própria no **Pufferfish's Skills**, que abre com a tecla **K**. A árvore fica trancada até o jogador escolher a classe no Ato 1.
+- **Formato:** uma habilidade inicial e 3 ramos de 4 habilidades. A última de cada ramo custa 2 pontos e é mais forte.
+- **Tamanho:** 13 habilidades e 16 pontos pra completar cada árvore.
+- **Pontos:**
+  - **Monstros:** matar dá experiência (XP que o monstro solta + vida máxima / 10). Cada nível vale 1 ponto, até o nível 20.
+  - **Chefes:** cada chefe derrotado dá **+1 ponto**, num total de 21 chefes.
+  - **Começo:** a árvore começa com 1 ponto, pra comprar a habilidade inicial.
+
+| Classe | Habilidade inicial | Ramos |
+|---|---|---|
+| Guerreiro | +1 de dano | Força (dano, dano crítico), Vigor (vida, roubo de vida), Ritmo (velocidade de ataque, fôlego, crítico) |
+| Tanque | +4 de vida | Couraça (armadura), Firmeza (resistência a empurrão e atordoamento), Vitalidade (vida, cura recebida) |
+| Assassino | +5% de velocidade | Lâmina (chance e dano crítico), Sombra (esquiva, velocidade), Fôlego (fôlego máximo e recuperação) |
+| Mago | +25 de mana | Poder (poder mágico), Fluxo (recuperação e mana máxima), Pressa (recarga e conjuração) |
+| Caçador | +10% de dano de flecha | Pontaria (dano de flecha, crítico), Corda (puxar o arco, velocidade da flecha), Rastreador (velocidade, vida, esquiva) |
+
+As árvores são geradas pelo script `tools/gerar_habilidades.py`, onde ficam todos os nomes e valores. O resultado vai pro datapack em `puffish_skills/`.
+
 ## Mestre Vellan no mundo
 
 O Mestre Vellan é um NPC do Easy NPC que aparece **ao lado do jogador** quando ele pega a recompensa da primeira missão ("O Chamado").
@@ -178,7 +198,6 @@ A história vai se revelando ato por ato:
 
 1. Jogar no PC de ponta a ponta e ajustar o que pesar, bugar ou ficar desequilibrado.
 2. Colocar o Mestre Vellan no mundo como NPC (Easy NPC).
-3. Montar a árvore de habilidades de cada classe (Pufferfish's Skills).
 4. Fazer a tradução PT-BR dos mods que não têm português.
 5. Configurar dificuldade, drops e o bloqueio de progressão.
 

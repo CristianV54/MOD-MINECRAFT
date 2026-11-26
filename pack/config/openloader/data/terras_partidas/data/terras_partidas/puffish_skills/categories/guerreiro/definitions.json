@@ -1,0 +1,361 @@
+{
+  "treino": {
+    "title": "Treino de Guerreiro",
+    "description": "+1 de dano corpo a corpo",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "goal"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_damage",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "forca_1": {
+    "title": "Força I",
+    "description": "+1 de dano\nRamo: Força",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_axe"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_damage",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "forca_2": {
+    "title": "Força II",
+    "description": "+1 de dano\nRamo: Força",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_axe"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_damage",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "forca_3": {
+    "title": "Força III",
+    "description": "+1 de dano\nRamo: Força",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_axe"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_damage",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "golpe_brutal": {
+    "title": "Golpe Brutal",
+    "description": "+25% de dano crítico\nRamo: Força",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_axe"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_damage",
+          "value": 0.25,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 2
+  },
+  "vigor_1": {
+    "title": "Vigor I",
+    "description": "+2 de vida (1 coração)\nRamo: Vigor",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:golden_apple"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "vigor_2": {
+    "title": "Vigor II",
+    "description": "+2 de vida (1 coração)\nRamo: Vigor",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:golden_apple"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "vigor_3": {
+    "title": "Vigor III",
+    "description": "+2 de vida (1 coração)\nRamo: Vigor",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:golden_apple"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "sede_de_sangue": {
+    "title": "Sede de Sangue",
+    "description": "Recupera 5% do dano causado como vida\nRamo: Vigor",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:golden_apple"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:life_steal",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 2
+  },
+  "ritmo_1": {
+    "title": "Ritmo I",
+    "description": "+5% de velocidade de ataque\nRamo: Ritmo",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:feather"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_speed",
+          "value": 0.2,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "ritmo_2": {
+    "title": "Ritmo II",
+    "description": "+5% de velocidade de ataque\nRamo: Ritmo",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:feather"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_speed",
+          "value": 0.2,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "folego_1": {
+    "title": "Fôlego de Batalha",
+    "description": "+2 de fôlego máximo\nRamo: Ritmo",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:feather"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:staminar",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "mestre_de_armas": {
+    "title": "Mestre de Armas",
+    "description": "+5% de chance de crítico e +1 de dano\nRamo: Ritmo",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:feather"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_chance",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_damage",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 2
+  }
+}

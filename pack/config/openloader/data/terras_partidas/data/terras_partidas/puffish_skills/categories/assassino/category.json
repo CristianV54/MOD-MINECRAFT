@@ -1,0 +1,18 @@
+{
+  "title": "Assassino",
+  "description": "Rápido, preciso e difícil de acertar.",
+  "icon": {
+    "type": "item",
+    "data": {
+      "item": "epicfight:iron_dagger"
+    }
+  },
+  "background": {
+    "texture": "minecraft:textures/block/black_concrete.png",
+    "width": 16,
+    "height": 16,
+    "position": "tile"
+  },
+  "unlocked_by_default": false,
+  "starting_points": 1
+}

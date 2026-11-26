@@ -1,0 +1,54 @@
+{
+  "normal": {
+    "bidirectional": [
+      [
+        "passos_leves",
+        "lamina_1"
+      ],
+      [
+        "lamina_1",
+        "lamina_2"
+      ],
+      [
+        "lamina_2",
+        "lamina_3"
+      ],
+      [
+        "lamina_3",
+        "golpe_fatal"
+      ],
+      [
+        "passos_leves",
+        "sombra_1"
+      ],
+      [
+        "sombra_1",
+        "sombra_2"
+      ],
+      [
+        "sombra_2",
+        "sombra_3"
+      ],
+      [
+        "sombra_3",
+        "vulto"
+      ],
+      [
+        "passos_leves",
+        "folego_1"
+      ],
+      [
+        "folego_1",
+        "folego_2"
+      ],
+      [
+        "folego_2",
+        "folego_3"
+      ],
+      [
+        "folego_3",
+        "segundo_ar"
+      ]
+    ]
+  }
+}

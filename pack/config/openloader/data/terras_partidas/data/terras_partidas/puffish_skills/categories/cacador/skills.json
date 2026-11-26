@@ -1,0 +1,68 @@
+{
+  "olho_de_falcao": {
+    "definition": "olho_de_falcao",
+    "x": 0,
+    "y": 0,
+    "root": true
+  },
+  "pontaria_1": {
+    "definition": "pontaria_1",
+    "x": -34,
+    "y": -34
+  },
+  "pontaria_2": {
+    "definition": "pontaria_2",
+    "x": -68,
+    "y": -68
+  },
+  "pontaria_3": {
+    "definition": "pontaria_3",
+    "x": -102,
+    "y": -102
+  },
+  "tiro_certeiro": {
+    "definition": "tiro_certeiro",
+    "x": -136,
+    "y": -136
+  },
+  "corda_1": {
+    "definition": "corda_1",
+    "x": 0,
+    "y": -34
+  },
+  "corda_2": {
+    "definition": "corda_2",
+    "x": 0,
+    "y": -68
+  },
+  "corda_3": {
+    "definition": "corda_3",
+    "x": 0,
+    "y": -102
+  },
+  "flecha_veloz": {
+    "definition": "flecha_veloz",
+    "x": 0,
+    "y": -136
+  },
+  "rastreador_1": {
+    "definition": "rastreador_1",
+    "x": 34,
+    "y": -34
+  },
+  "rastreador_2": {
+    "definition": "rastreador_2",
+    "x": 68,
+    "y": -68
+  },
+  "rastreador_3": {
+    "definition": "rastreador_3",
+    "x": 102,
+    "y": -102
+  },
+  "sobrevivente": {
+    "definition": "sobrevivente",
+    "x": 136,
+    "y": -136
+  }
+}

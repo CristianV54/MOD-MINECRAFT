@@ -1,12 +1,12 @@
 name = "Terras Partidas"
 author = "cristianv54"
-version = "0.8.1"
+version = "0.9.0"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "7794b3e2ef901b57de49324a201b130dbdae7f1bd8ce2114b743a7e1d76a41dc"
+hash = "483028b32147c3a131f1353a729d65e56b2b384cb413263324c469ab71f006bf"
 
 [versions]
 forge = "47.4.29"

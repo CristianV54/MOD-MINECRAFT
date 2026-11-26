@@ -178,6 +178,15 @@
 					item: "minecraft:diamond"
 					count: 6
 				}
+				{
+					id: "481AFF6EB0B22171"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
 			]
 		}
 		{
@@ -344,6 +353,15 @@
 					item: "minecraft:diamond"
 					count: 6
 				}
+				{
+					id: "3F3B4CFACB8821AC"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
 			]
 		}
 		{
@@ -466,6 +484,15 @@
 					type: "item"
 					item: "minecraft:diamond"
 					count: 6
+				}
+				{
+					id: "3E462D16C8347FC4"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
 				}
 			]
 		}
@@ -618,6 +645,15 @@
 					item: "minecraft:netherite_ingot"
 					count: 2
 				}
+				{
+					id: "78D05CC4AD917660"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
 			]
 		}
 		{
@@ -763,6 +799,15 @@
 					type: "xp_levels"
 					xp_levels: 25
 				}
+				{
+					id: "44E713C7F78CD95B"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
 			]
 		}
 		{
@@ -841,6 +886,15 @@
 					id: "1176EC2F01BBDD07"
 					type: "xp_levels"
 					xp_levels: 25
+				}
+				{
+					id: "37DE6A6F7AF9B658"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
 				}
 			]
 		}

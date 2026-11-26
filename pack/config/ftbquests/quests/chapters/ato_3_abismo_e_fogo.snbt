@@ -286,6 +286,15 @@
 					item: "minecraft:diamond"
 					count: 4
 				}
+				{
+					id: "127F01E2A302358D"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
 			]
 		}
 		{
@@ -450,6 +459,15 @@
 					item: "minecraft:diamond"
 					count: 4
 				}
+				{
+					id: "4B763AF3FEEDFDED"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
 			]
 		}
 		{
@@ -596,6 +614,15 @@
 					item: "minecraft:diamond"
 					count: 4
 				}
+				{
+					id: "51A782B9121D26BB"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
 			]
 		}
 		{
@@ -718,6 +745,15 @@
 					type: "item"
 					item: "minecraft:diamond"
 					count: 6
+				}
+				{
+					id: "63023A067372A768"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
 				}
 			]
 		}

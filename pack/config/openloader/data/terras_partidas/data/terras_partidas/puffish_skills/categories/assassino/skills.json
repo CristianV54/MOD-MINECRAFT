@@ -1,0 +1,68 @@
+{
+  "passos_leves": {
+    "definition": "passos_leves",
+    "x": 0,
+    "y": 0,
+    "root": true
+  },
+  "lamina_1": {
+    "definition": "lamina_1",
+    "x": -34,
+    "y": -34
+  },
+  "lamina_2": {
+    "definition": "lamina_2",
+    "x": -68,
+    "y": -68
+  },
+  "lamina_3": {
+    "definition": "lamina_3",
+    "x": -102,
+    "y": -102
+  },
+  "golpe_fatal": {
+    "definition": "golpe_fatal",
+    "x": -136,
+    "y": -136
+  },
+  "sombra_1": {
+    "definition": "sombra_1",
+    "x": 0,
+    "y": -34
+  },
+  "sombra_2": {
+    "definition": "sombra_2",
+    "x": 0,
+    "y": -68
+  },
+  "sombra_3": {
+    "definition": "sombra_3",
+    "x": 0,
+    "y": -102
+  },
+  "vulto": {
+    "definition": "vulto",
+    "x": 0,
+    "y": -136
+  },
+  "folego_1": {
+    "definition": "folego_1",
+    "x": 34,
+    "y": -34
+  },
+  "folego_2": {
+    "definition": "folego_2",
+    "x": 68,
+    "y": -68
+  },
+  "folego_3": {
+    "definition": "folego_3",
+    "x": 102,
+    "y": -102
+  },
+  "segundo_ar": {
+    "definition": "segundo_ar",
+    "x": 136,
+    "y": -136
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "muralha": {
+    "definition": "muralha",
+    "x": 0,
+    "y": 0,
+    "root": true
+  },
+  "couraca_1": {
+    "definition": "couraca_1",
+    "x": -34,
+    "y": -34
+  },
+  "couraca_2": {
+    "definition": "couraca_2",
+    "x": -68,
+    "y": -68
+  },
+  "couraca_3": {
+    "definition": "couraca_3",
+    "x": -102,
+    "y": -102
+  },
+  "pele_de_aco": {
+    "definition": "pele_de_aco",
+    "x": -136,
+    "y": -136
+  },
+  "firmeza_1": {
+    "definition": "firmeza_1",
+    "x": 0,
+    "y": -34
+  },
+  "firmeza_2": {
+    "definition": "firmeza_2",
+    "x": 0,
+    "y": -68
+  },
+  "firmeza_3": {
+    "definition": "firmeza_3",
+    "x": 0,
+    "y": -102
+  },
+  "inabalavel": {
+    "definition": "inabalavel",
+    "x": 0,
+    "y": -136
+  },
+  "vitalidade_1": {
+    "definition": "vitalidade_1",
+    "x": 34,
+    "y": -34
+  },
+  "vitalidade_2": {
+    "definition": "vitalidade_2",
+    "x": 68,
+    "y": -68
+  },
+  "vitalidade_3": {
+    "definition": "vitalidade_3",
+    "x": 102,
+    "y": -102
+  },
+  "regeneracao": {
+    "definition": "regeneracao",
+    "x": 136,
+    "y": -136
+  }
+}

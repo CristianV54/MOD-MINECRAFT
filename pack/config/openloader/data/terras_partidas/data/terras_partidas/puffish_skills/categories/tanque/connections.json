@@ -1,0 +1,54 @@
+{
+  "normal": {
+    "bidirectional": [
+      [
+        "muralha",
+        "couraca_1"
+      ],
+      [
+        "couraca_1",
+        "couraca_2"
+      ],
+      [
+        "couraca_2",
+        "couraca_3"
+      ],
+      [
+        "couraca_3",
+        "pele_de_aco"
+      ],
+      [
+        "muralha",
+        "firmeza_1"
+      ],
+      [
+        "firmeza_1",
+        "firmeza_2"
+      ],
+      [
+        "firmeza_2",
+        "firmeza_3"
+      ],
+      [
+        "firmeza_3",
+        "inabalavel"
+      ],
+      [
+        "muralha",
+        "vitalidade_1"
+      ],
+      [
+        "vitalidade_1",
+        "vitalidade_2"
+      ],
+      [
+        "vitalidade_2",
+        "vitalidade_3"
+      ],
+      [
+        "vitalidade_3",
+        "regeneracao"
+      ]
+    ]
+  }
+}

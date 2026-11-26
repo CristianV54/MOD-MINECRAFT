@@ -1,0 +1,54 @@
+{
+  "normal": {
+    "bidirectional": [
+      [
+        "olho_de_falcao",
+        "pontaria_1"
+      ],
+      [
+        "pontaria_1",
+        "pontaria_2"
+      ],
+      [
+        "pontaria_2",
+        "pontaria_3"
+      ],
+      [
+        "pontaria_3",
+        "tiro_certeiro"
+      ],
+      [
+        "olho_de_falcao",
+        "corda_1"
+      ],
+      [
+        "corda_1",
+        "corda_2"
+      ],
+      [
+        "corda_2",
+        "corda_3"
+      ],
+      [
+        "corda_3",
+        "flecha_veloz"
+      ],
+      [
+        "olho_de_falcao",
+        "rastreador_1"
+      ],
+      [
+        "rastreador_1",
+        "rastreador_2"
+      ],
+      [
+        "rastreador_2",
+        "rastreador_3"
+      ],
+      [
+        "rastreador_3",
+        "sobrevivente"
+      ]
+    ]
+  }
+}
