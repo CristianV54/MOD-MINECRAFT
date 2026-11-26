@@ -40,7 +40,7 @@ Você é o novo caçador da **Ordem**. O **Mestre Vellan** vai te guiar por cinc
 | **2. Terras Selvagens** | Gelo, savana, mar congelado | Quatro frentes com mapas do tesouro até cada chefe |
 | **3. Abismo e Fogo** | Nether | Forjas, arenas de fogo e o despertar do Wither |
 | **4. Além do Céu** | Everbright e Everdawn | Os guardiões originais do Selo, enlouquecidos |
-| **5. O Fim do Selo** | End e o fundo do mundo | O Dragão, os guardiões do vazio e a verdade sobre o Selo |
+| **5. O Fim do Selo** | End, o fundo do mundo e o Nether | O Dragão, os guardiões do vazio e Helvar, o Cavaleiro do Submundo |
 
 O livro de missões guia você do começo ao fim, com mapas que marcam com um **X** onde está cada chefe, como num RPG de verdade. As missões começam simples e vão subindo de nível junto com você.
 
@@ -74,6 +74,10 @@ Já vem com os shaders **Complementary Reimagined** (água, céu, sombras e luze
 
 Swampjaw, Frostmaw, Ignis, a Monstruosidade de Netherita, o Wither, Arachnarch, o Dragão do Ender, o Arauto... e mais **2 desafios lendários** depois do final. Ainda tem chefes escondidos pelo mundo para quem gosta de explorar: Maledictus, Scylla, Ancient Remnant e outros.
 
+### 🗡️ Caçadas
+
+Quatro feras gigantes fora da história, cada uma na própria masmorra: um yeti, uma minhoca de areia, um dragão infernal e um kraken. Cada uma deixa uma arma única quando morre.
+
 ### 🐉 Dragões de montaria
 
 No fim do Ato 2 o Mestre te dá um **ovo de dragão**: Fogo, Gelo, Água ou Floresta. Choque, crie o filhote, coloque a sela e voe.
@@ -89,7 +93,7 @@ No fim do Ato 2 o Mestre te dá um **ovo de dragão**: Fogo, Gelo, Água ou Flor
 
 ### 💻 Leve
 
-São 115 mods, contra mais de 300 em packs parecidos, com vários mods de desempenho (Embeddium, ModernFix, FerriteCore). Recomendado: **6 GB de RAM**.
+São 116 mods, contra mais de 300 em packs parecidos, com vários mods de desempenho (Embeddium, ModernFix, FerriteCore). Recomendado: **6 GB de RAM**.
 
 ---
 
@@ -117,7 +121,7 @@ São 115 mods, contra mais de 300 em packs parecidos, com vários mods de desemp
 
 ### 🙏 Créditos
 
-O SealCraft é uma montagem com história, missões, classes, configuração e tradução próprias, feita sobre o trabalho de dezenas de autores de mods. **Todo o crédito dos mods vai para os seus criadores.** Destaques: Epic Fight, L_Ender's Cataclysm, Mowzie's Mobs, Bosses of Mass Destruction, Iron's Spells 'n Spellbooks, Blue Skies, Aquamirae, Meet Your Fight, Born in Chaos, Alex's Mobs, Simply Swords, Epic Knights, Apotheosis, Dragon Mounts: Legacy, Terralith, YUNG's, When Dungeons Arise, FTB Quests, Easy NPC, Pufferfish's Skills e Sophisticated Backpacks/Storage.
+O SealCraft é uma montagem com história, missões, classes, configuração e tradução próprias, feita sobre o trabalho de dezenas de autores de mods. **Todo o crédito dos mods vai para os seus criadores.** Destaques: Epic Fight, L_Ender's Cataclysm, Bosses'Rise, Mowzie's Mobs, Bosses of Mass Destruction, Iron's Spells 'n Spellbooks, Blue Skies, Aquamirae, Meet Your Fight, Born in Chaos, Alex's Mobs, Simply Swords, Epic Knights, Apotheosis, Dragon Mounts: Legacy, Terralith, YUNG's, When Dungeons Arise, FTB Quests, Easy NPC, Pufferfish's Skills e Sophisticated Backpacks/Storage.
 
 A lista completa de mods aparece na aba de dependências da página.
 
@@ -125,7 +129,7 @@ A lista completa de mods aparece na aba de dependências da página.
 
 ### 🌎 English
 
-**SealCraft** is a Brazilian souls-like RPG modpack for Forge 1.20.1, **fully translated to Portuguese**. It has a 5-act story with 19 bosses and 109 quests, 5 classes with skill trees, magic, rideable dragons and a guide NPC whose dialogue follows your progress. Lightweight: 115 mods, 6 GB of RAM recommended.
+**SealCraft** is a Brazilian souls-like RPG modpack for Forge 1.20.1, **fully translated to Portuguese**. It has a 5-act story with 19 bosses and 109 quests, 5 classes with skill trees, magic, rideable dragons and a guide NPC whose dialogue follows your progress. Lightweight: 116 mods, 6 GB of RAM recommended.
 
 ---
 

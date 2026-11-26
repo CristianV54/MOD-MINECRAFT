@@ -3,7 +3,7 @@
 **SealCraft: RPG em Português.** Modpack brasileiro de RPG com combate estilo souls, chefes, dungeons e uma história contada em português.
 
 - **Versão:** Minecraft 1.20.1 com Forge 47.4.29
-- **Mods:** 115 no total (96 rodam no servidor e 19 só no jogador), mais 1 pacote de shaders e 1 pacote de animações
+- **Mods:** 116 no total (97 rodam no servidor e 19 só no jogador), mais 1 pacote de shaders e 1 pacote de animações
 - **Objetivo:** ser mais leve que o DawnCraft (305 mods) e rodar bem com 6 GB de RAM
 - **Publicação:** textos da página do CurseForge e do Modrinth em `PUBLICACAO.md`
 - **Estado:** **história completa**, com 5 atos, 108 missões em português, 19 chefes de história, 2 desafios lendários e dragões. Ainda não foi jogada de ponta a ponta.
@@ -24,7 +24,7 @@
 Epic Fight, Iron's Spells 'n Spellbooks, Paragliders, Simply Swords, Epic Knights, Pufferfish's Skills (árvore de habilidades), Apotheosis (itens com raridade e atributos)
 
 **Chefes e monstros**
-L_Ender's Cataclysm, Mowzie's Mobs, Bosses of Mass Destruction, Aquamirae, Meet Your Fight, Born in Chaos, Illage and Spillage, The Undead Revamped, Mutant Monsters, Alex's Mobs, Creeper Overhaul, Friends&Foes, Deeper and Darker
+L_Ender's Cataclysm, Bosses'Rise, Mowzie's Mobs, Bosses of Mass Destruction, Aquamirae, Meet Your Fight, Born in Chaos, Illage and Spillage, The Undead Revamped, Mutant Monsters, Alex's Mobs, Creeper Overhaul, Friends&Foes, Deeper and Darker
 
 **Mundo, estruturas e dimensões**
 Terralith, Blue Skies (2 dimensões novas), When Dungeons Arise, Dungeons and Taverns, Towns and Towers, Structory, pacote completo do YUNG's (dungeons, minas, fortalezas e templos melhores), Lootr
@@ -187,7 +187,7 @@ As árvores são geradas pelo script `tools/gerar_habilidades.py`, onde ficam to
 
 ## Tradução dos mods (PT-BR)
 
-O pacote de recursos `pack/config/openloader/resources/terras_partidas_ptbr/` traz **11.180 textos traduzidos em 75 mods**. Com o português que os próprios mods já tinham, **100% dos textos** do pacote estão em português. Ele inclui itens, mobs, chefes, conquistas, dicas e as telas do JEI, FTB Quests, mapas do Xaero, Waystones e mochilas.
+O pacote de recursos `pack/config/openloader/resources/terras_partidas_ptbr/` traz **11.488 textos traduzidos em 76 mods**. Com o português que os próprios mods já tinham, **100% dos textos** do pacote estão em português. Ele inclui itens, mobs, chefes, conquistas, dicas e as telas do JEI, FTB Quests, mapas do Xaero, Waystones e mochilas.
 - **Ativação:** o Open Loader carrega o pacote sozinho, como obrigatório e no topo da lista. O jogador não precisa ativar nada, só jogar com o Minecraft em português.
 - **Só o que faltava:** cada arquivo traz só os textos que o mod não tinha em português. O que o mod já trazia continua valendo.
 - **Mowzie's Mobs:** o `pt_br.json` do próprio mod está com erro de sintaxe e o Minecraft descarta o arquivo inteiro. O nosso arquivo leva as 230 traduções boas que existiam nele mais as que faltavam.
@@ -223,22 +223,34 @@ O Mestre Vellan é um NPC do Easy NPC que **aparece 3 blocos na frente do jogado
   - **J:** tela de habilidades do Epic Fight.
   - **Magia:** **V** lança o feitiço escolhido, **Z** abre a roda de feitiços e **Ctrl + rolar o mouse** troca de feitiço. Antes, a roda ficava no R e o modificador no Alt, junto com o modo de combate e a esquiva.
 
-## Chefe final: O Coração do Selo
+## Chefe final: Helvar, o Cavaleiro do Submundo (Bosses'Rise)
 
-O Arauto (do Cataclysm) era a prisão. Quando ele morre, o núcleo racha e sai o **Coração do Selo**, o mal que os sete guardiões prenderam. Tudo é datapack, gerado por `tools/gerar_chefe_final.py`. As imagens de como ele fica estão em `arte/chefe_final/`.
+O Arauto (do Cataclysm) era o **carcereiro**: o núcleo dele mantinha trancada a arena onde os sete guardiões prenderam **Helvar**, um cavaleiro que vendeu a alma ao submundo. Com o núcleo arrancado, o jogador precisa entrar antes que ele saia.
 
-- **Corpo:** esqueleto Wither com armadura de netherita e faixas de ametista (acabamento "ward"), e espada longa de netherita do Epic Fight. A armadura é só visual: a defesa vem dos atributos.
-- **Atributos:** 500 de vida, 10 de armadura e 11 de dano.
-- **Fases:**
-  1. **Passo do Vazio:** a cada ~10 s ele some e aparece 2 blocos atrás do jogador mais próximo.
-  2. **60% da vida:** chama 4 Sombras dos Guardiões, zumbis invisíveis de armadura roxa. Enquanto elas vivem, ele fica imune. Também começa a soltar a **Onda do Selo**: 1,5 s de aviso no chão e depois 9 de dano num raio de 5 blocos.
-  3. **25% da vida:** fica mais rápido e mais forte e ataca com o dobro de frequência.
-- **Vitória:** a conquista de desafio "O Selo Restaurado" completa a missão. Depois vem a sequência de ~30 s:
-  - título "O SELO FOI RESTAURADO", fogos e amanhecer;
-  - o Mestre Vellan aparece e faz o discurso;
-  - a Coroa do Selo, o título `[Guardião do Selo]` no nome (time `tp_guardiao`) e os créditos no chat.
-- **Como dispara:** a missão do Arauto tem uma recompensa automática que chama `terras_partidas:coracao/despertar`. A missão "Chamar o Coração de Novo" serve para quem morrer e perder o chefe de vista.
-- **Testar sem jogar até o fim** (precisa de cheats): `/function terras_partidas:coracao/testar`.
+- **Missões, no fim do Ato 5:**
+  1. A Porta do Submundo: dá as coordenadas da arena.
+  2. A Arena do Submundo: a estrutura `block_factorys_bosses:underworld_arena`, no Nether, enterrada perto de Y 31.
+  3. A Chave da Arena.
+  4. Derrotar Helvar.
+  5. O Selo Restaurado.
+- **O chefe:** uns 8 blocos de altura (colisão de 3 x 5,3). Ele se apresenta, faz combos de espada, abre fendas que disparam fogo e **finge que morre e volta** com fogos-fátuos.
+- **Sem cerimônia própria:** derrotar o Helvar completa a missão e libera o fim da história.
+- **Imagens:** `arte/chefes_bossesrise/` tem o Helvar, o Ashlord e o Kraken desenhados com o modelo e a textura originais do mod.
+
+## Caçadas (capítulo opcional)
+
+Os outros 4 chefes do Bosses'Rise viram caçadas opcionais, liberadas depois do Ato 2. Cada uma tem uma missão que mostra as coordenadas da toca e outra de derrotar o chefe, que vale +1 ponto de habilidade.
+
+| Chefe | Onde | Distância no teste | Deixa |
+|---|---|---|---|
+| Skor, o Yeti | Planícies Nevadas | ~1.100 blocos | Manopla de Skor (congela) |
+| Sirok, a Minhoca de Areia | desertos (inclusive os do Terralith) | ~2.500 | Manopla de Sirok (veneno) |
+| Ashlord, o Dragão Infernal | torre em planícies, selvas e pântanos | ~2.600 | ossos para a armadura de dragão |
+| Nerakyss, o Kraken | navio no oceano profundo | ~2.500 | dente para o Tridente do Kraken |
+
+- **Desertos do Terralith:** a minhoca só nascia no deserto comum, que o Terralith deixa raro (a mais próxima ficava a 13.000 blocos). O datapack acrescenta os desertos do Terralith em `block_factorys_bosses/tags/worldgen/biome/sandworm_nest.json`.
+- **Tecla de esquiva do mod:** vem no Z, a mesma da roda de feitiços. Fica sem tecla, porque o Epic Fight já tem esquiva.
+- **Tradução:** os 308 textos do mod estão em `tools/traducao_ajustes.json` e no pacote PT-BR.
 
 ## Equilíbrio dos monstros
 

@@ -590,7 +590,7 @@
 			icon: "minecraft:wither_skeleton_skull"
 			shape: "octagon"
 			size: 2.25d
-			description: ["No centro da fábrica está o &cArauto&r, desligado.", "Clique nele com a &fEstrela do Nether&r na mão para despertá-lo e derrote-o.", "&7Se perder a luta, você vai precisar de outra estrela (de outro Wither) para despertá-lo de novo.&r", "", "&7Dica: ele dispara mísseis teleguiados e lasers. Use pilares como cobertura, e na segunda fase fique perto dele: os lasers são piores de longe.&r", "", "&5Prepare-se bem antes de derrotá-lo. O núcleo dele guarda mais do que um fragmento.&r"]
+			description: ["No centro da fábrica está o &cArauto&r, desligado.", "Clique nele com a &fEstrela do Nether&r na mão para despertá-lo e derrote-o.", "&7Se perder a luta, você vai precisar de outra estrela (de outro Wither) para despertá-lo de novo.&r", "", "&7Dica: ele dispara mísseis teleguiados e lasers. Use pilares como cobertura, e na segunda fase fique perto dele: os lasers são piores de longe.&r", "", "&5O núcleo dele guarda mais do que um fragmento.&r"]
 			dependencies: ["7CEEF225CBD59975"]
 			tasks: [
 				{
@@ -646,16 +646,6 @@
 					count: 2
 				}
 				{
-					id: "74C58A0105E18169"
-					type: "command"
-					command: "/function terras_partidas:coracao/despertar"
-					elevate_perms: true
-					silent: true
-					auto: "enabled"
-					title: "???"
-					icon: "minecraft:amethyst_cluster"
-				}
-				{
 					id: "78D05CC4AD917660"
 					type: "command"
 					command: "/function terras_partidas:ponto_de_habilidade"
@@ -667,81 +657,192 @@
 			]
 		}
 		{
-			id: "63AA4EA0EEDB24C6"
-			title: "Chefe Final: O Coração do Selo"
+			id: "2BC4B4E8FC3A195F"
+			title: "A Porta do Submundo"
 			x: 20.0d
-			y: 0.0d
-			subtitle: "O mal que o Selo prendia"
-			icon: "minecraft:amethyst_cluster"
-			shape: "octagon"
-			size: 2.5d
-			description: ["&dO Arauto nunca foi o mal antigo. Ele era a prisão.&r", "", "Quando a máquina caiu, o núcleo rachou, e de dentro saiu o que os sete guardiões prenderam há trezentos anos: o &5Coração do Selo&r.", "", "&eComo ele luta:&r", "• &dPasso do Vazio:&r some e aparece nas suas costas. Fique se mexendo.", "• &dSombras dos Guardiões&r (60% da vida): enquanto elas viverem, ele não toma dano. Mate as sombras primeiro.", "• &dOnda do Selo:&r quando o chão brilhar roxo em volta dele, se afaste.", "• &dDesespero&r (25% da vida): fica mais rápido e mais forte. Não pare agora!", "", "&7Se você morrer e perder ele de vista, use a missão \"Chamar o Coração de Novo\".&r"]
+			y: 1.0d
+			subtitle: "O verdadeiro mal antigo"
+			icon: "minecraft:soul_lantern"
+			shape: "hexagon"
+			size: 1.5d
+			description: ["&6Mestre Vellan&r: \"Eu estava errado. O Arauto nunca foi o mal antigo. Ele era o &fcarcereiro&o.\"", "", "&o\"Muito antes do Selo existir, um cavaleiro vendeu a alma ao submundo em troca de poder: &3Helvar&o. Os sete guardiões não conseguiram matá-lo. Prenderam-no numa arena no fundo do Nether e trancaram a porta com a força do Selo, guardada pelo núcleo do Arauto.\"", "", "&o\"Com o núcleo arrancado, a porta enfraquece a cada dia. Se ele sair sozinho, nada mais vai pará-lo. Você precisa entrar lá primeiro.\"", "", "&7Pegue a recompensa &festando no Nether&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["07409C87B9FB6E33"]
 			tasks: [
 				{
-					id: "091806696B987E16"
-					type: "advancement"
-					advancement: "terras_partidas:selo_restaurado"
-					criterion: ""
-					title: "Derrotar o Coração do Selo"
+					id: "2DEDF7BE893027DE"
+					type: "checkmark"
+					title: "Estou pronto"
 				}
 			]
 			rewards: [
 				{
-					id: "294FA91658B28D7B"
-					type: "xp_levels"
-					xp_levels: 50
+					id: "6611A29BE1C0235E"
+					type: "command"
+					command: "/execute in minecraft:the_nether run locate structure block_factorys_bosses:underworld_arena"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas da Arena do Submundo"
+					icon: "minecraft:compass"
 				}
 				{
-					id: "0CE97B7DA5374187"
+					id: "3EE47364BA9FB598"
 					type: "item"
-					item: "minecraft:nether_star"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+					count: 3
+				}
+				{
+					id: "6DD618D272EA4FCC"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strong_healing"
+						}
+					}
+					count: 4
+				}
+				{
+					id: "6EC66DC6AF2178AB"
+					type: "item"
+					item: "minecraft:enchanted_golden_apple"
+					count: 2
 				}
 			]
 		}
 		{
-			id: "384A68F3FDBC1F3D"
-			title: "Chamar o Coração de Novo"
-			x: 20.0d
-			y: 1.5d
-			icon: "minecraft:echo_shard"
-			shape: "circle"
-			size: 0.75d
-			description: ["Morreu na luta e perdeu o Coração do Selo de vista?", "Pegue a recompensa e ele desperta de novo perto de você. Só funciona se ele não estiver por perto e se você ainda não o derrotou."]
-			dependencies: ["07409C87B9FB6E33"]
-			optional: true
-			can_repeat: true
-			hide_dependency_lines: true
+			id: "6AB7B62BF6921CED"
+			title: "A Arena do Submundo"
+			x: 22.0d
+			y: 1.0d
+			icon: "minecraft:soul_sand"
+			description: ["Vá até as coordenadas, no &cNether&r. A arena fica &fenterrada&r, perto da altura 30, nos Ermos do Nether ou no Vale de Areia de Almas.", "", "&7Os corredores são guardados por &fEsqueletos das Almas&7 e &fCavaleiros Wither&7. Leve picareta para cavar até a entrada.&r"]
+			dependencies: ["2BC4B4E8FC3A195F"]
 			tasks: [
 				{
-					id: "0E4A1DE50691B963"
-					type: "checkmark"
-					title: "Chamar o Coração do Selo"
+					id: "7892024C327E4943"
+					type: "structure"
+					structure: "block_factorys_bosses:underworld_arena"
+					title: "Encontrar a Arena do Submundo"
 				}
 			]
 			rewards: [
 				{
-					id: "7CC7C7E87A82D184"
+					id: "3C6B499DA97E6369"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+		}
+		{
+			id: "42E935A66EA567D9"
+			title: "A Chave da Arena"
+			x: 24.0d
+			y: 1.0d
+			icon: "minecraft:tripwire_hook"
+			description: ["A porta da arena só abre com a &fChave da Arena do Submundo&r.", "", "Ela fica guardada dentro da masmorra. Derrote os guardiões e procure nos &fcofres&r e baús.", "", "&7Não use a chave ainda: a missão só pede que você a tenha no inventário.&r"]
+			dependencies: ["6AB7B62BF6921CED"]
+			tasks: [
+				{
+					id: "2D88A28920A346C7"
+					type: "item"
+					item: "block_factorys_bosses:underworld_arena_key"
+					count: 1L
+					title: "Conseguir a Chave da Arena"
+				}
+			]
+			rewards: [
+				{
+					id: "071F7D3A0FA46D5C"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strong_strength"
+						}
+					}
+					count: 2
+				}
+				{
+					id: "0B5DF04D3428BF2E"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:strong_regeneration"
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "68CBC7BC751A9064"
+			title: "Chefe Final: Helvar, o Cavaleiro do Submundo"
+			x: 26.0d
+			y: 1.0d
+			subtitle: "O mal que o Selo prendia"
+			icon: "block_factorys_bosses:knight_sword"
+			shape: "octagon"
+			size: 2.5d
+			description: ["Use a chave na &fporta da arena&r. Lá dentro está &3Helvar&r.", "", "&eComo ele luta:&r", "• Ele te nota e &fse apresenta&r antes de atacar. Aproveite para se preparar.", "• Combos de espada e &fsaltos giratórios&r: esquive para o lado, não para trás.", "• &fFendas&r se abrem no ar e disparam fogo. Não fique parado na frente delas.", "• &cQuando ele cair, não comemore.&r Ele volta da morte mais forte, com &ffogos-fátuos&r que explodem.", "", "&7Se ele cair de joelhos, é a sua chance: ataque com tudo.&r"]
+			dependencies: ["42E935A66EA567D9"]
+			tasks: [
+				{
+					id: "7D92D7BC9D14293E"
+					type: "kill"
+					entity: "block_factorys_bosses:underworld_knight"
+					value: 1L
+					title: "Derrotar Helvar"
+				}
+			]
+			rewards: [
+				{
+					id: "3EEC7F56CB3A94C8"
+					type: "xp_levels"
+					xp_levels: 50
+				}
+				{
+					id: "1439EDE9F249726D"
+					type: "item"
+					item: "minecraft:nether_star"
+				}
+				{
+					id: "005C0CE5FF707A83"
+					type: "item"
+					item: "minecraft:netherite_ingot"
+					count: 2
+				}
+				{
+					id: "797E878411A2DECF"
 					type: "command"
-					command: "/function terras_partidas:coracao/despertar"
+					command: "/function terras_partidas:ponto_de_habilidade"
 					elevate_perms: true
 					silent: true
-					title: "Despertar o Coração do Selo"
-					icon: "minecraft:echo_shard"
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
 				}
 			]
 		}
 		{
 			id: "5D30ADB7458E563B"
 			title: "O Selo Restaurado"
-			x: 22.0d
-			y: 0.0d
+			x: 28.0d
+			y: 1.0d
 			subtitle: "Fim da história"
 			icon: "minecraft:beacon"
 			shape: "gear"
 			size: 2.5d
-			description: ["&6Mestre Vellan&r: \"Dezenove fragmentos. O Selo está inteiro de novo.\"", "", "&o\"Quando você colocou o último pedaço no lugar, o cristal brilhou mais forte do que qualquer coisa que eu já vi. O Coração virou pó. Os guardiões caídos podem finalmente descansar.\"", "", "&o\"Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez. O mundo está inteiro de novo, graças a você.\"", "", "&o\"Preciso te contar uma coisa. Você enfrentou seis guardiões... mas éramos sete. Eu sou o sétimo. Fiquei neste mundo, escondido na Ordem, esperando alguém forte o bastante para terminar o que começamos.\"", "", "&6&lObrigado por jogar SealCraft!&r", "", "&7Ainda tem os &fDesafios Lendários&7 ao lado, para quem quer mais.&r"]
-			dependencies: ["63AA4EA0EEDB24C6"]
+			description: ["&6Mestre Vellan&r: \"Dezenove fragmentos. O Selo está inteiro de novo.\"", "", "&o\"Quando você colocou o último pedaço no lugar, o cristal brilhou mais forte do que qualquer coisa que eu já vi. Helvar voltou para o submundo, e desta vez a porta ficou trancada para sempre. Os guardiões caídos podem finalmente descansar.\"", "", "&o\"Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez. O mundo está inteiro de novo, graças a você.\"", "", "&o\"Preciso te contar uma coisa. Você enfrentou seis guardiões... mas éramos sete. Eu sou o sétimo. Fiquei neste mundo, escondido na Ordem, esperando alguém forte o bastante para terminar o que começamos.\"", "", "&6&lObrigado por jogar SealCraft!&r", "", "&7Ainda tem os &fDesafios Lendários&7 ao lado, para quem quer mais.&r"]
+			dependencies: ["68CBC7BC751A9064"]
 			tasks: [
 				{
 					id: "60BE85FC479F85D0"
@@ -792,8 +893,8 @@
 		{
 			id: "649B209061CE456E"
 			title: "Desafios Lendários"
-			x: 24.0d
-			y: 0.0d
+			x: 30.0d
+			y: 1.0d
 			icon: "minecraft:dragon_egg"
 			shape: "hexagon"
 			description: ["&7Para quem ainda quer mais.&r Dois monstros antigos ainda vagam pelo mundo. Nenhum guarda fragmentos, só glória."]
@@ -817,8 +918,8 @@
 		{
 			id: "4B879F1DD11BBDE4"
 			title: "A Flor do Vazio"
-			x: 26.0d
-			y: -1.0d
+			x: 32.0d
+			y: 0.0d
 			icon: "minecraft:spore_blossom"
 			description: ["Nas cavernas verdes e úmidas cresce uma flor gigante e carnívora, a &cFlor do Vazio&r.", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["649B209061CE456E"]
@@ -845,8 +946,8 @@
 		{
 			id: "2CA80BCF97964759"
 			title: "Lendário: Flor do Vazio"
-			x: 28.0d
-			y: -1.0d
+			x: 34.0d
+			y: 0.0d
 			icon: "minecraft:spore_blossom"
 			shape: "octagon"
 			size: 1.25d
@@ -888,8 +989,8 @@
 		{
 			id: "30174A75CA9ADA58"
 			title: "A Cidade Afundada"
-			x: 26.0d
-			y: 1.0d
+			x: 32.0d
+			y: 1.5d
 			icon: "minecraft:prismarine_bricks"
 			description: ["No fundo do oceano existe uma cidade afundada. No altar dela, um &cLeviatã&r espera ser chamado.", "", "Use o &fSacrifício Abissal&r no &fAltar do Abismo&r da cidade para chamá-lo.", "&7Ele é invencível fora da água. Leve poções de respiração aquática.&r", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["649B209061CE456E"]
@@ -933,8 +1034,8 @@
 		{
 			id: "025CC0FAC279BC9F"
 			title: "Lendário: O Leviatã"
-			x: 28.0d
-			y: 1.0d
+			x: 34.0d
+			y: 1.5d
 			icon: "minecraft:heart_of_the_sea"
 			shape: "octagon"
 			size: 1.25d

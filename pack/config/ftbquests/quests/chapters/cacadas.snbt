@@ -1,0 +1,364 @@
+{
+	id: "11DE1382B8675D3E"
+	group: ""
+	order_index: 5
+	filename: "cacadas"
+	title: "Caçadas"
+	subtitle: ["Feras antigas, opcionais"]
+	icon: "minecraft:spyglass"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			id: "3CC89136178E34A5"
+			title: "Caçadas"
+			x: 0.0d
+			y: 0.0d
+			subtitle: "Feras antigas, sem fragmentos"
+			icon: "minecraft:spyglass"
+			shape: "gear"
+			size: 2.0d
+			description: ["&6Mestre Vellan&r: \"Nem todo monstro gigante deste mundo guarda um fragmento. Algumas feras são só antigas... e perigosas.\"", "", "&o\"Caçadores da Ordem já tentaram e não voltaram. Mas o que elas guardam vale o risco: armas que você não acha em nenhum outro lugar.\"", "", "&7Todas as caçadas são opcionais. Cada fera mora na própria masmorra, e cada uma deixa a sua arma quando morre.&r"]
+			dependencies: ["5A0236B98D30AC09"]
+			tasks: [
+				{
+					id: "60A509934774D8C3"
+					type: "checkmark"
+					title: "Quero caçar"
+				}
+			]
+			rewards: [
+				{
+					id: "36A8F42DD6051E97"
+					type: "item"
+					item: "minecraft:spyglass"
+				}
+			]
+		}
+		{
+			id: "3A897757C1E4E57F"
+			title: "Caçada: Skor"
+			x: 2.0d
+			y: -2.0d
+			icon: "minecraft:packed_ice"
+			description: ["&eSkor, o Yeti&r", "", "Um yeti enorme num esconderijo de gelo. Solta nevascas e prende você em cubos de gelo.", "", "Mora nas &fPlanícies Nevadas&r.", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			dependencies: ["3CC89136178E34A5"]
+			optional: true
+			tasks: [
+				{
+					id: "16745B70C4D22CA9"
+					type: "checkmark"
+					title: "Pedir a localização"
+				}
+			]
+			rewards: [
+				{
+					id: "7309E56AA853E309"
+					type: "command"
+					command: "/execute in minecraft:overworld run locate structure block_factorys_bosses:yeti_hideout"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas: Skor"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "5C864C5A51D16242"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "134CCBD2477C6525"
+			title: "Skor, o Yeti"
+			x: 4.0d
+			y: -2.0d
+			icon: "minecraft:packed_ice"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Derrote &cSkor, o Yeti&r.", "", "Ele deixa a &fManopla de Skor&r, que congela o alvo e solta espinhos de gelo."]
+			dependencies: ["3A897757C1E4E57F"]
+			optional: true
+			tasks: [
+				{
+					id: "22A1ACCF568AF2F1"
+					type: "kill"
+					entity: "block_factorys_bosses:yeti"
+					value: 1L
+					title: "Derrotar Skor"
+				}
+			]
+			rewards: [
+				{
+					id: "77B79B1E06DE0987"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "2BEF02093D5A3FA4"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+				{
+					id: "067CD73AD3A34DB6"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
+			]
+		}
+		{
+			id: "24736EAB9CE73BE8"
+			title: "Caçada: Sirok"
+			x: 2.0d
+			y: -1.0d
+			icon: "minecraft:sand"
+			description: ["&eSirok, a Minhoca de Areia&r", "", "Uma minhoca gigante que nada debaixo da areia e cospe veneno. Fique longe das colunas de areia.", "", "Mora no &fDeserto&r.", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			dependencies: ["3CC89136178E34A5"]
+			optional: true
+			tasks: [
+				{
+					id: "3054BF7024DEF9AD"
+					type: "checkmark"
+					title: "Pedir a localização"
+				}
+			]
+			rewards: [
+				{
+					id: "09DD44DC350BBC70"
+					type: "command"
+					command: "/execute in minecraft:overworld run locate structure block_factorys_bosses:sandworm_nest"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas: Sirok"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "48A0364E546378BF"
+					type: "item"
+					item: "minecraft:milk_bucket"
+				}
+			]
+		}
+		{
+			id: "740D6A6D8017F12C"
+			title: "Sirok, a Minhoca de Areia"
+			x: 4.0d
+			y: -1.0d
+			icon: "minecraft:sand"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Derrote &cSirok, a Minhoca de Areia&r.", "", "Ele deixa a &fManopla de Sirok&r, que atira veneno."]
+			dependencies: ["24736EAB9CE73BE8"]
+			optional: true
+			tasks: [
+				{
+					id: "7EA1602D48A444D0"
+					type: "kill"
+					entity: "block_factorys_bosses:sandworm"
+					value: 1L
+					title: "Derrotar Sirok"
+				}
+			]
+			rewards: [
+				{
+					id: "3EEC75168632B2E2"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "49B31E1DFE38FB2D"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+				{
+					id: "6332D80E12609A0B"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
+			]
+		}
+		{
+			id: "7F1ADF8C42D8F4D9"
+			title: "Caçada: Ashlord"
+			x: 2.0d
+			y: 1.0d
+			icon: "minecraft:magma_block"
+			description: ["&eAshlord, o Dragão Infernal&r", "", "Um dragão de fogo no alto de uma torre, protegido por guardas esqueletos em chamas. Tem uma segunda forma ainda maior.", "", "Mora em &fplanícies, selvas ou pântanos&r.", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			dependencies: ["3CC89136178E34A5"]
+			optional: true
+			tasks: [
+				{
+					id: "2EBBF22719BF9AB5"
+					type: "checkmark"
+					title: "Pedir a localização"
+				}
+			]
+			rewards: [
+				{
+					id: "5C02B107112AB55A"
+					type: "command"
+					command: "/execute in minecraft:overworld run locate structure block_factorys_bosses:dragon_tower"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas: Ashlord"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "07989F195FB9DD74"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "31A22871F245BDA1"
+			title: "Ashlord, o Dragão Infernal"
+			x: 4.0d
+			y: 1.0d
+			icon: "minecraft:magma_block"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Derrote &cAshlord, o Dragão Infernal&r.", "", "Ele deixa &fossos de dragão&r, para fazer uma armadura de ossos de dragão."]
+			dependencies: ["7F1ADF8C42D8F4D9"]
+			optional: true
+			tasks: [
+				{
+					id: "3568E0AFDB16FCC1"
+					type: "kill"
+					entity: "block_factorys_bosses:infernal_dragon"
+					value: 1L
+					title: "Derrotar Ashlord"
+				}
+			]
+			rewards: [
+				{
+					id: "0EF199CB15EFFB2C"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "27A50D6491D308C5"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+				{
+					id: "0363D545891C5943"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
+			]
+		}
+		{
+			id: "3978E3AF7FAE3C63"
+			title: "Caçada: Nerakyss"
+			x: 2.0d
+			y: 2.0d
+			icon: "minecraft:nautilus_shell"
+			description: ["&eNerakyss, o Kraken&r", "", "Um kraken colossal preso a um navio pirata afundado. Piratas, canhões e tentáculos que saem do chão.", "", "Mora no &foceano profundo&r.", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			dependencies: ["3CC89136178E34A5"]
+			optional: true
+			tasks: [
+				{
+					id: "1A40E3C36E362962"
+					type: "checkmark"
+					title: "Pedir a localização"
+				}
+			]
+			rewards: [
+				{
+					id: "4AA02317C4A83AAE"
+					type: "command"
+					command: "/execute in minecraft:overworld run locate structure block_factorys_bosses:kraken_ship"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas: Nerakyss"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "485211E67FD81954"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_water_breathing"
+						}
+					}
+					count: 4
+				}
+			]
+		}
+		{
+			id: "47E7DD6D0A46E7BD"
+			title: "Nerakyss, o Kraken"
+			x: 4.0d
+			y: 2.0d
+			icon: "minecraft:nautilus_shell"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Derrote &cNerakyss, o Kraken&r.", "", "Ele deixa o &fdente do kraken&r, para fazer um tridente que puxa os inimigos."]
+			dependencies: ["3978E3AF7FAE3C63"]
+			optional: true
+			tasks: [
+				{
+					id: "09DF78324167B9FE"
+					type: "kill"
+					entity: "block_factorys_bosses:kraken"
+					value: 1L
+					title: "Derrotar Nerakyss"
+				}
+			]
+			rewards: [
+				{
+					id: "3BA92434BC989BBB"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "7B87F14A3315D5EC"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+				{
+					id: "02293D32B0762327"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
+			]
+		}
+	]
+}

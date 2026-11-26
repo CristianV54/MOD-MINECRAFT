@@ -1230,44 +1230,63 @@ def ato5():
                        "",
                        "&7Dica: ele dispara mísseis teleguiados e lasers. Use pilares como cobertura, e na segunda fase fique perto dele: os lasers são piores de longe.&r",
                        "",
-                       "&5Prepare-se bem antes de derrotá-lo. O núcleo dele guarda mais do que um fragmento.&r"],
+                       "&5O núcleo dele guarda mais do que um fragmento.&r"],
             tarefas=[c.t_matar("cataclysm:the_harbinger", 1, "Derrotar o Arauto")],
             recompensas=[c.r_item(fragmento(5, 4, 4)), c.r_skill("epicfight:catharsis"), c.r_xp(30),
-                         c.r_item("minecraft:netherite_ingot", 2),
-                         c.r_comando("/function terras_partidas:coracao/despertar", titulo="???",
-                                     icone="minecraft:amethyst_cluster", auto=True)])
+                         c.r_item("minecraft:netherite_ingot", 2)])
 
-    c.quest("coracao", "Chefe Final: O Coração do Selo", 28.5, 1.5, icone="minecraft:amethyst_cluster",
-            deps=["harbinger"], forma="octagon", tamanho=2.5, subtitulo="O mal que o Selo prendia",
-            descricao=["&dO Arauto nunca foi o mal antigo. Ele era a prisão.&r",
+    NETHER = "minecraft:the_nether"
+    c.quest("helvar_porta", "A Porta do Submundo", 28.5, 1.5, icone="minecraft:soul_lantern",
+            deps=["harbinger"], forma="hexagon", tamanho=1.5, subtitulo="O verdadeiro mal antigo",
+            descricao=[f"{M}: \"Eu estava errado. O Arauto nunca foi o mal antigo. Ele era o &fcarcereiro&o.\"",
                        "",
-                       "Quando a máquina caiu, o núcleo rachou, e de dentro saiu o que os sete guardiões prenderam há trezentos anos: o &5Coração do Selo&r.",
+                       "&o\"Muito antes do Selo existir, um cavaleiro vendeu a alma ao submundo em troca de poder: &3Helvar&o. Os sete guardiões não conseguiram matá-lo. Prenderam-no numa arena no fundo do Nether e trancaram a porta com a força do Selo, guardada pelo núcleo do Arauto.\"",
+                       "",
+                       "&o\"Com o núcleo arrancado, a porta enfraquece a cada dia. Se ele sair sozinho, nada mais vai pará-lo. Você precisa entrar lá primeiro.\"",
+                       "",
+                       coord("estando no Nether")],
+            tarefas=[c.t_check("Estou pronto")],
+            recompensas=[c.r_localizar("block_factorys_bosses:underworld_arena", "Coordenadas da Arena do Submundo", dimensao=NETHER),
+                         c.r_item(pocao("minecraft:long_fire_resistance"), 3),
+                         c.r_item(pocao("minecraft:strong_healing"), 4),
+                         c.r_item("minecraft:enchanted_golden_apple", 2)])
+
+    c.quest("helvar_arena", "A Arena do Submundo", 28.5, 1.5, icone="minecraft:soul_sand", deps=["helvar_porta"],
+            descricao=["Vá até as coordenadas, no &cNether&r. A arena fica &fenterrada&r, perto da altura 30, nos Ermos do Nether ou no Vale de Areia de Almas.",
+                       "",
+                       "&7Os corredores são guardados por &fEsqueletos das Almas&7 e &fCavaleiros Wither&7. Leve picareta para cavar até a entrada.&r"],
+            tarefas=[c.t_estrutura("block_factorys_bosses:underworld_arena", "Encontrar a Arena do Submundo")],
+            recompensas=[c.r_xp(15)])
+
+    c.quest("helvar_chave", "A Chave da Arena", 28.5, 1.5, icone="minecraft:tripwire_hook", deps=["helvar_arena"],
+            descricao=["A porta da arena só abre com a &fChave da Arena do Submundo&r.",
+                       "",
+                       "Ela fica guardada dentro da masmorra. Derrote os guardiões e procure nos &fcofres&r e baús.",
+                       "",
+                       "&7Não use a chave ainda: a missão só pede que você a tenha no inventário.&r"],
+            tarefas=[c.t_item("block_factorys_bosses:underworld_arena_key", 1, titulo="Conseguir a Chave da Arena")],
+            recompensas=[c.r_item(pocao("minecraft:strong_strength"), 2), c.r_item(pocao("minecraft:strong_regeneration"), 2)])
+
+    c.quest("helvar", "Chefe Final: Helvar, o Cavaleiro do Submundo", 28.5, 1.5, icone="block_factorys_bosses:knight_sword",
+            deps=["helvar_chave"], forma="octagon", tamanho=2.5, subtitulo="O mal que o Selo prendia",
+            descricao=["Use a chave na &fporta da arena&r. Lá dentro está &3Helvar&r.",
                        "",
                        "&eComo ele luta:&r",
-                       "• &dPasso do Vazio:&r some e aparece nas suas costas. Fique se mexendo.",
-                       "• &dSombras dos Guardiões&r (60% da vida): enquanto elas viverem, ele não toma dano. Mate as sombras primeiro.",
-                       "• &dOnda do Selo:&r quando o chão brilhar roxo em volta dele, se afaste.",
-                       "• &dDesespero&r (25% da vida): fica mais rápido e mais forte. Não pare agora!",
+                       "• Ele te nota e &fse apresenta&r antes de atacar. Aproveite para se preparar.",
+                       "• Combos de espada e &fsaltos giratórios&r: esquive para o lado, não para trás.",
+                       "• &fFendas&r se abrem no ar e disparam fogo. Não fique parado na frente delas.",
+                       "• &cQuando ele cair, não comemore.&r Ele volta da morte mais forte, com &ffogos-fátuos&r que explodem.",
                        "",
-                       "&7Se você morrer e perder ele de vista, use a missão \"Chamar o Coração de Novo\".&r"],
-            tarefas=[c.t_conquista("terras_partidas:selo_restaurado", "Derrotar o Coração do Selo")],
-            recompensas=[c.r_xp(50), c.r_item("minecraft:nether_star")])
-
-    c.quest("coracao_de_novo", "Chamar o Coração de Novo", 28.5, 4, icone="minecraft:echo_shard",
-            deps=["harbinger"], forma="circle", tamanho=0.75, optional=True, can_repeat=True,
-            hide_dependency_lines=True,
-            descricao=["Morreu na luta e perdeu o Coração do Selo de vista?",
-                       "Pegue a recompensa e ele desperta de novo perto de você. Só funciona se ele não estiver por perto e se você ainda não o derrotou."],
-            tarefas=[c.t_check("Chamar o Coração do Selo")],
-            recompensas=[c.r_comando("/function terras_partidas:coracao/despertar", titulo="Despertar o Coração do Selo",
-                                     icone="minecraft:echo_shard")])
+                       "&7Se ele cair de joelhos, é a sua chance: ataque com tudo.&r"],
+            tarefas=[c.t_matar("block_factorys_bosses:underworld_knight", 1, "Derrotar Helvar")],
+            recompensas=[c.r_xp(50), c.r_item("minecraft:nether_star"), c.r_item("minecraft:netherite_ingot", 2)])
 
     c.quest("selo", "O Selo Restaurado", 30, 1.5, icone="minecraft:beacon",
-            deps=["coracao"], forma="gear", tamanho=2.5,
+            deps=["helvar"], forma="gear", tamanho=2.5,
             subtitulo="Fim da história",
             descricao=[f"{M}: \"Dezenove fragmentos. O Selo está inteiro de novo.\"",
                        "",
-                       "&o\"Quando você colocou o último pedaço no lugar, o cristal brilhou mais forte do que qualquer coisa que eu já vi. O Coração virou pó. Os guardiões caídos podem finalmente descansar.\"",
+                       "&o\"Quando você colocou o último pedaço no lugar, o cristal brilhou mais forte do que qualquer coisa que eu já vi. Helvar voltou para o submundo, e desta vez a porta ficou trancada para sempre. Os guardiões caídos podem finalmente descansar.\"",
                        "",
                        "&o\"Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez. O mundo está inteiro de novo, graças a você.\"",
                        "",
@@ -1330,6 +1349,59 @@ def ato5():
         "quests": c.quests,
     }
 
+
+
+# ---------------------------------------------------------------- CAÇADAS (chefes do Bosses'Rise, opcionais)
+
+def cacadas():
+    c = Capitulo("cacadas")
+    M = "&6Mestre Vellan&r"
+    OW = "minecraft:overworld"
+    c.quest("inicio", "Caçadas", 0, 0, forma="gear", tamanho=1.75, icone="minecraft:spyglass",
+            deps=["@ato2/relatorio"], subtitulo="Feras antigas, sem fragmentos",
+            descricao=[f"{M}: \"Nem todo monstro gigante deste mundo guarda um fragmento. Algumas feras são só antigas... e perigosas.\"",
+                       "",
+                       "&o\"Caçadores da Ordem já tentaram e não voltaram. Mas o que elas guardam vale o risco: armas que você não acha em nenhum outro lugar.\"",
+                       "",
+                       "&7Todas as caçadas são opcionais. Cada fera mora na própria masmorra, e cada uma deixa a sua arma quando morre.&r"],
+            tarefas=[c.t_check("Quero caçar")],
+            recompensas=[c.r_item("minecraft:spyglass")])
+    feras = [
+        ("yeti", "Skor, o Yeti", "minecraft:packed_ice", "block_factorys_bosses:yeti_hideout", "block_factorys_bosses:yeti",
+         "nas &fPlanícies Nevadas&r", "Um yeti enorme num esconderijo de gelo. Solta nevascas e prende você em cubos de gelo.",
+         "a &fManopla de Skor&r, que congela o alvo e solta espinhos de gelo", [c.r_item(pocao("minecraft:long_fire_resistance"), 2)]),
+        ("sandworm", "Sirok, a Minhoca de Areia", "minecraft:sand", "block_factorys_bosses:sandworm_nest", "block_factorys_bosses:sandworm",
+         "no &fDeserto&r", "Uma minhoca gigante que nada debaixo da areia e cospe veneno. Fique longe das colunas de areia.",
+         "a &fManopla de Sirok&r, que atira veneno", [c.r_item("minecraft:milk_bucket")]),
+        ("dragao", "Ashlord, o Dragão Infernal", "minecraft:magma_block", "block_factorys_bosses:dragon_tower", "block_factorys_bosses:infernal_dragon",
+         "em &fplanícies, selvas ou pântanos&r", "Um dragão de fogo no alto de uma torre, protegido por guardas esqueletos em chamas. Tem uma segunda forma ainda maior.",
+         "&fossos de dragão&r, para fazer uma armadura de ossos de dragão", [c.r_item(pocao("minecraft:long_fire_resistance"), 4)]),
+        ("kraken", "Nerakyss, o Kraken", "minecraft:nautilus_shell", "block_factorys_bosses:kraken_ship", "block_factorys_bosses:kraken",
+         "no &foceano profundo&r", "Um kraken colossal preso a um navio pirata afundado. Piratas, canhões e tentáculos que saem do chão.",
+         "o &fdente do kraken&r, para fazer um tridente que puxa os inimigos", [c.r_item(pocao("minecraft:long_water_breathing"), 4)]),
+    ]
+    for chave, nome, icone, estrutura, entidade, onde, desc, premio, extra in feras:
+        c.quest(f"{chave}_mapa", f"Caçada: {nome.split(',')[0]}", 0, 0, icone=icone, deps=["inicio"], optional=True,
+                descricao=[f"&e{nome}&r", "", desc, "", f"Mora {onde}.", "",
+                           "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"],
+                tarefas=[c.t_check("Pedir a localização")],
+                recompensas=[c.r_localizar(estrutura, f"Coordenadas: {nome.split(',')[0]}", dimensao=OW)] + extra)
+        c.quest(chave, nome, 0, 0, icone=icone, deps=[f"{chave}_mapa"], forma="octagon", tamanho=1.5, optional=True,
+                descricao=[f"Derrote &c{nome}&r.", "", f"Ele deixa {premio}."],
+                tarefas=[c.t_matar(entidade, 1, f"Derrotar {nome.split(',')[0]}")],
+                recompensas=[c.r_xp(20), c.r_item("minecraft:diamond", 4)])
+    return {
+        "id": qid("capitulo/cacadas"),
+        "group": "",
+        "order_index": 5,
+        "filename": "cacadas",
+        "title": "Caçadas",
+        "subtitle": ["Feras antigas, opcionais"],
+        "icon": "minecraft:spyglass",
+        "default_quest_shape": "",
+        "default_hide_dependency_lines": False,
+        "quests": c.quests,
+    }
 
 
 # ---------------------------------------------------------------- MESTRE VELLAN (Easy NPC)
@@ -1462,7 +1534,7 @@ def mestre_vellan():
              "@initiator... você conseguiu.\\n\\n"
              "Trezentos anos atrás, sete guardiões criaram o Selo. Seis você enfrentou. O sétimo sou eu, e esperei três séculos por alguém como você. "
              "A Ordem nunca vai esquecer o seu nome.\\n\\n"
-             "Se ainda quiser lutar, dizem que uma flor do vazio e um leviatã ainda vagam pelo mundo...",
+             "Se ainda quiser lutar, dizem que uma flor do vazio, um leviatã e as feras antigas das Caçadas ainda vagam pelo mundo...",
              tag="terras_partidas_fim"),
         fala("historia", "A história do Selo", -1,
              "Há trezentos anos, um mal antigo ameaçou o mundo. Sete guardiões o prenderam dentro de um cristal: o Selo.\\n\\n"
@@ -1584,7 +1656,7 @@ def main():
         "icon": "minecraft:amethyst_shard",
     })
     escrever("chapter_groups.snbt", {"chapter_groups": []})
-    capitulos = {"ato1": ato1(), "ato2": ato2(), "ato3": ato3(), "ato4": ato4(), "ato5": ato5()}
+    capitulos = {"ato1": ato1(), "ato2": ato2(), "ato3": ato3(), "ato4": ato4(), "ato5": ato5(), "cacadas": cacadas()}
     # Marca o jogador ao fim de cada ato: o diálogo do Mestre Vellan usa essas tags.
     marcos = [("ato1", "relatorio", tag_ato(1)), ("ato2", "relatorio", tag_ato(2)),
               ("ato3", "relatorio", tag_ato(3)), ("ato4", "relatorio", tag_ato(4)),

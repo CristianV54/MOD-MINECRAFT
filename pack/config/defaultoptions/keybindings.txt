@@ -6,3 +6,4 @@ key_key.puffish_skills.open:key.keyboard.k
 key_key.irons_spellbooks.spell_wheel:key.keyboard.z
 key_key.irons_spellbooks.spell_bar_modifier:key.keyboard.left.control
 key_key.irons_spellbooks.spellbook_cast:key.keyboard.v
+key_key.block_factorys_bosses.dodge_roll:key.keyboard.unknown
