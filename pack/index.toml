@@ -46,11 +46,11 @@ hash = "35be85b7a2347186124ee6ba6a8d8703c2f6a1818e61ba8a986d35fb798df182"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_5_o_fim_do_selo.snbt"
-hash = "ce2b93ab66911f240c9b5728238c5dedc7f483aa3cc78610579775aaaac52236"
+hash = "1c9ee2caa719e6c1ef13d3d5a2d5e14dff927de34dbf4db4001127f4172f4ce1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cacadas.snbt"
-hash = "22c52b66c89da72ff82eaab0dba27880e9b45ff9bd31a22b01c575592baa6e37"
+hash = "cfc1364923c1c098dfd43265fd52d4a0a169b906e3e70f4dee502c95d243c6fc"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -963,6 +963,10 @@ hash = "94388c7c3f7c889d939ec40296466d29c1faab9ce249302d980e0d403d4b08f8"
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/pack.mcmeta"
 hash = "4251e18a47957aec0a7f12b2cc192ca11a09ff522484732bd282f0ecff9a84b3"
+
+[[files]]
+file = "defaultconfigs/block_factorys_bosses-server.toml"
+hash = "90568d984cc8d97eb8031b7269eb8754a3f6d80206aa3ccabdb6c5fc8a76c878"
 
 [[files]]
 file = "mods/ai-improvements.pw.toml"

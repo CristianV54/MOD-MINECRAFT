@@ -229,10 +229,11 @@ O Arauto (do Cataclysm) era o **carcereiro**: o núcleo dele mantinha trancada a
 
 - **Missões, no fim do Ato 5:**
   1. A Porta do Submundo: dá as coordenadas da arena.
-  2. A Arena do Submundo: a estrutura `block_factorys_bosses:underworld_arena`, no Nether, enterrada perto de Y 31.
-  3. A Chave da Arena.
-  4. Derrotar Helvar.
-  5. O Selo Restaurado.
+  2. A Arena do Submundo: a estrutura `block_factorys_bosses:underworld_arena`, no Nether, enterrada perto de Y 31. A recompensa é a **chave da porta**, que a Ordem guardou.
+  3. Derrotar Helvar.
+  4. O Selo Restaurado.
+- **Por que a chave vem da missão:** no mod, a chave só cai com 3% de chance dos esqueletos da arena e 5% nos baús raros. O "gerador de desafio" que daria a chave só existe na versão 1.21 do mod. Sem a missão, o jogador ficaria uns 30 abates na sorte antes do chefe final. A missão repetível "Outra Chave da Arena" troca 8 lingotes de ouro e 16 areias das almas por outra chave.
+- **Vida do Helvar:** o mod usa 280 por padrão, menos que o Arauto (390). O arquivo `pack/defaultconfigs/block_factorys_bosses-server.toml` sobe para **450 de vida e 12 de armadura**. O Forge copia esse arquivo para cada mundo novo.
 - **O chefe:** uns 8 blocos de altura (colisão de 3 x 5,3). Ele se apresenta, faz combos de espada, abre fendas que disparam fogo e **finge que morre e volta** com fogos-fátuos.
 - **Sem cerimônia própria:** derrotar o Helvar completa a missão e libera o fim da história.
 - **Imagens:** `arte/chefes_bossesrise/` tem o Helvar, o Ashlord e o Kraken desenhados com o modelo e a textura originais do mod.
@@ -243,10 +244,10 @@ Os outros 4 chefes do Bosses'Rise viram caçadas opcionais, liberadas depois do 
 
 | Chefe | Onde | Distância no teste | Deixa |
 |---|---|---|---|
-| Skor, o Yeti | Planícies Nevadas | ~1.100 blocos | Manopla de Skor (congela) |
-| Sirok, a Minhoca de Areia | desertos (inclusive os do Terralith) | ~2.500 | Manopla de Sirok (veneno) |
-| Ashlord, o Dragão Infernal | torre em planícies, selvas e pântanos | ~2.600 | ossos para a armadura de dragão |
-| Nerakyss, o Kraken | navio no oceano profundo | ~2.500 | dente para o Tridente do Kraken |
+| Sirok, a Minhoca de Areia (200 de vida, a partir do Ato 2) | desertos (inclusive os do Terralith) | ~2.500 | Manopla de Sirok (veneno) |
+| Skor, o Yeti (250, a partir do Ato 3) | Planícies Nevadas | ~1.100 blocos | Manopla de Skor (congela) |
+| Ashlord, o Dragão Infernal (250 + segunda forma, a partir do Ato 4) | torre em planícies, selvas e pântanos | ~2.600 | ossos para a armadura de dragão |
+| Nerakyss, o Kraken (500, depois da história) | navio no oceano profundo | ~2.500 | dente para o Tridente do Kraken |
 
 - **Desertos do Terralith:** a minhoca só nascia no deserto comum, que o Terralith deixa raro (a mais próxima ficava a 13.000 blocos). O datapack acrescenta os desertos do Terralith em `block_factorys_bosses/tags/worldgen/biome/sandworm_nest.json`.
 - **Tecla de esquiva do mod:** vem no Z, a mesma da roda de feitiços. Fica sem tecla, porque o Epic Fight já tem esquiva.

@@ -722,7 +722,7 @@
 			x: 22.0d
 			y: 1.0d
 			icon: "minecraft:soul_sand"
-			description: ["Vá até as coordenadas, no &cNether&r. A arena fica &fenterrada&r, perto da altura 30, nos Ermos do Nether ou no Vale de Areia de Almas.", "", "&7Os corredores são guardados por &fEsqueletos das Almas&7 e &fCavaleiros Wither&7. Leve picareta para cavar até a entrada.&r"]
+			description: ["Vá até as coordenadas, no &cNether&r. A arena fica &fenterrada&r, perto da altura 30, nos Ermos do Nether ou no Vale de Areia de Almas.", "", "&7Os corredores são guardados por &fEsqueletos das Almas&7 e &fCavaleiros Wither&7. Leve picareta para cavar até a entrada.&r", "", "&6Mestre Vellan&r: \"Quando chegar lá, pegue a recompensa. A Ordem guardou a &fchave da porta&o por trezentos anos, esperando este dia.\""]
 			dependencies: ["2BC4B4E8FC3A195F"]
 			tasks: [
 				{
@@ -735,31 +735,16 @@
 			rewards: [
 				{
 					id: "3C6B499DA97E6369"
+					type: "item"
+					item: "block_factorys_bosses:underworld_arena_key"
+				}
+				{
+					id: "02BD4A227D95E49D"
 					type: "xp_levels"
 					xp_levels: 15
 				}
-			]
-		}
-		{
-			id: "42E935A66EA567D9"
-			title: "A Chave da Arena"
-			x: 24.0d
-			y: 1.0d
-			icon: "minecraft:tripwire_hook"
-			description: ["A porta da arena só abre com a &fChave da Arena do Submundo&r.", "", "Ela fica guardada dentro da masmorra. Derrote os guardiões e procure nos &fcofres&r e baús.", "", "&7Não use a chave ainda: a missão só pede que você a tenha no inventário.&r"]
-			dependencies: ["6AB7B62BF6921CED"]
-			tasks: [
 				{
-					id: "2D88A28920A346C7"
-					type: "item"
-					item: "block_factorys_bosses:underworld_arena_key"
-					count: 1L
-					title: "Conseguir a Chave da Arena"
-				}
-			]
-			rewards: [
-				{
-					id: "071F7D3A0FA46D5C"
+					id: "4DC13ABACB9E2E67"
 					type: "item"
 					item: {
 						id: "minecraft:potion"
@@ -771,7 +756,7 @@
 					count: 2
 				}
 				{
-					id: "0B5DF04D3428BF2E"
+					id: "743DB74615038EB5"
 					type: "item"
 					item: {
 						id: "minecraft:potion"
@@ -785,16 +770,51 @@
 			]
 		}
 		{
+			id: "42E935A66EA567D9"
+			title: "Outra Chave da Arena"
+			x: 24.0d
+			y: 0.0d
+			icon: "minecraft:tripwire_hook"
+			size: 0.75d
+			description: ["Gastou a chave e perdeu a luta? Troque recursos por outra.", "", "&7Os Esqueletos das Almas e os Cavaleiros Wither da arena também deixam a chave, mas é raro.&r"]
+			dependencies: ["6AB7B62BF6921CED"]
+			optional: true
+			can_repeat: true
+			tasks: [
+				{
+					id: "2D88A28920A346C7"
+					type: "item"
+					item: "minecraft:gold_ingot"
+					count: 8L
+					consume_items: true
+				}
+				{
+					id: "474CEDFA0E1D2345"
+					type: "item"
+					item: "minecraft:soul_sand"
+					count: 16L
+					consume_items: true
+				}
+			]
+			rewards: [
+				{
+					id: "071F7D3A0FA46D5C"
+					type: "item"
+					item: "block_factorys_bosses:underworld_arena_key"
+				}
+			]
+		}
+		{
 			id: "68CBC7BC751A9064"
 			title: "Chefe Final: Helvar, o Cavaleiro do Submundo"
-			x: 26.0d
-			y: 1.0d
+			x: 24.0d
+			y: 1.5d
 			subtitle: "O mal que o Selo prendia"
 			icon: "block_factorys_bosses:knight_sword"
 			shape: "octagon"
 			size: 2.5d
 			description: ["Use a chave na &fporta da arena&r. Lá dentro está &3Helvar&r.", "", "&eComo ele luta:&r", "• Ele te nota e &fse apresenta&r antes de atacar. Aproveite para se preparar.", "• Combos de espada e &fsaltos giratórios&r: esquive para o lado, não para trás.", "• &fFendas&r se abrem no ar e disparam fogo. Não fique parado na frente delas.", "• &cQuando ele cair, não comemore.&r Ele volta da morte mais forte, com &ffogos-fátuos&r que explodem.", "", "&7Se ele cair de joelhos, é a sua chance: ataque com tudo.&r"]
-			dependencies: ["42E935A66EA567D9"]
+			dependencies: ["6AB7B62BF6921CED"]
 			tasks: [
 				{
 					id: "7D92D7BC9D14293E"
@@ -835,8 +855,8 @@
 		{
 			id: "5D30ADB7458E563B"
 			title: "O Selo Restaurado"
-			x: 28.0d
-			y: 1.0d
+			x: 26.0d
+			y: 1.5d
 			subtitle: "Fim da história"
 			icon: "minecraft:beacon"
 			shape: "gear"
@@ -893,8 +913,8 @@
 		{
 			id: "649B209061CE456E"
 			title: "Desafios Lendários"
-			x: 30.0d
-			y: 1.0d
+			x: 28.0d
+			y: 1.5d
 			icon: "minecraft:dragon_egg"
 			shape: "hexagon"
 			description: ["&7Para quem ainda quer mais.&r Dois monstros antigos ainda vagam pelo mundo. Nenhum guarda fragmentos, só glória."]
@@ -918,8 +938,8 @@
 		{
 			id: "4B879F1DD11BBDE4"
 			title: "A Flor do Vazio"
-			x: 32.0d
-			y: 0.0d
+			x: 30.0d
+			y: 1.0d
 			icon: "minecraft:spore_blossom"
 			description: ["Nas cavernas verdes e úmidas cresce uma flor gigante e carnívora, a &cFlor do Vazio&r.", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["649B209061CE456E"]
@@ -946,8 +966,8 @@
 		{
 			id: "2CA80BCF97964759"
 			title: "Lendário: Flor do Vazio"
-			x: 34.0d
-			y: 0.0d
+			x: 32.0d
+			y: 1.0d
 			icon: "minecraft:spore_blossom"
 			shape: "octagon"
 			size: 1.25d
@@ -989,8 +1009,8 @@
 		{
 			id: "30174A75CA9ADA58"
 			title: "A Cidade Afundada"
-			x: 32.0d
-			y: 1.5d
+			x: 30.0d
+			y: 2.0d
 			icon: "minecraft:prismarine_bricks"
 			description: ["No fundo do oceano existe uma cidade afundada. No altar dela, um &cLeviatã&r espera ser chamado.", "", "Use o &fSacrifício Abissal&r no &fAltar do Abismo&r da cidade para chamá-lo.", "&7Ele é invencível fora da água. Leve poções de respiração aquática.&r", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["649B209061CE456E"]
@@ -1034,8 +1054,8 @@
 		{
 			id: "025CC0FAC279BC9F"
 			title: "Lendário: O Leviatã"
-			x: 34.0d
-			y: 1.5d
+			x: 32.0d
+			y: 2.0d
 			icon: "minecraft:heart_of_the_sea"
 			shape: "octagon"
 			size: 1.25d

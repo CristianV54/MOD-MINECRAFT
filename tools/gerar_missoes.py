@@ -1254,21 +1254,23 @@ def ato5():
     c.quest("helvar_arena", "A Arena do Submundo", 28.5, 1.5, icone="minecraft:soul_sand", deps=["helvar_porta"],
             descricao=["Vá até as coordenadas, no &cNether&r. A arena fica &fenterrada&r, perto da altura 30, nos Ermos do Nether ou no Vale de Areia de Almas.",
                        "",
-                       "&7Os corredores são guardados por &fEsqueletos das Almas&7 e &fCavaleiros Wither&7. Leve picareta para cavar até a entrada.&r"],
+                       "&7Os corredores são guardados por &fEsqueletos das Almas&7 e &fCavaleiros Wither&7. Leve picareta para cavar até a entrada.&r",
+                       "",
+                       f"{M}: \"Quando chegar lá, pegue a recompensa. A Ordem guardou a &fchave da porta&o por trezentos anos, esperando este dia.\""],
             tarefas=[c.t_estrutura("block_factorys_bosses:underworld_arena", "Encontrar a Arena do Submundo")],
-            recompensas=[c.r_xp(15)])
+            recompensas=[c.r_item("block_factorys_bosses:underworld_arena_key"), c.r_xp(15),
+                         c.r_item(pocao("minecraft:strong_strength"), 2), c.r_item(pocao("minecraft:strong_regeneration"), 2)])
 
-    c.quest("helvar_chave", "A Chave da Arena", 28.5, 1.5, icone="minecraft:tripwire_hook", deps=["helvar_arena"],
-            descricao=["A porta da arena só abre com a &fChave da Arena do Submundo&r.",
+    c.quest("helvar_chave", "Outra Chave da Arena", 28.5, 1.5, icone="minecraft:tripwire_hook", deps=["helvar_arena"],
+            optional=True, can_repeat=True, tamanho=0.75,
+            descricao=["Gastou a chave e perdeu a luta? Troque recursos por outra.",
                        "",
-                       "Ela fica guardada dentro da masmorra. Derrote os guardiões e procure nos &fcofres&r e baús.",
-                       "",
-                       "&7Não use a chave ainda: a missão só pede que você a tenha no inventário.&r"],
-            tarefas=[c.t_item("block_factorys_bosses:underworld_arena_key", 1, titulo="Conseguir a Chave da Arena")],
-            recompensas=[c.r_item(pocao("minecraft:strong_strength"), 2), c.r_item(pocao("minecraft:strong_regeneration"), 2)])
+                       "&7Os Esqueletos das Almas e os Cavaleiros Wither da arena também deixam a chave, mas é raro.&r"],
+            tarefas=[c.t_item("minecraft:gold_ingot", 8, consumir=True), c.t_item("minecraft:soul_sand", 16, consumir=True)],
+            recompensas=[c.r_item("block_factorys_bosses:underworld_arena_key")])
 
     c.quest("helvar", "Chefe Final: Helvar, o Cavaleiro do Submundo", 28.5, 1.5, icone="block_factorys_bosses:knight_sword",
-            deps=["helvar_chave"], forma="octagon", tamanho=2.5, subtitulo="O mal que o Selo prendia",
+            deps=["helvar_arena"], forma="octagon", tamanho=2.5, subtitulo="O mal que o Selo prendia",
             descricao=["Use a chave na &fporta da arena&r. Lá dentro está &3Helvar&r.",
                        "",
                        "&eComo ele luta:&r",
@@ -1367,12 +1369,12 @@ def cacadas():
             tarefas=[c.t_check("Quero caçar")],
             recompensas=[c.r_item("minecraft:spyglass")])
     feras = [
-        ("yeti", "Skor, o Yeti", "minecraft:packed_ice", "block_factorys_bosses:yeti_hideout", "block_factorys_bosses:yeti",
-         "nas &fPlanícies Nevadas&r", "Um yeti enorme num esconderijo de gelo. Solta nevascas e prende você em cubos de gelo.",
-         "a &fManopla de Skor&r, que congela o alvo e solta espinhos de gelo", [c.r_item(pocao("minecraft:long_fire_resistance"), 2)]),
         ("sandworm", "Sirok, a Minhoca de Areia", "minecraft:sand", "block_factorys_bosses:sandworm_nest", "block_factorys_bosses:sandworm",
          "no &fDeserto&r", "Uma minhoca gigante que nada debaixo da areia e cospe veneno. Fique longe das colunas de areia.",
          "a &fManopla de Sirok&r, que atira veneno", [c.r_item("minecraft:milk_bucket")]),
+        ("yeti", "Skor, o Yeti", "minecraft:packed_ice", "block_factorys_bosses:yeti_hideout", "block_factorys_bosses:yeti",
+         "nas &fPlanícies Nevadas&r", "Um yeti enorme num esconderijo de gelo. Solta nevascas e prende você em cubos de gelo.",
+         "a &fManopla de Skor&r, que congela o alvo e solta espinhos de gelo", [c.r_item(pocao("minecraft:long_fire_resistance"), 2)]),
         ("dragao", "Ashlord, o Dragão Infernal", "minecraft:magma_block", "block_factorys_bosses:dragon_tower", "block_factorys_bosses:infernal_dragon",
          "em &fplanícies, selvas ou pântanos&r", "Um dragão de fogo no alto de uma torre, protegido por guardas esqueletos em chamas. Tem uma segunda forma ainda maior.",
          "&fossos de dragão&r, para fazer uma armadura de ossos de dragão", [c.r_item(pocao("minecraft:long_fire_resistance"), 4)]),
@@ -1380,9 +1382,12 @@ def cacadas():
          "no &foceano profundo&r", "Um kraken colossal preso a um navio pirata afundado. Piratas, canhões e tentáculos que saem do chão.",
          "o &fdente do kraken&r, para fazer um tridente que puxa os inimigos", [c.r_item(pocao("minecraft:long_water_breathing"), 4)]),
     ]
+    RECOMENDADO = {"sandworm": "Mais fácil: a partir do Ato 2", "yeti": "Médio: a partir do Ato 3",
+                   "dragao": "Difícil: a partir do Ato 4", "kraken": "Muito difícil: depois da história"}
     for chave, nome, icone, estrutura, entidade, onde, desc, premio, extra in feras:
         c.quest(f"{chave}_mapa", f"Caçada: {nome.split(',')[0]}", 0, 0, icone=icone, deps=["inicio"], optional=True,
-                descricao=[f"&e{nome}&r", "", desc, "", f"Mora {onde}.", "",
+                subtitulo=RECOMENDADO[chave],
+                descricao=[f"&e{nome}&r", "", desc, "", f"Mora {onde}.", f"&6{RECOMENDADO[chave]}&r", "",
                            "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"],
                 tarefas=[c.t_check("Pedir a localização")],
                 recompensas=[c.r_localizar(estrutura, f"Coordenadas: {nome.split(',')[0]}", dimensao=OW)] + extra)

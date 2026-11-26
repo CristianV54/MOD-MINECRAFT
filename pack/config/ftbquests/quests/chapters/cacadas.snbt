@@ -36,95 +36,13 @@
 			]
 		}
 		{
-			id: "3A897757C1E4E57F"
-			title: "Caçada: Skor"
-			x: 2.0d
-			y: -2.0d
-			icon: "minecraft:packed_ice"
-			description: ["&eSkor, o Yeti&r", "", "Um yeti enorme num esconderijo de gelo. Solta nevascas e prende você em cubos de gelo.", "", "Mora nas &fPlanícies Nevadas&r.", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
-			dependencies: ["3CC89136178E34A5"]
-			optional: true
-			tasks: [
-				{
-					id: "16745B70C4D22CA9"
-					type: "checkmark"
-					title: "Pedir a localização"
-				}
-			]
-			rewards: [
-				{
-					id: "7309E56AA853E309"
-					type: "command"
-					command: "/execute in minecraft:overworld run locate structure block_factorys_bosses:yeti_hideout"
-					elevate_perms: true
-					silent: false
-					title: "Coordenadas: Skor"
-					icon: "minecraft:compass"
-				}
-				{
-					id: "5C864C5A51D16242"
-					type: "item"
-					item: {
-						id: "minecraft:potion"
-						Count: 1b
-						tag: {
-							Potion: "minecraft:long_fire_resistance"
-						}
-					}
-					count: 2
-				}
-			]
-		}
-		{
-			id: "134CCBD2477C6525"
-			title: "Skor, o Yeti"
-			x: 4.0d
-			y: -2.0d
-			icon: "minecraft:packed_ice"
-			shape: "octagon"
-			size: 1.5d
-			description: ["Derrote &cSkor, o Yeti&r.", "", "Ele deixa a &fManopla de Skor&r, que congela o alvo e solta espinhos de gelo."]
-			dependencies: ["3A897757C1E4E57F"]
-			optional: true
-			tasks: [
-				{
-					id: "22A1ACCF568AF2F1"
-					type: "kill"
-					entity: "block_factorys_bosses:yeti"
-					value: 1L
-					title: "Derrotar Skor"
-				}
-			]
-			rewards: [
-				{
-					id: "77B79B1E06DE0987"
-					type: "xp_levels"
-					xp_levels: 20
-				}
-				{
-					id: "2BEF02093D5A3FA4"
-					type: "item"
-					item: "minecraft:diamond"
-					count: 4
-				}
-				{
-					id: "067CD73AD3A34DB6"
-					type: "command"
-					command: "/function terras_partidas:ponto_de_habilidade"
-					elevate_perms: true
-					silent: true
-					title: "+1 ponto de habilidade"
-					icon: "minecraft:enchanted_book"
-				}
-			]
-		}
-		{
 			id: "24736EAB9CE73BE8"
 			title: "Caçada: Sirok"
 			x: 2.0d
-			y: -1.0d
+			y: -2.0d
+			subtitle: "Mais fácil: a partir do Ato 2"
 			icon: "minecraft:sand"
-			description: ["&eSirok, a Minhoca de Areia&r", "", "Uma minhoca gigante que nada debaixo da areia e cospe veneno. Fique longe das colunas de areia.", "", "Mora no &fDeserto&r.", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			description: ["&eSirok, a Minhoca de Areia&r", "", "Uma minhoca gigante que nada debaixo da areia e cospe veneno. Fique longe das colunas de areia.", "", "Mora no &fDeserto&r.", "&6Mais fácil: a partir do Ato 2&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
 			dependencies: ["3CC89136178E34A5"]
 			optional: true
 			tasks: [
@@ -155,7 +73,7 @@
 			id: "740D6A6D8017F12C"
 			title: "Sirok, a Minhoca de Areia"
 			x: 4.0d
-			y: -1.0d
+			y: -2.0d
 			icon: "minecraft:sand"
 			shape: "octagon"
 			size: 1.5d
@@ -195,12 +113,97 @@
 			]
 		}
 		{
+			id: "3A897757C1E4E57F"
+			title: "Caçada: Skor"
+			x: 2.0d
+			y: -1.0d
+			subtitle: "Médio: a partir do Ato 3"
+			icon: "minecraft:packed_ice"
+			description: ["&eSkor, o Yeti&r", "", "Um yeti enorme num esconderijo de gelo. Solta nevascas e prende você em cubos de gelo.", "", "Mora nas &fPlanícies Nevadas&r.", "&6Médio: a partir do Ato 3&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			dependencies: ["3CC89136178E34A5"]
+			optional: true
+			tasks: [
+				{
+					id: "16745B70C4D22CA9"
+					type: "checkmark"
+					title: "Pedir a localização"
+				}
+			]
+			rewards: [
+				{
+					id: "7309E56AA853E309"
+					type: "command"
+					command: "/execute in minecraft:overworld run locate structure block_factorys_bosses:yeti_hideout"
+					elevate_perms: true
+					silent: false
+					title: "Coordenadas: Skor"
+					icon: "minecraft:compass"
+				}
+				{
+					id: "5C864C5A51D16242"
+					type: "item"
+					item: {
+						id: "minecraft:potion"
+						Count: 1b
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+					count: 2
+				}
+			]
+		}
+		{
+			id: "134CCBD2477C6525"
+			title: "Skor, o Yeti"
+			x: 4.0d
+			y: -1.0d
+			icon: "minecraft:packed_ice"
+			shape: "octagon"
+			size: 1.5d
+			description: ["Derrote &cSkor, o Yeti&r.", "", "Ele deixa a &fManopla de Skor&r, que congela o alvo e solta espinhos de gelo."]
+			dependencies: ["3A897757C1E4E57F"]
+			optional: true
+			tasks: [
+				{
+					id: "22A1ACCF568AF2F1"
+					type: "kill"
+					entity: "block_factorys_bosses:yeti"
+					value: 1L
+					title: "Derrotar Skor"
+				}
+			]
+			rewards: [
+				{
+					id: "77B79B1E06DE0987"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					id: "2BEF02093D5A3FA4"
+					type: "item"
+					item: "minecraft:diamond"
+					count: 4
+				}
+				{
+					id: "067CD73AD3A34DB6"
+					type: "command"
+					command: "/function terras_partidas:ponto_de_habilidade"
+					elevate_perms: true
+					silent: true
+					title: "+1 ponto de habilidade"
+					icon: "minecraft:enchanted_book"
+				}
+			]
+		}
+		{
 			id: "7F1ADF8C42D8F4D9"
 			title: "Caçada: Ashlord"
 			x: 2.0d
 			y: 1.0d
+			subtitle: "Difícil: a partir do Ato 4"
 			icon: "minecraft:magma_block"
-			description: ["&eAshlord, o Dragão Infernal&r", "", "Um dragão de fogo no alto de uma torre, protegido por guardas esqueletos em chamas. Tem uma segunda forma ainda maior.", "", "Mora em &fplanícies, selvas ou pântanos&r.", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			description: ["&eAshlord, o Dragão Infernal&r", "", "Um dragão de fogo no alto de uma torre, protegido por guardas esqueletos em chamas. Tem uma segunda forma ainda maior.", "", "Mora em &fplanícies, selvas ou pântanos&r.", "&6Difícil: a partir do Ato 4&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
 			dependencies: ["3CC89136178E34A5"]
 			optional: true
 			tasks: [
@@ -282,8 +285,9 @@
 			title: "Caçada: Nerakyss"
 			x: 2.0d
 			y: 2.0d
+			subtitle: "Muito difícil: depois da história"
 			icon: "minecraft:nautilus_shell"
-			description: ["&eNerakyss, o Kraken&r", "", "Um kraken colossal preso a um navio pirata afundado. Piratas, canhões e tentáculos que saem do chão.", "", "Mora no &foceano profundo&r.", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			description: ["&eNerakyss, o Kraken&r", "", "Um kraken colossal preso a um navio pirata afundado. Piratas, canhões e tentáculos que saem do chão.", "", "Mora no &foceano profundo&r.", "&6Muito difícil: depois da história&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
 			dependencies: ["3CC89136178E34A5"]
 			optional: true
 			tasks: [

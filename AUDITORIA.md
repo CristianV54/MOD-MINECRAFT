@@ -164,3 +164,34 @@ Feita no servidor de teste com o pacote, num mundo novo.
 **Correção:** `tools/corrigir_escada_dirigivel.py` gera uma versão da peça com um tronco de carvalho escuro ao lado de cada degrau, com a escada virada pra ele. O tamanho da peça não muda, então o dirigível gera igual.
 
 **Teste:** o dirigível gerado no mundo de teste tinha 82 troncos novos atrás das escadas. A estrutura original não tem nenhum.
+
+---
+
+# Auditoria 4: revisão final antes do teste no PC (versão 0.18.1)
+
+Feita depois das mudanças grandes: pacote só com mods do CurseForge, Bosses'Rise, Helvar como chefe final e o capítulo de Caçadas.
+
+| Verificação | Resultado |
+|---|---|
+| Missões carregam no servidor | 123 de 123, em 6 capítulos |
+| Missões alcançáveis, sem dependência quebrada nem ciclo | todas |
+| IDs duplicados ou no formato que o FTB Quests troca sozinho | 0 |
+| Itens, ícones, criaturas, estruturas, biomas e conquistas citados que existem nos mods | todos (conferido contra 7.306 itens e 922 criaturas) |
+| Itens de recompensa criados no mundo de teste | 134 de 134 |
+| Comandos de recompensa que funcionam | 39 de 39 |
+| Mapas e coordenadas que acham a estrutura | 19 de 19 |
+| Erros do nosso datapack, traduções ou missões no log | 0 |
+| Chefes novos invocados sem derrubar o servidor | 5 de 5 |
+| Arquivos de fora do CurseForge dentro do zip | 0 |
+
+## Problemas encontrados e corrigidos
+
+- **Chave da arena do Helvar (travava o final):** no mod, a chave só cai com 3% de chance dos esqueletos da arena e 5% nos baús raros. O bloco que daria a chave só existe na versão 1.21 do mod. Agora a chave vem como recompensa ao chegar na arena ("a Ordem guardou a chave por trezentos anos"), e uma missão repetível troca recursos por outra.
+- **Helvar mais fraco que os chefes de antes:** tinha 280 de vida, contra 390 do Arauto. Agora tem 450 e armadura 12, além da segunda vida que o próprio mod dá.
+- **Caçadas sem indicação de dificuldade:** agora vêm em ordem, da Minhoca de Areia (200 de vida, Ato 2) até o Kraken (500, depois da história), com o ato recomendado no subtítulo.
+
+## Avisos do log que não são problema
+
+- "Entity illageandspillage:bone/axe has no attributes": aviso interno do Illage and Spillage.
+- "Removed entity.illageandspillage... from Raids": limpeza interna ao salvar o mundo.
+- "Item Capability Exception: magistuarmory:rusted_*": o Epic Fight procura armas enferrujadas que o Epic Knights não tem nessa versão.
