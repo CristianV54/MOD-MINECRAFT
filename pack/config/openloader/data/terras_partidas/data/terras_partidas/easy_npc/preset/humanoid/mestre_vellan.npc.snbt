@@ -82,7 +82,7 @@
           Priority:2,
           Texts:[
             {
-              Text:"Bem-vindo à Ordem dos Caçadores, @initiator.\\n\\nO Selo se partiu e os fragmentos corromperam criaturas poderosas. Os três primeiros estão perto daqui: algo enorme nos pântanos, um espírito que toca um sino, e um cavaleiro de metal numa câmara no subsolo.\\n\\nSeu kit já está no inventário, e suas primeiras missões estão no livro de missões. Quando quiser conversar, é só voltar aqui."
+              Text:"Bem-vindo à Ordem dos Caçadores, @initiator.\\n\\nO Selo se partiu e os fragmentos corromperam criaturas poderosas. Os três primeiros estão nesta região: algo enorme nos pântanos, um espírito que toca um sino, e um cavaleiro de metal numa câmara no subsolo.\\n\\nSeu kit já está no inventário, e suas primeiras missões estão no livro de missões. Quando quiser conversar, é só voltar aqui."
             }
           ],
           Conditions:[
@@ -153,7 +153,7 @@
           Priority:3,
           Texts:[
             {
-              Text:"Três fragmentos, @initiator. Melhor do que qualquer caçador em anos.\\n\\nOs próximos estão longe: no gelo eterno, nas savanas queimadas, no mar congelado e com a jogadora de almas, Dame Fortuna. Use os mapas que eu te der e o planador para atravessar o mundo."
+              Text:"Três fragmentos, @initiator. Melhor do que qualquer caçador em anos.\\n\\nOs próximos estão longe: no gelo eterno, nas savanas queimadas, no mar congelado e com Dame Fortuna, o espírito que aposta almas. Use os mapas que eu te der e o planador para atravessar o mundo."
             }
           ],
           Conditions:[
@@ -224,7 +224,7 @@
           Priority:4,
           Texts:[
             {
-              Text:"Sete fragmentos... e os que faltam caíram no Nether, @initiator.\\n\\nUse ouro na armadura para os piglins te deixarem em paz e leve muitas poções de resistência ao fogo. Eu mando as coordenadas de cada lugar pelo livro."
+              Text:"Sete fragmentos... e os que faltam caíram no Nether, @initiator.\\n\\nUse ouro na armadura para os piglins te deixarem em paz e leve muitas poções de resistência ao fogo. As missões do livro mostram as coordenadas de cada lugar no chat, quando você estiver no Nether."
             }
           ],
           Conditions:[
@@ -295,7 +295,7 @@
           Priority:5,
           Texts:[
             {
-              Text:"Onze fragmentos. E agora a verdade: os guardiões do Selo nunca morreram, @initiator.\\n\\nEles vivem no Everbright e no Everdawn, acima das nuvens, mas enlouqueceram. Tijolo turquesa abre o caminho para o Everbright. Tijolo lunar, para o Everdawn."
+              Text:"Onze fragmentos. E agora a verdade: os guardiões do Selo nunca morreram, @initiator.\\n\\nEles vivem no Everbright e no Everdawn, acima das nuvens, mas os fragmentos os transformaram em monstros. Tijolo turquesa abre o caminho para o Everbright. Tijolo lunar, para o Everdawn."
             }
           ],
           Conditions:[
@@ -366,13 +366,120 @@
           Priority:6,
           Texts:[
             {
-              Text:"Quinze fragmentos, @initiator. O Selo só pode ser refeito onde foi quebrado: no End.\\n\\nEncontre a fortaleza escondida, derrote o Dragão e os guardiões do vazio. E guarde a Estrela do Nether do Wither. Você vai precisar dela no final."
+              Text:"Quinze fragmentos, @initiator. O Selo só pode ser refeito onde foi quebrado: no End.\\n\\nEncontre a fortaleza escondida, derrote o Dragão e os guardiões do vazio. E não use a Estrela do Nether do Wither num sinalizador: você vai precisar dela para despertar o que guarda o último fragmento."
             }
           ],
           Conditions:[
             {
               Name:"terras_partidas_ato4",
               Type:"PLAYER_TAG"
+            }
+          ]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"/advancement grant @initiator only terras_partidas:selo_restaurado",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/tag @initiator add terras_partidas_fim",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/playsound minecraft:block.beacon.activate master @initiator ~ ~ ~ 1 0.8",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/playsound minecraft:ui.toast.challenge_complete master @initiator ~ ~ ~ 1 1",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/title @initiator title {\"text\":\"O Selo foi restaurado\",\"color\":\"light_purple\"}",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"restaurado",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"ritual_btn",
+              Name:"Restaurar o Selo"
+            },
+            {
+              Actions:[
+                {
+                  Type:"CLOSE_DIALOG"
+                },
+                {
+                  Cmd:"/ftbquests open_book",
+                  ExecAsUser:1b,
+                  PermLevel:0,
+                  Type:"COMMAND"
+                }
+              ],
+              Label:"livro",
+              Name:"Abrir o livro de missões"
+            },
+            {
+              Actions:[
+                {
+                  Type:"CLOSE_DIALOG"
+                },
+                {
+                  Msg:{
+                    T:4b,
+                    Texts:[
+                      "Boa caçada, @initiator."
+                    ]
+                  },
+                  Type:"MESSAGE"
+                }
+              ],
+              Label:"tchau",
+              Name:"Até mais, Mestre"
+            }
+          ],
+          Conditions:[
+            {
+              Name:"terras_partidas_helvar",
+              Type:"PLAYER_TAG"
+            }
+          ],
+          Label:"ritual",
+          Name:"O ritual",
+          Priority:7,
+          Texts:[
+            {
+              Text:"Você voltou, @initiator. Eu senti Helvar cair daqui.\\n\\nOs dezenove fragmentos brilham na sua mochila. O núcleo do Arauto é o coração: ele vai no centro, e os outros dezoito em volta dele.\\n\\nColoque os pedaços no cristal. Eu termino o ritual que começamos há trezentos anos."
+            }
+          ]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Type:"OPEN_DEFAULT_DIALOG"
+                }
+              ],
+              Label:"voltar",
+              Name:"Voltar"
+            }
+          ],
+          Label:"restaurado",
+          Name:"O Selo Restaurado",
+          Priority:-1,
+          Texts:[
+            {
+              Text:"O cristal brilhou mais forte do que qualquer coisa que eu já vi. Helvar foi puxado de volta para o submundo, e desta vez a porta ficou trancada para sempre.\\n\\nOs seis guardiões que os fragmentos corromperam finalmente estão livres. Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez.\\n\\nPreciso te contar uma coisa. Eu sou o sétimo guardião. Fiquei neste mundo, escondido na Ordem, esperando alguém forte o bastante para terminar o que começamos.\\n\\nObrigado, @initiator. Pegue sua recompensa no livro de missões."
             }
           ]
         },
@@ -434,10 +541,10 @@
           ],
           Label:"final",
           Name:"O Selo Restaurado",
-          Priority:7,
+          Priority:8,
           Texts:[
             {
-              Text:"@initiator... você conseguiu.\\n\\nTrezentos anos atrás, sete guardiões criaram o Selo. Seis você enfrentou. O sétimo sou eu, e esperei três séculos por alguém como você. A Ordem nunca vai esquecer o seu nome.\\n\\nSe ainda quiser lutar, dizem que uma flor do vazio, um leviatã e as feras antigas das Caçadas ainda vagam pelo mundo..."
+              Text:"@initiator... você conseguiu.\\n\\nTrezentos anos atrás, sete guardiões criaram o Selo. Você enfrentou os seis que os fragmentos corromperam: quatro acima das nuvens e dois no vazio. O sétimo guardião sou eu, e esperei três séculos por alguém como você. A Ordem nunca vai esquecer o seu nome.\\n\\nSe ainda quiser lutar, dizem que uma flor do vazio, um leviatã e as feras antigas das Caçadas ainda vagam pelo mundo..."
             }
           ],
           Conditions:[
@@ -784,7 +891,7 @@
           Priority:-1,
           Texts:[
             {
-              Text:"MAGO\\n\\nPrós: Dano de longe com feitiços, inclusive cura. Começa com um livro com 4 feitiços que não acabam, roupa de mago e Mesa de Inscrição.\\n\\nContras: Frágil de perto: a roupa de mago protege pouco e cada feitiço gasta mana.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K), além das árvores de Combate, Mineração e Vida, que são de todo mundo."
+              Text:"MAGO\\n\\nPrós: Dano de longe com feitiços, inclusive cura. Começa com um livro com 4 feitiços que não são gastos (usam mana), roupa de mago e Mesa de Inscrição.\\n\\nContras: Frágil de perto: a roupa de mago protege pouco e cada feitiço gasta mana.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K), além das árvores de Combate, Mineração e Vida, que são de todo mundo."
             }
           ]
         },

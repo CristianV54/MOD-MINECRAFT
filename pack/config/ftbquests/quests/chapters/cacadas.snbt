@@ -18,7 +18,7 @@
 			icon: "minecraft:spyglass"
 			shape: "gear"
 			size: 1.75d
-			description: ["&6Mestre Vellan&r: \"Nem todo monstro gigante deste mundo guarda um fragmento. Algumas feras são só antigas... e perigosas.\"", "", "&o\"Caçadores da Ordem já tentaram e não voltaram. Mas o que elas guardam vale o risco: armas que você não acha em nenhum outro lugar.\"", "", "&7Todas as caçadas são opcionais e estão em ordem de dificuldade. Cada fera deixa um tesouro próprio, e quem derrotar todas vira &6Mestre Caçador&7.&r"]
+			description: ["&6Mestre Vellan&r: \"Nem todo monstro gigante deste mundo guarda um fragmento. Algumas feras são só antigas... e perigosas.\"", "", "&o\"Caçadores da Ordem já tentaram e não voltaram. Mas o que elas guardam vale o risco: armas que você não acha em nenhum outro lugar.\"", "", "&7Todas as caçadas são opcionais e podem ser feitas em qualquer ordem. Elas estão apresentadas em ordem aproximada de dificuldade. Cada fera deixa um tesouro próprio, e quem derrotar todas vira &6Mestre Caçador&7.&r"]
 			dependencies: ["5A0236B98D30AC09"]
 			tasks: [
 				{
@@ -43,7 +43,7 @@
 			y: 0.0d
 			subtitle: "Mais fácil: a partir do Ato 2"
 			icon: "minecraft:sand"
-			description: ["&eSirok, a Minhoca de Areia&r", "", "Uma minhoca gigante que nada debaixo da areia e cospe veneno. Fique longe das colunas de areia.", "", "Mora no &fDeserto&r.", "&6Mais fácil: a partir do Ato 2&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			description: ["&eSirok, a Minhoca de Areia&r", "", "Uma minhoca gigante que nada debaixo da areia e cospe veneno. Quando a areia começar a tremer, saia de perto: colunas de areia sobem do chão.", "", "Mora no &fDeserto&r.", "&6Mais fácil: a partir do Ato 2&r", "", "&7Pegue a recompensa para ver no chat as coordenadas de onde Sirok mora.&r"]
 			dependencies: ["3CC89136178E34A5"]
 			optional: true
 			tasks: [
@@ -126,7 +126,7 @@
 			y: 0.0d
 			subtitle: "Fácil: a partir do Ato 2"
 			icon: "minecraft:chiseled_stone_bricks"
-			description: ["&eTongbi, o Escultor&r", "", "Um mestre que molda a pedra. Ele te desafia a subir uma coluna de pedra até ele enquanto arremessa rochas.", "", "Mora num &fmonastério no alto das montanhas&r.", "&6Fácil: a partir do Ato 2&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			description: ["&eTongbi, o Escultor&r", "", "Um mestre que molda a pedra. Ele te desafia a subir uma coluna de pedra até ele enquanto arremessa rochas. Se cair, você recomeça a subida.", "", "Mora num &fmonastério no alto das montanhas&r.", "&6Fácil: a partir do Ato 2&r", "", "&7Pegue a recompensa para ver no chat as coordenadas de onde Tongbi mora.&r"]
 			dependencies: ["3CC89136178E34A5"]
 			optional: true
 			tasks: [
@@ -216,7 +216,7 @@
 			y: 0.0d
 			subtitle: "Médio: a partir do Ato 3"
 			icon: "minecraft:soul_lantern"
-			description: ["&eO Lich da Noite&r", "", "Um feiticeiro morto-vivo que dispara bolas de fogo azuis e cometas, e se teletransporta pela sala. Não o perca de vista.", "", "Mora no alto da &fTorre do Lich&r.", "&6Médio: a partir do Ato 3&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			description: ["&eO Lich da Noite&r", "", "Um feiticeiro morto-vivo que dispara bolas de fogo azuis e cometas, e se teletransporta pela sala. Não o perca de vista.", "", "Mora no alto da &fTorre do Lich&r.", "&6Médio: a partir do Ato 3&r", "", "&7Pegue a recompensa para ver no chat as coordenadas de onde O Lich da Noite mora.&r"]
 			dependencies: ["3CC89136178E34A5"]
 			optional: true
 			tasks: [
@@ -306,7 +306,7 @@
 			y: 2.0d
 			subtitle: "Médio: a partir do Ato 3"
 			icon: "minecraft:packed_ice"
-			description: ["&eSkor, o Yeti&r", "", "Um yeti enorme num esconderijo de gelo. Solta nevascas e prende você em cubos de gelo.", "", "Mora nas &fPlanícies Nevadas&r.", "&6Médio: a partir do Ato 3&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			description: ["&eSkor, o Yeti&r", "", "Um yeti enorme num esconderijo de gelo. Solta nevascas e prende você em cubos de gelo.", "", "Mora nas &fPlanícies Nevadas&r.", "&6Médio: a partir do Ato 3&r", "", "&7Pegue a recompensa para ver no chat as coordenadas de onde Skor mora.&r"]
 			dependencies: ["3CC89136178E34A5"]
 			optional: true
 			tasks: [
@@ -333,7 +333,7 @@
 						id: "minecraft:potion"
 						Count: 1b
 						tag: {
-							Potion: "minecraft:long_fire_resistance"
+							Potion: "minecraft:strong_healing"
 						}
 					}
 					count: 2
@@ -396,7 +396,7 @@
 			y: 2.0d
 			subtitle: "Difícil: a partir do Ato 4"
 			icon: "meetyourfight:dusk_key"
-			description: ["&eRosalyne, Lâmina do Crepúsculo&r", "", "Uma cavaleira de flores e espinhos, rápida e elegante. Use a chave num lugar aberto e ela aparece.", "", "Aparece onde você usar a &fChave do Crepúsculo&r.", "&6Difícil: a partir do Ato 4&r", "", "&7Pegue a recompensa para receber a chave.&r"]
+			description: ["&eRosalyne, Lâmina do Crepúsculo&r", "", "Uma cavaleira de flores e espinhos, rápida e elegante. Use a chave (clique direito) num lugar aberto e ela aparece. A chave é gasta ao chamá-la.", "", "Aparece onde você usar a &fChave do Crepúsculo&r.", "&6Difícil: a partir do Ato 4&r", "", "&7Pegue a recompensa para receber a chave.&r"]
 			dependencies: ["3CC89136178E34A5"]
 			optional: true
 			tasks: [
@@ -470,7 +470,7 @@
 			y: 2.0d
 			subtitle: "Difícil: a partir do Ato 4"
 			icon: "minecraft:magma_block"
-			description: ["&eAshlord, o Dragão Infernal&r", "", "Um dragão de fogo no alto de uma torre, protegido por guardas esqueletos em chamas. Tem uma segunda forma ainda maior.", "", "Mora em &fplanícies, selvas ou pântanos&r.", "&6Difícil: a partir do Ato 4&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			description: ["&eAshlord, o Dragão Infernal&r", "", "Um dragão de fogo no alto de uma torre, protegido por guardas esqueletos em chamas. Quando a vida dele baixa, ele muda para uma segunda forma ainda maior: afaste-se, beba uma poção e volte.", "", "Mora em &fplanícies, selvas ou pântanos&r.", "&6Difícil: a partir do Ato 4&r", "", "&7Pegue a recompensa para ver no chat as coordenadas de onde Ashlord mora.&r"]
 			dependencies: ["3CC89136178E34A5"]
 			optional: true
 			tasks: [
@@ -560,7 +560,7 @@
 			y: 4.0d
 			subtitle: "Muito difícil: a partir do Ato 5"
 			icon: "minecraft:suspicious_sand"
-			description: ["&eO Remanescente Antigo&r", "", "Uma fera-faraó gigante enterrada na areia. Use o &fpincel&r na &fareia suspeita&r dentro da pirâmide para achar o &fColar do Deserto&r e acordá-la. &cA pirâmide costuma ficar longe: vá de dragão.&r", "", "Mora numa &fpirâmide amaldiçoada no deserto&r.", "&6Muito difícil: a partir do Ato 5&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			description: ["&eO Remanescente Antigo&r", "", "Uma fera-faraó gigante enterrada na areia. Use o &fpincel&r na &fareia suspeita&r dentro da pirâmide para achar o &fColar do Deserto&r e acordá-la. &cA pirâmide costuma ficar longe: vá de dragão.&r", "", "Mora numa &fpirâmide amaldiçoada no deserto&r.", "&6Muito difícil: a partir do Ato 5&r", "", "&7Pegue a recompensa para ver no chat as coordenadas de onde O Remanescente Antigo mora.&r"]
 			dependencies: ["3CC89136178E34A5"]
 			optional: true
 			tasks: [
@@ -643,7 +643,7 @@
 			y: 4.0d
 			subtitle: "Muito difícil: depois da história"
 			icon: "minecraft:soul_lantern"
-			description: ["&eMaledictus&r", "", "Um cavaleiro amaldiçoado selado no gelo. Dê energia de redstone à &fLápide Amaldiçoada&r (uma alavanca ou tocha de redstone ao lado) e clique nela com o botão direito.", "", "Mora numa &fprisão congelada&r.", "&6Muito difícil: depois da história&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			description: ["&eMaledictus&r", "", "Um cavaleiro amaldiçoado selado no gelo. Dê energia de redstone à &fLápide Amaldiçoada&r (uma alavanca ou tocha de redstone ao lado) e clique nela com o botão direito.", "", "Mora numa &fprisão congelada&r.", "&6Muito difícil: depois da história&r", "", "&7Pegue a recompensa para ver no chat as coordenadas de onde Maledictus mora.&r"]
 			dependencies: ["3CC89136178E34A5"]
 			optional: true
 			tasks: [
@@ -732,7 +732,7 @@
 			y: 4.0d
 			subtitle: "Muito difícil: depois da história"
 			icon: "minecraft:nautilus_shell"
-			description: ["&eNerakyss, o Kraken&r", "", "Um kraken colossal preso a um navio pirata afundado. Piratas, canhões e tentáculos que saem do chão.", "", "Mora no &foceano profundo&r.", "&6Muito difícil: depois da história&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
+			description: ["&eNerakyss, o Kraken&r", "", "Um kraken colossal preso a um navio pirata afundado. Piratas, canhões e tentáculos que saem do chão. Leve blocos, comida e saiba por onde fugir.", "", "Mora no &foceano profundo&r.", "&6Muito difícil: depois da história&r", "", "&7Pegue a recompensa para ver no chat as coordenadas de onde Nerakyss mora.&r"]
 			dependencies: ["3CC89136178E34A5"]
 			optional: true
 			tasks: [
@@ -824,7 +824,7 @@
 			icon: "minecraft:netherite_sword"
 			shape: "gear"
 			size: 2.0d
-			description: ["&6Mestre Vellan&r: \"Nove feras antigas. Nenhum caçador da Ordem jamais fez isso.\"", "", "&o\"Esta lâmina esperou séculos por alguém como você.\"", "", "&6Recompensa:&r a Lâmina do Mestre Caçador, 3 pontos de habilidade em cada árvore geral e o título &6[Mestre Caçador]&r ao lado do seu nome."]
+			description: ["&6Mestre Vellan&r: \"Nove feras antigas. Nenhum caçador da Ordem jamais fez isso.\"", "", "&o\"Esta lâmina esperou séculos por alguém como você.\"", "", "&6Recompensa:&r a Lâmina do Mestre Caçador, 3 pontos de habilidade em cada árvore geral (Combate, Mineração e Vida; a árvore da classe não recebe) e o título &6[Mestre Caçador]&r ao lado do seu nome."]
 			dependencies: ["740D6A6D8017F12C", "7044324654B86F10", "16A312D8B008A194", "134CCBD2477C6525", "4ADC48DA59801FB4", "31A22871F245BDA1", "27C9439A76B88579", "58EB22549E99B8E1", "47E7DD6D0A46E7BD"]
 			optional: true
 			tasks: [

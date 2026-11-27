@@ -18,7 +18,7 @@
 			icon: "minecraft:obsidian"
 			shape: "gear"
 			size: 2.0d
-			description: ["&6Mestre Vellan&r: \"Os últimos fragmentos atravessaram uma fenda e caíram no &cNether&r.\"", "", "&o\"Lá embaixo, três criaturas forjadas no fogo guardam cada uma um pedaço do Selo. E o calor dos fragmentos está acordando algo que deveria continuar dormindo...\"", "", "Construa um portal (obsidiana 4x5) e entre no Nether.", "", "&7Dica: use alguma peça de ouro na armadura. Os piglins não atacam quem usa ouro.&r", "", "&7Pegue a recompensa já dentro do Nether: ela mostra no chat as coordenadas da fortaleza mais próxima.&r"]
+			description: ["&6Mestre Vellan&r: \"Os últimos fragmentos atravessaram uma fenda e caíram no &cNether&r.\"", "", "&o\"Lá embaixo, três criaturas forjadas no fogo guardam cada uma um pedaço do Selo. E o calor dos fragmentos está acordando algo que deveria continuar dormindo...\"", "", "Construa um portal: uma moldura de obsidiana de 4 blocos de largura por 5 de altura, contando a moldura (o buraco do meio fica 2x3). Acenda com isqueiro e entre no Nether.", "", "&7Dica: use alguma peça de ouro na armadura. Os piglins não atacam quem usa ouro.&r", "", "&7Pegue a recompensa já dentro do Nether: ela mostra no chat as coordenadas da fortaleza mais próxima.&r"]
 			dependencies: ["5A0236B98D30AC09"]
 			tasks: [
 				{
@@ -231,7 +231,7 @@
 			icon: "minecraft:netherite_block"
 			shape: "octagon"
 			size: 1.5d
-			description: ["A &cMonstruosidade de Netherita&r acorda quando você chega perto.", "", "&7Dica: ela é lenta, mas cada golpe é devastador. Fique fora do alcance dos socos e cuidado com as bombas de lava.&r"]
+			description: ["A &cMonstruosidade de Netherita&r acorda quando você chega perto.", "", "&7Dica: ela é lenta, mas cada golpe é devastador. Fique fora do alcance dos socos e cuidado com as bombas de lava. Leve blocos para fazer plataformas e saiba por onde fugir antes de acordá-la.&r"]
 			dependencies: ["7A39B292E1727F65"]
 			tasks: [
 				{
@@ -304,7 +304,7 @@
 			y: 4.5d
 			subtitle: "Segunda frente"
 			icon: "minecraft:magma_block"
-			description: ["&6Mestre Vellan&r: \"Um campeão de fogo chamado &6Ignis&r guarda uma arena nos desertos do Nether. Ele só aparece para quem acende o &fAltar de Fogo&r.\"", "", "&7Pegue a recompensa &festando no Nether&7: as coordenadas aparecem no chat. Aperte &eF3&7 para ver onde você está.&r"]
+			description: ["&6Mestre Vellan&r: \"Um campeão de fogo chamado &6Ignis&r guarda uma arena nos desertos do Nether. Ele só aparece quando alguém coloca &fCinzas Flamejantes&r no &fAltar de Fogo&r, no centro da arena.\"", "", "&7Pegue a recompensa &festando no Nether&7: as coordenadas aparecem no chat. Aperte &eF3&7 para ver onde você está.&r"]
 			dependencies: ["51E0EEFACEDA7A78"]
 			tasks: [
 				{
@@ -559,7 +559,7 @@
 			icon: "minecraft:iron_block"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote a &cManopla do Nether&r.", "", "&7Dica: quando o olho vermelho dela brilhar, ela vai disparar um laser. Saia da linha de visão atrás de um pilar.&r"]
+			description: ["Derrote a &cManopla do Nether&r.", "", "&7Dica: quando o olho vermelho dela brilhar, ela vai disparar um laser. Saia da linha de visão: atrás de um pilar ou de blocos que você colocar.&r"]
 			dependencies: ["3E990353495E559E"]
 			tasks: [
 				{
@@ -630,9 +630,9 @@
 			title: "O Que Despertou"
 			x: 10.0d
 			y: 3.0d
-			subtitle: "O mal antigo"
+			subtitle: "O último fragmento do Nether"
 			icon: "minecraft:wither_skeleton_skull"
-			description: ["&6Mestre Vellan&r: \"Eu estava errado. O fragmento mais forte não caiu em uma criatura... caiu nos ossos dos &8esqueletos wither&r.\"", "", "&o\"Se juntarmos três crânios e o fragmento, o &8Wither&o desperta. É perigoso, mas é a única forma de arrancar o último pedaço do Selo do Nether.\"", "", "Junte &f3 crânios de esqueleto wither&r (das fortalezas) e &f4 areias das almas&r."]
+			description: ["&6Mestre Vellan&r: \"O fragmento mais forte do Nether não corrompeu uma criatura comum. Ele se misturou à energia sombria dos &8esqueletos wither&r, e só aparece quando o &8Wither&r desperta.\"", "", "&o\"É perigoso, mas é a única forma de arrancar o último pedaço do Selo do Nether.\"", "", "&o\"Mais uma coisa. Os batedores acharam um nome gravado com fogo de alma nas paredes de uma fortaleza: &3Helvar&o. Não sei quem é. Mas não esqueça esse nome.\"", "", "Junte &f3 crânios de esqueleto wither&r (das fortalezas) e &f4 areias das almas&r."]
 			dependencies: ["00C38D9253CE0A46", "49A04A987520E157", "2B2B4D1C77CAD04F", "5E07FB527C1F6DE7"]
 			tasks: [
 				{
@@ -691,7 +691,7 @@
 			icon: "minecraft:nether_star"
 			shape: "octagon"
 			size: 2.0d
-			description: ["Monte o &8Wither&r (4 areias das almas em T e os 3 crânios em cima) e derrote-o.", "", "&cImportante:&r invoque longe da sua base! Ele destrói tudo em volta.", "&7Dica: invoque no subsolo, num túnel apertado, para ele não fugir voando. Quando a vida dele cair pela metade, ele fica imune a flechas.&r"]
+			description: ["Monte o &8Wither&r (4 areias das almas em T e os 3 crânios em cima) e derrote-o.", "", "&cImportante:&r invoque longe da sua base! Ele destrói tudo em volta.", "&7Dica: invoque num lugar fechado no subsolo, para ele não fugir voando. Quando a vida dele cair pela metade, ele fica imune a flechas.&r"]
 			dependencies: ["36D98A85083C3342"]
 			tasks: [
 				{
@@ -766,7 +766,7 @@
 			icon: "minecraft:amethyst_shard"
 			shape: "gear"
 			size: 2.0d
-			description: ["&6Mestre Vellan&r: \"Onze fragmentos. O Selo está quase completo... e mesmo assim ele continua pulsando.\"", "", "&o\"Quando o Wither caiu, os fragmentos brilharam e apontaram para cima. Para o céu. Existem dois mundos acima das nuvens, o &bEverbright&o e o &6Everdawn&o, onde os guardiões originais criaram o Selo.\"", "", "&o\"Lá estão as respostas. E, eu temo, os guardiões que nunca morreram.\"", "", "&dFim do Ato 3. O Ato 4 &7(Além do Céu)&d chega em breve.&r"]
+			description: ["&6Mestre Vellan&r: \"Onze fragmentos. O Selo está quase completo... e mesmo assim ele continua pulsando.\"", "", "&o\"Quando o Wither caiu, os fragmentos brilharam e apontaram para cima. Para o céu. Existem dois mundos acima das nuvens, o &bEverbright&o e o &6Everdawn&o, onde os guardiões originais criaram o Selo.\"", "", "&o\"Lá estão as respostas. E, eu temo, os guardiões que criaram o Selo.\"", "", "&dFim do Ato 3. O Ato 4 &7(Além do Céu)&d já está liberado no livro.&r"]
 			dependencies: ["493B1BC37A2277E5"]
 			tasks: [
 				{

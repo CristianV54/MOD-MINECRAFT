@@ -1,0 +1,5 @@
+{
+  "criteria": {
+    "ritual": { "trigger": "minecraft:impossible" }
+  }
+}

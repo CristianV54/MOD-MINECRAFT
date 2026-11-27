@@ -92,7 +92,7 @@
           Priority:1,
           Texts:[
             {
-              Text:"Então você é o caçador de quem o Mestre Vellan tanto fala.\\n\\nEu sou o Gabriel. Há anos guardo os últimos ovos de dragão da Ordem. Já vi caçadores fortes fugirem de um filhote chorando. Força não basta: um dragão precisa de alguém que fique quando o fogo chegar.\\n\\nVocê derrotou sete corrompidos e não recuou. Isso eu respeito. Está pronto para essa responsabilidade?"
+              Text:"Então você é o caçador de quem o Mestre Vellan tanto fala.\\n\\nEu sou o Gabriel. Há anos guardo os últimos ovos de dragão da Ordem. Já vi caçadores fortes fugirem de um filhote chorando. Força não basta: um dragão precisa de alguém que fique quando o fogo chegar.\\n\\nVocê derrotou sete criaturas corrompidas pelos fragmentos e não recuou. Isso eu respeito. Está pronto para essa responsabilidade?"
             }
           ]
         },
@@ -289,7 +289,7 @@
           Priority:-1,
           Texts:[
             {
-              Text:"Foi o que eu esperava ouvir.\\n\\nAbra o livro de missões, no capítulo do Ato 2, e escolha um dos quatro ovos: fogo, gelo, água ou floresta. Escolha só um. Não existe segunda escolha, e eu não aceito devolução.\\n\\nQuando ele chocar, cuide dele como cuidaria de um irmão."
+              Text:"Foi o que eu esperava ouvir.\\n\\nAbra o livro de missões, no capítulo do Ato 2, e escolha um dos quatro ovos: fogo, gelo, água ou floresta. Escolha com cuidado. Depois que um ovo for escolhido, os outros serão selados para sempre.\\n\\nQuando ele chocar, cuide dele como cuidaria de um irmão."
             }
           ]
         },
@@ -310,7 +310,7 @@
           Priority:-1,
           Texts:[
             {
-              Text:"Coloque o ovo em cima de um bloco firme e clique nele com o botão direito para ele começar a chocar.\\n\\nO lugar importa: deixe o ovo perto dos blocos do tipo dele (magma, gelo, prismarinho ou musgo), senão ele pode virar outro dragão.\\n\\nAlimente o filhote com carne até ele crescer. Depois coloque a sela e monte. Pular sobe, agachar desce.\\n\\nE nunca leve um dragão de gelo para dentro do Nether."
+              Text:"Coloque o ovo em cima de um bloco firme e clique nele com o botão direito para ele começar a chocar.\\n\\nO lugar importa: até chocar, mantenha o ovo perto dos blocos do tipo dele (magma, gelo, prismarinho ou musgo) para ele continuar do tipo escolhido.\\n\\nAlimente o filhote com carne até ele crescer. Depois coloque a sela e monte. Pular sobe, agachar desce."
             }
           ]
         },

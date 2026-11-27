@@ -18,7 +18,7 @@
 			icon: "minecraft:ender_eye"
 			shape: "gear"
 			size: 2.0d
-			description: ["&6Mestre Vellan&r: \"Quinze fragmentos. Falta pouco.\"", "", "&o\"O Selo foi quebrado no &5End&o, e é lá que ele precisa ser refeito. Mas o Dragão guarda o portal do outro lado, e outros dois guardiões do vazio esperam por você.\"", "", "&o\"Encontre a fortaleza escondida no subsolo. Jogue um Olho do Ender para o alto e siga para onde ele voar.\"", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
+			description: ["&6Mestre Vellan&r: \"Quinze fragmentos. Falta pouco.\"", "", "&o\"O Selo foi quebrado no &5End&o. O Dragão guarda o portal do outro lado, e os dois últimos guardiões corrompidos esperam por você no vazio.\"", "", "&o\"A Ordem achou uma fortaleza escondida no subsolo e mandou as coordenadas. Se quiser procurar outra, jogue um Olho do Ender para o alto e siga para onde ele voar.\"", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["75ACF07311A3832B"]
 			tasks: [
 				{
@@ -92,7 +92,7 @@
 			x: 4.0d
 			y: 1.5d
 			icon: "minecraft:end_stone"
-			description: ["Atravesse o portal e entre no &5End&r.", "", "&7Dica: leve blocos para construir, uma abóbora na cabeça (os endermen não te atacam se você olhar para eles) e muitas flechas para destruir os cristais.&r"]
+			description: ["Atravesse o portal e entre no &5End&r.", "", "&7Dica: leve blocos para construir, uma abóbora na cabeça se os endermen te incomodarem (com ela eles não te atacam quando você olha para eles, mas a visão fica menor) e muitas flechas para destruir os cristais.&r"]
 			dependencies: ["645013493FDF4013"]
 			tasks: [
 				{
@@ -227,7 +227,7 @@
 			y: 1.5d
 			subtitle: "Primeiro guardião do vazio"
 			icon: "minecraft:purpur_block"
-			description: ["&6Mestre Vellan&r: \"Nas ilhas distantes do End existe uma cidadela em ruínas. O &fGuardião Ender&r vigia um altar no coração dela.\"", "", "&7Para chegar às ilhas de fora, use o portal pequeno que aparece depois que o Dragão morre (jogue uma pérola do Ender nele).&r", "", "&7Pegue a recompensa &festando no End&7: as coordenadas aparecem no chat.&r"]
+			description: ["&6Mestre Vellan&r: \"Nas ilhas distantes do End existe uma cidadela em ruínas. O &fGuardião Ender&r vigia um altar no coração dela.\"", "", "&7Para chegar às ilhas de fora, use o portal pequeno que aparece depois que o Dragão morre (jogue uma pérola do Ender nele).&r", "&7Esta frente e a do Monolito Negro podem ser feitas em qualquer ordem.&r", "", "&7Pegue a recompensa &festando no End&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["5171C3E6F46EE884"]
 			tasks: [
 				{
@@ -371,7 +371,7 @@
 			y: 3.0d
 			subtitle: "Segundo guardião do vazio"
 			icon: "minecraft:obsidian"
-			description: ["&6Mestre Vellan&r: \"Existe um monolito vivo de obsidiana, o &fObsidilith&r. Ele dorme numa arena de obsidiana. Para acordá-lo, coloque um &fOlho do Ender&r no altar da arena.\"", "", "&7Pegue a recompensa &festando no End&7: as coordenadas aparecem no chat.&r"]
+			description: ["&6Mestre Vellan&r: \"Existe um monolito vivo de obsidiana, o &fObsidilith&r. Ele dorme numa arena de obsidiana. Para acordá-lo, coloque um &fOlho do Ender&r no altar da arena.\"", "", "&7Esta frente e a da Cidadela Arruinada podem ser feitas em qualquer ordem.&r", "", "&7Pegue a recompensa &festando no End&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["5171C3E6F46EE884"]
 			tasks: [
 				{
@@ -501,11 +501,11 @@
 			title: "A Verdade sobre o Selo"
 			x: 0.0d
 			y: 7.5d
-			subtitle: "O último fragmento"
+			subtitle: "O coração do Selo"
 			icon: "minecraft:nether_star"
 			shape: "hexagon"
 			size: 1.5d
-			description: ["&6Mestre Vellan&r: \"Dezoito fragmentos... e o Selo ainda não fecha. Falta o coração dele.\"", "", "&o\"Agora eu entendo. O mal antigo nunca foi um monstro. Era uma máquina de guerra, o &cArauto&o, construída para destruir o mundo. Os guardiões não conseguiram destruí-la, então a desligaram e usaram o próprio núcleo dela como último fragmento do Selo.\"", "", "&o\"Ela está numa fábrica antiga, enterrada fundo nas cavernas. Para despertá-la e arrancar o fragmento, é preciso o poder de uma &fEstrela do Nether&o. A mesma que você tirou do Wither.\"", "", "Tenha uma &fEstrela do Nether&r no inventário.", "&7Se você já usou a estrela (num sinalizador, por exemplo), invoque outro Wither para conseguir uma nova. Os crânios vêm das fortalezas do Nether.&r", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
+			description: ["&6Mestre Vellan&r: \"Dezoito fragmentos... e o Selo ainda não fecha. Falta o núcleo, o coração que mantém todos os pedaços unidos.\"", "", "&o\"Agora eu entendo. O mal antigo nunca foi um monstro. Era uma máquina de guerra, o &cArauto&o, construída para destruir o mundo. Os guardiões não conseguiram destruí-la, então a desligaram. Depois descobriram que o núcleo dela conseguia conter um poder ainda pior, e o transformaram no coração do Selo: o décimo nono fragmento.\"", "", "&o\"Ela está numa fábrica antiga, enterrada fundo nas cavernas. Para despertá-la e arrancar o fragmento, é preciso o poder de uma &fEstrela do Nether&o. A mesma que você tirou do Wither.\"", "", "Tenha uma &fEstrela do Nether&r no inventário.", "&7Se você já usou a estrela (num sinalizador, por exemplo), invoque outro Wither para conseguir uma nova. Os crânios vêm das fortalezas do Nether.&r", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["271B4CCE60F7E22F", "52AC667E6ADB8873"]
 			tasks: [
 				{
@@ -590,7 +590,7 @@
 			icon: "minecraft:wither_skeleton_skull"
 			shape: "octagon"
 			size: 2.25d
-			description: ["No centro da fábrica está o &cArauto&r, desligado.", "Clique nele com a &fEstrela do Nether&r na mão para despertá-lo e derrote-o.", "&7Se perder a luta, você vai precisar de outra estrela (de outro Wither) para despertá-lo de novo.&r", "", "&7Dica: ele dispara mísseis teleguiados e lasers. Use pilares como cobertura, e na segunda fase fique perto dele: os lasers são piores de longe.&r", "", "&5O núcleo dele guarda mais do que um fragmento.&r"]
+			description: ["No centro da fábrica está o &cArauto&r, desligado.", "Clique nele com a &fEstrela do Nether&r na mão para despertá-lo e derrote-o.", "&cA estrela é gasta ao despertá-lo.&r Só desperte o Arauto quando estiver preparado. Se perder a luta, vai precisar de outra estrela (de outro Wither).", "", "&7Dica: ele dispara mísseis teleguiados e lasers. Use pilares como cobertura, e na segunda fase fique perto dele: os lasers são piores de longe.&r", "", "&5O núcleo dele guarda mais do que um fragmento.&r"]
 			dependencies: ["7CEEF225CBD59975"]
 			tasks: [
 				{
@@ -665,7 +665,7 @@
 			icon: "minecraft:soul_lantern"
 			shape: "hexagon"
 			size: 1.5d
-			description: ["&6Mestre Vellan&r: \"Eu estava errado. O Arauto nunca foi o mal antigo. Ele era o &fcarcereiro&o.\"", "", "&o\"Muito antes do Selo existir, um cavaleiro vendeu a alma ao submundo em troca de poder: &3Helvar&o. Os sete guardiões não conseguiram matá-lo. Prenderam-no numa arena no fundo do Nether e trancaram a porta com a força do Selo, guardada pelo núcleo do Arauto.\"", "", "&o\"Com o núcleo arrancado, a porta enfraquece a cada dia. Se ele sair sozinho, nada mais vai pará-lo. Você precisa entrar lá primeiro.\"", "", "&7Pegue a recompensa &festando no Nether&7: as coordenadas aparecem no chat.&r"]
+			description: ["&6Mestre Vellan&r: \"Eu estava errado. O Arauto nunca foi o mal antigo. Ele era o &fcarcereiro&o.\"", "", "&o\"Lembra do nome gravado na fortaleza? Muito antes do Selo existir, um cavaleiro vendeu a alma ao submundo em troca de poder: &3Helvar&o. Os sete guardiões não conseguiram matá-lo. Prenderam-no numa arena no fundo do Nether.\"", "", "&o\"O núcleo do Arauto era a única coisa capaz de conter a energia de Helvar. Por isso ele virou o coração do Selo: enquanto o núcleo estava no lugar, a porta continuava trancada. Quando você arrancou o fragmento, a prisão começou a ruir.\"", "", "&o\"Com o núcleo arrancado, a porta enfraquece a cada dia. Se ele sair sozinho, nada mais vai pará-lo. Você precisa entrar lá primeiro.\"", "", "&7Pegue a recompensa &festando no Nether&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["07409C87B9FB6E33"]
 			tasks: [
 				{
@@ -722,7 +722,7 @@
 			x: 8.0d
 			y: 7.5d
 			icon: "minecraft:soul_sand"
-			description: ["Vá até as coordenadas, no &cNether&r. A arena fica &fenterrada&r, perto da altura 30, nos Ermos do Nether ou no Vale de Areia de Almas.", "", "&7Os corredores são guardados por &fEsqueletos das Almas&7 e &fCavaleiros Wither&7. Leve picareta para cavar até a entrada.&r", "", "&6Mestre Vellan&r: \"Quando chegar lá, pegue a recompensa. A Ordem guardou a &fchave da porta&o por trezentos anos, esperando este dia.\""]
+			description: ["Vá até as coordenadas, no &cNether&r. A arena fica &fenterrada&r, mais ou menos na altura Y=30, nos biomas Ermos do Nether ou Vale de Areia de Almas.", "", "&7Os corredores são guardados por &fEsqueletos das Almas&7 e &fCavaleiros Wither&7. Leve picareta para cavar até a entrada.&r", "", "&6Mestre Vellan&r: \"Quando chegar lá, pegue a recompensa. A Ordem guardou a &fchave da porta&o por trezentos anos, esperando este dia.\""]
 			dependencies: ["2BC4B4E8FC3A195F"]
 			tasks: [
 				{
@@ -813,7 +813,7 @@
 			icon: "block_factorys_bosses:knight_sword"
 			shape: "octagon"
 			size: 2.5d
-			description: ["Use a chave na &fporta da arena&r. Lá dentro está &3Helvar&r.", "", "&eComo ele luta:&r", "• Ele te nota e &fse apresenta&r antes de atacar. Aproveite para se preparar.", "• Combos de espada e &fsaltos giratórios&r: esquive para o lado, não para trás.", "• &fFendas&r se abrem no ar e disparam fogo. Não fique parado na frente delas.", "• &cQuando ele cair, não comemore.&r Ele volta da morte mais forte, com &ffogos-fátuos&r que explodem.", "", "&7Se ele cair de joelhos, é a sua chance: ataque com tudo.&r"]
+			description: ["Use a chave na &fporta da arena&r. Lá dentro está &3Helvar&r.", "", "&eComo ele luta:&r", "• Ele te nota e &fse apresenta&r antes de atacar. Aproveite para se preparar.", "• Combos de espada e &fsaltos giratórios&r: esquive para o lado, não para trás.", "• &fFendas&r se abrem no ar e disparam fogo. Não fique parado na frente delas.", "• &cEle tem uma segunda fase.&r Quando ele cair, prepare-se: ele volta mais forte, com &ffogos-fátuos&r que explodem.", "", "&7Se ele cair de joelhos, é a sua chance: ataque com tudo.&r"]
 			dependencies: ["6AB7B62BF6921CED"]
 			tasks: [
 				{
@@ -842,6 +842,16 @@
 					count: 2
 				}
 				{
+					id: "768E6E0C6396965C"
+					type: "command"
+					command: "/tag {p} add terras_partidas_helvar"
+					elevate_perms: true
+					silent: true
+					auto: "enabled"
+					title: "O Mestre Vellan sente a queda de Helvar"
+					icon: "minecraft:writable_book"
+				}
+				{
 					id: "797E878411A2DECF"
 					type: "command"
 					command: "/function terras_partidas:ponto_de_habilidade"
@@ -861,13 +871,15 @@
 			icon: "minecraft:beacon"
 			shape: "gear"
 			size: 2.5d
-			description: ["&6Mestre Vellan&r: \"Dezenove fragmentos. O Selo está inteiro de novo.\"", "", "&o\"Quando você colocou o último pedaço no lugar, o cristal brilhou mais forte do que qualquer coisa que eu já vi. Helvar voltou para o submundo, e desta vez a porta ficou trancada para sempre. Os guardiões caídos podem finalmente descansar.\"", "", "&o\"Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez. O mundo está inteiro de novo, graças a você.\"", "", "&o\"Preciso te contar uma coisa. Você enfrentou seis guardiões... mas éramos sete. Eu sou o sétimo. Fiquei neste mundo, escondido na Ordem, esperando alguém forte o bastante para terminar o que começamos.\"", "", "&6&lObrigado por jogar SealCraft!&r", "", "&7Ainda tem os &fDesafios Lendários&7 ao lado, para quem quer mais.&r"]
+			description: ["&6Mestre Vellan&r: \"Helvar caiu. Eu senti a porta do submundo tremer daqui.\"", "", "&o\"Os dezenove fragmentos estão com você. Venha até mim: está na hora de colocar o último pedaço no lugar e terminar o ritual que começamos há trezentos anos.\"", "", "&eComo terminar:&r volte ao &6Mestre Vellan&r (se ele estiver longe, use a missão &e\"Chamar o Mestre\"&r do Ato 1), clique nele com o botão direito e aperte &e\"Restaurar o Selo\"&r.", "", "&6&lObrigado por jogar SealCraft!&r", "", "&7Depois do final, os &fDesafios Lendários&7 e as &fCaçadas&7 continuam abertos para quem quer mais.&r"]
 			dependencies: ["68CBC7BC751A9064"]
 			tasks: [
 				{
 					id: "60BE85FC479F85D0"
-					type: "checkmark"
-					title: "Restaurar o Selo"
+					type: "advancement"
+					advancement: "terras_partidas:selo_restaurado"
+					criterion: ""
+					title: "Restaurar o Selo com o Mestre Vellan"
 				}
 			]
 			rewards: [
@@ -917,7 +929,7 @@
 			y: 13.0d
 			icon: "minecraft:dragon_egg"
 			shape: "hexagon"
-			description: ["&7Para quem ainda quer mais.&r Dois monstros antigos ainda vagam pelo mundo. Nenhum guarda fragmentos, só glória."]
+			description: ["&7Para quem ainda quer mais.&r Dois monstros lendários esperam em lugares que a Ordem já conhece, além das feras antigas das Caçadas. Nenhum guarda fragmentos, só glória."]
 			dependencies: ["5D30ADB7458E563B"]
 			optional: true
 			tasks: [
@@ -941,7 +953,7 @@
 			x: 4.0d
 			y: 12.0d
 			icon: "minecraft:spore_blossom"
-			description: ["Nas cavernas verdes e úmidas cresce uma flor gigante e carnívora, a &cFlor do Vazio&r.", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
+			description: ["Nas cavernas verdes e úmidas cresce uma flor gigante e carnívora, a &cFlor do Vazio&r. A Ordem já localizou uma delas.", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["649B209061CE456E"]
 			optional: true
 			tasks: [
@@ -1012,7 +1024,7 @@
 			x: 4.0d
 			y: 13.5d
 			icon: "minecraft:prismarine_bricks"
-			description: ["No fundo do oceano existe uma cidade afundada. No altar dela, um &cLeviatã&r espera ser chamado.", "", "Use o &fSacrifício Abissal&r no &fAltar do Abismo&r da cidade para chamá-lo.", "&7Ele é invencível fora da água. Leve poções de respiração aquática.&r", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
+			description: ["No fundo do oceano existe uma cidade afundada. No altar dela, um &cLeviatã&r espera ser chamado.", "", "Use o &fSacrifício Abissal&r no &fAltar do Abismo&r da cidade para chamá-lo. &cO sacrifício é gasto ao chamar o Leviatã.&r", "&7Ele é invencível fora da água. Leve poções de respiração aquática.&r", "", "&7Pegue a recompensa &fno mundo normal&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["649B209061CE456E"]
 			optional: true
 			tasks: [
@@ -1059,7 +1071,7 @@
 			icon: "minecraft:heart_of_the_sea"
 			shape: "octagon"
 			size: 1.25d
-			description: ["Derrote &cO Leviatã&r."]
+			description: ["Derrote &co Leviatã&r."]
 			dependencies: ["30174A75CA9ADA58"]
 			optional: true
 			tasks: [

@@ -18,7 +18,7 @@
 			icon: "blue_skies:zeal_lighter"
 			shape: "gear"
 			size: 2.0d
-			description: ["&6Mestre Vellan&r: \"Encontrei nos arquivos mais antigos da Ordem: os guardiões do Selo não morreram. Eles se refugiaram em dois mundos acima das nuvens.\"", "", "&o\"O &bEverbright&o, de luz e gelo eterno, e o &6Everdawn&o, onde o sol nunca termina de nascer. Mas algo aconteceu com eles: os fragmentos que caíram por lá os enlouqueceram.\"", "", "&o\"Existe um &fGuardião do Portal&o que vive em uma casa no nosso mundo e sabe abrir o caminho. Leve este &fIsqueiro Zeal&o e os tijolos que separei.\""]
+			description: ["&6Mestre Vellan&r: \"Encontrei nos arquivos mais antigos da Ordem: seis dos sete guardiões do Selo não morreram. Eles se refugiaram em dois mundos acima das nuvens e sobreviveram por trezentos anos.\"", "", "&o\"O &bEverbright&o, de luz e gelo eterno, e o &6Everdawn&o, onde o sol nunca termina de nascer. Mas os fragmentos que caíram por lá os transformaram em monstros. Quatro deles estão lá em cima. Os outros dois, eu ainda não sei.\"", "", "&o\"Existe um &fGuardião do Portal&o que vive em uma casa no nosso mundo e sabe abrir o caminho. Leve este &fIsqueiro Zeal&o e os tijolos que separei.\""]
 			dependencies: ["6191703B0919D2E4"]
 			tasks: [
 				{
@@ -67,7 +67,7 @@
 			x: 2.0d
 			y: 1.0d
 			icon: "minecraft:oak_door"
-			description: ["Siga o mapa até a &fcasa do Guardião do Portal&r. Ela fica perto de vilas das planícies, em savanas, montanhas ou terras nevadas.", "", "&eComo abrir os portais:&r monte uma moldura do mesmo formato do portal do Nether (4 de largura por 5 de altura) e acenda com o &fIsqueiro Zeal&r (clique direito dentro da moldura).", "• Moldura de &bTijolos de Pedra Turquesa&r: leva ao &bEverbright&r.", "• Moldura de &fTijolos de Pedra Lunar&r: leva ao &6Everdawn&r.", "", "O Mestre mandou 16 tijolos de cada tipo, o suficiente para os dois portais."]
+			description: ["Siga o mapa até a &fcasa do Guardião do Portal&r. Ela fica no mundo normal, geralmente perto de uma vila, em planícies, savanas, montanhas ou terras nevadas.", "", "&eComo abrir os portais:&r monte uma moldura do mesmo formato do portal do Nether (4 de largura por 5 de altura) e acenda com o &fIsqueiro Zeal&r (clique direito dentro da moldura).", "• Moldura de &bTijolos de Pedra Turquesa&r: leva ao &bEverbright&r.", "• Moldura de &fTijolos de Pedra Lunar&r: leva ao &6Everdawn&r.", "", "Os cantos da moldura não precisam de tijolo: cada portal leva 14. O Mestre mandou 16 de cada tipo, então sobram 2 de reserva."]
 			dependencies: ["2D42558563013C01"]
 			tasks: [
 				{
@@ -167,11 +167,11 @@
 		}
 		{
 			id: "223D59C90058688C"
-			title: "Masmorra Ofuscante do Everbright"
+			title: "Masmorra do Invocador"
 			x: 6.0d
 			y: 0.0d
 			icon: "minecraft:compass"
-			description: ["&6Mestre Vellan&r: \"O primeiro guardião, o &fInvocador&r, se trancou numa masmorra de luz cegante. Ele chama criaturas para lutar por ele.\"", "", "&7Pegue a recompensa &festando no Everbright&7: as coordenadas aparecem no chat.&r"]
+			description: ["&6Mestre Vellan&r: \"O primeiro guardião, o &fSummoner&r (o Invocador), se trancou numa masmorra de luz cegante, a Masmorra Ofuscante do Everbright. Ele chama criaturas para lutar por ele.\"", "", "&7Pegue a recompensa &festando no Everbright&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["1F3C25F6B028FEF2"]
 			tasks: [
 				{
@@ -187,7 +187,7 @@
 					command: "/execute in blue_skies:everbright run locate structure blue_skies:everbright_blinding_dungeon"
 					elevate_perms: true
 					silent: false
-					title: "Coordenadas: Masmorra Ofuscante do Everbright"
+					title: "Coordenadas: Masmorra do Invocador"
 					icon: "minecraft:compass"
 				}
 				{
@@ -261,7 +261,7 @@
 			icon: "minecraft:totem_of_undying"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote &cSummoner&r.", "", "&7Dica: ele invoca ajudantes sem parar. Derrube os ajudantes rápido e ataque o Summoner entre uma invocação e outra.&r"]
+			description: ["Derrote &cSummoner&r, um dos guardiões do Selo, corrompido pelo fragmento.", "", "&7Dica: ele invoca ajudantes sem parar. Derrube os ajudantes rápido e ataque o Summoner entre uma invocação e outra.&r"]
 			dependencies: ["30DCF1DF167AB938"]
 			tasks: [
 				{
@@ -333,7 +333,7 @@
 			x: 14.0d
 			y: 0.0d
 			icon: "minecraft:compass"
-			description: ["&6Mestre Vellan&r: \"O segundo guardião do Everbright virou uma árvore viva gigante, o &fEsmagador Estelar&r. Ele vive numa masmorra coberta de mato, nos pinheiros nevados.\"", "", "&7Pegue a recompensa &festando no Everbright&7: as coordenadas aparecem no chat.&r"]
+			description: ["&6Mestre Vellan&r: \"O segundo guardião do Everbright virou uma árvore viva gigante, o &fStarlit Crusher&r (o Esmagador Estelar). Ele vive numa masmorra coberta de mato, nos pinheiros nevados.\"", "", "&7Pegue a recompensa &festando no Everbright&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["3C47FC03294F8851"]
 			tasks: [
 				{
@@ -423,7 +423,7 @@
 			icon: "minecraft:oak_sapling"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote &cStarlit Crusher&r.", "", "&7Dica: ele é lento mas bate muito forte. Fique sempre se movendo e ataque pelas costas.&r"]
+			description: ["Derrote &cStarlit Crusher&r, um dos guardiões do Selo, corrompido pelo fragmento.", "", "&7Dica: ele é lento mas bate muito forte. Fique sempre se movendo e ataque pelas costas.&r"]
 			dependencies: ["27D647C9A396E9C1"]
 			tasks: [
 				{
@@ -491,11 +491,11 @@
 		}
 		{
 			id: "6042F4D1634B5E91"
-			title: "Masmorra Ofuscante do Everdawn"
+			title: "Masmorra do Alquimista"
 			x: 6.0d
 			y: 1.5d
 			icon: "minecraft:compass"
-			description: ["&6Mestre Vellan&r: \"No Everdawn, o guardião &fAlquimista&r passou séculos fazendo poções com o poder do fragmento. Ele não é mais humano.\"", "", "&7Pegue a recompensa &festando no Everdawn&7: as coordenadas aparecem no chat.&r"]
+			description: ["&6Mestre Vellan&r: \"No Everdawn, o guardião &fAlchemist&r (o Alquimista) passou séculos fazendo poções com o poder do fragmento, na Masmorra Ofuscante do Everdawn. Ele não é mais humano.\"", "", "&7Pegue a recompensa &festando no Everdawn&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["14A6D2F7F41AF96F"]
 			tasks: [
 				{
@@ -511,7 +511,7 @@
 					command: "/execute in blue_skies:everdawn run locate structure blue_skies:everdawn_blinding_dungeon"
 					elevate_perms: true
 					silent: false
-					title: "Coordenadas: Masmorra Ofuscante do Everdawn"
+					title: "Coordenadas: Masmorra do Alquimista"
 					icon: "minecraft:compass"
 				}
 				{
@@ -585,7 +585,7 @@
 			icon: "minecraft:brewing_stand"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote &cAlchemist&r.", "", "&7Dica: ele joga poções que mudam o chão da arena. Leve leite para tirar efeitos ruins.&r"]
+			description: ["Derrote &cAlchemist&r, um dos guardiões do Selo, corrompido pelo fragmento.", "", "&7Dica: ele joga poções que mudam o chão da arena. Leve leite: ele tira os efeitos ruins mais comuns.&r"]
 			dependencies: ["11EFDB6C21CC5220"]
 			tasks: [
 				{
@@ -657,7 +657,7 @@
 			x: 14.0d
 			y: 1.5d
 			icon: "minecraft:compass"
-			description: ["&6Mestre Vellan&r: \"O último guardião do Everdawn virou uma aranha gigante, a &fArachnarch&r. Ela fez um ninho numa masmorra venenosa na floresta de bordos.\"", "", "&7Pegue a recompensa &festando no Everdawn&7: as coordenadas aparecem no chat.&r"]
+			description: ["&6Mestre Vellan&r: \"O último guardião do Everdawn virou uma aranha gigante, a &fArachnarch&r (a Aracnarca). Ela fez um ninho numa masmorra venenosa na floresta de bordos.\"", "", "&7Pegue a recompensa &festando no Everdawn&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["31689D5BC8FB62E8"]
 			tasks: [
 				{
@@ -747,7 +747,7 @@
 			icon: "minecraft:spider_eye"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote &cArachnarch&r.", "", "&7Dica: leve muito leite e poções de cura. O veneno dela é o perigo maior, não as mordidas.&r"]
+			description: ["Derrote &cArachnarch&r, um dos guardiões do Selo, corrompido pelo fragmento.", "", "&7Dica: leve muito leite e poções de cura. O veneno dela é o perigo maior, não as mordidas.&r"]
 			dependencies: ["5257BB31CA0624A2"]
 			tasks: [
 				{
@@ -822,7 +822,7 @@
 			icon: "minecraft:amethyst_shard"
 			shape: "gear"
 			size: 2.0d
-			description: ["&6Mestre Vellan&r: \"Quinze fragmentos. Os guardiões caídos agora descansam.\"", "", "&o\"Antes de morrer, o Alquimista sussurrou algo: o Selo só pode ser refeito onde foi quebrado. No &5Fim&o do mundo, onde o Dragão guarda o vazio.\"", "", "&o\"Use os olhos do Ender para achar a fortaleza escondida. A última batalha nos espera.\"", "", "&dFim do Ato 4. O Ato 5 &7(O Fim do Selo)&d chega em breve.&r"]
+			description: ["&6Mestre Vellan&r: \"Quinze fragmentos. Os quatro guardiões do céu foram derrotados e estão livres da corrupção.\"", "", "&o\"Antes de morrer, o Alquimista sussurrou algo: o Selo só pode ser refeito onde foi quebrado. No &5End&o, onde o Dragão guarda o vazio. Os dois últimos guardiões estão lá.\"", "", "&o\"E ele disse mais uma palavra antes de partir: &3Helvar&o. O mesmo nome da fortaleza do Nether.\"", "", "&o\"Use os olhos do Ender para achar a fortaleza escondida. A última batalha nos espera.\"", "", "&dFim do Ato 4. O Ato 5 &7(O Fim do Selo)&d já está liberado no livro.&r"]
 			dependencies: ["431EC95A5D5497E9", "024B19F727BEC243"]
 			tasks: [
 				{

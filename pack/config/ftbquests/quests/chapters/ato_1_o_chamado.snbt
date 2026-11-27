@@ -141,7 +141,7 @@
 			icon: "minecraft:compass"
 			shape: "hexagon"
 			size: 1.25d
-			description: ["&6Mestre Vellan&r: \"Todo caçador tem um estilo. Qual é o seu?\"", "", "Escolha &cuma&r das cinco classes ao lado. Cada uma dá um kit inicial diferente.", "&cAtenção:&r depois de completar uma classe, as outras ficam bloqueadas.", "", "&cGuerreiro&r: espada longa e armadura. Equilibrado.", "&9Tanque&r: escudo, armadura pesada e técnica de aparar.", "&8Assassino&r: duas adagas, velocidade e esquiva rápida.", "&5Mago&r: livro de feitiços e pergaminhos de magia.", "&aCaçador&r: arco, flechas e mobilidade."]
+			description: ["&6Mestre Vellan&r: \"Todo caçador tem um estilo. Qual é o seu?\"", "", "Escolha &cuma&r das cinco missões de classe ao lado. Cada uma dá um kit inicial diferente.", "&cAtenção:&r depois de completar uma classe, as outras ficam bloqueadas.", "", "&cGuerreiro&r: espada longa e armadura. Equilibrado.", "&9Tanque&r: escudo, armadura pesada e técnica de aparar.", "&8Assassino&r: duas adagas, velocidade e esquiva rápida.", "&5Mago&r: livro de feitiços e pergaminhos de magia.", "&aCaçador&r: arco, flechas e mobilidade."]
 			dependencies: ["3BB64CCD28B4E329"]
 			max_completable_dependents: 1
 			tasks: [
@@ -306,7 +306,7 @@
 			y: 4.5d
 			icon: "irons_spellbooks:copper_spell_book"
 			shape: "diamond"
-			description: ["&6Mestre Vellan&r: \"Então você é um &5Mago&r.\"", "", "Você usa magia. Seu &flivro de feitiços&r já vem com 4 feitiços gravados, que &fnão acabam&r (usam mana). O livro já chega &eequipado no espaço do livro&r: aperte &eV&r para lançar o feitiço escolhido e &eZ&r para abrir a roda de feitiços. Pergaminhos avulsos somem quando usados: grave-os no livro na &eMesa de Inscrição&r para usar sempre.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
+			description: ["&6Mestre Vellan&r: \"Então você é um &5Mago&r.\"", "", "Você usa magia. Seu &flivro de feitiços&r já vem com 4 feitiços gravados, que &fnão são gastos&r: cada uso só gasta mana. O livro já chega &eequipado no espaço do livro&r: aperte &eV&r para lançar o feitiço escolhido e &eZ&r para abrir a roda de feitiços. Pergaminhos avulsos somem quando usados: grave-os no livro na &eMesa de Inscrição&r para usar sempre.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
 			dependencies: ["7705A346645D703A"]
 			tasks: [
 				{
@@ -399,11 +399,11 @@
 		}
 		{
 			id: "5A8FBE105E9C4E06"
-			title: "Ferramentas de Ferro"
+			title: "Uma Picareta de Ferro"
 			x: 6.0d
 			y: 2.0d
 			icon: "minecraft:iron_pickaxe"
-			description: ["&6Mestre Vellan&r: \"Ninguém caça de mãos vazias. Arrume ferramentas decentes.\"", "", "Faça uma &fpicareta de ferro&r."]
+			description: ["&6Mestre Vellan&r: \"Ninguém caça de mãos vazias. Comece por uma picareta decente.\"", "", "Faça uma &fpicareta de ferro&r."]
 			dependencies: ["062E0BFC8535363C", "3F450D4A9B68A9C4", "09A7904C3E38C2EE", "3E1B2E122F610121", "40FA859627277492"]
 			dependency_requirement: "one_completed"
 			hide_dependency_lines: true
@@ -497,7 +497,7 @@
 			x: 10.0d
 			y: 2.0d
 			icon: "minecraft:emerald"
-			description: ["&6Mestre Vellan&r: \"As vilas são o último refúgio deste mundo. Os &fguardas&r protegem os aldeões, mas precisam de ajuda.\"", "", "Encontre uma &fvila&r. Muitas delas têm um &bObelisco&r (Waystone), uma pedra que te teleporta entre lugares já visitados."]
+			description: ["&6Mestre Vellan&r: \"As vilas são pontos seguros neste mundo. Lá você troca, descansa e se prepara para a jornada.\"", "", "Encontre uma &fvila&r. Muitas delas têm um &bObelisco&r (Waystone), uma pedra que te teleporta entre lugares já visitados."]
 			dependencies: ["4F00E29859D87333", "1D8DEB71D2179B63"]
 			tasks: [
 				{
@@ -591,7 +591,7 @@
 			y: 4.0d
 			subtitle: "Primeiro fragmento"
 			icon: "meetyourfight:fossil_bait"
-			description: ["&6Mestre Vellan&r: \"Pescadores sumiram perto dos pântanos. Algo enorme come qualquer coisa que se move por lá... e eu sinto um fragmento do Selo dentro dele.\"", "", "Pegue esta &fIsca Fóssil&r. Quando estiver pronto, use-a (clique direito) para chamar a criatura.", "", "&7Equipamento recomendado: pedra ou ferro.&r"]
+			description: ["&6Mestre Vellan&r: \"Pescadores sumiram perto dos pântanos. Algo enorme come qualquer coisa que se move por lá... e eu sinto um fragmento do Selo dentro dele.\"", "", "Pegue a &fIsca Fóssil&r na recompensa, prepare-se e use-a (clique direito) perto do pântano quando estiver pronto para chamar a criatura.", "", "&7Equipamento recomendado: pedra ou ferro.&r"]
 			dependencies: ["17C4CCD7D735263C"]
 			tasks: [
 				{
@@ -628,7 +628,7 @@
 			icon: "meetyourfight:fossil_bait"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Use a Isca Fóssil e derrote &cSwampjaw&r.", "", "&dRecompensa especial:&r o livro de &ePulo Fantasma&r (pulo duplo no ar).", "", "&7Se morrer, a isca é gasta. Volte aqui: a missão &e\"Mais uma Isca\"&7 dá outra."]
+			description: ["Use a Isca Fóssil e derrote &cSwampjaw&r.", "", "&dRecompensa especial:&r o livro de &eAscensão Fantasma&r (pulo duplo no ar).", "", "&7Se morrer, a isca é gasta. Volte aqui: a missão &e\"Mais uma Isca\"&7 dá outra."]
 			dependencies: ["328C587F2C229F2B"]
 			tasks: [
 				{
@@ -768,7 +768,7 @@
 			icon: "meetyourfight:haunted_bell"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Toque o Sino Assombrado e derrote o &cBellringer&r."]
+			description: ["Toque o &fSino Assombrado&r (clique direito com ele na mão) para chamar o &cBellringer&r e derrote-o.", "", "&7Se morrer, o sino é gasto. A missão &e\"Outro Sino\"&7 dá outro.&r"]
 			dependencies: ["45A12E1B413F8922"]
 			tasks: [
 				{
@@ -909,7 +909,7 @@
 			x: 16.0d
 			y: 1.5d
 			icon: "mowziesmobs:wrought_helmet"
-			description: ["Siga o mapa até o &fX vermelho&r. A Câmara fica &fno subsolo&r (entre as camadas Y 20 e 50): cave para baixo quando chegar no ponto.", "", "&7Dica: os mapas do Xaero ajudam a marcar o caminho (tecla &eB&7 para criar um ponto de referência).&r"]
+			description: ["Siga o mapa até o &fX vermelho&r. A Câmara fica &fno subsolo&r, quase sempre entre as alturas Y=20 e Y=50: cave para baixo quando chegar no ponto.", "", "&7Dica: os mapas do Xaero ajudam a marcar o caminho (tecla &eB&7 para criar um ponto de referência).&r"]
 			dependencies: ["25F06794A8E1D9BF"]
 			tasks: [
 				{
@@ -1022,7 +1022,7 @@
 			icon: "minecraft:amethyst_shard"
 			shape: "gear"
 			size: 2.0d
-			description: ["&6Mestre Vellan&r: \"Três fragmentos... Você fez o que nenhum caçador conseguiu em anos.\"", "", "&o\"Mas sinto o Selo pulsando mais forte. Os outros fragmentos foram para lugares piores: o gelo eterno, as savanas queimadas, o fundo do mar.", "&oVocê vai precisar ir longe. Leve isto: um planador, para atravessar o mundo pelos céus.\"", "", "&dFim do Ato 1. O Ato 2 &7(Terras Selvagens)&d chega em breve.&r"]
+			description: ["&6Mestre Vellan&r: \"Três fragmentos... Você fez o que nenhum caçador conseguiu em anos.\"", "", "&o\"Mas sinto o Selo pulsando mais forte. Os outros fragmentos foram para lugares piores: o gelo eterno, as savanas queimadas, o labirinto de gelo e a Mesa da Fortuna, onde um espírito aposta almas.", "&oVocê vai precisar ir longe. Leve isto: um planador, para atravessar o mundo pelos céus.\"", "", "&dFim do Ato 1. O Ato 2 &7(Terras Selvagens)&d já está liberado no livro.&r"]
 			dependencies: ["7FCBF496418E37A1", "687FD9580D24CDE1", "31549F6EF053CF36"]
 			tasks: [
 				{

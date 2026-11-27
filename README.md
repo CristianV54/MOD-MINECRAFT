@@ -243,11 +243,15 @@ O Arauto (do Cataclysm) era o **carcereiro**: o núcleo dele mantinha trancada a
   1. A Porta do Submundo: dá as coordenadas da arena.
   2. A Arena do Submundo: a estrutura `block_factorys_bosses:underworld_arena`, no Nether, enterrada perto de Y 31. A recompensa é a **chave da porta**, que a Ordem guardou.
   3. Derrotar Helvar.
-  4. O Selo Restaurado.
+  4. O Selo Restaurado: o jogador volta ao Mestre Vellan e aperta "Restaurar o Selo" na conversa.
 - **Por que a chave vem da missão:** no mod, a chave só cai com 3% de chance dos esqueletos da arena e 5% nos baús raros. O "gerador de desafio" que daria a chave só existe na versão 1.21 do mod. Sem a missão, o jogador ficaria uns 30 abates na sorte antes do chefe final. A missão repetível "Outra Chave da Arena" troca 8 lingotes de ouro e 16 areias das almas por outra chave.
 - **Vida do Helvar:** o mod usa 280 por padrão, menos que o Arauto (390). O arquivo `pack/defaultconfigs/block_factorys_bosses-server.toml` sobe para **450 de vida e 12 de armadura**. O Forge copia esse arquivo para cada mundo novo.
 - **O chefe:** uns 8 blocos de altura (colisão de 3 x 5,3). Ele se apresenta, faz combos de espada, abre fendas que disparam fogo e **finge que morre e volta** com fogos-fátuos.
-- **Sem cerimônia própria:** derrotar o Helvar completa a missão e libera o fim da história.
+- **O final:** não tem luta nem cerimônia extra. Derrotar o Helvar marca o jogador com a tag `terras_partidas_helvar`, e o Mestre Vellan passa a oferecer o botão "Restaurar o Selo". O botão:
+  - dá a conquista invisível `terras_partidas:selo_restaurado`, que completa a missão final;
+  - toca o som do sinalizador e mostra o título "O Selo foi restaurado";
+  - abre a fala em que o Mestre revela que é o sétimo guardião.
+  Assim o jogador coloca o último pedaço com a própria mão, em vez de o Selo se refazer sozinho.
 - **Imagens:** `arte/chefes_bossesrise/` tem o Helvar, o Ashlord e o Kraken desenhados com o modelo e a textura originais do mod.
 
 ## Caçadas (capítulo opcional)

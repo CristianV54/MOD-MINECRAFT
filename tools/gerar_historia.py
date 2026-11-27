@@ -88,7 +88,15 @@ def nome_item(it):
             pass
     if "Potion" in tag:
         efeito = tag["Potion"].split(":")[-1]
-        return NOMES.get(f"item.minecraft.potion.effect.{efeito}", f"Poção ({efeito})")
+        extra = ""
+        if efeito.startswith("long_"):
+            efeito, extra = efeito[5:], " (longa)"
+        elif efeito.startswith("strong_"):
+            efeito, extra = efeito[7:], " (forte)"
+        return NOMES.get(f"item.minecraft.potion.effect.{efeito}", f"Poção ({efeito})") + extra
+    if "skill" in tag:
+        ns, _, nome = tag["skill"].partition(":")
+        return f"Livro de habilidade: {NOMES.get(f'skill.{ns}.{nome}', nome)}"
     raca = tag.get("BlockEntityTag", {}).get("Breed")
     if raca:
         return f"Ovo de dragão ({raca.split(':')[-1]})"
@@ -114,12 +122,14 @@ def tarefa(t):
         return limpar(t["title"])
     if tipo == "item":
         n = qtd(t.get("count", 1))
-        base = f"Entregar/ter {nome_item(t['item'])}" + (f" x{n}" if n > 1 else "")
+        verbo = "Entregar" if t.get("consume_items") else "Obter"
+        base = f"{verbo} {nome_item(t['item'])}" + (f" x{n}" if n > 1 else "")
         if t.get("title"):
             base = f"{limpar(t['title'])} ({base})"
-        return base + (" (o item é consumido)" if t.get("consume_items") else "")
+        return base + (" (os itens são gastos)" if t.get("consume_items") else "")
     if tipo == "kill":
-        return f"Derrotar {qtd(t.get('value', 1))}x {nome_de(t['entity'])}"
+        n = qtd(t.get("value", 1))
+        return f"Derrotar {nome_de(t['entity'])}" + (f" x{n}" if n > 1 else "")
     if tipo == "structure":
         return f"Encontrar a estrutura {t['structure']}"
     if tipo == "dimension":
@@ -149,8 +159,11 @@ def capitulos():
     return caps
 
 
+TODOS_TITULOS = {}
+
+
 def secao_missoes(saida, cap):
-    titulos = {q["id"]: limpar(q["title"]) for q in cap["quests"]}
+    titulos = TODOS_TITULOS
     saida.append(f"## {limpar(cap['title'])}")
     if cap.get("subtitle"):
         saida.append(f"*{limpar(' '.join(cap['subtitle']))}*")
@@ -170,7 +183,7 @@ def secao_missoes(saida, cap):
         if q.get("subtitle"):
             saida.append(f"*{limpar(q['subtitle'])}*")
             saida.append("")
-        deps = [titulos.get(d, "missão de outro capítulo") for d in q.get("dependencies", [])]
+        deps = [titulos[d] for d in q.get("dependencies", [])]
         if deps:
             regra = " ou " if q.get("dependency_requirement") == "one_completed" else " e "
             saida.append(f"**Depois de:** {regra.join(deps)}")
@@ -227,7 +240,26 @@ def main():
         "Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.",
         "",
     ]
-    for cap in capitulos().values():
+    caps = capitulos()
+    for cap in caps.values():
+        nome_cap = limpar(cap["title"]).split(":")[0]
+        for q in cap["quests"]:
+            TODOS_TITULOS[q["id"]] = limpar(q["title"])
+        for q in cap["quests"]:
+            q["_cap"] = nome_cap
+    for cap in caps.values():
+        for q in cap["quests"]:
+            for d in q.get("dependencies", []):
+                if not any(x["id"] == d for x in cap["quests"]):
+                    TODOS_TITULOS.setdefault(("fora", d), None)
+    for cap in caps.values():
+        locais = {q["id"] for q in cap["quests"]}
+        for q in cap["quests"]:
+            q["dependencies"] = [d if d in locais else ("fora", d) for d in q.get("dependencies", [])]
+    for cap in caps.values():
+        for x in caps.values():
+            for q in x["quests"]:
+                TODOS_TITULOS[("fora", q["id"])] = f"{limpar(q['title'])} ({q['_cap']})"
         secao_missoes(saida, cap)
     secao_npc(saida, "Falas do Mestre Vellan", g.mestre_vellan(),
               "Clique nele com o botão direito. Ele mostra a fala do ato mais avançado que o jogador já terminou.")

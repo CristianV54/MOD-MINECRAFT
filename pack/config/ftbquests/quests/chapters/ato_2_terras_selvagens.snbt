@@ -18,7 +18,7 @@
 			icon: "paraglider:paraglider"
 			shape: "gear"
 			size: 2.0d
-			description: ["&6Mestre Vellan&r: \"Os batedores da Ordem voltaram. Quatro fragmentos foram vistos em lugares onde poucos sobrevivem:\"", "", "• &bO Gelo Eterno&r, onde algo enorme dorme sob a neve.", "• &6As Savanas Queimadas&r, onde uma tribo mascarada serve a um pássaro de fogo.", "• &3O Labirinto de Gelo&r, um mar congelado cheio de navios fantasmas.", "• &5A Mesa da Fortuna&r, onde uma jogadora aposta almas.", "", "&o\"Use o planador para atravessar montanhas e vales. Ele gasta fôlego, então pouse antes que acabe.\"", "", "&7Você pode fazer as quatro frentes na ordem que quiser.&r"]
+			description: ["&6Mestre Vellan&r: \"Os batedores da Ordem voltaram. Quatro fragmentos foram vistos em lugares onde poucos sobrevivem:\"", "", "• &bO Gelo Eterno&r, onde algo enorme dorme sob a neve.", "• &6As Savanas Queimadas&r, onde uma tribo mascarada serve a um pássaro de fogo.", "• &3O Labirinto de Gelo&r, um mar congelado cheio de navios fantasmas.", "• &5A Mesa da Fortuna&r, onde um espírito aposta almas.", "", "&o\"Use o planador para atravessar montanhas e vales. Ele gasta fôlego, então pouse antes que acabe.\"", "", "&7Você pode fazer as quatro frentes na ordem que quiser.&r"]
 			dependencies: ["5733992D42C9FA1E"]
 			tasks: [
 				{
@@ -153,7 +153,7 @@
 			y: 4.5d
 			subtitle: "Frente do Gelo"
 			icon: "minecraft:snowball"
-			description: ["&6Mestre Vellan&r: \"Nas terras nevadas, um caçador viu uma criatura gigante dormindo ao lado de um cristal de gelo. Ele não voltou para contar o resto.\"", "", "&o\"Este mapa marca onde ele foi visto pela última vez.\"", "", "&7Leve roupas quentes... e comida. É longe.&r"]
+			description: ["&6Mestre Vellan&r: \"Nas terras nevadas, um caçador viu uma criatura gigante dormindo ao lado de um cristal de gelo. Ele não voltou para contar o resto.\"", "", "&o\"Este mapa marca onde ele foi visto pela última vez.\"", "", "&7Leve armadura, comida e tochas. É uma viagem longa.&r"]
 			dependencies: ["036CF1B560F9FBB7"]
 			tasks: [
 				{
@@ -212,7 +212,7 @@
 			icon: "mowziesmobs:ice_crystal"
 			shape: "octagon"
 			size: 1.5d
-			description: ["O &cFrostmaw&r está dormindo. Acorde-o com um golpe e prepare-se.", "", "&7Dica: ele sopra gelo em linha reta e dá saltos que esmagam. Corra para os lados e ataque depois do salto.", "&7Ele pode soltar o &fCristal de Gelo&7, uma arma muito poderosa.&r"]
+			description: ["O &cFrostmaw&r está dormindo. Acorde-o com um golpe e prepare-se.", "", "&7Dica: ele sopra gelo em linha reta e dá saltos que esmagam. Corra para os lados e ataque depois do salto.", "&7Depois da luta, procure o &fCristal de Gelo&7 perto dele: é uma arma muito poderosa.&r"]
 			dependencies: ["5D7D192BF04E4FFF"]
 			tasks: [
 				{
@@ -540,7 +540,7 @@
 			icon: "aquamirae:shell_horn"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Toque o Chifre de Concha e derrote o &cFantasma da Capitã Cornelia&r.", "", "&7Dica: lute em terra firme ou em cima do gelo, nunca dentro da água.&r"]
+			description: ["Toque o Chifre de Concha e derrote a &cCapitã Cornelia&r, que voltou como fantasma.", "", "&7Se perder, o chifre é gasto. A missão &e\"Outro Chifre\"&7 dá outro.&r", "", "&7Dica: lute em terra firme ou em cima do gelo, nunca dentro da água.&r"]
 			dependencies: ["1F91F50E88C08E4C"]
 			tasks: [
 				{
@@ -714,7 +714,7 @@
 			icon: "meetyourfight:devils_ante"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Use a Aposta do Diabo e derrote &cDame Fortuna&r.", "", "&7Dica: ela troca de padrão de ataque como quem embaralha cartas. Observe antes de atacar.&r"]
+			description: ["Segure a &fAposta do Diabo&r e clique com o botão direito num lugar aberto para chamar &cDame Fortuna&r. Derrote-a.", "", "&7Se perder, a ficha é gasta. A missão &e\"Nova Aposta\"&7 dá outra.&r", "", "&7Dica: ela troca de padrão de ataque como quem embaralha cartas. Observe antes de atacar.&r"]
 			dependencies: ["1179D6F3DF4E9D88"]
 			tasks: [
 				{
@@ -818,7 +818,7 @@
 			icon: "minecraft:amethyst_shard"
 			shape: "gear"
 			size: 2.0d
-			description: ["&6Mestre Vellan&r: \"Sete fragmentos. Mais da metade do Selo...\"", "", "&o\"Mas os batedores trouxeram notícias ruins. Os fragmentos que faltam não estão mais neste mundo. Eles caíram por uma fenda até o &cNether&o, e o calor lá está despertando algo antigo.\"", "", "&o\"Construa um portal. Quando estiver pronto, eu te conto o que sabemos.\"", "", "&dFim do Ato 2. O Ato 3 &7(Abismo e Fogo)&d chega em breve.&r"]
+			description: ["&6Mestre Vellan&r: \"Sete fragmentos. Mais da metade do Selo...\"", "", "&o\"Mas os batedores trouxeram notícias ruins. Os fragmentos que faltam não estão mais neste mundo. Eles caíram por uma fenda até o &cNether&o, e o calor lá está despertando algo antigo.\"", "", "&o\"Construa um portal. Quando estiver pronto, eu te conto o que sabemos.\"", "", "&dFim do Ato 2. O Ato 3 &7(Abismo e Fogo)&d já está liberado no livro.&r"]
 			dependencies: ["0EE70670AF58EFC2", "11037820C7E3E17C", "6BB74675F63F848A", "1BE278E0C76CB18D"]
 			tasks: [
 				{
@@ -989,7 +989,7 @@
 				}
 			}
 			shape: "diamond"
-			description: ["Você escolheu o &6Ovo de Dragão de Fogo&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo cai como areia: coloque em cima de um bloco firme.&r", "", "&cCuidado:&r o ambiente muda o tipo do dragão! Deixe o ovo perto de &flava, fogo, fogueira ou blocos de magma&r para ele continuar sendo deste tipo. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
+			description: ["Você escolheu o &6Ovo de Dragão de Fogo&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo cai como areia: coloque em cima de um bloco firme.&r", "", "&cImportante:&r o ambiente em volta decide se o ovo continua deste tipo. Até ele chocar, deixe-o perto de &flava, fogo, fogueira ou blocos de magma&r. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
 			dependencies: ["37E5C75BE7F753FD"]
 			tasks: [
 				{
@@ -1046,7 +1046,7 @@
 				}
 			}
 			shape: "diamond"
-			description: ["Você escolheu o &bOvo de Dragão de Gelo&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo cai como areia: coloque em cima de um bloco firme.&r", "", "&cCuidado:&r o ambiente muda o tipo do dragão! Deixe o ovo perto de &fgelo ou neve&r para ele continuar sendo deste tipo. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
+			description: ["Você escolheu o &bOvo de Dragão de Gelo&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo cai como areia: coloque em cima de um bloco firme.&r", "", "&cImportante:&r o ambiente em volta decide se o ovo continua deste tipo. Até ele chocar, deixe-o perto de &fgelo ou neve&r. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
 			dependencies: ["37E5C75BE7F753FD"]
 			tasks: [
 				{
@@ -1103,7 +1103,7 @@
 				}
 			}
 			shape: "diamond"
-			description: ["Você escolheu o &3Ovo de Dragão de Água&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo cai como areia: coloque em cima de um bloco firme.&r", "", "&cCuidado:&r o ambiente muda o tipo do dragão! Deixe o ovo perto de &fprismarinho, lanterna do mar, algas ou corais&r para ele continuar sendo deste tipo. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
+			description: ["Você escolheu o &3Ovo de Dragão de Água&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo cai como areia: coloque em cima de um bloco firme.&r", "", "&cImportante:&r o ambiente em volta decide se o ovo continua deste tipo. Até ele chocar, deixe-o perto de &fprismarinho, lanterna do mar, algas ou corais&r. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
 			dependencies: ["37E5C75BE7F753FD"]
 			tasks: [
 				{
@@ -1160,7 +1160,7 @@
 				}
 			}
 			shape: "diamond"
-			description: ["Você escolheu o &aOvo de Dragão de Floresta&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo cai como areia: coloque em cima de um bloco firme.&r", "", "&cCuidado:&r o ambiente muda o tipo do dragão! Deixe o ovo perto de &ffolhas, flores, mudas ou musgo&r para ele continuar sendo deste tipo. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
+			description: ["Você escolheu o &aOvo de Dragão de Floresta&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo cai como areia: coloque em cima de um bloco firme.&r", "", "&cImportante:&r o ambiente em volta decide se o ovo continua deste tipo. Até ele chocar, deixe-o perto de &ffolhas, flores, mudas ou musgo&r. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
 			dependencies: ["37E5C75BE7F753FD"]
 			tasks: [
 				{
@@ -1213,6 +1213,7 @@
 			description: ["&bGabriel&r: \"Quando ele crescer, suba e voe. Não existe sensação igual. Eu ainda lembro do meu primeiro voo.\"", "", "&eControles do dragão:&r use as teclas de pular e agachar para subir e descer. Os controles de voo ficam em &eOpções > Controles&r, na seção do Dragon Mounts.", "", "Marque esta missão quando fizer o primeiro voo."]
 			dependencies: ["6722E765449B3A7A", "442B24C6617282A8", "73682D458DEC7CE6", "499EF19D7636C3EE"]
 			dependency_requirement: "one_completed"
+			optional: true
 			tasks: [
 				{
 					id: "6BC2A3A0457DC566"
