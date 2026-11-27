@@ -54,30 +54,45 @@ H = caixa(0, 0, 8, 8, 8)
 for f, (x, y, w, h) in H.items():
     preto(x, y, w, h)
 fx, fy = H["frente"][:2]
-# rosto: olhos roxos 2x2 com ponto branco, pele em volta, máscara a partir da linha 6
-ROSTO = ["hhhhhhhh",
-         "hhhhhhhh",
-         "hhhPPhhh",
-         "hwcPPcwh",
-         "snnPPnns",
-         "sPPPPPPs",
-         "mmmmmmmm",
-         "kkkkkkkk"]
-cores = {"P": PELE, "s": PELE_S, "c": NEON_C, "n": NEON, "w": BRANCO, "m": NEON}
+# rosto, com as cores tiradas pixel a pixel da referência:
+# cabelo até a linha 4 (franja entre os olhos), olhos com ponto branco por fora e roxo por
+# dentro, brilho roxo em volta, uma faixa de pele quente e a máscara preta embaixo
+CAB = [(4, 4, 4), (9, 8, 8), (13, 13, 12), (22, 21, 21), (29, 27, 28), (7, 7, 6), (16, 16, 15), (38, 37, 40), (46, 44, 48)]
+ROSTO = [
+    "hhhhhhhh",
+    "hhhhhhhh",
+    "hhhhhhhh",
+    "hhhHhhHh",
+    "hGghhgGh",
+    "hWOssOWh",
+    "ABCDDCBE",
+    "MkkkkkkM",
+]
+CORES = {
+    "G": (118, 86, 100), "g": (148, 108, 118),
+    "W": (242, 232, 233),
+    "O": (150, 60, 235),
+    "s": (122, 86, 92),
+    "A": (117, 84, 87), "B": (171, 126, 122), "C": (157, 115, 114), "D": (172, 129, 128), "E": (134, 97, 97),
+    "M": (29, 14, 46), "k": (4, 3, 3), "H": (29, 27, 28),
+}
 for j, linha in enumerate(ROSTO):
     for i, ch in enumerate(linha):
-        if ch in cores: set_(fx + i, fy + j, cores[ch])
-# laterais: pele perto da frente na altura dos olhos, máscara com linha roxa
+        set_(fx + i, fy + j, random.choice(CAB) if ch == "h" else CORES[ch])
+# laterais: cabelo, pele perto do rosto na altura da bochecha, máscara embaixo
 for lado in ("dir", "esq"):
     x, y, w, h = H[lado]
     perto = x + w - 1 if lado == "dir" else x
-    set_(perto, y + 4, PELE_S); set_(perto, y + 5, PELE_S)
     for i in range(w):
-        set_(x + i, y + 6, NEON)
+        for j in range(8):
+            set_(x + i, y + j, random.choice(CAB))
+        set_(x + i, y + 7, (4, 3, 3))
+    set_(perto, y + 6, (117, 84, 87))
+    set_(x + (2 if lado == "dir" else 5), y + 7, (29, 14, 46))
 # nuca: faixa roxa da máscara amarrada atrás
 x, y, w, h = H["costas"]
-for i in range(w):
-    set_(x + i, y + 6, NEON)
+for i in range(1, 7):
+    set_(x + i, y + 6, NEON)                                        # faixa roxa amarrada na nuca
 set_(x + 3, y + 7, NEON); set_(x + 4, y + 7, NEON_C)               # nó da faixa
 
 # camada de cima da cabeça: mechas do cabelo saindo da frente e dos lados
