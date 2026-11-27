@@ -1,0 +1,8 @@
+{
+  "values": [
+    "minecraft:air", "minecraft:cave_air", "minecraft:void_air", "minecraft:light",
+    "minecraft:grass", "minecraft:tall_grass", "minecraft:fern", "minecraft:large_fern",
+    "minecraft:dead_bush", "minecraft:snow", "minecraft:sweet_berry_bush",
+    "#minecraft:flowers", "#minecraft:saplings"
+  ]
+}

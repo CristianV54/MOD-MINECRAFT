@@ -260,6 +260,50 @@ class Capitulo:
         return q
 
 
+# ---------------------------------------------------------------- KITS DE CLASSE
+
+PASTA_FUNCOES = os.path.join(RAIZ, "..", "..", "openloader", "data", "terras_partidas", "data", "terras_partidas", "functions")
+
+
+def _item_para_comando(it):
+    """Converte um item do gerador para o formato do /give (id + NBT)."""
+    if isinstance(it, str):
+        return it
+    tag = it.get("tag")
+    return it["id"] + (" ".join(l.strip() for l in snbt_mc(tag).splitlines()) if tag else "")
+
+
+def escrever_kit(chave, nome, recompensas):
+    """Gera terras_partidas:kit/<classe>: entrega o kit uma única vez por jogador."""
+    import re as _re
+    linhas = [f"# Kit da classe {_re.sub(r'&[0-9a-fk-or]', '', nome)}. Gerado por tools/gerar_missoes.py.",
+              "tag @s add tp_kit_recebido"]
+    for r in recompensas:
+        if r.get("type") != "item":
+            continue
+        it, n = r["item"], r.get("count", 1)
+        n = int(str(n).rstrip("L")) if not isinstance(n, int) else n
+        cmd = _item_para_comando(it)
+        idd = it if isinstance(it, str) else it["id"]
+        if idd.endswith("_spell_book"):
+            # direto no espaço do livro (Curios); se não der, vai para o inventário
+            linhas.append(f"execute store success score @s tp_espera run curios replace spellbook 0 @s with {cmd}")
+            linhas.append(f"execute unless score @s tp_espera matches 1 run give @s {cmd}")
+            linhas.append("scoreboard players set @s tp_espera 0")
+        else:
+            linhas.append(f"give @s {cmd} {n}")
+    linhas += ["playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1",
+               'tellraw @s ["",{"text":"[Mestre Vellan] ","color":"gold"},{"text":"Seu kit de classe está no seu inventário.","color":"white"}]']
+    if chave == "mago":
+        linhas.append('tellraw @s ["",{"text":"[Mestre Vellan] ","color":"gold"},{"text":"Seu livro de feitiços já está equipado. Aperte ","color":"white"},{"text":"V","color":"yellow"},{"text":" para lançar e ","color":"white"},{"text":"Z","color":"yellow"},{"text":" para trocar de feitiço. Eles não acabam: só gastam mana.","color":"white"}]')
+    os.makedirs(os.path.join(PASTA_FUNCOES, "kit"), exist_ok=True)
+    with open(os.path.join(PASTA_FUNCOES, "kit", f"{chave}_dar.mcfunction"), "w", encoding="utf-8") as f:
+        f.write("\n".join(linhas) + "\n")
+    with open(os.path.join(PASTA_FUNCOES, "kit", f"{chave}.mcfunction"), "w", encoding="utf-8") as f:
+        f.write(f"# Entrega o kit só uma vez (a missão e o Mestre Vellan chamam esta mesma função).\n"
+                f"execute unless entity @s[tag=tp_kit_recebido] run function terras_partidas:kit/{chave}_dar\n")
+
+
 # ---------------------------------------------------------------- ATO 1
 
 def ato1():
@@ -382,11 +426,10 @@ def ato1():
           c.r_item("minecraft:ender_pearl", 4), c.r_item("minecraft:cooked_beef", 12)]),
         ("mago", "&5Mago", 1, "irons_spellbooks:copper_spell_book",
          "Você usa magia. Seu &flivro de feitiços&r já vem com 4 feitiços gravados, que &fnão acabam&r (usam mana). "
-         "Coloque o livro no &eespaço do livro&r do inventário e aperte &eV&r para lançar o feitiço escolhido; &eZ&r abre a roda de feitiços. "
+         "O livro já chega &eequipado no espaço do livro&r: aperte &eV&r para lançar o feitiço escolhido e &eZ&r para abrir a roda de feitiços. "
          "Pergaminhos avulsos somem quando usados: grave-os no livro na &eMesa de Inscrição&r para usar sempre.",
          [c.r_item(livro_de_feiticos([("irons_spellbooks:firebolt", 2), ("irons_spellbooks:magic_missile", 2),
                                       ("irons_spellbooks:icicle", 1), ("irons_spellbooks:heal", 1)])),
-          c.r_item("irons_spellbooks:artificer_cane"),
           c.r_item("irons_spellbooks:wandering_magician_helmet"), c.r_item("irons_spellbooks:wandering_magician_chestplate"),
           c.r_item("irons_spellbooks:wandering_magician_leggings"), c.r_item("irons_spellbooks:wandering_magician_boots"),
           c.r_item("irons_spellbooks:inscription_table"),
@@ -401,9 +444,14 @@ def ato1():
           c.r_item("minecraft:cooked_beef", 12)]),
     ]
     for chave, nome, dy, icone, texto, recs in classes:
-        recs = recs + [c.r_comando(f"/puffish_skills category unlock {{p}} terras_partidas:{chave}",
-                                   titulo="Libera a árvore de habilidades da classe", icone="minecraft:enchanted_book"),
-                       c.r_comando(f"/tag {{p}} add {TAG_CLASSE}", titulo="Classe escolhida", icone="minecraft:name_tag")]
+        # O kit vai direto para o inventário (função com trava contra kit duplicado). As recompensas
+        # da missão são automáticas, e o botão "Escolher" do Mestre Vellan chama a mesma função.
+        escrever_kit(chave, nome, recs)
+        recs = [c.r_comando(f"/execute as {{p}} at @s run function terras_partidas:kit/{chave}", titulo="Kit da classe (vai direto para o inventário)",
+                            icone=icone, auto=True),
+                c.r_comando(f"/puffish_skills category unlock {{p}} terras_partidas:{chave}",
+                            titulo="Libera a árvore de habilidades da classe", icone="minecraft:enchanted_book", auto=True),
+                c.r_comando(f"/tag {{p}} add {TAG_CLASSE}", titulo="Classe escolhida", icone="minecraft:name_tag", auto=True)]
         c.quest(chave, nome, 5, dy * 1.25, icone=icone, deps=["caminho"], forma="diamond",
                 descricao=[f"{M}: \"Então você é um {nome}&r.\"", "", texto, "",
                            "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.",
@@ -1497,6 +1545,7 @@ def escolha_de_classe(botao, abrir):
                  {"Cmd": f"/ftbquests change_progress @initiator complete {qid(f'ato1/quest/{chave}')}", "PermLevel": 2, "Type": "COMMAND"},
                  {"Cmd": f"/puffish_skills category unlock @initiator terras_partidas:{chave}", "PermLevel": 2, "Type": "COMMAND"},
                  {"Cmd": f"/tag @initiator add {TAG_CLASSE}", "PermLevel": 2, "Type": "COMMAND"},
+                 {"Cmd": f"/execute as @initiator at @s run function terras_partidas:kit/{chave}", "PermLevel": 2, "Type": "COMMAND"},
                  {"Cmd": "/playsound minecraft:ui.toast.challenge_complete master @initiator ~ ~ ~ 1 1", "PermLevel": 2, "Type": "COMMAND"},
                  abrir("escolhida")]
         falas.append({
@@ -1512,7 +1561,7 @@ def escolha_de_classe(botao, abrir):
                            {"Cmd": "/ftbquests open_book", "ExecAsUser": Raw("1b"), "PermLevel": 0, "Type": "COMMAND"}])],
         "Label": "escolhida", "Name": "Caminho escolhido", "Priority": -1,
         "Texts": [{"Text": "Ótima escolha, @initiator.\\n\\n"
-                           "Abra o livro de missões e pegue as recompensas das primeiras missões: lá está o seu kit de classe. "
+                           "Seu kit de classe já está no seu inventário. "
                            "Depois, siga as missões. Eu vou estar por aqui sempre que você quiser conversar."}],
     })
     return falas

@@ -46,11 +46,11 @@ Embeddium, Oculus (shaders), FerriteCore, ModernFix, ImmediatelyFast, Entity Cul
 O livro de missões abre pelo botão do FTB Quests no inventário. O Ato 1 tem 23 missões:
 
 1. **O Chamado**: carta do Mestre Vellan explicando a história e o combate do Epic Fight. Dá o livro da esquiva "Rolar".
-2. **Escolha seu Caminho**: o jogador escolhe **uma** classe entre 5, e as outras ficam bloqueadas. Cada classe dá um kit:
+2. **Escolha seu Caminho**: o jogador escolhe **uma** classe entre 5, e as outras ficam bloqueadas. O kit vai **direto para o inventário**, pela função `terras_partidas:kit/<classe>`. A função roda tanto pelo botão do Mestre Vellan quanto pela recompensa automática da missão, e tem uma trava (`tp_kit_recebido`) contra kit duplicado. Os kits:
    - **Guerreiro**: espada longa, armadura de malha completa e poções de força
    - **Tanque**: escudo, capacete, peitoral e calça de ferro, lança e a técnica Aparar
    - **Assassino**: duas adagas com Afiação I, armadura leve, 3 poções de velocidade, 4 pérolas do End e a esquiva Passo
-   - **Mago**: livro de feitiços **já inscrito** com Bola de Fogo II, Míssil Mágico II, Estilhaço de Gelo e Cura, bengala do artífice, roupa completa de mago andarilho, Mesa de Inscrição e pergaminhos extras. Os feitiços do livro não acabam, só gastam mana. Os pergaminhos soltos são de uso único, a não ser que sejam gravados no livro na Mesa de Inscrição.
+   - **Mago**: livro de feitiços **já inscrito** com Bola de Fogo II, Míssil Mágico II, Estilhaço de Gelo e Cura, que chega **equipado no espaço do livro** (`curios replace spellbook`), roupa completa de mago andarilho, Mesa de Inscrição e pergaminhos extras. Os feitiços do livro não acabam, só gastam mana. Os pergaminhos soltos são de uso único, a não ser que sejam gravados no livro na Mesa de Inscrição.
    - **Caçador**: arco com Força II, 128 flechas, armadura de couro completa e adaga
 3. **Trilha de sobrevivência**: ferramentas de ferro, mochila, dormir numa cama e achar uma vila.
 4. **Trilha de combate**: derrotar 10 zumbis e 10 esqueletos.
@@ -198,7 +198,7 @@ O pacote de recursos `pack/config/openloader/resources/terras_partidas_ptbr/` tr
 
 ## Mestre Vellan no mundo
 
-O Mestre Vellan é um NPC do Easy NPC que **aparece 3 blocos na frente do jogador** uns 5 segundos depois de ele entrar no mundo pela primeira vez, com o título "SealCraft" na tela. Uma conquista invisível (`terras_partidas:primeira_entrada`) dispara as funções em `functions/boas_vindas/`.
+O Mestre Vellan é um NPC do Easy NPC que **aparece 3 blocos na frente do jogador** (ou 2, ou no lugar do próprio jogador, se tiver bloco no caminho; ver `functions/vellan/aparecer.mcfunction`) uns 5 segundos depois de ele entrar no mundo pela primeira vez, com o título "SealCraft" na tela. Uma conquista invisível (`terras_partidas:primeira_entrada`) dispara as funções em `functions/boas_vindas/`.
 - **Escolha de classe:** a primeira conversa é a tela de escolha de classe. Cada classe tem uma página de prós e contras e um botão "Escolher" que:
   - marca como completas as missões "O Chamado", "Escolha seu Caminho" e a da classe;
   - libera a árvore de habilidades;
@@ -279,7 +279,8 @@ As posições das missões são calculadas pelo gerador (`organizar()` em `tools
 
 - **Shaders:** o **Complementary Reimagined** já vem instalado e ligado num perfil novo. Ele deixa a água, o céu, as nuvens, as sombras e as luzes bem mais bonitos.
   - **Desligar:** aperte **F7**, ou vá em **Opções > Configurações de vídeo > Pacotes de shaders** e escolha "Desligado". Lá dá pra baixar a qualidade se o PC sofrer.
-  - **Primeira vez:** os padrões ficam em `pack/config/defaultoptions/extra/config/oculus.properties` e só valem se o arquivo ainda não existir. Quem já jogou antes liga pela tela de shaders.
+  - **Configuração:** `pack/config/oculus.properties` vem direto no pacote. Antes ela vinha pelo Default Options, mas o Oculus cria o arquivo antes e o shader ficava desligado.
+- **Aviso de "recursos experimentais":** o Minecraft mostra esse aviso em todo mundo com geração de terreno de mods (Terralith, dimensões, estruturas). Não é erro. O mod Experimental Settings Disabler esconde o aviso.
 - **Fresh Animations:** pacote de recursos que anima os monstros e animais normais (piscar, respirar, andar de verdade). Fica ativo por padrão (`pack/config/defaultoptions/options.txt`) e pode ser tirado em **Opções > Pacotes de recursos**.
 - **Os dois são só do lado do jogador.** O servidor não baixa nenhum deles.
 
