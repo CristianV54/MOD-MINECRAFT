@@ -18,7 +18,7 @@
 			icon: "minecraft:obsidian"
 			shape: "gear"
 			size: 2.0d
-			description: ["&6Mestre Vellan&r: \"Os últimos fragmentos atravessaram uma fenda e caíram no &cNether&r.\"", "", "&o\"Lá embaixo, três criaturas forjadas no fogo guardam cada uma um pedaço do Selo. E o calor dos fragmentos está acordando algo que deveria continuar dormindo...\"", "", "Construa um portal: uma moldura de obsidiana de 4 blocos de largura por 5 de altura, contando a moldura (o buraco do meio fica 2x3). Acenda com isqueiro e entre no Nether.", "", "&7Dica: use alguma peça de ouro na armadura. Os piglins não atacam quem usa ouro.&r", "", "&7Pegue a recompensa já dentro do Nether: ela mostra no chat as coordenadas da fortaleza mais próxima.&r"]
+			description: ["&6Mestre Vellan&r: \"Os últimos fragmentos atravessaram uma fenda e caíram no &cNether&r.\"", "", "&o\"Lá embaixo, três criaturas forjadas no fogo guardam três pedaços do Selo. O quarto se misturou à energia dos esqueletos wither e só aparecerá quando o Wither despertar.\"", "", "Construa um portal: uma moldura de obsidiana de 4 blocos de largura por 5 de altura, contando a moldura (o buraco do meio fica 2x3). Acenda com isqueiro e entre no Nether.", "", "&7Dica: use alguma peça de ouro na armadura. Os piglins não atacam quem usa ouro.&r", "", "&7Pegue a recompensa já dentro do Nether: ela mostra no chat as coordenadas da fortaleza mais próxima.&r"]
 			dependencies: ["5A0236B98D30AC09"]
 			tasks: [
 				{
@@ -113,6 +113,7 @@
 					type: "item"
 					item: "minecraft:blaze_rod"
 					count: 8L
+					title: "Obter 8 varas de blaze"
 				}
 			]
 			rewards: [
@@ -361,7 +362,7 @@
 				{
 					id: "739BAA4CD0D8AA35"
 					type: "checkmark"
-					title: "Receber as Cinzas Flamejantes"
+					title: "Obter as Cinzas Flamejantes"
 				}
 			]
 			rewards: [
@@ -489,6 +490,7 @@
 					item: "minecraft:magma_cream"
 					count: 8L
 					consume_items: true
+					title: "Entregar 8 cremes de magma"
 				}
 			]
 			rewards: [
@@ -640,14 +642,14 @@
 					type: "item"
 					item: "minecraft:wither_skeleton_skull"
 					count: 3L
-					title: "3 crânios de esqueleto wither"
+					title: "Obter 3 crânios de esqueleto wither"
 				}
 				{
 					id: "56FE80E2CE7FB281"
 					type: "item"
 					item: "minecraft:soul_sand"
 					count: 4L
-					title: "4 areias das almas"
+					title: "Obter 4 areias das almas"
 				}
 			]
 			rewards: [
@@ -766,7 +768,7 @@
 			icon: "minecraft:amethyst_shard"
 			shape: "gear"
 			size: 2.0d
-			description: ["&6Mestre Vellan&r: \"Onze fragmentos. O Selo está quase completo... e mesmo assim ele continua pulsando.\"", "", "&o\"Quando o Wither caiu, os fragmentos brilharam e apontaram para cima. Para o céu. Existem dois mundos acima das nuvens, o &bEverbright&o e o &6Everdawn&o, onde os guardiões originais criaram o Selo.\"", "", "&o\"Lá estão as respostas. E, eu temo, os guardiões que criaram o Selo.\"", "", "&dFim do Ato 3. O Ato 4 &7(Além do Céu)&d já está liberado no livro.&r"]
+			description: ["&6Mestre Vellan&r: \"Onze fragmentos. O Selo está quase completo... e mesmo assim ele continua pulsando.\"", "", "&o\"Quando o Wither caiu, os fragmentos brilharam e apontaram para cima. Para o céu. Existem dois mundos acima das nuvens, o &bEverbright&o e o &6Everdawn&o, onde os guardiões originais se refugiaram depois de criar o Selo.\"", "", "&o\"Lá estão as respostas. E, eu temo, os guardiões que criaram o Selo.\"", "", "&dFim do Ato 3. O Ato 4 &7(Além do Céu)&d já está liberado no livro.&r"]
 			dependencies: ["493B1BC37A2277E5"]
 			tasks: [
 				{

@@ -513,7 +513,7 @@
 					type: "item"
 					item: "minecraft:nether_star"
 					count: 1L
-					title: "Ter uma Estrela do Nether"
+					title: "Obter uma Estrela do Nether"
 				}
 			]
 			rewards: [
@@ -787,6 +787,7 @@
 					item: "minecraft:gold_ingot"
 					count: 8L
 					consume_items: true
+					title: "Entregar 8 lingotes de ouro"
 				}
 				{
 					id: "474CEDFA0E1D2345"
@@ -794,6 +795,7 @@
 					item: "minecraft:soul_sand"
 					count: 16L
 					consume_items: true
+					title: "Entregar 16 areias das almas"
 				}
 			]
 			rewards: [

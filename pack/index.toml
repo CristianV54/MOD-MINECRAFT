@@ -30,27 +30,27 @@ hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_1_o_chamado.snbt"
-hash = "6e86d3f2c87980692dff6dd1460eec8492a66fc9911f91f233c05b63458e5a74"
+hash = "65519cf9691e645b64dd82f6fa856cafffee37d68fbd387592d53ee45c499700"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_2_terras_selvagens.snbt"
-hash = "8963cd5a2fb424e708d501e1fe332db0139dec1398c5c0981f68cd9a3e72afde"
+hash = "84777fd024b0e3bd0631efac83bd1cae68660bf67fd75a52f72c8e67a2ec4105"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_3_abismo_e_fogo.snbt"
-hash = "ce90298352e2762997c3fbc25f59481064cd9bd75247df38acfd16fee5f4c033"
+hash = "c7a31a4b9c765a26a10f268b89a5b03adfe6d0390202d8669bab4caf62f58314"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_4_alem_do_ceu.snbt"
-hash = "e3047f971ae9fa3ee7612386b63252217215bdf53ffd2a4606955a3fee83818b"
+hash = "90cafa2da3401aca6153c79fe969ddbd95d22cdcaccdbbc17a46de1e4c51572b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_5_o_fim_do_selo.snbt"
-hash = "d47b15d3917ee8b47726843ab0b30ebc7dcd7c546081322ddff52dfbafdcaaf4"
+hash = "29346b5dbc5e97343a833530c2a2f75eb3072e0dc0213745bd61e18f831a9157"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cacadas.snbt"
-hash = "a3b33ff9b2290c073b57d80533f4f47f63d6bd6e893e7e1bdb9447f000351519"
+hash = "61fcb4cd2ea0d03fdbdc2fce80bf963302064ac9c922c10a947427e8b253d7b7"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -322,11 +322,11 @@ hash = "970037dd3f9ed29bd908dd1551324c9a9fb7ae55dfa9a025c9b107c72ca78bb4"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/easy_npc/preset/humanoid/gabriel.npc.snbt"
-hash = "59828f9f8b7c499a78ade32a8140591b403ae4c6b216a77bc35418b69ea46fcb"
+hash = "55d8689bd4789acbd2e3bb0cfba8d108727dab33f2a7224d7badf6b7d8e3a6ad"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/easy_npc/preset/humanoid/mestre_vellan.npc.snbt"
-hash = "95f01fc12008edec67330fa3da6e11284bd99ff3472dd4108cb038342b2e3bb9"
+hash = "189387c4978eaf92405ced5e484ae3f68d7a8a132f5668c380e4c1f9b3c8daa7"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/boas_vindas/carregar.mcfunction"

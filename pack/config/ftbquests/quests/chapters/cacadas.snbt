@@ -78,7 +78,7 @@
 			icon: "minecraft:sand"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote &cSirok, a Minhoca de Areia&r.", "", "Deixa a &fManopla de Sirok&r, que atira veneno."]
+			description: ["Derrote &cSirok, a Minhoca de Areia&r.", "", "Pode deixar a &fManopla de Sirok&r, que atira veneno."]
 			dependencies: ["24736EAB9CE73BE8"]
 			optional: true
 			tasks: [
@@ -94,13 +94,13 @@
 				{
 					id: "3EEC75168632B2E2"
 					type: "xp_levels"
-					xp_levels: 20
+					xp_levels: 10
 				}
 				{
 					id: "49B31E1DFE38FB2D"
 					type: "item"
 					item: "minecraft:diamond"
-					count: 4
+					count: 2
 				}
 				{
 					id: "60A02293E4AA803F"
@@ -168,7 +168,7 @@
 			icon: "minecraft:chiseled_stone_bricks"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote &cTongbi, o Escultor&r.", "", "Deixa o &fCajado do Escultor&r e as roupas do &fGeomante&r."]
+			description: ["Derrote &cTongbi, o Escultor&r.", "", "Pode deixar o &fCajado do Escultor&r e as roupas do &fGeomante&r."]
 			dependencies: ["2E725A048A4FBC4B"]
 			optional: true
 			tasks: [
@@ -184,13 +184,13 @@
 				{
 					id: "111BF9B2179D50F0"
 					type: "xp_levels"
-					xp_levels: 20
+					xp_levels: 10
 				}
 				{
 					id: "74A77C9882AFEADF"
 					type: "item"
 					item: "minecraft:diamond"
-					count: 4
+					count: 2
 				}
 				{
 					id: "5469FBA0E6FA4F3E"
@@ -216,8 +216,8 @@
 			y: 0.0d
 			subtitle: "Médio: a partir do Ato 3"
 			icon: "minecraft:soul_lantern"
-			description: ["&eO Lich da Noite&r", "", "Um feiticeiro morto-vivo que dispara bolas de fogo azuis e cometas, e se teletransporta pela sala. Não o perca de vista.", "", "Mora no alto da &fTorre do Lich&r.", "&6Médio: a partir do Ato 3&r", "", "&7Pegue a recompensa para ver no chat as coordenadas de onde O Lich da Noite mora.&r"]
-			dependencies: ["3CC89136178E34A5"]
+			description: ["&eO Lich da Noite&r", "", "Um feiticeiro morto-vivo que dispara bolas de fogo azuis e cometas, e se teletransporta pela sala. Não o perca de vista.", "", "Mora no alto da &fTorre do Lich&r.", "&6Médio: a partir do Ato 3&r", "", "&7Pegue a recompensa para ver no chat as coordenadas do local onde o Lich da Noite vive.&r"]
+			dependencies: ["6191703B0919D2E4"]
 			optional: true
 			tasks: [
 				{
@@ -258,7 +258,7 @@
 			icon: "minecraft:soul_lantern"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote &cO Lich da Noite&r.", "", "Deixa a &fÂnima Antiga&r e diamantes."]
+			description: ["Derrote &cO Lich da Noite&r.", "", "Pode deixar a &fÂnima Antiga&r e diamantes."]
 			dependencies: ["7D10FAEEF47DDC04"]
 			optional: true
 			tasks: [
@@ -274,13 +274,13 @@
 				{
 					id: "63AEA573AF867364"
 					type: "xp_levels"
-					xp_levels: 20
+					xp_levels: 15
 				}
 				{
 					id: "59BAF944263F73B2"
 					type: "item"
 					item: "minecraft:diamond"
-					count: 4
+					count: 3
 				}
 				{
 					id: "26A800CE92567074"
@@ -307,7 +307,7 @@
 			subtitle: "Médio: a partir do Ato 3"
 			icon: "minecraft:packed_ice"
 			description: ["&eSkor, o Yeti&r", "", "Um yeti enorme num esconderijo de gelo. Solta nevascas e prende você em cubos de gelo.", "", "Mora nas &fPlanícies Nevadas&r.", "&6Médio: a partir do Ato 3&r", "", "&7Pegue a recompensa para ver no chat as coordenadas de onde Skor mora.&r"]
-			dependencies: ["3CC89136178E34A5"]
+			dependencies: ["6191703B0919D2E4"]
 			optional: true
 			tasks: [
 				{
@@ -348,7 +348,7 @@
 			icon: "minecraft:packed_ice"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote &cSkor, o Yeti&r.", "", "Deixa a &fManopla de Skor&r, que congela o alvo e solta espinhos de gelo."]
+			description: ["Derrote &cSkor, o Yeti&r.", "", "Pode deixar a &fManopla de Skor&r, que congela o alvo e solta espinhos de gelo."]
 			dependencies: ["3A897757C1E4E57F"]
 			optional: true
 			tasks: [
@@ -364,13 +364,13 @@
 				{
 					id: "77B79B1E06DE0987"
 					type: "xp_levels"
-					xp_levels: 20
+					xp_levels: 15
 				}
 				{
 					id: "2BEF02093D5A3FA4"
 					type: "item"
 					item: "minecraft:diamond"
-					count: 4
+					count: 3
 				}
 				{
 					id: "1FC9888477736C0F"
@@ -397,7 +397,7 @@
 			subtitle: "Difícil: a partir do Ato 4"
 			icon: "meetyourfight:dusk_key"
 			description: ["&eRosalyne, Lâmina do Crepúsculo&r", "", "Uma cavaleira de flores e espinhos, rápida e elegante. Use a chave (clique direito) num lugar aberto e ela aparece. A chave é gasta ao chamá-la.", "", "Aparece onde você usar a &fChave do Crepúsculo&r.", "&6Difícil: a partir do Ato 4&r", "", "&7Pegue a recompensa para receber a chave.&r"]
-			dependencies: ["3CC89136178E34A5"]
+			dependencies: ["75ACF07311A3832B"]
 			optional: true
 			tasks: [
 				{
@@ -422,7 +422,7 @@
 			icon: "meetyourfight:dusk_key"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote &cRosalyne, Lâmina do Crepúsculo&r.", "", "Deixa a &fFlor Violeta&r."]
+			description: ["Derrote &cRosalyne, Lâmina do Crepúsculo&r.", "", "Pode deixar a &fFlor Violeta&r."]
 			dependencies: ["15F15CBC2B90DDDF"]
 			optional: true
 			tasks: [
@@ -438,18 +438,19 @@
 				{
 					id: "37B9B4311C5A198E"
 					type: "xp_levels"
-					xp_levels: 20
+					xp_levels: 18
 				}
 				{
 					id: "72A3332DB480B92F"
 					type: "item"
 					item: "minecraft:diamond"
-					count: 4
+					count: 3
 				}
 				{
 					id: "6D00FEF82150F8E0"
 					type: "item"
 					item: "minecraft:netherite_scrap"
+					count: 2
 				}
 				{
 					id: "0AD6CF2521E04BA5"
@@ -471,7 +472,7 @@
 			subtitle: "Difícil: a partir do Ato 4"
 			icon: "minecraft:magma_block"
 			description: ["&eAshlord, o Dragão Infernal&r", "", "Um dragão de fogo no alto de uma torre, protegido por guardas esqueletos em chamas. Quando a vida dele baixa, ele muda para uma segunda forma ainda maior: afaste-se, beba uma poção e volte.", "", "Mora em &fplanícies, selvas ou pântanos&r.", "&6Difícil: a partir do Ato 4&r", "", "&7Pegue a recompensa para ver no chat as coordenadas de onde Ashlord mora.&r"]
-			dependencies: ["3CC89136178E34A5"]
+			dependencies: ["75ACF07311A3832B"]
 			optional: true
 			tasks: [
 				{
@@ -512,7 +513,7 @@
 			icon: "minecraft:magma_block"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote &cAshlord, o Dragão Infernal&r.", "", "Deixa &fossos de dragão&r, para fazer uma armadura de ossos de dragão."]
+			description: ["Derrote &cAshlord, o Dragão Infernal&r.", "", "Pode deixar &fossos de dragão&r para fabricar uma armadura de ossos de dragão."]
 			dependencies: ["7F1ADF8C42D8F4D9"]
 			optional: true
 			tasks: [
@@ -528,7 +529,7 @@
 				{
 					id: "0EF199CB15EFFB2C"
 					type: "xp_levels"
-					xp_levels: 20
+					xp_levels: 18
 				}
 				{
 					id: "27A50D6491D308C5"
@@ -540,6 +541,7 @@
 					id: "15DB0EFDDA2F25FE"
 					type: "item"
 					item: "minecraft:netherite_scrap"
+					count: 2
 				}
 				{
 					id: "0363D545891C5943"
@@ -560,8 +562,8 @@
 			y: 4.0d
 			subtitle: "Muito difícil: a partir do Ato 5"
 			icon: "minecraft:suspicious_sand"
-			description: ["&eO Remanescente Antigo&r", "", "Uma fera-faraó gigante enterrada na areia. Use o &fpincel&r na &fareia suspeita&r dentro da pirâmide para achar o &fColar do Deserto&r e acordá-la. &cA pirâmide costuma ficar longe: vá de dragão.&r", "", "Mora numa &fpirâmide amaldiçoada no deserto&r.", "&6Muito difícil: a partir do Ato 5&r", "", "&7Pegue a recompensa para ver no chat as coordenadas de onde O Remanescente Antigo mora.&r"]
-			dependencies: ["3CC89136178E34A5"]
+			description: ["&eO Remanescente Antigo&r", "", "Uma fera-faraó gigante enterrada na areia. Use o &fpincel&r na &fareia suspeita&r dentro da pirâmide para achar o &fColar do Deserto&r e acordá-la. &cA pirâmide costuma ficar longe: vá de dragão.&r", "", "Mora numa &fpirâmide amaldiçoada no deserto&r.", "&6Muito difícil: a partir do Ato 5&r", "", "&7Pegue a recompensa para ver no chat as coordenadas do local onde o Remanescente Antigo está.&r"]
+			dependencies: ["5D30ADB7458E563B"]
 			optional: true
 			tasks: [
 				{
@@ -595,7 +597,7 @@
 			icon: "minecraft:suspicious_sand"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote &cO Remanescente Antigo&r.", "", "Deixa a &fTempestade de Areia na Garrafa&r e metal antigo."]
+			description: ["Derrote &cO Remanescente Antigo&r.", "", "Pode deixar a &fTempestade de Areia na Garrafa&r e metal antigo."]
 			dependencies: ["4B312756499A9781"]
 			optional: true
 			tasks: [
@@ -623,6 +625,7 @@
 					id: "560E28C03B1334D8"
 					type: "item"
 					item: "minecraft:netherite_scrap"
+					count: 3
 				}
 				{
 					id: "020A2281F067B5FC"
@@ -644,7 +647,7 @@
 			subtitle: "Muito difícil: depois da história"
 			icon: "minecraft:soul_lantern"
 			description: ["&eMaledictus&r", "", "Um cavaleiro amaldiçoado selado no gelo. Dê energia de redstone à &fLápide Amaldiçoada&r (uma alavanca ou tocha de redstone ao lado) e clique nela com o botão direito.", "", "Mora numa &fprisão congelada&r.", "&6Muito difícil: depois da história&r", "", "&7Pegue a recompensa para ver no chat as coordenadas de onde Maledictus mora.&r"]
-			dependencies: ["3CC89136178E34A5"]
+			dependencies: ["5D30ADB7458E563B"]
 			optional: true
 			tasks: [
 				{
@@ -684,7 +687,7 @@
 			icon: "minecraft:soul_lantern"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote &cMaledictus&r.", "", "Deixa o &flingote de Cursium&r."]
+			description: ["Derrote &cMaledictus&r.", "", "Pode deixar o &fLingote de Cursium&r."]
 			dependencies: ["13FC3837529000E6"]
 			optional: true
 			tasks: [
@@ -712,6 +715,7 @@
 					id: "7DB20D4F696EA313"
 					type: "item"
 					item: "minecraft:netherite_scrap"
+					count: 3
 				}
 				{
 					id: "2AF7D4F258066944"
@@ -733,7 +737,7 @@
 			subtitle: "Muito difícil: depois da história"
 			icon: "minecraft:nautilus_shell"
 			description: ["&eNerakyss, o Kraken&r", "", "Um kraken colossal preso a um navio pirata afundado. Piratas, canhões e tentáculos que saem do chão. Leve blocos, comida e saiba por onde fugir.", "", "Mora no &foceano profundo&r.", "&6Muito difícil: depois da história&r", "", "&7Pegue a recompensa para ver no chat as coordenadas de onde Nerakyss mora.&r"]
-			dependencies: ["3CC89136178E34A5"]
+			dependencies: ["5D30ADB7458E563B"]
 			optional: true
 			tasks: [
 				{
@@ -774,7 +778,7 @@
 			icon: "minecraft:nautilus_shell"
 			shape: "octagon"
 			size: 1.5d
-			description: ["Derrote &cNerakyss, o Kraken&r.", "", "Deixa o &fdente do kraken&r, para fazer um tridente que puxa os inimigos."]
+			description: ["Derrote &cNerakyss, o Kraken&r.", "", "Pode deixar o &fDente do Kraken&r para fabricar um tridente que puxa os inimigos."]
 			dependencies: ["3978E3AF7FAE3C63"]
 			optional: true
 			tasks: [
@@ -802,6 +806,7 @@
 					id: "0A280F5080B1AB7B"
 					type: "item"
 					item: "minecraft:netherite_scrap"
+					count: 3
 				}
 				{
 					id: "02293D32B0762327"
@@ -910,7 +915,7 @@
 				{
 					id: "4FA7651059237ADB"
 					type: "xp_levels"
-					xp_levels: 100
+					xp_levels: 50
 				}
 			]
 		}

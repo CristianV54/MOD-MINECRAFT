@@ -18,7 +18,7 @@
 			icon: "minecraft:writable_book"
 			shape: "gear"
 			size: 2.0d
-			description: ["&o\"Caçador,", "", "&oHá trezentos anos, sete guardiões prenderam um mal antigo dentro de um cristal: o &dSelo&r&o.", "&oNa última lua cheia, o Selo se partiu. Os fragmentos caíram pelo mundo e cada um corrompeu uma criatura poderosa.", "", "&oSe juntarmos os fragmentos antes que o mal desperte, ainda há esperança.", "&oA Ordem dos Caçadores precisa de você.\"", "", "— &6Mestre Vellan&r, Mestre da Ordem", "{@pagebreak}", "&eComo usar este livro:&r", "• Cada missão mostra o objetivo e a recompensa.", "• Clique em uma missão para ver os detalhes e pegar a recompensa.", "• Missões novas aparecem conforme você avança.", "", "&eCombate:&r este mundo usa o &cEpic Fight&r. Aperte &eR&r para alternar entre o modo normal e o modo de combate.", "As outras teclas ficam em &eOpções > Controles&r, na seção do Epic Fight.", "", "&eOutras teclas:&r &eK&r árvores de habilidades, &eJ&r movimentos do Epic Fight, &eV&r lança o feitiço escolhido, &eZ&r roda de feitiços (ou &eCtrl&r + rolar o mouse), &eF7&r liga e desliga os shaders.", "{@pagebreak}", "&eO Mestre Vellan:&r ele aparece &fna sua frente&r assim que você entra no mundo pela primeira vez.", "Clique nele com o botão direito para conversar e escolher sua classe. Ele também comenta cada etapa da história e dá dicas.", "&7Se você mudar de base, a missão \"Chamar o Mestre\" traz ele até você.&r"]
+			description: ["&o\"Caçador,", "", "&oHá trezentos anos, sete guardiões prenderam um mal antigo dentro de um cristal: o &dSelo&r&o.", "&oNa última lua cheia, o Selo se partiu. Os fragmentos caíram pelo mundo e cada um corrompeu uma criatura poderosa.", "", "&oSe juntarmos os fragmentos antes que o mal desperte, ainda há esperança.", "&oA Ordem dos Caçadores precisa de você.\"", "", "— &6Mestre Vellan&r, Mestre da Ordem", "{@pagebreak}", "&eComo usar este livro:&r", "• Cada missão mostra o objetivo e a recompensa.", "• Clique em uma missão para ver os detalhes e concluir a tarefa.", "• Depois de concluída, pegue a recompensa.", "• Missões novas aparecem conforme você avança.", "", "&eCombate:&r este mundo usa o &cEpic Fight&r. Aperte &eR&r para alternar entre o modo normal e o modo de combate.", "As outras teclas ficam em &eOpções > Controles&r, na seção do Epic Fight.", "", "&eOutras teclas:&r &eK&r árvores de habilidades, &eJ&r movimentos do Epic Fight, &eV&r lança o feitiço escolhido, &eZ&r roda de feitiços (ou &eCtrl&r + rolar o mouse), &eF7&r liga e desliga os shaders.", "{@pagebreak}", "&eO Mestre Vellan:&r ele aparece &fna sua frente&r assim que você entra no mundo pela primeira vez.", "Clique nele com o botão direito para conversar e escolher sua classe. Ele também comenta cada etapa da história e dá dicas.", "&7Se você mudar de base, a missão \"Chamar o Mestre\" traz ele até você.&r"]
 			tasks: [
 				{
 					id: "4A7E5C2F98DD01D9"
@@ -49,6 +49,7 @@
 							skill: "epicfight:roll"
 						}
 					}
+					title: "Livro de habilidade: Rolar (use com o botão direito para aprender o movimento)"
 				}
 			]
 		}
@@ -435,7 +436,7 @@
 			x: 8.0d
 			y: 1.0d
 			icon: "sophisticatedbackpacks:backpack"
-			description: ["O inventário vai encher rápido. Faça uma &fmochila&r.", "Dá para melhorar ela depois (cobre, ferro, ouro...)."]
+			description: ["O inventário vai encher rápido. Faça uma &fmochila&r.", "Depois, você poderá melhorá-la com cobre, ferro, ouro e outros materiais."]
 			dependencies: ["5A8FBE105E9C4E06"]
 			tasks: [
 				{
@@ -549,7 +550,8 @@
 				{
 					id: "10BC1BE7EA2B7BAD"
 					type: "item"
-					item: "minecraft:golden_apple"
+					item: "minecraft:golden_carrot"
+					count: 2
 				}
 			]
 		}
@@ -712,6 +714,7 @@
 					item: "minecraft:bone"
 					count: 8L
 					consume_items: true
+					title: "Entregar 8 ossos"
 				}
 			]
 			rewards: [
@@ -737,7 +740,7 @@
 					type: "item"
 					item: "minecraft:iron_chestplate"
 					count: 1L
-					title: "Ter um peitoral de ferro"
+					title: "Obter um peitoral de ferro"
 				}
 			]
 			rewards: [
@@ -853,6 +856,7 @@
 					item: "minecraft:gold_ingot"
 					count: 4L
 					consume_items: true
+					title: "Entregar 4 lingotes de ouro"
 				}
 			]
 			rewards: [
@@ -876,7 +880,7 @@
 				{
 					id: "04225196190925C8"
 					type: "checkmark"
-					title: "Pegar o mapa"
+					title: "Obter o mapa"
 				}
 			]
 			rewards: [

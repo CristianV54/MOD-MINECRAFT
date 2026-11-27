@@ -226,8 +226,11 @@ class Capitulo:
             t["title"] = titulo
         return t
 
-    def r_skill(self, skill):
-        return self.r_item(livro_skill(skill))
+    def r_skill(self, skill, titulo=None):
+        r = self.r_item(livro_skill(skill))
+        if titulo:
+            r["title"] = titulo
+        return r
 
     # missão
     def quest(self, chave, titulo, x, y, descricao, tarefas, recompensas=(), deps=(),
@@ -327,7 +330,8 @@ def ato1():
                 "{@pagebreak}",
                 "&eComo usar este livro:&r",
                 "• Cada missão mostra o objetivo e a recompensa.",
-                "• Clique em uma missão para ver os detalhes e pegar a recompensa.",
+                "• Clique em uma missão para ver os detalhes e concluir a tarefa.",
+                "• Depois de concluída, pegue a recompensa.",
                 "• Missões novas aparecem conforme você avança.",
                 "",
                 "&eCombate:&r este mundo usa o &cEpic Fight&r. Aperte &eR&r para alternar entre o modo normal e o modo de combate.",
@@ -341,7 +345,7 @@ def ato1():
             ],
             tarefas=[c.t_check("Li a carta do Mestre")],
             recompensas=[c.r_item("minecraft:bread", 8), c.r_item("minecraft:torch", 16),
-                         c.r_item(livro_skill("epicfight:roll"))])
+                         c.r_skill("epicfight:roll", titulo="Livro de habilidade: Rolar (use com o botão direito para aprender o movimento)")])
 
     c.quest("chamar_mestre", "Chamar o Mestre", 0, 2.5, icone="minecraft:bell", deps=["chamado"],
             forma="circle", tamanho=0.75, optional=True, can_repeat=True,
@@ -470,7 +474,7 @@ def ato1():
     c.quest("mochila", "Uma Mochila de Verdade", 10, -3.5, icone="sophisticatedbackpacks:backpack",
             deps=["ferro"],
             descricao=["O inventário vai encher rápido. Faça uma &fmochila&r.",
-                       "Dá para melhorar ela depois (cobre, ferro, ouro...)."],
+                       "Depois, você poderá melhorá-la com cobre, ferro, ouro e outros materiais."],
             tarefas=[c.t_item("sophisticatedbackpacks:backpack")],
             recompensas=[c.r_xp(2), c.r_item("minecraft:leather", 4)])
 
@@ -495,7 +499,7 @@ def ato1():
                        "", "No Epic Fight, &eesquivar&r e &edefender&r gasta a barra de fôlego. Não ataque sem parar: espere a abertura do inimigo.",
                        "", "Derrote &c10 zumbis&r."],
             tarefas=[c.t_matar("minecraft:zombie", 10, "Derrotar 10 zumbis")],
-            recompensas=[c.r_xp(3), c.r_item("minecraft:golden_apple")])
+            recompensas=[c.r_xp(3), c.r_item("minecraft:golden_carrot", 2)])
 
     c.quest("ossos", "Ossos Inquietos", 10, 2.5, icone="minecraft:bone",
             deps=["treino"],
@@ -527,7 +531,7 @@ def ato1():
             deps=["isca"], forma="circle", tamanho=0.75, optional=True,
             can_repeat=True,
             descricao=["Perdeu a luta? Troque &f8 ossos&r por outra Isca Fóssil.", "Pode repetir quantas vezes precisar."],
-            tarefas=[c.t_item("minecraft:bone", 8, consumir=True)],
+            tarefas=[c.t_item("minecraft:bone", 8, consumir=True, titulo="Entregar 8 ossos")],
             recompensas=[c.r_item("meetyourfight:fossil_bait")])
 
     # ---- Chefe 2: Bellringer
@@ -537,7 +541,7 @@ def ato1():
             descricao=[f"{M}: \"Muito bem. O segundo fragmento está preso a um espírito que toca um sino nas ruínas. Cada badalada atrai a morte.\"",
                        "", "Pegue o &fSino Assombrado&r. Tocá-lo invoca o &cBellringer&r.",
                        "", "&7Equipamento recomendado: ferro ou diamante. Ele é rápido: guarde a esquiva para quando ele avançar.&r"],
-            tarefas=[c.t_item("minecraft:iron_chestplate", titulo="Ter um peitoral de ferro")],
+            tarefas=[c.t_item("minecraft:iron_chestplate", titulo="Obter um peitoral de ferro")],
             recompensas=[c.r_item("meetyourfight:haunted_bell"), c.r_item(pocao("minecraft:healing"), 3)])
 
     c.quest("bellringer", "Chefe: Bellringer", 20, 0, icone="meetyourfight:haunted_bell",
@@ -550,7 +554,7 @@ def ato1():
     c.quest("sino_extra", "Outro Sino", 20, 2, icone="meetyourfight:haunted_bell",
             deps=["sino"], forma="circle", tamanho=0.75, optional=True, can_repeat=True,
             descricao=["Perdeu a luta? Troque &f4 lingotes de ouro&r por outro Sino Assombrado."],
-            tarefas=[c.t_item("minecraft:gold_ingot", 4, consumir=True)],
+            tarefas=[c.t_item("minecraft:gold_ingot", 4, consumir=True, titulo="Entregar 4 lingotes de ouro")],
             recompensas=[c.r_item("meetyourfight:haunted_bell")])
 
     # ---- Chefe 3: Ferrous Wroughtnaut
@@ -560,7 +564,7 @@ def ato1():
             descricao=[f"{M}: \"Os aldeões falam de um &fcavaleiro de metal&r que guarda uma câmara no subsolo. Nunca saiu de lá, nunca dormiu... e agora carrega um fragmento do Selo.\"",
                        "", "&o\"Um minerador desenhou este mapa antes de fugir. O X marca a entrada.\"",
                        "", "&7Segure o mapa na mão para ver o caminho. O mapa pode demorar alguns segundos para aparecer.&r"],
-            tarefas=[c.t_check("Pegar o mapa")],
+            tarefas=[c.t_check("Obter o mapa")],
             recompensas=[c.r_mapa("camara_forjada", "Mapa: Câmara Forjada"),
                          c.r_item(pocao("minecraft:night_vision"), 2)])
 
@@ -625,7 +629,7 @@ def ato2():
                 "• &3O Labirinto de Gelo&r, um mar congelado cheio de navios fantasmas.",
                 "• &5A Mesa da Fortuna&r, onde um espírito aposta almas.",
                 "",
-                "&o\"Use o planador para atravessar montanhas e vales. Ele gasta fôlego, então pouse antes que acabe.\"",
+                "&o\"Use o planador para atravessar montanhas e vales. Ele gasta fôlego, então pouse antes que a barra acabe.\"",
                 "",
                 "&7Você pode fazer as quatro frentes na ordem que quiser.&r",
             ],
@@ -657,7 +661,7 @@ def ato2():
             descricao=[f"{M}: \"Nas terras nevadas, um caçador viu uma criatura gigante dormindo ao lado de um cristal de gelo. Ele não voltou para contar o resto.\"",
                        "", "&o\"Este mapa marca onde ele foi visto pela última vez.\"",
                        "", "&7Leve armadura, comida e tochas. É uma viagem longa.&r"],
-            tarefas=[c.t_check("Pegar o mapa do gelo")],
+            tarefas=[c.t_check("Obter o mapa do gelo")],
             recompensas=[c.r_mapa("covil_frostmaw", "Mapa: Covil do Frostmaw"), c.r_item("minecraft:cooked_salmon", 12)])
 
     c.quest("covil", "O Covil Congelado", 7, 2.5, icone="minecraft:packed_ice", deps=["gelo"],
@@ -679,7 +683,7 @@ def ato2():
             subtitulo="Frente da Savana",
             descricao=[f"{M}: \"Nas savanas vive a tribo dos &6Umvuthana&r, guerreiros mascarados. Eles servem a &6Umvuthi, o Pássaro do Sol&r, e agora o fragmento brilha no peito dele.\"",
                        "", "&o\"Cuidado: eles atacam em bando e usam lanças e magia de cura.\""],
-            tarefas=[c.t_check("Pegar o mapa da savana")],
+            tarefas=[c.t_check("Obter o mapa da savana")],
             recompensas=[c.r_mapa("bosque_umvuthana", "Mapa: Bosque dos Umvuthana"), c.r_item(pocao("minecraft:fire_resistance"), 2)])
 
     c.quest("bosque", "O Bosque dos Umvuthana", 7, 5.5, icone="minecraft:acacia_log", deps=["savana"],
@@ -701,7 +705,7 @@ def ato2():
             descricao=[f"{M}: \"Existe um mar onde o gelo forma corredores sem fim: o &3Labirinto de Gelo&r. Navios piratas congelados estão presos lá há séculos.\"",
                        "", "&o\"A capitã de um desses navios voltou como fantasma. O fragmento a mantém presa a este mundo.\"",
                        "", "&7Leve um barco. A água é gelada e cheia de criaturas das profundezas.&r"],
-            tarefas=[c.t_check("Pegar o mapa do mar")],
+            tarefas=[c.t_check("Obter o mapa do mar")],
             recompensas=[c.r_mapa("labirinto_de_gelo", "Mapa: Labirinto de Gelo"), c.r_item("minecraft:oak_boat"),
                          c.r_item(pocao("minecraft:water_breathing"), 2)])
 
@@ -714,7 +718,7 @@ def ato2():
             descricao=[f"{M} &7(por carta)&r: \"Encontrei nos arquivos da Ordem: a capitã atende ao som de um &fChifre de Concha&r. Mandei um para você.\"",
                        "", "Use o Chifre de Concha &fperto da água, dentro do Labirinto de Gelo&r, para invocar a capitã.",
                        "", "&7Ela também aparece às vezes em baús dos navios congelados.&r"],
-            tarefas=[c.t_check("Receber o Chifre de Concha")],
+            tarefas=[c.t_check("Obter o Chifre de Concha")],
             recompensas=[c.r_item("aquamirae:shell_horn"), c.r_item(pocao("minecraft:healing"), 3)])
 
     c.quest("cornelia", "Chefe: Capitã Cornelia", -13, 2.5, icone="aquamirae:shell_horn",
@@ -728,7 +732,7 @@ def ato2():
     c.quest("corneta_extra", "Outro Chifre", -13, 4.5, icone="aquamirae:shell_horn",
             deps=["corneta"], forma="circle", tamanho=0.75, optional=True, can_repeat=True,
             descricao=["Perdeu a luta? Troque &f6 lingotes de ouro&r por outro Chifre de Concha."],
-            tarefas=[c.t_item("minecraft:gold_ingot", 6, consumir=True)],
+            tarefas=[c.t_item("minecraft:gold_ingot", 6, consumir=True, titulo="Entregar 6 lingotes de ouro")],
             recompensas=[c.r_item("aquamirae:shell_horn")])
 
     c.quest("mae_labirinto", "A Mãe do Labirinto", -10, 0.5, icone="minecraft:spider_eye",
@@ -741,10 +745,10 @@ def ato2():
     # ---- Frente 4: Mesa da Fortuna (Dame Fortuna)
     c.quest("fortuna", "A Aposta do Diabo", -4, 5.5, icone="meetyourfight:devils_ante", deps=["asas"],
             subtitulo="Frente da Fortuna",
-            descricao=[f"{M}: \"Esta é a mais traiçoeira. &5Dame Fortuna&r é um espírito que aposta com a sorte. Ela ganhou um fragmento num jogo de cartas.\"",
+            descricao=[f"{M}: \"Esta é a mais traiçoeira. &5Dame Fortuna&r é um espírito que aposta com almas e sorte. Ela ganhou um fragmento num jogo de cartas.\"",
                        "", "&o\"Só aceito te dar a ficha de aposta quando você estiver protegido. Volte com armadura de diamante.\"",
                        "", "&7Equipamento recomendado: diamante.&r"],
-            tarefas=[c.t_item("minecraft:diamond_chestplate", titulo="Ter um peitoral de diamante")],
+            tarefas=[c.t_item("minecraft:diamond_chestplate", titulo="Obter um peitoral de diamante")],
             recompensas=[c.r_item("meetyourfight:devils_ante"), c.r_item(pocao("minecraft:regeneration"), 2)])
 
     c.quest("dame_fortuna", "Chefe: Dame Fortuna", -7, 5.5, icone="meetyourfight:devils_ante",
@@ -758,7 +762,7 @@ def ato2():
     c.quest("ante_extra", "Nova Aposta", -7, 7.5, icone="meetyourfight:devils_ante",
             deps=["fortuna"], forma="circle", tamanho=0.75, optional=True, can_repeat=True,
             descricao=["Perdeu a aposta? Troque &f2 diamantes&r por outra ficha."],
-            tarefas=[c.t_item("minecraft:diamond", 2, consumir=True)],
+            tarefas=[c.t_item("minecraft:diamond", 2, consumir=True, titulo="Entregar 2 diamantes")],
             recompensas=[c.r_item("meetyourfight:devils_ante")])
 
     # ---- Final do Ato 2
@@ -842,7 +846,7 @@ def ato2():
                 descricao=[f"Você escolheu o {nome}&r.",
                            "",
                            "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.",
-                           "&7O ovo cai como areia: coloque em cima de um bloco firme.&r",
+                           "&7O ovo funciona como areia: coloque em cima de um bloco firme.&r",
                            "",
                            f"&cImportante:&r o ambiente em volta decide se o ovo continua deste tipo. Até ele chocar, deixe-o perto de &f{habitat}&r. Os blocos que vieram junto servem para isso.",
                            "",
@@ -892,7 +896,7 @@ def ato3():
             descricao=[
                 f"{M}: \"Os últimos fragmentos atravessaram uma fenda e caíram no &cNether&r.\"",
                 "",
-                "&o\"Lá embaixo, três criaturas forjadas no fogo guardam cada uma um pedaço do Selo. E o calor dos fragmentos está acordando algo que deveria continuar dormindo...\"",
+                "&o\"Lá embaixo, três criaturas forjadas no fogo guardam três pedaços do Selo. O quarto se misturou à energia dos esqueletos wither e só aparecerá quando o Wither despertar.\"",
                 "",
                 "Construa um portal: uma moldura de obsidiana de 4 blocos de largura por 5 de altura, contando a moldura (o buraco do meio fica 2x3). Acenda com isqueiro e entre no Nether.",
                 "",
@@ -914,7 +918,7 @@ def ato3():
     c.quest("blaze", "Varas de Blaze", -6, -3, icone="minecraft:blaze_rod", deps=["fortaleza"], optional=True,
             descricao=["Derrote blazes e junte &f8 varas de blaze&r.",
                        "&7Guarde algumas: elas vão ser importantes no fim da jornada.&r"],
-            tarefas=[c.t_item("minecraft:blaze_rod", 8)],
+            tarefas=[c.t_item("minecraft:blaze_rod", 8, titulo="Obter 8 varas de blaze")],
             recompensas=[c.r_xp(5), c.r_item("minecraft:ender_pearl", 4)])
 
     c.quest("netherita", "Metal das Profundezas", 3, -3, icone="minecraft:netherite_ingot", deps=["portal"],
@@ -960,7 +964,7 @@ def ato3():
     c.quest("cinzas", "Cinzas Flamejantes", 10, 3, icone="cataclysm:burning_ashes", deps=["arena_achar"],
             descricao=[f"{M} &7(por carta)&r: \"Mandei as &fCinzas Flamejantes&r. Use-as no &fAltar de Fogo&r, no centro da arena, para chamar Ignis.\"",
                        "", "&7Equipamento recomendado: diamante encantado ou netherita. Leve muitas poções de resistência ao fogo.&r"],
-            tarefas=[c.t_check("Receber as Cinzas Flamejantes")],
+            tarefas=[c.t_check("Obter as Cinzas Flamejantes")],
             recompensas=[c.r_item("cataclysm:burning_ashes"), c.r_item(pocao("minecraft:long_fire_resistance"), 2),
                          c.r_item(pocao("minecraft:strong_healing"), 3)])
 
@@ -975,7 +979,7 @@ def ato3():
     c.quest("cinzas_extra", "Mais Cinzas", 13, 5, icone="cataclysm:burning_ashes",
             deps=["cinzas"], forma="circle", tamanho=0.75, optional=True, can_repeat=True,
             descricao=["Perdeu a luta? Troque &f8 cremes de magma&r por outras Cinzas Flamejantes."],
-            tarefas=[c.t_item("minecraft:magma_cream", 8, consumir=True)],
+            tarefas=[c.t_item("minecraft:magma_cream", 8, consumir=True, titulo="Entregar 8 cremes de magma")],
             recompensas=[c.r_item("cataclysm:burning_ashes")])
 
     # ---- Frente C: Manopla do Nether
@@ -1008,8 +1012,8 @@ def ato3():
                        "&o\"É perigoso, mas é a única forma de arrancar o último pedaço do Selo do Nether.\"", "", "&o\"Mais uma coisa. Os batedores acharam um nome gravado com fogo de alma nas paredes de uma fortaleza: &3Helvar&o. Não sei quem é. Mas não esqueça esse nome.\"",
                        "",
                        "Junte &f3 crânios de esqueleto wither&r (das fortalezas) e &f4 areias das almas&r."],
-            tarefas=[c.t_item("minecraft:wither_skeleton_skull", 3, titulo="3 crânios de esqueleto wither"),
-                     c.t_item("minecraft:soul_sand", 4, titulo="4 areias das almas")],
+            tarefas=[c.t_item("minecraft:wither_skeleton_skull", 3, titulo="Obter 3 crânios de esqueleto wither"),
+                     c.t_item("minecraft:soul_sand", 4, titulo="Obter 4 areias das almas")],
             recompensas=[c.r_item(pocao("minecraft:strong_healing"), 4), c.r_item(pocao("minecraft:strong_strength"), 2),
                          c.r_item("minecraft:golden_apple", 4)])
 
@@ -1028,7 +1032,7 @@ def ato3():
             subtitulo="Fim do Ato 3",
             descricao=[f"{M}: \"Onze fragmentos. O Selo está quase completo... e mesmo assim ele continua pulsando.\"",
                        "",
-                       "&o\"Quando o Wither caiu, os fragmentos brilharam e apontaram para cima. Para o céu. Existem dois mundos acima das nuvens, o &bEverbright&o e o &6Everdawn&o, onde os guardiões originais criaram o Selo.\"",
+                       "&o\"Quando o Wither caiu, os fragmentos brilharam e apontaram para cima. Para o céu. Existem dois mundos acima das nuvens, o &bEverbright&o e o &6Everdawn&o, onde os guardiões originais se refugiaram depois de criar o Selo.\"",
                        "",
                        "&o\"Lá estão as respostas. E, eu temo, os guardiões que criaram o Selo.\"",
                        "",
@@ -1063,7 +1067,10 @@ def ato4():
         return f"&7Pegue a recompensa &festando no {mundo}&7: as coordenadas aparecem no chat.&r"
 
     def masmorra(chave, x, y, deps, titulo, mundo, dim, estrutura, chave_item, nome_chave,
-                 boss_chave, boss_nome, boss_id, historia, dica, frag, skill, icone_boss):
+                 boss_chave, boss_nome, boss_id, historia, dica, frag, skill, icone_boss, diamantes=5):
+        aviso_chave = []
+        if chave_item == "blue_skies:blinding_key":
+            aviso_chave = ["", "&7No jogo, a chave desta masmorra se chama &fChave da Masmorra Ofuscante&7.&r"]
         c.quest(chave, titulo, x, y, icone="minecraft:compass", deps=deps,
                 descricao=[historia, "", coord(mundo)],
                 tarefas=[c.t_check("Pedir a localização da masmorra")],
@@ -1077,7 +1084,7 @@ def ato4():
                 recompensas=[c.r_xp(5)])
         c.quest(chave + "_chave", nome_chave, x + 6, y, icone=chave_item, deps=[chave + "_achar"],
                 descricao=["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.",
-                           "Depois, use a chave na &fpedra-chave&r da porta do chefe."],
+                           "Depois, use a chave correspondente na &fpedra-chave&r da porta do chefe."] + aviso_chave,
                 tarefas=[c.t_item(chave_item, titulo=f"Encontrar a {nome_chave}")],
                 recompensas=[c.r_xp(5)])
         c.quest(boss_chave, f"Chefe: {boss_nome}", x + 9, y, icone=icone_boss, deps=[chave + "_chave"],
@@ -1085,7 +1092,7 @@ def ato4():
                 descricao=[f"Derrote &c{boss_nome}&r, um dos guardiões do Selo, corrompido pelo fragmento.", "", dica],
                 tarefas=[c.t_matar(boss_id, 1, f"Derrotar {boss_nome}")],
                 recompensas=[c.r_item(fragmento(4, frag, 4)), c.r_skill(skill), c.r_xp(15),
-                             c.r_item("minecraft:diamond", 5)])
+                             c.r_item("minecraft:diamond", diamantes)])
 
     c.quest("ceu", "Além do Céu", 0, 0, forma="gear", tamanho=1.75,
             icone="blue_skies:zeal_lighter", deps=["@ato3/relatorio"],
@@ -1109,7 +1116,7 @@ def ato4():
                        "• Moldura de &bTijolos de Pedra Turquesa&r: leva ao &bEverbright&r.",
                        "• Moldura de &fTijolos de Pedra Lunar&r: leva ao &6Everdawn&r.",
                        "",
-                       "Os cantos da moldura não precisam de tijolo: cada portal leva 14. O Mestre mandou 16 de cada tipo, então sobram 2 de reserva."],
+                       "Os cantos da moldura precisam de tijolo: cada portal leva 14 blocos. O Mestre mandou 16 de cada tipo, então sobram 2 de reserva."],
             tarefas=[c.t_estrutura("#terras_partidas:casa_do_guardiao", "Encontrar a casa do Guardião")],
             recompensas=[c.r_xp(5), c.r_item("minecraft:cooked_beef", 16)])
 
@@ -1129,21 +1136,21 @@ def ato4():
 
     # ---- Everbright
     masmorra("eb_ofuscante", 9, -3, ["everbright"], "Masmorra do Invocador", "Everbright", EB,
-             "blue_skies:everbright_blinding_dungeon", "blue_skies:blinding_key", "Chave da Masmorra Ofuscante",
+             "blue_skies:everbright_blinding_dungeon", "blue_skies:blinding_key", "Chave da Masmorra do Invocador",
              "summoner", "Summoner", "blue_skies:summoner",
              f"{M}: \"O primeiro guardião, o &fSummoner&r (o Invocador), se trancou numa masmorra de luz cegante, a Masmorra Ofuscante do Everbright. Ele chama criaturas para lutar por ele.\"",
              "&7Dica: ele invoca ajudantes sem parar. Derrube os ajudantes rápido e ataque o Summoner entre uma invocação e outra.&r",
-             1, "epicfight:revelation", "minecraft:totem_of_undying")
+             1, "epicfight:revelation", "minecraft:totem_of_undying", diamantes=4)
     masmorra("eb_natureza", 9, -6, ["summoner"], "Masmorra da Natureza", "Everbright", EB,
              "blue_skies:nature_dungeon", "blue_skies:nature_key", "Chave da Masmorra da Natureza",
              "starlit_crusher", "Starlit Crusher", "blue_skies:starlit_crusher",
              f"{M}: \"O segundo guardião do Everbright virou uma árvore viva gigante, o &fStarlit Crusher&r (o Esmagador Estelar). Ele vive numa masmorra coberta de mato, nos pinheiros nevados.\"",
              "&7Dica: ele é lento mas bate muito forte. Fique sempre se movendo e ataque pelas costas.&r",
-             2, "epicfight:forbidden_strength", "minecraft:oak_sapling")
+             2, "epicfight:forbidden_strength", "minecraft:oak_sapling", diamantes=4)
 
     # ---- Everdawn
     masmorra("ed_ofuscante", 9, 3, ["everdawn"], "Masmorra do Alquimista", "Everdawn", ED,
-             "blue_skies:everdawn_blinding_dungeon", "blue_skies:blinding_key", "Chave da Masmorra Ofuscante",
+             "blue_skies:everdawn_blinding_dungeon", "blue_skies:blinding_key", "Chave da Masmorra do Alquimista",
              "alchemist", "Alchemist", "blue_skies:alchemist",
              f"{M}: \"No Everdawn, o guardião &fAlchemist&r (o Alquimista) passou séculos fazendo poções com o poder do fragmento, na Masmorra Ofuscante do Everdawn. Ele não é mais humano.\"",
              "&7Dica: ele joga poções que mudam o chão da arena. Leve leite: ele tira os efeitos ruins mais comuns.&r",
@@ -1151,7 +1158,7 @@ def ato4():
     masmorra("ed_veneno", 9, 6, ["alchemist"], "Masmorra do Veneno", "Everdawn", ED,
              "blue_skies:poison_dungeon", "blue_skies:poison_key", "Chave da Masmorra do Veneno",
              "arachnarch", "Arachnarch", "blue_skies:arachnarch",
-             f"{M}: \"O último guardião do Everdawn virou uma aranha gigante, a &fArachnarch&r (a Aracnarca). Ela fez um ninho numa masmorra venenosa na floresta de bordos.\"",
+             f"{M}: \"O quarto e último guardião do Everdawn virou uma aranha gigante, a &fArachnarch&r (a Aracnarca). Ela fez um ninho numa masmorra venenosa na floresta de bordos.\"",
              "&7Dica: leve muito leite e poções de cura. O veneno dela é o perigo maior, não as mordidas.&r",
              4, "epicfight:vengeance", "minecraft:spider_eye")
 
@@ -1295,7 +1302,7 @@ def ato5():
                        "Tenha uma &fEstrela do Nether&r no inventário.",
                        "&7Se você já usou a estrela (num sinalizador, por exemplo), invoque outro Wither para conseguir uma nova. Os crânios vêm das fortalezas do Nether.&r",
                        "", coord("no mundo normal")],
-            tarefas=[c.t_item("minecraft:nether_star", titulo="Ter uma Estrela do Nether")],
+            tarefas=[c.t_item("minecraft:nether_star", titulo="Obter uma Estrela do Nether")],
             recompensas=[c.r_localizar("cataclysm:ancient_factory", "Coordenadas da Fábrica Antiga", dimensao=OW),
                          c.r_item(pocao("minecraft:strong_healing"), 4), c.r_item(pocao("minecraft:strong_strength"), 2),
                          c.r_item("minecraft:enchanted_golden_apple", 2)])
@@ -1350,7 +1357,7 @@ def ato5():
             descricao=["Gastou a chave e perdeu a luta? Troque recursos por outra.",
                        "",
                        "&7Os Esqueletos das Almas e os Cavaleiros Wither da arena também deixam a chave, mas é raro.&r"],
-            tarefas=[c.t_item("minecraft:gold_ingot", 8, consumir=True), c.t_item("minecraft:soul_sand", 16, consumir=True)],
+            tarefas=[c.t_item("minecraft:gold_ingot", 8, consumir=True, titulo="Entregar 8 lingotes de ouro"), c.t_item("minecraft:soul_sand", 16, consumir=True, titulo="Entregar 16 areias das almas")],
             recompensas=[c.r_item("block_factorys_bosses:underworld_arena_key")])
 
     c.quest("helvar", "Chefe Final: Helvar, o Cavaleiro do Submundo", 28.5, 1.5, icone="block_factorys_bosses:knight_sword",
@@ -1471,33 +1478,43 @@ def cacadas():
          "a &fFlor Violeta&r", [c.r_item("meetyourfight:dusk_key")], "Difícil: a partir do Ato 4"),
         ("dragao", "Ashlord, o Dragão Infernal", "minecraft:magma_block", "block_factorys_bosses:dragon_tower", "block_factorys_bosses:infernal_dragon",
          "em &fplanícies, selvas ou pântanos&r", "Um dragão de fogo no alto de uma torre, protegido por guardas esqueletos em chamas. Quando a vida dele baixa, ele muda para uma segunda forma ainda maior: afaste-se, beba uma poção e volte.",
-         "&fossos de dragão&r, para fazer uma armadura de ossos de dragão", [c.r_item(pocao("minecraft:long_fire_resistance"), 4)], "Difícil: a partir do Ato 4"),
+         "&fossos de dragão&r para fabricar uma armadura de ossos de dragão", [c.r_item(pocao("minecraft:long_fire_resistance"), 4)], "Difícil: a partir do Ato 4"),
         ("remnant", "O Remanescente Antigo", "minecraft:suspicious_sand", "cataclysm:cursed_pyramid", "cataclysm:ancient_remnant",
          "numa &fpirâmide amaldiçoada no deserto&r", "Uma fera-faraó gigante enterrada na areia. Use o &fpincel&r na &fareia suspeita&r dentro da pirâmide para achar o &fColar do Deserto&r e acordá-la. &cA pirâmide costuma ficar longe: vá de dragão.&r",
          "a &fTempestade de Areia na Garrafa&r e metal antigo", [c.r_item("minecraft:brush")], "Muito difícil: a partir do Ato 5"),
         ("maledictus", "Maledictus", "minecraft:soul_lantern", "cataclysm:frosted_prison", "cataclysm:maledictus",
          "numa &fprisão congelada&r", "Um cavaleiro amaldiçoado selado no gelo. Dê energia de redstone à &fLápide Amaldiçoada&r (uma alavanca ou tocha de redstone ao lado) e clique nela com o botão direito.",
-         "o &flingote de Cursium&r", [c.r_item("minecraft:lever"), c.r_item("minecraft:redstone_torch", 2)], "Muito difícil: depois da história"),
+         "o &fLingote de Cursium&r", [c.r_item("minecraft:lever"), c.r_item("minecraft:redstone_torch", 2)], "Muito difícil: depois da história"),
         ("kraken", "Nerakyss, o Kraken", "minecraft:nautilus_shell", "block_factorys_bosses:kraken_ship", "block_factorys_bosses:kraken",
          "no &foceano profundo&r", "Um kraken colossal preso a um navio pirata afundado. Piratas, canhões e tentáculos que saem do chão. Leve blocos, comida e saiba por onde fugir.",
-         "o &fdente do kraken&r, para fazer um tridente que puxa os inimigos", [c.r_item(pocao("minecraft:long_water_breathing"), 4)], "Muito difícil: depois da história"),
+         "o &fDente do Kraken&r para fabricar um tridente que puxa os inimigos", [c.r_item(pocao("minecraft:long_water_breathing"), 4)], "Muito difícil: depois da história"),
     ]
+    # Cada fera libera numa etapa da história e dá mais recompensa quanto mais difícil:
+    # chave -> (dependência, níveis de XP, diamantes, fragmentos de netherita)
+    etapa = {"sandworm": ("inicio", 10, 2, 1), "escultor": ("inicio", 10, 2, 1),
+             "lich": ("@ato3/relatorio", 15, 3, 1), "yeti": ("@ato3/relatorio", 15, 3, 1),
+             "rosalyne": ("@ato4/relatorio", 18, 3, 2), "dragao": ("@ato4/relatorio", 18, 4, 2),
+             "remnant": ("@ato5/selo", 20, 4, 3), "maledictus": ("@ato5/selo", 20, 4, 3),
+             "kraken": ("@ato5/selo", 20, 4, 3)}
+    onde_fica = {"lich": "do local onde o Lich da Noite vive", "remnant": "do local onde o Remanescente Antigo está"}
     for chave, nome, icone, estrutura, entidade, onde, desc, premio, extra, rec in feras:
         curto = nome.split(',')[0]
+        dep, xp, diamantes, sucata = etapa[chave]
         if estrutura:
             rec_mapa = [c.r_localizar(estrutura, f"Coordenadas: {curto}", dimensao=OW)] + extra
-            dica = f"&7Pegue a recompensa para ver no chat as coordenadas de onde {curto} mora.&r"
+            local = onde_fica.get(chave, f"de onde {curto} mora")
+            dica = f"&7Pegue a recompensa para ver no chat as coordenadas {local}.&r"
         else:
             rec_mapa = extra
             dica = "&7Pegue a recompensa para receber a chave.&r"
-        c.quest(f"{chave}_mapa", f"Caçada: {curto}", 0, 0, icone=icone, deps=["inicio"], optional=True, subtitulo=rec,
+        c.quest(f"{chave}_mapa", f"Caçada: {curto}", 0, 0, icone=icone, deps=[dep], optional=True, subtitulo=rec,
                 descricao=[f"&e{nome}&r", "", desc, "", f"Mora {onde}." if estrutura else f"Aparece {onde}.", f"&6{rec}&r", "", dica],
                 tarefas=[c.t_check("Pedir a localização" if estrutura else "Quero a chave")],
                 recompensas=rec_mapa)
         c.quest(chave, nome, 0, 0, icone=icone, deps=[f"{chave}_mapa"], forma="octagon", tamanho=1.5, optional=True,
-                descricao=[f"Derrote &c{nome}&r.", "", f"Deixa {premio}."],
+                descricao=[f"Derrote &c{nome}&r.", "", f"Pode deixar {premio}."],
                 tarefas=[c.t_matar(entidade, 1, f"Derrotar {curto}")],
-                recompensas=[c.r_xp(20), c.r_item("minecraft:diamond", 4), c.r_item("minecraft:netherite_scrap", 1)])
+                recompensas=[c.r_xp(xp), c.r_item("minecraft:diamond", diamantes), c.r_item("minecraft:netherite_scrap", sucata)])
 
     for n, (chave, *_resto) in enumerate(feras):
         lin, col = divmod(n, 3)
@@ -1528,7 +1545,7 @@ def cacadas():
                          c.r_comando("/puffish_skills points add {p} terras_partidas:mineracao 3", titulo="+3 pontos em Mineração", icone="minecraft:iron_pickaxe"),
                          c.r_comando("/puffish_skills points add {p} terras_partidas:vida 3", titulo="+3 pontos em Vida", icone="minecraft:golden_apple"),
                          c.r_comando("/function terras_partidas:mestre_cacador", titulo="Título [Mestre Caçador]", icone="minecraft:name_tag"),
-                         c.r_xp(100)])
+                         c.r_xp(50)])
     mestre = next(q for q in c.quests if q["id"] == qid("cacadas/quest/mestre"))
     mestre["x"], mestre["y"] = 14.75, 2.0
     return {
@@ -1572,7 +1589,7 @@ CLASSES_VELLAN = [
      "Rápido, com muitos acertos críticos e esquivas. Duas adagas e o passo rápido.",
      "Pouca vida: cada erro custa caro."),
     ("mago", "Mago",
-     "Dano de longe com feitiços, inclusive cura. Começa com um livro com 4 feitiços que não são gastos (usam mana), roupa de mago e Mesa de Inscrição.",
+     "Dano de longe com feitiços, inclusive cura. Começa com um livro com 4 feitiços que não são consumidos, mas gastam mana, roupa de mago e Mesa de Inscrição.",
      "Frágil de perto: a roupa de mago protege pouco e cada feitiço gasta mana."),
     ("cacador", "Caçador",
      "Ataca de longe com arco, é seguro contra chefes grandes e se move rápido.",
@@ -1687,8 +1704,8 @@ def mestre_vellan():
          "Conditions": [{"Name": TAG_HELVAR, "Type": "PLAYER_TAG"}],
          "Label": "ritual", "Name": "O ritual", "Priority": 7,
          "Texts": [{"Text": "Você voltou, @initiator. Eu senti Helvar cair daqui.\\n\\n"
-                            "Os dezenove fragmentos brilham na sua mochila. O núcleo do Arauto é o coração: ele vai no centro, e os outros dezoito em volta dele.\\n\\n"
-                            "Coloque os pedaços no cristal. Eu termino o ritual que começamos há trezentos anos."}]},
+                            "Você reuniu os dezenove fragmentos. Eles brilham através do vínculo que a Ordem mantém com o Selo. O núcleo do Arauto é o coração: ele vai no centro, e os outros dezoito em volta dele.\\n\\n"
+                            "Aproxime-se do cristal e aperte “Restaurar o Selo”. Eu termino o ritual que começamos há trezentos anos."}]},
         fala("restaurado", "O Selo Restaurado", -1,
              "O cristal brilhou mais forte do que qualquer coisa que eu já vi. Helvar foi puxado de volta para o submundo, e desta vez a porta ficou trancada para sempre.\\n\\n"
              "Os seis guardiões que os fragmentos corromperam finalmente estão livres. Trezentos anos atrás, sete guardiões criaram o Selo. Hoje, um único caçador o refez.\\n\\n"
@@ -1805,7 +1822,7 @@ def gabriel():
              [livro, dragoes, tchau]),
         fala("dragoes", "Como cuidar de um dragão", -1,
              "Coloque o ovo em cima de um bloco firme e clique nele com o botão direito para ele começar a chocar.\\n\\n"
-             "O lugar importa: até chocar, mantenha o ovo perto dos blocos do tipo dele (magma, gelo, prismarinho ou musgo) para ele continuar do tipo escolhido.\\n\\n"
+             "O lugar importa: até chocar, mantenha o ovo perto dos blocos do tipo dele (magma, gelo, prismarinho ou musgo) para ele continuar do tipo escolhido. Nunca leve um dragão de gelo para dentro do Nether: ele não sobrevive ao calor daquele mundo.\\n\\n"
              "Alimente o filhote com carne até ele crescer. Depois coloque a sela e monte. Pular sobe, agachar desce.",
              [voltar]),
         fala("quem", "Quem é você?", -1,

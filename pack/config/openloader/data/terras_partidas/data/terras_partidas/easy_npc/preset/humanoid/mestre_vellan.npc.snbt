@@ -458,7 +458,7 @@
           Priority:7,
           Texts:[
             {
-              Text:"Você voltou, @initiator. Eu senti Helvar cair daqui.\\n\\nOs dezenove fragmentos brilham na sua mochila. O núcleo do Arauto é o coração: ele vai no centro, e os outros dezoito em volta dele.\\n\\nColoque os pedaços no cristal. Eu termino o ritual que começamos há trezentos anos."
+              Text:"Você voltou, @initiator. Eu senti Helvar cair daqui.\\n\\nVocê reuniu os dezenove fragmentos. Eles brilham através do vínculo que a Ordem mantém com o Selo. O núcleo do Arauto é o coração: ele vai no centro, e os outros dezoito em volta dele.\\n\\nAproxime-se do cristal e aperte “Restaurar o Selo”. Eu termino o ritual que começamos há trezentos anos."
             }
           ]
         },
@@ -891,7 +891,7 @@
           Priority:-1,
           Texts:[
             {
-              Text:"MAGO\\n\\nPrós: Dano de longe com feitiços, inclusive cura. Começa com um livro com 4 feitiços que não são gastos (usam mana), roupa de mago e Mesa de Inscrição.\\n\\nContras: Frágil de perto: a roupa de mago protege pouco e cada feitiço gasta mana.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K), além das árvores de Combate, Mineração e Vida, que são de todo mundo."
+              Text:"MAGO\\n\\nPrós: Dano de longe com feitiços, inclusive cura. Começa com um livro com 4 feitiços que não são consumidos, mas gastam mana, roupa de mago e Mesa de Inscrição.\\n\\nContras: Frágil de perto: a roupa de mago protege pouco e cada feitiço gasta mana.\\n\\nA escolha é para sempre. Cada classe tem sua própria árvore de habilidades (tecla K), além das árvores de Combate, Mineração e Vida, que são de todo mundo."
             }
           ]
         },

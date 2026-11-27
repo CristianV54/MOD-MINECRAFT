@@ -123,10 +123,8 @@ def tarefa(t):
     if tipo == "item":
         n = qtd(t.get("count", 1))
         verbo = "Entregar" if t.get("consume_items") else "Obter"
-        base = f"{verbo} {nome_item(t['item'])}" + (f" x{n}" if n > 1 else "")
-        if t.get("title"):
-            base = f"{limpar(t['title'])} ({base})"
-        return base + (" (os itens são gastos)" if t.get("consume_items") else "")
+        base = limpar(t["title"]) if t.get("title") else f"{verbo} {nome_item(t['item'])}" + (f" x{n}" if n > 1 else "")
+        return base + (" (os itens são consumidos)" if t.get("consume_items") else "")
     if tipo == "kill":
         n = qtd(t.get("value", 1))
         return f"Derrotar {nome_de(t['entity'])}" + (f" x{n}" if n > 1 else "")
@@ -144,6 +142,8 @@ def tarefa(t):
 def recompensa(r):
     tipo = r["type"]
     if tipo == "item":
+        if r.get("title"):
+            return limpar(r["title"])
         n = qtd(r.get("count", 1))
         return nome_item(r["item"]) + (f" x{n}" if n > 1 else "")
     if tipo == "xp_levels":

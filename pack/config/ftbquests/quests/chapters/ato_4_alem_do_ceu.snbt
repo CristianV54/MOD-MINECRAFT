@@ -67,7 +67,7 @@
 			x: 2.0d
 			y: 1.0d
 			icon: "minecraft:oak_door"
-			description: ["Siga o mapa até a &fcasa do Guardião do Portal&r. Ela fica no mundo normal, geralmente perto de uma vila, em planícies, savanas, montanhas ou terras nevadas.", "", "&eComo abrir os portais:&r monte uma moldura do mesmo formato do portal do Nether (4 de largura por 5 de altura) e acenda com o &fIsqueiro Zeal&r (clique direito dentro da moldura).", "• Moldura de &bTijolos de Pedra Turquesa&r: leva ao &bEverbright&r.", "• Moldura de &fTijolos de Pedra Lunar&r: leva ao &6Everdawn&r.", "", "Os cantos da moldura não precisam de tijolo: cada portal leva 14. O Mestre mandou 16 de cada tipo, então sobram 2 de reserva."]
+			description: ["Siga o mapa até a &fcasa do Guardião do Portal&r. Ela fica no mundo normal, geralmente perto de uma vila, em planícies, savanas, montanhas ou terras nevadas.", "", "&eComo abrir os portais:&r monte uma moldura do mesmo formato do portal do Nether (4 de largura por 5 de altura) e acenda com o &fIsqueiro Zeal&r (clique direito dentro da moldura).", "• Moldura de &bTijolos de Pedra Turquesa&r: leva ao &bEverbright&r.", "• Moldura de &fTijolos de Pedra Lunar&r: leva ao &6Everdawn&r.", "", "Os cantos da moldura precisam de tijolo: cada portal leva 14 blocos. O Mestre mandou 16 de cada tipo, então sobram 2 de reserva."]
 			dependencies: ["2D42558563013C01"]
 			tasks: [
 				{
@@ -230,11 +230,11 @@
 		}
 		{
 			id: "30DCF1DF167AB938"
-			title: "Chave da Masmorra Ofuscante"
+			title: "Chave da Masmorra do Invocador"
 			x: 10.0d
 			y: 0.0d
 			icon: "blue_skies:blinding_key"
-			description: ["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.", "Depois, use a chave na &fpedra-chave&r da porta do chefe."]
+			description: ["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.", "Depois, use a chave correspondente na &fpedra-chave&r da porta do chefe.", "", "&7No jogo, a chave desta masmorra se chama &fChave da Masmorra Ofuscante&7.&r"]
 			dependencies: ["74F7367AF94E6221"]
 			tasks: [
 				{
@@ -242,7 +242,7 @@
 					type: "item"
 					item: "blue_skies:blinding_key"
 					count: 1L
-					title: "Encontrar a Chave da Masmorra Ofuscante"
+					title: "Encontrar a Chave da Masmorra do Invocador"
 				}
 			]
 			rewards: [
@@ -314,7 +314,7 @@
 					id: "291DDCDC09429C70"
 					type: "item"
 					item: "minecraft:diamond"
-					count: 5
+					count: 4
 				}
 				{
 					id: "5DA122D9637369DE"
@@ -396,7 +396,7 @@
 			x: 18.0d
 			y: 0.0d
 			icon: "blue_skies:nature_key"
-			description: ["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.", "Depois, use a chave na &fpedra-chave&r da porta do chefe."]
+			description: ["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.", "Depois, use a chave correspondente na &fpedra-chave&r da porta do chefe."]
 			dependencies: ["47842F0821E57C0C"]
 			tasks: [
 				{
@@ -476,7 +476,7 @@
 					id: "6F74C22C885CA62C"
 					type: "item"
 					item: "minecraft:diamond"
-					count: 5
+					count: 4
 				}
 				{
 					id: "1A7E0BAE75EF3DBF"
@@ -554,11 +554,11 @@
 		}
 		{
 			id: "11EFDB6C21CC5220"
-			title: "Chave da Masmorra Ofuscante"
+			title: "Chave da Masmorra do Alquimista"
 			x: 10.0d
 			y: 1.5d
 			icon: "blue_skies:blinding_key"
-			description: ["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.", "Depois, use a chave na &fpedra-chave&r da porta do chefe."]
+			description: ["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.", "Depois, use a chave correspondente na &fpedra-chave&r da porta do chefe.", "", "&7No jogo, a chave desta masmorra se chama &fChave da Masmorra Ofuscante&7.&r"]
 			dependencies: ["522689D1C95A7F64"]
 			tasks: [
 				{
@@ -566,7 +566,7 @@
 					type: "item"
 					item: "blue_skies:blinding_key"
 					count: 1L
-					title: "Encontrar a Chave da Masmorra Ofuscante"
+					title: "Encontrar a Chave da Masmorra do Alquimista"
 				}
 			]
 			rewards: [
@@ -657,7 +657,7 @@
 			x: 14.0d
 			y: 1.5d
 			icon: "minecraft:compass"
-			description: ["&6Mestre Vellan&r: \"O último guardião do Everdawn virou uma aranha gigante, a &fArachnarch&r (a Aracnarca). Ela fez um ninho numa masmorra venenosa na floresta de bordos.\"", "", "&7Pegue a recompensa &festando no Everdawn&7: as coordenadas aparecem no chat.&r"]
+			description: ["&6Mestre Vellan&r: \"O quarto e último guardião do Everdawn virou uma aranha gigante, a &fArachnarch&r (a Aracnarca). Ela fez um ninho numa masmorra venenosa na floresta de bordos.\"", "", "&7Pegue a recompensa &festando no Everdawn&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["31689D5BC8FB62E8"]
 			tasks: [
 				{
@@ -720,7 +720,7 @@
 			x: 18.0d
 			y: 1.5d
 			icon: "blue_skies:poison_key"
-			description: ["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.", "Depois, use a chave na &fpedra-chave&r da porta do chefe."]
+			description: ["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.", "Depois, use a chave correspondente na &fpedra-chave&r da porta do chefe."]
 			dependencies: ["5EF70906A23B62C3"]
 			tasks: [
 				{

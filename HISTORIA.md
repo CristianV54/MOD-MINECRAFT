@@ -24,7 +24,8 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 >
 > Como usar este livro:
 > • Cada missão mostra o objetivo e a recompensa.
-> • Clique em uma missão para ver os detalhes e pegar a recompensa.
+> • Clique em uma missão para ver os detalhes e concluir a tarefa.
+> • Depois de concluída, pegue a recompensa.
 > • Missões novas aparecem conforme você avança.
 >
 > Combate: este mundo usa o Epic Fight. Aperte R para alternar entre o modo normal e o modo de combate.
@@ -37,7 +38,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 > Se você mudar de base, a missão "Chamar o Mestre" traz ele até você.
 
 **Tarefa:** Li a carta do Mestre
-**Recompensas:** Pão x8; Tocha x16; Livro de habilidade: Rolar
+**Recompensas:** Pão x8; Tocha x16; Livro de habilidade: Rolar (use com o botão direito para aprender o movimento)
 
 ### 2. Chamar o Mestre  (opcional, repetível)
 **Depois de:** O Chamado
@@ -180,7 +181,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 **Depois de:** Uma Picareta de Ferro
 
 > O inventário vai encher rápido. Faça uma mochila.
-> Dá para melhorar ela depois (cobre, ferro, ouro...).
+> Depois, você poderá melhorá-la com cobre, ferro, ouro e outros materiais.
 
 **Tarefa:** Obter Mochila
 **Recompensas:** 2 níveis de XP; Couro x4
@@ -214,7 +215,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 > Derrote 10 zumbis.
 
 **Tarefa:** Derrotar 10 zumbis
-**Recompensas:** 3 níveis de XP; Maçã Dourada
+**Recompensas:** 3 níveis de XP; Cenoura Dourada x2
 
 ### 15. Ossos Inquietos
 **Depois de:** Treino de Combate
@@ -258,7 +259,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 > Perdeu a luta? Troque 8 ossos por outra Isca Fóssil.
 > Pode repetir quantas vezes precisar.
 
-**Tarefa:** Entregar Osso x8 (os itens são gastos)
+**Tarefa:** Entregar 8 ossos (os itens são consumidos)
 **Recompensas:** Isca Fóssil
 
 ### 19. O Sino Assombrado
@@ -272,7 +273,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 >
 > Equipamento recomendado: ferro ou diamante. Ele é rápido: guarde a esquiva para quando ele avançar.
 
-**Tarefa:** Ter um peitoral de ferro (Obter Peitoral de Ferro)
+**Tarefa:** Obter um peitoral de ferro
 **Recompensas:** Sino Assombrado; Poção de Cura x3
 
 ### 20. Chefe: Bellringer  (chefe)
@@ -290,7 +291,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 
 > Perdeu a luta? Troque 4 lingotes de ouro por outro Sino Assombrado.
 
-**Tarefa:** Entregar Lingote de Ouro x4 (os itens são gastos)
+**Tarefa:** Entregar 4 lingotes de ouro (os itens são consumidos)
 **Recompensas:** Sino Assombrado
 
 ### 22. Rumores na Vila
@@ -304,7 +305,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 >
 > Segure o mapa na mão para ver o caminho. O mapa pode demorar alguns segundos para aparecer.
 
-**Tarefa:** Pegar o mapa
+**Tarefa:** Obter o mapa
 **Recompensas:** Mapa: Câmara Forjada; Poção de Visão Noturna x2
 
 ### 23. A Câmara Forjada
@@ -357,7 +358,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 > • O Labirinto de Gelo, um mar congelado cheio de navios fantasmas.
 > • A Mesa da Fortuna, onde um espírito aposta almas.
 >
-> "Use o planador para atravessar montanhas e vales. Ele gasta fôlego, então pouse antes que acabe."
+> "Use o planador para atravessar montanhas e vales. Ele gasta fôlego, então pouse antes que a barra acabe."
 >
 > Você pode fazer as quatro frentes na ordem que quiser.
 
@@ -399,7 +400,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 >
 > Leve armadura, comida e tochas. É uma viagem longa.
 
-**Tarefa:** Pegar o mapa do gelo
+**Tarefa:** Obter o mapa do gelo
 **Recompensas:** Mapa: Covil do Frostmaw; Salmão Assado x12
 
 ### 6. O Covil Congelado
@@ -430,7 +431,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 >
 > "Cuidado: eles atacam em bando e usam lanças e magia de cura."
 
-**Tarefa:** Pegar o mapa da savana
+**Tarefa:** Obter o mapa da savana
 **Recompensas:** Mapa: Bosque dos Umvuthana; Poção de Resistência ao Fogo x2
 
 ### 9. O Bosque dos Umvuthana
@@ -462,7 +463,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 >
 > Leve um barco. A água é gelada e cheia de criaturas das profundezas.
 
-**Tarefa:** Pegar o mapa do mar
+**Tarefa:** Obter o mapa do mar
 **Recompensas:** Mapa: Labirinto de Gelo; Bote de Carvalho; Poção de Respiração Aquática x2
 
 ### 12. O Labirinto de Gelo
@@ -482,7 +483,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 >
 > Ela também aparece às vezes em baús dos navios congelados.
 
-**Tarefa:** Receber o Chifre de Concha
+**Tarefa:** Obter o Chifre de Concha
 **Recompensas:** Chifre de Concha; Poção de Cura x3
 
 ### 14. Chefe: Capitã Cornelia  (chefe)
@@ -502,7 +503,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 
 > Perdeu a luta? Troque 6 lingotes de ouro por outro Chifre de Concha.
 
-**Tarefa:** Entregar Lingote de Ouro x6 (os itens são gastos)
+**Tarefa:** Entregar 6 lingotes de ouro (os itens são consumidos)
 **Recompensas:** Chifre de Concha
 
 ### 16. A Mãe do Labirinto  (opcional)
@@ -519,13 +520,13 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 
 **Depois de:** Terras Selvagens
 
-> Mestre Vellan: "Esta é a mais traiçoeira. Dame Fortuna é um espírito que aposta com a sorte. Ela ganhou um fragmento num jogo de cartas."
+> Mestre Vellan: "Esta é a mais traiçoeira. Dame Fortuna é um espírito que aposta com almas e sorte. Ela ganhou um fragmento num jogo de cartas."
 >
 > "Só aceito te dar a ficha de aposta quando você estiver protegido. Volte com armadura de diamante."
 >
 > Equipamento recomendado: diamante.
 
-**Tarefa:** Ter um peitoral de diamante (Obter Peitoral de Diamante)
+**Tarefa:** Obter um peitoral de diamante
 **Recompensas:** Aposta do Diabo; Poção de Regeneração x2
 
 ### 18. Chefe: Dame Fortuna  (chefe)
@@ -545,7 +546,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 
 > Perdeu a aposta? Troque 2 diamantes por outra ficha.
 
-**Tarefa:** Entregar Diamante x2 (os itens são gastos)
+**Tarefa:** Entregar 2 diamantes (os itens são consumidos)
 **Recompensas:** Aposta do Diabo
 
 ### 20. Relatório: Terras Selvagens
@@ -624,7 +625,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 > Você escolheu o Ovo de Dragão de Fogo.
 >
 > Como chocar: coloque o ovo no chão e clique nele com o botão direito para ele começar a chocar. Depois é só esperar.
-> O ovo cai como areia: coloque em cima de um bloco firme.
+> O ovo funciona como areia: coloque em cima de um bloco firme.
 >
 > Importante: o ambiente em volta decide se o ovo continua deste tipo. Até ele chocar, deixe-o perto de lava, fogo, fogueira ou blocos de magma. Os blocos que vieram junto servem para isso.
 >
@@ -639,7 +640,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 > Você escolheu o Ovo de Dragão de Gelo.
 >
 > Como chocar: coloque o ovo no chão e clique nele com o botão direito para ele começar a chocar. Depois é só esperar.
-> O ovo cai como areia: coloque em cima de um bloco firme.
+> O ovo funciona como areia: coloque em cima de um bloco firme.
 >
 > Importante: o ambiente em volta decide se o ovo continua deste tipo. Até ele chocar, deixe-o perto de gelo ou neve. Os blocos que vieram junto servem para isso.
 >
@@ -654,7 +655,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 > Você escolheu o Ovo de Dragão de Água.
 >
 > Como chocar: coloque o ovo no chão e clique nele com o botão direito para ele começar a chocar. Depois é só esperar.
-> O ovo cai como areia: coloque em cima de um bloco firme.
+> O ovo funciona como areia: coloque em cima de um bloco firme.
 >
 > Importante: o ambiente em volta decide se o ovo continua deste tipo. Até ele chocar, deixe-o perto de prismarinho, lanterna do mar, algas ou corais. Os blocos que vieram junto servem para isso.
 >
@@ -669,7 +670,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 > Você escolheu o Ovo de Dragão de Floresta.
 >
 > Como chocar: coloque o ovo no chão e clique nele com o botão direito para ele começar a chocar. Depois é só esperar.
-> O ovo cai como areia: coloque em cima de um bloco firme.
+> O ovo funciona como areia: coloque em cima de um bloco firme.
 >
 > Importante: o ambiente em volta decide se o ovo continua deste tipo. Até ele chocar, deixe-o perto de folhas, flores, mudas ou musgo. Os blocos que vieram junto servem para isso.
 >
@@ -700,7 +701,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 
 > Mestre Vellan: "Os últimos fragmentos atravessaram uma fenda e caíram no Nether."
 >
-> "Lá embaixo, três criaturas forjadas no fogo guardam cada uma um pedaço do Selo. E o calor dos fragmentos está acordando algo que deveria continuar dormindo..."
+> "Lá embaixo, três criaturas forjadas no fogo guardam três pedaços do Selo. O quarto se misturou à energia dos esqueletos wither e só aparecerá quando o Wither despertar."
 >
 > Construa um portal: uma moldura de obsidiana de 4 blocos de largura por 5 de altura, contando a moldura (o buraco do meio fica 2x3). Acenda com isqueiro e entre no Nether.
 >
@@ -726,7 +727,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 > Derrote blazes e junte 8 varas de blaze.
 > Guarde algumas: elas vão ser importantes no fim da jornada.
 
-**Tarefa:** Obter Vara de Blaze x8
+**Tarefa:** Obter 8 varas de blaze
 **Recompensas:** 5 níveis de XP; Pérola de Ender x4
 
 ### 4. Metal das Profundezas  (opcional)
@@ -794,7 +795,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 >
 > Equipamento recomendado: diamante encantado ou netherita. Leve muitas poções de resistência ao fogo.
 
-**Tarefa:** Receber as Cinzas Flamejantes
+**Tarefa:** Obter as Cinzas Flamejantes
 **Recompensas:** Cinzas Flamejantes; Poção de Resistência ao Fogo (longa) x2; Poção de Cura (forte) x3
 
 ### 11. Chefe: Ignis  (chefe)
@@ -812,7 +813,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 
 > Perdeu a luta? Troque 8 cremes de magma por outras Cinzas Flamejantes.
 
-**Tarefa:** Entregar Creme de Magma x8 (os itens são gastos)
+**Tarefa:** Entregar 8 cremes de magma (os itens são consumidos)
 **Recompensas:** Cinzas Flamejantes
 
 ### 13. A Mão de Ferro
@@ -858,7 +859,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 >
 > Junte 3 crânios de esqueleto wither (das fortalezas) e 4 areias das almas.
 
-**Tarefa:** 3 crânios de esqueleto wither (Obter Crânio de Esqueleto-Wither x3); 4 areias das almas (Obter Areia das Almas x4)
+**Tarefa:** Obter 3 crânios de esqueleto wither; Obter 4 areias das almas
 **Recompensas:** Poção de Cura (forte) x4; Poção de Força (forte) x2; Maçã Dourada x4
 
 ### 17. Chefe: O Wither  (chefe)
@@ -879,7 +880,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 
 > Mestre Vellan: "Onze fragmentos. O Selo está quase completo... e mesmo assim ele continua pulsando."
 >
-> "Quando o Wither caiu, os fragmentos brilharam e apontaram para cima. Para o céu. Existem dois mundos acima das nuvens, o Everbright e o Everdawn, onde os guardiões originais criaram o Selo."
+> "Quando o Wither caiu, os fragmentos brilharam e apontaram para cima. Para o céu. Existem dois mundos acima das nuvens, o Everbright e o Everdawn, onde os guardiões originais se refugiaram depois de criar o Selo."
 >
 > "Lá estão as respostas. E, eu temo, os guardiões que criaram o Selo."
 >
@@ -914,7 +915,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 > • Moldura de Tijolos de Pedra Turquesa: leva ao Everbright.
 > • Moldura de Tijolos de Pedra Lunar: leva ao Everdawn.
 >
-> Os cantos da moldura não precisam de tijolo: cada portal leva 14. O Mestre mandou 16 de cada tipo, então sobram 2 de reserva.
+> Os cantos da moldura precisam de tijolo: cada portal leva 14 blocos. O Mestre mandou 16 de cada tipo, então sobram 2 de reserva.
 
 **Tarefa:** Encontrar a casa do Guardião
 **Recompensas:** 5 níveis de XP; Bife x16
@@ -962,24 +963,26 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 **Tarefa:** Entrar na masmorra
 **Recompensas:** 5 níveis de XP
 
-### 7. Chave da Masmorra Ofuscante
+### 7. Chave da Masmorra do Invocador
 **Depois de:** Entrar na masmorra
 
 > A sala do chefe fica trancada. Explore a masmorra e encontre a chave em um dos baús.
-> Depois, use a chave na pedra-chave da porta do chefe.
+> Depois, use a chave correspondente na pedra-chave da porta do chefe.
+>
+> No jogo, a chave desta masmorra se chama Chave da Masmorra Ofuscante.
 
-**Tarefa:** Encontrar a Chave da Masmorra Ofuscante (Obter Chave da Masmorra Ofuscante)
+**Tarefa:** Encontrar a Chave da Masmorra do Invocador
 **Recompensas:** 5 níveis de XP
 
 ### 8. Chefe: Summoner  (chefe)
-**Depois de:** Chave da Masmorra Ofuscante
+**Depois de:** Chave da Masmorra do Invocador
 
 > Derrote Summoner, um dos guardiões do Selo, corrompido pelo fragmento.
 >
 > Dica: ele invoca ajudantes sem parar. Derrube os ajudantes rápido e ataque o Summoner entre uma invocação e outra.
 
 **Tarefa:** Derrotar Summoner
-**Recompensas:** Fragmento do Selo; Livro de habilidade: Revelação; 15 níveis de XP; Diamante x5
+**Recompensas:** Fragmento do Selo; Livro de habilidade: Revelação; 15 níveis de XP; Diamante x4
 
 ### 9. Masmorra da Natureza
 **Depois de:** Chefe: Summoner
@@ -1004,9 +1007,9 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 **Depois de:** Entrar na masmorra
 
 > A sala do chefe fica trancada. Explore a masmorra e encontre a chave em um dos baús.
-> Depois, use a chave na pedra-chave da porta do chefe.
+> Depois, use a chave correspondente na pedra-chave da porta do chefe.
 
-**Tarefa:** Encontrar a Chave da Masmorra da Natureza (Obter Chave da Masmorra da Natureza)
+**Tarefa:** Encontrar a Chave da Masmorra da Natureza
 **Recompensas:** 5 níveis de XP
 
 ### 12. Chefe: Starlit Crusher  (chefe)
@@ -1017,7 +1020,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 > Dica: ele é lento mas bate muito forte. Fique sempre se movendo e ataque pelas costas.
 
 **Tarefa:** Derrotar Starlit Crusher
-**Recompensas:** Fragmento do Selo; Livro de habilidade: Força Proibida; 15 níveis de XP; Diamante x5
+**Recompensas:** Fragmento do Selo; Livro de habilidade: Força Proibida; 15 níveis de XP; Diamante x4
 
 ### 13. Masmorra do Alquimista
 **Depois de:** Everdawn
@@ -1038,17 +1041,19 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 **Tarefa:** Entrar na masmorra
 **Recompensas:** 5 níveis de XP
 
-### 15. Chave da Masmorra Ofuscante
+### 15. Chave da Masmorra do Alquimista
 **Depois de:** Entrar na masmorra
 
 > A sala do chefe fica trancada. Explore a masmorra e encontre a chave em um dos baús.
-> Depois, use a chave na pedra-chave da porta do chefe.
+> Depois, use a chave correspondente na pedra-chave da porta do chefe.
+>
+> No jogo, a chave desta masmorra se chama Chave da Masmorra Ofuscante.
 
-**Tarefa:** Encontrar a Chave da Masmorra Ofuscante (Obter Chave da Masmorra Ofuscante)
+**Tarefa:** Encontrar a Chave da Masmorra do Alquimista
 **Recompensas:** 5 níveis de XP
 
 ### 16. Chefe: Alchemist  (chefe)
-**Depois de:** Chave da Masmorra Ofuscante
+**Depois de:** Chave da Masmorra do Alquimista
 
 > Derrote Alchemist, um dos guardiões do Selo, corrompido pelo fragmento.
 >
@@ -1060,7 +1065,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 ### 17. Masmorra do Veneno
 **Depois de:** Chefe: Alchemist
 
-> Mestre Vellan: "O último guardião do Everdawn virou uma aranha gigante, a Arachnarch (a Aracnarca). Ela fez um ninho numa masmorra venenosa na floresta de bordos."
+> Mestre Vellan: "O quarto e último guardião do Everdawn virou uma aranha gigante, a Arachnarch (a Aracnarca). Ela fez um ninho numa masmorra venenosa na floresta de bordos."
 >
 > Pegue a recompensa estando no Everdawn: as coordenadas aparecem no chat.
 
@@ -1080,9 +1085,9 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 **Depois de:** Entrar na masmorra
 
 > A sala do chefe fica trancada. Explore a masmorra e encontre a chave em um dos baús.
-> Depois, use a chave na pedra-chave da porta do chefe.
+> Depois, use a chave correspondente na pedra-chave da porta do chefe.
 
-**Tarefa:** Encontrar a Chave da Masmorra do Veneno (Obter Chave da Masmorra do Veneno)
+**Tarefa:** Encontrar a Chave da Masmorra do Veneno
 **Recompensas:** 5 níveis de XP
 
 ### 20. Chefe: Arachnarch  (chefe)
@@ -1251,7 +1256,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 >
 > Pegue a recompensa no mundo normal: as coordenadas aparecem no chat.
 
-**Tarefa:** Ter uma Estrela do Nether (Obter Estrela do Nether)
+**Tarefa:** Obter uma Estrela do Nether
 **Recompensas:** Coordenadas da Fábrica Antiga; Poção de Cura (forte) x4; Poção de Força (forte) x2; Maçã Dourada Encantada x2
 
 ### 13. A Fábrica Antiga
@@ -1314,7 +1319,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 >
 > Os Esqueletos das Almas e os Cavaleiros Wither da arena também deixam a chave, mas é raro.
 
-**Tarefa:** Entregar Lingote de Ouro x8 (os itens são gastos); Entregar Areia das Almas x16 (os itens são gastos)
+**Tarefa:** Entregar 8 lingotes de ouro (os itens são consumidos); Entregar 16 areias das almas (os itens são consumidos)
 **Recompensas:** Chave da Arena do Submundo
 
 ### 18. Chefe Final: Helvar, o Cavaleiro do Submundo  (chefe)
@@ -1440,10 +1445,10 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 
 > Derrote Sirok, a Minhoca de Areia.
 >
-> Deixa a Manopla de Sirok, que atira veneno.
+> Pode deixar a Manopla de Sirok, que atira veneno.
 
 **Tarefa:** Derrotar Sirok
-**Recompensas:** 20 níveis de XP; Diamante x4; Fragmentos de Netherita
+**Recompensas:** 10 níveis de XP; Diamante x2; Fragmentos de Netherita
 
 ### 4. Caçada: Tongbi  (opcional)
 *Fácil: a partir do Ato 2*
@@ -1467,15 +1472,15 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 
 > Derrote Tongbi, o Escultor.
 >
-> Deixa o Cajado do Escultor e as roupas do Geomante.
+> Pode deixar o Cajado do Escultor e as roupas do Geomante.
 
 **Tarefa:** Derrotar Tongbi
-**Recompensas:** 20 níveis de XP; Diamante x4; Fragmentos de Netherita
+**Recompensas:** 10 níveis de XP; Diamante x2; Fragmentos de Netherita
 
 ### 6. Caçada: O Lich da Noite  (opcional)
 *Médio: a partir do Ato 3*
 
-**Depois de:** Caçadas
+**Depois de:** Relatório: Abismo e Fogo (Ato 3)
 
 > O Lich da Noite
 >
@@ -1484,7 +1489,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 > Mora no alto da Torre do Lich.
 > Médio: a partir do Ato 3
 >
-> Pegue a recompensa para ver no chat as coordenadas de onde O Lich da Noite mora.
+> Pegue a recompensa para ver no chat as coordenadas do local onde o Lich da Noite vive.
 
 **Tarefa:** Pedir a localização
 **Recompensas:** Coordenadas: O Lich da Noite; Poção de Resistência ao Fogo (longa) x2
@@ -1494,15 +1499,15 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 
 > Derrote O Lich da Noite.
 >
-> Deixa a Ânima Antiga e diamantes.
+> Pode deixar a Ânima Antiga e diamantes.
 
 **Tarefa:** Derrotar O Lich da Noite
-**Recompensas:** 20 níveis de XP; Diamante x4; Fragmentos de Netherita
+**Recompensas:** 15 níveis de XP; Diamante x3; Fragmentos de Netherita
 
 ### 8. Caçada: Skor  (opcional)
 *Médio: a partir do Ato 3*
 
-**Depois de:** Caçadas
+**Depois de:** Relatório: Abismo e Fogo (Ato 3)
 
 > Skor, o Yeti
 >
@@ -1521,15 +1526,15 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 
 > Derrote Skor, o Yeti.
 >
-> Deixa a Manopla de Skor, que congela o alvo e solta espinhos de gelo.
+> Pode deixar a Manopla de Skor, que congela o alvo e solta espinhos de gelo.
 
 **Tarefa:** Derrotar Skor
-**Recompensas:** 20 níveis de XP; Diamante x4; Fragmentos de Netherita
+**Recompensas:** 15 níveis de XP; Diamante x3; Fragmentos de Netherita
 
 ### 10. Caçada: Rosalyne  (opcional)
 *Difícil: a partir do Ato 4*
 
-**Depois de:** Caçadas
+**Depois de:** Relatório: Além do Céu (Ato 4)
 
 > Rosalyne, Lâmina do Crepúsculo
 >
@@ -1548,15 +1553,15 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 
 > Derrote Rosalyne, Lâmina do Crepúsculo.
 >
-> Deixa a Flor Violeta.
+> Pode deixar a Flor Violeta.
 
 **Tarefa:** Derrotar Rosalyne
-**Recompensas:** 20 níveis de XP; Diamante x4; Fragmentos de Netherita
+**Recompensas:** 18 níveis de XP; Diamante x3; Fragmentos de Netherita x2
 
 ### 12. Caçada: Ashlord  (opcional)
 *Difícil: a partir do Ato 4*
 
-**Depois de:** Caçadas
+**Depois de:** Relatório: Além do Céu (Ato 4)
 
 > Ashlord, o Dragão Infernal
 >
@@ -1575,15 +1580,15 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 
 > Derrote Ashlord, o Dragão Infernal.
 >
-> Deixa ossos de dragão, para fazer uma armadura de ossos de dragão.
+> Pode deixar ossos de dragão para fabricar uma armadura de ossos de dragão.
 
 **Tarefa:** Derrotar Ashlord
-**Recompensas:** 20 níveis de XP; Diamante x4; Fragmentos de Netherita
+**Recompensas:** 18 níveis de XP; Diamante x4; Fragmentos de Netherita x2
 
 ### 14. Caçada: O Remanescente Antigo  (opcional)
 *Muito difícil: a partir do Ato 5*
 
-**Depois de:** Caçadas
+**Depois de:** O Selo Restaurado (Ato 5)
 
 > O Remanescente Antigo
 >
@@ -1592,7 +1597,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 > Mora numa pirâmide amaldiçoada no deserto.
 > Muito difícil: a partir do Ato 5
 >
-> Pegue a recompensa para ver no chat as coordenadas de onde O Remanescente Antigo mora.
+> Pegue a recompensa para ver no chat as coordenadas do local onde o Remanescente Antigo está.
 
 **Tarefa:** Pedir a localização
 **Recompensas:** Coordenadas: O Remanescente Antigo; Pincel
@@ -1602,15 +1607,15 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 
 > Derrote O Remanescente Antigo.
 >
-> Deixa a Tempestade de Areia na Garrafa e metal antigo.
+> Pode deixar a Tempestade de Areia na Garrafa e metal antigo.
 
 **Tarefa:** Derrotar O Remanescente Antigo
-**Recompensas:** 20 níveis de XP; Diamante x4; Fragmentos de Netherita
+**Recompensas:** 20 níveis de XP; Diamante x4; Fragmentos de Netherita x3
 
 ### 16. Caçada: Maledictus  (opcional)
 *Muito difícil: depois da história*
 
-**Depois de:** Caçadas
+**Depois de:** O Selo Restaurado (Ato 5)
 
 > Maledictus
 >
@@ -1629,15 +1634,15 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 
 > Derrote Maledictus.
 >
-> Deixa o lingote de Cursium.
+> Pode deixar o Lingote de Cursium.
 
 **Tarefa:** Derrotar Maledictus
-**Recompensas:** 20 níveis de XP; Diamante x4; Fragmentos de Netherita
+**Recompensas:** 20 níveis de XP; Diamante x4; Fragmentos de Netherita x3
 
 ### 18. Caçada: Nerakyss  (opcional)
 *Muito difícil: depois da história*
 
-**Depois de:** Caçadas
+**Depois de:** O Selo Restaurado (Ato 5)
 
 > Nerakyss, o Kraken
 >
@@ -1656,10 +1661,10 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 
 > Derrote Nerakyss, o Kraken.
 >
-> Deixa o dente do kraken, para fazer um tridente que puxa os inimigos.
+> Pode deixar o Dente do Kraken para fabricar um tridente que puxa os inimigos.
 
 **Tarefa:** Derrotar Nerakyss
-**Recompensas:** 20 níveis de XP; Diamante x4; Fragmentos de Netherita
+**Recompensas:** 20 níveis de XP; Diamante x4; Fragmentos de Netherita x3
 
 ### 20. Mestre Caçador  (opcional)
 *Todas as feras derrotadas*
@@ -1673,7 +1678,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 > Recompensa: a Lâmina do Mestre Caçador, 3 pontos de habilidade em cada árvore geral (Combate, Mineração e Vida; a árvore da classe não recebe) e o título [Mestre Caçador] ao lado do seu nome.
 
 **Tarefa:** Receber o título
-**Recompensas:** Lâmina do Mestre Caçador; +3 pontos em Combate; +3 pontos em Mineração; +3 pontos em Vida; Título [Mestre Caçador]; 100 níveis de XP
+**Recompensas:** Lâmina do Mestre Caçador; +3 pontos em Combate; +3 pontos em Mineração; +3 pontos em Vida; Título [Mestre Caçador]; 50 níveis de XP
 
 ## Falas do Mestre Vellan
 Clique nele com o botão direito. Ele mostra a fala do ato mais avançado que o jogador já terminou.
@@ -1718,9 +1723,9 @@ Clique nele com o botão direito. Ele mostra a fala do ato mais avançado que o 
 ### O ritual (quando o jogador tem a marca `terras_partidas_helvar`)
 > Você voltou, [seu nome]. Eu senti Helvar cair daqui.
 >
-> Os dezenove fragmentos brilham na sua mochila. O núcleo do Arauto é o coração: ele vai no centro, e os outros dezoito em volta dele.
+> Você reuniu os dezenove fragmentos. Eles brilham através do vínculo que a Ordem mantém com o Selo. O núcleo do Arauto é o coração: ele vai no centro, e os outros dezoito em volta dele.
 >
-> Coloque os pedaços no cristal. Eu termino o ritual que começamos há trezentos anos.
+> Aproxime-se do cristal e aperte “Restaurar o Selo”. Eu termino o ritual que começamos há trezentos anos.
 
 **Botões:** Restaurar o Selo · Abrir o livro de missões · Até mais, Mestre
 
@@ -1798,7 +1803,7 @@ Clique nele com o botão direito. Ele mostra a fala do ato mais avançado que o 
 ### Mago (aberta por um botão)
 > MAGO
 >
-> Prós: Dano de longe com feitiços, inclusive cura. Começa com um livro com 4 feitiços que não são gastos (usam mana), roupa de mago e Mesa de Inscrição.
+> Prós: Dano de longe com feitiços, inclusive cura. Começa com um livro com 4 feitiços que não são consumidos, mas gastam mana, roupa de mago e Mesa de Inscrição.
 >
 > Contras: Frágil de perto: a roupa de mago protege pouco e cada feitiço gasta mana.
 >
@@ -1875,7 +1880,7 @@ Aparece no fim do Ato 2. A fala muda depois de "Estou pronto" e depois do primei
 ### Como cuidar de um dragão (aberta por um botão)
 > Coloque o ovo em cima de um bloco firme e clique nele com o botão direito para ele começar a chocar.
 >
-> O lugar importa: até chocar, mantenha o ovo perto dos blocos do tipo dele (magma, gelo, prismarinho ou musgo) para ele continuar do tipo escolhido.
+> O lugar importa: até chocar, mantenha o ovo perto dos blocos do tipo dele (magma, gelo, prismarinho ou musgo) para ele continuar do tipo escolhido. Nunca leve um dragão de gelo para dentro do Nether: ele não sobrevive ao calor daquele mundo.
 >
 > Alimente o filhote com carne até ele crescer. Depois coloque a sela e monte. Pular sobe, agachar desce.
 

@@ -18,7 +18,7 @@
 			icon: "paraglider:paraglider"
 			shape: "gear"
 			size: 2.0d
-			description: ["&6Mestre Vellan&r: \"Os batedores da Ordem voltaram. Quatro fragmentos foram vistos em lugares onde poucos sobrevivem:\"", "", "• &bO Gelo Eterno&r, onde algo enorme dorme sob a neve.", "• &6As Savanas Queimadas&r, onde uma tribo mascarada serve a um pássaro de fogo.", "• &3O Labirinto de Gelo&r, um mar congelado cheio de navios fantasmas.", "• &5A Mesa da Fortuna&r, onde um espírito aposta almas.", "", "&o\"Use o planador para atravessar montanhas e vales. Ele gasta fôlego, então pouse antes que acabe.\"", "", "&7Você pode fazer as quatro frentes na ordem que quiser.&r"]
+			description: ["&6Mestre Vellan&r: \"Os batedores da Ordem voltaram. Quatro fragmentos foram vistos em lugares onde poucos sobrevivem:\"", "", "• &bO Gelo Eterno&r, onde algo enorme dorme sob a neve.", "• &6As Savanas Queimadas&r, onde uma tribo mascarada serve a um pássaro de fogo.", "• &3O Labirinto de Gelo&r, um mar congelado cheio de navios fantasmas.", "• &5A Mesa da Fortuna&r, onde um espírito aposta almas.", "", "&o\"Use o planador para atravessar montanhas e vales. Ele gasta fôlego, então pouse antes que a barra acabe.\"", "", "&7Você pode fazer as quatro frentes na ordem que quiser.&r"]
 			dependencies: ["5733992D42C9FA1E"]
 			tasks: [
 				{
@@ -159,7 +159,7 @@
 				{
 					id: "57FF2C77BC583900"
 					type: "checkmark"
-					title: "Pegar o mapa do gelo"
+					title: "Obter o mapa do gelo"
 				}
 			]
 			rewards: [
@@ -291,7 +291,7 @@
 				{
 					id: "1C0187DF6956E962"
 					type: "checkmark"
-					title: "Pegar o mapa da savana"
+					title: "Obter o mapa da savana"
 				}
 			]
 			rewards: [
@@ -441,7 +441,7 @@
 				{
 					id: "5E177E126E257038"
 					type: "checkmark"
-					title: "Pegar o mapa do mar"
+					title: "Obter o mapa do mar"
 				}
 			]
 			rewards: [
@@ -509,7 +509,7 @@
 				{
 					id: "5C7BD451DD515D25"
 					type: "checkmark"
-					title: "Receber o Chifre de Concha"
+					title: "Obter o Chifre de Concha"
 				}
 			]
 			rewards: [
@@ -625,6 +625,7 @@
 					item: "minecraft:gold_ingot"
 					count: 6L
 					consume_items: true
+					title: "Entregar 6 lingotes de ouro"
 				}
 			]
 			rewards: [
@@ -675,7 +676,7 @@
 			y: 9.0d
 			subtitle: "Frente da Fortuna"
 			icon: "meetyourfight:devils_ante"
-			description: ["&6Mestre Vellan&r: \"Esta é a mais traiçoeira. &5Dame Fortuna&r é um espírito que aposta com a sorte. Ela ganhou um fragmento num jogo de cartas.\"", "", "&o\"Só aceito te dar a ficha de aposta quando você estiver protegido. Volte com armadura de diamante.\"", "", "&7Equipamento recomendado: diamante.&r"]
+			description: ["&6Mestre Vellan&r: \"Esta é a mais traiçoeira. &5Dame Fortuna&r é um espírito que aposta com almas e sorte. Ela ganhou um fragmento num jogo de cartas.\"", "", "&o\"Só aceito te dar a ficha de aposta quando você estiver protegido. Volte com armadura de diamante.\"", "", "&7Equipamento recomendado: diamante.&r"]
 			dependencies: ["036CF1B560F9FBB7"]
 			tasks: [
 				{
@@ -683,7 +684,7 @@
 					type: "item"
 					item: "minecraft:diamond_chestplate"
 					count: 1L
-					title: "Ter um peitoral de diamante"
+					title: "Obter um peitoral de diamante"
 				}
 			]
 			rewards: [
@@ -799,6 +800,7 @@
 					item: "minecraft:diamond"
 					count: 2L
 					consume_items: true
+					title: "Entregar 2 diamantes"
 				}
 			]
 			rewards: [
@@ -989,7 +991,7 @@
 				}
 			}
 			shape: "diamond"
-			description: ["Você escolheu o &6Ovo de Dragão de Fogo&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo cai como areia: coloque em cima de um bloco firme.&r", "", "&cImportante:&r o ambiente em volta decide se o ovo continua deste tipo. Até ele chocar, deixe-o perto de &flava, fogo, fogueira ou blocos de magma&r. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
+			description: ["Você escolheu o &6Ovo de Dragão de Fogo&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo funciona como areia: coloque em cima de um bloco firme.&r", "", "&cImportante:&r o ambiente em volta decide se o ovo continua deste tipo. Até ele chocar, deixe-o perto de &flava, fogo, fogueira ou blocos de magma&r. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
 			dependencies: ["37E5C75BE7F753FD"]
 			tasks: [
 				{
@@ -1046,7 +1048,7 @@
 				}
 			}
 			shape: "diamond"
-			description: ["Você escolheu o &bOvo de Dragão de Gelo&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo cai como areia: coloque em cima de um bloco firme.&r", "", "&cImportante:&r o ambiente em volta decide se o ovo continua deste tipo. Até ele chocar, deixe-o perto de &fgelo ou neve&r. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
+			description: ["Você escolheu o &bOvo de Dragão de Gelo&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo funciona como areia: coloque em cima de um bloco firme.&r", "", "&cImportante:&r o ambiente em volta decide se o ovo continua deste tipo. Até ele chocar, deixe-o perto de &fgelo ou neve&r. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
 			dependencies: ["37E5C75BE7F753FD"]
 			tasks: [
 				{
@@ -1103,7 +1105,7 @@
 				}
 			}
 			shape: "diamond"
-			description: ["Você escolheu o &3Ovo de Dragão de Água&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo cai como areia: coloque em cima de um bloco firme.&r", "", "&cImportante:&r o ambiente em volta decide se o ovo continua deste tipo. Até ele chocar, deixe-o perto de &fprismarinho, lanterna do mar, algas ou corais&r. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
+			description: ["Você escolheu o &3Ovo de Dragão de Água&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo funciona como areia: coloque em cima de um bloco firme.&r", "", "&cImportante:&r o ambiente em volta decide se o ovo continua deste tipo. Até ele chocar, deixe-o perto de &fprismarinho, lanterna do mar, algas ou corais&r. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
 			dependencies: ["37E5C75BE7F753FD"]
 			tasks: [
 				{
@@ -1160,7 +1162,7 @@
 				}
 			}
 			shape: "diamond"
-			description: ["Você escolheu o &aOvo de Dragão de Floresta&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo cai como areia: coloque em cima de um bloco firme.&r", "", "&cImportante:&r o ambiente em volta decide se o ovo continua deste tipo. Até ele chocar, deixe-o perto de &ffolhas, flores, mudas ou musgo&r. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
+			description: ["Você escolheu o &aOvo de Dragão de Floresta&r.", "", "&eComo chocar:&r coloque o ovo no chão e &fclique nele com o botão direito&r para ele começar a chocar. Depois é só esperar.", "&7O ovo funciona como areia: coloque em cima de um bloco firme.&r", "", "&cImportante:&r o ambiente em volta decide se o ovo continua deste tipo. Até ele chocar, deixe-o perto de &ffolhas, flores, mudas ou musgo&r. Os blocos que vieram junto servem para isso.", "", "&eDepois de chocar:&r alimente o filhote com &fcarne&r. Quando ele crescer, coloque a &fsela&r e monte."]
 			dependencies: ["37E5C75BE7F753FD"]
 			tasks: [
 				{
