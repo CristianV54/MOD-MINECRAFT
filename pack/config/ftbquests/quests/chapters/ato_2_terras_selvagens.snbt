@@ -13,7 +13,7 @@
 			id: "036CF1B560F9FBB7"
 			title: "Terras Selvagens"
 			x: 0.0d
-			y: 0.0d
+			y: 4.5d
 			subtitle: "Quatro fragmentos espalhados pelo mundo"
 			icon: "paraglider:paraglider"
 			shape: "gear"
@@ -51,7 +51,7 @@
 			id: "3DE357B271850533"
 			title: "Mochila Maior"
 			x: 2.0d
-			y: -4.5d
+			y: 0.0d
 			icon: "sophisticatedbackpacks:iron_backpack"
 			description: ["Viagens longas pedem espaço. Melhore sua mochila para a de &fferro&r."]
 			dependencies: ["036CF1B560F9FBB7"]
@@ -82,7 +82,7 @@
 			id: "218622C1D167E9C6"
 			title: "Conhecimento Arcano"
 			x: 2.0d
-			y: -3.0d
+			y: 1.5d
 			icon: "minecraft:enchanting_table"
 			description: ["Monstros das Terras Selvagens batem forte. Faça uma &fmesa de encantamento&r."]
 			dependencies: ["036CF1B560F9FBB7"]
@@ -119,7 +119,7 @@
 			id: "00A0D79392A0B9AC"
 			title: "Seu Próprio Obelisco"
 			x: 2.0d
-			y: -1.5d
+			y: 3.0d
 			icon: "waystones:waystone"
 			description: ["Faça um &bObelisco&r (Waystone) e coloque perto da sua base. Assim você volta de qualquer frente em segundos."]
 			dependencies: ["036CF1B560F9FBB7"]
@@ -150,7 +150,7 @@
 			id: "25E2C127B70E8DA3"
 			title: "O Gelo Eterno"
 			x: 2.0d
-			y: 0.0d
+			y: 4.5d
 			subtitle: "Frente do Gelo"
 			icon: "minecraft:snowball"
 			description: ["&6Mestre Vellan&r: \"Nas terras nevadas, um caçador viu uma criatura gigante dormindo ao lado de um cristal de gelo. Ele não voltou para contar o resto.\"", "", "&o\"Este mapa marca onde ele foi visto pela última vez.\"", "", "&7Leve roupas quentes... e comida. É longe.&r"]
@@ -184,7 +184,7 @@
 			id: "5D7D192BF04E4FFF"
 			title: "O Covil Congelado"
 			x: 4.0d
-			y: -0.5d
+			y: 4.0d
 			icon: "minecraft:packed_ice"
 			description: ["Siga o mapa até o &fX vermelho&r, em um bioma de neve."]
 			dependencies: ["25E2C127B70E8DA3"]
@@ -208,7 +208,7 @@
 			id: "0EE70670AF58EFC2"
 			title: "Chefe: Frostmaw"
 			x: 6.0d
-			y: -0.5d
+			y: 4.0d
 			icon: "mowziesmobs:ice_crystal"
 			shape: "octagon"
 			size: 1.5d
@@ -282,7 +282,7 @@
 			id: "21C5178876648D62"
 			title: "As Savanas Queimadas"
 			x: 2.0d
-			y: 1.5d
+			y: 6.0d
 			subtitle: "Frente da Savana"
 			icon: "minecraft:acacia_sapling"
 			description: ["&6Mestre Vellan&r: \"Nas savanas vive a tribo dos &6Umvuthana&r, guerreiros mascarados. Eles servem a &6Umvuthi, o Pássaro do Sol&r, e agora o fragmento brilha no peito dele.\"", "", "&o\"Cuidado: eles atacam em bando e usam lanças e magia de cura.\""]
@@ -322,7 +322,7 @@
 			id: "3CC4D20B79C8AC57"
 			title: "O Bosque dos Umvuthana"
 			x: 4.0d
-			y: 1.0d
+			y: 5.5d
 			icon: "minecraft:acacia_log"
 			description: ["Siga o mapa até o bosque, em uma savana."]
 			dependencies: ["21C5178876648D62"]
@@ -358,7 +358,7 @@
 			id: "11037820C7E3E17C"
 			title: "Chefe: Umvuthi"
 			x: 6.0d
-			y: 1.0d
+			y: 5.5d
 			icon: "minecraft:blaze_powder"
 			shape: "octagon"
 			size: 1.5d
@@ -432,7 +432,7 @@
 			id: "3CA456EAC7EE4D16"
 			title: "O Mar Congelado"
 			x: 2.0d
-			y: 3.0d
+			y: 7.5d
 			subtitle: "Frente do Mar"
 			icon: "minecraft:blue_ice"
 			description: ["&6Mestre Vellan&r: \"Existe um mar onde o gelo forma corredores sem fim: o &3Labirinto de Gelo&r. Navios piratas congelados estão presos lá há séculos.\"", "", "&o\"A capitã de um desses navios voltou como fantasma. O fragmento a mantém presa a este mundo.\"", "", "&7Leve um barco. A água é gelada e cheia de criaturas das profundezas.&r"]
@@ -477,7 +477,7 @@
 			id: "2A9B4C51EC1D1ABD"
 			title: "O Labirinto de Gelo"
 			x: 4.0d
-			y: 2.5d
+			y: 7.0d
 			icon: "minecraft:packed_ice"
 			description: ["Siga o mapa e entre no &3Labirinto de Gelo&r: o oceano congelado profundo, cheio de icebergs e navios presos no gelo."]
 			dependencies: ["3CA456EAC7EE4D16"]
@@ -501,7 +501,7 @@
 			id: "1F91F50E88C08E4C"
 			title: "O Chifre de Concha"
 			x: 6.0d
-			y: 2.5d
+			y: 7.0d
 			icon: "aquamirae:shell_horn"
 			description: ["&6Mestre Vellan&r &7(por carta)&r: \"Encontrei nos arquivos da Ordem: a capitã atende ao som de um &fChifre de Concha&r. Mandei um para você.\"", "", "Use o Chifre de Concha &fperto da água, dentro do Labirinto de Gelo&r, para invocar a capitã.", "", "&7Ela também aparece às vezes em baús dos navios congelados.&r"]
 			dependencies: ["2A9B4C51EC1D1ABD"]
@@ -536,7 +536,7 @@
 			id: "6BB74675F63F848A"
 			title: "Chefe: Capitã Cornelia"
 			x: 8.0d
-			y: 1.5d
+			y: 6.0d
 			icon: "aquamirae:shell_horn"
 			shape: "octagon"
 			size: 1.5d
@@ -610,7 +610,7 @@
 			id: "0668117422983D4B"
 			title: "Outro Chifre"
 			x: 8.0d
-			y: 3.0d
+			y: 7.5d
 			icon: "aquamirae:shell_horn"
 			shape: "circle"
 			size: 0.75d
@@ -639,7 +639,7 @@
 			id: "3FF3F2EFC599F18B"
 			title: "A Mãe do Labirinto"
 			x: 6.0d
-			y: 4.0d
+			y: 8.5d
 			icon: "minecraft:spider_eye"
 			shape: "circle"
 			description: ["&7Missão extra.&r Dizem que uma criatura chamada &cMãe do Labirinto&r caça nos corredores de gelo.", "Derrote-a se tiver coragem."]
@@ -672,7 +672,7 @@
 			id: "1179D6F3DF4E9D88"
 			title: "A Aposta do Diabo"
 			x: 2.0d
-			y: 4.5d
+			y: 9.0d
 			subtitle: "Frente da Fortuna"
 			icon: "meetyourfight:devils_ante"
 			description: ["&6Mestre Vellan&r: \"Esta é a mais traiçoeira. &5Dame Fortuna&r é um espírito que aposta com a sorte. Ela ganhou um fragmento num jogo de cartas.\"", "", "&o\"Só aceito te dar a ficha de aposta quando você estiver protegido. Volte com armadura de diamante.\"", "", "&7Equipamento recomendado: diamante.&r"]
@@ -710,7 +710,7 @@
 			id: "1BE278E0C76CB18D"
 			title: "Chefe: Dame Fortuna"
 			x: 4.0d
-			y: 4.0d
+			y: 8.5d
 			icon: "meetyourfight:devils_ante"
 			shape: "octagon"
 			size: 1.5d
@@ -784,7 +784,7 @@
 			id: "7B882A7794CB2C23"
 			title: "Nova Aposta"
 			x: 4.0d
-			y: 5.5d
+			y: 10.0d
 			icon: "meetyourfight:devils_ante"
 			shape: "circle"
 			size: 0.75d
@@ -813,7 +813,7 @@
 			id: "5A0236B98D30AC09"
 			title: "Relatório: Terras Selvagens"
 			x: 10.0d
-			y: 1.5d
+			y: 6.0d
 			subtitle: "Fim do Ato 2"
 			icon: "minecraft:amethyst_shard"
 			shape: "gear"
@@ -877,7 +877,7 @@
 			id: "37E5C75BE7F753FD"
 			title: "O Presente do Mestre"
 			x: 12.0d
-			y: 1.5d
+			y: 6.0d
 			subtitle: "Escolha só um ovo"
 			icon: "dragonmounts:dragon_egg"
 			shape: "hexagon"
@@ -897,7 +897,7 @@
 			id: "6722E765449B3A7A"
 			title: "&6Ovo de Dragão de Fogo"
 			x: 14.0d
-			y: -1.0d
+			y: 3.5d
 			icon: {
 				id: "dragonmounts:dragon_egg"
 				Count: 1b
@@ -954,7 +954,7 @@
 			id: "442B24C6617282A8"
 			title: "&bOvo de Dragão de Gelo"
 			x: 14.0d
-			y: 0.5d
+			y: 5.0d
 			icon: {
 				id: "dragonmounts:dragon_egg"
 				Count: 1b
@@ -1011,7 +1011,7 @@
 			id: "73682D458DEC7CE6"
 			title: "&3Ovo de Dragão de Água"
 			x: 14.0d
-			y: 2.0d
+			y: 6.5d
 			icon: {
 				id: "dragonmounts:dragon_egg"
 				Count: 1b
@@ -1068,7 +1068,7 @@
 			id: "499EF19D7636C3EE"
 			title: "&aOvo de Dragão de Floresta"
 			x: 14.0d
-			y: 3.5d
+			y: 8.0d
 			icon: {
 				id: "dragonmounts:dragon_egg"
 				Count: 1b
@@ -1125,7 +1125,7 @@
 			id: "6B52EB5089E6C5F3"
 			title: "Primeiro Voo"
 			x: 16.0d
-			y: 1.5d
+			y: 6.0d
 			icon: "minecraft:saddle"
 			shape: "gear"
 			size: 1.5d

@@ -30,27 +30,27 @@ hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_1_o_chamado.snbt"
-hash = "9ce0aa7a518883d412cba108a38a630a8b7a81c4ea174257ff58a4f5b8541ea4"
+hash = "3cc8297285d2bf4defc659eb3924da7daa1c03949bb3a3eed0f64db322d67576"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_2_terras_selvagens.snbt"
-hash = "bbd612cbfdca350e1856fd66926eb55b4ca15d0efff14062cb7d18fedf5bcef9"
+hash = "3d2f2bee4ea039420c7f0d07cdfd1eb791a3b064faae04ec78a8f4343c86f362"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_3_abismo_e_fogo.snbt"
-hash = "1883be02cc3177563afa3f4f5bf6b536d47800596521f342ecc7ffb4b6df2eea"
+hash = "9bab3b870acfa6e9600126d373926d58735cb202d3a2013f863331ee26dbe4f3"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_4_alem_do_ceu.snbt"
-hash = "35be85b7a2347186124ee6ba6a8d8703c2f6a1818e61ba8a986d35fb798df182"
+hash = "1071141bdd825edcdb3b34ac882e24556b71f1660469ae2df4c656846dfb083b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_5_o_fim_do_selo.snbt"
-hash = "1c9ee2caa719e6c1ef13d3d5a2d5e14dff927de34dbf4db4001127f4172f4ce1"
+hash = "b0023f43ebb45add6af4a68ab6b015ccb97a13d8708f882d588f841d3538c752"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cacadas.snbt"
-hash = "714105f1879626ca64f22aa2cb17fa491bac058ee36a7ba6253dfe9ddc43519e"
+hash = "f0e31d9e8a3754d94808f7058f484578363b6e9d99edd2434ae2d18c5359e8a9"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -322,7 +322,7 @@ hash = "de14d73f0c4e03f3a2d72f0cd9b719506aecfd99753c7e76d215de69b7b0ee67"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/boas_vindas/esperar.mcfunction"
-hash = "7f9b2479c46899d3dd6f793b1a5ade485b2b01e68a7b62a77938b2ba65d68841"
+hash = "450eed8221a36d25631650a754a432d0f149dbb13e4754dbfd1fdcce8f1aaead"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/boas_vindas/marcar.mcfunction"
@@ -330,7 +330,7 @@ hash = "c47cedf29efadbf38477c887693144cc772dd8c452f263f650b32a30976b7ebc"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/boas_vindas/receber.mcfunction"
-hash = "37b29aab33418b327bed6d7c9c11003fcb2eff3b3b0c2bef4f938e464011d8bb"
+hash = "745a59070c9bfc7bac31d61528ff46036514211b1373212bf5c6da8def311da3"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/boas_vindas/tick.mcfunction"

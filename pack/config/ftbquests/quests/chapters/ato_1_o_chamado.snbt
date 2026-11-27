@@ -13,7 +13,7 @@
 			id: "3BB64CCD28B4E329"
 			title: "O Chamado"
 			x: 0.0d
-			y: 0.0d
+			y: 1.5d
 			subtitle: "Uma carta com o selo da Ordem"
 			icon: "minecraft:writable_book"
 			shape: "gear"
@@ -56,7 +56,7 @@
 			id: "61D6E519B4E5DB1C"
 			title: "Chamar o Mestre"
 			x: 2.0d
-			y: -1.5d
+			y: 0.0d
 			icon: "minecraft:bell"
 			shape: "circle"
 			size: 0.75d
@@ -87,7 +87,7 @@
 			id: "683AFFAD0FF30115"
 			title: "Como Ficar Mais Forte"
 			x: 2.0d
-			y: 0.0d
+			y: 1.5d
 			subtitle: "Leia se os monstros estão difíceis"
 			icon: "minecraft:shield"
 			shape: "circle"
@@ -136,7 +136,7 @@
 			id: "7705A346645D703A"
 			title: "Escolha seu Caminho"
 			x: 2.0d
-			y: 1.5d
+			y: 3.0d
 			subtitle: "Só dá para escolher uma vez"
 			icon: "minecraft:compass"
 			shape: "hexagon"
@@ -156,7 +156,7 @@
 			id: "062E0BFC8535363C"
 			title: "&cGuerreiro"
 			x: 4.0d
-			y: -1.5d
+			y: 0.0d
 			icon: "epicfight:iron_longsword"
 			shape: "diamond"
 			description: ["&6Mestre Vellan&r: \"Então você é um &cGuerreiro&r.\"", "", "Você luta de frente, com espada longa e armadura. Bom para quem está começando.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
@@ -205,7 +205,7 @@
 			id: "3F450D4A9B68A9C4"
 			title: "&9Tanque"
 			x: 4.0d
-			y: 0.0d
+			y: 1.5d
 			icon: "minecraft:shield"
 			shape: "diamond"
 			description: ["&6Mestre Vellan&r: \"Então você é um &9Tanque&r.\"", "", "Você aguenta pancada. Lança e escudo (dá para usar os dois juntos), armadura de ferro completa e a técnica de &eAparar&r do Epic Fight.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
@@ -254,7 +254,7 @@
 			id: "09A7904C3E38C2EE"
 			title: "&8Assassino"
 			x: 4.0d
-			y: 1.5d
+			y: 3.0d
 			icon: "epicfight:iron_dagger"
 			shape: "diamond"
 			description: ["&6Mestre Vellan&r: \"Então você é um &8Assassino&r.\"", "", "Você é rápido. Duas adagas (uma em cada mão), poções de velocidade e o &ePasso&r, uma esquiva mais curta e ágil.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
@@ -303,7 +303,7 @@
 			id: "3E1B2E122F610121"
 			title: "&5Mago"
 			x: 4.0d
-			y: 3.0d
+			y: 4.5d
 			icon: "irons_spellbooks:copper_spell_book"
 			shape: "diamond"
 			description: ["&6Mestre Vellan&r: \"Então você é um &5Mago&r.\"", "", "Você usa magia. Seu &flivro de feitiços&r já vem com 4 feitiços gravados, que &fnão acabam&r (usam mana). O livro já chega &eequipado no espaço do livro&r: aperte &eV&r para lançar o feitiço escolhido e &eZ&r para abrir a roda de feitiços. Pergaminhos avulsos somem quando usados: grave-os no livro na &eMesa de Inscrição&r para usar sempre.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
@@ -352,7 +352,7 @@
 			id: "40FA859627277492"
 			title: "&aCaçador"
 			x: 4.0d
-			y: 4.5d
+			y: 6.0d
 			icon: "minecraft:bow"
 			shape: "diamond"
 			description: ["&6Mestre Vellan&r: \"Então você é um &aCaçador&r.\"", "", "Você ataca de longe. Arco, muitas flechas e uma adaga para quando o inimigo chegar perto.", "", "&eÁrvore de habilidades:&r esta classe libera uma árvore só dela. Aperte &eK&r para abrir.", "Você ganha pontos matando monstros e &f+1 ponto a cada chefe&r derrotado."]
@@ -401,7 +401,7 @@
 			id: "5A8FBE105E9C4E06"
 			title: "Ferramentas de Ferro"
 			x: 6.0d
-			y: 1.0d
+			y: 2.0d
 			icon: "minecraft:iron_pickaxe"
 			description: ["&6Mestre Vellan&r: \"Ninguém caça de mãos vazias. Arrume ferramentas decentes.\"", "", "Faça uma &fpicareta de ferro&r."]
 			dependencies: ["062E0BFC8535363C", "3F450D4A9B68A9C4", "09A7904C3E38C2EE", "3E1B2E122F610121", "40FA859627277492"]
@@ -433,7 +433,7 @@
 			id: "4F00E29859D87333"
 			title: "Uma Mochila de Verdade"
 			x: 8.0d
-			y: 0.0d
+			y: 1.0d
 			icon: "sophisticatedbackpacks:backpack"
 			description: ["O inventário vai encher rápido. Faça uma &fmochila&r.", "Dá para melhorar ela depois (cobre, ferro, ouro...)."]
 			dependencies: ["5A8FBE105E9C4E06"]
@@ -463,7 +463,7 @@
 			id: "1D8DEB71D2179B63"
 			title: "Abrigo Seguro"
 			x: 8.0d
-			y: 1.0d
+			y: 3.0d
 			icon: "minecraft:red_bed"
 			description: ["As noites aqui são bem mais perigosas do que você está acostumado.", "Faça uma cama e &fdurma&r para pular a noite e marcar seu ponto de renascer."]
 			dependencies: ["5A8FBE105E9C4E06"]
@@ -495,7 +495,7 @@
 			id: "454A15647F6BC9D0"
 			title: "Uma Vila Amiga"
 			x: 10.0d
-			y: 0.5d
+			y: 2.0d
 			icon: "minecraft:emerald"
 			description: ["&6Mestre Vellan&r: \"As vilas são o último refúgio deste mundo. Os &fguardas&r protegem os aldeões, mas precisam de ajuda.\"", "", "Encontre uma &fvila&r. Muitas delas têm um &bObelisco&r (Waystone), uma pedra que te teleporta entre lugares já visitados."]
 			dependencies: ["4F00E29859D87333", "1D8DEB71D2179B63"]
@@ -525,7 +525,7 @@
 			id: "5557D1E7A6BCD19E"
 			title: "Treino de Combate"
 			x: 6.0d
-			y: 2.0d
+			y: 4.0d
 			icon: "minecraft:iron_sword"
 			description: ["&6Mestre Vellan&r: \"Antes de enfrentar algo de verdade, aprenda a lutar.\"", "", "No Epic Fight, &eesquivar&r e &edefender&r gasta a barra de fôlego. Não ataque sem parar: espere a abertura do inimigo.", "", "Derrote &c10 zumbis&r."]
 			dependencies: ["062E0BFC8535363C", "3F450D4A9B68A9C4", "09A7904C3E38C2EE", "3E1B2E122F610121", "40FA859627277492"]
@@ -557,7 +557,7 @@
 			id: "17C4CCD7D735263C"
 			title: "Ossos Inquietos"
 			x: 8.0d
-			y: 3.0d
+			y: 4.0d
 			icon: "minecraft:bone"
 			description: ["Esqueletos de longe são piores que zumbis. Use cobertura e aproxime-se esquivando.", "", "Derrote &c10 esqueletos&r."]
 			dependencies: ["5557D1E7A6BCD19E"]
@@ -588,7 +588,7 @@
 			id: "328C587F2C229F2B"
 			title: "Algo no Pântano"
 			x: 10.0d
-			y: 3.0d
+			y: 4.0d
 			subtitle: "Primeiro fragmento"
 			icon: "meetyourfight:fossil_bait"
 			description: ["&6Mestre Vellan&r: \"Pescadores sumiram perto dos pântanos. Algo enorme come qualquer coisa que se move por lá... e eu sinto um fragmento do Selo dentro dele.\"", "", "Pegue esta &fIsca Fóssil&r. Quando estiver pronto, use-a (clique direito) para chamar a criatura.", "", "&7Equipamento recomendado: pedra ou ferro.&r"]
@@ -624,7 +624,7 @@
 			id: "7FCBF496418E37A1"
 			title: "Chefe: Swampjaw"
 			x: 12.0d
-			y: 2.0d
+			y: 3.5d
 			icon: "meetyourfight:fossil_bait"
 			shape: "octagon"
 			size: 1.5d
@@ -697,7 +697,7 @@
 			id: "2DDB6DFF55F4CC55"
 			title: "Mais uma Isca"
 			x: 12.0d
-			y: 3.5d
+			y: 5.0d
 			icon: "meetyourfight:fossil_bait"
 			shape: "circle"
 			size: 0.75d
@@ -726,7 +726,7 @@
 			id: "45A12E1B413F8922"
 			title: "O Sino Assombrado"
 			x: 14.0d
-			y: 2.0d
+			y: 3.5d
 			subtitle: "Segundo fragmento"
 			icon: "meetyourfight:haunted_bell"
 			description: ["&6Mestre Vellan&r: \"Muito bem. O segundo fragmento está preso a um espírito que toca um sino nas ruínas. Cada badalada atrai a morte.\"", "", "Pegue o &fSino Assombrado&r. Tocá-lo invoca o &cBellringer&r.", "", "&7Equipamento recomendado: ferro ou diamante. Ele é rápido: guarde a esquiva para quando ele avançar.&r"]
@@ -764,7 +764,7 @@
 			id: "687FD9580D24CDE1"
 			title: "Chefe: Bellringer"
 			x: 16.0d
-			y: 1.5d
+			y: 3.0d
 			icon: "meetyourfight:haunted_bell"
 			shape: "octagon"
 			size: 1.5d
@@ -838,7 +838,7 @@
 			id: "208DE0E0CA9FC9FD"
 			title: "Outro Sino"
 			x: 16.0d
-			y: 3.0d
+			y: 4.5d
 			icon: "meetyourfight:haunted_bell"
 			shape: "circle"
 			size: 0.75d
@@ -867,7 +867,7 @@
 			id: "25F06794A8E1D9BF"
 			title: "Rumores na Vila"
 			x: 14.0d
-			y: 0.5d
+			y: 2.0d
 			subtitle: "Terceiro fragmento"
 			icon: "minecraft:filled_map"
 			description: ["&6Mestre Vellan&r: \"Os aldeões falam de um &fcavaleiro de metal&r que guarda uma câmara no subsolo. Nunca saiu de lá, nunca dormiu... e agora carrega um fragmento do Selo.\"", "", "&o\"Um minerador desenhou este mapa antes de fugir. O X marca a entrada.\"", "", "&7Segure o mapa na mão para ver o caminho. O mapa pode demorar alguns segundos para aparecer.&r"]
@@ -907,7 +907,7 @@
 			id: "11F210357E4C4450"
 			title: "A Câmara Forjada"
 			x: 16.0d
-			y: 0.0d
+			y: 1.5d
 			icon: "mowziesmobs:wrought_helmet"
 			description: ["Siga o mapa até o &fX vermelho&r. A Câmara fica &fno subsolo&r (entre as camadas Y 20 e 50): cave para baixo quando chegar no ponto.", "", "&7Dica: os mapas do Xaero ajudam a marcar o caminho (tecla &eB&7 para criar um ponto de referência).&r"]
 			dependencies: ["25F06794A8E1D9BF"]
@@ -943,7 +943,7 @@
 			id: "31549F6EF053CF36"
 			title: "Chefe: Cavaleiro Forjado"
 			x: 18.0d
-			y: 0.0d
+			y: 1.5d
 			icon: "mowziesmobs:wrought_axe"
 			shape: "octagon"
 			size: 1.5d
@@ -1017,7 +1017,7 @@
 			id: "5733992D42C9FA1E"
 			title: "Relatório ao Mestre"
 			x: 20.0d
-			y: 1.0d
+			y: 2.5d
 			subtitle: "Fim do Ato 1"
 			icon: "minecraft:amethyst_shard"
 			shape: "gear"

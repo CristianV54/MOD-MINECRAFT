@@ -198,7 +198,7 @@ O pacote de recursos `pack/config/openloader/resources/terras_partidas_ptbr/` tr
 
 ## Mestre Vellan no mundo
 
-O Mestre Vellan é um NPC do Easy NPC que **aparece 3 blocos na frente do jogador** (ou 2, ou no lugar do próprio jogador, se tiver bloco no caminho; ver `functions/vellan/aparecer.mcfunction`) uns 5 segundos depois de ele entrar no mundo pela primeira vez, com o título "SealCraft" na tela. Uma conquista invisível (`terras_partidas:primeira_entrada`) dispara as funções em `functions/boas_vindas/`.
+O Mestre Vellan é um NPC do Easy NPC que **aparece 3 blocos na frente do jogador** (ou 2, ou no lugar do próprio jogador, se tiver bloco no caminho; ver `functions/vellan/aparecer.mcfunction`) uns 3 segundos depois de ele entrar no mundo pela primeira vez, com o título "SealCraft" na tela. Uma conquista invisível (`terras_partidas:primeira_entrada`) dispara as funções em `functions/boas_vindas/`.
 - **Escolha de classe:** a primeira conversa é a tela de escolha de classe. Cada classe tem uma página de prós e contras e um botão "Escolher" que:
   - marca como completas as missões "O Chamado", "Escolha seu Caminho" e a da classe;
   - libera a árvore de habilidades;
@@ -273,7 +273,10 @@ O script `tools/gerar_equilibrio.py` deixa o começo do jogo mais justo:
 
 ## Layout do livro de missões
 
-As posições das missões são calculadas pelo gerador (`organizar()` em `tools/gerar_missoes.py`): o começo de cada ato fica na **ponta esquerda**, maior e com o subtítulo "Comece aqui", e cada coluna para a direita é uma etapa a mais. As missões de cada frente ficam na mesma faixa, sem linhas cruzando. Os números `x, y` escritos em cada missão não são mais usados.
+As posições das missões são calculadas pelo gerador (`organizar()` em `tools/gerar_missoes.py`), sempre no mesmo padrão, como texto num livro:
+- **Sentido:** o começo de cada ato fica em cima à esquerda, maior e com o subtítulo "Comece aqui", e a história segue para a direita. As missões de cada frente ficam numa linha própria.
+- **Ato longo** (mais de 10 etapas, hoje só o Ato 5): quebra para a linha de baixo, mas só num ponto de passagem, uma etapa com uma única missão por onde toda a história passa. Assim nenhuma ligação atravessa a tela.
+- **Caçadas:** posições próprias, numa grade de 3 por 3 com cada mapa ao lado da sua fera e o Mestre Caçador no fim. As linhas do início e das feras até o Mestre ficam escondidas.
 
 ## Visual: shaders e animações
 

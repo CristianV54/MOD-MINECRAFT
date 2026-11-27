@@ -13,11 +13,11 @@
 			id: "3CC89136178E34A5"
 			title: "Caçadas"
 			x: 0.0d
-			y: 0.0d
+			y: 2.0d
 			subtitle: "Nove feras antigas, sem fragmentos"
 			icon: "minecraft:spyglass"
 			shape: "gear"
-			size: 2.0d
+			size: 1.75d
 			description: ["&6Mestre Vellan&r: \"Nem todo monstro gigante deste mundo guarda um fragmento. Algumas feras são só antigas... e perigosas.\"", "", "&o\"Caçadores da Ordem já tentaram e não voltaram. Mas o que elas guardam vale o risco: armas que você não acha em nenhum outro lugar.\"", "", "&7Todas as caçadas são opcionais e estão em ordem de dificuldade. Cada fera deixa um tesouro próprio, e quem derrotar todas vira &6Mestre Caçador&7.&r"]
 			dependencies: ["5A0236B98D30AC09"]
 			tasks: [
@@ -34,12 +34,13 @@
 					item: "minecraft:spyglass"
 				}
 			]
+			hide_dependent_lines: true
 		}
 		{
 			id: "24736EAB9CE73BE8"
 			title: "Caçada: Sirok"
-			x: 2.0d
-			y: -6.0d
+			x: 2.5d
+			y: 0.0d
 			subtitle: "Mais fácil: a partir do Ato 2"
 			icon: "minecraft:sand"
 			description: ["&eSirok, a Minhoca de Areia&r", "", "Uma minhoca gigante que nada debaixo da areia e cospe veneno. Fique longe das colunas de areia.", "", "Mora no &fDeserto&r.", "&6Mais fácil: a partir do Ato 2&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
@@ -72,8 +73,8 @@
 		{
 			id: "740D6A6D8017F12C"
 			title: "Sirok, a Minhoca de Areia"
-			x: 4.0d
-			y: -6.0d
+			x: 4.25d
+			y: 0.0d
 			icon: "minecraft:sand"
 			shape: "octagon"
 			size: 1.5d
@@ -116,12 +117,13 @@
 					icon: "minecraft:enchanted_book"
 				}
 			]
+			hide_dependent_lines: true
 		}
 		{
 			id: "2E725A048A4FBC4B"
 			title: "Caçada: Tongbi"
-			x: 2.0d
-			y: -4.5d
+			x: 6.5d
+			y: 0.0d
 			subtitle: "Fácil: a partir do Ato 2"
 			icon: "minecraft:chiseled_stone_bricks"
 			description: ["&eTongbi, o Escultor&r", "", "Um mestre que molda a pedra. Ele te desafia a subir uma coluna de pedra até ele enquanto arremessa rochas.", "", "Mora num &fmonastério no alto das montanhas&r.", "&6Fácil: a partir do Ato 2&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
@@ -161,8 +163,8 @@
 		{
 			id: "7044324654B86F10"
 			title: "Tongbi, o Escultor"
-			x: 4.0d
-			y: -4.5d
+			x: 8.25d
+			y: 0.0d
 			icon: "minecraft:chiseled_stone_bricks"
 			shape: "octagon"
 			size: 1.5d
@@ -205,12 +207,13 @@
 					icon: "minecraft:enchanted_book"
 				}
 			]
+			hide_dependent_lines: true
 		}
 		{
 			id: "7D10FAEEF47DDC04"
 			title: "Caçada: O Lich da Noite"
-			x: 2.0d
-			y: -3.0d
+			x: 10.5d
+			y: 0.0d
 			subtitle: "Médio: a partir do Ato 3"
 			icon: "minecraft:soul_lantern"
 			description: ["&eO Lich da Noite&r", "", "Um feiticeiro morto-vivo que dispara bolas de fogo azuis e cometas, e se teletransporta pela sala. Não o perca de vista.", "", "Mora no alto da &fTorre do Lich&r.", "&6Médio: a partir do Ato 3&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
@@ -250,8 +253,8 @@
 		{
 			id: "16A312D8B008A194"
 			title: "O Lich da Noite"
-			x: 4.0d
-			y: -3.0d
+			x: 12.25d
+			y: 0.0d
 			icon: "minecraft:soul_lantern"
 			shape: "octagon"
 			size: 1.5d
@@ -294,12 +297,13 @@
 					icon: "minecraft:enchanted_book"
 				}
 			]
+			hide_dependent_lines: true
 		}
 		{
 			id: "3A897757C1E4E57F"
 			title: "Caçada: Skor"
-			x: 2.0d
-			y: -1.5d
+			x: 2.5d
+			y: 2.0d
 			subtitle: "Médio: a partir do Ato 3"
 			icon: "minecraft:packed_ice"
 			description: ["&eSkor, o Yeti&r", "", "Um yeti enorme num esconderijo de gelo. Solta nevascas e prende você em cubos de gelo.", "", "Mora nas &fPlanícies Nevadas&r.", "&6Médio: a partir do Ato 3&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
@@ -339,8 +343,8 @@
 		{
 			id: "134CCBD2477C6525"
 			title: "Skor, o Yeti"
-			x: 4.0d
-			y: -1.5d
+			x: 4.25d
+			y: 2.0d
 			icon: "minecraft:packed_ice"
 			shape: "octagon"
 			size: 1.5d
@@ -383,12 +387,13 @@
 					icon: "minecraft:enchanted_book"
 				}
 			]
+			hide_dependent_lines: true
 		}
 		{
 			id: "15F15CBC2B90DDDF"
 			title: "Caçada: Rosalyne"
-			x: 2.0d
-			y: 0.0d
+			x: 6.5d
+			y: 2.0d
 			subtitle: "Difícil: a partir do Ato 4"
 			icon: "meetyourfight:dusk_key"
 			description: ["&eRosalyne, Lâmina do Crepúsculo&r", "", "Uma cavaleira de flores e espinhos, rápida e elegante. Use a chave num lugar aberto e ela aparece.", "", "Aparece onde você usar a &fChave do Crepúsculo&r.", "&6Difícil: a partir do Ato 4&r", "", "&7Pegue a recompensa para receber a chave.&r"]
@@ -412,8 +417,8 @@
 		{
 			id: "4ADC48DA59801FB4"
 			title: "Rosalyne, Lâmina do Crepúsculo"
-			x: 4.0d
-			y: 0.0d
+			x: 8.25d
+			y: 2.0d
 			icon: "meetyourfight:dusk_key"
 			shape: "octagon"
 			size: 1.5d
@@ -456,12 +461,13 @@
 					icon: "minecraft:enchanted_book"
 				}
 			]
+			hide_dependent_lines: true
 		}
 		{
 			id: "7F1ADF8C42D8F4D9"
 			title: "Caçada: Ashlord"
-			x: 2.0d
-			y: 1.5d
+			x: 10.5d
+			y: 2.0d
 			subtitle: "Difícil: a partir do Ato 4"
 			icon: "minecraft:magma_block"
 			description: ["&eAshlord, o Dragão Infernal&r", "", "Um dragão de fogo no alto de uma torre, protegido por guardas esqueletos em chamas. Tem uma segunda forma ainda maior.", "", "Mora em &fplanícies, selvas ou pântanos&r.", "&6Difícil: a partir do Ato 4&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
@@ -501,8 +507,8 @@
 		{
 			id: "31A22871F245BDA1"
 			title: "Ashlord, o Dragão Infernal"
-			x: 4.0d
-			y: 1.5d
+			x: 12.25d
+			y: 2.0d
 			icon: "minecraft:magma_block"
 			shape: "octagon"
 			size: 1.5d
@@ -545,12 +551,13 @@
 					icon: "minecraft:enchanted_book"
 				}
 			]
+			hide_dependent_lines: true
 		}
 		{
 			id: "4B312756499A9781"
 			title: "Caçada: O Remanescente Antigo"
-			x: 2.0d
-			y: 3.0d
+			x: 2.5d
+			y: 4.0d
 			subtitle: "Muito difícil: a partir do Ato 5"
 			icon: "minecraft:suspicious_sand"
 			description: ["&eO Remanescente Antigo&r", "", "Uma fera-faraó gigante enterrada na areia. Use o &fpincel&r na &fareia suspeita&r dentro da pirâmide para achar o &fColar do Deserto&r e acordá-la. &cA pirâmide costuma ficar longe: vá de dragão.&r", "", "Mora numa &fpirâmide amaldiçoada no deserto&r.", "&6Muito difícil: a partir do Ato 5&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
@@ -583,8 +590,8 @@
 		{
 			id: "27C9439A76B88579"
 			title: "O Remanescente Antigo"
-			x: 4.0d
-			y: 3.0d
+			x: 4.25d
+			y: 4.0d
 			icon: "minecraft:suspicious_sand"
 			shape: "octagon"
 			size: 1.5d
@@ -627,12 +634,13 @@
 					icon: "minecraft:enchanted_book"
 				}
 			]
+			hide_dependent_lines: true
 		}
 		{
 			id: "13FC3837529000E6"
 			title: "Caçada: Maledictus"
-			x: 2.0d
-			y: 4.5d
+			x: 6.5d
+			y: 4.0d
 			subtitle: "Muito difícil: depois da história"
 			icon: "minecraft:soul_lantern"
 			description: ["&eMaledictus&r", "", "Um cavaleiro amaldiçoado selado no gelo. Dê energia de redstone à &fLápide Amaldiçoada&r (uma alavanca ou tocha de redstone ao lado) e clique nela com o botão direito.", "", "Mora numa &fprisão congelada&r.", "&6Muito difícil: depois da história&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
@@ -671,8 +679,8 @@
 		{
 			id: "58EB22549E99B8E1"
 			title: "Maledictus"
-			x: 4.0d
-			y: 4.5d
+			x: 8.25d
+			y: 4.0d
 			icon: "minecraft:soul_lantern"
 			shape: "octagon"
 			size: 1.5d
@@ -715,12 +723,13 @@
 					icon: "minecraft:enchanted_book"
 				}
 			]
+			hide_dependent_lines: true
 		}
 		{
 			id: "3978E3AF7FAE3C63"
 			title: "Caçada: Nerakyss"
-			x: 2.0d
-			y: 6.0d
+			x: 10.5d
+			y: 4.0d
 			subtitle: "Muito difícil: depois da história"
 			icon: "minecraft:nautilus_shell"
 			description: ["&eNerakyss, o Kraken&r", "", "Um kraken colossal preso a um navio pirata afundado. Piratas, canhões e tentáculos que saem do chão.", "", "Mora no &foceano profundo&r.", "&6Muito difícil: depois da história&r", "", "&7Pegue a recompensa para ver as coordenadas da toca mais próxima no chat.&r"]
@@ -760,8 +769,8 @@
 		{
 			id: "47E7DD6D0A46E7BD"
 			title: "Nerakyss, o Kraken"
-			x: 4.0d
-			y: 6.0d
+			x: 12.25d
+			y: 4.0d
 			icon: "minecraft:nautilus_shell"
 			shape: "octagon"
 			size: 1.5d
@@ -804,12 +813,13 @@
 					icon: "minecraft:enchanted_book"
 				}
 			]
+			hide_dependent_lines: true
 		}
 		{
 			id: "25485A936908404F"
 			title: "Mestre Caçador"
-			x: 6.0d
-			y: 0.0d
+			x: 14.75d
+			y: 2.0d
 			subtitle: "Todas as feras derrotadas"
 			icon: "minecraft:netherite_sword"
 			shape: "gear"

@@ -1463,6 +1463,18 @@ def cacadas():
                 tarefas=[c.t_matar(entidade, 1, f"Derrotar {curto}")],
                 recompensas=[c.r_xp(20), c.r_item("minecraft:diamond", 4), c.r_item("minecraft:netherite_scrap", 1)])
 
+    for n, (chave, *_resto) in enumerate(feras):
+        lin, col = divmod(n, 3)
+        for q in c.quests:
+            if q["id"] == qid(f"cacadas/quest/{chave}_mapa"):
+                q["x"], q["y"] = 2.5 + col * 4.0, lin * 2.0
+            if q["id"] == qid(f"cacadas/quest/{chave}"):
+                q["x"], q["y"] = 4.25 + col * 4.0, lin * 2.0
+                q["hide_dependent_lines"] = True
+    inicio = next(q for q in c.quests if q["id"] == qid("cacadas/quest/inicio"))
+    inicio["x"], inicio["y"] = 0.0, 2.0
+    inicio["hide_dependent_lines"] = True
+
     lamina = item("minecraft:netherite_sword", tag={
         "display": {"Name": json.dumps({"text": "Lâmina do Mestre Caçador", "color": "gold", "italic": False}, ensure_ascii=False),
                     "Lore": [json.dumps({"text": "Só quem derrubou todas as feras antigas a empunha.", "color": "gray"}, ensure_ascii=False)]},
@@ -1481,7 +1493,10 @@ def cacadas():
                          c.r_comando("/puffish_skills points add {p} terras_partidas:vida 3", titulo="+3 pontos em Vida", icone="minecraft:golden_apple"),
                          c.r_comando("/function terras_partidas:mestre_cacador", titulo="Título [Mestre Caçador]", icone="minecraft:name_tag"),
                          c.r_xp(100)])
+    mestre = next(q for q in c.quests if q["id"] == qid("cacadas/quest/mestre"))
+    mestre["x"], mestre["y"] = 14.75, 2.0
     return {
+        "_manual": True,
         "id": qid("capitulo/cacadas"),
         "group": "",
         "order_index": 5,
@@ -1717,9 +1732,28 @@ def organizar(capitulo, dx=2.0, dy=1.5):
             desvio = (sum(atual) - sum(alvo)) / len(atual)
             for k, i in enumerate(col):
                 pos[i] = atual[k] - desvio
-    for q in qs:
-        q["x"] = float(nivel[q["id"]] * dx)
-        q["y"] = round(pos[q["id"]] * dy * 2) / 2
+    # Ato longo (mais de 10 etapas) quebra de linha como texto num livro, mas só num ponto de
+    # passagem: uma etapa com uma única missão, por onde toda a história passa. Assim nenhuma
+    # linha de dependência atravessa a tela.
+    ncol = max(nivel.values()) + 1
+    inicio_faixa = [0]
+    if ncol > 10:
+        for col in range(1, ncol):
+            ponto_de_passagem = len(colunas[col]) == 1
+            # nenhuma ligação pode pular por cima do ponto de quebra
+            sem_pulo = not any(nivel[i] > col and any(nivel[p] < col for p in pais[i]) for i in nivel)
+            if ponto_de_passagem and sem_pulo and col - inicio_faixa[-1] >= 6 and ncol - col >= 3:
+                inicio_faixa.append(col)
+    faixa_de = {col: max(k for k, c0 in enumerate(inicio_faixa) if c0 <= col) for col in range(ncol)}
+    topo = 0.0
+    for f, c0 in enumerate(inicio_faixa):
+        membros = [i for i in nivel if faixa_de[nivel[i]] == f]
+        ymin = min(pos[i] for i in membros); ymax = max(pos[i] for i in membros)
+        for i in membros:
+            q = next(q for q in qs if q["id"] == i)
+            q["x"] = float((nivel[i] - c0) * dx)
+            q["y"] = round((topo + (pos[i] - ymin)) * dy * 2) / 2
+        topo += (ymax - ymin) + 2.5
     for q in qs:
         if not pais[q["id"]]:
             q["size"] = 2.0
@@ -1767,7 +1801,8 @@ def main():
                                      "elevate_perms": True, "silent": True,
                                      "title": "+1 ponto de habilidade", "icon": "minecraft:enchanted_book"})
     for capitulo in capitulos.values():
-        organizar(capitulo)
+        if not capitulo.pop("_manual", False):
+            organizar(capitulo)
         escrever(f"chapters/{capitulo['filename']}.snbt", capitulo)
     preset = os.path.join(RAIZ, "..", "..", "openloader", "data", "terras_partidas", "data",
                           "terras_partidas", "easy_npc", "preset", "humanoid", "mestre_vellan.npc.snbt")

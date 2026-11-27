@@ -13,7 +13,7 @@
 			id: "2D42558563013C01"
 			title: "Além do Céu"
 			x: 0.0d
-			y: 0.0d
+			y: 1.0d
 			subtitle: "Os mundos acima das nuvens"
 			icon: "blue_skies:zeal_lighter"
 			shape: "gear"
@@ -65,7 +65,7 @@
 			id: "174519542747B0EE"
 			title: "A Casa do Guardião"
 			x: 2.0d
-			y: 0.0d
+			y: 1.0d
 			icon: "minecraft:oak_door"
 			description: ["Siga o mapa até a &fcasa do Guardião do Portal&r. Ela fica perto de vilas das planícies, em savanas, montanhas ou terras nevadas.", "", "&eComo abrir os portais:&r monte uma moldura do mesmo formato do portal do Nether (4 de largura por 5 de altura) e acenda com o &fIsqueiro Zeal&r (clique direito dentro da moldura).", "• Moldura de &bTijolos de Pedra Turquesa&r: leva ao &bEverbright&r.", "• Moldura de &fTijolos de Pedra Lunar&r: leva ao &6Everdawn&r.", "", "O Mestre mandou 16 tijolos de cada tipo, o suficiente para os dois portais."]
 			dependencies: ["2D42558563013C01"]
@@ -95,7 +95,7 @@
 			id: "1F3C25F6B028FEF2"
 			title: "Everbright"
 			x: 4.0d
-			y: -1.0d
+			y: 0.0d
 			subtitle: "O mundo da luz e do gelo"
 			icon: "minecraft:packed_ice"
 			description: ["Atravesse o portal do &bEverbright&r.", "", "&7Os minérios e madeiras daqui são diferentes. As ferramentas feitas com eles funcionam melhor neste mundo.&r"]
@@ -132,7 +132,7 @@
 			id: "14A6D2F7F41AF96F"
 			title: "Everdawn"
 			x: 4.0d
-			y: 1.0d
+			y: 1.5d
 			subtitle: "O mundo do amanhecer eterno"
 			icon: "minecraft:orange_terracotta"
 			description: ["Atravesse o portal do &6Everdawn&r.", "", "&7Os minérios e madeiras daqui são diferentes. As ferramentas feitas com eles funcionam melhor neste mundo.&r"]
@@ -169,7 +169,7 @@
 			id: "223D59C90058688C"
 			title: "Masmorra Ofuscante do Everbright"
 			x: 6.0d
-			y: -1.0d
+			y: 0.0d
 			icon: "minecraft:compass"
 			description: ["&6Mestre Vellan&r: \"O primeiro guardião, o &fInvocador&r, se trancou numa masmorra de luz cegante. Ele chama criaturas para lutar por ele.\"", "", "&7Pegue a recompensa &festando no Everbright&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["1F3C25F6B028FEF2"]
@@ -208,7 +208,7 @@
 			id: "74F7367AF94E6221"
 			title: "Entrar na masmorra"
 			x: 8.0d
-			y: -1.0d
+			y: 0.0d
 			icon: "minecraft:mossy_stone_bricks"
 			description: ["Vá até as coordenadas e entre na masmorra.", "&7Masmorras têm armadilhas e monstros. Leve tochas e comida.&r"]
 			dependencies: ["223D59C90058688C"]
@@ -232,7 +232,7 @@
 			id: "30DCF1DF167AB938"
 			title: "Chave da Masmorra Ofuscante"
 			x: 10.0d
-			y: -1.0d
+			y: 0.0d
 			icon: "blue_skies:blinding_key"
 			description: ["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.", "Depois, use a chave na &fpedra-chave&r da porta do chefe."]
 			dependencies: ["74F7367AF94E6221"]
@@ -257,7 +257,7 @@
 			id: "3C47FC03294F8851"
 			title: "Chefe: Summoner"
 			x: 12.0d
-			y: -1.0d
+			y: 0.0d
 			icon: "minecraft:totem_of_undying"
 			shape: "octagon"
 			size: 1.5d
@@ -331,7 +331,7 @@
 			id: "347A6B4A462BA93F"
 			title: "Masmorra da Natureza"
 			x: 14.0d
-			y: -1.0d
+			y: 0.0d
 			icon: "minecraft:compass"
 			description: ["&6Mestre Vellan&r: \"O segundo guardião do Everbright virou uma árvore viva gigante, o &fEsmagador Estelar&r. Ele vive numa masmorra coberta de mato, nos pinheiros nevados.\"", "", "&7Pegue a recompensa &festando no Everbright&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["3C47FC03294F8851"]
@@ -370,7 +370,7 @@
 			id: "47842F0821E57C0C"
 			title: "Entrar na masmorra"
 			x: 16.0d
-			y: -1.0d
+			y: 0.0d
 			icon: "minecraft:mossy_stone_bricks"
 			description: ["Vá até as coordenadas e entre na masmorra.", "&7Masmorras têm armadilhas e monstros. Leve tochas e comida.&r"]
 			dependencies: ["347A6B4A462BA93F"]
@@ -394,7 +394,7 @@
 			id: "27D647C9A396E9C1"
 			title: "Chave da Masmorra da Natureza"
 			x: 18.0d
-			y: -1.0d
+			y: 0.0d
 			icon: "blue_skies:nature_key"
 			description: ["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.", "Depois, use a chave na &fpedra-chave&r da porta do chefe."]
 			dependencies: ["47842F0821E57C0C"]
@@ -419,7 +419,7 @@
 			id: "431EC95A5D5497E9"
 			title: "Chefe: Starlit Crusher"
 			x: 20.0d
-			y: -1.0d
+			y: 0.0d
 			icon: "minecraft:oak_sapling"
 			shape: "octagon"
 			size: 1.5d
@@ -493,7 +493,7 @@
 			id: "6042F4D1634B5E91"
 			title: "Masmorra Ofuscante do Everdawn"
 			x: 6.0d
-			y: 1.0d
+			y: 1.5d
 			icon: "minecraft:compass"
 			description: ["&6Mestre Vellan&r: \"No Everdawn, o guardião &fAlquimista&r passou séculos fazendo poções com o poder do fragmento. Ele não é mais humano.\"", "", "&7Pegue a recompensa &festando no Everdawn&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["14A6D2F7F41AF96F"]
@@ -532,7 +532,7 @@
 			id: "522689D1C95A7F64"
 			title: "Entrar na masmorra"
 			x: 8.0d
-			y: 1.0d
+			y: 1.5d
 			icon: "minecraft:mossy_stone_bricks"
 			description: ["Vá até as coordenadas e entre na masmorra.", "&7Masmorras têm armadilhas e monstros. Leve tochas e comida.&r"]
 			dependencies: ["6042F4D1634B5E91"]
@@ -556,7 +556,7 @@
 			id: "11EFDB6C21CC5220"
 			title: "Chave da Masmorra Ofuscante"
 			x: 10.0d
-			y: 1.0d
+			y: 1.5d
 			icon: "blue_skies:blinding_key"
 			description: ["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.", "Depois, use a chave na &fpedra-chave&r da porta do chefe."]
 			dependencies: ["522689D1C95A7F64"]
@@ -581,7 +581,7 @@
 			id: "31689D5BC8FB62E8"
 			title: "Chefe: Alchemist"
 			x: 12.0d
-			y: 1.0d
+			y: 1.5d
 			icon: "minecraft:brewing_stand"
 			shape: "octagon"
 			size: 1.5d
@@ -655,7 +655,7 @@
 			id: "67A213583F227725"
 			title: "Masmorra do Veneno"
 			x: 14.0d
-			y: 1.0d
+			y: 1.5d
 			icon: "minecraft:compass"
 			description: ["&6Mestre Vellan&r: \"O último guardião do Everdawn virou uma aranha gigante, a &fArachnarch&r. Ela fez um ninho numa masmorra venenosa na floresta de bordos.\"", "", "&7Pegue a recompensa &festando no Everdawn&7: as coordenadas aparecem no chat.&r"]
 			dependencies: ["31689D5BC8FB62E8"]
@@ -694,7 +694,7 @@
 			id: "5EF70906A23B62C3"
 			title: "Entrar na masmorra"
 			x: 16.0d
-			y: 1.0d
+			y: 1.5d
 			icon: "minecraft:mossy_stone_bricks"
 			description: ["Vá até as coordenadas e entre na masmorra.", "&7Masmorras têm armadilhas e monstros. Leve tochas e comida.&r"]
 			dependencies: ["67A213583F227725"]
@@ -718,7 +718,7 @@
 			id: "5257BB31CA0624A2"
 			title: "Chave da Masmorra do Veneno"
 			x: 18.0d
-			y: 1.0d
+			y: 1.5d
 			icon: "blue_skies:poison_key"
 			description: ["A sala do chefe fica trancada. Explore a masmorra e encontre a &fchave&r em um dos baús.", "Depois, use a chave na &fpedra-chave&r da porta do chefe."]
 			dependencies: ["5EF70906A23B62C3"]
@@ -743,7 +743,7 @@
 			id: "024B19F727BEC243"
 			title: "Chefe: Arachnarch"
 			x: 20.0d
-			y: 1.0d
+			y: 1.5d
 			icon: "minecraft:spider_eye"
 			shape: "octagon"
 			size: 1.5d
@@ -817,7 +817,7 @@
 			id: "75ACF07311A3832B"
 			title: "Relatório: Além do Céu"
 			x: 22.0d
-			y: 0.0d
+			y: 1.0d
 			subtitle: "Fim do Ato 4"
 			icon: "minecraft:amethyst_shard"
 			shape: "gear"
