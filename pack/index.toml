@@ -30,27 +30,27 @@ hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_1_o_chamado.snbt"
-hash = "3cc8297285d2bf4defc659eb3924da7daa1c03949bb3a3eed0f64db322d67576"
+hash = "6e86d3f2c87980692dff6dd1460eec8492a66fc9911f91f233c05b63458e5a74"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_2_terras_selvagens.snbt"
-hash = "c50efb3524bda538ee2a2c7a0bec26bc74cd89c305b478b90a02baa92cc985c6"
+hash = "8963cd5a2fb424e708d501e1fe332db0139dec1398c5c0981f68cd9a3e72afde"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_3_abismo_e_fogo.snbt"
-hash = "9bab3b870acfa6e9600126d373926d58735cb202d3a2013f863331ee26dbe4f3"
+hash = "ce90298352e2762997c3fbc25f59481064cd9bd75247df38acfd16fee5f4c033"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_4_alem_do_ceu.snbt"
-hash = "1071141bdd825edcdb3b34ac882e24556b71f1660469ae2df4c656846dfb083b"
+hash = "e3047f971ae9fa3ee7612386b63252217215bdf53ffd2a4606955a3fee83818b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_5_o_fim_do_selo.snbt"
-hash = "b0023f43ebb45add6af4a68ab6b015ccb97a13d8708f882d588f841d3538c752"
+hash = "d47b15d3917ee8b47726843ab0b30ebc7dcd7c546081322ddff52dfbafdcaaf4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/cacadas.snbt"
-hash = "f0e31d9e8a3754d94808f7058f484578363b6e9d99edd2434ae2d18c5359e8a9"
+hash = "a3b33ff9b2290c073b57d80533f4f47f63d6bd6e893e7e1bdb9447f000351519"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
@@ -317,12 +317,16 @@ file = "config/openloader/data/terras_partidas/data/terras_partidas/advancements
 hash = "81a35f560b06ac241124f5995e01a968e2a3c39d5ba5f36e83e83379ff28f16e"
 
 [[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/advancements/selo_restaurado.json"
+hash = "970037dd3f9ed29bd908dd1551324c9a9fb7ae55dfa9a025c9b107c72ca78bb4"
+
+[[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/easy_npc/preset/humanoid/gabriel.npc.snbt"
-hash = "5a71aa89b4685c8803dcc65e567b8f5b3b18e60f7ae22239693771613b7d652e"
+hash = "59828f9f8b7c499a78ade32a8140591b403ae4c6b216a77bc35418b69ea46fcb"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/easy_npc/preset/humanoid/mestre_vellan.npc.snbt"
-hash = "167ec429d6433d4b8b843eeae4b148351c7cf00d601a34d0aab99ac775f2b456"
+hash = "95f01fc12008edec67330fa3da6e11284bd99ff3472dd4108cb038342b2e3bb9"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/boas_vindas/carregar.mcfunction"
