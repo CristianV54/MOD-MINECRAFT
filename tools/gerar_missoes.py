@@ -370,7 +370,7 @@ def ato1():
                        "A árvore da sua &eclasse&r ganha pontos matando monstros e derrotando chefes.",
                        "{@pagebreak}",
                        "&e3. Equipamento&r",
-                       "• Escolha a classe e pegue o &ekit&r no livro: ele já traz armadura e arma boas para o começo.",
+                       "• Escolha a classe: o &ekit&r vai direto para o inventário e já traz armadura e arma boas para o começo.",
                        "• Faça armadura de ferro assim que puder. Ela faz mais diferença que a arma.",
                        "",
                        "&e4. Cuidado com&r",
@@ -1651,7 +1651,7 @@ def mestre_vellan():
              "Bem-vindo à Ordem dos Caçadores, @initiator.\\n\\n"
              "O Selo se partiu e os fragmentos corromperam criaturas poderosas. Os três primeiros estão perto daqui: "
              "algo enorme nos pântanos, um espírito que toca um sino, e um cavaleiro de metal numa câmara no subsolo.\\n\\n"
-             "Seu kit e suas primeiras missões estão no livro de missões. Quando quiser conversar, é só voltar aqui.",
+             "Seu kit já está no inventário, e suas primeiras missões estão no livro de missões. Quando quiser conversar, é só voltar aqui.",
              tag=TAG_CLASSE),
         fala("ato2", "Terras Selvagens", 3,
              "Três fragmentos, @initiator. Melhor do que qualquer caçador em anos.\\n\\n"

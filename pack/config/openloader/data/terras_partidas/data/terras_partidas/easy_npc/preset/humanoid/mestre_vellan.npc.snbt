@@ -82,7 +82,7 @@
           Priority:2,
           Texts:[
             {
-              Text:"Bem-vindo à Ordem dos Caçadores, @initiator.\\n\\nO Selo se partiu e os fragmentos corromperam criaturas poderosas. Os três primeiros estão perto daqui: algo enorme nos pântanos, um espírito que toca um sino, e um cavaleiro de metal numa câmara no subsolo.\\n\\nSeu kit e suas primeiras missões estão no livro de missões. Quando quiser conversar, é só voltar aqui."
+              Text:"Bem-vindo à Ordem dos Caçadores, @initiator.\\n\\nO Selo se partiu e os fragmentos corromperam criaturas poderosas. Os três primeiros estão perto daqui: algo enorme nos pântanos, um espírito que toca um sino, e um cavaleiro de metal numa câmara no subsolo.\\n\\nSeu kit já está no inventário, e suas primeiras missões estão no livro de missões. Quando quiser conversar, é só voltar aqui."
             }
           ],
           Conditions:[
