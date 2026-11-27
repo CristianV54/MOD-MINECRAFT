@@ -38,7 +38,67 @@ def cor_do_bloco(p):
     for m in (roxo, pele):
         if m.mean() >= 0.35:
             return tuple(int(v) for v in np.median(p[m], axis=0))
-    return tuple(int(v) for v in np.median(p, axis=0))
+    c = np.median(p, axis=0)
+    if c.max() < 70:                       # bloco preto: realça a textura de cinza da referência
+        c = np.minimum(c * 1.7, 72)
+    return tuple(int(v) for v in c)
+
+
+# Desenhos feitos à mão, bloco a bloco, a partir do mapa de roxo da referência
+# (C = roxo vivo, N = roxo escuro, . = mantém o preto traçado).
+VIVO, MEDIO, ESCURO = (175, 95, 255), (140, 45, 230), (78, 24, 128)
+DESENHOS = {
+    "c_corpo": ["........",      # chama em contorno, como na referência: ponta à direita, pontinha à
+                ".....C..",      # esquerda, lados descendo, espiral por dentro e base fechada
+                "....CN..",
+                "...C.C..",
+                "..CN.C..",
+                "..C.C.C.",
+                ".C.CN.C.",
+                ".C.C.NC.",
+                "..C.CC..",
+                "..NC..C.",
+                "...CCCN.",
+                "........"],
+    "f_corpo": ["........",      # faixas do casaco: começam abaixo da gola, escuras em cima e vivas embaixo
+                "........",
+                "........",
+                "..N..N..",
+                "..N..N..",
+                "..N..N..",
+                "..N..N..",
+                "..N..N..",
+                "N.C..C.N",
+                "N.C..C.N",
+                "..C..C..",
+                "..N..N.."],
+    "f_perna_d": [".N..",        # perna direita: a faixa continua e se abre para fora
+                  "N...",
+                  "....", "....", "....", "....", "....", "....",
+                  ".CN.",          # blocos roxos acima da sola
+                  "....",
+                  "NCN.",          # sola
+                  "...."],
+    "f_perna_e": ["..N.",
+                  "...N",
+                  "....", "....", "....", "....", "....", "....",
+                  ".NC.",
+                  "....",
+                  ".NCN",
+                  "...."],
+}
+
+
+def aplicar_desenho(nome, g):
+    eh_roxo = lambda c: c[2] > c[1] + 25 and c[2] > 55
+    for j, linha in enumerate(DESENHOS[nome]):
+        for i, ch in enumerate(linha):
+            eh_pele = g[j][i][0] > 140 and g[j][i][0] > g[j][i][2]
+            if ch == "." and (eh_roxo(g[j][i]) or eh_pele):
+                g[j][i] = random.choice([(14, 12, 18), (20, 18, 24), (10, 9, 12)])   # só o desenho fica roxo
+            if ch == "C": g[j][i] = VIVO if (i + j) % 2 else MEDIO
+            elif ch == "N": g[j][i] = ESCURO
+    return g
 
 
 def encaixe(nome):
@@ -115,9 +175,8 @@ por(tracar("le_cabeca"), 16, 8)                          # lado esquerdo
 por(tracar("c_cabeca"), 24, 8)                           # nuca
 # ---------------- corpo
 liso(20, 16, 8, 4, ROUPA); liso(28, 16, 8, 4, ROUPA)
-corpo = tracar("f_corpo")
-por(corpo, 20, 20)
-por(tracar("c_corpo"), 32, 20)
+por(aplicar_desenho("f_corpo", tracar("f_corpo")), 20, 20)
+por(aplicar_desenho("c_corpo", tracar("c_corpo")), 32, 20)
 lado_corpo = [[tracar("f_corpo")[j][0]] * 0 + [random.choice(ROUPA)] * 4 for j in range(12)]
 por(lado_corpo, 16, 20); por(lado_corpo, 28, 20)
 # ---------------- braço direito (40,16) e esquerdo (32,48)
@@ -135,7 +194,7 @@ for (u, v, fr, co, fora, dentro_de) in [(0, 16, "f_perna_d", "c_perna_d", "ld_pe
     liso(u + 4, v, 4, 4, ROUPA); liso(u + 8, v, 4, 4, ROUPA)
     direita = (u == 0)
     por(tracar(fora) if direita else tracar(dentro_de), u, v + 4, espelhar=not direita)
-    por(tracar(fr), u + 4, v + 4)
+    por(aplicar_desenho(fr, tracar(fr)), u + 4, v + 4)
     por(tracar(dentro_de) if direita else tracar(fora), u + 8, v + 4, espelhar=direita)
     por(tracar(co), u + 12, v + 4)
 # ---------------- camada de cima: cabelo com volume (capuz de cabelo), copiando a camada de baixo
