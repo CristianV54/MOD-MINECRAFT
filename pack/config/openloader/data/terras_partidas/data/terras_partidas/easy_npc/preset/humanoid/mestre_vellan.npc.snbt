@@ -570,11 +570,6 @@
                   Type:"COMMAND"
                 },
                 {
-                  Cmd:"/execute as @initiator at @s run function terras_partidas:kit/guerreiro",
-                  PermLevel:2,
-                  Type:"COMMAND"
-                },
-                {
                   Cmd:"/playsound minecraft:ui.toast.challenge_complete master @initiator ~ ~ ~ 1 1",
                   PermLevel:2,
                   Type:"COMMAND"
@@ -633,11 +628,6 @@
                 },
                 {
                   Cmd:"/tag @initiator add terras_partidas_classe",
-                  PermLevel:2,
-                  Type:"COMMAND"
-                },
-                {
-                  Cmd:"/execute as @initiator at @s run function terras_partidas:kit/tanque",
                   PermLevel:2,
                   Type:"COMMAND"
                 },
@@ -704,11 +694,6 @@
                   Type:"COMMAND"
                 },
                 {
-                  Cmd:"/execute as @initiator at @s run function terras_partidas:kit/assassino",
-                  PermLevel:2,
-                  Type:"COMMAND"
-                },
-                {
                   Cmd:"/playsound minecraft:ui.toast.challenge_complete master @initiator ~ ~ ~ 1 1",
                   PermLevel:2,
                   Type:"COMMAND"
@@ -771,11 +756,6 @@
                   Type:"COMMAND"
                 },
                 {
-                  Cmd:"/execute as @initiator at @s run function terras_partidas:kit/mago",
-                  PermLevel:2,
-                  Type:"COMMAND"
-                },
-                {
                   Cmd:"/playsound minecraft:ui.toast.challenge_complete master @initiator ~ ~ ~ 1 1",
                   PermLevel:2,
                   Type:"COMMAND"
@@ -834,11 +814,6 @@
                 },
                 {
                   Cmd:"/tag @initiator add terras_partidas_classe",
-                  PermLevel:2,
-                  Type:"COMMAND"
-                },
-                {
-                  Cmd:"/execute as @initiator at @s run function terras_partidas:kit/cacador",
                   PermLevel:2,
                   Type:"COMMAND"
                 },

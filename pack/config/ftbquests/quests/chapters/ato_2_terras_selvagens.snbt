@@ -874,16 +874,97 @@
 			]
 		}
 		{
+			id: "107626CF4FF8F2EB"
+			title: "O Guardião dos Dragões"
+			x: 0.0d
+			y: 17.0d
+			subtitle: "Um velho amigo da Ordem"
+			icon: "minecraft:shield"
+			shape: "hexagon"
+			size: 1.25d
+			description: ["&6Mestre Vellan&r: \"Antes de você partir para o Nether, quero que conheça alguém.\"", "", "&o\"Os antigos guardiões do Selo voavam em dragões. Quando o Selo foi criado, eles esconderam os últimos ovos com a Ordem, e um só homem jurou protegê-los: o &bGabriel&o.\"", "", "&o\"Ele não entrega um ovo a qualquer um. Vou chamá-lo até você. Fale com ele e mostre que merece.\"", "", "Ao completar, o &bGabriel&r aparece do seu lado."]
+			dependencies: ["5A0236B98D30AC09"]
+			tasks: [
+				{
+					id: "08AD3508365E4B3C"
+					type: "checkmark"
+					title: "Chamar o Gabriel"
+				}
+			]
+			rewards: [
+				{
+					id: "49AE23EF11E417A6"
+					type: "command"
+					command: "/execute as {p} at @s run function terras_partidas:gabriel/aparecer"
+					elevate_perms: true
+					silent: true
+					auto: "enabled"
+					title: "O Gabriel aparece"
+					icon: "minecraft:shield"
+				}
+			]
+		}
+		{
+			id: "3A664B5E35E678BC"
+			title: "Fale com o Gabriel"
+			x: 2.0d
+			y: 16.0d
+			icon: "minecraft:writable_book"
+			shape: "circle"
+			description: ["Clique no &bGabriel&r com o botão direito para conversar.", "", "Ele guarda os últimos ovos de dragão da Ordem e só entrega um a quem tem coragem de cuidar dele.", "", "Quando estiver pronto, aperte &e\"Estou pronto\"&r na conversa."]
+			dependencies: ["107626CF4FF8F2EB"]
+			tasks: [
+				{
+					id: "5CC1C00E325D790D"
+					type: "advancement"
+					advancement: "terras_partidas:falou_gabriel"
+					criterion: ""
+					title: "Conversar com o Gabriel"
+				}
+			]
+		}
+		{
+			id: "0484763462B8ECD8"
+			title: "Chamar o Gabriel"
+			x: 2.0d
+			y: 17.5d
+			icon: "minecraft:bell"
+			shape: "circle"
+			size: 0.75d
+			description: ["Perdeu o Gabriel de vista ou quer conversar com ele de novo?", "Pegue a recompensa e ele aparece ao seu lado. Se ele estiver por perto, ele só muda de lugar."]
+			dependencies: ["107626CF4FF8F2EB"]
+			optional: true
+			can_repeat: true
+			tasks: [
+				{
+					id: "49801FA462EC2F58"
+					type: "checkmark"
+					title: "Chamar o Gabriel"
+				}
+			]
+			rewards: [
+				{
+					id: "015A59CD4CA5C946"
+					type: "command"
+					command: "/execute as {p} at @s run function terras_partidas:rechamar_gabriel"
+					elevate_perms: true
+					silent: true
+					title: "Chamar o Gabriel"
+					icon: "minecraft:bell"
+				}
+			]
+		}
+		{
 			id: "37E5C75BE7F753FD"
-			title: "O Presente do Mestre"
-			x: 12.0d
-			y: 6.0d
+			title: "O Presente de Gabriel"
+			x: 4.0d
+			y: 16.0d
 			subtitle: "Escolha só um ovo"
 			icon: "dragonmounts:dragon_egg"
 			shape: "hexagon"
 			size: 1.5d
-			description: ["&6Mestre Vellan&r: \"Antes de você partir para o Nether, tenho algo guardado há muito tempo.\"", "", "&o\"Os antigos guardiões do Selo voavam em dragões. Quando o Selo foi criado, eles esconderam os últimos ovos com a Ordem. Você mereceu um.\"", "", "Escolha &cum&r dos quatro ovos ao lado. Depois de escolher, os outros ficam bloqueados.", "", "&6Fogo&r: resiste a fogo e lava. Bom para o Nether.", "&bGelo&r: aguenta o frio e as terras nevadas.", "&3Água&r: nada e respira embaixo d'água.", "&aFloresta&r: o mais calmo, ótimo para viajar."]
-			dependencies: ["5A0236B98D30AC09"]
+			description: ["&bGabriel&r: \"Guardei estes ovos a vida inteira. Hoje um deles é seu.\"", "", "&o\"Um dragão não é uma arma. É um companheiro, e vai te seguir até o fogo se você cuidar dele. Escolha com calma: não existe segunda escolha.\"", "", "Escolha &cum&r dos quatro ovos ao lado. Depois de escolher, os outros ficam bloqueados.", "", "&6Fogo&r: resiste a fogo e lava. Bom para o Nether.", "&bGelo&r: aguenta o frio e as terras nevadas.", "&3Água&r: nada e respira embaixo d'água.", "&aFloresta&r: o mais calmo, ótimo para viajar."]
+			dependencies: ["3A664B5E35E678BC"]
 			max_completable_dependents: 1
 			tasks: [
 				{
@@ -896,8 +977,8 @@
 		{
 			id: "6722E765449B3A7A"
 			title: "&6Ovo de Dragão de Fogo"
-			x: 14.0d
-			y: 3.5d
+			x: 6.0d
+			y: 14.0d
 			icon: {
 				id: "dragonmounts:dragon_egg"
 				Count: 1b
@@ -953,8 +1034,8 @@
 		{
 			id: "442B24C6617282A8"
 			title: "&bOvo de Dragão de Gelo"
-			x: 14.0d
-			y: 5.0d
+			x: 6.0d
+			y: 15.5d
 			icon: {
 				id: "dragonmounts:dragon_egg"
 				Count: 1b
@@ -1010,8 +1091,8 @@
 		{
 			id: "73682D458DEC7CE6"
 			title: "&3Ovo de Dragão de Água"
-			x: 14.0d
-			y: 6.5d
+			x: 6.0d
+			y: 17.0d
 			icon: {
 				id: "dragonmounts:dragon_egg"
 				Count: 1b
@@ -1067,8 +1148,8 @@
 		{
 			id: "499EF19D7636C3EE"
 			title: "&aOvo de Dragão de Floresta"
-			x: 14.0d
-			y: 8.0d
+			x: 6.0d
+			y: 18.5d
 			icon: {
 				id: "dragonmounts:dragon_egg"
 				Count: 1b
@@ -1124,12 +1205,12 @@
 		{
 			id: "6B52EB5089E6C5F3"
 			title: "Primeiro Voo"
-			x: 16.0d
-			y: 6.0d
+			x: 8.0d
+			y: 16.0d
 			icon: "minecraft:saddle"
 			shape: "gear"
 			size: 1.5d
-			description: ["&6Mestre Vellan&r: \"Quando ele crescer, suba e voe. Não existe sensação igual.\"", "", "&eControles do dragão:&r use as teclas de pular e agachar para subir e descer. Os controles de voo ficam em &eOpções > Controles&r, na seção do Dragon Mounts.", "", "Marque esta missão quando fizer o primeiro voo."]
+			description: ["&bGabriel&r: \"Quando ele crescer, suba e voe. Não existe sensação igual. Eu ainda lembro do meu primeiro voo.\"", "", "&eControles do dragão:&r use as teclas de pular e agachar para subir e descer. Os controles de voo ficam em &eOpções > Controles&r, na seção do Dragon Mounts.", "", "Marque esta missão quando fizer o primeiro voo."]
 			dependencies: ["6722E765449B3A7A", "442B24C6617282A8", "73682D458DEC7CE6", "499EF19D7636C3EE"]
 			dependency_requirement: "one_completed"
 			tasks: [
@@ -1156,6 +1237,15 @@
 					id: "57C5DBBAC6E4E1D0"
 					type: "xp_levels"
 					xp_levels: 10
+				}
+				{
+					id: "61E8CB29B424F86B"
+					type: "command"
+					command: "/tag {p} add terras_partidas_voou"
+					elevate_perms: true
+					silent: true
+					title: "O Gabriel fica sabendo do seu voo"
+					icon: "minecraft:feather"
 				}
 			]
 		}

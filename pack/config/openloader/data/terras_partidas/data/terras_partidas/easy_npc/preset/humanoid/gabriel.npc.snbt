@@ -1,0 +1,370 @@
+{
+  PresetMetadata:{
+    author:"SealCraft",
+    category:"Quest",
+    description:"Gabriel, o Guardião dos Dragões. Entrega o ovo de dragão no fim do Ato 2.",
+    entityTypeId:"easy_npc:humanoid",
+    name:"Gabriel",
+    variantType:"KNIGHT_02",
+    version:"1.0.0"
+  },
+  data:{
+    ActionData:{
+      ActionEventSet:{
+        ON_INTERACTION:[
+          {
+            Type:"OPEN_DEFAULT_DIALOG"
+          }
+        ]
+      }
+    },
+    CustomName:"{\"color\": \"aqua\", \"bold\": true, \"text\": \"Gabriel\"}",
+    DialogData:{
+      DialogDataSet:[
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Cmd:"/advancement grant @initiator only terras_partidas:falou_gabriel",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/tag @initiator add terras_partidas_gabriel",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"/playsound minecraft:entity.ender_dragon.growl neutral @initiator ~ ~ ~ 0.4 1.4",
+                  PermLevel:2,
+                  Type:"COMMAND"
+                },
+                {
+                  Cmd:"pronto",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"pronto_btn",
+              Name:"Estou pronto"
+            },
+            {
+              Actions:[
+                {
+                  Cmd:"quem",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"quem_btn",
+              Name:"Quem é você?"
+            },
+            {
+              Actions:[
+                {
+                  Cmd:"dragoes",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"dragoes_btn",
+              Name:"Como cuidar de um dragão"
+            },
+            {
+              Actions:[
+                {
+                  Type:"CLOSE_DIALOG"
+                },
+                {
+                  Msg:{
+                    T:4b,
+                    Texts:[
+                      "Mantenha a cabeça erguida, @initiator."
+                    ]
+                  },
+                  Type:"MESSAGE"
+                }
+              ],
+              Label:"tchau",
+              Name:"Até mais, Gabriel"
+            }
+          ],
+          Label:"inicio",
+          Name:"Gabriel",
+          Priority:1,
+          Texts:[
+            {
+              Text:"Então você é o caçador de quem o Mestre Vellan tanto fala.\\n\\nEu sou o Gabriel. Há anos guardo os últimos ovos de dragão da Ordem. Já vi caçadores fortes fugirem de um filhote chorando. Força não basta: um dragão precisa de alguém que fique quando o fogo chegar.\\n\\nVocê derrotou sete corrompidos e não recuou. Isso eu respeito. Está pronto para essa responsabilidade?"
+            }
+          ]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Type:"CLOSE_DIALOG"
+                },
+                {
+                  Cmd:"/ftbquests open_book",
+                  ExecAsUser:1b,
+                  PermLevel:0,
+                  Type:"COMMAND"
+                }
+              ],
+              Label:"livro",
+              Name:"Abrir o livro de missões"
+            },
+            {
+              Actions:[
+                {
+                  Cmd:"dragoes",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"dragoes_btn",
+              Name:"Como cuidar de um dragão"
+            },
+            {
+              Actions:[
+                {
+                  Cmd:"quem",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"quem_btn",
+              Name:"Quem é você?"
+            },
+            {
+              Actions:[
+                {
+                  Type:"CLOSE_DIALOG"
+                },
+                {
+                  Msg:{
+                    T:4b,
+                    Texts:[
+                      "Mantenha a cabeça erguida, @initiator."
+                    ]
+                  },
+                  Type:"MESSAGE"
+                }
+              ],
+              Label:"tchau",
+              Name:"Até mais, Gabriel"
+            }
+          ],
+          Label:"depois",
+          Name:"Gabriel",
+          Priority:2,
+          Texts:[
+            {
+              Text:"@initiator. Os ovos continuam seguros, e a sua escolha está no livro de missões.\\n\\nSe tiver dúvida sobre como cuidar do seu dragão, pergunte. Prefiro responder dez vezes a perder um filhote."
+            }
+          ],
+          Conditions:[
+            {
+              Name:"terras_partidas_gabriel",
+              Type:"PLAYER_TAG"
+            }
+          ]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Type:"CLOSE_DIALOG"
+                },
+                {
+                  Cmd:"/ftbquests open_book",
+                  ExecAsUser:1b,
+                  PermLevel:0,
+                  Type:"COMMAND"
+                }
+              ],
+              Label:"livro",
+              Name:"Abrir o livro de missões"
+            },
+            {
+              Actions:[
+                {
+                  Cmd:"dragoes",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"dragoes_btn",
+              Name:"Como cuidar de um dragão"
+            },
+            {
+              Actions:[
+                {
+                  Cmd:"quem",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"quem_btn",
+              Name:"Quem é você?"
+            },
+            {
+              Actions:[
+                {
+                  Type:"CLOSE_DIALOG"
+                },
+                {
+                  Msg:{
+                    T:4b,
+                    Texts:[
+                      "Mantenha a cabeça erguida, @initiator."
+                    ]
+                  },
+                  Type:"MESSAGE"
+                }
+              ],
+              Label:"tchau",
+              Name:"Até mais, Gabriel"
+            }
+          ],
+          Label:"voou",
+          Name:"Gabriel",
+          Priority:3,
+          Texts:[
+            {
+              Text:"Eu vi você no céu, @initiator.\\n\\nFaz muito tempo que um dragão da Ordem não voava. Os antigos guardiões ficariam orgulhosos, e eu também estou.\\n\\nAgora vá. O Nether espera, e você não está mais sozinho."
+            }
+          ],
+          Conditions:[
+            {
+              Name:"terras_partidas_voou",
+              Type:"PLAYER_TAG"
+            }
+          ]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Type:"CLOSE_DIALOG"
+                },
+                {
+                  Cmd:"/ftbquests open_book",
+                  ExecAsUser:1b,
+                  PermLevel:0,
+                  Type:"COMMAND"
+                }
+              ],
+              Label:"livro",
+              Name:"Abrir o livro de missões"
+            },
+            {
+              Actions:[
+                {
+                  Cmd:"dragoes",
+                  Type:"OPEN_NAMED_DIALOG"
+                }
+              ],
+              Label:"dragoes_btn",
+              Name:"Como cuidar de um dragão"
+            },
+            {
+              Actions:[
+                {
+                  Type:"CLOSE_DIALOG"
+                },
+                {
+                  Msg:{
+                    T:4b,
+                    Texts:[
+                      "Mantenha a cabeça erguida, @initiator."
+                    ]
+                  },
+                  Type:"MESSAGE"
+                }
+              ],
+              Label:"tchau",
+              Name:"Até mais, Gabriel"
+            }
+          ],
+          Label:"pronto",
+          Name:"Estou pronto",
+          Priority:-1,
+          Texts:[
+            {
+              Text:"Foi o que eu esperava ouvir.\\n\\nAbra o livro de missões, no capítulo do Ato 2, e escolha um dos quatro ovos: fogo, gelo, água ou floresta. Escolha só um. Não existe segunda escolha, e eu não aceito devolução.\\n\\nQuando ele chocar, cuide dele como cuidaria de um irmão."
+            }
+          ]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Type:"OPEN_DEFAULT_DIALOG"
+                }
+              ],
+              Label:"voltar",
+              Name:"Voltar"
+            }
+          ],
+          Label:"dragoes",
+          Name:"Como cuidar de um dragão",
+          Priority:-1,
+          Texts:[
+            {
+              Text:"Coloque o ovo em cima de um bloco firme e clique nele com o botão direito para ele começar a chocar.\\n\\nO lugar importa: deixe o ovo perto dos blocos do tipo dele (magma, gelo, prismarinho ou musgo), senão ele pode virar outro dragão.\\n\\nAlimente o filhote com carne até ele crescer. Depois coloque a sela e monte. Pular sobe, agachar desce.\\n\\nE nunca leve um dragão de gelo para dentro do Nether."
+            }
+          ]
+        },
+        {
+          Buttons:[
+            {
+              Actions:[
+                {
+                  Type:"OPEN_DEFAULT_DIALOG"
+                }
+              ],
+              Label:"voltar",
+              Name:"Voltar"
+            }
+          ],
+          Label:"quem",
+          Name:"Quem é você?",
+          Priority:-1,
+          Texts:[
+            {
+              Text:"Meu pai serviu à Ordem, e o pai dele antes. Quando o Selo foi criado, minha família jurou guardar os ovos dos dragões dos guardiões.\\n\\nEu nunca fui o mais forte da Ordem. Mas nunca saí do meu posto, nem quando os monstros cercaram a torre. Coragem é isso: ficar quando dá vontade de correr."
+            }
+          ]
+        }
+      ],
+      Type:"STANDARD"
+    },
+    EasyNPCVersion:3,
+    HandItems:[
+      {
+        Count:1b,
+        id:"minecraft:iron_sword"
+      },
+      {
+        Count:1b,
+        id:"minecraft:shield"
+      }
+    ],
+    Invulnerable:1b,
+    ObjectiveData:{
+      ObjectiveDataSet:[
+        {
+          Type:"LOOK_AT_PLAYER"
+        },
+        {
+          Type:"LOOK_AT_RESET"
+        }
+      ]
+    },
+    PersistenceRequired:1b,
+    SkinData:{
+      Name:"KNIGHT_02"
+    },
+    VariantType:"KNIGHT_02",
+    id:"easy_npc:humanoid"
+  }
+}

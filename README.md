@@ -77,7 +77,7 @@ Começa depois do relatório do Ato 1. São 26 missões (contando a linha do dra
 
 Também tem missões de apoio (mochila de ferro, mesa de encantamento, Waystone própria), uma missão extra contra a Mãe do Labirinto e missões repetíveis pra trocar recursos por outro item de invocação. O relatório final dá obsidiana e isqueiro, preparando o Nether do Ato 3.
 
-**Ovo de dragão:** depois do relatório, o Mestre oferece um ovo e o jogador escolhe **um** entre Fogo, Gelo, Água e Floresta (mod Dragon Mounts: Legacy). Cada ovo vem com blocos do habitat dele, porque o ambiente em volta pode mudar o tipo do dragão, e com sela e carne. A missão final "Primeiro Voo" fecha a linha.
+**Gabriel e o ovo de dragão:** depois do relatório, o Mestre apresenta o **Gabriel, o Guardião dos Dragões** (homenagem a um amigo do autor). A missão "O Guardião dos Dragões" faz o Gabriel aparecer ao lado do jogador, e "Fale com o Gabriel" completa quando o jogador aperta "Estou pronto" na conversa (conquista invisível `terras_partidas:falou_gabriel`). Aí o Gabriel entrega o ovo, e o jogador escolhe **um** entre Fogo, Gelo, Água e Floresta (mod Dragon Mounts: Legacy). Cada ovo vem com blocos do habitat dele, porque o ambiente em volta pode mudar o tipo do dragão, e com sela e carne. A missão final "Primeiro Voo" fecha a linha.
 
 ## Ato 3: Abismo e Fogo (pronto)
 
@@ -196,13 +196,25 @@ O pacote de recursos `pack/config/openloader/resources/terras_partidas_ptbr/` tr
 - **Telas técnicas:** também estão traduzidas, incluindo o editor de NPC, ModernFix, Entity Model/Texture Features, Fzzy Config e Structure Gel.
 - **Como editar:** mude direto o `assets/<mod>/lang/pt_br.json` do pacote.
 
+## Gabriel, o Guardião dos Dragões
+
+Homenagem a um amigo do autor do pacote. É um NPC do Easy NPC com a aparência pronta de cavaleiro (`KNIGHT_02`), nome em azul, espada e escudo. Sério e corajoso, ele guarda os últimos ovos de dragão da Ordem.
+- **Quando aparece:** na missão "O Guardião dos Dragões", no fim do Ato 2. A recompensa automática roda `terras_partidas:gabriel/aparecer`, que usa o mesmo jeito do Mestre Vellan para não nascer enterrado.
+- **Conversa:**
+  - **Primeira fala:** ele se apresenta e pergunta se o jogador está pronto.
+  - **"Estou pronto":** dá a conquista que completa "Fale com o Gabriel", marca a tag `terras_partidas_gabriel` e abre a explicação de como escolher o ovo.
+  - **Depois do Primeiro Voo:** a recompensa da missão marca `terras_partidas_voou` e ele passa a dizer que está orgulhoso.
+  - **Botões sempre disponíveis:** "Como cuidar de um dragão" e "Quem é você?".
+- **Chamar de novo:** a missão repetível "Chamar o Gabriel" (função `terras_partidas:rechamar_gabriel`).
+- **Arquivos:** o preset `easy_npc/preset/humanoid/gabriel.npc.snbt` é gerado pelo script de missões. A conquista fica em `advancements/falou_gabriel.json`.
+
 ## Mestre Vellan no mundo
 
 O Mestre Vellan é um NPC do Easy NPC que **aparece 3 blocos na frente do jogador** (ou 2, ou no lugar do próprio jogador, se tiver bloco no caminho; ver `functions/vellan/aparecer.mcfunction`) uns 3 segundos depois de ele entrar no mundo pela primeira vez, com o título "SealCraft" na tela. Uma conquista invisível (`terras_partidas:primeira_entrada`) dispara as funções em `functions/boas_vindas/`.
 - **Escolha de classe:** a primeira conversa é a tela de escolha de classe. Cada classe tem uma página de prós e contras e um botão "Escolher" que:
   - marca como completas as missões "O Chamado", "Escolha seu Caminho" e a da classe;
   - libera a árvore de habilidades;
-  - manda o jogador pegar o kit no livro de missões.
+  - entrega o kit: ao completar a missão da classe, a recompensa automática dela roda a função do kit. O botão não chama a função direto porque o Easy NPC bloqueia `function` em comandos de NPC.
 - **Pelo livro também funciona:** escolher a classe pelo livro de missões marca a mesma tag (`terras_partidas_classe`), então o Mestre pula a escolha.
 - **Conversa:** clique direito nele. A fala muda conforme o ato do jogador, porque cada relatório de ato marca o jogador com a tag `terras_partidas_atoN` (e `terras_partidas_fim` no final).
 - **Botões:** abrir o livro de missões, a história do Selo, dicas de combate e despedida.

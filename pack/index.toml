@@ -34,7 +34,7 @@ hash = "3cc8297285d2bf4defc659eb3924da7daa1c03949bb3a3eed0f64db322d67576"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_2_terras_selvagens.snbt"
-hash = "3d2f2bee4ea039420c7f0d07cdfd1eb791a3b064faae04ec78a8f4343c86f362"
+hash = "c50efb3524bda538ee2a2c7a0bec26bc74cd89c305b478b90a02baa92cc985c6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_3_abismo_e_fogo.snbt"
@@ -309,12 +309,20 @@ file = "config/openloader/data/terras_partidas/data/mowziesmobs/tags/worldgen/bi
 hash = "0ee75ac9e4f5bbcd3fa6ce4f54e081f57590cc6c8831cefcd1870afa88d32ba2"
 
 [[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/advancements/falou_gabriel.json"
+hash = "1ee44783c63a027f2e4b7d77d7fb82ea60d0069ed619aa580527a67df188d6cb"
+
+[[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/advancements/primeira_entrada.json"
 hash = "81a35f560b06ac241124f5995e01a968e2a3c39d5ba5f36e83e83379ff28f16e"
 
 [[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/easy_npc/preset/humanoid/gabriel.npc.snbt"
+hash = "5a71aa89b4685c8803dcc65e567b8f5b3b18e60f7ae22239693771613b7d652e"
+
+[[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/easy_npc/preset/humanoid/mestre_vellan.npc.snbt"
-hash = "94f81b146817f04e10fd7156adb6e6a9ca9075fabe5a59398ac89995e75b3531"
+hash = "167ec429d6433d4b8b843eeae4b148351c7cf00d601a34d0aab99ac775f2b456"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/boas_vindas/carregar.mcfunction"
@@ -339,6 +347,10 @@ hash = "43a1bd896bdfda1389b6420cdebf9f637572b765fafdbc3bb421adaeb16bfb50"
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/chamar_vellan.mcfunction"
 hash = "b8adb0ec4feb34d0118e764ad646a1fc3cef70f43fc84694ef910259d34f31f0"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/gabriel/aparecer.mcfunction"
+hash = "bff41b0abfeb4b01229512a179b6728504f0767fe8b420b6b358e11f5f24480f"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/kit/assassino.mcfunction"
@@ -387,6 +399,10 @@ hash = "a95b81a58d5c5a297e52dd286f2342475e40230cc00d4f7b93003b97d7c5ac22"
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/ponto_de_habilidade.mcfunction"
 hash = "e8264153f1d0248f1edd730cff13923de9be007e52110b95f78156d86f24e93b"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/rechamar_gabriel.mcfunction"
+hash = "379170af70e7e43ac7d0017c02a6712dbe0d2a012e52a0fd197242a98460643a"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/functions/rechamar_vellan.mcfunction"

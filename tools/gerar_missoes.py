@@ -777,14 +777,47 @@ def ato2():
                          c.r_item(pocao("minecraft:fire_resistance"), 4), c.r_item("minecraft:diamond", 5),
                          c.r_xp(15)])
 
-    # ---- Ovo de dragão (recompensa do fim do Ato 2)
-    c.quest("ovo", "O Presente do Mestre", 0, 12.5, icone="dragonmounts:dragon_egg",
-            deps=["relatorio"], forma="hexagon", tamanho=1.5,
+    # ---- Gabriel, o Guardião dos Dragões (homenagem a um amigo do autor do pacote)
+    G = "&bGabriel&r"
+    c.quest("gabriel", "O Guardião dos Dragões", 0, 11, icone="minecraft:shield",
+            deps=["relatorio"], forma="hexagon", tamanho=1.25,
+            subtitulo="Um velho amigo da Ordem",
+            descricao=[f"{M}: \"Antes de você partir para o Nether, quero que conheça alguém.\"",
+                       "",
+                       "&o\"Os antigos guardiões do Selo voavam em dragões. Quando o Selo foi criado, eles esconderam os últimos ovos com a Ordem, e um só homem jurou protegê-los: o &bGabriel&o.\"",
+                       "",
+                       "&o\"Ele não entrega um ovo a qualquer um. Vou chamá-lo até você. Fale com ele e mostre que merece.\"",
+                       "",
+                       "Ao completar, o &bGabriel&r aparece do seu lado."],
+            tarefas=[c.t_check("Chamar o Gabriel")],
+            recompensas=[c.r_comando("/execute as {p} at @s run function terras_partidas:gabriel/aparecer",
+                                     titulo="O Gabriel aparece", icone="minecraft:shield", auto=True)])
+
+    c.quest("falar_gabriel", "Fale com o Gabriel", 0, 12, icone="minecraft:writable_book",
+            deps=["gabriel"], forma="circle",
+            descricao=["Clique no &bGabriel&r com o botão direito para conversar.",
+                       "",
+                       "Ele guarda os últimos ovos de dragão da Ordem e só entrega um a quem tem coragem de cuidar dele.",
+                       "",
+                       "Quando estiver pronto, aperte &e\"Estou pronto\"&r na conversa."],
+            tarefas=[c.t_conquista("terras_partidas:falou_gabriel", titulo="Conversar com o Gabriel")])
+
+    c.quest("chamar_gabriel", "Chamar o Gabriel", 2, 12, icone="minecraft:bell", deps=["gabriel"],
+            forma="circle", tamanho=0.75, optional=True, can_repeat=True,
+            descricao=["Perdeu o Gabriel de vista ou quer conversar com ele de novo?",
+                       "Pegue a recompensa e ele aparece ao seu lado. Se ele estiver por perto, ele só muda de lugar."],
+            tarefas=[c.t_check("Chamar o Gabriel")],
+            recompensas=[c.r_comando("/execute as {p} at @s run function terras_partidas:rechamar_gabriel",
+                                     titulo="Chamar o Gabriel", icone="minecraft:bell")])
+
+    # ---- Ovo de dragão (recompensa do fim do Ato 2, entregue pelo Gabriel)
+    c.quest("ovo", "O Presente de Gabriel", 0, 12.5, icone="dragonmounts:dragon_egg",
+            deps=["falar_gabriel"], forma="hexagon", tamanho=1.5,
             max_completable_dependents=1,
             subtitulo="Escolha só um ovo",
-            descricao=[f"{M}: \"Antes de você partir para o Nether, tenho algo guardado há muito tempo.\"",
+            descricao=[f"{G}: \"Guardei estes ovos a vida inteira. Hoje um deles é seu.\"",
                        "",
-                       "&o\"Os antigos guardiões do Selo voavam em dragões. Quando o Selo foi criado, eles esconderam os últimos ovos com a Ordem. Você mereceu um.\"",
+                       "&o\"Um dragão não é uma arma. É um companheiro, e vai te seguir até o fogo se você cuidar dele. Escolha com calma: não existe segunda escolha.\"",
                        "",
                        "Escolha &cum&r dos quatro ovos ao lado. Depois de escolher, os outros ficam bloqueados.",
                        "",
@@ -821,13 +854,15 @@ def ato2():
     c.quest("primeiro_voo", "Primeiro Voo", 0, 17.5, icone="minecraft:saddle",
             deps=[k for k, *_ in ovos], dependency_requirement="one_completed",
             forma="gear", tamanho=1.5,
-            descricao=[f"{M}: \"Quando ele crescer, suba e voe. Não existe sensação igual.\"",
+            descricao=[f"{G}: \"Quando ele crescer, suba e voe. Não existe sensação igual. Eu ainda lembro do meu primeiro voo.\"",
                        "",
                        "&eControles do dragão:&r use as teclas de pular e agachar para subir e descer. Os controles de voo ficam em &eOpções > Controles&r, na seção do Dragon Mounts.",
                        "",
                        "Marque esta missão quando fizer o primeiro voo."],
             tarefas=[c.t_check("Voei no meu dragão!")],
-            recompensas=[c.r_item("minecraft:golden_apple", 3), c.r_item("minecraft:cooked_beef", 32), c.r_xp(10)])
+            recompensas=[c.r_item("minecraft:golden_apple", 3), c.r_item("minecraft:cooked_beef", 32), c.r_xp(10),
+                         c.r_comando(f"/tag {{p}} add {TAG_VOOU}", titulo="O Gabriel fica sabendo do seu voo",
+                                     icone="minecraft:feather")])
 
     return {
         "id": qid("capitulo/ato2"),
@@ -1560,7 +1595,8 @@ def escolha_de_classe(botao, abrir):
                  {"Cmd": f"/ftbquests change_progress @initiator complete {qid(f'ato1/quest/{chave}')}", "PermLevel": 2, "Type": "COMMAND"},
                  {"Cmd": f"/puffish_skills category unlock @initiator terras_partidas:{chave}", "PermLevel": 2, "Type": "COMMAND"},
                  {"Cmd": f"/tag @initiator add {TAG_CLASSE}", "PermLevel": 2, "Type": "COMMAND"},
-                 {"Cmd": f"/execute as @initiator at @s run function terras_partidas:kit/{chave}", "PermLevel": 2, "Type": "COMMAND"},
+                 # O kit chega pela recompensa automática da missão da classe (completada acima): o Easy NPC
+                 # bloqueia "function" em botões de NPC, então o botão não chama a função do kit direto.
                  {"Cmd": "/playsound minecraft:ui.toast.challenge_complete master @initiator ~ ~ ~ 1 1", "PermLevel": 2, "Type": "COMMAND"},
                  abrir("escolhida")]
         falas.append({
@@ -1677,6 +1713,108 @@ def mestre_vellan():
             "ObjectiveData": {"ObjectiveDataSet": [{"Type": "LOOK_AT_PLAYER"}, {"Type": "LOOK_AT_RESET"}]},
             "PersistenceRequired": B,
             "VariantType": "PROFESSOR_01",
+            "id": "easy_npc:humanoid",
+        },
+    }
+
+
+# ---------------------------------------------------------------- GABRIEL (Easy NPC)
+# Homenagem a um amigo do autor do pacote: o guardião dos últimos ovos de dragão da Ordem.
+
+TAG_GABRIEL = "terras_partidas_gabriel"   # já disse "Estou pronto"
+TAG_VOOU = "terras_partidas_voou"         # completou o Primeiro Voo
+
+
+def gabriel():
+    """Preset do Easy NPC: Gabriel, sério e corajoso. A fala muda depois do primeiro voo."""
+    B = Raw("1b")
+
+    def botao(nome, label, acoes):
+        return {"Actions": acoes, "Label": label, "Name": nome}
+
+    def abrir(label):
+        return {"Cmd": label, "Type": "OPEN_NAMED_DIALOG"}
+
+    def cmd(c):
+        return {"Cmd": c, "PermLevel": 2, "Type": "COMMAND"}
+
+    livro = botao("Abrir o livro de missões", "livro",
+                  [{"Type": "CLOSE_DIALOG"},
+                   {"Cmd": "/ftbquests open_book", "ExecAsUser": B, "PermLevel": 0, "Type": "COMMAND"}])
+    pronto = botao("Estou pronto", "pronto_btn",
+                   [cmd("/advancement grant @initiator only terras_partidas:falou_gabriel"),
+                    cmd(f"/tag @initiator add {TAG_GABRIEL}"),
+                    cmd("/playsound minecraft:entity.ender_dragon.growl neutral @initiator ~ ~ ~ 0.4 1.4"),
+                    abrir("pronto")])
+    dragoes = botao("Como cuidar de um dragão", "dragoes_btn", [abrir("dragoes")])
+    historia = botao("Quem é você?", "quem_btn", [abrir("quem")])
+    tchau = botao("Até mais, Gabriel", "tchau",
+                  [{"Type": "CLOSE_DIALOG"},
+                   {"Msg": {"T": Raw("4b"), "Texts": ["Mantenha a cabeça erguida, @initiator."]}, "Type": "MESSAGE"}])
+    voltar = botao("Voltar", "voltar", [{"Type": "OPEN_DEFAULT_DIALOG"}])
+
+    def fala(label, nome, prioridade, texto, botoes, tag=None):
+        d = {"Buttons": botoes, "Label": label, "Name": nome, "Priority": prioridade, "Texts": [{"Text": texto}]}
+        if tag:
+            d["Conditions"] = [{"Name": tag, "Type": "PLAYER_TAG"}]
+        return d
+
+    falas = [
+        fala("inicio", "Gabriel", 1,
+             "Então você é o caçador de quem o Mestre Vellan tanto fala.\\n\\n"
+             "Eu sou o Gabriel. Há anos guardo os últimos ovos de dragão da Ordem. Já vi caçadores fortes fugirem de um filhote chorando. "
+             "Força não basta: um dragão precisa de alguém que fique quando o fogo chegar.\\n\\n"
+             "Você derrotou sete corrompidos e não recuou. Isso eu respeito. Está pronto para essa responsabilidade?",
+             [pronto, historia, dragoes, tchau]),
+        fala("depois", "Gabriel", 2,
+             "@initiator. Os ovos continuam seguros, e a sua escolha está no livro de missões.\\n\\n"
+             "Se tiver dúvida sobre como cuidar do seu dragão, pergunte. Prefiro responder dez vezes a perder um filhote.",
+             [livro, dragoes, historia, tchau], tag=TAG_GABRIEL),
+        fala("voou", "Gabriel", 3,
+             "Eu vi você no céu, @initiator.\\n\\n"
+             "Faz muito tempo que um dragão da Ordem não voava. Os antigos guardiões ficariam orgulhosos, e eu também estou.\\n\\n"
+             "Agora vá. O Nether espera, e você não está mais sozinho.",
+             [livro, dragoes, historia, tchau], tag=TAG_VOOU),
+        fala("pronto", "Estou pronto", -1,
+             "Foi o que eu esperava ouvir.\\n\\n"
+             "Abra o livro de missões, no capítulo do Ato 2, e escolha um dos quatro ovos: fogo, gelo, água ou floresta. "
+             "Escolha só um. Não existe segunda escolha, e eu não aceito devolução.\\n\\n"
+             "Quando ele chocar, cuide dele como cuidaria de um irmão.",
+             [livro, dragoes, tchau]),
+        fala("dragoes", "Como cuidar de um dragão", -1,
+             "Coloque o ovo em cima de um bloco firme e clique nele com o botão direito para ele começar a chocar.\\n\\n"
+             "O lugar importa: deixe o ovo perto dos blocos do tipo dele (magma, gelo, prismarinho ou musgo), senão ele pode virar outro dragão.\\n\\n"
+             "Alimente o filhote com carne até ele crescer. Depois coloque a sela e monte. Pular sobe, agachar desce.\\n\\n"
+             "E nunca leve um dragão de gelo para dentro do Nether.",
+             [voltar]),
+        fala("quem", "Quem é você?", -1,
+             "Meu pai serviu à Ordem, e o pai dele antes. Quando o Selo foi criado, minha família jurou guardar os ovos dos dragões dos guardiões.\\n\\n"
+             "Eu nunca fui o mais forte da Ordem. Mas nunca saí do meu posto, nem quando os monstros cercaram a torre. "
+             "Coragem é isso: ficar quando dá vontade de correr.",
+             [voltar]),
+    ]
+
+    return {
+        "PresetMetadata": {
+            "author": "SealCraft",
+            "category": "Quest",
+            "description": "Gabriel, o Guardião dos Dragões. Entrega o ovo de dragão no fim do Ato 2.",
+            "entityTypeId": "easy_npc:humanoid",
+            "name": "Gabriel",
+            "variantType": "KNIGHT_02",
+            "version": "1.0.0",
+        },
+        "data": {
+            "ActionData": {"ActionEventSet": {"ON_INTERACTION": [{"Type": "OPEN_DEFAULT_DIALOG"}]}},
+            "CustomName": json.dumps({"color": "aqua", "bold": True, "text": "Gabriel"}, ensure_ascii=False),
+            "DialogData": {"DialogDataSet": falas, "Type": "STANDARD"},
+            "EasyNPCVersion": 3,
+            "HandItems": [{"Count": B, "id": "minecraft:iron_sword"}, {"Count": B, "id": "minecraft:shield"}],
+            "Invulnerable": B,
+            "ObjectiveData": {"ObjectiveDataSet": [{"Type": "LOOK_AT_PLAYER"}, {"Type": "LOOK_AT_RESET"}]},
+            "PersistenceRequired": B,
+            "SkinData": {"Name": "KNIGHT_02"},
+            "VariantType": "KNIGHT_02",
             "id": "easy_npc:humanoid",
         },
     }
@@ -1810,6 +1948,10 @@ def main():
     with open(preset, "w", encoding="utf-8") as f:
         f.write(snbt_mc(mestre_vellan()) + "\n")
     print("escrito:", os.path.relpath(preset))
+    preset_g = os.path.join(os.path.dirname(preset), "gabriel.npc.snbt")
+    with open(preset_g, "w", encoding="utf-8") as f:
+        f.write(snbt_mc(gabriel()) + "\n")
+    print("escrito:", os.path.relpath(preset_g))
 
 
 if __name__ == "__main__":
