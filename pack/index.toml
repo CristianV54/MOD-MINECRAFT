@@ -9,6 +9,10 @@ file = "config/apotheosis/adventure.cfg"
 hash = "bc84c33d16ad160473585802d85c56fb0ad693e1c96c0979aff33ff41345f3df"
 
 [[files]]
+file = "config/block_factorys_bosses-client.toml"
+hash = "7b8f47be32554a8fd469c39a8c0e9712aa3e678ae5abdbc9670a8e9f302be146"
+
+[[files]]
 file = "config/defaultoptions/keybindings.txt"
 hash = "0e26fdf8ceef7afe3625e0d3f0d22539e28e7440312bf4f253d378dddf36fb2e"
 
@@ -1030,7 +1034,7 @@ hash = "4251e18a47957aec0a7f12b2cc192ca11a09ff522484732bd282f0ecff9a84b3"
 
 [[files]]
 file = "defaultconfigs/block_factorys_bosses-server.toml"
-hash = "90568d984cc8d97eb8031b7269eb8754a3f6d80206aa3ccabdb6c5fc8a76c878"
+hash = "1fb66d213eecaf39c058e51f216363f211c917bfd796f8831130a8aa1d15d869"
 
 [[files]]
 file = "mods/ai-improvements.pw.toml"

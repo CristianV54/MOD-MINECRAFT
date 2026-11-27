@@ -259,7 +259,7 @@ São 9 chefes fora da história, liberados depois do Ato 2 e em ordem de dificul
 - **Monastério do Escultor:** só nascia em picos entre as alturas 120 e 200, e as montanhas do Terralith passam disso (ficava a 9.900 blocos). `pack/config/mowziesmobs-common.toml` aceita qualquer montanha entre 90 e 320.
 - **Pirâmide Amaldiçoada:** continua longe (~6.500 blocos) mesmo com os desertos do Terralith na lista, porque a posição é decidida por uma regra interna do Cataclysm. A missão avisa para ir de dragão.
 - **Desertos do Terralith:** a minhoca só nascia no deserto comum, que o Terralith deixa raro (a mais próxima ficava a 13.000 blocos). O datapack acrescenta os desertos do Terralith em `block_factorys_bosses/tags/worldgen/biome/sandworm_nest.json`.
-- **Tecla de esquiva do mod:** vem no Z, a mesma da roda de feitiços. Fica sem tecla, porque o Epic Fight já tem esquiva.
+- **Rolamento do mod:** o Bosses'Rise tem uma esquiva própria (tecla Z, a mesma da roda de feitiços, e um contador de "cargas" com duas setas verdes ao lado da barra de itens). O Epic Fight já tem esquiva (Alt), então o rolamento fica desligado (`defaultconfigs/block_factorys_bosses-server.toml`), a tecla fica sem uso e o contador fica escondido (`config/block_factorys_bosses-client.toml`).
 - **Tradução:** os 308 textos do mod estão em `tools/traducao_ajustes.json` e no pacote PT-BR.
 
 ## Equilíbrio dos monstros

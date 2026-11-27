@@ -1,0 +1,5 @@
+# SealCraft: o rolamento do Bosses'Rise fica desligado (o Epic Fight já tem esquiva, no Alt),
+# então o contador de rolamentos ao lado da barra de itens também fica escondido.
+[Rolling]
+	"Will the camera rotate when rolling while in first-person view" = true
+	"Will there be a GUI element displaying current roll count" = false
