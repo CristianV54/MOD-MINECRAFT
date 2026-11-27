@@ -142,6 +142,20 @@ for lado in ("dir", "esq"):                                          # lateral d
     for j in range(2, 12, 3):
         set_(x + 1, y + j, NEON)
 
+# gola alta: a máscara continua numa gola preta grossa em volta do pescoço (camada de cima do corpo)
+G = caixa(16, 32, 8, 12, 4)
+x, y, w, h = G["topo"]
+for i in range(w):
+    for j in range(h):
+        px[x + i, y + j] = random.choice([(3, 3, 3), (8, 6, 10), (14, 8, 20)]) + (255,)
+for f in ("frente", "costas", "dir", "esq"):
+    x, y, w, h = G[f]
+    for i in range(w):
+        for j in range(2):
+            px[x + i, y + j] = random.choice([(3, 3, 3), (8, 6, 10), (14, 8, 20)]) + (255,)
+        px[x + i, y + 2] = (26, 12, 40, 255) if f != "frente" or i in (0, w - 1) else (0, 0, 0, 0)
+
+
 # ============================== BRAÇOS (largos)
 def braco(u, v, ou, ov):
     A = caixa(u, v, 4, 12, 4)
