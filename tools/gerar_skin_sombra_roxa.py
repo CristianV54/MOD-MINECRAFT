@@ -54,31 +54,23 @@ H = caixa(0, 0, 8, 8, 8)
 for f, (x, y, w, h) in H.items():
     preto(x, y, w, h)
 fx, fy = H["frente"][:2]
-# rosto, com as cores tiradas pixel a pixel da referência:
-# cabelo até a linha 4 (franja entre os olhos), olhos com ponto branco por fora e roxo por
-# dentro, brilho roxo em volta, uma faixa de pele quente e a máscara preta embaixo
-CAB = [(4, 4, 4), (9, 8, 8), (13, 13, 12), (22, 21, 21), (29, 27, 28), (7, 7, 6), (16, 16, 15), (38, 37, 40), (46, 44, 48)]
+# rosto: cada bloco com a cor tirada da referência do jogador (contados um a um).
+# Olhos em 2x2: lilás e roxo escuro em cima; BRANCO por fora e roxo forte por dentro embaixo.
+CAB = [(0, 0, 0), (8, 8, 8), (8, 8, 8), (16, 16, 16), (16, 16, 16), (24, 24, 24), (34, 33, 36), (44, 43, 46)]
+h = None
 ROSTO = [
-    "hhhhhhhh",
-    "hhhhhhhh",
-    "hhhhhhhh",
-    "hhhHhhHh",
-    "hGghhgGh",
-    "hWOssOWh",
-    "ABCDDCBE",
-    "MkkkkkkM",
+    [h, h, h, h, h, h, h, h],
+    [h, h, h, h, h, h, h, h],
+    [h, h, h, h, h, h, h, h],
+    [h, h, (132, 95, 95), (25, 24, 24), h, (132, 95, 95), h, h],                                   # pele entre as mechas
+    [(26, 12, 40), (151, 120, 174), (37, 6, 68), (18, 17, 19), (6, 5, 5), (39, 4, 80), (140, 106, 165), (32, 12, 51)],
+    [(87, 54, 94), (243, 234, 235), (148, 45, 221), (127, 90, 95), (110, 77, 83), (133, 39, 204), (241, 234, 237), (62, 36, 80)],
+    [(120, 87, 91), (158, 117, 115), (169, 124, 126), (175, 132, 126), (162, 120, 115), (164, 122, 119), (156, 118, 116), (142, 105, 101)],
+    [(29, 14, 47), (3, 3, 3), (6, 5, 5), (4, 4, 3), (3, 3, 3), (4, 4, 3), (3, 3, 2), (29, 14, 47)],
 ]
-CORES = {
-    "G": (118, 86, 100), "g": (148, 108, 118),
-    "W": (242, 232, 233),
-    "O": (150, 60, 235),
-    "s": (122, 86, 92),
-    "A": (117, 84, 87), "B": (171, 126, 122), "C": (157, 115, 114), "D": (172, 129, 128), "E": (134, 97, 97),
-    "M": (29, 14, 46), "k": (4, 3, 3), "H": (29, 27, 28),
-}
 for j, linha in enumerate(ROSTO):
-    for i, ch in enumerate(linha):
-        set_(fx + i, fy + j, random.choice(CAB) if ch == "h" else CORES[ch])
+    for i, cor in enumerate(linha):
+        set_(fx + i, fy + j, random.choice(CAB) if cor is None else cor)
 # laterais: cabelo, pele perto do rosto na altura da bochecha, máscara embaixo
 for lado in ("dir", "esq"):
     x, y, w, h = H[lado]
@@ -95,25 +87,30 @@ for i in range(1, 7):
     set_(x + i, y + 6, NEON)                                        # faixa roxa amarrada na nuca
 set_(x + 3, y + 7, NEON); set_(x + 4, y + 7, NEON_C)               # nó da faixa
 
+def cabelo():
+    """Preto do cabelo da referência (mais escuro que o do casaco)."""
+    return random.choice(CAB) + (255,)
+
+
 # camada de cima da cabeça: mechas do cabelo saindo da frente e dos lados
 C = caixa(32, 0, 8, 8, 8)
 cx, cy = C["frente"][:2]
 for i, comp in enumerate([2, 3, 2, 1, 1, 2, 3, 2]):                  # franja irregular
     for j in range(comp):
-        px[cx + i, cy + j] = ruido()
+        px[cx + i, cy + j] = cabelo()
 for lado in ("dir", "esq"):
     x, y, w, h = C[lado]
     for i in range(w):
         for j in range(random.choice([2, 3, 3, 4])):
-            px[x + i, y + j] = ruido()
+            px[x + i, y + j] = cabelo()
 x, y, w, h = C["topo"]
 for i in range(w):
     for j in range(h):
         if random.random() < 0.35:
-            px[x + i, y + j] = ruido()
+            px[x + i, y + j] = cabelo()
 # máscara saindo um pouco do rosto (volume), só na parte de baixo
 for i in range(1, 7):
-    px[cx + i, cy + 7] = ruido()
+    px[cx + i, cy + 7] = random.choice([(3, 3, 3), (6, 5, 5), (4, 4, 3)]) + (255,)   # máscara preta
 
 # ============================== CORPO
 B = caixa(16, 16, 8, 12, 4)
