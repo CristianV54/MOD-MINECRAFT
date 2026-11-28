@@ -249,6 +249,10 @@ file = "config/openloader/data/terras_partidas/data/bosses_of_mass_destruction/w
 hash = "70b46ffe50741e9c9e6029f06cbd71adfd2354d65c327bfffbfa4a3c318636ea"
 
 [[files]]
+file = "config/openloader/data/terras_partidas/data/cataclysm/structures/cursed_pyramid_lower3.nbt"
+hash = "2ebbddf81b47f9836109df1bc57016d38a3560e8d5a0ab11d1188c4e8e5b835c"
+
+[[files]]
 file = "config/openloader/data/terras_partidas/data/cataclysm/tags/worldgen/biome/has_structure/burning_arena_biomes.json"
 hash = "6eebfb61ce626634d52f9165d92d9a9e5563b9536daa303a0816cd8395c7841e"
 
@@ -281,6 +285,26 @@ file = "config/openloader/data/terras_partidas/data/cataclysm/worldgen/structure
 hash = "9283002f8d856f18f484bf9ac47c29094fd0dc953b6f7f53c13c3fa24fb7cd7c"
 
 [[files]]
+file = "config/openloader/data/terras_partidas/data/dungeons_arise/structures/aviary/aviary_part_5.nbt"
+hash = "3a92a60ef1722edcd20c608d222c4796b530d3a17c67fb41e686e71b7130ffec"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/dungeons_arise/structures/aviary/aviary_part_7.nbt"
+hash = "488ea7ce76f32a76a7e563294fc3f6f11ce8cac335109acb828b7c6232feaa0f"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/dungeons_arise/structures/bathhouse/bathhouse_middle_1.nbt"
+hash = "716b31112d827a9b6fdcae576c466539353068780a9c44a547b7f3acc62d9d83"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/dungeons_arise/structures/keep_kayra/keep_kayra_main_0.nbt"
+hash = "27ccf6760b141a9341a8d2f718ed6a6b941bc3d79a6814f08fc3a02f16e4f39b"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/dungeons_arise/structures/mushroom_village/mushroom_village_house_big_0.nbt"
+hash = "745d0c767aae79679926848f017a153627cbcc69dcabd01463487db70078da08"
+
+[[files]]
 file = "config/openloader/data/terras_partidas/data/dungeons_arise/structures/small_blimp/small_blimp_ladders_0.nbt"
 hash = "6748ea77bd47d3afeafa6f33fa9c3363a2cf8e69550fd00ef6c7e029f35f9dd5"
 
@@ -291,6 +315,18 @@ hash = "e19e88d49fab9e1a7ffd69e215a7fabb0f684b6e4e9ff59797624a529b12fa7f"
 [[files]]
 file = "config/openloader/data/terras_partidas/data/dungeons_arise/worldgen/structure_set/minor_structures.json"
 hash = "88695070fc756517fce928115502a1a5642443ea657131c869b996ad26290ccc"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/kaisyn/structures/outpost/towers/snowy_slopes/base_plate.nbt"
+hash = "840974787d720a1369a845c3ef2908230236994f37c9c9865043d1dc7f1369ae"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/kaisyn/structures/village/birch_forest_romanian/town_centers/birch_forest_meeting_point_1.nbt"
+hash = "ff0a3cddbb990faf840edae21de610629a4eca6a6d0d5f417907259697b93a55"
+
+[[files]]
+file = "config/openloader/data/terras_partidas/data/kaisyn/structures/village/sunflower_plains_farm/town_centers/sunflower_plains_meeting_point_1.nbt"
+hash = "0c8fc6fe3d9e96ae8d8cd7a770332129c34c5825d3029544c0c5a31947f16880"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/minecraft/tags/functions/load.json"
@@ -917,6 +953,10 @@ file = "config/openloader/resources/terras_partidas_ptbr/assets/illageandspillag
 hash = "f67e3d748219f8c9a069015ca1fa50a0c50683c315250371a7ab95d1223137dc"
 
 [[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/inventoryprofilesnext/lang/pt_br.json"
+hash = "61dba451ffa31c7987f2861c73970d41cf9efc255709abf66679a5ba949d9673"
+
+[[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/iris/lang/pt_br.json"
 hash = "b323b253707514c77465f60067c9feb9094f685c5d16c70f77aebfc96a4571b8"
 
@@ -939,6 +979,10 @@ hash = "10fec0eed4e47086eaf367e3e02a8495a47c2cd04ad119d3dd454a56ecf04a12"
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/jei/lang/pt_br.json"
 hash = "c7791a91e82fadd14476d3a43e7ee93802518a2cf4266bf448f35b328db97e4f"
+
+[[files]]
+file = "config/openloader/resources/terras_partidas_ptbr/assets/libipn/lang/pt_br.json"
+hash = "d05df6ea388f119f69415b0fbcff6e39e9d9145970ccc68fb09956274231abeb"
 
 [[files]]
 file = "config/openloader/resources/terras_partidas_ptbr/assets/lionfishapi/lang/pt_br.json"

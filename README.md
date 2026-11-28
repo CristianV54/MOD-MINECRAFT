@@ -198,6 +198,8 @@ O pacote de recursos `pack/config/openloader/resources/terras_partidas_ptbr/` tr
 - **Termos:** os nomes de itens do Minecraft seguem o português oficial do jogo. Os chefes com nome próprio ficam no original (Ignis, Frostmaw, Swampjaw...).
 - **Telas técnicas:** também estão traduzidas, incluindo o editor de NPC, ModernFix, Entity Model/Texture Features, Fzzy Config e Structure Gel.
 - **Como editar:** mude direto o `assets/<mod>/lang/pt_br.json` do pacote.
+- **Placas das estruturas:** o texto de uma placa fica gravado dentro do arquivo da estrutura, então não passa pela tradução normal. O script `tools/traduzir_placas.py` copia as estruturas que têm placa em inglês para o datapack, com o texto em português. São 74 placas em 10 estruturas, a maioria nomes de quadros do Dungeons Arise. Placas com números de quebra-cabeça e nomes próprios ficam como estão.
+- **Inventory Profiles Next:** os 192 textos que faltavam no português do mod (trocas com aldeões, configurações) estão em `tools/traducao_ajustes.json`.
 
 ## Gabriel, o Guardião dos Dragões
 
