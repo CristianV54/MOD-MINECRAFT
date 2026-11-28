@@ -7,62 +7,212 @@
   },
   "poder_1": {
     "definition": "poder_1",
-    "x": -34,
-    "y": -34
+    "x": 0,
+    "y": -32
   },
   "poder_2": {
     "definition": "poder_2",
-    "x": -68,
-    "y": -68
+    "x": 0,
+    "y": -64
   },
   "poder_3": {
     "definition": "poder_3",
-    "x": -102,
-    "y": -102
+    "x": 0,
+    "y": -96
+  },
+  "poder_4": {
+    "definition": "poder_4",
+    "x": 0,
+    "y": -128
+  },
+  "poder_5": {
+    "definition": "poder_5",
+    "x": 0,
+    "y": -160
+  },
+  "poder_6": {
+    "definition": "poder_6",
+    "x": 0,
+    "y": -192
   },
   "arquimago": {
     "definition": "arquimago",
-    "x": -136,
-    "y": -136
-  },
-  "fluxo_1": {
-    "definition": "fluxo_1",
     "x": 0,
-    "y": -34
+    "y": -224
   },
-  "fluxo_2": {
-    "definition": "fluxo_2",
-    "x": 0,
-    "y": -68
+  "reserva_1": {
+    "definition": "reserva_1",
+    "x": 28,
+    "y": -16
   },
-  "fluxo_3": {
-    "definition": "fluxo_3",
-    "x": 0,
-    "y": -102
+  "reserva_2": {
+    "definition": "reserva_2",
+    "x": 55,
+    "y": -32
+  },
+  "reserva_3": {
+    "definition": "reserva_3",
+    "x": 83,
+    "y": -48
+  },
+  "reserva_4": {
+    "definition": "reserva_4",
+    "x": 111,
+    "y": -64
+  },
+  "reserva_5": {
+    "definition": "reserva_5",
+    "x": 139,
+    "y": -80
+  },
+  "reserva_6": {
+    "definition": "reserva_6",
+    "x": 166,
+    "y": -96
   },
   "poco_de_mana": {
     "definition": "poco_de_mana",
-    "x": 0,
-    "y": -136
+    "x": 194,
+    "y": -112
+  },
+  "fluxo_1": {
+    "definition": "fluxo_1",
+    "x": 28,
+    "y": 16
+  },
+  "fluxo_2": {
+    "definition": "fluxo_2",
+    "x": 55,
+    "y": 32
+  },
+  "fluxo_3": {
+    "definition": "fluxo_3",
+    "x": 83,
+    "y": 48
+  },
+  "fluxo_4": {
+    "definition": "fluxo_4",
+    "x": 111,
+    "y": 64
+  },
+  "fluxo_5": {
+    "definition": "fluxo_5",
+    "x": 139,
+    "y": 80
+  },
+  "fluxo_6": {
+    "definition": "fluxo_6",
+    "x": 166,
+    "y": 96
+  },
+  "mare_arcana": {
+    "definition": "mare_arcana",
+    "x": 194,
+    "y": 112
   },
   "pressa_1": {
     "definition": "pressa_1",
-    "x": 34,
-    "y": -34
+    "x": 0,
+    "y": 32
   },
   "pressa_2": {
     "definition": "pressa_2",
-    "x": 68,
-    "y": -68
+    "x": 0,
+    "y": 64
   },
   "pressa_3": {
     "definition": "pressa_3",
-    "x": 102,
-    "y": -102
+    "x": 0,
+    "y": 96
+  },
+  "pressa_4": {
+    "definition": "pressa_4",
+    "x": 0,
+    "y": 128
+  },
+  "palavra_rapida_1": {
+    "definition": "palavra_rapida_1",
+    "x": 0,
+    "y": 160
+  },
+  "palavra_rapida_2": {
+    "definition": "palavra_rapida_2",
+    "x": 0,
+    "y": 192
   },
   "conjuracao_rapida": {
     "definition": "conjuracao_rapida",
-    "x": 136,
-    "y": -136
+    "x": 0,
+    "y": 224
+  },
+  "escola_fogo": {
+    "definition": "escola_fogo",
+    "x": -28,
+    "y": 16
+  },
+  "escola_gelo": {
+    "definition": "escola_gelo",
+    "x": -55,
+    "y": 32
+  },
+  "escola_raio": {
+    "definition": "escola_raio",
+    "x": -83,
+    "y": 48
+  },
+  "escola_natureza": {
+    "definition": "escola_natureza",
+    "x": -111,
+    "y": 64
+  },
+  "escola_ender": {
+    "definition": "escola_ender",
+    "x": -139,
+    "y": 80
+  },
+  "escola_sagrada": {
+    "definition": "escola_sagrada",
+    "x": -166,
+    "y": 96
+  },
+  "mestre_dos_elementos": {
+    "definition": "mestre_dos_elementos",
+    "x": -194,
+    "y": 112
+  },
+  "barreira_1": {
+    "definition": "barreira_1",
+    "x": -28,
+    "y": -16
+  },
+  "barreira_2": {
+    "definition": "barreira_2",
+    "x": -55,
+    "y": -32
+  },
+  "corpo_firme_1": {
+    "definition": "corpo_firme_1",
+    "x": -83,
+    "y": -48
+  },
+  "corpo_firme_2": {
+    "definition": "corpo_firme_2",
+    "x": -111,
+    "y": -64
+  },
+  "passo_arcano": {
+    "definition": "passo_arcano",
+    "x": -139,
+    "y": -80
+  },
+  "chamado": {
+    "definition": "chamado",
+    "x": -166,
+    "y": -96
+  },
+  "escudo_arcano": {
+    "definition": "escudo_arcano",
+    "x": -194,
+    "y": -112
   }
 }

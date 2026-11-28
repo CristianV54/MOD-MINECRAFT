@@ -15,6 +15,18 @@
       ],
       [
         "forca_3",
+        "forca_4"
+      ],
+      [
+        "forca_4",
+        "forca_5"
+      ],
+      [
+        "forca_5",
+        "forca_6"
+      ],
+      [
+        "forca_6",
         "golpe_brutal"
       ],
       [
@@ -31,6 +43,18 @@
       ],
       [
         "vigor_3",
+        "vigor_4"
+      ],
+      [
+        "vigor_4",
+        "vigor_5"
+      ],
+      [
+        "vigor_5",
+        "vigor_6"
+      ],
+      [
+        "vigor_6",
         "sede_de_sangue"
       ],
       [
@@ -43,11 +67,107 @@
       ],
       [
         "ritmo_2",
+        "ritmo_3"
+      ],
+      [
+        "ritmo_3",
+        "ritmo_4"
+      ],
+      [
+        "ritmo_4",
         "folego_1"
       ],
       [
         "folego_1",
+        "folego_2"
+      ],
+      [
+        "folego_2",
         "mestre_de_armas"
+      ],
+      [
+        "treino",
+        "couraca_1"
+      ],
+      [
+        "couraca_1",
+        "couraca_2"
+      ],
+      [
+        "couraca_2",
+        "couraca_3"
+      ],
+      [
+        "couraca_3",
+        "couraca_4"
+      ],
+      [
+        "couraca_4",
+        "tempera_1"
+      ],
+      [
+        "tempera_1",
+        "tempera_2"
+      ],
+      [
+        "tempera_2",
+        "aco_vivo"
+      ],
+      [
+        "treino",
+        "impacto_1"
+      ],
+      [
+        "impacto_1",
+        "impacto_2"
+      ],
+      [
+        "impacto_2",
+        "impacto_3"
+      ],
+      [
+        "impacto_3",
+        "impacto_4"
+      ],
+      [
+        "impacto_4",
+        "empurrao_1"
+      ],
+      [
+        "empurrao_1",
+        "empurrao_2"
+      ],
+      [
+        "empurrao_2",
+        "quebra_guarda"
+      ],
+      [
+        "treino",
+        "furia_1"
+      ],
+      [
+        "furia_1",
+        "furia_2"
+      ],
+      [
+        "furia_2",
+        "furia_3"
+      ],
+      [
+        "furia_3",
+        "furia_4"
+      ],
+      [
+        "furia_4",
+        "colera_1"
+      ],
+      [
+        "colera_1",
+        "colera_2"
+      ],
+      [
+        "colera_2",
+        "campeao"
       ]
     ]
   }

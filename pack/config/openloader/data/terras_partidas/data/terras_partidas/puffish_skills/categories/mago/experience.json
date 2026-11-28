@@ -2,10 +2,10 @@
   "experience_per_level": {
     "type": "expression",
     "data": {
-      "expression": "40 + level * 25"
+      "expression": "60 + level * 35"
     }
   },
-  "level_limit": 20,
+  "level_limit": 30,
   "sources": [
     {
       "type": "puffish_skills:kill_entity",

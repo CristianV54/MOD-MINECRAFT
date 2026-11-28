@@ -7,77 +7,202 @@
   },
   "golpes_1": {
     "definition": "golpes_1",
-    "x": -34,
-    "y": -34
+    "x": 0,
+    "y": -32
   },
   "golpes_2": {
     "definition": "golpes_2",
-    "x": -68,
-    "y": -68
+    "x": 0,
+    "y": -64
   },
   "golpes_3": {
     "definition": "golpes_3",
-    "x": -102,
-    "y": -102
+    "x": 0,
+    "y": -96
   },
   "golpes_4": {
     "definition": "golpes_4",
-    "x": -136,
-    "y": -136
+    "x": 0,
+    "y": -128
+  },
+  "golpes_5": {
+    "definition": "golpes_5",
+    "x": 0,
+    "y": -160
+  },
+  "golpes_6": {
+    "definition": "golpes_6",
+    "x": 0,
+    "y": -192
+  },
+  "golpes_7": {
+    "definition": "golpes_7",
+    "x": 0,
+    "y": -224
   },
   "carrasco": {
     "definition": "carrasco",
-    "x": -170,
-    "y": -170
+    "x": 0,
+    "y": -256
   },
   "agil_1": {
     "definition": "agil_1",
-    "x": 0,
-    "y": -34
+    "x": 30,
+    "y": -10
   },
   "agil_2": {
     "definition": "agil_2",
-    "x": 0,
-    "y": -68
+    "x": 61,
+    "y": -20
   },
   "agil_3": {
     "definition": "agil_3",
-    "x": 0,
-    "y": -102
+    "x": 91,
+    "y": -30
   },
   "agil_4": {
     "definition": "agil_4",
-    "x": 0,
-    "y": -136
+    "x": 122,
+    "y": -40
+  },
+  "agil_5": {
+    "definition": "agil_5",
+    "x": 152,
+    "y": -49
+  },
+  "alcance_1": {
+    "definition": "alcance_1",
+    "x": 183,
+    "y": -59
+  },
+  "alcance_2": {
+    "definition": "alcance_2",
+    "x": 213,
+    "y": -69
   },
   "dancarino": {
     "definition": "dancarino",
-    "x": 0,
-    "y": -170
+    "x": 243,
+    "y": -79
   },
-  "sangue_1": {
-    "definition": "sangue_1",
-    "x": 34,
-    "y": -34
+  "sede_1": {
+    "definition": "sede_1",
+    "x": 19,
+    "y": 26
   },
-  "sangue_2": {
-    "definition": "sangue_2",
-    "x": 68,
-    "y": -68
+  "sede_2": {
+    "definition": "sede_2",
+    "x": 38,
+    "y": 52
   },
-  "sangue_3": {
-    "definition": "sangue_3",
-    "x": 102,
-    "y": -102
+  "sede_3": {
+    "definition": "sede_3",
+    "x": 56,
+    "y": 78
   },
-  "sangue_4": {
-    "definition": "sangue_4",
-    "x": 136,
-    "y": -136
+  "sede_4": {
+    "definition": "sede_4",
+    "x": 75,
+    "y": 104
+  },
+  "sede_5": {
+    "definition": "sede_5",
+    "x": 94,
+    "y": 129
+  },
+  "empurrao_1": {
+    "definition": "empurrao_1",
+    "x": 113,
+    "y": 155
+  },
+  "empurrao_2": {
+    "definition": "empurrao_2",
+    "x": 132,
+    "y": 181
   },
   "predador": {
     "definition": "predador",
-    "x": 170,
-    "y": -170
+    "x": 150,
+    "y": 207
+  },
+  "impacto_1": {
+    "definition": "impacto_1",
+    "x": -19,
+    "y": 26
+  },
+  "impacto_2": {
+    "definition": "impacto_2",
+    "x": -38,
+    "y": 52
+  },
+  "impacto_3": {
+    "definition": "impacto_3",
+    "x": -56,
+    "y": 78
+  },
+  "impacto_4": {
+    "definition": "impacto_4",
+    "x": -75,
+    "y": 104
+  },
+  "impacto_5": {
+    "definition": "impacto_5",
+    "x": -94,
+    "y": 129
+  },
+  "perfurar_1": {
+    "definition": "perfurar_1",
+    "x": -113,
+    "y": 155
+  },
+  "perfurar_2": {
+    "definition": "perfurar_2",
+    "x": -132,
+    "y": 181
+  },
+  "quebra_escudos": {
+    "definition": "quebra_escudos",
+    "x": -150,
+    "y": 207
+  },
+  "furia_1": {
+    "definition": "furia_1",
+    "x": -30,
+    "y": -10
+  },
+  "furia_2": {
+    "definition": "furia_2",
+    "x": -61,
+    "y": -20
+  },
+  "furia_3": {
+    "definition": "furia_3",
+    "x": -91,
+    "y": -30
+  },
+  "furia_4": {
+    "definition": "furia_4",
+    "x": -122,
+    "y": -40
+  },
+  "furia_5": {
+    "definition": "furia_5",
+    "x": -152,
+    "y": -49
+  },
+  "colera_1": {
+    "definition": "colera_1",
+    "x": -183,
+    "y": -59
+  },
+  "colera_2": {
+    "definition": "colera_2",
+    "x": -213,
+    "y": -69
+  },
+  "golpe_final": {
+    "definition": "golpe_final",
+    "x": -243,
+    "y": -79
   }
 }

@@ -3,63 +3,163 @@
     "bidirectional": [
       [
         "resistente",
-        "cor_1"
+        "coracao_1"
       ],
       [
-        "cor_1",
-        "cor_2"
+        "coracao_1",
+        "coracao_2"
       ],
       [
-        "cor_2",
-        "cor_3"
+        "coracao_2",
+        "coracao_3"
       ],
       [
-        "cor_3",
-        "cor_4"
+        "coracao_3",
+        "coracao_4"
       ],
       [
-        "cor_4",
-        "imortal"
+        "coracao_4",
+        "coracao_5"
+      ],
+      [
+        "coracao_5",
+        "coracao_6"
+      ],
+      [
+        "coracao_6",
+        "coracao_7"
+      ],
+      [
+        "coracao_7",
+        "coracao_de_dragao"
       ],
       [
         "resistente",
-        "couro_1"
+        "pele_grossa_1"
       ],
       [
-        "couro_1",
-        "couro_2"
+        "pele_grossa_1",
+        "pele_grossa_2"
       ],
       [
-        "couro_2",
-        "couro_3"
+        "pele_grossa_2",
+        "pele_grossa_3"
       ],
       [
-        "couro_3",
-        "couro_4"
+        "pele_grossa_3",
+        "pele_grossa_4"
       ],
       [
-        "couro_4",
+        "pele_grossa_4",
+        "pele_grossa_5"
+      ],
+      [
+        "pele_grossa_5",
+        "casca_1"
+      ],
+      [
+        "casca_1",
+        "casca_2"
+      ],
+      [
+        "casca_2",
         "muralha_viva"
       ],
       [
         "resistente",
-        "via_1"
+        "pes_leves_1"
       ],
       [
-        "via_1",
-        "via_2"
+        "pes_leves_1",
+        "pes_leves_2"
       ],
       [
-        "via_2",
-        "via_3"
+        "pes_leves_2",
+        "pes_leves_3"
       ],
       [
-        "via_3",
-        "via_4"
+        "pes_leves_3",
+        "pes_leves_4"
       ],
       [
-        "via_4",
+        "pes_leves_4",
+        "nadador_1"
+      ],
+      [
+        "nadador_1",
+        "nadador_2"
+      ],
+      [
+        "nadador_2",
+        "escalador"
+      ],
+      [
+        "escalador",
         "andarilho"
+      ],
+      [
+        "resistente",
+        "cura_1"
+      ],
+      [
+        "cura_1",
+        "cura_2"
+      ],
+      [
+        "cura_2",
+        "cura_3"
+      ],
+      [
+        "cura_3",
+        "cura_4"
+      ],
+      [
+        "cura_4",
+        "cura_5"
+      ],
+      [
+        "cura_5",
+        "cura_6"
+      ],
+      [
+        "cura_6",
+        "cura_7"
+      ],
+      [
+        "cura_7",
+        "renascer"
+      ],
+      [
+        "resistente",
+        "pulmao_1"
+      ],
+      [
+        "pulmao_1",
+        "pulmao_2"
+      ],
+      [
+        "pulmao_2",
+        "pulmao_3"
+      ],
+      [
+        "pulmao_3",
+        "pulmao_4"
+      ],
+      [
+        "pulmao_4",
+        "pulmao_5"
+      ],
+      [
+        "pulmao_5",
+        "ar_fresco_1"
+      ],
+      [
+        "ar_fresco_1",
+        "ar_fresco_2"
+      ],
+      [
+        "ar_fresco_2",
+        "pulmao_de_ferro"
       ]
     ]
   }

@@ -28,7 +28,7 @@
   },
   "poder_1": {
     "title": "Poder I",
-    "description": "+5% de poder mágico\nRamo: Poder",
+    "description": "+2% de poder mágico\nRamo: Poder",
     "icon": {
       "type": "item",
       "data": {
@@ -46,7 +46,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "irons_spellbooks:spell_power",
-          "value": 0.05,
+          "value": 0.02,
           "operation": "addition"
         }
       }
@@ -55,7 +55,7 @@
   },
   "poder_2": {
     "title": "Poder II",
-    "description": "+5% de poder mágico\nRamo: Poder",
+    "description": "+2% de poder mágico\nRamo: Poder",
     "icon": {
       "type": "item",
       "data": {
@@ -73,7 +73,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "irons_spellbooks:spell_power",
-          "value": 0.05,
+          "value": 0.02,
           "operation": "addition"
         }
       }
@@ -82,7 +82,7 @@
   },
   "poder_3": {
     "title": "Poder III",
-    "description": "+5% de poder mágico\nRamo: Poder",
+    "description": "+2% de poder mágico\nRamo: Poder",
     "icon": {
       "type": "item",
       "data": {
@@ -100,7 +100,88 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "irons_spellbooks:spell_power",
-          "value": 0.05,
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "poder_4": {
+    "title": "Poder IV",
+    "description": "+2% de poder mágico\nRamo: Poder",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:blaze_powder"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "poder_5": {
+    "title": "Poder V",
+    "description": "+2% de poder mágico\nRamo: Poder",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:blaze_powder"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "poder_6": {
+    "title": "Poder VI",
+    "description": "+2% de poder mágico\nRamo: Poder",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:blaze_powder"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.02,
           "operation": "addition"
         }
       }
@@ -109,7 +190,7 @@
   },
   "arquimago": {
     "title": "Arquimago",
-    "description": "+15% de poder mágico\nRamo: Poder",
+    "description": "+10% de poder mágico\nRamo: Poder",
     "icon": {
       "type": "item",
       "data": {
@@ -127,20 +208,20 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "irons_spellbooks:spell_power",
-          "value": 0.15,
+          "value": 0.1,
           "operation": "addition"
         }
       }
     ],
-    "cost": 2
+    "cost": 3
   },
-  "fluxo_1": {
-    "title": "Fluxo I",
-    "description": "+10% de recuperação de mana\nRamo: Fluxo",
+  "reserva_1": {
+    "title": "Reserva I",
+    "description": "+15 de mana máxima\nRamo: Reserva",
     "icon": {
       "type": "item",
       "data": {
-        "item": "minecraft:experience_bottle"
+        "item": "minecraft:lapis_lazuli"
       }
     },
     "frame": {
@@ -153,48 +234,21 @@
       {
         "type": "puffish_skills:attribute",
         "data": {
-          "attribute": "irons_spellbooks:mana_regen",
-          "value": 0.1,
-          "operation": "addition"
-        }
-      }
-    ],
-    "cost": 1
-  },
-  "fluxo_2": {
-    "title": "Fluxo II",
-    "description": "+10% de recuperação de mana\nRamo: Fluxo",
-    "icon": {
-      "type": "item",
-      "data": {
-        "item": "minecraft:experience_bottle"
-      }
-    },
-    "frame": {
-      "type": "advancement",
-      "data": {
-        "frame": "task"
-      }
-    },
-    "rewards": [
-      {
-        "type": "puffish_skills:attribute",
-        "data": {
-          "attribute": "irons_spellbooks:mana_regen",
-          "value": 0.1,
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 15.0,
           "operation": "addition"
         }
       }
     ],
     "cost": 1
   },
-  "fluxo_3": {
-    "title": "Fluxo III",
-    "description": "+10% de recuperação de mana\nRamo: Fluxo",
+  "reserva_2": {
+    "title": "Reserva II",
+    "description": "+15 de mana máxima\nRamo: Reserva",
     "icon": {
       "type": "item",
       "data": {
-        "item": "minecraft:experience_bottle"
+        "item": "minecraft:lapis_lazuli"
       }
     },
     "frame": {
@@ -207,8 +261,116 @@
       {
         "type": "puffish_skills:attribute",
         "data": {
-          "attribute": "irons_spellbooks:mana_regen",
-          "value": 0.1,
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 15.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "reserva_3": {
+    "title": "Reserva III",
+    "description": "+15 de mana máxima\nRamo: Reserva",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:lapis_lazuli"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 15.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "reserva_4": {
+    "title": "Reserva IV",
+    "description": "+15 de mana máxima\nRamo: Reserva",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:lapis_lazuli"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 15.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "reserva_5": {
+    "title": "Reserva V",
+    "description": "+15 de mana máxima\nRamo: Reserva",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:lapis_lazuli"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 15.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "reserva_6": {
+    "title": "Reserva VI",
+    "description": "+15 de mana máxima\nRamo: Reserva",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:lapis_lazuli"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 15.0,
           "operation": "addition"
         }
       }
@@ -217,11 +379,11 @@
   },
   "poco_de_mana": {
     "title": "Poço de Mana",
-    "description": "+100 de mana máxima\nRamo: Fluxo",
+    "description": "+75 de mana máxima\nRamo: Reserva",
     "icon": {
       "type": "item",
       "data": {
-        "item": "minecraft:experience_bottle"
+        "item": "minecraft:lapis_lazuli"
       }
     },
     "frame": {
@@ -235,16 +397,205 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "irons_spellbooks:max_mana",
-          "value": 100.0,
+          "value": 75.0,
           "operation": "addition"
         }
       }
     ],
-    "cost": 2
+    "cost": 3
+  },
+  "fluxo_1": {
+    "title": "Fluxo I",
+    "description": "+5% de recuperação de mana\nRamo: Fluxo",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:mana_regen",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "fluxo_2": {
+    "title": "Fluxo II",
+    "description": "+5% de recuperação de mana\nRamo: Fluxo",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:mana_regen",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "fluxo_3": {
+    "title": "Fluxo III",
+    "description": "+5% de recuperação de mana\nRamo: Fluxo",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:mana_regen",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "fluxo_4": {
+    "title": "Fluxo IV",
+    "description": "+5% de recuperação de mana\nRamo: Fluxo",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:mana_regen",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "fluxo_5": {
+    "title": "Fluxo V",
+    "description": "+5% de recuperação de mana\nRamo: Fluxo",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:mana_regen",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "fluxo_6": {
+    "title": "Fluxo VI",
+    "description": "+5% de recuperação de mana\nRamo: Fluxo",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:mana_regen",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "mare_arcana": {
+    "title": "Maré Arcana",
+    "description": "+20% de recuperação de mana\nRamo: Fluxo",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:mana_regen",
+          "value": 0.2,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 3
   },
   "pressa_1": {
     "title": "Pressa I",
-    "description": "-5% no tempo de recarga dos feitiços\nRamo: Pressa",
+    "description": "-2% no tempo de recarga dos feitiços\nRamo: Pressa",
     "icon": {
       "type": "item",
       "data": {
@@ -262,7 +613,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "irons_spellbooks:cooldown_reduction",
-          "value": 0.05,
+          "value": 0.02,
           "operation": "addition"
         }
       }
@@ -271,7 +622,7 @@
   },
   "pressa_2": {
     "title": "Pressa II",
-    "description": "-5% no tempo de recarga dos feitiços\nRamo: Pressa",
+    "description": "-2% no tempo de recarga dos feitiços\nRamo: Pressa",
     "icon": {
       "type": "item",
       "data": {
@@ -289,7 +640,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "irons_spellbooks:cooldown_reduction",
-          "value": 0.05,
+          "value": 0.02,
           "operation": "addition"
         }
       }
@@ -298,7 +649,7 @@
   },
   "pressa_3": {
     "title": "Pressa III",
-    "description": "-5% no tempo de recarga dos feitiços\nRamo: Pressa",
+    "description": "-2% no tempo de recarga dos feitiços\nRamo: Pressa",
     "icon": {
       "type": "item",
       "data": {
@@ -316,7 +667,88 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "irons_spellbooks:cooldown_reduction",
-          "value": 0.05,
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "pressa_4": {
+    "title": "Pressa IV",
+    "description": "-2% no tempo de recarga dos feitiços\nRamo: Pressa",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:clock"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:cooldown_reduction",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "palavra_rapida_1": {
+    "title": "Palavra Rápida I",
+    "description": "-3% no tempo de conjuração\nRamo: Pressa",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:clock"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:cast_time_reduction",
+          "value": 0.03,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "palavra_rapida_2": {
+    "title": "Palavra Rápida II",
+    "description": "-3% no tempo de conjuração\nRamo: Pressa",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:clock"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:cast_time_reduction",
+          "value": 0.03,
           "operation": "addition"
         }
       }
@@ -325,7 +757,7 @@
   },
   "conjuracao_rapida": {
     "title": "Conjuração Rápida",
-    "description": "-15% no tempo de conjuração\nRamo: Pressa",
+    "description": "-6% de recarga e -6% de tempo de conjuração\nRamo: Pressa",
     "icon": {
       "type": "item",
       "data": {
@@ -342,12 +774,422 @@
       {
         "type": "puffish_skills:attribute",
         "data": {
+          "attribute": "irons_spellbooks:cooldown_reduction",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
           "attribute": "irons_spellbooks:cast_time_reduction",
-          "value": 0.15,
+          "value": 0.06,
           "operation": "addition"
         }
       }
     ],
-    "cost": 2
+    "cost": 3
+  },
+  "escola_fogo": {
+    "title": "Escola do Fogo",
+    "description": "+4% de poder dos feitiços de fogo\nRamo: Elementos",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:nether_star"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "escola_gelo": {
+    "title": "Escola do Gelo",
+    "description": "+4% de poder dos feitiços de gelo\nRamo: Elementos",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:nether_star"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "escola_raio": {
+    "title": "Escola do Raio",
+    "description": "+4% de poder dos feitiços de raio\nRamo: Elementos",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:nether_star"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "escola_natureza": {
+    "title": "Escola da Natureza",
+    "description": "+4% de poder dos feitiços da natureza\nRamo: Elementos",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:nether_star"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "escola_ender": {
+    "title": "Escola do Ender",
+    "description": "+4% de poder dos feitiços do Ender\nRamo: Elementos",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:nether_star"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "escola_sagrada": {
+    "title": "Escola Sagrada",
+    "description": "+4% de poder dos feitiços sagrados\nRamo: Elementos",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:nether_star"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "mestre_dos_elementos": {
+    "title": "Mestre dos Elementos",
+    "description": "+6% de poder dos feitiços de sangue, evocação e eldritch\nRamo: Elementos",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:nether_star"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:evocation_spell_power",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:eldritch_spell_power",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 3
+  },
+  "barreira_1": {
+    "title": "Barreira I",
+    "description": "+2% de resistência a magia\nRamo: Guardião",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "barreira_2": {
+    "title": "Barreira II",
+    "description": "+2% de resistência a magia\nRamo: Guardião",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "corpo_firme_1": {
+    "title": "Corpo Firme I",
+    "description": "+1 de vida (meio coração)\nRamo: Guardião",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "corpo_firme_2": {
+    "title": "Corpo Firme II",
+    "description": "+1 de vida (meio coração)\nRamo: Guardião",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "passo_arcano": {
+    "title": "Passo Arcano",
+    "description": "+10% de velocidade andando enquanto conjura\nRamo: Guardião",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:casting_movespeed",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "chamado": {
+    "title": "Chamado",
+    "description": "+10% de dano das criaturas invocadas\nRamo: Guardião",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:summon_damage",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "escudo_arcano": {
+    "title": "Escudo Arcano",
+    "description": "+8% de resistência a magia e +2 de vida\nRamo: Guardião",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.08,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 3
   }
 }

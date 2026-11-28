@@ -7,62 +7,212 @@
   },
   "pontaria_1": {
     "definition": "pontaria_1",
-    "x": -34,
-    "y": -34
+    "x": 0,
+    "y": -32
   },
   "pontaria_2": {
     "definition": "pontaria_2",
-    "x": -68,
-    "y": -68
+    "x": 0,
+    "y": -64
   },
   "pontaria_3": {
     "definition": "pontaria_3",
-    "x": -102,
-    "y": -102
+    "x": 0,
+    "y": -96
+  },
+  "pontaria_4": {
+    "definition": "pontaria_4",
+    "x": 0,
+    "y": -128
+  },
+  "pontaria_5": {
+    "definition": "pontaria_5",
+    "x": 0,
+    "y": -160
+  },
+  "pontaria_6": {
+    "definition": "pontaria_6",
+    "x": 0,
+    "y": -192
   },
   "tiro_certeiro": {
     "definition": "tiro_certeiro",
-    "x": -136,
-    "y": -136
+    "x": 0,
+    "y": -224
   },
   "corda_1": {
     "definition": "corda_1",
-    "x": 0,
-    "y": -34
+    "x": 28,
+    "y": -16
   },
   "corda_2": {
     "definition": "corda_2",
-    "x": 0,
-    "y": -68
+    "x": 55,
+    "y": -32
   },
   "corda_3": {
     "definition": "corda_3",
-    "x": 0,
-    "y": -102
+    "x": 83,
+    "y": -48
+  },
+  "corda_4": {
+    "definition": "corda_4",
+    "x": 111,
+    "y": -64
+  },
+  "corda_5": {
+    "definition": "corda_5",
+    "x": 139,
+    "y": -80
+  },
+  "corda_6": {
+    "definition": "corda_6",
+    "x": 166,
+    "y": -96
   },
   "flecha_veloz": {
     "definition": "flecha_veloz",
-    "x": 0,
-    "y": -136
+    "x": 194,
+    "y": -112
   },
   "rastreador_1": {
     "definition": "rastreador_1",
-    "x": 34,
-    "y": -34
+    "x": 28,
+    "y": 16
   },
   "rastreador_2": {
     "definition": "rastreador_2",
-    "x": 68,
-    "y": -68
+    "x": 55,
+    "y": 32
   },
   "rastreador_3": {
     "definition": "rastreador_3",
-    "x": 102,
-    "y": -102
+    "x": 83,
+    "y": 48
+  },
+  "rastreador_4": {
+    "definition": "rastreador_4",
+    "x": 111,
+    "y": 64
+  },
+  "couro_curtido_1": {
+    "definition": "couro_curtido_1",
+    "x": 139,
+    "y": 80
+  },
+  "couro_curtido_2": {
+    "definition": "couro_curtido_2",
+    "x": 166,
+    "y": 96
   },
   "sobrevivente": {
     "definition": "sobrevivente",
-    "x": 136,
-    "y": -136
+    "x": 194,
+    "y": 112
+  },
+  "mira_1": {
+    "definition": "mira_1",
+    "x": 0,
+    "y": 32
+  },
+  "mira_2": {
+    "definition": "mira_2",
+    "x": 0,
+    "y": 64
+  },
+  "mira_3": {
+    "definition": "mira_3",
+    "x": 0,
+    "y": 96
+  },
+  "mira_4": {
+    "definition": "mira_4",
+    "x": 0,
+    "y": 128
+  },
+  "ponta_de_aco_1": {
+    "definition": "ponta_de_aco_1",
+    "x": 0,
+    "y": 160
+  },
+  "ponta_de_aco_2": {
+    "definition": "ponta_de_aco_2",
+    "x": 0,
+    "y": 192
+  },
+  "cacador_de_chefes": {
+    "definition": "cacador_de_chefes",
+    "x": 0,
+    "y": 224
+  },
+  "faro_1": {
+    "definition": "faro_1",
+    "x": -28,
+    "y": 16
+  },
+  "faro_2": {
+    "definition": "faro_2",
+    "x": -55,
+    "y": 32
+  },
+  "faro_3": {
+    "definition": "faro_3",
+    "x": -83,
+    "y": 48
+  },
+  "faro_4": {
+    "definition": "faro_4",
+    "x": -111,
+    "y": 64
+  },
+  "trilha_1": {
+    "definition": "trilha_1",
+    "x": -139,
+    "y": 80
+  },
+  "trilha_2": {
+    "definition": "trilha_2",
+    "x": -166,
+    "y": 96
+  },
+  "instinto": {
+    "definition": "instinto",
+    "x": -194,
+    "y": 112
+  },
+  "faca_1": {
+    "definition": "faca_1",
+    "x": -28,
+    "y": -16
+  },
+  "faca_2": {
+    "definition": "faca_2",
+    "x": -55,
+    "y": -32
+  },
+  "faca_3": {
+    "definition": "faca_3",
+    "x": -83,
+    "y": -48
+  },
+  "reflexo_1": {
+    "definition": "reflexo_1",
+    "x": -111,
+    "y": -64
+  },
+  "reflexo_2": {
+    "definition": "reflexo_2",
+    "x": -139,
+    "y": -80
+  },
+  "reflexo_3": {
+    "definition": "reflexo_3",
+    "x": -166,
+    "y": -96
+  },
+  "recuo_agil": {
+    "definition": "recuo_agil",
+    "x": -194,
+    "y": -112
   }
 }

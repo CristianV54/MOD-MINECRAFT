@@ -15,6 +15,18 @@
       ],
       [
         "lamina_3",
+        "lamina_4"
+      ],
+      [
+        "lamina_4",
+        "lamina_5"
+      ],
+      [
+        "lamina_5",
+        "lamina_6"
+      ],
+      [
+        "lamina_6",
         "golpe_fatal"
       ],
       [
@@ -31,6 +43,18 @@
       ],
       [
         "sombra_3",
+        "sombra_4"
+      ],
+      [
+        "sombra_4",
+        "sombra_5"
+      ],
+      [
+        "sombra_5",
+        "sombra_6"
+      ],
+      [
+        "sombra_6",
         "vulto"
       ],
       [
@@ -47,7 +71,103 @@
       ],
       [
         "folego_3",
+        "folego_4"
+      ],
+      [
+        "folego_4",
+        "folego_5"
+      ],
+      [
+        "folego_5",
+        "folego_6"
+      ],
+      [
+        "folego_6",
         "segundo_ar"
+      ],
+      [
+        "passos_leves",
+        "brecha_1"
+      ],
+      [
+        "brecha_1",
+        "brecha_2"
+      ],
+      [
+        "brecha_2",
+        "brecha_3"
+      ],
+      [
+        "brecha_3",
+        "brecha_4"
+      ],
+      [
+        "brecha_4",
+        "corte_1"
+      ],
+      [
+        "corte_1",
+        "corte_2"
+      ],
+      [
+        "corte_2",
+        "ponto_fraco"
+      ],
+      [
+        "passos_leves",
+        "passo_1"
+      ],
+      [
+        "passo_1",
+        "passo_2"
+      ],
+      [
+        "passo_2",
+        "passo_3"
+      ],
+      [
+        "passo_3",
+        "passo_4"
+      ],
+      [
+        "passo_4",
+        "passo_5"
+      ],
+      [
+        "passo_5",
+        "passo_6"
+      ],
+      [
+        "passo_6",
+        "passo_fantasma"
+      ],
+      [
+        "passos_leves",
+        "mao_esquerda_1"
+      ],
+      [
+        "mao_esquerda_1",
+        "mao_esquerda_2"
+      ],
+      [
+        "mao_esquerda_2",
+        "mao_esquerda_3"
+      ],
+      [
+        "mao_esquerda_3",
+        "mao_direita_1"
+      ],
+      [
+        "mao_direita_1",
+        "mao_direita_2"
+      ],
+      [
+        "mao_direita_2",
+        "mao_direita_3"
+      ],
+      [
+        "mao_direita_3",
+        "danca_das_adagas"
       ]
     ]
   }

@@ -28,7 +28,7 @@
   },
   "lamina_1": {
     "title": "Lâmina I",
-    "description": "+5% de chance de crítico\nRamo: Lâmina",
+    "description": "+2% de chance de crítico\nRamo: Lâmina",
     "icon": {
       "type": "item",
       "data": {
@@ -46,7 +46,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "attributeslib:crit_chance",
-          "value": 0.05,
+          "value": 0.02,
           "operation": "addition"
         }
       }
@@ -55,7 +55,7 @@
   },
   "lamina_2": {
     "title": "Lâmina II",
-    "description": "+5% de chance de crítico\nRamo: Lâmina",
+    "description": "+2% de chance de crítico\nRamo: Lâmina",
     "icon": {
       "type": "item",
       "data": {
@@ -73,7 +73,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "attributeslib:crit_chance",
-          "value": 0.05,
+          "value": 0.02,
           "operation": "addition"
         }
       }
@@ -82,7 +82,7 @@
   },
   "lamina_3": {
     "title": "Lâmina III",
-    "description": "+5% de chance de crítico\nRamo: Lâmina",
+    "description": "+2% de chance de crítico\nRamo: Lâmina",
     "icon": {
       "type": "item",
       "data": {
@@ -100,7 +100,88 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "attributeslib:crit_chance",
-          "value": 0.05,
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "lamina_4": {
+    "title": "Lâmina IV",
+    "description": "+2% de chance de crítico\nRamo: Lâmina",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "epicfight:iron_dagger"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_chance",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "lamina_5": {
+    "title": "Lâmina V",
+    "description": "+2% de chance de crítico\nRamo: Lâmina",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "epicfight:iron_dagger"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_chance",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "lamina_6": {
+    "title": "Lâmina VI",
+    "description": "+2% de chance de crítico\nRamo: Lâmina",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "epicfight:iron_dagger"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_chance",
+          "value": 0.02,
           "operation": "addition"
         }
       }
@@ -132,11 +213,11 @@
         }
       }
     ],
-    "cost": 2
+    "cost": 3
   },
   "sombra_1": {
     "title": "Sombra I",
-    "description": "+3% de chance de esquivar\nRamo: Sombra",
+    "description": "+1,5% de chance de esquivar\nRamo: Sombra",
     "icon": {
       "type": "item",
       "data": {
@@ -154,7 +235,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "attributeslib:dodge_chance",
-          "value": 0.03,
+          "value": 0.015,
           "operation": "addition"
         }
       }
@@ -163,7 +244,7 @@
   },
   "sombra_2": {
     "title": "Sombra II",
-    "description": "+3% de chance de esquivar\nRamo: Sombra",
+    "description": "+1,5% de chance de esquivar\nRamo: Sombra",
     "icon": {
       "type": "item",
       "data": {
@@ -181,7 +262,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "attributeslib:dodge_chance",
-          "value": 0.03,
+          "value": 0.015,
           "operation": "addition"
         }
       }
@@ -190,7 +271,7 @@
   },
   "sombra_3": {
     "title": "Sombra III",
-    "description": "+3% de chance de esquivar\nRamo: Sombra",
+    "description": "+1,5% de chance de esquivar\nRamo: Sombra",
     "icon": {
       "type": "item",
       "data": {
@@ -208,7 +289,88 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "attributeslib:dodge_chance",
-          "value": 0.03,
+          "value": 0.015,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "sombra_4": {
+    "title": "Sombra IV",
+    "description": "+1,5% de chance de esquivar\nRamo: Sombra",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:ender_eye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:dodge_chance",
+          "value": 0.015,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "sombra_5": {
+    "title": "Sombra V",
+    "description": "+1,5% de chance de esquivar\nRamo: Sombra",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:ender_eye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:dodge_chance",
+          "value": 0.015,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "sombra_6": {
+    "title": "Sombra VI",
+    "description": "+1,5% de chance de esquivar\nRamo: Sombra",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:ender_eye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:dodge_chance",
+          "value": 0.015,
           "operation": "addition"
         }
       }
@@ -217,7 +379,7 @@
   },
   "vulto": {
     "title": "Vulto",
-    "description": "+10% de velocidade de movimento\nRamo: Sombra",
+    "description": "+8% de velocidade e +3% de esquiva\nRamo: Sombra",
     "icon": {
       "type": "item",
       "data": {
@@ -235,16 +397,24 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.movement_speed",
-          "value": 0.01,
+          "value": 0.008,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:dodge_chance",
+          "value": 0.03,
           "operation": "addition"
         }
       }
     ],
-    "cost": 2
+    "cost": 3
   },
   "folego_1": {
     "title": "Fôlego I",
-    "description": "+2 de fôlego máximo\nRamo: Fôlego",
+    "description": "+1 de fôlego máximo\nRamo: Fôlego",
     "icon": {
       "type": "item",
       "data": {
@@ -262,7 +432,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "epicfight:staminar",
-          "value": 2.0,
+          "value": 1.0,
           "operation": "addition"
         }
       }
@@ -271,7 +441,7 @@
   },
   "folego_2": {
     "title": "Fôlego II",
-    "description": "+2 de fôlego máximo\nRamo: Fôlego",
+    "description": "+1 de fôlego máximo\nRamo: Fôlego",
     "icon": {
       "type": "item",
       "data": {
@@ -289,7 +459,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "epicfight:staminar",
-          "value": 2.0,
+          "value": 1.0,
           "operation": "addition"
         }
       }
@@ -298,7 +468,7 @@
   },
   "folego_3": {
     "title": "Fôlego III",
-    "description": "+2 de fôlego máximo\nRamo: Fôlego",
+    "description": "+1 de fôlego máximo\nRamo: Fôlego",
     "icon": {
       "type": "item",
       "data": {
@@ -316,7 +486,88 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "epicfight:staminar",
-          "value": 2.0,
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "folego_4": {
+    "title": "Fôlego IV",
+    "description": "+1 de fôlego máximo\nRamo: Fôlego",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:sugar"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:staminar",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "folego_5": {
+    "title": "Fôlego V",
+    "description": "+1 de fôlego máximo\nRamo: Fôlego",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:sugar"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:staminar",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "folego_6": {
+    "title": "Fôlego VI",
+    "description": "+1 de fôlego máximo\nRamo: Fôlego",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:sugar"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:staminar",
+          "value": 1.0,
           "operation": "addition"
         }
       }
@@ -348,6 +599,589 @@
         }
       }
     ],
-    "cost": 2
+    "cost": 3
+  },
+  "brecha_1": {
+    "title": "Brecha I",
+    "description": "Ignora 0,5 de armadura do inimigo\nRamo: Ponto Fraco",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:spider_eye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:armor_pierce",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "brecha_2": {
+    "title": "Brecha II",
+    "description": "Ignora 0,5 de armadura do inimigo\nRamo: Ponto Fraco",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:spider_eye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:armor_pierce",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "brecha_3": {
+    "title": "Brecha III",
+    "description": "Ignora 0,5 de armadura do inimigo\nRamo: Ponto Fraco",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:spider_eye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:armor_pierce",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "brecha_4": {
+    "title": "Brecha IV",
+    "description": "Ignora 0,5 de armadura do inimigo\nRamo: Ponto Fraco",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:spider_eye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:armor_pierce",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "corte_1": {
+    "title": "Corte Fundo I",
+    "description": "+5% de dano crítico\nRamo: Ponto Fraco",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:spider_eye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_damage",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "corte_2": {
+    "title": "Corte Fundo II",
+    "description": "+5% de dano crítico\nRamo: Ponto Fraco",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:spider_eye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_damage",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "ponto_fraco": {
+    "title": "Ponto Fraco",
+    "description": "Ignora 10% da armadura do inimigo\nRamo: Ponto Fraco",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:spider_eye"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:armor_shred",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 3
+  },
+  "passo_1": {
+    "title": "Passo Ligeiro I",
+    "description": "+2% de velocidade de movimento\nRamo: Passos",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.002,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "passo_2": {
+    "title": "Passo Ligeiro II",
+    "description": "+2% de velocidade de movimento\nRamo: Passos",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.002,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "passo_3": {
+    "title": "Passo Ligeiro III",
+    "description": "+2% de velocidade de movimento\nRamo: Passos",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.002,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "passo_4": {
+    "title": "Passo Ligeiro IV",
+    "description": "+2% de velocidade de movimento\nRamo: Passos",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.002,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "passo_5": {
+    "title": "Passo Ligeiro V",
+    "description": "+2% de velocidade de movimento\nRamo: Passos",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.002,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "passo_6": {
+    "title": "Passo Ligeiro VI",
+    "description": "+2% de velocidade de movimento\nRamo: Passos",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.002,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "passo_fantasma": {
+    "title": "Passo Fantasma",
+    "description": "+5% de velocidade e +5% de velocidade de ataque\nRamo: Passos",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_boots"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.movement_speed",
+          "value": 0.005,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_speed",
+          "value": 0.2,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 3
+  },
+  "mao_esquerda_1": {
+    "title": "Mão Esquerda I",
+    "description": "+2,5% de velocidade de ataque da mão secundária\nRamo: Duas Lâminas",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:offhand_attack_speed",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "mao_esquerda_2": {
+    "title": "Mão Esquerda II",
+    "description": "+2,5% de velocidade de ataque da mão secundária\nRamo: Duas Lâminas",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:offhand_attack_speed",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "mao_esquerda_3": {
+    "title": "Mão Esquerda III",
+    "description": "+2,5% de velocidade de ataque da mão secundária\nRamo: Duas Lâminas",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:offhand_attack_speed",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "mao_direita_1": {
+    "title": "Mão Direita I",
+    "description": "+2,5% de velocidade de ataque\nRamo: Duas Lâminas",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_speed",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "mao_direita_2": {
+    "title": "Mão Direita II",
+    "description": "+2,5% de velocidade de ataque\nRamo: Duas Lâminas",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_speed",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "mao_direita_3": {
+    "title": "Mão Direita III",
+    "description": "+2,5% de velocidade de ataque\nRamo: Duas Lâminas",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_speed",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "danca_das_adagas": {
+    "title": "Dança das Adagas",
+    "description": "+20% de dano crítico e 3% de roubo de vida\nRamo: Duas Lâminas",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_damage",
+          "value": 0.2,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:life_steal",
+          "value": 0.03,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 3
   }
 }

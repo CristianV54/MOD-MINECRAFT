@@ -28,7 +28,7 @@
   },
   "golpes_1": {
     "title": "Golpes Firmes I",
-    "description": "+1 de dano\nRamo: Golpes",
+    "description": "+0,5 de dano\nRamo: Golpes",
     "icon": {
       "type": "item",
       "data": {
@@ -46,7 +46,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.attack_damage",
-          "value": 1.0,
+          "value": 0.5,
           "operation": "addition"
         }
       }
@@ -55,7 +55,7 @@
   },
   "golpes_2": {
     "title": "Golpes Firmes II",
-    "description": "+1 de dano\nRamo: Golpes",
+    "description": "+0,5 de dano\nRamo: Golpes",
     "icon": {
       "type": "item",
       "data": {
@@ -73,7 +73,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.attack_damage",
-          "value": 1.0,
+          "value": 0.5,
           "operation": "addition"
         }
       }
@@ -82,7 +82,7 @@
   },
   "golpes_3": {
     "title": "Golpes Firmes III",
-    "description": "+1 de dano\nRamo: Golpes",
+    "description": "+0,5 de dano\nRamo: Golpes",
     "icon": {
       "type": "item",
       "data": {
@@ -100,7 +100,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.attack_damage",
-          "value": 1.0,
+          "value": 0.5,
           "operation": "addition"
         }
       }
@@ -108,8 +108,8 @@
     "cost": 1
   },
   "golpes_4": {
-    "title": "Perfurar Armadura",
-    "description": "Ignora 2 pontos de armadura do inimigo\nRamo: Golpes",
+    "title": "Golpes Firmes IV",
+    "description": "+0,5 de dano\nRamo: Golpes",
     "icon": {
       "type": "item",
       "data": {
@@ -126,8 +126,89 @@
       {
         "type": "puffish_skills:attribute",
         "data": {
-          "attribute": "attributeslib:armor_pierce",
-          "value": 2.0,
+          "attribute": "minecraft:generic.attack_damage",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "golpes_5": {
+    "title": "Golpes Firmes V",
+    "description": "+0,5 de dano\nRamo: Golpes",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_damage",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "golpes_6": {
+    "title": "Golpes Firmes VI",
+    "description": "+0,5 de dano\nRamo: Golpes",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_damage",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "golpes_7": {
+    "title": "Golpes Firmes VII",
+    "description": "+0,5 de dano\nRamo: Golpes",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_damage",
+          "value": 0.5,
           "operation": "addition"
         }
       }
@@ -136,7 +217,7 @@
   },
   "carrasco": {
     "title": "Carrasco",
-    "description": "+15% de chance e +25% de dano crítico\nRamo: Golpes",
+    "description": "+10% de chance e +20% de dano crítico\nRamo: Golpes",
     "icon": {
       "type": "item",
       "data": {
@@ -154,7 +235,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "attributeslib:crit_chance",
-          "value": 0.15,
+          "value": 0.1,
           "operation": "addition"
         }
       },
@@ -162,16 +243,16 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "attributeslib:crit_damage",
-          "value": 0.25,
+          "value": 0.2,
           "operation": "addition"
         }
       }
     ],
-    "cost": 2
+    "cost": 3
   },
   "agil_1": {
     "title": "Mãos Rápidas I",
-    "description": "+5% de velocidade de ataque\nRamo: Agilidade",
+    "description": "+2,5% de velocidade de ataque\nRamo: Agilidade",
     "icon": {
       "type": "item",
       "data": {
@@ -189,7 +270,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.attack_speed",
-          "value": 0.2,
+          "value": 0.1,
           "operation": "addition"
         }
       }
@@ -198,7 +279,7 @@
   },
   "agil_2": {
     "title": "Mãos Rápidas II",
-    "description": "+5% de velocidade de ataque\nRamo: Agilidade",
+    "description": "+2,5% de velocidade de ataque\nRamo: Agilidade",
     "icon": {
       "type": "item",
       "data": {
@@ -216,7 +297,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.attack_speed",
-          "value": 0.2,
+          "value": 0.1,
           "operation": "addition"
         }
       }
@@ -224,8 +305,89 @@
     "cost": 1
   },
   "agil_3": {
-    "title": "Alcance",
-    "description": "+0,5 de alcance de ataque\nRamo: Agilidade",
+    "title": "Mãos Rápidas III",
+    "description": "+2,5% de velocidade de ataque\nRamo: Agilidade",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:feather"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_speed",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "agil_4": {
+    "title": "Mãos Rápidas IV",
+    "description": "+2,5% de velocidade de ataque\nRamo: Agilidade",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:feather"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_speed",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "agil_5": {
+    "title": "Mãos Rápidas V",
+    "description": "+2,5% de velocidade de ataque\nRamo: Agilidade",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:feather"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_speed",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "alcance_1": {
+    "title": "Alcance I",
+    "description": "+0,25 de alcance de ataque\nRamo: Agilidade",
     "icon": {
       "type": "item",
       "data": {
@@ -243,16 +405,16 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "forge:entity_reach",
-          "value": 0.5,
+          "value": 0.25,
           "operation": "addition"
         }
       }
     ],
     "cost": 1
   },
-  "agil_4": {
-    "title": "Fôlego de Batalha",
-    "description": "+3 de fôlego máximo\nRamo: Agilidade",
+  "alcance_2": {
+    "title": "Alcance II",
+    "description": "+0,25 de alcance de ataque\nRamo: Agilidade",
     "icon": {
       "type": "item",
       "data": {
@@ -269,8 +431,8 @@
       {
         "type": "puffish_skills:attribute",
         "data": {
-          "attribute": "epicfight:staminar",
-          "value": 3.0,
+          "attribute": "forge:entity_reach",
+          "value": 0.25,
           "operation": "addition"
         }
       }
@@ -310,11 +472,146 @@
         }
       }
     ],
-    "cost": 2
+    "cost": 3
   },
-  "sangue_1": {
-    "title": "Empurrão",
-    "description": "+0,5 de repulsão nos ataques\nRamo: Sangue",
+  "sede_1": {
+    "title": "Sede I",
+    "description": "Recupera 1% do dano causado como vida\nRamo: Sangue",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:life_steal",
+          "value": 0.01,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "sede_2": {
+    "title": "Sede II",
+    "description": "Recupera 1% do dano causado como vida\nRamo: Sangue",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:life_steal",
+          "value": 0.01,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "sede_3": {
+    "title": "Sede III",
+    "description": "Recupera 1% do dano causado como vida\nRamo: Sangue",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:life_steal",
+          "value": 0.01,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "sede_4": {
+    "title": "Sede IV",
+    "description": "Recupera 1% do dano causado como vida\nRamo: Sangue",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:life_steal",
+          "value": 0.01,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "sede_5": {
+    "title": "Sede V",
+    "description": "Recupera 1% do dano causado como vida\nRamo: Sangue",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:redstone"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:life_steal",
+          "value": 0.01,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "empurrao_1": {
+    "title": "Empurrão I",
+    "description": "+0,25 de repulsão nos golpes\nRamo: Sangue",
     "icon": {
       "type": "item",
       "data": {
@@ -332,16 +629,16 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.attack_knockback",
-          "value": 0.5,
+          "value": 0.25,
           "operation": "addition"
         }
       }
     ],
     "cost": 1
   },
-  "sangue_2": {
-    "title": "Sede I",
-    "description": "Recupera 2% do dano causado como vida\nRamo: Sangue",
+  "empurrao_2": {
+    "title": "Empurrão II",
+    "description": "+0,25 de repulsão nos golpes\nRamo: Sangue",
     "icon": {
       "type": "item",
       "data": {
@@ -358,62 +655,8 @@
       {
         "type": "puffish_skills:attribute",
         "data": {
-          "attribute": "attributeslib:life_steal",
-          "value": 0.02,
-          "operation": "addition"
-        }
-      }
-    ],
-    "cost": 1
-  },
-  "sangue_3": {
-    "title": "Sede II",
-    "description": "Recupera mais 2% do dano causado como vida\nRamo: Sangue",
-    "icon": {
-      "type": "item",
-      "data": {
-        "item": "minecraft:redstone"
-      }
-    },
-    "frame": {
-      "type": "advancement",
-      "data": {
-        "frame": "task"
-      }
-    },
-    "rewards": [
-      {
-        "type": "puffish_skills:attribute",
-        "data": {
-          "attribute": "attributeslib:life_steal",
-          "value": 0.02,
-          "operation": "addition"
-        }
-      }
-    ],
-    "cost": 1
-  },
-  "sangue_4": {
-    "title": "Impacto",
-    "description": "+2 de impacto (atordoa mais os inimigos)\nRamo: Sangue",
-    "icon": {
-      "type": "item",
-      "data": {
-        "item": "minecraft:redstone"
-      }
-    },
-    "frame": {
-      "type": "advancement",
-      "data": {
-        "frame": "task"
-      }
-    },
-    "rewards": [
-      {
-        "type": "puffish_skills:attribute",
-        "data": {
-          "attribute": "epicfight:impact",
-          "value": 2.0,
+          "attribute": "minecraft:generic.attack_knockback",
+          "value": 0.25,
           "operation": "addition"
         }
       }
@@ -422,7 +665,7 @@
   },
   "predador": {
     "title": "Predador",
-    "description": "+5% de roubo de vida e +2 de dano\nRamo: Sangue",
+    "description": "+4% de roubo de vida e +1 de dano\nRamo: Sangue",
     "icon": {
       "type": "item",
       "data": {
@@ -440,7 +683,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "attributeslib:life_steal",
-          "value": 0.05,
+          "value": 0.04,
           "operation": "addition"
         }
       },
@@ -448,11 +691,443 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.attack_damage",
-          "value": 2.0,
+          "value": 1.0,
           "operation": "addition"
         }
       }
     ],
-    "cost": 2
+    "cost": 3
+  },
+  "impacto_1": {
+    "title": "Impacto I",
+    "description": "+0,5 de impacto (atordoa mais)\nRamo: Impacto",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:impact",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "impacto_2": {
+    "title": "Impacto II",
+    "description": "+0,5 de impacto (atordoa mais)\nRamo: Impacto",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:impact",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "impacto_3": {
+    "title": "Impacto III",
+    "description": "+0,5 de impacto (atordoa mais)\nRamo: Impacto",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:impact",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "impacto_4": {
+    "title": "Impacto IV",
+    "description": "+0,5 de impacto (atordoa mais)\nRamo: Impacto",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:impact",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "impacto_5": {
+    "title": "Impacto V",
+    "description": "+0,5 de impacto (atordoa mais)\nRamo: Impacto",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:impact",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "perfurar_1": {
+    "title": "Perfurar I",
+    "description": "Ignora 0,5 de armadura do inimigo\nRamo: Impacto",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:armor_pierce",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "perfurar_2": {
+    "title": "Perfurar II",
+    "description": "Ignora 0,5 de armadura do inimigo\nRamo: Impacto",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:armor_pierce",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "quebra_escudos": {
+    "title": "Quebra-Escudos",
+    "description": "Ignora 10% da armadura do inimigo\nRamo: Impacto",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:armor_shred",
+          "value": 0.1,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 3
+  },
+  "furia_1": {
+    "title": "Fúria I",
+    "description": "+1,5% de chance de crítico\nRamo: Fúria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:blaze_powder"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_chance",
+          "value": 0.015,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "furia_2": {
+    "title": "Fúria II",
+    "description": "+1,5% de chance de crítico\nRamo: Fúria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:blaze_powder"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_chance",
+          "value": 0.015,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "furia_3": {
+    "title": "Fúria III",
+    "description": "+1,5% de chance de crítico\nRamo: Fúria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:blaze_powder"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_chance",
+          "value": 0.015,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "furia_4": {
+    "title": "Fúria IV",
+    "description": "+1,5% de chance de crítico\nRamo: Fúria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:blaze_powder"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_chance",
+          "value": 0.015,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "furia_5": {
+    "title": "Fúria V",
+    "description": "+1,5% de chance de crítico\nRamo: Fúria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:blaze_powder"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_chance",
+          "value": 0.015,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "colera_1": {
+    "title": "Cólera I",
+    "description": "+4% de dano crítico\nRamo: Fúria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:blaze_powder"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_damage",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "colera_2": {
+    "title": "Cólera II",
+    "description": "+4% de dano crítico\nRamo: Fúria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:blaze_powder"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:crit_damage",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "golpe_final": {
+    "title": "Golpe Final",
+    "description": "Cada acerto tira mais 2% da vida atual do alvo\nRamo: Fúria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:blaze_powder"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:current_hp_damage",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 3
   }
 }

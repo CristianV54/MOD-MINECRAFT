@@ -26,9 +26,9 @@
     ],
     "cost": 1
   },
-  "pic_1": {
+  "braco_forte_1": {
     "title": "Braço Forte I",
-    "description": "+10% de velocidade de mineração\nRamo: Picareta",
+    "description": "+6% de velocidade de mineração\nRamo: Picareta",
     "icon": {
       "type": "item",
       "data": {
@@ -46,16 +46,16 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "attributeslib:mining_speed",
-          "value": 0.1,
+          "value": 0.06,
           "operation": "addition"
         }
       }
     ],
     "cost": 1
   },
-  "pic_2": {
+  "braco_forte_2": {
     "title": "Braço Forte II",
-    "description": "+10% de velocidade de mineração\nRamo: Picareta",
+    "description": "+6% de velocidade de mineração\nRamo: Picareta",
     "icon": {
       "type": "item",
       "data": {
@@ -73,16 +73,16 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "attributeslib:mining_speed",
-          "value": 0.1,
+          "value": 0.06,
           "operation": "addition"
         }
       }
     ],
     "cost": 1
   },
-  "pic_3": {
+  "braco_forte_3": {
     "title": "Braço Forte III",
-    "description": "+15% de velocidade de mineração\nRamo: Picareta",
+    "description": "+6% de velocidade de mineração\nRamo: Picareta",
     "icon": {
       "type": "item",
       "data": {
@@ -100,16 +100,16 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "attributeslib:mining_speed",
-          "value": 0.15,
+          "value": 0.06,
           "operation": "addition"
         }
       }
     ],
     "cost": 1
   },
-  "pic_4": {
-    "title": "Braço de Ferro",
-    "description": "+15% de velocidade de mineração\nRamo: Picareta",
+  "braco_forte_4": {
+    "title": "Braço Forte IV",
+    "description": "+6% de velocidade de mineração\nRamo: Picareta",
     "icon": {
       "type": "item",
       "data": {
@@ -127,7 +127,88 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "attributeslib:mining_speed",
-          "value": 0.15,
+          "value": 0.06,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "braco_forte_5": {
+    "title": "Braço Forte V",
+    "description": "+6% de velocidade de mineração\nRamo: Picareta",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:diamond_pickaxe"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:mining_speed",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "braco_forte_6": {
+    "title": "Braço Forte VI",
+    "description": "+6% de velocidade de mineração\nRamo: Picareta",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:diamond_pickaxe"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:mining_speed",
+          "value": 0.06,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "braco_forte_7": {
+    "title": "Braço Forte VII",
+    "description": "+6% de velocidade de mineração\nRamo: Picareta",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:diamond_pickaxe"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:mining_speed",
+          "value": 0.06,
           "operation": "addition"
         }
       }
@@ -136,7 +217,7 @@
   },
   "escavadora": {
     "title": "Escavadora",
-    "description": "+30% de velocidade de mineração\nRamo: Picareta",
+    "description": "+25% de velocidade de mineração\nRamo: Picareta",
     "icon": {
       "type": "item",
       "data": {
@@ -154,16 +235,16 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "attributeslib:mining_speed",
-          "value": 0.3,
+          "value": 0.25,
           "operation": "addition"
         }
       }
     ],
-    "cost": 2
+    "cost": 3
   },
-  "alc_1": {
+  "braco_longo_1": {
     "title": "Braço Longo I",
-    "description": "+0,5 de alcance para quebrar e colocar blocos\nRamo: Alcance",
+    "description": "+0,25 de alcance para quebrar e colocar blocos\nRamo: Alcance",
     "icon": {
       "type": "item",
       "data": {
@@ -181,16 +262,16 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "forge:block_reach",
-          "value": 0.5,
+          "value": 0.25,
           "operation": "addition"
         }
       }
     ],
     "cost": 1
   },
-  "alc_2": {
+  "braco_longo_2": {
     "title": "Braço Longo II",
-    "description": "+0,5 de alcance para quebrar e colocar blocos\nRamo: Alcance",
+    "description": "+0,25 de alcance para quebrar e colocar blocos\nRamo: Alcance",
     "icon": {
       "type": "item",
       "data": {
@@ -208,14 +289,122 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "forge:block_reach",
-          "value": 0.5,
+          "value": 0.25,
           "operation": "addition"
         }
       }
     ],
     "cost": 1
   },
-  "alc_3": {
+  "braco_longo_3": {
+    "title": "Braço Longo III",
+    "description": "+0,25 de alcance para quebrar e colocar blocos\nRamo: Alcance",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:spyglass"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "forge:block_reach",
+          "value": 0.25,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "braco_longo_4": {
+    "title": "Braço Longo IV",
+    "description": "+0,25 de alcance para quebrar e colocar blocos\nRamo: Alcance",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:spyglass"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "forge:block_reach",
+          "value": 0.25,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "braco_longo_5": {
+    "title": "Braço Longo V",
+    "description": "+0,25 de alcance para quebrar e colocar blocos\nRamo: Alcance",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:spyglass"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "forge:block_reach",
+          "value": 0.25,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "braco_longo_6": {
+    "title": "Braço Longo VI",
+    "description": "+0,25 de alcance para quebrar e colocar blocos\nRamo: Alcance",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:spyglass"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "forge:block_reach",
+          "value": 0.25,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "passo_firme": {
     "title": "Passo Firme",
     "description": "Sobe meio bloco sem pular\nRamo: Alcance",
     "icon": {
@@ -242,36 +431,9 @@
     ],
     "cost": 1
   },
-  "alc_4": {
-    "title": "Braço Longo III",
-    "description": "+1 de alcance para quebrar e colocar blocos\nRamo: Alcance",
-    "icon": {
-      "type": "item",
-      "data": {
-        "item": "minecraft:spyglass"
-      }
-    },
-    "frame": {
-      "type": "advancement",
-      "data": {
-        "frame": "task"
-      }
-    },
-    "rewards": [
-      {
-        "type": "puffish_skills:attribute",
-        "data": {
-          "attribute": "forge:block_reach",
-          "value": 1.0,
-          "operation": "addition"
-        }
-      }
-    ],
-    "cost": 1
-  },
   "arquiteto": {
     "title": "Arquiteto",
-    "description": "+1,5 de alcance para quebrar e colocar blocos\nRamo: Alcance",
+    "description": "+1 de alcance para quebrar e colocar blocos\nRamo: Alcance",
     "icon": {
       "type": "item",
       "data": {
@@ -289,16 +451,16 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "forge:block_reach",
-          "value": 1.5,
+          "value": 1.0,
           "operation": "addition"
         }
       }
     ],
-    "cost": 2
+    "cost": 3
   },
-  "sorte_1": {
+  "olho_treinado_1": {
     "title": "Olho Treinado I",
-    "description": "+1 de sorte (baús e pescaria melhores)\nRamo: Sorte",
+    "description": "+0,5 de sorte (baús e pescaria melhores)\nRamo: Sorte",
     "icon": {
       "type": "item",
       "data": {
@@ -316,43 +478,16 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.luck",
-          "value": 1.0,
+          "value": 0.5,
           "operation": "addition"
         }
       }
     ],
     "cost": 1
   },
-  "sorte_2": {
-    "title": "Sabedoria I",
-    "description": "+10% de experiência ganha\nRamo: Sorte",
-    "icon": {
-      "type": "item",
-      "data": {
-        "item": "minecraft:emerald"
-      }
-    },
-    "frame": {
-      "type": "advancement",
-      "data": {
-        "frame": "task"
-      }
-    },
-    "rewards": [
-      {
-        "type": "puffish_skills:attribute",
-        "data": {
-          "attribute": "attributeslib:experience_gained",
-          "value": 0.1,
-          "operation": "addition"
-        }
-      }
-    ],
-    "cost": 1
-  },
-  "sorte_3": {
+  "olho_treinado_2": {
     "title": "Olho Treinado II",
-    "description": "+1 de sorte\nRamo: Sorte",
+    "description": "+0,5 de sorte (baús e pescaria melhores)\nRamo: Sorte",
     "icon": {
       "type": "item",
       "data": {
@@ -370,16 +505,16 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.luck",
-          "value": 1.0,
+          "value": 0.5,
           "operation": "addition"
         }
       }
     ],
     "cost": 1
   },
-  "sorte_4": {
-    "title": "Sabedoria II",
-    "description": "+15% de experiência ganha\nRamo: Sorte",
+  "olho_treinado_3": {
+    "title": "Olho Treinado III",
+    "description": "+0,5 de sorte (baús e pescaria melhores)\nRamo: Sorte",
     "icon": {
       "type": "item",
       "data": {
@@ -396,8 +531,116 @@
       {
         "type": "puffish_skills:attribute",
         "data": {
-          "attribute": "attributeslib:experience_gained",
-          "value": 0.15,
+          "attribute": "minecraft:generic.luck",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "olho_treinado_4": {
+    "title": "Olho Treinado IV",
+    "description": "+0,5 de sorte (baús e pescaria melhores)\nRamo: Sorte",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:emerald"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.luck",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "olho_treinado_5": {
+    "title": "Olho Treinado V",
+    "description": "+0,5 de sorte (baús e pescaria melhores)\nRamo: Sorte",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:emerald"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.luck",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "olho_treinado_6": {
+    "title": "Olho Treinado VI",
+    "description": "+0,5 de sorte (baús e pescaria melhores)\nRamo: Sorte",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:emerald"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.luck",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "olho_treinado_7": {
+    "title": "Olho Treinado VII",
+    "description": "+0,5 de sorte (baús e pescaria melhores)\nRamo: Sorte",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:emerald"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.luck",
+          "value": 0.5,
           "operation": "addition"
         }
       }
@@ -406,7 +649,7 @@
   },
   "garimpeiro": {
     "title": "Garimpeiro",
-    "description": "+2 de sorte e +25% de experiência ganha\nRamo: Sorte",
+    "description": "+2 de sorte\nRamo: Sorte",
     "icon": {
       "type": "item",
       "data": {
@@ -427,16 +670,440 @@
           "value": 2.0,
           "operation": "addition"
         }
-      },
+      }
+    ],
+    "cost": 3
+  },
+  "sabedoria_1": {
+    "title": "Sabedoria I",
+    "description": "+4% de experiência ganha\nRamo: Sabedoria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
       {
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "attributeslib:experience_gained",
-          "value": 0.25,
+          "value": 0.04,
           "operation": "addition"
         }
       }
     ],
-    "cost": 2
+    "cost": 1
+  },
+  "sabedoria_2": {
+    "title": "Sabedoria II",
+    "description": "+4% de experiência ganha\nRamo: Sabedoria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:experience_gained",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "sabedoria_3": {
+    "title": "Sabedoria III",
+    "description": "+4% de experiência ganha\nRamo: Sabedoria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:experience_gained",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "sabedoria_4": {
+    "title": "Sabedoria IV",
+    "description": "+4% de experiência ganha\nRamo: Sabedoria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:experience_gained",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "sabedoria_5": {
+    "title": "Sabedoria V",
+    "description": "+4% de experiência ganha\nRamo: Sabedoria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:experience_gained",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "sabedoria_6": {
+    "title": "Sabedoria VI",
+    "description": "+4% de experiência ganha\nRamo: Sabedoria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:experience_gained",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "sabedoria_7": {
+    "title": "Sabedoria VII",
+    "description": "+4% de experiência ganha\nRamo: Sabedoria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:experience_gained",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "mente_afiada": {
+    "title": "Mente Afiada",
+    "description": "+15% de experiência ganha\nRamo: Sabedoria",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:experience_bottle"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:experience_gained",
+          "value": 0.15,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 3
+  },
+  "couro_mineiro_1": {
+    "title": "Couro de Mineiro I",
+    "description": "+0,5 de armadura\nRamo: Couro de Mineiro",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "couro_mineiro_2": {
+    "title": "Couro de Mineiro II",
+    "description": "+0,5 de armadura\nRamo: Couro de Mineiro",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "couro_mineiro_3": {
+    "title": "Couro de Mineiro III",
+    "description": "+0,5 de armadura\nRamo: Couro de Mineiro",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "couro_mineiro_4": {
+    "title": "Couro de Mineiro IV",
+    "description": "+0,5 de armadura\nRamo: Couro de Mineiro",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "pele_de_pedra_1": {
+    "title": "Pele de Pedra I",
+    "description": "+0,5 de resistência da armadura\nRamo: Couro de Mineiro",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "pele_de_pedra_2": {
+    "title": "Pele de Pedra II",
+    "description": "+0,5 de resistência da armadura\nRamo: Couro de Mineiro",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "pele_de_pedra_3": {
+    "title": "Pele de Pedra III",
+    "description": "+0,5 de resistência da armadura\nRamo: Couro de Mineiro",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "peito_de_ferro": {
+    "title": "Peito de Ferro",
+    "description": "+2 de armadura\nRamo: Couro de Mineiro",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:leather_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 3
   }
 }

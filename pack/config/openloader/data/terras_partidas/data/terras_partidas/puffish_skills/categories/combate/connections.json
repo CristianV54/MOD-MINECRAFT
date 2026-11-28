@@ -19,6 +19,18 @@
       ],
       [
         "golpes_4",
+        "golpes_5"
+      ],
+      [
+        "golpes_5",
+        "golpes_6"
+      ],
+      [
+        "golpes_6",
+        "golpes_7"
+      ],
+      [
+        "golpes_7",
         "carrasco"
       ],
       [
@@ -39,27 +51,115 @@
       ],
       [
         "agil_4",
+        "agil_5"
+      ],
+      [
+        "agil_5",
+        "alcance_1"
+      ],
+      [
+        "alcance_1",
+        "alcance_2"
+      ],
+      [
+        "alcance_2",
         "dancarino"
       ],
       [
         "guerreiro_nato",
-        "sangue_1"
+        "sede_1"
       ],
       [
-        "sangue_1",
-        "sangue_2"
+        "sede_1",
+        "sede_2"
       ],
       [
-        "sangue_2",
-        "sangue_3"
+        "sede_2",
+        "sede_3"
       ],
       [
-        "sangue_3",
-        "sangue_4"
+        "sede_3",
+        "sede_4"
       ],
       [
-        "sangue_4",
+        "sede_4",
+        "sede_5"
+      ],
+      [
+        "sede_5",
+        "empurrao_1"
+      ],
+      [
+        "empurrao_1",
+        "empurrao_2"
+      ],
+      [
+        "empurrao_2",
         "predador"
+      ],
+      [
+        "guerreiro_nato",
+        "impacto_1"
+      ],
+      [
+        "impacto_1",
+        "impacto_2"
+      ],
+      [
+        "impacto_2",
+        "impacto_3"
+      ],
+      [
+        "impacto_3",
+        "impacto_4"
+      ],
+      [
+        "impacto_4",
+        "impacto_5"
+      ],
+      [
+        "impacto_5",
+        "perfurar_1"
+      ],
+      [
+        "perfurar_1",
+        "perfurar_2"
+      ],
+      [
+        "perfurar_2",
+        "quebra_escudos"
+      ],
+      [
+        "guerreiro_nato",
+        "furia_1"
+      ],
+      [
+        "furia_1",
+        "furia_2"
+      ],
+      [
+        "furia_2",
+        "furia_3"
+      ],
+      [
+        "furia_3",
+        "furia_4"
+      ],
+      [
+        "furia_4",
+        "furia_5"
+      ],
+      [
+        "furia_5",
+        "colera_1"
+      ],
+      [
+        "colera_1",
+        "colera_2"
+      ],
+      [
+        "colera_2",
+        "golpe_final"
       ]
     ]
   }

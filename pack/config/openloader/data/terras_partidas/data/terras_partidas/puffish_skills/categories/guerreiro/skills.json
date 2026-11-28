@@ -7,62 +7,212 @@
   },
   "forca_1": {
     "definition": "forca_1",
-    "x": -34,
-    "y": -34
+    "x": 0,
+    "y": -32
   },
   "forca_2": {
     "definition": "forca_2",
-    "x": -68,
-    "y": -68
+    "x": 0,
+    "y": -64
   },
   "forca_3": {
     "definition": "forca_3",
-    "x": -102,
-    "y": -102
+    "x": 0,
+    "y": -96
+  },
+  "forca_4": {
+    "definition": "forca_4",
+    "x": 0,
+    "y": -128
+  },
+  "forca_5": {
+    "definition": "forca_5",
+    "x": 0,
+    "y": -160
+  },
+  "forca_6": {
+    "definition": "forca_6",
+    "x": 0,
+    "y": -192
   },
   "golpe_brutal": {
     "definition": "golpe_brutal",
-    "x": -136,
-    "y": -136
+    "x": 0,
+    "y": -224
   },
   "vigor_1": {
     "definition": "vigor_1",
-    "x": 0,
-    "y": -34
+    "x": 28,
+    "y": -16
   },
   "vigor_2": {
     "definition": "vigor_2",
-    "x": 0,
-    "y": -68
+    "x": 55,
+    "y": -32
   },
   "vigor_3": {
     "definition": "vigor_3",
-    "x": 0,
-    "y": -102
+    "x": 83,
+    "y": -48
+  },
+  "vigor_4": {
+    "definition": "vigor_4",
+    "x": 111,
+    "y": -64
+  },
+  "vigor_5": {
+    "definition": "vigor_5",
+    "x": 139,
+    "y": -80
+  },
+  "vigor_6": {
+    "definition": "vigor_6",
+    "x": 166,
+    "y": -96
   },
   "sede_de_sangue": {
     "definition": "sede_de_sangue",
-    "x": 0,
-    "y": -136
+    "x": 194,
+    "y": -112
   },
   "ritmo_1": {
     "definition": "ritmo_1",
-    "x": 34,
-    "y": -34
+    "x": 28,
+    "y": 16
   },
   "ritmo_2": {
     "definition": "ritmo_2",
-    "x": 68,
-    "y": -68
+    "x": 55,
+    "y": 32
+  },
+  "ritmo_3": {
+    "definition": "ritmo_3",
+    "x": 83,
+    "y": 48
+  },
+  "ritmo_4": {
+    "definition": "ritmo_4",
+    "x": 111,
+    "y": 64
   },
   "folego_1": {
     "definition": "folego_1",
-    "x": 102,
-    "y": -102
+    "x": 139,
+    "y": 80
+  },
+  "folego_2": {
+    "definition": "folego_2",
+    "x": 166,
+    "y": 96
   },
   "mestre_de_armas": {
     "definition": "mestre_de_armas",
-    "x": 136,
-    "y": -136
+    "x": 194,
+    "y": 112
+  },
+  "couraca_1": {
+    "definition": "couraca_1",
+    "x": 0,
+    "y": 32
+  },
+  "couraca_2": {
+    "definition": "couraca_2",
+    "x": 0,
+    "y": 64
+  },
+  "couraca_3": {
+    "definition": "couraca_3",
+    "x": 0,
+    "y": 96
+  },
+  "couraca_4": {
+    "definition": "couraca_4",
+    "x": 0,
+    "y": 128
+  },
+  "tempera_1": {
+    "definition": "tempera_1",
+    "x": 0,
+    "y": 160
+  },
+  "tempera_2": {
+    "definition": "tempera_2",
+    "x": 0,
+    "y": 192
+  },
+  "aco_vivo": {
+    "definition": "aco_vivo",
+    "x": 0,
+    "y": 224
+  },
+  "impacto_1": {
+    "definition": "impacto_1",
+    "x": -28,
+    "y": 16
+  },
+  "impacto_2": {
+    "definition": "impacto_2",
+    "x": -55,
+    "y": 32
+  },
+  "impacto_3": {
+    "definition": "impacto_3",
+    "x": -83,
+    "y": 48
+  },
+  "impacto_4": {
+    "definition": "impacto_4",
+    "x": -111,
+    "y": 64
+  },
+  "empurrao_1": {
+    "definition": "empurrao_1",
+    "x": -139,
+    "y": 80
+  },
+  "empurrao_2": {
+    "definition": "empurrao_2",
+    "x": -166,
+    "y": 96
+  },
+  "quebra_guarda": {
+    "definition": "quebra_guarda",
+    "x": -194,
+    "y": 112
+  },
+  "furia_1": {
+    "definition": "furia_1",
+    "x": -28,
+    "y": -16
+  },
+  "furia_2": {
+    "definition": "furia_2",
+    "x": -55,
+    "y": -32
+  },
+  "furia_3": {
+    "definition": "furia_3",
+    "x": -83,
+    "y": -48
+  },
+  "furia_4": {
+    "definition": "furia_4",
+    "x": -111,
+    "y": -64
+  },
+  "colera_1": {
+    "definition": "colera_1",
+    "x": -139,
+    "y": -80
+  },
+  "colera_2": {
+    "definition": "colera_2",
+    "x": -166,
+    "y": -96
+  },
+  "campeao": {
+    "definition": "campeao",
+    "x": -194,
+    "y": -112
   }
 }

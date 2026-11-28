@@ -5,79 +5,204 @@
     "y": 0,
     "root": true
   },
-  "pic_1": {
-    "definition": "pic_1",
-    "x": -34,
-    "y": -34
+  "braco_forte_1": {
+    "definition": "braco_forte_1",
+    "x": 0,
+    "y": -32
   },
-  "pic_2": {
-    "definition": "pic_2",
-    "x": -68,
-    "y": -68
+  "braco_forte_2": {
+    "definition": "braco_forte_2",
+    "x": 0,
+    "y": -64
   },
-  "pic_3": {
-    "definition": "pic_3",
-    "x": -102,
-    "y": -102
+  "braco_forte_3": {
+    "definition": "braco_forte_3",
+    "x": 0,
+    "y": -96
   },
-  "pic_4": {
-    "definition": "pic_4",
-    "x": -136,
-    "y": -136
+  "braco_forte_4": {
+    "definition": "braco_forte_4",
+    "x": 0,
+    "y": -128
+  },
+  "braco_forte_5": {
+    "definition": "braco_forte_5",
+    "x": 0,
+    "y": -160
+  },
+  "braco_forte_6": {
+    "definition": "braco_forte_6",
+    "x": 0,
+    "y": -192
+  },
+  "braco_forte_7": {
+    "definition": "braco_forte_7",
+    "x": 0,
+    "y": -224
   },
   "escavadora": {
     "definition": "escavadora",
-    "x": -170,
-    "y": -170
-  },
-  "alc_1": {
-    "definition": "alc_1",
     "x": 0,
-    "y": -34
+    "y": -256
   },
-  "alc_2": {
-    "definition": "alc_2",
-    "x": 0,
-    "y": -68
+  "braco_longo_1": {
+    "definition": "braco_longo_1",
+    "x": 30,
+    "y": -10
   },
-  "alc_3": {
-    "definition": "alc_3",
-    "x": 0,
-    "y": -102
+  "braco_longo_2": {
+    "definition": "braco_longo_2",
+    "x": 61,
+    "y": -20
   },
-  "alc_4": {
-    "definition": "alc_4",
-    "x": 0,
-    "y": -136
+  "braco_longo_3": {
+    "definition": "braco_longo_3",
+    "x": 91,
+    "y": -30
+  },
+  "braco_longo_4": {
+    "definition": "braco_longo_4",
+    "x": 122,
+    "y": -40
+  },
+  "braco_longo_5": {
+    "definition": "braco_longo_5",
+    "x": 152,
+    "y": -49
+  },
+  "braco_longo_6": {
+    "definition": "braco_longo_6",
+    "x": 183,
+    "y": -59
+  },
+  "passo_firme": {
+    "definition": "passo_firme",
+    "x": 213,
+    "y": -69
   },
   "arquiteto": {
     "definition": "arquiteto",
-    "x": 0,
-    "y": -170
+    "x": 243,
+    "y": -79
   },
-  "sorte_1": {
-    "definition": "sorte_1",
-    "x": 34,
-    "y": -34
+  "olho_treinado_1": {
+    "definition": "olho_treinado_1",
+    "x": 19,
+    "y": 26
   },
-  "sorte_2": {
-    "definition": "sorte_2",
-    "x": 68,
-    "y": -68
+  "olho_treinado_2": {
+    "definition": "olho_treinado_2",
+    "x": 38,
+    "y": 52
   },
-  "sorte_3": {
-    "definition": "sorte_3",
-    "x": 102,
-    "y": -102
+  "olho_treinado_3": {
+    "definition": "olho_treinado_3",
+    "x": 56,
+    "y": 78
   },
-  "sorte_4": {
-    "definition": "sorte_4",
-    "x": 136,
-    "y": -136
+  "olho_treinado_4": {
+    "definition": "olho_treinado_4",
+    "x": 75,
+    "y": 104
+  },
+  "olho_treinado_5": {
+    "definition": "olho_treinado_5",
+    "x": 94,
+    "y": 129
+  },
+  "olho_treinado_6": {
+    "definition": "olho_treinado_6",
+    "x": 113,
+    "y": 155
+  },
+  "olho_treinado_7": {
+    "definition": "olho_treinado_7",
+    "x": 132,
+    "y": 181
   },
   "garimpeiro": {
     "definition": "garimpeiro",
-    "x": 170,
-    "y": -170
+    "x": 150,
+    "y": 207
+  },
+  "sabedoria_1": {
+    "definition": "sabedoria_1",
+    "x": -19,
+    "y": 26
+  },
+  "sabedoria_2": {
+    "definition": "sabedoria_2",
+    "x": -38,
+    "y": 52
+  },
+  "sabedoria_3": {
+    "definition": "sabedoria_3",
+    "x": -56,
+    "y": 78
+  },
+  "sabedoria_4": {
+    "definition": "sabedoria_4",
+    "x": -75,
+    "y": 104
+  },
+  "sabedoria_5": {
+    "definition": "sabedoria_5",
+    "x": -94,
+    "y": 129
+  },
+  "sabedoria_6": {
+    "definition": "sabedoria_6",
+    "x": -113,
+    "y": 155
+  },
+  "sabedoria_7": {
+    "definition": "sabedoria_7",
+    "x": -132,
+    "y": 181
+  },
+  "mente_afiada": {
+    "definition": "mente_afiada",
+    "x": -150,
+    "y": 207
+  },
+  "couro_mineiro_1": {
+    "definition": "couro_mineiro_1",
+    "x": -30,
+    "y": -10
+  },
+  "couro_mineiro_2": {
+    "definition": "couro_mineiro_2",
+    "x": -61,
+    "y": -20
+  },
+  "couro_mineiro_3": {
+    "definition": "couro_mineiro_3",
+    "x": -91,
+    "y": -30
+  },
+  "couro_mineiro_4": {
+    "definition": "couro_mineiro_4",
+    "x": -122,
+    "y": -40
+  },
+  "pele_de_pedra_1": {
+    "definition": "pele_de_pedra_1",
+    "x": -152,
+    "y": -49
+  },
+  "pele_de_pedra_2": {
+    "definition": "pele_de_pedra_2",
+    "x": -183,
+    "y": -59
+  },
+  "pele_de_pedra_3": {
+    "definition": "pele_de_pedra_3",
+    "x": -213,
+    "y": -69
+  },
+  "peito_de_ferro": {
+    "definition": "peito_de_ferro",
+    "x": -243,
+    "y": -79
   }
 }

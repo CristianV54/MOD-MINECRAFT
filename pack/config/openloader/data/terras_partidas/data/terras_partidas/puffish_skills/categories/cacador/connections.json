@@ -15,6 +15,18 @@
       ],
       [
         "pontaria_3",
+        "pontaria_4"
+      ],
+      [
+        "pontaria_4",
+        "pontaria_5"
+      ],
+      [
+        "pontaria_5",
+        "pontaria_6"
+      ],
+      [
+        "pontaria_6",
         "tiro_certeiro"
       ],
       [
@@ -31,6 +43,18 @@
       ],
       [
         "corda_3",
+        "corda_4"
+      ],
+      [
+        "corda_4",
+        "corda_5"
+      ],
+      [
+        "corda_5",
+        "corda_6"
+      ],
+      [
+        "corda_6",
         "flecha_veloz"
       ],
       [
@@ -47,7 +71,103 @@
       ],
       [
         "rastreador_3",
+        "rastreador_4"
+      ],
+      [
+        "rastreador_4",
+        "couro_curtido_1"
+      ],
+      [
+        "couro_curtido_1",
+        "couro_curtido_2"
+      ],
+      [
+        "couro_curtido_2",
         "sobrevivente"
+      ],
+      [
+        "olho_de_falcao",
+        "mira_1"
+      ],
+      [
+        "mira_1",
+        "mira_2"
+      ],
+      [
+        "mira_2",
+        "mira_3"
+      ],
+      [
+        "mira_3",
+        "mira_4"
+      ],
+      [
+        "mira_4",
+        "ponta_de_aco_1"
+      ],
+      [
+        "ponta_de_aco_1",
+        "ponta_de_aco_2"
+      ],
+      [
+        "ponta_de_aco_2",
+        "cacador_de_chefes"
+      ],
+      [
+        "olho_de_falcao",
+        "faro_1"
+      ],
+      [
+        "faro_1",
+        "faro_2"
+      ],
+      [
+        "faro_2",
+        "faro_3"
+      ],
+      [
+        "faro_3",
+        "faro_4"
+      ],
+      [
+        "faro_4",
+        "trilha_1"
+      ],
+      [
+        "trilha_1",
+        "trilha_2"
+      ],
+      [
+        "trilha_2",
+        "instinto"
+      ],
+      [
+        "olho_de_falcao",
+        "faca_1"
+      ],
+      [
+        "faca_1",
+        "faca_2"
+      ],
+      [
+        "faca_2",
+        "faca_3"
+      ],
+      [
+        "faca_3",
+        "reflexo_1"
+      ],
+      [
+        "reflexo_1",
+        "reflexo_2"
+      ],
+      [
+        "reflexo_2",
+        "reflexo_3"
+      ],
+      [
+        "reflexo_3",
+        "recuo_agil"
       ]
     ]
   }

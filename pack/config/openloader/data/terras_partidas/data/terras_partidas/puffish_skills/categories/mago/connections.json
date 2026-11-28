@@ -15,7 +15,47 @@
       ],
       [
         "poder_3",
+        "poder_4"
+      ],
+      [
+        "poder_4",
+        "poder_5"
+      ],
+      [
+        "poder_5",
+        "poder_6"
+      ],
+      [
+        "poder_6",
         "arquimago"
+      ],
+      [
+        "iniciado",
+        "reserva_1"
+      ],
+      [
+        "reserva_1",
+        "reserva_2"
+      ],
+      [
+        "reserva_2",
+        "reserva_3"
+      ],
+      [
+        "reserva_3",
+        "reserva_4"
+      ],
+      [
+        "reserva_4",
+        "reserva_5"
+      ],
+      [
+        "reserva_5",
+        "reserva_6"
+      ],
+      [
+        "reserva_6",
+        "poco_de_mana"
       ],
       [
         "iniciado",
@@ -31,7 +71,19 @@
       ],
       [
         "fluxo_3",
-        "poco_de_mana"
+        "fluxo_4"
+      ],
+      [
+        "fluxo_4",
+        "fluxo_5"
+      ],
+      [
+        "fluxo_5",
+        "fluxo_6"
+      ],
+      [
+        "fluxo_6",
+        "mare_arcana"
       ],
       [
         "iniciado",
@@ -47,7 +99,75 @@
       ],
       [
         "pressa_3",
+        "pressa_4"
+      ],
+      [
+        "pressa_4",
+        "palavra_rapida_1"
+      ],
+      [
+        "palavra_rapida_1",
+        "palavra_rapida_2"
+      ],
+      [
+        "palavra_rapida_2",
         "conjuracao_rapida"
+      ],
+      [
+        "iniciado",
+        "escola_fogo"
+      ],
+      [
+        "escola_fogo",
+        "escola_gelo"
+      ],
+      [
+        "escola_gelo",
+        "escola_raio"
+      ],
+      [
+        "escola_raio",
+        "escola_natureza"
+      ],
+      [
+        "escola_natureza",
+        "escola_ender"
+      ],
+      [
+        "escola_ender",
+        "escola_sagrada"
+      ],
+      [
+        "escola_sagrada",
+        "mestre_dos_elementos"
+      ],
+      [
+        "iniciado",
+        "barreira_1"
+      ],
+      [
+        "barreira_1",
+        "barreira_2"
+      ],
+      [
+        "barreira_2",
+        "corpo_firme_1"
+      ],
+      [
+        "corpo_firme_1",
+        "corpo_firme_2"
+      ],
+      [
+        "corpo_firme_2",
+        "passo_arcano"
+      ],
+      [
+        "passo_arcano",
+        "chamado"
+      ],
+      [
+        "chamado",
+        "escudo_arcano"
       ]
     ]
   }

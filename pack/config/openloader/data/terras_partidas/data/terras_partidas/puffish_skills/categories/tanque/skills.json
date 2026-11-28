@@ -7,62 +7,212 @@
   },
   "couraca_1": {
     "definition": "couraca_1",
-    "x": -34,
-    "y": -34
+    "x": 0,
+    "y": -32
   },
   "couraca_2": {
     "definition": "couraca_2",
-    "x": -68,
-    "y": -68
+    "x": 0,
+    "y": -64
   },
   "couraca_3": {
     "definition": "couraca_3",
-    "x": -102,
-    "y": -102
+    "x": 0,
+    "y": -96
+  },
+  "couraca_4": {
+    "definition": "couraca_4",
+    "x": 0,
+    "y": -128
+  },
+  "couraca_5": {
+    "definition": "couraca_5",
+    "x": 0,
+    "y": -160
+  },
+  "couraca_6": {
+    "definition": "couraca_6",
+    "x": 0,
+    "y": -192
   },
   "pele_de_aco": {
     "definition": "pele_de_aco",
-    "x": -136,
-    "y": -136
+    "x": 0,
+    "y": -224
   },
   "firmeza_1": {
     "definition": "firmeza_1",
-    "x": 0,
-    "y": -34
+    "x": 28,
+    "y": -16
   },
   "firmeza_2": {
     "definition": "firmeza_2",
-    "x": 0,
-    "y": -68
+    "x": 55,
+    "y": -32
   },
   "firmeza_3": {
     "definition": "firmeza_3",
-    "x": 0,
-    "y": -102
+    "x": 83,
+    "y": -48
+  },
+  "firmeza_4": {
+    "definition": "firmeza_4",
+    "x": 111,
+    "y": -64
+  },
+  "firmeza_5": {
+    "definition": "firmeza_5",
+    "x": 139,
+    "y": -80
+  },
+  "firmeza_6": {
+    "definition": "firmeza_6",
+    "x": 166,
+    "y": -96
   },
   "inabalavel": {
     "definition": "inabalavel",
-    "x": 0,
-    "y": -136
+    "x": 194,
+    "y": -112
   },
   "vitalidade_1": {
     "definition": "vitalidade_1",
-    "x": 34,
-    "y": -34
+    "x": 28,
+    "y": 16
   },
   "vitalidade_2": {
     "definition": "vitalidade_2",
-    "x": 68,
-    "y": -68
+    "x": 55,
+    "y": 32
   },
   "vitalidade_3": {
     "definition": "vitalidade_3",
-    "x": 102,
-    "y": -102
+    "x": 83,
+    "y": 48
   },
-  "regeneracao": {
-    "definition": "regeneracao",
-    "x": 136,
-    "y": -136
+  "vitalidade_4": {
+    "definition": "vitalidade_4",
+    "x": 111,
+    "y": 64
+  },
+  "vitalidade_5": {
+    "definition": "vitalidade_5",
+    "x": 139,
+    "y": 80
+  },
+  "vitalidade_6": {
+    "definition": "vitalidade_6",
+    "x": 166,
+    "y": 96
+  },
+  "sangue_forte": {
+    "definition": "sangue_forte",
+    "x": 194,
+    "y": 112
+  },
+  "bastiao_1": {
+    "definition": "bastiao_1",
+    "x": 0,
+    "y": 32
+  },
+  "bastiao_2": {
+    "definition": "bastiao_2",
+    "x": 0,
+    "y": 64
+  },
+  "bastiao_3": {
+    "definition": "bastiao_3",
+    "x": 0,
+    "y": 96
+  },
+  "bastiao_4": {
+    "definition": "bastiao_4",
+    "x": 0,
+    "y": 128
+  },
+  "anti_magia_1": {
+    "definition": "anti_magia_1",
+    "x": 0,
+    "y": 160
+  },
+  "anti_magia_2": {
+    "definition": "anti_magia_2",
+    "x": 0,
+    "y": 192
+  },
+  "muralha_arcana": {
+    "definition": "muralha_arcana",
+    "x": 0,
+    "y": 224
+  },
+  "revide_1": {
+    "definition": "revide_1",
+    "x": -28,
+    "y": 16
+  },
+  "revide_2": {
+    "definition": "revide_2",
+    "x": -55,
+    "y": 32
+  },
+  "revide_3": {
+    "definition": "revide_3",
+    "x": -83,
+    "y": 48
+  },
+  "revide_4": {
+    "definition": "revide_4",
+    "x": -111,
+    "y": 64
+  },
+  "baque_1": {
+    "definition": "baque_1",
+    "x": -139,
+    "y": 80
+  },
+  "baque_2": {
+    "definition": "baque_2",
+    "x": -166,
+    "y": 96
+  },
+  "vinganca_de_ferro": {
+    "definition": "vinganca_de_ferro",
+    "x": -194,
+    "y": 112
+  },
+  "resistencia_1": {
+    "definition": "resistencia_1",
+    "x": -28,
+    "y": -16
+  },
+  "resistencia_2": {
+    "definition": "resistencia_2",
+    "x": -55,
+    "y": -32
+  },
+  "resistencia_3": {
+    "definition": "resistencia_3",
+    "x": -83,
+    "y": -48
+  },
+  "resistencia_4": {
+    "definition": "resistencia_4",
+    "x": -111,
+    "y": -64
+  },
+  "respiro_1": {
+    "definition": "respiro_1",
+    "x": -139,
+    "y": -80
+  },
+  "respiro_2": {
+    "definition": "respiro_2",
+    "x": -166,
+    "y": -96
+  },
+  "folego_de_gigante": {
+    "definition": "folego_de_gigante",
+    "x": -194,
+    "y": -112
   }
 }

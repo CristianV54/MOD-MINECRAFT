@@ -7,62 +7,212 @@
   },
   "lamina_1": {
     "definition": "lamina_1",
-    "x": -34,
-    "y": -34
+    "x": 0,
+    "y": -32
   },
   "lamina_2": {
     "definition": "lamina_2",
-    "x": -68,
-    "y": -68
+    "x": 0,
+    "y": -64
   },
   "lamina_3": {
     "definition": "lamina_3",
-    "x": -102,
-    "y": -102
+    "x": 0,
+    "y": -96
+  },
+  "lamina_4": {
+    "definition": "lamina_4",
+    "x": 0,
+    "y": -128
+  },
+  "lamina_5": {
+    "definition": "lamina_5",
+    "x": 0,
+    "y": -160
+  },
+  "lamina_6": {
+    "definition": "lamina_6",
+    "x": 0,
+    "y": -192
   },
   "golpe_fatal": {
     "definition": "golpe_fatal",
-    "x": -136,
-    "y": -136
+    "x": 0,
+    "y": -224
   },
   "sombra_1": {
     "definition": "sombra_1",
-    "x": 0,
-    "y": -34
+    "x": 28,
+    "y": -16
   },
   "sombra_2": {
     "definition": "sombra_2",
-    "x": 0,
-    "y": -68
+    "x": 55,
+    "y": -32
   },
   "sombra_3": {
     "definition": "sombra_3",
-    "x": 0,
-    "y": -102
+    "x": 83,
+    "y": -48
+  },
+  "sombra_4": {
+    "definition": "sombra_4",
+    "x": 111,
+    "y": -64
+  },
+  "sombra_5": {
+    "definition": "sombra_5",
+    "x": 139,
+    "y": -80
+  },
+  "sombra_6": {
+    "definition": "sombra_6",
+    "x": 166,
+    "y": -96
   },
   "vulto": {
     "definition": "vulto",
-    "x": 0,
-    "y": -136
+    "x": 194,
+    "y": -112
   },
   "folego_1": {
     "definition": "folego_1",
-    "x": 34,
-    "y": -34
+    "x": 28,
+    "y": 16
   },
   "folego_2": {
     "definition": "folego_2",
-    "x": 68,
-    "y": -68
+    "x": 55,
+    "y": 32
   },
   "folego_3": {
     "definition": "folego_3",
-    "x": 102,
-    "y": -102
+    "x": 83,
+    "y": 48
+  },
+  "folego_4": {
+    "definition": "folego_4",
+    "x": 111,
+    "y": 64
+  },
+  "folego_5": {
+    "definition": "folego_5",
+    "x": 139,
+    "y": 80
+  },
+  "folego_6": {
+    "definition": "folego_6",
+    "x": 166,
+    "y": 96
   },
   "segundo_ar": {
     "definition": "segundo_ar",
-    "x": 136,
-    "y": -136
+    "x": 194,
+    "y": 112
+  },
+  "brecha_1": {
+    "definition": "brecha_1",
+    "x": 0,
+    "y": 32
+  },
+  "brecha_2": {
+    "definition": "brecha_2",
+    "x": 0,
+    "y": 64
+  },
+  "brecha_3": {
+    "definition": "brecha_3",
+    "x": 0,
+    "y": 96
+  },
+  "brecha_4": {
+    "definition": "brecha_4",
+    "x": 0,
+    "y": 128
+  },
+  "corte_1": {
+    "definition": "corte_1",
+    "x": 0,
+    "y": 160
+  },
+  "corte_2": {
+    "definition": "corte_2",
+    "x": 0,
+    "y": 192
+  },
+  "ponto_fraco": {
+    "definition": "ponto_fraco",
+    "x": 0,
+    "y": 224
+  },
+  "passo_1": {
+    "definition": "passo_1",
+    "x": -28,
+    "y": 16
+  },
+  "passo_2": {
+    "definition": "passo_2",
+    "x": -55,
+    "y": 32
+  },
+  "passo_3": {
+    "definition": "passo_3",
+    "x": -83,
+    "y": 48
+  },
+  "passo_4": {
+    "definition": "passo_4",
+    "x": -111,
+    "y": 64
+  },
+  "passo_5": {
+    "definition": "passo_5",
+    "x": -139,
+    "y": 80
+  },
+  "passo_6": {
+    "definition": "passo_6",
+    "x": -166,
+    "y": 96
+  },
+  "passo_fantasma": {
+    "definition": "passo_fantasma",
+    "x": -194,
+    "y": 112
+  },
+  "mao_esquerda_1": {
+    "definition": "mao_esquerda_1",
+    "x": -28,
+    "y": -16
+  },
+  "mao_esquerda_2": {
+    "definition": "mao_esquerda_2",
+    "x": -55,
+    "y": -32
+  },
+  "mao_esquerda_3": {
+    "definition": "mao_esquerda_3",
+    "x": -83,
+    "y": -48
+  },
+  "mao_direita_1": {
+    "definition": "mao_direita_1",
+    "x": -111,
+    "y": -64
+  },
+  "mao_direita_2": {
+    "definition": "mao_direita_2",
+    "x": -139,
+    "y": -80
+  },
+  "mao_direita_3": {
+    "definition": "mao_direita_3",
+    "x": -166,
+    "y": -96
+  },
+  "danca_das_adagas": {
+    "definition": "danca_das_adagas",
+    "x": -194,
+    "y": -112
   }
 }

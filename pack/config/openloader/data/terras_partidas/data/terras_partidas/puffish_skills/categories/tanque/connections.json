@@ -15,6 +15,18 @@
       ],
       [
         "couraca_3",
+        "couraca_4"
+      ],
+      [
+        "couraca_4",
+        "couraca_5"
+      ],
+      [
+        "couraca_5",
+        "couraca_6"
+      ],
+      [
+        "couraca_6",
         "pele_de_aco"
       ],
       [
@@ -31,6 +43,18 @@
       ],
       [
         "firmeza_3",
+        "firmeza_4"
+      ],
+      [
+        "firmeza_4",
+        "firmeza_5"
+      ],
+      [
+        "firmeza_5",
+        "firmeza_6"
+      ],
+      [
+        "firmeza_6",
         "inabalavel"
       ],
       [
@@ -47,7 +71,103 @@
       ],
       [
         "vitalidade_3",
-        "regeneracao"
+        "vitalidade_4"
+      ],
+      [
+        "vitalidade_4",
+        "vitalidade_5"
+      ],
+      [
+        "vitalidade_5",
+        "vitalidade_6"
+      ],
+      [
+        "vitalidade_6",
+        "sangue_forte"
+      ],
+      [
+        "muralha",
+        "bastiao_1"
+      ],
+      [
+        "bastiao_1",
+        "bastiao_2"
+      ],
+      [
+        "bastiao_2",
+        "bastiao_3"
+      ],
+      [
+        "bastiao_3",
+        "bastiao_4"
+      ],
+      [
+        "bastiao_4",
+        "anti_magia_1"
+      ],
+      [
+        "anti_magia_1",
+        "anti_magia_2"
+      ],
+      [
+        "anti_magia_2",
+        "muralha_arcana"
+      ],
+      [
+        "muralha",
+        "revide_1"
+      ],
+      [
+        "revide_1",
+        "revide_2"
+      ],
+      [
+        "revide_2",
+        "revide_3"
+      ],
+      [
+        "revide_3",
+        "revide_4"
+      ],
+      [
+        "revide_4",
+        "baque_1"
+      ],
+      [
+        "baque_1",
+        "baque_2"
+      ],
+      [
+        "baque_2",
+        "vinganca_de_ferro"
+      ],
+      [
+        "muralha",
+        "resistencia_1"
+      ],
+      [
+        "resistencia_1",
+        "resistencia_2"
+      ],
+      [
+        "resistencia_2",
+        "resistencia_3"
+      ],
+      [
+        "resistencia_3",
+        "resistencia_4"
+      ],
+      [
+        "resistencia_4",
+        "respiro_1"
+      ],
+      [
+        "respiro_1",
+        "respiro_2"
+      ],
+      [
+        "respiro_2",
+        "folego_de_gigante"
       ]
     ]
   }

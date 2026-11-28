@@ -3,63 +3,163 @@
     "bidirectional": [
       [
         "minerador",
-        "pic_1"
+        "braco_forte_1"
       ],
       [
-        "pic_1",
-        "pic_2"
+        "braco_forte_1",
+        "braco_forte_2"
       ],
       [
-        "pic_2",
-        "pic_3"
+        "braco_forte_2",
+        "braco_forte_3"
       ],
       [
-        "pic_3",
-        "pic_4"
+        "braco_forte_3",
+        "braco_forte_4"
       ],
       [
-        "pic_4",
+        "braco_forte_4",
+        "braco_forte_5"
+      ],
+      [
+        "braco_forte_5",
+        "braco_forte_6"
+      ],
+      [
+        "braco_forte_6",
+        "braco_forte_7"
+      ],
+      [
+        "braco_forte_7",
         "escavadora"
       ],
       [
         "minerador",
-        "alc_1"
+        "braco_longo_1"
       ],
       [
-        "alc_1",
-        "alc_2"
+        "braco_longo_1",
+        "braco_longo_2"
       ],
       [
-        "alc_2",
-        "alc_3"
+        "braco_longo_2",
+        "braco_longo_3"
       ],
       [
-        "alc_3",
-        "alc_4"
+        "braco_longo_3",
+        "braco_longo_4"
       ],
       [
-        "alc_4",
+        "braco_longo_4",
+        "braco_longo_5"
+      ],
+      [
+        "braco_longo_5",
+        "braco_longo_6"
+      ],
+      [
+        "braco_longo_6",
+        "passo_firme"
+      ],
+      [
+        "passo_firme",
         "arquiteto"
       ],
       [
         "minerador",
-        "sorte_1"
+        "olho_treinado_1"
       ],
       [
-        "sorte_1",
-        "sorte_2"
+        "olho_treinado_1",
+        "olho_treinado_2"
       ],
       [
-        "sorte_2",
-        "sorte_3"
+        "olho_treinado_2",
+        "olho_treinado_3"
       ],
       [
-        "sorte_3",
-        "sorte_4"
+        "olho_treinado_3",
+        "olho_treinado_4"
       ],
       [
-        "sorte_4",
+        "olho_treinado_4",
+        "olho_treinado_5"
+      ],
+      [
+        "olho_treinado_5",
+        "olho_treinado_6"
+      ],
+      [
+        "olho_treinado_6",
+        "olho_treinado_7"
+      ],
+      [
+        "olho_treinado_7",
         "garimpeiro"
+      ],
+      [
+        "minerador",
+        "sabedoria_1"
+      ],
+      [
+        "sabedoria_1",
+        "sabedoria_2"
+      ],
+      [
+        "sabedoria_2",
+        "sabedoria_3"
+      ],
+      [
+        "sabedoria_3",
+        "sabedoria_4"
+      ],
+      [
+        "sabedoria_4",
+        "sabedoria_5"
+      ],
+      [
+        "sabedoria_5",
+        "sabedoria_6"
+      ],
+      [
+        "sabedoria_6",
+        "sabedoria_7"
+      ],
+      [
+        "sabedoria_7",
+        "mente_afiada"
+      ],
+      [
+        "minerador",
+        "couro_mineiro_1"
+      ],
+      [
+        "couro_mineiro_1",
+        "couro_mineiro_2"
+      ],
+      [
+        "couro_mineiro_2",
+        "couro_mineiro_3"
+      ],
+      [
+        "couro_mineiro_3",
+        "couro_mineiro_4"
+      ],
+      [
+        "couro_mineiro_4",
+        "pele_de_pedra_1"
+      ],
+      [
+        "pele_de_pedra_1",
+        "pele_de_pedra_2"
+      ],
+      [
+        "pele_de_pedra_2",
+        "pele_de_pedra_3"
+      ],
+      [
+        "pele_de_pedra_3",
+        "peito_de_ferro"
       ]
     ]
   }

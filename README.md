@@ -154,34 +154,37 @@ A tecla **K** abre o **Pufferfish's Skills**, com uma aba para cada árvore.
 
 ### Árvores gerais (para todo mundo)
 
-Liberadas desde o começo, para qualquer classe. Cada uma tem um nível próprio e sobe com uma atividade diferente. Cada nível dá 1 ponto, até o nível 20.
+Liberadas desde o começo, para qualquer classe. Cada uma tem um nível próprio e sobe com uma atividade diferente. Cada nível dá 1 ponto, até o nível 50.
 
 | Árvore | Como sobe | Ramos |
 |---|---|---|
-| **Combate** | Matando monstros | Golpes (dano, perfurar armadura, crítico), Agilidade (velocidade de ataque, alcance, fôlego), Sangue (repulsão, roubo de vida, impacto) |
-| **Mineração** | Quebrando blocos. Minérios valem muito mais que pedra. | Picareta (velocidade de mineração), Alcance (alcance de blocos, subir degraus), Sorte (sorte e experiência extra) |
-| **Vida** | Comendo e sobrevivendo a dano | Coração (vida, cura recebida), Couro (armadura e resistência), Viajante (velocidade, nado, subir degraus) |
+| **Combate** | Matando monstros | Golpes (dano), Agilidade (velocidade de ataque, alcance), Sangue (roubo de vida, repulsão), Impacto (atordoar, perfurar armadura), Fúria (crítico) |
+| **Mineração** | Quebrando blocos. Minérios valem muito mais que pedra. | Picareta (velocidade de mineração), Alcance (alcance de blocos, subir degraus), Sorte, Sabedoria (experiência extra), Couro de Mineiro (armadura) |
+| **Vida** | Comendo e sobrevivendo a dano | Coração (vida), Couro (armadura e resistência), Viajante (velocidade, nado, degraus), Cura (cura recebida, escudo de cura extra), Fôlego |
 
-- **Formato:** uma habilidade inicial e 3 ramos de 5 habilidades. A última de cada ramo custa 2 pontos.
-- **Tamanho:** 16 habilidades e 19 pontos para completar cada árvore.
+- **Formato:** uma habilidade inicial e 5 ramos de 8 habilidades. As 7 primeiras de cada ramo custam 1 ponto e são fracas. A última, o ápice, custa 3 pontos e é mais forte.
+- **Tamanho:** 41 habilidades e 51 pontos para completar cada árvore.
+- **Ritmo:** a experiência por nível é `40 + nível x 25` (Combate) e `25 + nível x 15` (Mineração e Vida).
 
 ### Árvores das classes
 
 Cada classe tem uma árvore própria, que fica trancada até o jogador escolher a classe no Ato 1.
-- **Formato:** uma habilidade inicial e 3 ramos de 4 habilidades. A última de cada ramo custa 2 pontos e é mais forte.
-- **Tamanho:** 13 habilidades e 16 pontos pra completar cada árvore.
+- **Formato:** uma habilidade inicial e 6 ramos de 7 habilidades. As 6 primeiras de cada ramo custam 1 ponto. O ápice custa 3 pontos e é mais forte.
+- **Tamanho:** 43 habilidades e 55 pontos pra completar cada árvore.
 - **Pontos:**
-  - **Monstros:** matar dá experiência (XP que o monstro solta + vida máxima / 10). Cada nível vale 1 ponto, até o nível 20.
-  - **Chefes:** cada chefe derrotado dá **+1 ponto**, num total de 21 chefes.
+  - **Monstros:** matar dá experiência (XP que o monstro solta + vida máxima / 10). Cada nível vale 1 ponto, até o nível 30. A experiência por nível é `60 + nível x 35`, umas 3 vezes mais lenta que na primeira versão.
+  - **Chefes:** cada chefe derrotado dá **+1 ponto**, num total de 31 chefes (história e Caçadas).
   - **Começo:** a árvore começa com 1 ponto, pra comprar a habilidade inicial.
+  - **Conta:** dá uns 62 pontos no jogo inteiro para uma árvore de 55, então ela só fica completa perto do fim.
+- **Por que mudou (versão 0.22.0):** a primeira versão tinha 13 habilidades por classe, e o Mago, que mata muitos monstros de uma vez, completava tudo cedo. Agora são mais habilidades, cada uma mais fraca.
 
 | Classe | Habilidade inicial | Ramos |
 |---|---|---|
-| Guerreiro | +1 de dano | Força (dano, dano crítico), Vigor (vida, roubo de vida), Ritmo (velocidade de ataque, fôlego, crítico) |
-| Tanque | +4 de vida | Couraça (armadura), Firmeza (resistência a empurrão e atordoamento), Vitalidade (vida, cura recebida) |
-| Assassino | +5% de velocidade | Lâmina (chance e dano crítico), Sombra (esquiva, velocidade), Fôlego (fôlego máximo e recuperação) |
-| Mago | +25 de mana | Poder (poder mágico), Fluxo (recuperação e mana máxima), Pressa (recarga e conjuração) |
-| Caçador | +10% de dano de flecha | Pontaria (dano de flecha, crítico), Corda (puxar o arco, velocidade da flecha), Rastreador (velocidade, vida, esquiva) |
+| Guerreiro | +1 de dano | Força, Vigor, Ritmo, Couraça, Impacto, Fúria (o ápice acerta +1 inimigo por golpe) |
+| Tanque | +4 de vida | Couraça, Firmeza, Vitalidade, Bastião (resistência a magia), Revide, Resistência (fôlego) |
+| Assassino | +5% de velocidade | Lâmina (crítico), Sombra (esquiva), Fôlego, Ponto Fraco (ignorar armadura), Passos, Duas Lâminas |
+| Mago | +25 de mana | Poder, Reserva (mana máxima), Fluxo (recuperação de mana), Pressa (recarga e conjuração), Elementos (uma escola de magia por habilidade), Guardião (resistência a magia, vida, invocações) |
+| Caçador | +10% de dano de flecha | Pontaria, Corda, Rastreador, Olho de Águia (dano crítico, dano pela vida do alvo), Faro (sorte e experiência), Faca de Caça |
 
 As árvores são geradas pelo script `tools/gerar_habilidades.py`, onde ficam todos os nomes e valores. O resultado vai pro datapack em `puffish_skills/`.
 
@@ -269,7 +272,7 @@ São 9 chefes fora da história, liberados depois do Ato 2 e em ordem de dificul
 | Maledictus (420) | Cataclysm | Prisão Congelada (redstone na Lápide Amaldiçoada) | ~2.200 | depois da história | lingote de Cursium |
 | Nerakyss, o Kraken (500) | Bosses'Rise | navio no oceano profundo | ~2.500 | depois da história | dente do kraken |
 
-- **Mestre Caçador:** quem derrotar os 9 ganha a Lâmina do Mestre Caçador (netherita com Afiação V, Saque III, Inquebrável III e Remendo), +3 pontos em cada árvore geral, 100 níveis de XP e o título `[Mestre Caçador]` no nome (função `terras_partidas:mestre_cacador`).
+- **Mestre Caçador:** quem derrotar os 9 ganha a Lâmina do Mestre Caçador (netherita com Afiação V, Saque III, Inquebrável III e Remendo), +3 pontos em cada árvore geral, 50 níveis de XP e o título `[Mestre Caçador]` no nome (função `terras_partidas:mestre_cacador`).
 - **Torre do Lich:** o mod gera uma a cada 100 chunks (a mais próxima ficava a 3.800 blocos). O datapack muda para 48 chunks.
 - **Monastério do Escultor:** só nascia em picos entre as alturas 120 e 200, e as montanhas do Terralith passam disso (ficava a 9.900 blocos). `pack/config/mowziesmobs-common.toml` aceita qualquer montanha entre 90 e 320.
 - **Pirâmide Amaldiçoada:** continua longe (~6.500 blocos) mesmo com os desertos do Terralith na lista, porque a posição é decidida por uma regra interna do Cataclysm. A missão avisa para ir de dragão.

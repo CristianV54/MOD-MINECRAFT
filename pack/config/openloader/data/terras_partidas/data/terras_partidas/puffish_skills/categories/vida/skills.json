@@ -5,79 +5,204 @@
     "y": 0,
     "root": true
   },
-  "cor_1": {
-    "definition": "cor_1",
-    "x": -34,
-    "y": -34
-  },
-  "cor_2": {
-    "definition": "cor_2",
-    "x": -68,
-    "y": -68
-  },
-  "cor_3": {
-    "definition": "cor_3",
-    "x": -102,
-    "y": -102
-  },
-  "cor_4": {
-    "definition": "cor_4",
-    "x": -136,
-    "y": -136
-  },
-  "imortal": {
-    "definition": "imortal",
-    "x": -170,
-    "y": -170
-  },
-  "couro_1": {
-    "definition": "couro_1",
+  "coracao_1": {
+    "definition": "coracao_1",
     "x": 0,
-    "y": -34
+    "y": -32
   },
-  "couro_2": {
-    "definition": "couro_2",
+  "coracao_2": {
+    "definition": "coracao_2",
     "x": 0,
-    "y": -68
+    "y": -64
   },
-  "couro_3": {
-    "definition": "couro_3",
+  "coracao_3": {
+    "definition": "coracao_3",
     "x": 0,
-    "y": -102
+    "y": -96
   },
-  "couro_4": {
-    "definition": "couro_4",
+  "coracao_4": {
+    "definition": "coracao_4",
     "x": 0,
-    "y": -136
+    "y": -128
+  },
+  "coracao_5": {
+    "definition": "coracao_5",
+    "x": 0,
+    "y": -160
+  },
+  "coracao_6": {
+    "definition": "coracao_6",
+    "x": 0,
+    "y": -192
+  },
+  "coracao_7": {
+    "definition": "coracao_7",
+    "x": 0,
+    "y": -224
+  },
+  "coracao_de_dragao": {
+    "definition": "coracao_de_dragao",
+    "x": 0,
+    "y": -256
+  },
+  "pele_grossa_1": {
+    "definition": "pele_grossa_1",
+    "x": 30,
+    "y": -10
+  },
+  "pele_grossa_2": {
+    "definition": "pele_grossa_2",
+    "x": 61,
+    "y": -20
+  },
+  "pele_grossa_3": {
+    "definition": "pele_grossa_3",
+    "x": 91,
+    "y": -30
+  },
+  "pele_grossa_4": {
+    "definition": "pele_grossa_4",
+    "x": 122,
+    "y": -40
+  },
+  "pele_grossa_5": {
+    "definition": "pele_grossa_5",
+    "x": 152,
+    "y": -49
+  },
+  "casca_1": {
+    "definition": "casca_1",
+    "x": 183,
+    "y": -59
+  },
+  "casca_2": {
+    "definition": "casca_2",
+    "x": 213,
+    "y": -69
   },
   "muralha_viva": {
     "definition": "muralha_viva",
-    "x": 0,
-    "y": -170
+    "x": 243,
+    "y": -79
   },
-  "via_1": {
-    "definition": "via_1",
-    "x": 34,
-    "y": -34
+  "pes_leves_1": {
+    "definition": "pes_leves_1",
+    "x": 19,
+    "y": 26
   },
-  "via_2": {
-    "definition": "via_2",
-    "x": 68,
-    "y": -68
+  "pes_leves_2": {
+    "definition": "pes_leves_2",
+    "x": 38,
+    "y": 52
   },
-  "via_3": {
-    "definition": "via_3",
-    "x": 102,
-    "y": -102
+  "pes_leves_3": {
+    "definition": "pes_leves_3",
+    "x": 56,
+    "y": 78
   },
-  "via_4": {
-    "definition": "via_4",
-    "x": 136,
-    "y": -136
+  "pes_leves_4": {
+    "definition": "pes_leves_4",
+    "x": 75,
+    "y": 104
+  },
+  "nadador_1": {
+    "definition": "nadador_1",
+    "x": 94,
+    "y": 129
+  },
+  "nadador_2": {
+    "definition": "nadador_2",
+    "x": 113,
+    "y": 155
+  },
+  "escalador": {
+    "definition": "escalador",
+    "x": 132,
+    "y": 181
   },
   "andarilho": {
     "definition": "andarilho",
-    "x": 170,
-    "y": -170
+    "x": 150,
+    "y": 207
+  },
+  "cura_1": {
+    "definition": "cura_1",
+    "x": -19,
+    "y": 26
+  },
+  "cura_2": {
+    "definition": "cura_2",
+    "x": -38,
+    "y": 52
+  },
+  "cura_3": {
+    "definition": "cura_3",
+    "x": -56,
+    "y": 78
+  },
+  "cura_4": {
+    "definition": "cura_4",
+    "x": -75,
+    "y": 104
+  },
+  "cura_5": {
+    "definition": "cura_5",
+    "x": -94,
+    "y": 129
+  },
+  "cura_6": {
+    "definition": "cura_6",
+    "x": -113,
+    "y": 155
+  },
+  "cura_7": {
+    "definition": "cura_7",
+    "x": -132,
+    "y": 181
+  },
+  "renascer": {
+    "definition": "renascer",
+    "x": -150,
+    "y": 207
+  },
+  "pulmao_1": {
+    "definition": "pulmao_1",
+    "x": -30,
+    "y": -10
+  },
+  "pulmao_2": {
+    "definition": "pulmao_2",
+    "x": -61,
+    "y": -20
+  },
+  "pulmao_3": {
+    "definition": "pulmao_3",
+    "x": -91,
+    "y": -30
+  },
+  "pulmao_4": {
+    "definition": "pulmao_4",
+    "x": -122,
+    "y": -40
+  },
+  "pulmao_5": {
+    "definition": "pulmao_5",
+    "x": -152,
+    "y": -49
+  },
+  "ar_fresco_1": {
+    "definition": "ar_fresco_1",
+    "x": -183,
+    "y": -59
+  },
+  "ar_fresco_2": {
+    "definition": "ar_fresco_2",
+    "x": -213,
+    "y": -69
+  },
+  "pulmao_de_ferro": {
+    "definition": "pulmao_de_ferro",
+    "x": -243,
+    "y": -79
   }
 }

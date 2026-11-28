@@ -28,7 +28,7 @@
   },
   "couraca_1": {
     "title": "Couraça I",
-    "description": "+2 de armadura\nRamo: Couraça",
+    "description": "+1 de armadura\nRamo: Couraça",
     "icon": {
       "type": "item",
       "data": {
@@ -46,7 +46,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.armor",
-          "value": 2.0,
+          "value": 1.0,
           "operation": "addition"
         }
       }
@@ -55,7 +55,7 @@
   },
   "couraca_2": {
     "title": "Couraça II",
-    "description": "+2 de armadura\nRamo: Couraça",
+    "description": "+1 de armadura\nRamo: Couraça",
     "icon": {
       "type": "item",
       "data": {
@@ -73,7 +73,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.armor",
-          "value": 2.0,
+          "value": 1.0,
           "operation": "addition"
         }
       }
@@ -82,7 +82,7 @@
   },
   "couraca_3": {
     "title": "Couraça III",
-    "description": "+2 de armadura\nRamo: Couraça",
+    "description": "+1 de armadura\nRamo: Couraça",
     "icon": {
       "type": "item",
       "data": {
@@ -100,7 +100,88 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.armor",
-          "value": 2.0,
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "couraca_4": {
+    "title": "Couraça IV",
+    "description": "+1 de armadura\nRamo: Couraça",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "couraca_5": {
+    "title": "Couraça V",
+    "description": "+1 de armadura\nRamo: Couraça",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "couraca_6": {
+    "title": "Couraça VI",
+    "description": "+1 de armadura\nRamo: Couraça",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_chestplate"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor",
+          "value": 1.0,
           "operation": "addition"
         }
       }
@@ -109,7 +190,7 @@
   },
   "pele_de_aco": {
     "title": "Pele de Aço",
-    "description": "+4 de resistência da armadura\nRamo: Couraça",
+    "description": "+3 de resistência da armadura\nRamo: Couraça",
     "icon": {
       "type": "item",
       "data": {
@@ -127,16 +208,16 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.armor_toughness",
-          "value": 4.0,
+          "value": 3.0,
           "operation": "addition"
         }
       }
     ],
-    "cost": 2
+    "cost": 3
   },
   "firmeza_1": {
     "title": "Firmeza I",
-    "description": "+10% de resistência a empurrão\nRamo: Firmeza",
+    "description": "+5% de resistência a empurrão\nRamo: Firmeza",
     "icon": {
       "type": "item",
       "data": {
@@ -154,7 +235,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.knockback_resistance",
-          "value": 0.1,
+          "value": 0.05,
           "operation": "addition"
         }
       }
@@ -163,7 +244,7 @@
   },
   "firmeza_2": {
     "title": "Firmeza II",
-    "description": "+10% de resistência a empurrão\nRamo: Firmeza",
+    "description": "+5% de resistência a empurrão\nRamo: Firmeza",
     "icon": {
       "type": "item",
       "data": {
@@ -181,7 +262,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.knockback_resistance",
-          "value": 0.1,
+          "value": 0.05,
           "operation": "addition"
         }
       }
@@ -190,7 +271,7 @@
   },
   "firmeza_3": {
     "title": "Firmeza III",
-    "description": "+10% de resistência a empurrão\nRamo: Firmeza",
+    "description": "+5% de resistência a empurrão\nRamo: Firmeza",
     "icon": {
       "type": "item",
       "data": {
@@ -208,7 +289,88 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.knockback_resistance",
-          "value": 0.1,
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "firmeza_4": {
+    "title": "Firmeza IV",
+    "description": "+5% de resistência a empurrão\nRamo: Firmeza",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "firmeza_5": {
+    "title": "Firmeza V",
+    "description": "+5% de resistência a empurrão\nRamo: Firmeza",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "firmeza_6": {
+    "title": "Firmeza VI",
+    "description": "+5% de resistência a empurrão\nRamo: Firmeza",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:anvil"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.knockback_resistance",
+          "value": 0.05,
           "operation": "addition"
         }
       }
@@ -240,11 +402,11 @@
         }
       }
     ],
-    "cost": 2
+    "cost": 3
   },
   "vitalidade_1": {
     "title": "Vitalidade I",
-    "description": "+2 de vida (1 coração)\nRamo: Vitalidade",
+    "description": "+1 de vida (meio coração)\nRamo: Vitalidade",
     "icon": {
       "type": "item",
       "data": {
@@ -262,7 +424,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.max_health",
-          "value": 2.0,
+          "value": 1.0,
           "operation": "addition"
         }
       }
@@ -271,7 +433,7 @@
   },
   "vitalidade_2": {
     "title": "Vitalidade II",
-    "description": "+2 de vida (1 coração)\nRamo: Vitalidade",
+    "description": "+1 de vida (meio coração)\nRamo: Vitalidade",
     "icon": {
       "type": "item",
       "data": {
@@ -289,7 +451,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.max_health",
-          "value": 2.0,
+          "value": 1.0,
           "operation": "addition"
         }
       }
@@ -298,7 +460,7 @@
   },
   "vitalidade_3": {
     "title": "Vitalidade III",
-    "description": "+2 de vida (1 coração)\nRamo: Vitalidade",
+    "description": "+1 de vida (meio coração)\nRamo: Vitalidade",
     "icon": {
       "type": "item",
       "data": {
@@ -316,14 +478,95 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "minecraft:generic.max_health",
-          "value": 2.0,
+          "value": 1.0,
           "operation": "addition"
         }
       }
     ],
     "cost": 1
   },
-  "regeneracao": {
+  "vitalidade_4": {
+    "title": "Vitalidade IV",
+    "description": "+1 de vida (meio coração)\nRamo: Vitalidade",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:glistering_melon_slice"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "vitalidade_5": {
+    "title": "Vitalidade V",
+    "description": "+1 de vida (meio coração)\nRamo: Vitalidade",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:glistering_melon_slice"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "vitalidade_6": {
+    "title": "Vitalidade VI",
+    "description": "+1 de vida (meio coração)\nRamo: Vitalidade",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:glistering_melon_slice"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.max_health",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "sangue_forte": {
     "title": "Sangue Forte",
     "description": "+20% de cura recebida\nRamo: Vitalidade",
     "icon": {
@@ -348,6 +591,589 @@
         }
       }
     ],
-    "cost": 2
+    "cost": 3
+  },
+  "bastiao_1": {
+    "title": "Bastião I",
+    "description": "+0,5 de resistência da armadura\nRamo: Bastião",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "bastiao_2": {
+    "title": "Bastião II",
+    "description": "+0,5 de resistência da armadura\nRamo: Bastião",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "bastiao_3": {
+    "title": "Bastião III",
+    "description": "+0,5 de resistência da armadura\nRamo: Bastião",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "bastiao_4": {
+    "title": "Bastião IV",
+    "description": "+0,5 de resistência da armadura\nRamo: Bastião",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.armor_toughness",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "anti_magia_1": {
+    "title": "Anti-Magia I",
+    "description": "+2% de resistência a magia\nRamo: Bastião",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "anti_magia_2": {
+    "title": "Anti-Magia II",
+    "description": "+2% de resistência a magia\nRamo: Bastião",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.02,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "muralha_arcana": {
+    "title": "Muralha Arcana",
+    "description": "+8% de resistência a magia\nRamo: Bastião",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:amethyst_shard"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.08,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 3
+  },
+  "revide_1": {
+    "title": "Revide I",
+    "description": "+0,5 de dano\nRamo: Revide",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_damage",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "revide_2": {
+    "title": "Revide II",
+    "description": "+0,5 de dano\nRamo: Revide",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_damage",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "revide_3": {
+    "title": "Revide III",
+    "description": "+0,5 de dano\nRamo: Revide",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_damage",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "revide_4": {
+    "title": "Revide IV",
+    "description": "+0,5 de dano\nRamo: Revide",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_damage",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "baque_1": {
+    "title": "Baque I",
+    "description": "+0,5 de impacto (atordoa mais)\nRamo: Revide",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:impact",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "baque_2": {
+    "title": "Baque II",
+    "description": "+0,5 de impacto (atordoa mais)\nRamo: Revide",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:impact",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "vinganca_de_ferro": {
+    "title": "Vingança de Ferro",
+    "description": "Recupera 4% do dano causado como vida e +1 de dano\nRamo: Revide",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:iron_sword"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "attributeslib:life_steal",
+          "value": 0.04,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_damage",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 3
+  },
+  "resistencia_1": {
+    "title": "Resistência I",
+    "description": "+1 de fôlego máximo\nRamo: Resistência",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:sugar"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:staminar",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "resistencia_2": {
+    "title": "Resistência II",
+    "description": "+1 de fôlego máximo\nRamo: Resistência",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:sugar"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:staminar",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "resistencia_3": {
+    "title": "Resistência III",
+    "description": "+1 de fôlego máximo\nRamo: Resistência",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:sugar"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:staminar",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "resistencia_4": {
+    "title": "Resistência IV",
+    "description": "+1 de fôlego máximo\nRamo: Resistência",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:sugar"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:staminar",
+          "value": 1.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "respiro_1": {
+    "title": "Respiro I",
+    "description": "+5% de recuperação de fôlego\nRamo: Resistência",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:sugar"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:stamina_regen",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "respiro_2": {
+    "title": "Respiro II",
+    "description": "+5% de recuperação de fôlego\nRamo: Resistência",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:sugar"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "task"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:stamina_regen",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 1
+  },
+  "folego_de_gigante": {
+    "title": "Fôlego de Gigante",
+    "description": "+20% de recuperação de fôlego e +2 de fôlego\nRamo: Resistência",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "minecraft:sugar"
+      }
+    },
+    "frame": {
+      "type": "advancement",
+      "data": {
+        "frame": "challenge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:stamina_regen",
+          "value": 0.2,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "epicfight:staminar",
+          "value": 2.0,
+          "operation": "addition"
+        }
+      }
+    ],
+    "cost": 3
   }
 }
