@@ -68,7 +68,7 @@ Cada classe tem sua própria **árvore de habilidades** (tecla **K**). Além del
 
 ### ✨ Bonito e leve
 
-Já vem com os shaders **Complementary Reimagined** (água, céu, sombras e luzes) e o **Fresh Animations** (animações novas para os mobs). PC fraco? Aperte **F7** e os shaders desligam na hora.
+Já vem com o **Fresh Animations** (animações novas para os mobs) e o **Inventory Profiles Next**, que organiza o inventário e os baús com um clique.
 
 ### 👹 19 chefes de história e muitos outros
 
@@ -105,7 +105,7 @@ São 116 mods, contra mais de 300 em packs parecidos, com vários mods de desemp
 4. Abra o jogo, deixe o idioma em **Português (Brasil)** e crie um **mundo novo**.
 5. Pegue a primeira missão no livro de missões (botão no inventário). O Mestre Vellan vai aparecer.
 
-**Teclas importantes:** `R` alterna o modo de combate, `K` abre as árvores de habilidades, `V` lança feitiço, `Z` abre a roda de feitiços, `F7` liga e desliga os shaders e `B` cria um ponto no mapa.
+**Teclas importantes:** `R` alterna o modo de combate, `K` abre as árvores de habilidades, `V` lança feitiço, `Z` abre a roda de feitiços, `B` cria um ponto no mapa e, com o inventário aberto, `R` organiza os itens.
 
 ### ❓ Perguntas frequentes
 
@@ -113,7 +113,7 @@ São 116 mods, contra mais de 300 em packs parecidos, com vários mods de desemp
 
 **Preciso saber inglês?** Não. Tudo está em português.
 
-**Meu PC é fraco, roda?** O pack foi montado para ser leve. Com 6 GB de RAM e uma placa de vídeo simples dá para jogar. Os shaders vêm ligados, mas desligam com **F7**.
+**Meu PC é fraco, roda?** O pack foi montado para ser leve. Com 6 GB de RAM e uma placa de vídeo simples, até integrada, dá para jogar. O pack não usa shaders.
 
 **Perdi a luta contra um chefe, e agora?** As missões de chefe têm uma missão extra que troca recursos por outro item de invocação.
 
@@ -135,7 +135,7 @@ A lista completa de mods aparece na aba de dependências da página.
 
 ## 3. Passo a passo para publicar no CurseForge
 
-**Situação atual:** o pacote está pronto para o CurseForge. Desde a versão 0.16.0, os 115 mods, o shader e o pacote de animações vêm do próprio CurseForge, e o zip não leva nenhum arquivo de fora. Arquivo de fora no zip era o que fazia o CurseForge recusar o pack.
+**Situação atual:** o pacote está pronto para o CurseForge. Desde a versão 0.16.0, todos os mods e o pacote de animações vêm do próprio CurseForge, e o zip não leva nenhum arquivo de fora. Arquivo de fora no zip era o que fazia o CurseForge recusar o pack.
 
 1. **Entre no site** [curseforge.com](https://www.curseforge.com) com a sua conta e abra o [painel de autor](https://authors.curseforge.com). Se pedir, aceite os termos de autor.
 2. **Crie o projeto:** "Create Project", jogo **Minecraft**, tipo **Modpacks**.

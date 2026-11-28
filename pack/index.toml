@@ -14,7 +14,7 @@ hash = "7b8f47be32554a8fd469c39a8c0e9712aa3e678ae5abdbc9670a8e9f302be146"
 
 [[files]]
 file = "config/defaultoptions/keybindings.txt"
-hash = "0e26fdf8ceef7afe3625e0d3f0d22539e28e7440312bf4f253d378dddf36fb2e"
+hash = "47ff38c3c73ac8d1c276346af2e976adc62490d0828b00f3ef9fe9107c11cbe0"
 
 [[files]]
 file = "config/defaultoptions/options.txt"
@@ -30,7 +30,7 @@ hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_1_o_chamado.snbt"
-hash = "65519cf9691e645b64dd82f6fa856cafffee37d68fbd387592d53ee45c499700"
+hash = "7d81598124bf389bc53ba72b059ebf2c70f769b39302922a5cd7b8b73cad29d5"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/ato_2_terras_selvagens.snbt"
@@ -63,10 +63,6 @@ hash = "a5d8f5e291175bcdef5029e7d24e3dc7a8d4a5d16074f08e3fb1568a418becc6"
 [[files]]
 file = "config/mutantmonsters-common.toml"
 hash = "f97c88847b4e705e61cc19899da2c31e971fb235e33e967658dcfbec2b27a9c4"
-
-[[files]]
-file = "config/oculus.properties"
-hash = "ba2ad90a9532ccea407ecdaf58044e6d9fbef73075f695e4ecccf64887e05d2d"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/block_factorys_bosses/tags/worldgen/biome/sandworm_nest.json"
@@ -1342,6 +1338,11 @@ hash = "690d67420fb4b19112d941e4ddad423328bcf55b54abe6b312186631bdaa5f2b"
 metafile = true
 
 [[files]]
+file = "mods/inventory-profiles-next.pw.toml"
+hash = "5900123bd3234db14a14722f3a70b4cb89a9405b93820a402a74f8264919a466"
+metafile = true
+
+[[files]]
 file = "mods/irons-lib.pw.toml"
 hash = "409086d6a166d0b9a04f96b72fae99d234182705144ead31cd591e827270fd6e"
 metafile = true
@@ -1379,6 +1380,11 @@ metafile = true
 [[files]]
 file = "mods/lendercataclysm.pw.toml"
 hash = "fbf967b492d575d65f066941652400dc32b998a16ac477a4b8f0efc2f681296a"
+metafile = true
+
+[[files]]
+file = "mods/libipn.pw.toml"
+hash = "0c0340c165c197f65c9bcfb1505457e18ad85268d351b34c3d67a9318a69544a"
 metafile = true
 
 [[files]]
@@ -1429,11 +1435,6 @@ metafile = true
 [[files]]
 file = "mods/nirvana-library.pw.toml"
 hash = "4bcd6d46a7e00dfcd8b49f9cf95d4e3051ab605a94ed35e6b3d12c24ada7521d"
-metafile = true
-
-[[files]]
-file = "mods/oculus.pw.toml"
-hash = "200f79b635a087841698c85ac7028f0a1fac2cc4ffae1d59ff3f07a94abfe70e"
 metafile = true
 
 [[files]]
@@ -1649,9 +1650,4 @@ metafile = true
 [[files]]
 file = "resourcepacks/fresh-animations.pw.toml"
 hash = "6616ccb2cfa65c753a6791ec74c30bf7ce84c80b7a535e5c1a04b7c43f8ccc38"
-metafile = true
-
-[[files]]
-file = "shaderpacks/complementary-reimagined.pw.toml"
-hash = "b07466d4ede9dfa64e539242042ed6a0aeff094a4acb1901c1605b15a57c147a"
 metafile = true

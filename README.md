@@ -3,7 +3,7 @@
 **SealCraft: RPG em Português.** Modpack brasileiro de RPG com combate estilo souls, chefes, dungeons e uma história contada em português.
 
 - **Versão:** Minecraft 1.20.1 com Forge 47.4.29
-- **Mods:** 116 no total (97 rodam no servidor e 19 só no jogador), mais 1 pacote de shaders e 1 pacote de animações
+- **Mods:** 119 no total (98 rodam no servidor e 21 só no jogador), mais 1 pacote de animações
 - **Objetivo:** ser mais leve que o DawnCraft (305 mods) e rodar bem com 6 GB de RAM
 - **Publicação:** textos da página do CurseForge e do Modrinth em `PUBLICACAO.md`
 - **Estado:** **história completa**, com 5 atos, 108 missões em português, 19 chefes de história, 2 desafios lendários e dragões. Ainda não foi jogada de ponta a ponta.
@@ -39,7 +39,7 @@ Dragon Mounts: Legacy (8 tipos de dragão), Shellback do Aquamirae, Straddler do
 JEI, Jade, Xaero's Minimap e World Map, Waystones, Sophisticated Backpacks e Sophisticated Storage (mochilas e baús que podem ser melhorados), Handcrafted (móveis e decoração), Corpse, AppleSkin, Guard Villagers, Farmer's Delight
 
 **Desempenho e visual**
-Embeddium, Oculus (shaders), FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Canary, Saturn, Krypton, Clumps, AI Improvements, AmbientSounds, Sound Physics Remastered
+Embeddium, FerriteCore, ModernFix, ImmediatelyFast, Entity Culling, Canary, Saturn, Krypton, Clumps, AI Improvements, AmbientSounds, Sound Physics Remastered
 
 ## Ato 1: O Chamado (pronto)
 
@@ -229,7 +229,6 @@ O Mestre Vellan é um NPC do Easy NPC que **aparece 3 blocos na frente do jogado
 
 - **Tela inicial:** o pacote de recursos `pack/config/openloader/resources/sealcraft_visual/` troca o logo do Aquamirae (embaixo do "MINECRAFT") pelo logo **SEALCRAFT** e as frases amarelas por 36 frases em português. O logo e o ícone quadrado (`arte/`) são gerados por `tools/gerar_arte.py`.
 - **Teclas padrão:** o mod Default Options aplica `pack/config/defaultoptions/keybindings.txt` só na primeira vez que o jogo abre, sem mexer no que o jogador mudar depois.
-  - **Shaders:** recarregar fica sem tecla. Antes, o R recarregava os shaders junto com o modo de combate. **F7** liga e desliga.
   - **R:** modo de combate (Epic Fight).
   - **K:** árvores de habilidades.
   - **J:** tela de habilidades do Epic Fight.
@@ -294,14 +293,13 @@ As posições das missões são calculadas pelo gerador (`organizar()` em `tools
 - **Ato longo** (mais de 10 etapas, hoje só o Ato 5): quebra para a linha de baixo, mas só num ponto de passagem, uma etapa com uma única missão por onde toda a história passa. Assim nenhuma ligação atravessa a tela.
 - **Caçadas:** posições próprias, numa grade de 3 por 3 com cada mapa ao lado da sua fera e o Mestre Caçador no fim. As linhas do início e das feras até o Mestre ficam escondidas.
 
-## Visual: shaders e animações
+## Visual e inventário
 
-- **Shaders:** o **Complementary Reimagined** já vem instalado e ligado num perfil novo. Ele deixa a água, o céu, as nuvens, as sombras e as luzes bem mais bonitos.
-  - **Desligar:** aperte **F7**, ou vá em **Opções > Configurações de vídeo > Pacotes de shaders** e escolha "Desligado". Lá dá pra baixar a qualidade se o PC sofrer.
-  - **Configuração:** `pack/config/oculus.properties` vem direto no pacote. Antes ela vinha pelo Default Options, mas o Oculus cria o arquivo antes e o shader ficava desligado.
+- **Sem shaders:** o Oculus e o Complementary Reimagined saíram na versão 0.21.0. O shader derrubava o jogo em placas de vídeo integradas (Intel Iris Xe) e ainda deixava o Embeddium instável.
+- **Organizar o inventário:** o **Inventory Profiles Next** (com a biblioteca libIPN) põe botões de organizar ao lado do inventário e dos baús. Com o inventário aberto, a tecla **R** também organiza. Os dois mods são só do lado do jogador.
 - **Aviso de "recursos experimentais":** o Minecraft mostra esse aviso em todo mundo com geração de terreno de mods (Terralith, dimensões, estruturas). Não é erro. O mod Experimental Settings Disabler esconde o aviso.
 - **Fresh Animations:** pacote de recursos que anima os monstros e animais normais (piscar, respirar, andar de verdade). Fica ativo por padrão (`pack/config/defaultoptions/options.txt`) e pode ser tirado em **Opções > Pacotes de recursos**.
-- **Os dois são só do lado do jogador.** O servidor não baixa nenhum deles.
+- **O Fresh Animations é só do lado do jogador.** O servidor não baixa.
 
 ## A história
 

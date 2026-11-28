@@ -31,7 +31,8 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 > Combate: este mundo usa o Epic Fight. Aperte R para alternar entre o modo normal e o modo de combate.
 > As outras teclas ficam em Opções > Controles, na seção do Epic Fight.
 >
-> Outras teclas: K árvores de habilidades, J movimentos do Epic Fight, V lança o feitiço escolhido, Z roda de feitiços (ou Ctrl + rolar o mouse), F7 liga e desliga os shaders.
+> Outras teclas: K árvores de habilidades, J movimentos do Epic Fight, V lança o feitiço escolhido, Z roda de feitiços (ou Ctrl + rolar o mouse).
+> Organizar o inventário: use os botões ao lado do inventário e dos baús, ou aperte R com o inventário aberto.
 >
 > O Mestre Vellan: ele aparece na sua frente assim que você entra no mundo pela primeira vez.
 > Clique nele com o botão direito para conversar e escolher sua classe. Ele também comenta cada etapa da história e dá dicas.
