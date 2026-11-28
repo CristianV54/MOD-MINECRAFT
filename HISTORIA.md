@@ -213,25 +213,17 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 >
 > No Epic Fight, esquivar e defender gasta a barra de fôlego. Não ataque sem parar: espere a abertura do inimigo.
 >
-> Derrote 10 zumbis.
-
-**Tarefa:** Derrotar 10 zumbis
-**Recompensas:** 3 níveis de XP; Cenoura Dourada x2
-
-### 15. Ossos Inquietos
-**Depois de:** Treino de Combate
-
 > Esqueletos de longe são piores que zumbis. Use cobertura e aproxime-se esquivando.
 >
-> Derrote 10 esqueletos.
+> Derrote 10 zumbis e 10 esqueletos. Os dois contam ao mesmo tempo: uma noite lá fora já adianta as duas tarefas.
 
-**Tarefa:** Derrotar 10 esqueletos
-**Recompensas:** 3 níveis de XP; Flecha x32
+**Tarefa:** Derrotar 10 zumbis; Derrotar 10 esqueletos
+**Recompensas:** 6 níveis de XP; Cenoura Dourada x2; Flecha x32
 
-### 16. Algo no Pântano
+### 15. Algo no Pântano
 *Primeiro fragmento*
 
-**Depois de:** Ossos Inquietos
+**Depois de:** Treino de Combate
 
 > Mestre Vellan: "Pescadores sumiram perto dos pântanos. Algo enorme come qualquer coisa que se move por lá... e eu sinto um fragmento do Selo dentro dele."
 >
@@ -242,7 +234,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 **Tarefa:** Estou pronto
 **Recompensas:** Isca Fóssil; Poção de Cura x2
 
-### 17. Chefe: Swampjaw  (chefe)
+### 16. Chefe: Swampjaw  (chefe)
 **Depois de:** Algo no Pântano
 
 > Use a Isca Fóssil e derrote Swampjaw.
@@ -254,7 +246,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 **Tarefa:** Derrotar Swampjaw
 **Recompensas:** Fragmento do Selo; Livro de habilidade: Ascensão fantasma; 5 níveis de XP; Diamante
 
-### 18. Mais uma Isca  (opcional, repetível)
+### 17. Mais uma Isca  (opcional, repetível)
 **Depois de:** Algo no Pântano
 
 > Perdeu a luta? Troque 8 ossos por outra Isca Fóssil.
@@ -263,7 +255,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 **Tarefa:** Entregar 8 ossos (os itens são consumidos)
 **Recompensas:** Isca Fóssil
 
-### 19. O Sino Assombrado
+### 18. O Sino Assombrado
 *Segundo fragmento*
 
 **Depois de:** Chefe: Swampjaw e Uma Picareta de Ferro
@@ -277,7 +269,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 **Tarefa:** Obter um peitoral de ferro
 **Recompensas:** Sino Assombrado; Poção de Cura x3
 
-### 20. Chefe: Bellringer  (chefe)
+### 19. Chefe: Bellringer  (chefe)
 **Depois de:** O Sino Assombrado
 
 > Toque o Sino Assombrado (clique direito com ele na mão) para chamar o Bellringer e derrote-o.
@@ -287,7 +279,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 **Tarefa:** Derrotar o Bellringer
 **Recompensas:** Fragmento do Selo; Livro de habilidade: Técnico; 7 níveis de XP; Diamante x2
 
-### 21. Outro Sino  (opcional, repetível)
+### 20. Outro Sino  (opcional, repetível)
 **Depois de:** O Sino Assombrado
 
 > Perdeu a luta? Troque 4 lingotes de ouro por outro Sino Assombrado.
@@ -295,7 +287,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 **Tarefa:** Entregar 4 lingotes de ouro (os itens são consumidos)
 **Recompensas:** Sino Assombrado
 
-### 22. Rumores na Vila
+### 21. Rumores na Vila
 *Terceiro fragmento*
 
 **Depois de:** Uma Vila Amiga e Chefe: Swampjaw
@@ -309,7 +301,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 **Tarefa:** Obter o mapa
 **Recompensas:** Mapa: Câmara Forjada; Poção de Visão Noturna x2
 
-### 23. A Câmara Forjada
+### 22. A Câmara Forjada
 **Depois de:** Rumores na Vila
 
 > Siga o mapa até o X vermelho. A Câmara fica no subsolo, quase sempre entre as alturas Y=20 e Y=50: cave para baixo quando chegar no ponto.
@@ -319,7 +311,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 **Tarefa:** Encontrar a Câmara Forjada
 **Recompensas:** 3 níveis de XP; Poção de Força x2
 
-### 24. Chefe: Cavaleiro Forjado  (chefe)
+### 23. Chefe: Cavaleiro Forjado  (chefe)
 **Depois de:** A Câmara Forjada
 
 > Derrote o Cavaleiro de Ferro Forjado (Ferrous Wroughtnaut).
@@ -329,7 +321,7 @@ Onde aparece **[seu nome]**, o jogo coloca o nome do jogador.
 **Tarefa:** Derrotar o Cavaleiro Forjado
 **Recompensas:** Fragmento do Selo; Livro de habilidade: Espadachim; 7 níveis de XP; Diamante x2
 
-### 25. Relatório ao Mestre
+### 24. Relatório ao Mestre
 *Fim do Ato 1*
 
 **Depois de:** Chefe: Swampjaw e Chefe: Bellringer e Chefe: Cavaleiro Forjado

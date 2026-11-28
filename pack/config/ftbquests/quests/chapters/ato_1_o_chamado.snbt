@@ -496,7 +496,7 @@
 			id: "454A15647F6BC9D0"
 			title: "Uma Vila Amiga"
 			x: 10.0d
-			y: 2.0d
+			y: 1.5d
 			icon: "minecraft:emerald"
 			description: ["&6Mestre Vellan&r: \"As vilas são pontos seguros neste mundo. Lá você troca, descansa e se prepara para a jornada.\"", "", "Encontre uma &fvila&r. Muitas delas têm um &bObelisco&r (Waystone), uma pedra que te teleporta entre lugares já visitados."]
 			dependencies: ["4F00E29859D87333", "1D8DEB71D2179B63"]
@@ -528,7 +528,7 @@
 			x: 6.0d
 			y: 4.0d
 			icon: "minecraft:iron_sword"
-			description: ["&6Mestre Vellan&r: \"Antes de enfrentar algo de verdade, aprenda a lutar.\"", "", "No Epic Fight, &eesquivar&r e &edefender&r gasta a barra de fôlego. Não ataque sem parar: espere a abertura do inimigo.", "", "Derrote &c10 zumbis&r."]
+			description: ["&6Mestre Vellan&r: \"Antes de enfrentar algo de verdade, aprenda a lutar.\"", "", "No Epic Fight, &eesquivar&r e &edefender&r gasta a barra de fôlego. Não ataque sem parar: espere a abertura do inimigo.", "", "Esqueletos de longe são piores que zumbis. Use cobertura e aproxime-se esquivando.", "", "Derrote &c10 zumbis&r e &c10 esqueletos&r. Os dois contam ao mesmo tempo: uma noite lá fora já adianta as duas tarefas."]
 			dependencies: ["062E0BFC8535363C", "3F450D4A9B68A9C4", "09A7904C3E38C2EE", "3E1B2E122F610121", "40FA859627277492"]
 			dependency_requirement: "one_completed"
 			hide_dependency_lines: true
@@ -540,32 +540,8 @@
 					value: 10L
 					title: "Derrotar 10 zumbis"
 				}
-			]
-			rewards: [
 				{
-					id: "0A706D2F79D0DCE3"
-					type: "xp_levels"
-					xp_levels: 3
-				}
-				{
-					id: "10BC1BE7EA2B7BAD"
-					type: "item"
-					item: "minecraft:golden_carrot"
-					count: 2
-				}
-			]
-		}
-		{
-			id: "17C4CCD7D735263C"
-			title: "Ossos Inquietos"
-			x: 8.0d
-			y: 4.0d
-			icon: "minecraft:bone"
-			description: ["Esqueletos de longe são piores que zumbis. Use cobertura e aproxime-se esquivando.", "", "Derrote &c10 esqueletos&r."]
-			dependencies: ["5557D1E7A6BCD19E"]
-			tasks: [
-				{
-					id: "17E0A7EE24AF2D83"
+					id: "2BD934667DCB52F9"
 					type: "kill"
 					entity: "minecraft:skeleton"
 					value: 10L
@@ -574,12 +550,18 @@
 			]
 			rewards: [
 				{
-					id: "005F9327C68FE136"
+					id: "0A706D2F79D0DCE3"
 					type: "xp_levels"
-					xp_levels: 3
+					xp_levels: 6
 				}
 				{
-					id: "3393985D868D1194"
+					id: "10BC1BE7EA2B7BAD"
+					type: "item"
+					item: "minecraft:golden_carrot"
+					count: 2
+				}
+				{
+					id: "06C5B8320281415A"
 					type: "item"
 					item: "minecraft:arrow"
 					count: 32
@@ -589,12 +571,12 @@
 		{
 			id: "328C587F2C229F2B"
 			title: "Algo no Pântano"
-			x: 10.0d
+			x: 8.0d
 			y: 4.0d
 			subtitle: "Primeiro fragmento"
 			icon: "meetyourfight:fossil_bait"
 			description: ["&6Mestre Vellan&r: \"Pescadores sumiram perto dos pântanos. Algo enorme come qualquer coisa que se move por lá... e eu sinto um fragmento do Selo dentro dele.\"", "", "Pegue a &fIsca Fóssil&r na recompensa, prepare-se e use-a (clique direito) perto do pântano quando estiver pronto para chamar a criatura.", "", "&7Equipamento recomendado: pedra ou ferro.&r"]
-			dependencies: ["17C4CCD7D735263C"]
+			dependencies: ["5557D1E7A6BCD19E"]
 			tasks: [
 				{
 					id: "100526B49AE6B163"
@@ -625,8 +607,8 @@
 		{
 			id: "7FCBF496418E37A1"
 			title: "Chefe: Swampjaw"
-			x: 12.0d
-			y: 3.5d
+			x: 10.0d
+			y: 4.0d
 			icon: "meetyourfight:fossil_bait"
 			shape: "octagon"
 			size: 1.5d
@@ -698,7 +680,7 @@
 		{
 			id: "2DDB6DFF55F4CC55"
 			title: "Mais uma Isca"
-			x: 12.0d
+			x: 10.0d
 			y: 5.0d
 			icon: "meetyourfight:fossil_bait"
 			shape: "circle"
@@ -728,7 +710,7 @@
 		{
 			id: "45A12E1B413F8922"
 			title: "O Sino Assombrado"
-			x: 14.0d
+			x: 12.0d
 			y: 3.5d
 			subtitle: "Segundo fragmento"
 			icon: "meetyourfight:haunted_bell"
@@ -766,7 +748,7 @@
 		{
 			id: "687FD9580D24CDE1"
 			title: "Chefe: Bellringer"
-			x: 16.0d
+			x: 14.0d
 			y: 3.0d
 			icon: "meetyourfight:haunted_bell"
 			shape: "octagon"
@@ -840,7 +822,7 @@
 		{
 			id: "208DE0E0CA9FC9FD"
 			title: "Outro Sino"
-			x: 16.0d
+			x: 14.0d
 			y: 4.5d
 			icon: "meetyourfight:haunted_bell"
 			shape: "circle"
@@ -870,7 +852,7 @@
 		{
 			id: "25F06794A8E1D9BF"
 			title: "Rumores na Vila"
-			x: 14.0d
+			x: 12.0d
 			y: 2.0d
 			subtitle: "Terceiro fragmento"
 			icon: "minecraft:filled_map"
@@ -910,7 +892,7 @@
 		{
 			id: "11F210357E4C4450"
 			title: "A Câmara Forjada"
-			x: 16.0d
+			x: 14.0d
 			y: 1.5d
 			icon: "mowziesmobs:wrought_helmet"
 			description: ["Siga o mapa até o &fX vermelho&r. A Câmara fica &fno subsolo&r, quase sempre entre as alturas Y=20 e Y=50: cave para baixo quando chegar no ponto.", "", "&7Dica: os mapas do Xaero ajudam a marcar o caminho (tecla &eB&7 para criar um ponto de referência).&r"]
@@ -946,7 +928,7 @@
 		{
 			id: "31549F6EF053CF36"
 			title: "Chefe: Cavaleiro Forjado"
-			x: 18.0d
+			x: 16.0d
 			y: 1.5d
 			icon: "mowziesmobs:wrought_axe"
 			shape: "octagon"
@@ -1020,8 +1002,8 @@
 		{
 			id: "5733992D42C9FA1E"
 			title: "Relatório ao Mestre"
-			x: 20.0d
-			y: 2.5d
+			x: 18.0d
+			y: 3.0d
 			subtitle: "Fim do Ato 1"
 			icon: "minecraft:amethyst_shard"
 			shape: "gear"

@@ -498,20 +498,15 @@ def ato1():
             deps=nomes_classes, dependency_requirement="one_completed", hide_dependency_lines=True,
             descricao=[f"{M}: \"Antes de enfrentar algo de verdade, aprenda a lutar.\"",
                        "", "No Epic Fight, &eesquivar&r e &edefender&r gasta a barra de fôlego. Não ataque sem parar: espere a abertura do inimigo.",
-                       "", "Derrote &c10 zumbis&r."],
-            tarefas=[c.t_matar("minecraft:zombie", 10, "Derrotar 10 zumbis")],
-            recompensas=[c.r_xp(3), c.r_item("minecraft:golden_carrot", 2)])
-
-    c.quest("ossos", "Ossos Inquietos", 10, 2.5, icone="minecraft:bone",
-            deps=["treino"],
-            descricao=["Esqueletos de longe são piores que zumbis. Use cobertura e aproxime-se esquivando.",
-                       "", "Derrote &c10 esqueletos&r."],
-            tarefas=[c.t_matar("minecraft:skeleton", 10, "Derrotar 10 esqueletos")],
-            recompensas=[c.r_xp(3), c.r_item("minecraft:arrow", 32)])
+                       "", "Esqueletos de longe são piores que zumbis. Use cobertura e aproxime-se esquivando.",
+                       "", "Derrote &c10 zumbis&r e &c10 esqueletos&r. Os dois contam ao mesmo tempo: uma noite lá fora já adianta as duas tarefas."],
+            tarefas=[c.t_matar("minecraft:zombie", 10, "Derrotar 10 zumbis"),
+                     c.t_matar("minecraft:skeleton", 10, "Derrotar 10 esqueletos")],
+            recompensas=[c.r_xp(6), c.r_item("minecraft:golden_carrot", 2), c.r_item("minecraft:arrow", 32)])
 
     # ---- Chefe 1: Swampjaw
     c.quest("isca", "Algo no Pântano", 12.5, 2.5, icone="meetyourfight:fossil_bait",
-            deps=["ossos"],
+            deps=["treino"],
             subtitulo="Primeiro fragmento",
             descricao=[f"{M}: \"Pescadores sumiram perto dos pântanos. Algo enorme come qualquer coisa que se move por lá... e eu sinto um fragmento do Selo dentro dele.\"",
                        "", "Pegue a &fIsca Fóssil&r na recompensa, prepare-se e use-a (clique direito) perto do pântano quando estiver pronto para chamar a criatura.",
