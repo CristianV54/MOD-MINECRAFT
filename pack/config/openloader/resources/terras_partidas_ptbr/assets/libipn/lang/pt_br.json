@@ -1,0 +1,16 @@
+{
+  "libipn.common.gui.config.order_sensitive": "Importa a ordem",
+  "libipn.common.gui.config.modifier_key": "Ctrl/Alt/Shift",
+  "libipn.common.enum.key_action.release": "Soltar",
+  "libipn.common.enum.context.ingame": "No jogo",
+  "libipn.common.enum.context.gui": "Em telas",
+  "libipn.common.enum.context.any": "No jogo / Em telas",
+  "libipn.common.enum.modifier_key.normal": "Normal",
+  "libipn.common.gui.config.colorpicker.alpha": "Transparência",
+  "libipn.common.gui.config.colorpicker.red": "Vermelho",
+  "libipn.common.gui.config.colorpicker.green": "Verde",
+  "libipn.common.gui.config.colorpicker.blue": "Azul",
+  "libipn.common.gui.config.color_picker_dialog": "Escolha uma cor",
+  "libipn.common.gui.config.settings_screen.search-box": "Buscar",
+  "libipn.common.gui.config.description.settings_screen.search-box": "Mostra só as opções que combinam com o que foi digitado na caixa."
+}
