@@ -438,19 +438,19 @@ hash = "27bc20be7867adc1f73defd796ee083befbed0bf7117c6b76e48450f7ada910b"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/assassino/connections.json"
-hash = "107787b4f32b2155f5ff3d80e26c6fa69b2aaf385e48279aebfa63574bfc6994"
+hash = "76e0ba36d5d4c95b95fa1303552ec8a267ff4bc81d8533317882404458742fef"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/assassino/definitions.json"
-hash = "61e94f0c5b66716597a11b396cbcc8288ba45fdf9429ebefeff75bbdca410c0e"
+hash = "335f71284692e8e647a99ecb0ee54d0bd8f5eeaf981a2dafec090ad1fbd7bc51"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/assassino/experience.json"
-hash = "fb45b3e6f36f263c075ef4313c85e6f2e16c5a286f1ce33fdfcd3e71633f5efd"
+hash = "a44b910f57a3ff6af2287cab7f7038899a1a66df63a62ae4569d232df1339946"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/assassino/skills.json"
-hash = "5c57234f62ddd29b07e594a7ff2966704300788cdc4273f968e8ee806c47fef0"
+hash = "1d1a154da90a9d9dda2068fb938d463476e80aab073990f0f70aff197ce794eb"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/cacador/category.json"
@@ -458,19 +458,19 @@ hash = "9d2b77b914e92f9537f00fb9369b16efb521e0c32ed9f84dc4a34d9ca558cc8b"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/cacador/connections.json"
-hash = "271d81ee540c766bb92b07cf5df1ec1b607c1c70ec354d910912d8e8ddc404d6"
+hash = "9ff4e5aa9667dde0c4a7d77aed889462ea22b54ee83649e75817cd370ee432e6"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/cacador/definitions.json"
-hash = "0d60764fef2f7789f8b14a4b1b948f6826b260b293a680b2db79ed35e7cc51f9"
+hash = "49ab48cc156142daa61488ed2ad454b8d67ca5c6c98924ce27bb47cf6ae1342f"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/cacador/experience.json"
-hash = "fb45b3e6f36f263c075ef4313c85e6f2e16c5a286f1ce33fdfcd3e71633f5efd"
+hash = "a44b910f57a3ff6af2287cab7f7038899a1a66df63a62ae4569d232df1339946"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/cacador/skills.json"
-hash = "95c74a2dde24a67638cbb8b7a4ad4f668dac8437009297dcee4d1da5bc13d29d"
+hash = "33317ddf2fce4387217822ffe28182fc07e9dff4116451fd56004d8bfeb9c800"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/combate/category.json"
@@ -478,19 +478,19 @@ hash = "0cf105577ef5412c0cdea343c84173cd46c4b6827afcab4a8ac22c6181a797ff"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/combate/connections.json"
-hash = "d755872e77dedc4e646272285b969deac4dc2c524e0eec4edfc98823bb4b4171"
+hash = "763842d953f9f372e7af1ff8809e0a5b987403360beec511ec22bab07a6a38d0"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/combate/definitions.json"
-hash = "e096a8cff7f48ef6d99a7eabd7b76be9c1eb373009c0c18063474cdd4dca9fdc"
+hash = "63f7635ac6a7bcfa758d7db767b8ce0728d761aeb8a3740fe2c4f59bf0274792"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/combate/experience.json"
-hash = "fb45b3e6f36f263c075ef4313c85e6f2e16c5a286f1ce33fdfcd3e71633f5efd"
+hash = "1f1bd26d0a12860cc6170075599aecd766a3157a4a8ba40d12a84f91e09f3475"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/combate/skills.json"
-hash = "19c490c264070e99a20c80161574cf5cd0d48065a01354113b015e2dc04123aa"
+hash = "7451035fe763b3dc13f553598b43f39c850315cb49bd5a353ec4ba2f563a2609"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/guerreiro/category.json"
@@ -498,19 +498,19 @@ hash = "339028e5bba1b0fa052f9a651e80496d9d2ac3ed9853af0a4c4c8771a26b2363"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/guerreiro/connections.json"
-hash = "3056a4cbe60d4353fadabbd5486c0015e373cc3a4655cb750847ccc083e8b56b"
+hash = "f216f7deb1039c0dc834532663fbc018bdbf487b4998cac06ece0339e39bbffa"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/guerreiro/definitions.json"
-hash = "64c785e4ceaa530233703dc8c002f708ff4011a0073f759c8e6eae84a4ca9bd4"
+hash = "6dc15e420cec663fb7ea5fafb3f809e056be18b4f52f50f2873afe81d551ed9f"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/guerreiro/experience.json"
-hash = "fb45b3e6f36f263c075ef4313c85e6f2e16c5a286f1ce33fdfcd3e71633f5efd"
+hash = "a44b910f57a3ff6af2287cab7f7038899a1a66df63a62ae4569d232df1339946"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/guerreiro/skills.json"
-hash = "fdee30ede2b636c9a0b5cb467ee60aae75aebeab65125b8c008bbd984ad57e4b"
+hash = "b46c48aedb43adcd08b92b87f5bc155370b848eb4964999b43b217b171115d3d"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mago/category.json"
@@ -518,19 +518,19 @@ hash = "afe656f0753ebdc62cb74a86c8119cca0047476eaa7e548dc177494049db3b6b"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mago/connections.json"
-hash = "e1e44f006b39e88f6f41df8dc9b0bd589e49732e4165ade8b53d98e40c193487"
+hash = "624582e64a7214e13371a3ce5a9d044aab221b7a7d49b1b0ff49faeae29e5890"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mago/definitions.json"
-hash = "b3fb8c7aea580cbd4664c025d3fba167dd182716e4084013a11e81db98bd64f3"
+hash = "42196eb89ef1c49124c876310388a44b843893943c0170e98a941a2dc0cc2a2f"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mago/experience.json"
-hash = "fb45b3e6f36f263c075ef4313c85e6f2e16c5a286f1ce33fdfcd3e71633f5efd"
+hash = "a44b910f57a3ff6af2287cab7f7038899a1a66df63a62ae4569d232df1339946"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mago/skills.json"
-hash = "937a83b1db3dc15be23814ef011f4d6c25ff2df92b4a521aedfce1ab1767680d"
+hash = "28b03f81cd793851f3a0e6c4602b6ddb3bc53babd4cdcae11e069745e032a896"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mineracao/category.json"
@@ -538,19 +538,19 @@ hash = "d2ec0732306ff1a21a7ab91fd29a703a4764a88118f0b126b40e9529898adfe9"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mineracao/connections.json"
-hash = "036a0cb27edb89caeca040a6cf8284ab3e18cb216ebd45a7b2c38ea72a113aee"
+hash = "c37b7bff2e22cad76a86a0668c40c072e96f32da19c7433ea42ba869a85fe917"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mineracao/definitions.json"
-hash = "87a6a77f8cf58771c6b565a90301d5321085915afeaa6e9889b5848076ed3aa3"
+hash = "fc129d2cd7e8d06d468ad20f4979e97a6a6b5ebd9448ce79811a68406884446f"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mineracao/experience.json"
-hash = "1e57b19da8593f8432bfd5767cecf6ac65439ae80b6ec12f817f0d1222b7390d"
+hash = "7a32b5d98b1d5d39d432488c7498a0361ba876efc82f423eff6316821a781e4b"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/mineracao/skills.json"
-hash = "b0531fe77927b8471fa7dbe0797a279903850badad5ce282494784e80f21fe66"
+hash = "666bd348ba1bff15e039cf8279fd4bcf6d24b033315967cb160f2ef9e553a9a1"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/tanque/category.json"
@@ -558,19 +558,19 @@ hash = "d3e9ba76118a13c938abd738eb9d257001dc9239155f2d9720e21730f00057ef"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/tanque/connections.json"
-hash = "967c7e83a1e8ce84a1bc377324ad0404df32a42686ba9e2a3ab99c23464e0213"
+hash = "c1fba380c00415e1efceb1f2e2898d63db74524a8a8e84f9421ed2730805392e"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/tanque/definitions.json"
-hash = "39c2226e0e16e6bbab9a9fdd7cd628b9415a7c43b6b1532c86616764fe2e91b5"
+hash = "7f37c888bfca481f71df93aefd6a8ada2797b168410e716389db53e9bacb5748"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/tanque/experience.json"
-hash = "fb45b3e6f36f263c075ef4313c85e6f2e16c5a286f1ce33fdfcd3e71633f5efd"
+hash = "a44b910f57a3ff6af2287cab7f7038899a1a66df63a62ae4569d232df1339946"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/tanque/skills.json"
-hash = "5c01476f64179a29e1f9a45082e7c4e20adcccc258049af5aecff219868e2347"
+hash = "286a1c2435141b36274924e42b4c161019f71c00c04d16675ee61fe0ed0022b8"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/vida/category.json"
@@ -578,19 +578,19 @@ hash = "d478a858cdc017417a0f965e86f168cbe4f03e51b9533749d04ddd6c719f03bb"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/vida/connections.json"
-hash = "6c68ef3f599af249fb9b89aa28b195bd70e95d23672016dd2e1d8cb8ce4e5f01"
+hash = "4f30101ef97193807b281f6cc98f430a37cbdee525a73789a1cb4b32060f140e"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/vida/definitions.json"
-hash = "06b95479898aa94eb459abd181ec37baf34e0a62579dcbe140a6cb2f3089e929"
+hash = "2cb2ef5878993bdf5836df283c402cf030cc4a7d3527b73459a78d6b4905d3b6"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/vida/experience.json"
-hash = "74ab3025472f2cb95180c0fc045cc9c865455c7dd3edfd989d1503da2477ba57"
+hash = "02460a62d1c8f9008d6c2cf6fdc4682fc2df1a6fc783a4519f249c25d0c88b2c"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/categories/vida/skills.json"
-hash = "38aa44f51d41441233e30ee7e4ce1c3644ba6871c7b5ae7ff956412b7ec444bc"
+hash = "81de3fa73af60decaf9fee35a9f2b881cc7f2ce79ad71b20a62925724f2bbd9c"
 
 [[files]]
 file = "config/openloader/data/terras_partidas/data/terras_partidas/puffish_skills/config.json"
